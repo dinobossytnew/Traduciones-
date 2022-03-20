@@ -1,0 +1,288 @@
+# !-----------------------------------------------------------------------------------------------!
+#                              Welcome to the localization file.
+# !-----------------------------------------------------------------------------------------------!
+#
+#   The localization/ folder stores various localization files. Use the suggested naming
+#   convention message_LANGUAGE.yml and then the "SimpleLocalization" or the "Lang" class to
+#   use this file.
+#
+#   1) COLOR CODES are supported with the '&' character.
+#      - For usage, see http://minecraftwiki.net/wiki/Formatting_codes
+#      - When you use them, place quotes around the message like this: "Hello &cworld."
+#       - To use HEX colors, use #123456 syntax: "Hello #123456world."
+#
+#   2) TO HIDE any message, set it to 'none'.
+#
+#   3) For UNICODE CHARACTERS (smileys, symbols, ..), save the file in UTF-8 encoding. See
+#      - https://github.com/kangarko/Boss/wiki/Use-Right-Encoding
+#
+#   4) JSON is supported. Prepend the message with [JSON].
+#
+#   5) JAVASCRIPT NOTICE: Some of our messages are just-in-time compiled with JavaScript.
+#      Those typically have variables such as "self" inside of them. IF YOU CANNOT CODE
+#      in JavaScript, be extra careful and do not remove () brackets or the variables!
+#
+# !-----------------------------------------------------------------------------------------------!
+
+# -------------------------------------------------------------------------------------------------
+# Messages related to commands
+# -------------------------------------------------------------------------------------------------
+Commands:
+  Error: '&4&lOups! &cThe command failed :( Check the console and report the error.'
+  Header_No_Subcommands: '&cThere are no arguments for this command.'
+  Header_No_Subcommands_Permission: '&cYou don''t have permissions to view any subcommands.'
+  Header_Color: GOLD
+  Header_Secondary_Color: RED
+  Reloading: reloading
+  Disabled: disabled
+  Use_While_Null: '&cCannot use this command while the plugin is {state}.'
+  Incompatible: This command requires Minecraft {0} or greater.
+  Toggled_Plugin_Part: '''&7You are '' + (ignoring ? ''&2no longer'' : ''&cnow'') + '' &7ignoring {0}.'''
+  Use_Alternative_Header: false
+  Alternative_Header: '&cBoss: &7Type ''/{0} ?'' to see all commands.'
+  No_Console: '&cYou may only use this command as a player.'
+  No_BungeeCord: You need BungeeCord enabled use this feature.
+  Requires_Console: '&cThis command requires execution from the console.'
+  Requires_Tools: To use this feature, enable Register_Tools in settings.yml and restart.
+  Console_Missing_Player_Name: When running from console, specify player name.
+  Cooldown_Wait: '&cWait {duration} second(s) before using this command again.'
+  Invalid_Argument: '&cInvalid argument. Run &6/{label} ? &cfor help.'
+  Invalid_Sub_Argument: '&cInvalid argument. Run ''/{label} {0}'' for help.'
+  Invalid_Argument_Multiline: '&cInvalid argument. Usage:'
+  Invalid_Time: 'Expected time such as ''3 hours'' or ''15 minutes'', got: ''{input}'''
+  Invalid_Number: 'The number must be a whole or a decimal number. Got: ''{input}'''
+  Invalid_World: 'Invalid world ''{world}''. Available: {available}'
+  Invalid_Boss: 'Boss named ''{0}'' doesn''t exist. Available: {1}'
+  Invalid_Bosses: There are no Bosses alive that match your search.
+  Invalid_Boss_Type: '&cInvalid Boss type ''{0}''. Available: {1}'
+  Invalid_Boss_Uid: 'Invalid Boss from entity UUID: {0}'
+  Invalid_Boss_Dead: '&cThe Boss is no longer alive.'
+  Invalid_Boss_Uninstalled: Boss '{0}' is not installed on this server.
+  Invalid_Amount: Please enter a valid amount number.
+  Label_Authors: Made by
+  Label_Description: '&c&lDescription:'
+  Label_Optional_Args: optional arguments
+  Label_Required_Args: required arguments
+  Label_Usages: '&c&lUsages:'
+  Label_Usage: '&c&lUsage:'
+  Label_Help_For: Help for /{label}
+  Label_Subcommand_Description: ' &f/{label} {sublabel} {usage+}{dash+}{description}'
+  Help_Tooltip_Description: '&7Description: &f{description}'
+  Help_Tooltip_Permission: '&7Permission: &f{permission}'
+  Help_Tooltip_Usage: '&7Usage: &f'
+  Reload_Description: Reload the configuration.
+  Reload_Started: Reloading plugin's data, please wait..
+  Reload_Success: '&6Boss {plugin_version} has been reloaded.'
+  Reload_Fail: '&4Oups, &creloading failed! See the console for more information. Error: {error}'
+  Reload_File_Load_Error: '&4Oups, &cthere was a problem loading files from your disk! See the console for more information. Boss has not been reloaded.'
+  Debug_Description: ZIP your settings for reporting bugs.
+  Debug_Preparing: '&6Preparing debug log...'
+  Debug_Success: '&2Successfuly copied {amount} file(s) to debug.zip. Your sensitive MySQL information has been removed from yml files. Please upload it via ufile.io and send it to us for review.'
+  Debug_Copy_Fail: '&cCopying files failed on file messages_en and it was stopped. See console for more information.'
+  Debug_Zip_Fail: '&cCreating a ZIP of your files failed, see console for more information. Please ZIP debug/ folder and send it to us via ufile.io manually.'
+  Perms_Description: List all permissions the plugin has.
+  Perms_Header: Listing All Plugin Permissions
+  Perms_Main: Main
+  Perms_Permissions: 'Permissions:'
+  Perms_True_By_Default: '&7[true by default]'
+  Perms_Info: '&7Info: &f'
+  Perms_Default: '&7Default? '
+  Perms_Applied: '&7Do you have it? '
+  Perms_Yes: '&2yes'
+  Perms_No: '&cno'
+  Biome:
+    Description: Find biome at your or a player's location.
+    Success: '&7Biome at x: {0} y: {1} z: {2} is &6{3}.'
+  Butcher:
+    Description: Kill spawned Bosses.
+    No_Player: '&4Only players can specify the butcher radius from their location.'
+    Invalid_Radius: Radius must be between 0 and 10,000.
+    Success_Radius: '&cRemoved &7{0} {1} around you.'
+    Success_World: '&cRemoved &7{0} from {1}.'
+    Success_All_Words: '&cRemoved &7{0} from all worlds.'
+  Egg:
+    Description: Get a Boss' spawner egg.
+    Success: '&7You have obtained spawn egg for the &f{0} &7Boss.'
+    Success_Other: '&7{0} &areceived &7{1} Boss egg.'
+    No_Player: When running from the console, please specify the player as the last argument!
+  Find:
+    Description: Find Bosses in loaded chunks.
+  List:
+    Description: List loaded bosses.
+    Start: '{prefix_info} &7Available &8(&4{0}&8): &7'
+    Hover: '&7Click to open this Boss menu.'
+  Menu:
+    Description: Show the main menu or menu for boss.
+    Success: Opened Boss menu for {0}.
+  New:
+    Description: Create a new boss.
+  Region:
+    Description: Manage Boss regions.
+  Remove:
+    Description: Delete a Boss from disk. Alive Bosses will be kept, use the butcher or scan command to remove them.
+    Success: '&cRemoved&7 Boss ''{0}'' from disk. Alive Bosses were kept.'
+  Scan:
+    Description: Remove Bosses from unloaded chunks.
+  Spawn:
+    Description: Spawn Bosses in worlds. This command can be used from console or command block.
+    Success: Spawned '{0}' at {1}
+    Fail: Unable to spawn Boss '{0}' at {1}
+    Cannot_Autodetect_World: Only living players can use ~ for their world!
+    Cannot_Autodetect_Location: Only living players can use ~ for their location!
+    Invalid_Position: Invalid position '{0}', type a valid number or '~' for your coordinate.
+  Spawn_Player:
+    Description: Spawn Bosses behind players (sneaky).
+  Tools:
+    Description: Open the tools menu.
+    Success: Opened Boss tools menu for {0}.
+  Uid:
+    Description: 'Admin command you can run from command block or console. TIP: Get the Boss uid by left clicking on a Boss with his spawn egg.'
+    Tabcomplete_Help: Get the uid by left clicking a Boss with spawn egg.
+    Bosstp_Usage: Specify a world name, x, y, and z coordinates to teleport the Boss to.
+    Invalid_Coordinate: Invalid {0} coordinate, expected a whole number.
+    Success_Tp: '&aTeleported &7{0} Boss to {1}'
+    Success_Kill: '&cThe selected Boss has been killed silently.'
+
+# -------------------------------------------------------------------------------------------------
+# Messages related to Boss Egg
+# -------------------------------------------------------------------------------------------------
+Egg:
+  Spawn:
+    Fail_1: Unable to spawn '{0}' because {1}. Hover
+    Fail_2: ' &nhere&7 '
+    Fail_3: for help.
+    Fail_Hover:
+    - '&c&lSolving Spawn Issues:'
+    - ''
+    - '&f1. &7Check plugins like Residence,'
+    - '&7WorldGuard, GriefPrevention etc.'
+    - '&7and their mob spawn flags.'
+    - ''
+    - '&f2. &7Check your Boss spawn limits.'
+    - ''
+    - '&f3. &7Set Debug key to ''[spawning]'' '
+    - '&7in settings.yml and see console'
+    - '&7for more information.'
+    Fail_Claim: You cannot spawn Bosses in {0}'s claim.
+    Fail_Limit: Boss is over limit (see Boss menu > Spawning Limits)
+    Fail_Cancelled: another plugin cancelled the event
+    Fail_API: another plugin using Boss prevented the event
+
+# -------------------------------------------------------------------------------------------------
+# Messages related to Boss fight
+# -------------------------------------------------------------------------------------------------
+Fight:
+  Cheats:
+    Flight: flight
+    God_Mode: god mode
+    Vanish: invisibility
+    Cheats_Disabled: You are in a Boss fight, disabling {0}.
+    
+# -------------------------------------------------------------------------------------------------
+# Messages related to paginator splitting command help into multiple pages
+# -------------------------------------------------------------------------------------------------
+Pages:
+  No_Page_Number: '&cPlease specify the page number for this command.'
+  No_Pages: '&cYou do not have any pages saved to show.'
+  No_Page: Pages do not contain the given page number.
+  Invalid_Page: '&cYour input ''{input}'' is not a valid number.'
+  Go_To_Page: '&7Go to page {page}'
+  Go_To_First_Page: '&7Go to the first page'
+  Tooltip:
+  - '&7You can also navigate using the'
+  - '&7hidden ''/#flp <page> command.'''
+  
+# -------------------------------------------------------------------------------------------------
+# Messages related to players
+# -------------------------------------------------------------------------------------------------
+Player:
+  Not_Online: '&cPlayer {player} &cis not online on this server.'
+  Not_Played_Before: '&cPlayer {player} &chas not played before or we could not locate his disk data.'
+  Full_Inventory: The inventory was full so some items were dropped on the floor.
+  
+# -------------------------------------------------------------------------------------------------
+# Messages related to menus
+# -------------------------------------------------------------------------------------------------
+Menu:
+  Cannot_Open_During_Conversation: '&cType ''exit'' to quit your conversation before opening menu.'
+  Item_Deleted: '&2The {item} has been deleted.'
+  Error: '&cOups! There was a problem with this menu! Please contact the administrator to review the console for details.'
+  Page_Previous: '&8<< &fPage {page}'
+  Page_Next: Page {page} &8>>
+  Page_First: '&7First Page'
+  Page_Last: '&7Last Page'
+  Title_Tools: Tools Menu
+  Tooltip_Info: '&fMenu Information'
+  Set_To: '{0} Set To {1}'
+  Button_Return_Title: '&4&lReturn'
+  Button_Return_Lore:
+  - ''
+  - 'Return back.'
+  Button_Integer:
+  - ''
+  - '&7Value: &f{0}'
+  - ''
+  - ' &8(Mouse click)'
+  - ' &7&l< &4-1    &2+1 &7&l>'
+
+# -------------------------------------------------------------------------------------------------
+# Messages related to player conversation where server is waiting for his chat input
+# -------------------------------------------------------------------------------------------------
+Conversation:
+  Not_Conversing: '&cYou can only use this command when you are asked to type something in the chat.'
+  Requires_Player: Only players may enter this conversation.
+  Error: '&cOups! There was a problem in this conversation! Please contact the administrator to review the console for details.'
+
+# -------------------------------------------------------------------------------------------------
+# Messages related to tools
+# -------------------------------------------------------------------------------------------------
+Tool:
+  Error: '&cOups! There was a problem with this tool! Please contact the administrator to review the console for details.'
+
+# -------------------------------------------------------------------------------------------------
+# Words for both singular and plural form. Separate these two forms with ", "
+# -------------------------------------------------------------------------------------------------
+Cases:
+  Second: second, seconds
+  Message: message, messages
+  Command: command, commands
+  Boss: Boss, Bosses
+  Block: block, blocks
+
+# -------------------------------------------------------------------------------------------------
+# Different prefixes you can use by calling {prefix_<type>} such as {prefix_info}
+# -------------------------------------------------------------------------------------------------
+Prefix:
+  Info: '&8&l[&9&li&8&l]&7 '
+  Success: '&8&l[&2&l!&8&l]&7 '
+  Warn: '&8&l[&6&l!&8&l]&6 '
+  Error: '&8&l[&4&lX&8&l]&c '
+  Question: '&8&l[&a&l?&l&8]&7 '
+  Announce: '&8&l[&5&l!&l&8]&d '
+
+# -------------------------------------------------------------------------------------------------
+# Miscellaneous
+# -------------------------------------------------------------------------------------------------
+None: None
+Server_Prefix: '[Server]'
+Console_Name: Console
+World: world
+Enabled: '&2Enabled'
+Disabled: '&4Disabled'
+And: and
+
+# -------------------------------------------------------------------------------------------------
+# Database related messages
+# -------------------------------------------------------------------------------------------------
+Data_Missing: '&c{name} lacks database information! Please only create {type} in-game! Skipping..'
+Data_Loading: Database is currently loading data, please wait...
+
+# -------------------------------------------------------------------------------------------------
+# Messages shown when player runs a command he lacks permission for
+# -------------------------------------------------------------------------------------------------
+No_Permission: '&cNo permission: {permission}'
+
+# -------------------------------------------------------------------------------------------------
+# Internal versioning number
+# -------------------------------------------------------------------------------------------------
+Version: 1
