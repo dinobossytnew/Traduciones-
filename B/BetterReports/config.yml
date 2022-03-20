@@ -1,0 +1,168 @@
+# Copyright (c) 2020 Timmy109.
+# Copyright (c) 2020 Contributors.
+# Github profile: https://github.com/AusTechDev/
+# Author official AusTechDev original sin fines de lucros
+# traducion dinobossyt
+# Spigot Profile: https://www.spigotmc.org/members/_timmyy_.919057/
+# Discord Server: https://discord.austech.dev/
+
+# Config version - Please don't touch this!.
+config-version: 2
+
+# Enable / Disable the use of player or bug reports.
+player-reports: true
+bug-reports: true
+
+# Allow the reporting of offline players or players that have never joined the server before.
+report-offline-players: true
+
+# If a player report was successfully submitted, this message will be displayed in chat to the player.
+# You may use the {target} placeholder to get the reported player's name and the {player} placeholder to get the REPORTER's name.
+player-report-success: |-
+  &8&l&m---------------------------------
+  &a&lGRACIAS! &aSu informe ha sido presentado
+  &a   usted ayudo a la comunidad a mejorar!
+  &8&l&m---------------------------------
+
+# If a bug report was successfully submitted, this message will be displayed in chat to the player.
+# You may use the {player} placeholder to get the reported player's name.
+bug-report-success: |-
+  &8&l&m---------------------------------
+  &a&lGRACIAS! &aSu informe ha sido presentado
+  &a   usted ayudo a la comunidad a mejorar!
+  &8&l&m---------------------------------
+
+# If a PLAYER report was successfully written to the file, notify staff with this message in chat.
+# You may use the {player} placeholder to get the reporter's name and the {report} placeholder to get the reason.
+# The {target} placeholder is available to display the reported player's username.
+staff-player-report-message: |-
+  &8&l&m-----------------------------
+  &c&l      NUEVO JUGADOR REPORTADO
+  &c&l      Presentado por: &7{player}
+  &8     Consulta Discord para más detalles.
+  &8&l&m-----------------------------
+
+# If a BUG report was successfully written to the file, notify staff with this message in chat.
+# You may use the {player} placeholder to get the reporter's name and the {report} placeholder to get the reason.
+staff-bug-report-message: |-
+  &8&l&m---------------------------
+  &c&l        NUEVO BUG REPORTADO
+  &c&l      Presentado por: &7{player}
+  &8     Consulta Discord para más detalles.
+  &8&l&m---------------------------
+
+# The message displayed when a player with the base permission node "betterreports.use" types in the base command /report.
+player-help-message: |-
+  &8&l&m-------------------------------
+  &c&l&o        DD&4&l&oReporte
+  &8    Reporta bugs y jugador
+  &7/report <player> <reason> &c Report a player
+  &7/reportbug <bug> &c Report a bug
+  &8&l&m-------------------------------
+
+# The message displayed when a player with the permission node "betterreports.admin" types in the base command: /report.
+admin-help-message: |-
+  &8&l&m-------------------------------
+  &c&l&o        DD&4&l&oReporte
+  &8    Reporta bugs y jugador
+  &7/report <player> <reason> &c Report a player
+  &7/reportbug <bug> &c Report a bug
+  &7/br reload &c Reload the configuration
+  &8&l&m-------------------------------
+
+# Paste your Discord channel webhooks into the respective lines below.
+discord-bug-webhook-url: "https://discord.com/api/webhooks/946087024526491679/XW7F83SaFY7equDMnD9SijNtSNRX3ZcehoLAlBF3swAhOsdvXPF86Qy0gj6r9vKTRYKN"
+discord-player-webhook-url: "https://discord.com/api/webhooks/946087024526491679/XW7F83SaFY7equDMnD9SijNtSNRX3ZcehoLAlBF3swAhOsdvXPF86Qy0gj6r9vKTRYKN"
+
+# -----------------------------------------------------------------------------------
+# Configuring the fields for the Discord webhook
+# Follow this example:
+#
+# bug-report-fields:
+#   1:
+#    title: <title for the field>
+#    content: <field content here>
+#    inline: <true/false>
+#
+# Please note that Discord limitations mean that there can only be up to 25 fields!
+# -----------------------------------------------------------------------------------
+
+# Player report embed configuration.
+# Available placeholders: {player} (reporter), {report} (report content/bug).
+bug-report-fields:
+  1:
+    title: "**REPORTE**"
+    content: "REPORTADO POR: `{player}`"
+    inline: false
+  2:
+    title: "TIPO REPORTE"
+    content: "BUG REPORTE"
+    inline: false
+  3:
+    title: "BUG"
+    content: "{report}"
+    inline: false
+
+# Set the embed footer of the bug report.
+bug-report-embed-footer: "DinoBossYT - DDReports"
+bug-report-embed-icon: "https://cdn.discordapp.com/icons/749536377020088361/b8d4bada3908ccb2bac76773489ee0cf.png"
+
+# Use this if you would like to ping a discord role or user. To get a user or role ID, follow this guide: https://ozonprice.com/blog/discord-get-role-id/
+# For roles, use the format <@&ROLE_ID>
+# For users, use the format <@USER_ID>
+discord-ping-bug: "<@&845803867668480053>"
+discord-ping-bug-enable: true
+
+# Player report embed configuration.
+# Available placeholders: {player} (reporter), {target} (reported player), {report} (report content/reason).
+player-report-fields:
+  1:
+    title: "**REPORTE**"
+    content: "REPORTADO POR: `{player}`"
+    inline: false
+  2:
+    title: "TIPO REPORTE"
+    content: "JUGADOR REPORTADO"
+    inline: false
+  3:
+    title: "REPORTADO JUGADOR"
+    content: "`{target}`"
+    inline: false
+  4:
+    title: "RAZON"
+    content: "{report}"
+    inline: false
+
+# Set the embed footer of the player report.
+player-report-embed-footer: "DinoBossYT - DDReports"
+player-report-embed-icon: "https://cdn.discordapp.com/icons/749536377020088361/b8d4bada3908ccb2bac76773489ee0cf.png"
+
+# Use this if you would like to ping a discord role or user. To get a user or role ID, follow this guide: https://ozonprice.com/blog/discord-get-role-id/
+# For roles, use the format <@&ROLE_ID>
+# For users, use the format <@USER_ID>
+discord-ping-player: "<@&845803867668480053>"
+discord-ping-player-enable: true
+
+# Webhook embed colour.
+# Put a hex code (Including the #) into the respective lines below.
+# Make sure there are no spaces otherwise this may break!
+discord-embed-bug-report-colour: "#DC143C"
+discord-embed-player-report-colour: "#FF4500"
+
+# Change the value below to change the length of the cooldown.
+# The value is in seconds!
+report-bug-cooldown: 60
+report-player-cooldown: 60
+
+# Message Customisation.
+no-permission-message: "&cYou do not have permission to execute this command!"
+error-sending-message: "&cError sending the bug report to discord. Please contact the admin."
+player-only-message: "&cOnly players can execute that command!"
+no-reason-message: "&cPlease specify a reason for reporting!"
+no-bug-provided-message: "&cPlease specify the bug you would like to report!"
+report-self-message: "&cYou can't report yourself!"
+not-online-message: "&cPlayer has to be online to be reported!"
+cannot-report-message: "&cYou cannot report that player!"
+unknown-command: "&cUnknown Command!"
+
+check-for-updates: true
