@@ -1,0 +1,286 @@
+# Tips:
+# 1 - if making a small mob, armor stands that are stuck in ground are usually seen darker, this is rendered from client so only
+#     way of avoiding is to flip armor stand's head 180 degrees (like this 'headPose: 180;0;0), upside down so you can elevate the
+#     armor stand higher from the ground, this way avoiding such issue.
+#
+# Tool for easier armor stand handling: https://haselkern.com/Minecraft-ArmorStand/
+
+# EDIT MOBS IN-GAME USING /as editor
+
+settings:
+  health: 20
+  sounds: WOLF
+  hostile: false
+  nametagHeight: 0
+  damage: 4
+  animateOnWalking: true
+  animationSmoothness: 5
+  animationSpeed: 2
+
+# You can save skins as specific names here to be used with parts
+#  Get skin's base64 from:
+#  Custom Skin - Convert a skin into base64 https://mineskin.org/
+#  Pre-made Skins - Get pre-made skin's value (under 'other', 'value' will be the base64) https://minecraft-heads.com/custom-heads
+skins:
+  head: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTZiMGRmMDVlMWQxOTdlMjlhNzQ2YWE0ZjBkNWExOTUwZTlhY2UyNTgxOTAyYjVmOTkyNmRjZWNjNTFiNzY2YiJ9fX0=
+  agiz: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTI1ZGQwMjY4MTRhODVlMDAzZTBhNjgyNTNkOWZkNjhkNTRkZDU5MGViZTE5MGVhNjI1ZjRiOGNhNzlmMmUwYSJ9fX0=
+  govde: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjUwYmQ3MGZiZDRhNjQ1NGUyZDZmMDJjMzE1YmYyYThiYzUyMDYyZjJiYWY5MGFiZjE3YjRhNzI1NmUyMGY1YiJ9fX0=
+  boyun1: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjk0YjAwMmIxNjY5ZThiNDM2ZjhjMGUyMzlkNWVlYjk3YjBmNzZjMGE1ZDQ3MjdjMDQ5MzUwOGRmZjJkZDczIn19fQ==
+  boyun2: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzJkMTVkMmZhYWQ3YTFlMzI2Njc0OGU3ZWM4ODUwODU2NjE5NmVjYzE1M2U5ZDA3MWU1Yzk0MzRjZjZmNWRjMSJ9fX0=
+  ayak1: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzBmZTI3NDA5MDc3YjNjZTM3ZjM1MGNmZjBmZWU4NTQ1Y2E2MjIzMWNiOTIxMzlkNTQwZDg5ZjU3YTgzNjJjOSJ9fX0=
+  ayak2: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjczZDNkYWMzYzJiYWU2ZTIyNWVhNWYxYWQ3MjY3ZjBhN2FhYTBmYzJjMzc0YzZjZWE0YjFkNGE5ZWZjZTg5In19fQ==
+  ayak3: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTZkYzUwMmMyMWU2NWFkYmY1NGFlYjBlM2E1YjM1NTkzMTNmZjdjMTc0MGZhMDIwY2NkYzUwNWIzOTc1ZjNmMiJ9fX0=
+
+
+# Here are all the mob parts listed
+#  These parts are all dynamic, can be deleted, new created and edited
+#  Edit mobs in-game using /as editor
+parts:
+  head:
+    forwardBackward: 0.825
+    upDown: 0.125
+    rightLeft: 0.0805
+    visible: false
+    mini: false
+    right_handPose: -45;45;0
+    handItem: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTZiMGRmMDVlMWQxOTdlMjlhNzQ2YWE0ZjBkNWExOTUwZTlhY2UyNTgxOTAyYjVmOTkyNmRjZWNjNTFiNzY2YiJ9fX0=
+  kafa2:
+    forwardBackward: 0.825
+    upDown: 0.125
+    rightLeft: 0.33
+    visible: false
+    mini: false
+    right_handPose: -45;45;0
+    handItem: agiz
+  govde:
+    forwardBackward: -0.05
+    upDown: -0.21
+    rightLeft: -0.2
+    visible: false
+    mini: true
+    headPose: 0;0;0
+    headItem: govde
+  govde2:
+    forwardBackward: 0.05
+    upDown: -0.21
+    rightLeft: -0.2
+    visible: false
+    mini: true
+    headPose: 0;0;0
+    headItem: govde
+  govdeaa1:
+    forwardBackward: 0.85
+    upDown: -0.225
+    rightLeft: -1.31
+    visible: false
+    mini: false
+    right_handPose: -45;45;0
+    handItem: govde
+  govdeaa2:
+    forwardBackward: 0.8
+    upDown: -0.225
+    rightLeft: -1.31
+    visible: false
+    mini: false
+    right_handPose: -45;45;0
+    handItem: govde
+  govdeaa3:
+    forwardBackward: 0.825
+    upDown: -0.225
+    rightLeft: -1.56
+    visible: false
+    mini: false
+    right_handPose: -45;45;0
+    handItem: govde
+  govdeaaa1:
+    forwardBackward: 0.41
+    upDown: 0.353
+    rightLeft: -1.53
+    visible: false
+    mini: true
+    right_handPose: -45;45;0
+    handItem: govde
+  govdeaaa2:
+    forwardBackward: 0.41
+    upDown: 0.353
+    rightLeft: -1.65
+    visible: false
+    mini: true
+    right_handPose: -45;45;0
+    handItem: govde
+  govdearka1:
+    forwardBackward: 0
+    upDown: -0.21
+    rightLeft: -0.55
+    visible: false
+    mini: true
+    headPose: 0;0;0
+    headItem: govde
+  govdeon1:
+    forwardBackward: 0
+    upDown: -0.21
+    rightLeft: 0.12
+    visible: false
+    mini: true
+    headPose: 0;0;0
+    headItem: govde
+  govdeoo1:
+    forwardBackward: 0.825
+    upDown: -0.225
+    rightLeft: 0.02
+    visible: false
+    mini: false
+    right_handPose: -45;45;0
+    handItem: boyun1
+  govdeoo2:
+    forwardBackward: 0.825
+    upDown: 0.025
+    rightLeft: 0.02
+    visible: false
+    mini: false
+    right_handPose: -45;45;0
+    handItem: boyun2
+  el1:
+    forwardBackward: 0.16
+    upDown: 0.1
+    rightLeft: 0
+    visible: false
+    mini: true
+    right_handPose: -45;45;0
+    handItem: ayak1
+  el2:
+    forwardBackward: 0.16
+    upDown: -0.025
+    rightLeft: 0
+    visible: false
+    mini: true
+    right_handPose: -45;45;0
+    handItem: ayak1
+  el3:
+    forwardBackward: 0.16
+    upDown: -0.025
+    rightLeft: 0.125
+    visible: false
+    mini: true
+    right_handPose: -45;45;0
+    handItem: ayak3
+  elsag1:
+    forwardBackward: 0.66
+    upDown: 0.1
+    rightLeft: 0
+    visible: false
+    mini: true
+    right_handPose: -45;45;0
+    handItem: ayak1
+  elsag2:
+    forwardBackward: 0.66
+    upDown: -0.025
+    rightLeft: 0
+    visible: false
+    mini: true
+    right_handPose: -45;45;0
+    handItem: ayak1
+  elsag3:
+    forwardBackward: 0.66
+    upDown: -0.025
+    rightLeft: 0.125
+    visible: false
+    mini: true
+    right_handPose: -45;45;0
+    handItem: ayak3
+  ayak:
+    forwardBackward: 0.15
+    upDown: -0.4
+    rightLeft: -0.425
+    visible: false
+    mini: true
+    right_handPose: -45;45;0
+    handItem: ayak2
+  ayak1:
+    forwardBackward: 0.15
+    upDown: -0.4
+    rightLeft: -0.55
+    visible: false
+    mini: true
+    right_handPose: -45;45;0
+    handItem: ayak1
+  ayak2:
+    forwardBackward: 0.15
+    upDown: -0.28
+    rightLeft: -0.55
+    visible: false
+    mini: true
+    right_handPose: -45;45;0
+    handItem: ayak1
+  ayak3:
+    forwardBackward: 0.15
+    upDown: -0.16
+    rightLeft: -0.55
+    visible: false
+    mini: true
+    right_handPose: -45;45;0
+    handItem: ayak1
+  ayak4:
+    forwardBackward: 0.15
+    upDown: -0.16
+    rightLeft: -0.425
+    visible: false
+    mini: true
+    right_handPose: -45;45;0
+    handItem: ayak1
+  ayak5:
+    forwardBackward: 0.575
+    upDown: -0.5
+    rightLeft: -0.625
+    visible: false
+    mini: false
+    right_handPose: -45;45;0
+    handItem: ayak1
+  ayakleft:
+    forwardBackward: 0.69
+    upDown: -0.4
+    rightLeft: -0.425
+    visible: false
+    mini: true
+    right_handPose: -45;45;0
+    handItem: ayak2
+  ayak1left:
+    forwardBackward: 0.69
+    upDown: -0.4
+    rightLeft: -0.55
+    visible: false
+    mini: true
+    right_handPose: -45;45;0
+    handItem: ayak1
+  ayak2left:
+    forwardBackward: 0.69
+    upDown: -0.28
+    rightLeft: -0.55
+    visible: false
+    mini: true
+    right_handPose: -45;45;0
+    handItem: ayak1
+  ayak3left:
+    forwardBackward: 0.69
+    upDown: -0.16
+    rightLeft: -0.55
+    visible: false
+    mini: true
+    right_handPose: -45;45;0
+    handItem: ayak1
+  ayak4left:
+    forwardBackward: 0.69
+    upDown: -0.16
+    rightLeft: -0.425
+    visible: false
+    mini: true
+    right_handPose: -45;45;0
+    handItem: ayak1
+  ayak5left:
+    forwardBackward: 1.075
+    upDown: -0.5
+    rightLeft: -0.625
+    visible: false
+    mini: false
+    right_handPose: -45;45;0
+    handItem: ayak1

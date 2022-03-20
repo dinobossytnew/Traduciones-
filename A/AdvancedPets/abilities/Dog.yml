@@ -1,0 +1,17 @@
+# Dog Abilities
+#  Pets can give off special abilities to pet owners passively or at events
+#  Effect List: https://wiki.advancedplugins.net/effects/effect-types
+#  Read more here: https://wiki.advancedplugins.net/effects/types
+
+description: "Chance to deal more damage to players & mobs"
+
+ATTACK:
+  chance: 15
+  cooldown: 2
+  effects:
+    - 'ADD_HARM:3 %other%'
+ATTACK_MOB:
+  chance: 35
+  cooldown: 2
+  effects:
+    - 'ADD_HARM:3 %other%'

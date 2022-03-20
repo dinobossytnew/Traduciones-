@@ -1,0 +1,27 @@
+# Wyvern Abilities
+#  Pets can give off special abilities to pet owners passively or at events
+#  Effect List: https://wiki.advancedplugins.net/effects/effect-types
+#  Read more here: https://wiki.advancedplugins.net/effects/types
+
+description: "Set opponents on fire"
+
+ATTACK:
+  chance: 25
+  cooldown: 5
+  effects:
+    - 'FLAME:40 %other%'
+ATTACK_MOB:
+  chance: 25
+  cooldown: 5
+  effects:
+    - 'FLAME:40 %other%'
+DEFENSE:
+  chance: 25
+  cooldown: 5
+  effects:
+    - 'FLAME:40 %other%'
+DEFENSE_MOB:
+  chance: 25
+  cooldown: 5
+  effects:
+    - 'FLAME:40 %other%'

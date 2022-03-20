@@ -1,0 +1,10 @@
+# Racecar Abilities
+#  Pets can give off special abilities to pet owners passively or at events
+#  Effect List: https://wiki.advancedplugins.net/effects/effect-types
+#  Read more here: https://wiki.advancedplugins.net/effects/types
+
+description: "Permanent speed boost"
+
+EFFECT_STATIC:
+  effects:
+    - 'POTION:SPEED:0'

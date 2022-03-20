@@ -1,0 +1,59 @@
+prefix: '&a[AdvancedPets]&r'
+
+pets:
+  name: "&a%player%'s &f&l%pet%&a Pet"
+
+menu:
+  name: "&0&lPets Menu"
+  pets:
+    name: '&a&l%base name%&a Pet'
+    lore:
+      - '&a ⭐ Ability: &f%abilities%'
+      - ''
+      - ' &7► &7Click to &eSpawn&7 this Pet!'
+
+petMenu:
+  name: '&a&lYour Pet'
+
+abilities:
+  none: 'No abilities'
+
+skinsPackMenu:
+  noSkinPacks: "%prefix% &cThis mob has no skin packs!"
+  cantSelect: "%prefix% &cYou do not own this skin pack!"
+  name: "&ePet Skin Packs"
+  skinPackItem:
+    name: '&b&l%skin pack%&b Skin Pack'
+    lore:
+      - '&a ⭐ &7Click here to active this skin pack!'
+      - ''
+      - '%status%'
+    status:
+      noAccess: '&c ► You don''t have access to this pack.'
+      alreadyOwns: '&a ► You own this skin pack!'
+
+petShop:
+  name: '&d&lPet Shop'
+  petItem:
+    name: '&b&l%base name%&b Pet'
+    lore:
+      - '&7Click here to purchase this pet.'
+      - '&a ⭐ Ability: &f%abilities%'
+      - ''
+      - '%status%'
+    status:
+      canBuy: ' &b&lPRICE &f$%price%'
+      alreadyOwns: ' &c► &cYou already own this pet'
+
+messages:
+  petDespawned: "%prefix% &cYour pet &l%pet%&c has despawned!"
+  petSpawned: "%prefix% &aYour pet &l%pet%&c has spawned!"
+  petNotActive: "%prefix% &cYou do not have an active pet!"
+  cannotAfford: "%prefix% &cYou cannot afford this transaction."
+  purchasedPet: "%prefix% &aSuccessfully purchased new &f%pet% &apet!"
+  rename:
+    renameYourPet: "%prefix% &fType your pet's new name in chat. Use &c&ocancel&f to cancel renaming."
+    tooLong: "%prefix% &cNew pet name is too long."
+    containsBadWords: "%prefix% &cNew pet name contains banned words."
+    cancelled: "%prefix% &cRenaming has been cancelled."
+    renamedTo: "%prefix% &aYour pet has been renamed to %new name%&a!"

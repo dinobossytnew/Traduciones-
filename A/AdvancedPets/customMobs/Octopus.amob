@@ -1,0 +1,263 @@
+# Tips:
+# 1 - if making a small mob, armor stands that are stuck in ground are usually seen darker, this is rendered from client so only
+#     way of avoiding is to flip armor stand's head 180 degrees (like this 'headPose: 180;0;0), upside down so you can elevate the
+#     armor stand higher from the ground, this way avoiding such issue.
+#
+# Tool for easier armor stand handling: https://haselkern.com/Minecraft-ArmorStand/
+
+# EDIT MOBS IN-GAME USING /as editor
+
+settings:
+  health: 10 # Mob's health 
+  sounds: SLIME # Sound List: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Sound.html
+  hostile: false # Is mob hostile? If set to false, mob will not be aggressive towards players
+  nametagHeight: 0.3 # How high should the nametag be?
+  damage: 3 # How much damage should the mobs do to players?
+  animateOnWalking: true # Should animation be active only when mob is walking?
+  animationSmoothness: 20 # How smooth should the animation be? 1-20, higher being smoother.
+  animationSpeed: 10 # How smooth should the animation be? 1-20, lower being faster.
+
+# You can save skins as specific names here to be used with parts
+#  Get skin's base64 from:
+#  Custom Skin - Convert a skin into base64 https://mineskin.org/
+#  Pre-made Skins - Get pre-made skin's value (under 'other', 'value' will be the base64) https://minecraft-heads.com/custom-heads
+skins:
+  skin: eyJ0aW1lc3RhbXAiOjE1ODgwNTU2Nzk0NzAsInByb2ZpbGVJZCI6IjNlM2IxMzljYzZlNzRiMzhiNTQ5ODRkY2ViNWI3MjJlIiwicHJvZmlsZU5hbWUiOiJNaWN1bGdhbWVzIiwic2lnbmF0dXJlUmVxdWlyZWQiOnRydWUsInRleHR1cmVzIjp7IlNLSU4iOnsidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9iNjU4ZDdjYjgzMTU0ZTViODBjNTA0OGZjMjdhNzJhYTg1NTAwZTY5ZjZjMzExOTEzYWJjYWFmZWFlOGJjMDMxIn19fQ==
+
+
+# Here are all the mob parts listed
+#  These parts are all dynamic, can be deleted, new created and edited
+#  Edit mobs in-game using /as editor
+parts:
+  head:
+    forwardBackward: 0.0
+    upDown: -0.3
+    rightLeft: 0.0
+    visible: false
+    headPose: 0;0;180
+    mini: false
+    headItem: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmQ5OTQ0ZmI1ZWI4NjM5YjI4ZTc4ZGMzOGQ1NzlkODhmYjM4MGNhNTc4OWM4MWY1NTM4NDExMmQyMjdlMyJ9fX0=
+  body-1:
+    forwardBackward: 0.25
+    upDown: -0.8
+    rightLeft: 0.25
+    visible: false
+    headPose: 0;0;180
+    mini: false
+    headItem: skin
+  body-2:
+    forwardBackward: -0.25
+    upDown: -0.8
+    rightLeft: 0.25
+    visible: false
+    headPose: 0;0;180
+    mini: false
+    headItem: skin
+  body-3:
+    forwardBackward: -0.25
+    upDown: -0.8
+    rightLeft: -0.25
+    visible: false
+    headPose: 0;0;180
+    mini: false
+    headItem: skin
+  body-4:
+    forwardBackward: 0.25
+    upDown: -0.8
+    rightLeft: -0.25
+    visible: false
+    headPose: 0;0;180
+    mini: false
+    headItem: skin
+  leg1-1:
+    forwardBackward: 0.3
+    upDown: -0.15
+    rightLeft: 0.7
+    visible: false
+    headPose: 0;0;180
+    mini: true
+    headItem: skin
+  leg1-2:
+    forwardBackward: 0.45
+    upDown: -0.2
+    rightLeft: 0.95
+    visible: false
+    headPose: 0;0;180
+    mini: true
+    headItem: skin
+  leg1-3:
+    forwardBackward: 0.65
+    upDown: -0.25
+    rightLeft: 1.2
+    visible: false
+    headPose: 0;0;180
+    mini: true
+    headItem: skin
+  leg2-1:
+    forwardBackward: -0.3
+    upDown: -0.15
+    rightLeft: 0.7
+    visible: false
+    headPose: 0;0;180
+    mini: true
+    headItem: skin
+  leg2-2:
+    forwardBackward: -0.45
+    upDown: -0.2
+    rightLeft: 0.95
+    visible: false
+    headPose: 0;0;180
+    mini: true
+    headItem: skin
+  leg2-3:
+    forwardBackward: -0.65
+    upDown: -0.25
+    rightLeft: 1.2
+    visible: false
+    headPose: 0;0;180
+    mini: true
+    headItem: skin
+  leg3-1:
+    forwardBackward: -0.3
+    upDown: -0.15
+    rightLeft: -0.7
+    visible: false
+    headPose: 0;0;180
+    mini: true
+    headItem: skin
+  leg3-2:
+    forwardBackward: -0.45
+    upDown: -0.2
+    rightLeft: -0.95
+    visible: false
+    headPose: 0;0;180
+    mini: true
+    headItem: skin
+  leg3-3:
+    forwardBackward: -0.65
+    upDown: -0.25
+    rightLeft: -1.2
+    visible: false
+    headPose: 0;0;180
+    mini: true
+    headItem: skin
+  leg4-1:
+    forwardBackward: 0.3
+    upDown: -0.15
+    rightLeft: -0.7
+    visible: false
+    headPose: 0;0;180
+    mini: true
+    headItem: skin
+  leg4-2:
+    forwardBackward: 0.45
+    upDown: -0.2
+    rightLeft: -0.95
+    visible: false
+    headPose: 0;0;180
+    mini: true
+    headItem: skin
+  leg4-3:
+    forwardBackward: 0.65
+    upDown: -0.25
+    rightLeft: -1.2
+    visible: false
+    headPose: 0;0;180
+    mini: true
+    headItem: skin
+  leg5-1:
+    rightLeft: 0.3
+    upDown: -0.15
+    forwardBackward: -0.7
+    visible: false
+    headPose: 0;0;180
+    mini: true
+    headItem: skin
+  leg5-2:
+    rightLeft: 0.45
+    upDown: -0.2
+    forwardBackward: -0.95
+    visible: false
+    headPose: 0;0;180
+    mini: true
+    headItem: skin
+  leg5-3:
+    rightLeft: 0.65
+    upDown: -0.25
+    forwardBackward: -1.2
+    visible: false
+    headPose: 0;0;180
+    mini: true
+    headItem: skin
+  leg6-1:
+    rightLeft: 0.3
+    upDown: -0.15
+    forwardBackward: 0.7
+    visible: false
+    headPose: 0;0;180
+    mini: true
+    headItem: skin
+  leg6-2:
+    rightLeft: 0.45
+    upDown: -0.2
+    forwardBackward: 0.95
+    visible: false
+    headPose: 0;0;180
+    mini: true
+    headItem: skin
+  leg6-3:
+    rightLeft: 0.65
+    upDown: -0.25
+    forwardBackward: 1.2
+    visible: false
+    headPose: 0;0;180
+    mini: true
+    headItem: skin
+  leg7-1:
+    rightLeft: -0.3
+    upDown: -0.15
+    forwardBackward: 0.7
+    visible: false
+    headPose: 0;0;180
+    mini: true
+    headItem: skin
+  leg7-2:
+    rightLeft: -0.45
+    upDown: -0.2
+    forwardBackward: 0.95
+    visible: false
+    headPose: 0;0;180
+    mini: true
+    headItem: skin
+  leg7-3:
+    rightLeft: -0.65
+    upDown: -0.25
+    forwardBackward: 1.2
+    visible: false
+    headPose: 0;0;180
+    mini: true
+    headItem: skin
+  leg8-1:
+    rightLeft: -0.3
+    upDown: -0.15
+    forwardBackward: -0.7
+    visible: false
+    headPose: 0;0;180
+    mini: true
+    headItem: skin
+  leg8-2:
+    rightLeft: -0.45
+    upDown: -0.2
+    forwardBackward: -0.95
+    visible: false
+    headPose: 0;0;180
+    mini: true
+    headItem: skin
+  leg8-3:
+    rightLeft: -0.65
+    upDown: -0.25
+    forwardBackward: -1.2
+    visible: false
+    headPose: 0;0;180
+    mini: true
+    headItem: skin

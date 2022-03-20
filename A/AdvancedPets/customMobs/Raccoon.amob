@@ -1,0 +1,104 @@
+# Tips:
+# 1 - if making a small mob, armor stands that are stuck in ground are usually seen darker, this is rendered from client so only
+#     way of avoiding is to flip armor stand's head 180 degrees (like this 'headPose: 180;0;0), upside down so you can elevate the
+#     armor stand higher from the ground, this way avoiding such issue.
+#
+# Tool for easier armor stand handling: https://haselkern.com/Minecraft-ArmorStand/
+
+# EDIT MOBS IN-GAME USING /as editor
+
+settings:
+  health: 15 # Mob's health 
+  sounds: WOLF # Sound List: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Sound.html
+  hostile: false # Is mob hostile? If set to false, mob will not be aggressive towards players
+  nametagHeight: 0.3 # How high should the nametag be?
+  damage: 3 # How much damage should the mobs do to players?
+  animateOnWalking: true # Should animation be active only when mob is walking?
+  animationSmoothness: 5 # How smooth should the animation be? 1-20, higher being smoother.
+  animationSpeed: 2 # How smooth should the animation be? 1-20, lower being faster.
+
+# You can save skins as specific names here to be used with parts
+#  Get skin's base64 from:
+#  Custom Skin - Convert a skin into base64 https://mineskin.org/
+#  Pre-made Skins - Get pre-made skin's value (under 'other', 'value' will be the base64) https://minecraft-heads.com/custom-heads
+skins:
+  skin: ewogICJ0aW1lc3RhbXAiIDogMTU4OTcyMzQyNjYyNiwKICAicHJvZmlsZUlkIiA6ICJhNzdkNmQ2YmFjOWE0NzY3YTFhNzU1NjYxOTllYmY5MiIsCiAgInByb2ZpbGVOYW1lIiA6ICIwOEJFRDUiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmQ3YjA5YTgzOTJmMDExMTcxZGI0MTA4MzY4ZDk1N2UxMzkyZjZlZTVlYjFmOTI0YjdjNmJjOWI1OTk2MjU5ZCIKICAgIH0KICB9Cn0=
+
+# Here are all the mob parts listed
+#  These parts are all dynamic, can be deleted, new created and edited
+#  Edit mobs in-game using /as editor
+parts:
+  head:
+    forwardBackward: 0.0
+    upDown: -1.0
+    rightLeft: 0.28
+    visible: false
+    mini: false
+    headItem: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjYzYzhlMWNmM2U4OTA1MDczZGNiZTE4YTQ4ZThkN2I5NWUxYWU1ZmM1OGQ3OTM2ZWQ2N2Y3MjhiYjVhMzFjIn19fQ==
+  body1:
+    forwardBackward: 0.0
+    upDown: -0.6
+    rightLeft: -0.15
+    visible: false
+    mini: false
+    headPose: 180;0;0
+    headItem: skin
+  body2:
+    forwardBackward: 0.0
+    upDown: -0.6
+    rightLeft: -0.6
+    visible: false
+    mini: false
+    headPose: 180;0;0
+    headItem: skin
+  leg1:
+    forwardBackward: -0.35
+    upDown: -0.2
+    rightLeft: -0.03
+    visible: false
+    mini: true
+    headPose: 180;15;0
+    headItem: skin
+  leg2:
+    forwardBackward: 0.35
+    upDown: -0.2
+    rightLeft: -0.03
+    visible: false
+    mini: true
+    headPose: 180;-15;0
+    headItem: skin
+  leg3:
+    forwardBackward: 0.35
+    upDown: -0.2
+    rightLeft: -0.73
+    visible: false
+    mini: true
+    headPose: 180;15;0
+    headItem: skin
+  leg4:
+    forwardBackward: -0.35
+    upDown: -0.2
+    rightLeft: -0.73
+    visible: false
+    mini: true
+    headPose: 180;-15;0
+    headItem: skin
+  tail:
+    forwardBackward: 0.05
+    upDown: -0.3
+    rightLeft: -0.68
+    visible: false
+    mini: true
+    handPose: 90;0;-90
+    handItem: ewogICJ0aW1lc3RhbXAiIDogMTU4OTcyNDEzODYzNiwKICAicHJvZmlsZUlkIiA6ICI3MmNiMDYyMWU1MTA0MDdjOWRlMDA1OTRmNjAxNTIyZCIsCiAgInByb2ZpbGVOYW1lIiA6ICJNb3M5OTAiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDNiYjI0YTA5YWE2NmNjNjEwOGVjNTZiMmE2YjdlN2Q2ZTYwNmRmNjhjNzFmYzc0NGI1MjkzMGU2YzEzZjc1NiIKICAgIH0KICB9Cn0=
+
+animations:
+  '1':
+    leg1:
+      headPose: 180;15;-10
+    leg2:
+      headPose: 180;-15;-10
+    leg3:
+      headPose: 180;15;10
+    leg4:
+      headPose: 180;-15;10

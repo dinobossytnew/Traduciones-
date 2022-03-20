@@ -1,0 +1,105 @@
+settings:
+  health: 20
+  sounds: ZOMBIE
+  hostile: false
+  damage: 1
+  nametagheight: 0
+  animateonwalking: true
+  animationsmoothness: 5
+  animationspeed: 2
+  walkingspeed: 1.1
+skins:
+  head: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzQ5NWY5NDQzYzYyMWMxODk5MWFhYzdlZWZkY2Y5NTM5NjY5OTU1NzE2ZmUxNTkxYzY2M2E3OTcyYzEwNDhiIn19fQ==
+  fur: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2FmMDM5YmVjMWZjMWZiNzUxOTYwOTJiMjZlNjMxZjM3YTg3ZGZmMTQzZmMxODI5Nzc5OGQ0N2M1ZWFhZiJ9fX0=
+parts:
+  head:
+    forwardBackward: 0
+    upDown: -1.06
+    rightLeft: 0
+    visible: false
+    headPose: 0;0;0
+    mini: false
+    headItem: head
+  body_1:
+    forwardBackward: 0.15
+    upDown: -0.45
+    rightLeft: -0.4
+    visible: false
+    headPose: 0;0;0
+    mini: true
+    left_handPose: 90;-45;45
+    headItem: fur
+  body_2:
+    forwardBackward: -0.15
+    upDown: -0.45
+    rightLeft: -0.4
+    visible: false
+    headPose: 0;0;0
+    mini: true
+    left_handPose: 90;-45;45
+    headItem: fur
+  body_3:
+    forwardBackward: 0.15
+    upDown: -0.45
+    rightLeft: -0.81
+    visible: false
+    headPose: 0;0;0
+    mini: true
+    left_handPose: 90;-45;45
+    headItem: fur
+  body_4:
+    forwardBackward: -0.15
+    upDown: -0.45
+    rightLeft: -0.81
+    visible: false
+    headPose: 0;0;0
+    mini: true
+    left_handPose: 90;-45;45
+    headItem: fur
+  leg_1:
+    forwardBackward: -0.31
+    upDown: -0.33
+    rightLeft: -0.31
+    visible: false
+    headPose: 180;5;0
+    mini: true
+    left_handPose: 90;-45;45
+    headItem: fur
+  leg_2:
+    forwardBackward: 0.31
+    upDown: -0.33
+    rightLeft: -0.31
+    visible: false
+    headPose: 180;-5;0
+    mini: true
+    left_handPose: 90;-45;45
+    headItem: fur
+  leg_3:
+    forwardBackward: -0.33
+    upDown: -0.33
+    rightLeft: -0.96
+    visible: false
+    headPose: 180;0;0
+    mini: true
+    left_handPose: 90;-45;45
+    headItem: fur
+  leg_4:
+    forwardBackward: 0.35
+    upDown: -0.33
+    rightLeft: -0.96
+    visible: false
+    headPose: 180;0;0
+    mini: true
+    left_handPose: 90;-45;45
+    headItem: fur
+
+animations:
+  '1':
+    leg_1:
+      headPose: 180;5;-10
+    leg_2:
+      headPose: 180;-5;10
+    leg_3:
+      headPose: 180;0;-10
+    leg_4:
+      headPose: 180;0;10

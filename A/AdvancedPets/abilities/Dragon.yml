@@ -1,0 +1,17 @@
+# Octopus Abilities
+#  Pets can give off special abilities to pet owners passively or at events
+#  Effect List: https://wiki.advancedplugins.net/effects/effect-types
+#  Read more here: https://wiki.advancedplugins.net/effects/types
+
+description: "Chance to get jump boost when defending"
+
+DEFENSE:
+  chance: 25
+  cooldown: 4
+  effects:
+    - 'POTION:JUMP:2:40'
+DEFENSE_MOB:
+  chance: 25
+  cooldown: 4
+  effects:
+    - 'POTION:JUMP:2:40'

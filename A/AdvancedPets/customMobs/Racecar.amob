@@ -1,0 +1,190 @@
+
+settings:
+  health: 15 # Mob's health
+  sounds: OCELOT # Sound List: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Sound.html
+  hostile: false # Is mob hostile? If set to false, mob will not be aggressive towards players
+  nametagHeight: -0.3 # How high should the nametag be?
+  damage: 3 # How much damage should the mobs do to players?
+  animateOnWalking: true # Should animation be active only when mob is walking?
+  animationSmoothness: 10 # How smooth should the animation be? 1-20, higher being smoother.
+  animationSpeed: 1 # How smooth should the animation be? 1-20, lower being faster.
+
+
+skins:
+  exampleSkin: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTVhZWUyYWI1ZWU0MmVkNzAxMzczZmFmNDIyNDI4NjA4ZTdlNWFhZmI5NzJmYWUyMTk2ODQyNTVkYzMyY2VjNyJ9fX0=
+  govde: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmU4YzZjNWYyYmI5M2U0NDkyMzNjZTUxYTIyMDQyODdmOWJkOWYwNmU0NTY3NmI1ZTU4NjVlZmIzYmY1NDQ1ZiJ9fX0=
+  govde2: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2EyOTNjNzYxZWU5ZTljNmVlNDJiMjkxZDBhOTE4MGFmZjY2ODc3ZDk3YWE3MTJjOTVlMTlmZTZlMWE4YjE2ZCJ9fX0=
+  direksion: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2I0ZGY4MTI1NmU3YzM0NjI4MzE5ZjQ3ZGM0ZGJkOTc3ZTFlY2E3ZmFmNzhjZDc4MjEzYWEzOGU1N2VmIn19fQ==
+  teker: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmJlZTVlMzkzMzdlN2JlNzBkNGQ1MGNkMjVhMWMxMTcyNDgwMGU5MjM5OWY4YTA1YjRkMGQ3YjJhZDczNGY2NSJ9fX0=
+  tavsan: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjFhOTFmMWZhYjlhNWMzMDQ3Mzg3NTg2OTc4ZDI5MTljOWY1NGQ4OGYzZTYxNDU4YWJlYzE2OTRkOTYxNzY5ZCJ9fX0=
+  yumurta: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTg4OWYxMWM4ODM4YzA5ZTFlY2YyZjgzNDM5ZWJjYjlmMzI0ZTU2N2IwZTlkYzRiN2MyNWQ5M2U1MGZmMmIifX19
+  yumurta1: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGFkM2RhZWJhZTJmNWU3MThiOTUyNmQ1MmI1YjMxOTlkNjhlMzM2ZjllNGQ5NDNiMjgzZDgxODQxOWUzNjYifX19
+  yumurta2: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2UxMDEwNzAyMTMxMTI0NmU0YzI3MTkzZWJlYWVjM2NkMDY0YmRiODZkNjJkMjlhZjA3YjdmYTQ5NjgyYzcifX19
+  yumurta3: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWViMzM1MTgyZGI1ZjNiZTgwZmNjZjZlYWJlNTk5ZjQxMDdkNGZmMGU5ZjQ0ZjM0MTc0Y2VmYTZlMmI1NzY4In19fQ==
+  kulak1: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTNkOGI5ZWZjZTc2OTBjNWEyMzUzNGM3NTExMWM4YTg0YTE0YTVlNjY4NGQxMDMwZDFhNDA4OTU4ZDY2N2Q1MyJ9fX0=
+  kulak2: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjM4YmM5YzdhMzgwMmQwM2UwYTFjYjQxNDg0ZWYzMGRhMzk2Nzg2ZjZmMDFiYmVlZjM0YjJhNDIyZjMwN2EyNiJ9fX0=
+
+parts:
+  direksion:
+    upDown: -0.18
+    forwardBackward: 0
+    rightLeft: 0.365
+    visible: false
+    mini: true
+    headPose: 325;180;0
+    headItem: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2I0ZGY4MTI1NmU3YzM0NjI4MzE5ZjQ3ZGM0ZGJkOTc3ZTFlY2E3ZmFmNzhjZDc4MjEzYWEzOGU1N2VmIn19fQ==
+  taban1:
+    upDown: -0.35
+    forwardBackward: -0.21
+    rightLeft: -0.203
+    visible: false
+    mini: true
+    headItem: govde
+    headPose: 0;0;90
+  taban2:
+    upDown: -0.35
+    forwardBackward: -0.21
+    rightLeft: 0.23
+    visible: false
+    mini: true
+    headItem: govde
+    headPose: 0;0;90
+  taban3:
+    upDown: -0.35
+    forwardBackward: -0.21
+    rightLeft: 0.66
+    visible: false
+    mini: true
+    headItem: govde
+    headPose: 0;0;90
+  taban4:
+    upDown: -0.35
+    forwardBackward: -0.14
+    rightLeft: 0.75
+    visible: false
+    mini: true
+    headItem: govde
+    headPose: 45;0;90
+  teker1:
+    upDown: -0.49
+    forwardBackward: 0.21
+    rightLeft: 0.797
+    visible: false
+    mini: true
+    headItem: teker
+    headPose: 0;0;90
+  teker2:
+    upDown: -0.49
+    forwardBackward: -0.21
+    rightLeft: 0.797
+    visible: false
+    mini: true
+    headItem: teker
+    headPose: 0;0;-90
+  tekerarka1:
+    upDown: -0.49
+    forwardBackward: 0.21
+    rightLeft: -0.203
+    visible: false
+    mini: true
+    headItem: teker
+    headPose: 0;0;90
+  tekerarka2:
+    upDown: -0.49
+    forwardBackward: -0.21
+    rightLeft: -0.203
+    visible: false
+    mini: true
+    headItem: teker
+    headPose: 0;0;-90
+  cam:
+    upDown: -0.05
+    forwardBackward: 0
+    rightLeft: 1.085
+    visible: false
+    mini: true
+    headItem: material:STAINED_GLASS_PANE
+    headPose: 325;0;0
+  kabut:
+    upDown: -0.3
+    forwardBackward: 0
+    rightLeft: 0.797
+    visible: false
+    mini: true
+    headItem: govde2
+    headPose: 325;0;0
+  cubuk:
+    upDown: -0.49
+    forwardBackward: 0
+    rightLeft: -0.485
+    visible: false
+    mini: true
+    headItem: material:STICK
+    headPose: 0;-90;0
+  cubuk2:
+    upDown: -0.49
+    forwardBackward: 0.375
+    rightLeft: -0.485
+    visible: false
+    mini: true
+    headItem: material:STICK
+    headPose: 0;-90;0
+  havuc:
+    upDown: -0.125
+    forwardBackward: 0
+    rightLeft: -0.1
+    visible: false
+    mini: true
+    headItem: material:double_plant damage:3
+    headPose: -90;0;0
+  koltuk:
+    upDown: -0.2
+    forwardBackward: 0
+    rightLeft: -0.1
+    visible: false
+    mini: true
+    headItem: material:QUARTZ_STAIRS
+    headPose: 0;0;0
+  ruzgarlk1:
+    upDown: 0.26
+    forwardBackward: 0.375
+    rightLeft: -0.635
+    visible: false
+    mini: true
+    headItem: material:CARPET
+    headPose: 0;0;0
+  ruzgarlk2:
+    upDown: 0.23
+    forwardBackward: 0
+    rightLeft: -0.635
+    visible: false
+    mini: true
+    headItem: material:CARPET
+    headPose: 0;0;0
+  ruzgarlk3:
+    upDown: 0.26
+    forwardBackward: -0.375
+    rightLeft: -0.635
+    visible: false
+    mini: true
+    headItem: material:CARPET
+    headPose: 0;0;0
+animations:
+  1:
+    teker1:
+      headPose: 0;-44.9771869;90
+    teker2:
+      headPose: 0;44.9771869;-90
+    tekerarka1:
+      headPose: 0;-44.9771869;90
+    tekerarka2:
+      headPose: 0;44.9771869;-90
+  2:
+    teker1:
+      headPose: 0;-74.4845134;90
+    teker2:
+      headPose: 0;74.4845134;-90
+    tekerarka1:
+      headPose: 0;-74.4845134;90
+    tekerarka2:
+      headPose: 0;74.4845134;-90

@@ -1,0 +1,61 @@
+# Pet Menu Configuration
+# Opened by right-clicking a pet
+
+# Inventory name is located in plugins/AdvancedPets/lang files
+
+# Inventory size
+size: 9
+
+# Inventory Items, configuration guide: https://wiki.advancedplugins.net/configuration/config-items
+items: # Actions: ride_pet, rename, remove, pet_info
+  '0-8':
+    type: STAINED_GLASS_PANE
+    id: 15
+    custom-model-data: 0
+    name: ''
+    lore: []
+  '1':
+    type: SADDLE
+    id: 0
+    custom-model-data: 0
+    action: ride_pet
+    name: '&aRide Your Pet'
+    lore:
+      - '&7 ► Click here to start riding your pet.'
+  '2':
+    type: NAME_TAG
+    id: 0
+    custom-model-data: 0
+    action: rename
+    name: '&aRename Your Pet'
+    lore:
+      - '&7 ► Click here to rename your pet.'
+  '4':
+    type: BOOK
+    id: 0
+    custom-model-data: 0
+    action: pet_info
+    name: '&a%pet name%'
+    lore:
+      - ' &7Information about your pet: '
+      - ''
+      - '&7 ℹ Owner: &f%owner%'
+      - '&7 ℹ Pet Type: &f%base name%'
+      - ''
+      - '&a ⭐ Ability: &f%abilities%'
+  '6':
+    type: BARRIER
+    id: 0
+    custom-model-data: 0
+    action: remove
+    name: '&aRemove your pet'
+    lore:
+      - '&7 ► Click here to remove your pet.'
+  '7':
+    type: LEATHER
+    id: 0
+    custom-model-data: 0
+    action: skin_packs
+    name: '&aChange how pet looks'
+    lore:
+      - '&7 ► Select a different skin pack for this pet.'

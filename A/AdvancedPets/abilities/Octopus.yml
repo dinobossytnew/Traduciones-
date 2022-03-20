@@ -1,0 +1,10 @@
+# Octopus Abilities
+#  Pets can give off special abilities to pet owners passively or at events
+#  Effect List: https://wiki.advancedplugins.net/effects/effect-types
+#  Read more here: https://wiki.advancedplugins.net/effects/types
+
+description: "Breathe underwater"
+
+EFFECT_STATIC:
+  effects:
+    - 'POTION:WATER_BREATHING:0 %owner%'

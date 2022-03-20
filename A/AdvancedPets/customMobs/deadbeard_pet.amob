@@ -1,0 +1,9 @@
+settings:
+  health: 20
+  damage: 1
+  nametagheight: 0
+  walkingspeed: 1.1
+  modelengine: deadbeard_pet
+skins:
+parts:
+animations:

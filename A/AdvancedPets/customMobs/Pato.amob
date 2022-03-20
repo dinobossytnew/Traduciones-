@@ -1,0 +1,94 @@
+settings:
+  health: 20
+  sounds: ZOMBIE
+  hostile: false
+  damage: 1
+  nametagheight: 2.0
+  animateonwalking: true
+  animationsmoothness: 10
+  animationspeed: 4
+  walkingspeed: 1.1
+skins:
+  exampleHead: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTZmYzg1NGJiODRjZjRiNzY5NzI5Nzk3M2UwMmI3OWJjMTA2OTg0NjBiNTFhNjM5YzYwZTVlNDE3NzM0ZTExIn19fQ==
+parts:
+  body:
+    forwardBackward: -0.7
+    upDown: -0.8
+    rightLeft: 0
+    visible: false
+    headPose: 0;0;0
+    mini: false
+    headItem: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzdhODIxYTRmOTkzZTU2M2IyOGFhYTFiMDliODhlMmIyN2NlNWQzMGQxNTY1OWNjY2Q3Zjk2MzU1MWI1NzUifX19
+    'null': 0.0
+  body1:
+    forwardBackward: -0.1
+    upDown: -0.8
+    rightLeft: 0
+    visible: false
+    headPose: 0;0;0
+    mini: false
+    headItem: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzdhODIxYTRmOTkzZTU2M2IyOGFhYTFiMDliODhlMmIyN2NlNWQzMGQxNTY1OWNjY2Q3Zjk2MzU1MWI1NzUifX19
+    'null': 0.0
+  body2:
+    forwardBackward: -0.7
+    upDown: -0.8
+    rightLeft: -0.6
+    visible: false
+    headPose: 0;0;0
+    mini: false
+    headItem: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzdhODIxYTRmOTkzZTU2M2IyOGFhYTFiMDliODhlMmIyN2NlNWQzMGQxNTY1OWNjY2Q3Zjk2MzU1MWI1NzUifX19
+    'null': 0.0
+  body3:
+    forwardBackward: -0.1
+    upDown: -0.8
+    rightLeft: -0.6
+    visible: false
+    headPose: 0;0;0
+    mini: false
+    headItem: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzdhODIxYTRmOTkzZTU2M2IyOGFhYTFiMDliODhlMmIyN2NlNWQzMGQxNTY1OWNjY2Q3Zjk2MzU1MWI1NzUifX19
+    'null': 0.0
+  body4:
+    forwardBackward: -0.1
+    upDown: -0.2
+    rightLeft: -0.6
+    visible: false
+    headPose: 0;0;0
+    mini: false
+    headItem: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzdhODIxYTRmOTkzZTU2M2IyOGFhYTFiMDliODhlMmIyN2NlNWQzMGQxNTY1OWNjY2Q3Zjk2MzU1MWI1NzUifX19
+    'null': 0.0
+  body5:
+    forwardBackward: -0.7
+    upDown: -0.2
+    rightLeft: -0.6
+    visible: false
+    headPose: 0;0;0
+    mini: false
+    headItem: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzdhODIxYTRmOTkzZTU2M2IyOGFhYTFiMDliODhlMmIyN2NlNWQzMGQxNTY1OWNjY2Q3Zjk2MzU1MWI1NzUifX19
+    'null': 0.0
+  body6:
+    forwardBackward: -0.7
+    upDown: -0.2
+    rightLeft: 0.0
+    visible: false
+    headPose: 0;0;0
+    mini: false
+    headItem: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzdhODIxYTRmOTkzZTU2M2IyOGFhYTFiMDliODhlMmIyN2NlNWQzMGQxNTY1OWNjY2Q3Zjk2MzU1MWI1NzUifX19
+    'null': 0.0
+  body7:
+    forwardBackward: -0.1
+    upDown: -0.2
+    rightLeft: 0.0
+    visible: false
+    headPose: 0;0;0
+    mini: false
+    headItem: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzdhODIxYTRmOTkzZTU2M2IyOGFhYTFiMDliODhlMmIyN2NlNWQzMGQxNTY1OWNjY2Q3Zjk2MzU1MWI1NzUifX19
+    'null': 0.0
+  pata:
+    forwardBackward: -0.8
+    upDown: 0
+    rightLeft: 0
+    visible: true
+    headPose: 0;0;0
+    mini: false
+    headItem: material:BARRIER
+    offhandItem: yellow_dye

@@ -1,0 +1,10 @@
+# Gorilla Abilities
+#  Pets can give off special abilities to pet owners passively or at events
+#  Effect List: https://wiki.advancedplugins.net/effects/effect-types
+#  Read more here: https://wiki.advancedplugins.net/effects/types
+
+description: "Makes you more resistant to damage"
+
+EFFECT_STATIC:
+  effects:
+    - 'POTION:DAMAGE_RESISTANCE:0'

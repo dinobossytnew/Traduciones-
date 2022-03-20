@@ -1,0 +1,31 @@
+# Pet Skin Packs Menu Configuration
+# Inventory name, for sale item configuration in plugins/AdvancedPets/lang files
+
+# Inventory size
+size: 36
+
+# Slots in which pets for sale are shown
+skinsSlots: [10, 11, 12, 13, 14, 15, 16]
+
+# Inventory Items, configuration guide: https://wiki.advancedplugins.net/configuration/config-items
+items: # Actions: close, pet_menu
+  '9-17':
+    type: STAINED_GLASS_PANE
+    id: 7
+    custom-model-data: 0
+    name: ''
+    lore: []
+  '27-35':
+    type: STAINED_GLASS_PANE
+    id: 15
+    custom-model-data: 0
+    name: ''
+    lore: []
+  '31':
+    type: BARRIER
+    id: 0
+    custom-model-data: 0
+    action: pet_menu
+    name: '&cGo back to your pet'
+    lore:
+      - '&7Click here to go back to your pet.'

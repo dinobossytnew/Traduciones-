@@ -1,0 +1,57 @@
+# Tips:
+# 1 - if making a small mob, armor stands that are stuck in ground are usually seen darker, this is rendered from client so only
+#     way of avoiding is to flip armor stand's head 180 degrees (like this 'headPose: 180;0;0), upside down so you can elevate the
+#     armor stand higher from the ground, this way avoiding such issue.
+#
+# Tool for easier armor stand handling: https://haselkern.com/Minecraft-ArmorStand/
+
+# EDIT MOBS IN-GAME USING /as editor
+
+settings:
+  health: 30 # Mob's health 
+  sounds: IRON_GOLEM # Sound List: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Sound.html
+  hostile: false # Is mob hostile? If set to false, mob will not be aggressive towards players
+  nametagHeight: 0.3 # How high should the nametag be?
+  damage: 3 # How much damage should the mobs do to players?
+  animateOnWalking: true # Should animation be active only when mob is walking?
+  animationSmoothness: 20 # How smooth should the animation be? 1-20, higher being smoother.
+  animationSpeed: 10 # How smooth should the animation be? 1-20, lower being faster.
+
+# You can save skins as specific names here to be used with parts
+#  Get skin's base64 from:
+#  Custom Skin - Convert a skin into base64 https://mineskin.org/
+#  Pre-made Skins - Get pre-made skin's value (under 'other', 'value' will be the base64) https://minecraft-heads.com/custom-heads
+skins:
+  skin: eyJ0aW1lc3RhbXAiOjE1ODUwNzkzNTcyODMsInByb2ZpbGVJZCI6IjJkYzc3YWU3OTQ2MzQ4MDI5NDI4MGM4NDIyNzRiNTY3IiwicHJvZmlsZU5hbWUiOiJzYWR5MDYxMCIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWRjNjI0NTQ3NDQxMGIwOTUyMjkwNzFmNzkwNTJiOWM3ODYzNGZiOTcxODJlZWM2ZWE2OTQ1YTJhZjRiNWJmZCJ9fX0=
+
+# Here are all the mob parts listed
+#  These parts are all dynamic, can be deleted, new created and edited
+#  Edit mobs in-game using /as editor
+parts:
+  head:
+    forwardBackward: 0.0
+    upDown: 0.0
+    rightLeft: 0.0
+    visible: false
+    mini: true
+    headItem: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDJkMjcxZjgyNjc0OTE2ZGNiNDdiMzcyYTU3MmY2MWU3NDcyZmUwNjNiMmM5MjQ2YWVlYjdjNTdhODgzNSJ9fX0=
+  body:
+    forwardBackward: 0.3
+    upDown: -0.95
+    rightLeft: 0.0
+    visible: false
+    mini: false
+    headPose: 0;0;270
+    headItem: skin 
+
+# Mobs Animations
+# Explanation: https://as.advancedplugins.net/animations
+animations:
+  1:
+    body:
+      headPose: 0;180;270
+      returnToOriginaPose: false
+  1:
+    body:
+      headPose: 0;360;270
+      returnToOriginaPose: false
