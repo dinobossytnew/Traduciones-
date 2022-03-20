@@ -1,0 +1,502 @@
+#Hello! This is the new file created in 1.6.2-BETA-PRO
+#This file contains new tags added in default config.
+#In order to not modify the current tags you created this file has been added.
+#This file will always overwrite the file you have in your server.
+#Don't modify this file, it will always reset. If you like any of these new tags just copy the whole section of the tag
+#in your tags.yml file and run "/alonsotags reload", new tags will be activated :D
+#If you think your tag idea should be added in default config, let us know in our discord server!
+#Join now on https://alonsoaliaga.com/discord
+#Once again, thanks for purchasing my resource <3
+Tags: #Don't copy this line.
+  sus-red-tag: #Added in 1.6.2-BETA-PRO
+    Material: CUSTOM_HEAD
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGM0ZDQ0YTBmZmUwMjM0OWU5OWRhMDYyOTIxMzA2MzExM2U2YmIzYWZjMjU5ZjQ2NjE4YzkwZWRjZTgzMDc4NiJ9fX0="
+    Dyeable: true
+    Default-color: '&c'
+    Hide-flags: true
+    Tag: "{COLOR}[SUS]"
+    Displayname: "&c&l{COLOR}Suspicious tag"
+    Permission: "alonsotags.tag.suspicious-red"
+    Price: 0
+    Unbreakable: false
+    Lore:
+      Locked:
+      - "&7You look suspicious!"
+      - "&7Preview: &f{TAG}"
+      - '{DYEABLE}'
+      - " "
+      - "&cPrice: &a${PRICE}"
+      - " "
+      - '{RIGHT-CLICK-TO-PREVIEW-MESSAGE}'
+      - "&cRequires &6[RANK]&c rank!"
+      - "&eClick to purchase."
+      Unlocked:
+      - "&7You look suspicious!"
+      - "&7Preview: &f{TAG}"
+      - '{DYEABLE}'
+      - " "
+      - '{RIGHT-CLICK-TO-PREVIEW-MESSAGE}'
+      - "&eClick to select."
+      Selected:
+      - "&7You look suspicious!"
+      - "&7Preview: &f{TAG}"
+      - '{DYEABLE}'
+      - " "
+      - "&aSelected."
+    No-permission-message: "&cYou require &b[RANK]&c to select this tag!"
+    Not-enough-money-message: "&cYou don't have enough money to purchase this tag!"
+  crewmate-red-tag: #Added in 1.6.2-BETA-PRO
+    Material: CUSTOM_HEAD
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzAxNjAxNDcxNmY1ZDllMjk0OTE3OGVjMzgyNzkyZjk4OTk2NzFkZTg5NGMxZDM4MTg0ODhlNWRiNTZkOWZhZSJ9fX0="
+    Dyeable: true
+    Default-color: '&9'
+    Hide-flags: true
+    Tag: "{COLOR}[CREWMATE]"
+    Displayname: "&9&l{COLOR}Crewmate tag"
+    Permission: "alonsotags.tag.crewmate-red"
+    Price: 0
+    Unbreakable: false
+    Lore:
+      Locked:
+      - "&7Are you a good guy?"
+      - "&7Preview: &f{TAG}"
+      - '{DYEABLE}'
+      - " "
+      - '{RIGHT-CLICK-TO-PREVIEW-MESSAGE}'
+      - "&cRequires &6[RANK]&c rank!"
+      - "&eClick to purchase."
+      Unlocked:
+      - "&7Are you a good guy?"
+      - "&7Preview: &f{TAG}"
+      - '{DYEABLE}'
+      - " "
+      - '{RIGHT-CLICK-TO-PREVIEW-MESSAGE}'
+      - "&eClick to select."
+      Selected:
+      - "&7Are you a good guy?"
+      - "&7Preview: &f{TAG}"
+      - '{DYEABLE}'
+      - " "
+      - "&aSelected."
+    No-permission-message: "&cYou require &b[RANK]&c to select this tag!"
+    Not-enough-money-message: "&cYou don't have enough money to purchase this tag!"
+  impostor-black-tag: #Added in 1.6.2-BETA-PRO
+    Material: CUSTOM_HEAD
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTg1NTI3ZmUyNjk0N2Y0M2E3MmRkY2IwMDZjNmRkYzQxZGE3YjIxMGRiMmRlNzEyNDdlNTNiZjA2MWZkODJiZSJ9fX0="
+    Dyeable: true
+    Default-color: '&8'
+    Hide-flags: true
+    Tag: "{COLOR}[IMPOSTOR]"
+    Displayname: "&8&l{COLOR}Impostor tag"
+    Permission: "alonsotags.tag.impostor-black"
+    Price: 0
+    Unbreakable: false
+    Lore:
+      Locked:
+      - "&7I saw you vent!"
+      - "&7Preview: &f{TAG}"
+      - '{DYEABLE}'
+      - " "
+      - '{RIGHT-CLICK-TO-PREVIEW-MESSAGE}'
+      - "&cRequires &6[RANK]&c rank!"
+      - "&eClick to purchase."
+      Unlocked:
+      - "&7I saw you vent!"
+      - "&7Preview: &f{TAG}"
+      - '{DYEABLE}'
+      - " "
+      - '{RIGHT-CLICK-TO-PREVIEW-MESSAGE}'
+      - "&eClick to select."
+      Selected:
+      - "&7I saw you vent!"
+      - "&7Preview: &f{TAG}"
+      - '{DYEABLE}'
+      - " "
+      - "&aSelected."
+    No-permission-message: "&cYou require &b[RANK]&c to select this tag!"
+    Not-enough-money-message: "&cYou don't have enough money to purchase this tag!"
+  lgtb-tag: #Added in 1.6.2-BETA-PRO
+    Material: CUSTOM_HEAD
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDRiMDM3OTRiOWIzZTNiNWQwN2UzYmU2OGI5NmFmODdkZjIxNWMzNzUyZTU0NzM2YzgwZjdkNTBiZDM0MzdhNCJ9fX0="
+    Dyeable: false
+    Default-color: '&f'
+    Hide-flags: true
+    Tag: "&d[&cL&6G&eB&2T&b+&9]"
+    Displayname: "&cL&6G&eB&2T&b+&9 &6tag"
+    Permission: "alonsotags.tag.lgtb-tag"
+    Price: 0
+    Unbreakable: false
+    Lore:
+      Locked:
+      - "&cL&6G&eB&2T community member?"
+      - "&7Preview: &f{TAG}"
+      - '{DYEABLE}'
+      - " "
+      - '{RIGHT-CLICK-TO-PREVIEW-MESSAGE}'
+      - "&cRequires &6[RANK]&c rank!"
+      - "&eClick to purchase."
+      Unlocked:
+      - "&cL&6G&eB&2T community member?"
+      - "&7Preview: &f{TAG}"
+      - '{DYEABLE}'
+      - " "
+      - '{RIGHT-CLICK-TO-PREVIEW-MESSAGE}'
+      - "&eClick to select."
+      Selected:
+      - "&cL&6G&eB&2T community member?"
+      - "&7Preview: &f{TAG}"
+      - '{DYEABLE}'
+      - " "
+      - "&aSelected."
+    No-permission-message: "&cYou require &b[RANK]&c to select this tag!"
+    Not-enough-money-message: "&cYou don't have enough money to purchase this tag!"
+  christmas-tag: #Added in 1.6.2-BETA-PRO
+    Material: CUSTOM_HEAD
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzNiYTlhOTQ4ZWYxMjVhYWZkYjZiYzkxYmU2YzgwNGQ3MWFlZTE2NGJhMjE5N2IwYjIyNWE4NDdmZmYwNDhjMCJ9fX0="
+    Dyeable: true
+    Default-color: '&2'
+    Hide-flags: true
+    Tag: "{COLOR}[XMAS]"
+    Displayname: "&2&l{COLOR}Christmas tag"
+    Permission: "alonsotags.tag.christmas"
+    Price: 0
+    Unbreakable: false
+    Lore:
+      Locked:
+      - "&7Is that time of the year?"
+      - "&7Preview: &f{TAG}"
+      - '{DYEABLE}'
+      - " "
+      - '{RIGHT-CLICK-TO-PREVIEW-MESSAGE}'
+      - "&cRequires &6[RANK]&c rank!"
+      - "&eClick to purchase."
+      Unlocked:
+      - "&7Is that time of the year?"
+      - "&7Preview: &f{TAG}"
+      - '{DYEABLE}'
+      - " "
+      - '{RIGHT-CLICK-TO-PREVIEW-MESSAGE}'
+      - "&eClick to select."
+      Selected:
+      - "&7Is that time of the year?"
+      - "&7Preview: &f{TAG}"
+      - '{DYEABLE}'
+      - " "
+      - "&aSelected."
+    No-permission-message: "&cYou require &b[RANK]&c to select this tag!"
+    Not-enough-money-message: "&cYou don't have enough money to purchase this tag!"
+  nerd-tag: #Added in 1.6.2-BETA-PRO
+    Material: CUSTOM_HEAD
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGFiNzc0NmE0MzA1MWQwN2Q0ZjNlMTMyODA4MDBmYjQwMTBkODcxYWVmOGZmZTE2ODJhMmJkNzUzYmZkZTRlMiJ9fX0="
+    Dyeable: true
+    Default-color: '&b'
+    Hide-flags: true
+    Tag: "{COLOR}[NERD]"
+    Displayname: "&b&l{COLOR}Nerd tag"
+    Permission: "alonsotags.tag.nerd"
+    Price: 0
+    Unbreakable: false
+    Lore:
+      Locked:
+      - "&7Well.. Yeah.. I know!"
+      - "&7Preview: &f{TAG}"
+      - '{DYEABLE}'
+      - " "
+      - '{RIGHT-CLICK-TO-PREVIEW-MESSAGE}'
+      - "&cRequires &6[RANK]&c rank!"
+      - "&eClick to purchase."
+      Unlocked:
+      - "&7Well.. Yeah.. I know!"
+      - "&7Preview: &f{TAG}"
+      - '{DYEABLE}'
+      - " "
+      - '{RIGHT-CLICK-TO-PREVIEW-MESSAGE}'
+      - "&eClick to select."
+      Selected:
+      - "&7Well.. Yeah.. I know!"
+      - "&7Preview: &f{TAG}"
+      - '{DYEABLE}'
+      - " "
+      - "&aSelected."
+    No-permission-message: "&cYou require &b[RANK]&c to select this tag!"
+    Not-enough-money-message: "&cYou don't have enough money to purchase this tag!"
+  halloween-tag: #Added in 1.6.2-BETA-PRO
+    Material: CUSTOM_HEAD
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTUwZjcxMmU4NzdkZmQ5MTBjOTdmMzgxOWEyMDBhMDVkNDllZTZiODNiNTkyNjg2ZTA5OWI5ZWNkNDQzZjIyOCJ9fX0="
+    Dyeable: true
+    Default-color: '&6'
+    Hide-flags: true
+    Tag: "{COLOR}[HALLOWEEN]"
+    Displayname: "&6&l{COLOR}Halloween tag"
+    Permission: "alonsotags.tag.halloween"
+    Price: 0
+    Unbreakable: false
+    Lore:
+      Locked:
+      - "&7Trick or treat!"
+      - "&7Preview: &f{TAG}"
+      - '{DYEABLE}'
+      - " "
+      - '{RIGHT-CLICK-TO-PREVIEW-MESSAGE}'
+      - "&cRequires &6[RANK]&c rank!"
+      - "&eClick to purchase."
+      Unlocked:
+      - "&7Trick or treat!"
+      - "&7Preview: &f{TAG}"
+      - '{DYEABLE}'
+      - " "
+      - '{RIGHT-CLICK-TO-PREVIEW-MESSAGE}'
+      - "&eClick to select."
+      Selected:
+      - "&7Trick or treat!"
+      - "&7Preview: &f{TAG}"
+      - '{DYEABLE}'
+      - " "
+      - "&aSelected."
+    No-permission-message: "&cYou require &b[RANK]&c to select this tag!"
+    Not-enough-money-message: "&cYou don't have enough money to purchase this tag!"
+  hacker-tag: #Added in 1.6.2-BETA-PRO
+    Material: CUSTOM_HEAD
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjUwMTA4YjE1ZTU3M2RlNTk1YjViYmNkYjgyZjgzNjQ3MmQyZWYzMTZlOGFhOTFiMjQ2OGYzYWQ2ODAzN2FmYiJ9fX0="
+    Dyeable: true
+    Default-color: '&e'
+    Hide-flags: true
+    Tag: "{COLOR}[HACKER]"
+    Displayname: "&e&l{COLOR}Hacker tag"
+    Permission: "alonsotags.tag.hacker"
+    Price: 0
+    Unbreakable: false
+    Lore:
+      Locked:
+      - "&7Cheater! Cheater! Cheater!"
+      - "&7Preview: &f{TAG}"
+      - '{DYEABLE}'
+      - " "
+      - '{RIGHT-CLICK-TO-PREVIEW-MESSAGE}'
+      - "&cRequires &6[RANK]&c rank!"
+      - "&eClick to purchase."
+      Unlocked:
+      - "&7Cheater! Cheater! Cheater!"
+      - "&7Preview: &f{TAG}"
+      - '{DYEABLE}'
+      - " "
+      - '{RIGHT-CLICK-TO-PREVIEW-MESSAGE}'
+      - "&eClick to select."
+      Selected:
+      - "&7Cheater! Cheater! Cheater!"
+      - "&7Preview: &f{TAG}"
+      - '{DYEABLE}'
+      - " "
+      - "&aSelected."
+    No-permission-message: "&cYou require &b[RANK]&c to select this tag!"
+    Not-enough-money-message: "&cYou don't have enough money to purchase this tag!"
+  candy-tag: #Added in 1.6.2-BETA-PRO
+    Material: CUSTOM_HEAD
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTRiZDUzZDEwMDhlMzVjOTgwMzFkYTI1MDk0MTQ3Yzg1ZDc4M2NhM2E1NjY5YWZhMGRmMzkzMjhkMDJiYzMwNyJ9fX0="
+    Dyeable: true
+    Default-color: '&d'
+    Hide-flags: true
+    Tag: "{COLOR}[CANDY]"
+    Displayname: "&d&l{COLOR}Candy tag"
+    Permission: "alonsotags.tag.candy"
+    Price: 0
+    Unbreakable: false
+    Lore:
+      Locked:
+      - "&7You love candies?"
+      - "&7Preview: &f{TAG}"
+      - '{DYEABLE}'
+      - " "
+      - '{RIGHT-CLICK-TO-PREVIEW-MESSAGE}'
+      - "&cRequires &6[RANK]&c rank!"
+      - "&eClick to purchase."
+      Unlocked:
+      - "&7You love candies?"
+      - "&7Preview: &f{TAG}"
+      - '{DYEABLE}'
+      - " "
+      - '{RIGHT-CLICK-TO-PREVIEW-MESSAGE}'
+      - "&eClick to select."
+      Selected:
+      - "&7You love candies?"
+      - "&7Preview: &f{TAG}"
+      - '{DYEABLE}'
+      - " "
+      - "&aSelected."
+    No-permission-message: "&cYou require &b[RANK]&c to select this tag!"
+    Not-enough-money-message: "&cYou don't have enough money to purchase this tag!"
+  king-hex-tag: #Added in 1.8-BETA-PRO DELETE IF YOUR SERVER DOESN'T SUPPORT HEX COLORS.
+    Material: CUSTOM_HEAD
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzliNjczMTdjNmE1MWQxZDJjOGNmNjc4Y2I4YTA4NjVkNzMxNzE5MDFhNDg0NGIyMzg3NTlhMDcyOTVhNGVlYyJ9fX0="
+    Dyeable: false
+    Default-color: '&e'
+    Hide-flags: true
+    Tag: "#fcaa03&l[#fcb403&lK#fcbe03&lI#fcc703&lN#fcd103&lG#fcdb03&l]"
+    Displayname: "&e&l{COLOR}King tag"
+    Permission: "alonsotags.tag.king-hex"
+    Price: 0
+    Unbreakable: false
+    Lore:
+      Locked:
+      - "&7Are you a king?"
+      - "&7Preview: &f{TAG}"
+      - '{DYEABLE}'
+      - " "
+      - '{RIGHT-CLICK-TO-PREVIEW-MESSAGE}'
+      - "&cRequires &6[RANK]&c rank!"
+      - "&eClick to purchase."
+      Unlocked:
+      - "&7Are you a king?"
+      - "&7Preview: &f{TAG}"
+      - '{DYEABLE}'
+      - " "
+      - '{RIGHT-CLICK-TO-PREVIEW-MESSAGE}'
+      - "&eClick to select."
+      Selected:
+      - "&7Are you a king?"
+      - "&7Preview: &f{TAG}"
+      - '{DYEABLE}'
+      - " "
+      - "&aSelected."
+    No-permission-message: "&cYou require &b[RANK]&c to select this tag!"
+    Not-enough-money-message: "&cYou don't have enough money to purchase this tag!"
+  love-hex-tag: #Added in 1.8-BETA-PRO DELETE IF YOUR SERVER DOESN'T SUPPORT HEX COLORS.
+    Material: CUSTOM_HEAD
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjRlYWY4OTQyOGEzNjQ5YzI2ZWRjMWY3MWNjMTlmMjYzZTlmNGViMzFlZDE4Yzk3Njg2YWFjODJmNzY0MjQyIn19fQ=="
+    Dyeable: false
+    Default-color: '&d'
+    Hide-flags: true
+    Tag: "#fc0398&l[#fc0383&lL#fc036f&lO#fc035a&lV#fc0345&lE#fc0331&l]"
+    Displayname: "&d&l{COLOR}Love tag"
+    Permission: "alonsotags.tag.love-hex"
+    Price: 0
+    Unbreakable: false
+    Lore:
+      Locked:
+      - "&7In love?"
+      - "&7Preview: &f{TAG}"
+      - '{DYEABLE}'
+      - " "
+      - '{RIGHT-CLICK-TO-PREVIEW-MESSAGE}'
+      - "&cRequires &6[RANK]&c rank!"
+      - "&eClick to purchase."
+      Unlocked:
+      - "&7In love?"
+      - "&7Preview: &f{TAG}"
+      - '{DYEABLE}'
+      - " "
+      - '{RIGHT-CLICK-TO-PREVIEW-MESSAGE}'
+      - "&eClick to select."
+      Selected:
+      - "&7In love?"
+      - "&7Preview: &f{TAG}"
+      - '{DYEABLE}'
+      - " "
+      - "&aSelected."
+    No-permission-message: "&cYou require &b[RANK]&c to select this tag!"
+    Not-enough-money-message: "&cYou don't have enough money to purchase this tag!"
+  supreme-hex-tag: #Added in 1.8-BETA-PRO DELETE IF YOUR SERVER DOESN'T SUPPORT HEX COLORS.
+    Material: CUSTOM_HEAD
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmRkMmNjZTA0Njc0YzJjM2Q1YTNhOTRmZjIxOTc4N2EyYjQ1OWRlNzkwYTBjMDFmZjI5Yjk2NzI5MDcyY2QifX19"
+    Dyeable: false
+    Default-color: '&b'
+    Hide-flags: true
+    Tag: "#0338fc&l[#0348fc&lS#0358fc&lU#0368fc&lP#0379fc&lR#0389fc&lE#0399fc&lM#03a9fc&lE#03bafc&l]"
+    Displayname: "&b&l{COLOR}Supreme tag"
+    Permission: "alonsotags.tag.supreme-hex"
+    Price: 0
+    Unbreakable: false
+    Lore:
+      Locked:
+      - "&7Supremeeee!"
+      - "&7Preview: &f{TAG}"
+      - '{DYEABLE}'
+      - " "
+      - '{RIGHT-CLICK-TO-PREVIEW-MESSAGE}'
+      - "&cRequires &6[RANK]&c rank!"
+      - "&eClick to purchase."
+      Unlocked:
+      - "&7Supremeeee!"
+      - "&7Preview: &f{TAG}"
+      - '{DYEABLE}'
+      - " "
+      - '{RIGHT-CLICK-TO-PREVIEW-MESSAGE}'
+      - "&eClick to select."
+      Selected:
+      - "&7Supremeeee!"
+      - "&7Preview: &f{TAG}"
+      - '{DYEABLE}'
+      - " "
+      - "&aSelected."
+    No-permission-message: "&cYou require &b[RANK]&c to select this tag!"
+    Not-enough-money-message: "&cYou don't have enough money to purchase this tag!"
+  halloween-hex-tag: #Added in 1.8-BETA-PRO DELETE IF YOUR SERVER DOESN'T SUPPORT HEX COLORS.
+    Material: CUSTOM_HEAD
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzVhOWNjZTMyMjNiZTFiYjkyN2JkMjYzNWUxOGI2NDQ2MDFkNTIxYjY0Y2EwNjhjNTQxZDNiYzk2MDkwOGMzYSJ9fX0="
+    Dyeable: false
+    Default-color: '&b'
+    Hide-flags: true
+    Tag: "#fc7803&l[#fb7e02&lH#fc8303&lA#fc8903&lL#fc8f03&lL#fc9403&lO#fc9a03&lW#fca003&lE#fca503&lE#fcab03&lN#fcb103&l]"
+    Displayname: "&6&l{COLOR}Halloween tag"
+    Permission: "alonsotags.tag.halloween-hex"
+    Price: 0
+    Unbreakable: false
+    Lore:
+      Locked:
+      - "&7You love halloween?"
+      - "&7Preview: &f{TAG}"
+      - '{DYEABLE}'
+      - " "
+      - '{RIGHT-CLICK-TO-PREVIEW-MESSAGE}'
+      - "&cRequires &6[RANK]&c rank!"
+      - "&eClick to purchase."
+      Unlocked:
+      - "&7You love halloween?"
+      - "&7Preview: &f{TAG}"
+      - '{DYEABLE}'
+      - " "
+      - '{RIGHT-CLICK-TO-PREVIEW-MESSAGE}'
+      - "&eClick to select."
+      Selected:
+      - "&7You love halloween?"
+      - "&7Preview: &f{TAG}"
+      - '{DYEABLE}'
+      - " "
+      - "&aSelected."
+    No-permission-message: "&cYou require &b[RANK]&c to select this tag!"
+    Not-enough-money-message: "&cYou don't have enough money to purchase this tag!"
+  toxic-hex-tag: #Added in 1.8-BETA-PRO DELETE IF YOUR SERVER DOESN'T SUPPORT HEX COLORS.
+    Material: CUSTOM_HEAD
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDdmODk5YjE0MzViNjdmYTNjOGI2OGNjZTQyODAyM2JmNmJlMjg5YzhjYzZlYWVkMjRmMjZlM2IyMjRmMDJkZSJ9fX0="
+    Dyeable: false
+    Default-color: '&b'
+    Hide-flags: true
+    Tag: "#63cd0a&l[#54d10c&lT#45d50e&lO#36d911&lX#27dd13&lI#18e115&lC#09e617&l]"
+    Displayname: "&a&l{COLOR}Toxic tag"
+    Permission: "alonsotags.tag.toxic-hex"
+    Price: 0
+    Unbreakable: false
+    Lore:
+      Locked:
+      - "&7Toxic player?"
+      - "&7Preview: &f{TAG}"
+      - '{DYEABLE}'
+      - " "
+      - '{RIGHT-CLICK-TO-PREVIEW-MESSAGE}'
+      - "&cRequires &6[RANK]&c rank!"
+      - "&eClick to purchase."
+      Unlocked:
+      - "&7Toxic player?"
+      - "&7Preview: &f{TAG}"
+      - '{DYEABLE}'
+      - " "
+      - '{RIGHT-CLICK-TO-PREVIEW-MESSAGE}'
+      - "&eClick to select."
+      Selected:
+      - "&7Toxic player?"
+      - "&7Preview: &f{TAG}"
+      - '{DYEABLE}'
+      - " "
+      - "&aSelected."
+    No-permission-message: "&cYou require &b[RANK]&c to select this tag!"
+    Not-enough-money-message: "&cYou don't have enough money to purchase this tag!"
