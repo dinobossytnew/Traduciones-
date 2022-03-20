@@ -1,0 +1,213 @@
+#          ___      _   _           ___          __ _ _
+#         | _ ) ___| |_| |_ ___ _ _| _ \_ _ ___ / _(_) |___ ___
+#         | _ \/ -_)  _|  _/ -_) '_|  _/ '_/ _ \  _| | / -_|_-<
+#         |___/\___|\__|\__\___|_| |_| |_| \___/_| |_|_\___/__/
+#                           by AlonsoAliaga
+#          https://www.spigotmc.org/resources/authors/281176/
+#
+
+Messages:
+  No-permission: "&cNo tienes permiso para hacer esto."
+  View-command-no-permission: "&cDebes hacer clic derecho en un jugador para abrir el perfil. Compra un &a[RANK] &c para usar este comando."
+  #Message sent to player if doesn't have permission to open profiles ON INTERACT. Set to "none" to not send any message.
+  View-interact-no-permission: "&cNo puede ver los perfiles de los jugadores. Compra &a[RANK] &cpara ver perfiles."
+  Reloaded: "&aSe han vuelto a cargar algunos mensajes y opciones. Otros pueden requerir un reinicio!"
+  Invalid-player: "&cEl jugador no está en línea!"
+  Disabled-world: "&cLos perfiles están deshabilitados en este mundo :("
+  Please-reconnect: "&c¡Algo salió mal! Vuelva a conectarse al servidor."
+  Please-reconnect-other: "&c¡Algo salió mal! El jugador necesita volver a conectarse al servidor."
+  Profile-disabled-command: "&c¡Comando deshabilitar! Haz clic derecho en el jugador para ver el perfil!"
+  Profile:
+    Title: "&8Perfil: {PLAYER}"
+    Profile-is-locked: "&cNo puedes ver este perfil de jugador."
+  Toggle-profiles:
+    No-permission: "&cNo tienes permiso para hacer esto."
+    Profiles-locked: "&cPerfiles desactivados! No verás el perfil de los jugadores ahora."
+    Profiles-unlocked: "&a¡Perfiles habilitados! Verás los perfiles de los jugadores ahora."
+  Toggle-profile:
+    No-permission: "&cNo tienes permiso para hacer esto."
+    Profile-locked: "&c¡Perfil bloqueado! Los jugadores no pueden ver tu perfil ahora."
+    Profile-unlocked: "&a¡Perfil desbloqueado! Los jugadores pueden ver tu perfil ahora."
+  Help:
+    Admin:
+    - "&6 /profile &f- &eRevisa tu perfil"
+    - "&6 /profile <player> &f- &eVer perfil del jugador"
+    - "&6 /betterprofiles &f- &eRevisa tu perfil"
+    - "&6 /betterprofiles view <player> &f- &eAbre perfil del jugador"
+    - "&6 /betterprofiles toggle <viewer/profile>&f- &eAlternar visualización/visualización de perfiles"
+    - "&6 /betterprofiles reload &f- &eRecargar configuración"
+    User:
+    - "&6 /profile &f- &eRevisa tu perfil"
+    - "&6 /betterprofiles &f- &eRevisa tu perfil"
+    - "&6 /betterprofiles view <player> &f- &eVer perfil del jugador"
+    - "&6 /betterprofiles toggle <viewer/profile>&f- &eAlternar visualización/visualización de perfiles"
+
+Items:
+  No-main-hand:
+    #In case you use a custom texture pack. (1.14+ ONLY)
+    #Set to 0 if you don't know what is it.
+    Custom-model-data: 0
+    Custom-model-data-hidden: 0
+    Displayname: "&eMenu Principal"
+    #Permission to view this slot. Set to "none" to not require permission
+    Permission: "none"
+    Lore:
+    - "&cVacio"
+    Lore-hidden:
+    - "&cNo puedes ver esta ranura."
+  No-off-hand:
+    Custom-model-data: 0
+    Custom-model-data-hidden: 0
+    Displayname: "&eFuera de la Mano"
+    Permission: "none"
+    Lore:
+    - "&cVacio"
+    Lore-hidden:
+    - "&cNo puedes ver esta ranura."
+  No-helmet:
+    Custom-model-data: 0
+    Custom-model-data-hidden: 0
+    Displayname: "&eCasco"
+    Permission: "none"
+    Lore:
+    - "&cVacio"
+    Lore-hidden:
+    - "&cNo puedes ver esta ranura."
+  No-chestplate:
+    Custom-model-data: 0
+    Custom-model-data-hidden: 0
+    Displayname: "&ePechera"
+    Permission: "none"
+    Lore:
+    - "&cVacio"
+    Lore-hidden:
+    - "&cNo puedes ver esta ranura."
+  No-leggings:
+    Custom-model-data: 0
+    Custom-model-data-hidden: 0
+    Displayname: "&ePantalones"
+    Permission: "none"
+    Lore:
+    - "&cVacio"
+    Lore-hidden:
+    - "&cNo puedes ver esta ranura."
+  No-boots:
+    Custom-model-data: 0
+    Custom-model-data-hidden: 0
+    Displayname: "&eBotas"
+    Permission: "none"
+    Lore:
+    - "&cVacio"
+    Lore-hidden:
+    - "&cNo puedes ver esta ranura."
+  Close:
+    Custom-model-data: 0
+    Displayname: "&cSalir del Menu"
+    Lore: 
+    - "&cEste boton sales del menu para siempre"
+
+Options:
+  Debug: false
+  #This option is for 1.9+ servers.
+  #THIS PREVENTS profiles being opened IF player holds a SHIELD in main hand or off hand.
+  Prevent-shield: true
+  #THIS PREVENTS profiles being opened IF player holds a SHIELD in main hand or off hand.
+  Prevent-interact: true
+  #Enabling this makes the profile only accessible when right clicking while sneaking.
+  Only-sneak: false
+  #If enabled the plugin will attempt to update the inventory if the player updates the equipment.
+  #Includes main hand and off hand if available. Modifying this requires a restart.
+  Update-equipment: true
+  #Fill ALL empty slots with custom Frame item. It DOES not support displayname and lore.
+  #Frame item is black stained glass pane.
+  Fill-empty:
+    Enabled: true
+    #Custom model data for frame item. In case you want to use a custom texture pack and make it look like a real RPG inventory.
+    #Available only in 1.14 and above. Set to 0 if you are not going to use a custom resource pack in your server.
+    Custom-model-data: 0
+    #THIS APPLIES TO ALL ITEMS USED IN FRAME.
+    #Allowed colors are: WHITE,ORANGE,MAGENTA,LIGHT_BLUE,YELLOW,LIME,PINK,GRAY,LIGHT_GRAY,CYAN,PURPLE,BLUE,BROWN,GREEN,RED,BLACK
+    Color-frame: WHITE
+  Empty-slot:
+    #THIS APPLIES TO ALL ITEMS USED IF PLAYER EQUIPMENT SLOT IS EMPTY.
+    #Allowed colors are: WHITE,ORANGE,MAGENTA,LIGHT_BLUE,YELLOW,LIME,PINK,GRAY,LIGHT_GRAY,CYAN,PURPLE,BLUE,BROWN,GREEN,RED,BLACK
+    Color-frame: YELLOW
+  Hidden-slot:
+    #THIS APPLIES TO ALL SLOTS THAT CANNOT BE SEEN BY THE PLAYER.
+    Color-frame: RED
+  #This option will send the message in "Invalid player" if the player that performs the
+  #action/command cannot see the player model. (Should make vanish plugins compatible)
+  Check-visibility: true
+  Slots:
+    Close: 49
+    Helmet: 10
+    Chestplate: 19
+    Leggings: 28
+    Boots: 37
+    Main-hand: 20
+    Off-hand: 29
+  View:
+    #If true, profiles can be opened by right clicking.
+    Interact: true
+    #If true, profiles can be opened by using the command.
+    Command: true
+  #Worlds in which profile won't open when right clicking or using the command.
+  #This does NOT affect players with admin permission.
+  Disabled-worlds:
+  - "New"
+  #Set sounds to "none" to disable sound.
+  Sounds:
+    #Sound when opening a player's profile.
+    Open: "CHEST_OPEN"
+    #Sound when closing a player's profile.
+    Close: "CHEST_CLOSE"
+
+Permissions:
+  Admin: "betterprofiles.admin"
+  #Permission to view profiles by right clicking.
+  #Set to "none" to disable permission.
+  View-interact: "none"
+  #Permission to view profiles by using the command /betterprofiles view <player> or /profile <player>
+  #Set to "none" to disable permission.
+  View-command: "betterprofiles.view.command"
+  #Permission to toggle inventory view for others.
+  #Enable/disable viewing other's profiles. Set to "none" to disable permission.
+  Toggle-view-profiles: "none" #Example: "betterprofiles.toggle.others-profiles"
+  #Permission to toggle inventory view from others. Others can/cannot see your profile.
+  #Enable/disable other's from viewing your profile. Set to "none" to disable permission.
+  Toggle-profile: "betterprofiles.toggle.profile"
+  #Bypass toggled profiles. Ignore if player disabled profile viewing for others.
+  Bypass: "betterprofiles.view.bypass"
+  #Permission to view your own profile using /profile
+  Own-profile: "none" #Example: "betterprofiles.view.myprofile"
+
+Database:
+  #Available types: MySQL and SQLite
+  #You can use MySQL to make it global or you can use SQLite to make it local.
+  #MySQL requires a server (local or external)
+  #SQLite doesn't require anything, it's saved in a db file in the folder.
+  Type: "SQLite"
+  Table: "betterprofiles"
+  #If type is SQLite
+  File: "database-betterprofiles"
+  #If type is MySQL
+  Host: 127.0.0.1
+  Port: 3306
+  Database: "betterprofiles"
+  Username: "root"
+  Password: "12345"
+  #This option has been added to prevent connection timeout.
+  #Time is in minutes. Every X minutes the plugin will run a test query to keep connection alive.
+  Keep-alive-interval: 30
+
+Updates:
+  #Auto update configuration? Enabling will delete comments.
+  Auto-update-configuration: false
+  #Check for updates? Recommended to keep it enabled.
+  Check-updates: true
+  #Notify updates when player with permission joins the server?
+  Notify-updates: false
+  #Permission required to receive update message.
+  Permission: "betterprofiles.update"
+  #Message to send when update is found.
+  Message: "&6[BetterProfiles] &eA new update has been found! You are using version {CURRENT}. Download version {NEW} here &c{LINK}"
