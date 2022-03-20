@@ -1,0 +1,2 @@
+# Traduciones-
+Español dino 
