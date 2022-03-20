@@ -1,0 +1,280 @@
+#           _   _                 _____               ___                  Our plugins: https://alonsoaliaga.com/plugins
+#          /_\ | |___ _ _  ___ __|_   _|_ _ __ _ ___ | _ \_ _ ___          Support server: https://alonsoaliaga.com/discord
+#         / _ \| / _ \ ' \(_-</ _ \| |/ _` / _` (_-< |  _/ '_/ _ \         Youtube: https://alonsoaliaga.com/play
+#        /_/ \_\_\___/_||_/__/\___/|_|\__,_\__, /__/ |_| |_| \___/         Test server: plugins.alonsoaliaga.com
+#                         by AlonsoAliaga  |___/                           Twitch: https://alonsoaliaga.com/twitch
+#          Considering donating? https://alonsoaliaga.com/donate           Thanks for purchasing my plugin! Only buyers receive support.
+# 
+#                          >> If your spigot profile link is not https://www.spigotmc.org/members/495702/
+#                consider purchasing our plugin from https://alonsoaliaga.com/AlonsoTagsPro to support our hard work. <<
+Messages:
+  No-permission: '&cNo tienes permiso para usar esto pendejo.'
+  Reloaded: '&aAlgunos mensajes y opciones han sido recargados. mejor reinicia el
+    server mongolo!'
+  Disabled-world: '&cNo puedes usar este comando en este mundo IMBECIL!'
+  Invalid-player: '&cEl jugador no esta conectado pelotudo!'
+  Target-not-loaded: '&cEl objetivo no puede ser encontrado reconectese al server
+    IMBECIL!'
+  Please-reconnect: '&cUbo un error de tipo sexo reconectese al server!'
+  Error-purchasing: '&cError en la compra contacte con el pendejo del owner.'
+  Currency-not-available: '&cEconomy system doesn''t seem to be available in this
+    server :('
+  Dyeable: '&6Etiqueta Colorida.'
+  Help:
+    Admin:
+    - '&4 /alonsotags open <Jugador> &f- &cAbre el menu de tags'
+    - '&4 /alonsotags reload &f- &crecarga datos del plugin pero usa reset del servidor
+      mejor'
+    User:
+    - '&4 /alonsotags open &f- &cAbrir menu de jugador'
+  Colors:
+    Title: '&8Selecione un color'
+  Tags:
+    Title: '&8TAGS &a&nDISPONIBLES &7(&3{PAGE}&7/&b{MAX}&7)'
+    Already-selected: '&aTu tag ya esta activo IMBECIL!'
+    Tag-selected: '&aSELECIONASTE EL TAG {TAG}&a!'
+    Tag-cleared: '&cSU TAG FUE ELIMINADO IMBECIL.'
+    Tag-not-selected: '&cSU TAG NO FUE SELECIONADO PELOTUDO.'
+    Tag-purchased: '&aTAG COMPRADO CON EXITO NOMRBE DEL TAG> &7{TAG_NAME}&a!'
+  Preview:
+    No-permission: '&cNO TIENES PERMISOS PARA VISTA PREVIA'
+    No-permission-for-tag: '&cNO PUEDES SOLICITAR ESTA ETIQUETA TE FALTAN PERMISOS'
+    Title: '&6&lPERVISTA'
+    Subtitle: '{TAG} {PLAYER}'
+    Chat:
+    - '&c&lTAG DE PREVISTA:'
+    - '&f{TAG} {PLAYER}&f: &7QUE PASA LOCO!'
+    Right-click-to-preview: '&eCLICK-DERECHO PARA PREVISTA.'
+  Filter:
+    No-permission: '&cTu filtro no esta permitido compra rango &7(&b&n&lOTAKU&7) PARA
+      TENER PERMISOS&c!'
+  Placeholders:
+    Tag:
+      None: '&7NO'
+      Format: '{TAG}'
+    Tag-chat:
+      None: ''
+      Format: '{TAG} '
+    Tag-tab:
+      None: ''
+      Format: ' {TAG}'
+    Tag-identifier:
+      None: None
+      Format: '{TAG}'
+    Tag-scoreboard:
+      None: '&7NO'
+      Format: '{TAG}'
+Permissions:
+  Admin: alonsotags.admin
+  Preview: none
+  Filter: none
+Items:
+  Player:
+    Slot: 49
+    Active:
+      Material: PLAYER
+      Texture: ewogICJ0aW1lc3RhbXAiIDogMTU5NDQ0NjkyMDI5NiwKICAicHJvZmlsZUlkIiA6ICJlMWMxYTE5NDdlODY0MTRmODZiYjQyZDgyYTIxY2ZiOCIsCiAgInByb2ZpbGVOYW1lIiA6ICJBbG9uc29BbGlhZ2EiLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTY4YWE3NGNjODg1NzgwNjBkMGZlM2JkOTA4YjM0ZjY5ZjEyZTA3ZjFmODljNWRkYzE1ZTZiZjYwZjA0Y2NjNiIKICAgIH0KICB9Cn0=
+      Custom-model-data: 0
+      Displayname: '&a{PLAYER}'
+      Lore:
+      - '&7TAG ACTUAL: &f{TAG}'
+      - ' '
+      - '&eClick para borrar su TAG actual.'
+    Inactive:
+      Material: PLAYER
+      Texture: ewogICJ0aW1lc3RhbXAiIDogMTU5NDQ0NjkyMDI5NiwKICAicHJvZmlsZUlkIiA6ICJlMWMxYTE5NDdlODY0MTRmODZiYjQyZDgyYTIxY2ZiOCIsCiAgInByb2ZpbGVOYW1lIiA6ICJBbG9uc29BbGlhZ2EiLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTY4YWE3NGNjODg1NzgwNjBkMGZlM2JkOTA4YjM0ZjY5ZjEyZTA3ZjFmODljNWRkYzE1ZTZiZjYwZjA0Y2NjNiIKICAgIH0KICB9Cn0=
+      Custom-model-data: 0
+      Displayname: '&c{PLAYER}'
+      Lore:
+      - '&7TAG ACTUAL: &cNO SELECIONADO'
+  Previous-page:
+    Slot: 45
+    Material: ARROW
+    Hide-flags: true
+    Custom-model-data: 0
+    Displayname: '&aPAGINA ANTERIOR'
+    Unbreakable: false
+    Lore:
+    - '&7Moverme a la anterior pagina.'
+  Next-page:
+    Slot: 53
+    Material: ARROW
+    Hide-flags: true
+    Custom-model-data: 0
+    Displayname: '&aSIGUIENTE PAGINA'
+    Unbreakable: false
+    Lore:
+    - '&7Moverme a la sugiente pagina.'
+  Close:
+    Slot: 48
+    Material: BARRIER
+    Hide-flags: true
+    Custom-model-data: 0
+    Displayname: '&cCERRAR MENU'
+    Unbreakable: false
+    Lore: []
+    Command: none
+  Close-colors:
+    Slot: 44
+    Material: BARRIER
+    Hide-flags: true
+    Custom-model-data: 0
+    Displayname: '&cCERRAR MENU'
+    Unbreakable: false
+    Lore: []
+    Command: none
+  Back-to-tags:
+    Slot: 36
+    Material: ARROW
+    Hide-flags: true
+    Custom-model-data: 0
+    Displayname: '&9VOLVER A TAGS'
+    Unbreakable: false
+    Lore: []
+  Filter:
+    Slot: 50
+    All-tags:
+      Material: CUSTOM_HEAD
+      Texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODVlNWJmMjU1ZDVkN2U1MjE0NzQzMTgwNTBhZDMwNGFiOTViMDFhNGFmMGJhZTE1ZTVjZDljMTk5M2FiY2M5OCJ9fX0=
+      Hide-flags: true
+      Custom-model-data: 0
+      Displayname: '&aTODOS LOS TAGS'
+      Unbreakable: false
+      Lore:
+      - '&7Click para mostrar etiquetas desbloqueadas..'
+    Unlocked-tags:
+      Material: CUSTOM_HEAD
+      Texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2U5ZDQ5ZGQwOWVjZWUyYTQ5OTY5NjU1MTRkNmQzMDFiZjEyODcwYzY4OGFjYjU5OTliNjY1OGUxZGZkZmY4NSJ9fX0=
+      Hide-flags: true
+      Custom-model-data: 0
+      Displayname: '&9TAGS DESBLOQUEADOS'
+      Unbreakable: false
+      Lore:
+      - '&7Click para ver todos los tags.'
+  Locked-tag-icon:
+    Enabled: true
+    Material: CUSTOM_HEAD
+    Custom-model-data: 0
+    Texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDZiYTYzMzQ0ZjQ5ZGQxYzRmNTQ4OGU5MjZiZjNkOWUyYjI5OTE2YTZjNTBkNjEwYmI0MGE1MjczZGM4YzgyIn19fQ==
+    Obfuscate:
+      Enabled: true
+      Color-displayname: '&4&k&l'
+      Color-tag-lore: '&4&k&l'
+Options:
+  Main-command: animetags
+  Aliases:
+  - atag
+  - atags
+  - tags
+  - tag
+  Sub-commands:
+    Open:
+    - abrir
+    - open
+    Reload:
+    - reload
+  Debug: false
+  Support-developer: false
+  Close-on-action:
+    Select: false
+    Clear: false
+    Select-color: true
+    Preview-tag: false
+    Preview-color: false
+  Tag:
+    Delay: 0
+    Parse-output: false
+  Items:
+    Close: true
+  Fill-empty-slots:
+    Slots: 0,1,2,3,4,5,6,7,8,9,17,18,26,27,35,36,44,45,46,47,48,49,50,51,52,53
+    Color: BLACK
+    Enabled: true
+    Custom-model-data: 0
+    Unbreakable: false
+  Fill-colors-empty-slots:
+    Color: BLACK
+    Enabled: true
+    Custom-model-data: 0
+    Unbreakable: false
+  Hooks:
+    Name-tag-edit: false
+  Allowed-worlds:
+  - world
+  - lobby
+  - world_market
+  Compatibility:
+    Chat: false
+    Hex-color-fix: true
+  Premium:
+    Tags:
+      Slots: 10,11,12,13,14,15,16,19,20,21,22,23,24,25,28,29,30,31,32,33,34,37,38,39,40,41,42,43
+    Color:
+      Rows: 5
+      Preview:
+        Enabled: true
+        Title: true
+        Chat: true
+        Ignore-permission: false
+    Economy:
+      Warning:
+      - Los tipos disponibles son VAULT, LEVEL, MATERIAL y PLAYER_POINTS.
+      - 1) VAULT intentará engancharse con el plugin vault.
+      - '   Si (plugin de economía) no está disponible, las compras se desactivarán.'
+      - '   Esta es una característica experimental, por favor informe de los errores
+        en la pestaña de discusión.'
+      - 2) LEVEL utilizará el nivel del jugador (no la experiencia)
+      - 3) MATERIAL requerirá el material especificado
+      - '   First it will check player''s main hand, and then the inventory.'
+      - 4) PLAYER_POINTS requiere el plugin PlayerPoints para funcionar. Si el plugin
+        no puede Si el plugin no se encuentra, las compras se deshabilitarán.
+      - '   Esto está en BETA. Puede que no funcione correctamente.'
+      - 5) TOKEN_MANAGER requiere el plugin TokenManager para funcionar. Si el plugin
+        no puede Si el plugin no se encuentra, las compras se deshabilitarán.
+      - '   Esto está en BETA. Puede que no funcione correctamente.'
+      Type: VAULT
+      Material: DIAMOND
+    Hide-load-debug: false
+  Data-delay: 20
+  Auto-save:
+    Interval: 15
+  Log-mode: true
+Database:
+  Type: SQLite
+  Table: alonsotags
+  File: database-alonsotags
+  Host: 127.0.0.1
+  Port: 3306
+  Database: alonsotags
+  Username: root
+  Password: '12345'
+  Additional-url: ''
+  Keep-connection-interval: 30
+  HikariCP:
+    Warning:
+    - ========================================================================================
+    - You don't need to edit this text, it's ONLY displayed in config so you can read
+      it.
+    - ========================================================================================
+    - HikariCP is experimental. Remember that only modify the following IF YOU KNOW
+      HOW IT WORKS.
+    - You will not get support for HikariCP configurations as 1) I'm not a HikariCP
+      advanced user
+    - and 2) Customization depends on the owner and his knowledge level.
+    - 'Related to Source-properties, if you KNOW and want to add custom properties
+      follow the format:'
+    - 'Source-properties:'
+    - '  thePropertySelected1: "theValue1"'
+    - '  thePropertySelected2: "theValue2"'
+    - '[!] Remember to modify data only if you know what you are doing.'
+    - 'Available source properties can be found here: https://alonsoaliaga.com/HikariCP-sp'
+    - 'Available source class names can be found here: https://alonsoaliaga.com/HikariCP-cn'
+    Max-pool-size: 3
+    Custom-source-class-name: default
+    Source-properties: []
+Updates:
+  Auto-update-configuration: true
+  Check-updates: true
+  Notify-updates: true
+  Permission: alonsotags.update
+  Message: '&4[AnimeTags] &eNueva version en {CURRENT}. descargala en {NEW} link &c{LINK}'
