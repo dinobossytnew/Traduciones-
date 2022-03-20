@@ -1,0 +1,136 @@
+Spawners:
+  Break:
+    Success: '&7Has roto tu spawner de &3%name%.'
+    Failed: '&7Este spawner no te pertenece.'
+    NeedSilkTouch: '&7Necesitas &cToque de seda &7para picar el spawner.'
+    SuccessAdmin: '&7has roto &c%player% &3%name% &7spawner.'
+    SuccessInvalid: '&7Has roto tu &3%name% &7spawner. Sin embargo, los datos no es
+      válido. Póngase en contacto con un administrador para reemplazar este generador.'
+    FailedAdmin: '&7Este spawner no te pertenece. &cShift-Click &7para administrar-romper
+      este engendro.'
+  Upgrade:
+    Success: '&7Ha actualizado con éxito su %old% &fSpawner &7en una %new% &fSpawner&7!'
+    Disabled: '&7Este spawner &cÁrbol de spawner &7es actualmente &cdesactivado&7.'
+    Failed:
+      Items: '&7No tienes el requerido &cItems &7para actualizar este generador!'
+      XP: '&7You do not have enough &cXP &7para actualizar este generador!'
+      Money: '&7No tienes suficiente &cMoney &7para actualizar este generador!'
+    NoTree: '&7Este reproductor no tiene un configurado &cÁrbol de spawner&7!'
+  Place:
+    Failed: '&7Este generador no es válido. Comuníquese con un administrador para
+      que lo reemplace.'
+    Success: '&7Has colocado una &3%name% &7spawner.'
+  Open:
+    NotYours: '&7No puedes acceder a esto %mob% &7spawner como pertenece a &c%player%&7.'
+    Invalid: '&7'
+  Teleported: '&7Has sido teletransportado a &6%player% &3%spawner% &7spawner.'
+GUI:
+  BackArrow:
+    Lore:
+    - '&7Haga clic para volver al menú principal.'
+    Name: '&c&latrás'
+  Spawners:
+    Upgrade:
+      Lore:
+      - '&7Haga clic para ver o actualizar'
+      - '&7este generador en uno mejor!'
+      Name: '&6Árbol de actualización'
+    UpgradeTree:
+      Help:
+        Lore:
+        - '&7Haga clic en un &ebrillante &7en el spawner'
+        - '&7actualice a ese generador. Debes'
+        - '&7cumplir con los requisitos para actualizarlo.'
+        - ''
+        - '&CNote:'
+        - '&7Cada fila es su &a&nown&7 árbol de actualización.'
+        - '&7La actualización al primer generador se bloqueará'
+        - '&7Los otros dos arboles y tu &c&ncannot&7'
+        - '&7revertir su cambio.'
+        - ''
+        - '&7&oNo hay botón "¿Estás seguro?".'
+        Name: '&6&lInformacion'
+    Status:
+      Enabled:
+        Name: '&7Spawner Status: &aAbilitado'
+        Lore:
+        - '&7Este generador esta &aAbilitado'
+        - '&7y generara mobs.'
+        - ''
+        - '&3Click para &cDesactivado &3spawner.'
+      Disabled:
+        Name: '&7Spawner Status: &cDesactivado'
+        Lore:
+        - '&7Este generador esta &cDesactivado'
+        - '&7y no generará mobs.'
+        - ''
+        - '&3Click para &aAbilitado &3spawner.'
+GUINames:
+  Admin:
+    DropTable:
+      Edit: '&6&lSpawners &8Drop Tabla Editar'
+      View: '&6&lSpawners &8Drop Tabla'
+    Main: '&6&lSpawners Panel de control'
+    SpawnerTree: '&6&lSpawners &8Arbol'
+    MobsList: '&6&lSpawners Mobs Lista'
+    Manage: '&6&lSpawners &8Manager'
+    Mobs: '&6&lSpawners Mob &8%mode%'
+    SpawnerTreeEdit: '&6&lSpawners &8Arbol Manager'
+    SpawnerTreePerSpawner: '&6&lSpawners &8Arbol Spawner'
+    SpawnerTreeItemEditor: '&6&lSpawners &8Nivelar Item'
+    SpawnerTreeSelector: '&6&lSpawners &8Selecionar Arbol'
+  SpawnerMenu:
+    Main: '&6&lSpawner &8Menu'
+    UpgradeTree: '&6&lSpawner &8Árbol de actualización'
+Commands:
+  InvalidEntityType: '&7El valor &c%msg% &7no es un tipo de entidad válido.'
+  InvalidSlot: '&7Uso no válido de &c''Slot''&7. La ranura debe ser 1, 2, 3, 4 o 5.'
+  CannotExecuteFromConsole: '&7No puede ejecutar este comando desde la consola!'
+  NoPermission: '&7No tienes permiso para ejecutar este comando.'
+  CulledMobs: '&7Seleccionado con éxito &b%amount% &7spawner mobs.'
+  ToggleSpawning: '&7Tienes %bool% &7mafia que se genera a partir de generadores personalizados.'
+  InvalidSubCommand: '&7Subcomando no válido. Hacer &c/ps &7para obtener una lista
+    de subcomandos.'
+  ReloadPlugin: '&6Spawners &7Ha sido recargado con éxito!'
+  InvalidPotion: '&7El valor &c%msg% &7no es un PotionEffectType válido o un formato.
+    p.ej. &cRegeneración,2&7.'
+  InvalidSpawner: '&7No puedes engendrar en este generador. La &cFila &7y &cEspacio
+    &7para la actualización no contiene un código válido &cSpawnerMob&7.'
+  InvalidDamageCause: '&7El valor &c%msg% &7no es una causa de daño válida. Utilizar
+    &c/ps help inmunidades &7para una lista completa.'
+  InvalidUsage: '&7Uso no válido del comando. Utilizar &c/ps &7para referencia.'
+  InvalidRow: '&7Uso no válido de &c''Row''&7. La fila debe ser 1, 2 o 3.'
+  InvalidArgument: '&7Argumentos no válidos. Hacer /gods para obtener una lista de
+    subcomandos.'
+  InvalidBoolean: '&7El valor &c%msg% &7no es un booleano válido.'
+  InvalidInt: '&7Uso no válido de entero. Verifique su entrada.'
+  PlayerNotFound: '&7¡Ese jugador no fue encontrado o no está en línea!'
+  InvalidNumber: '&7El valor &c%msg% &7no es un numero valido.'
+Spawner:
+  Name: '%name% &6Spawner'
+  Lore:
+  - '&7Coloca este Spawner para %name%&7.'
+  - ''
+  - '&7Informacion:'
+  - '&8➛ &7Generador de Mob Base: %basename%'
+  - '&8➛ &7Fila: &3%row%'
+  - '&8➛ &7Espacio: &3%slot%'
+CommandList:
+- ''
+- '&8]&m---------+&r&8[ &6&lSpawners &r&8]&m+---------&r&8['
+- ''
+- '&e/ps &7- Muestra esta lista de comandos.'
+- '&6/ps admin &7- Abre el panel de admin para crear spawner o niveles.'
+- '&6/ps reload &7- Recarga el complemento.'
+- '&6/ps cullmobs &7- Elimina todas las entidades de complementos.'
+- '&6/ps togglespawning &7- Alterna los reproductores de las turbas que desovan.'
+- '&6/ps givebasespawner <name> <player> &7- Da un desove base.'
+- '&6/ps giveupgradedspawner <name> <row> <slot> <player> &7- Da spawne mejorador.'
+- '&6/ps help potioneffects &7- Muestra todos los efectos de las pociones.'
+- '&6/ps help immunities &7- Muestra todas las inmunidades al daño.'
+- '&6/ps help mobnames &7- Muestra todos los nombres de mafia personalizados.'
+- ''
+- '&8]&m-----------+&r&8[ &6Pagina (1/1) &r&8]&m+------------&r&8['
+- ''
+SuccessPrefix: '&6&lSpawners &8➤ '
+ErrorPrefix: '&c&lSpawners &8➤ '
