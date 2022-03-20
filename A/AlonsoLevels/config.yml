@@ -101,34 +101,34 @@ Messages:
   Add-exp:
     Cancelled: "&c¡Tu acción ha sido anulada por un plugin!"
     Added-exp: "&aHas añadido {EXPERIENCE} puntos de experiencia para {PLAYER}."
-    Notify: " &8+&3{EXPERIENCE} Su experiencia en la #d0019c&lM#cf0aa4&lA#ce13ab&lZ#cd1cb3&lM#cc26ba&lO#cb2fc2&lR#ca38c9&lR#c941d1&lA!"
+    Notify: " &8+&3{EXPERIENCE} Su experiencia en la SERVERNAME!"
   Add-random-exp:
     Cancelled: "&cSu acción fue cancelada por un plugin!"
     Added-exp: "&aSe añade {EXPERIENCE} puntos de experiencia a {PLAYER}."
-    Notify: " &8+&3{EXPERIENCE} Su experiencia en la #d0019c&lM#cf0aa4&lA#ce13ab&lZ#cd1cb3&lM#cc26ba&lO#cb2fc2&lR#ca38c9&lR#c941d1&lA!"
+    Notify: " &8+&3{EXPERIENCE} Su experiencia en la SERVERNAME!"
   Remove-exp:
     Cancelled: "&cSu acción fue cancelada por un plugin!"
     Removed-exp: "&aSe remueve {EXPERIENCE} puntos de experiencia de {PLAYER}."
-    Notify: " &8-&3{EXPERIENCE} Su experiencia en la #d0019c&lM#cf0aa4&lA#ce13ab&lZ#cd1cb3&lM#cc26ba&lO#cb2fc2&lR#ca38c9&lR#c941d1&lA!"
+    Notify: " &8-&3{EXPERIENCE} Su experiencia en la SERVERNAME!"
   Set-exp:
     Cancelled: "&cSu acción fue cancelada por un plugin!"
     Set-exp: "&aSe establece {PLAYER}'s experience to {EXPERIENCE}."
-    Notify-add: " &8+&3{EXPERIENCE} Su experiencia en la #d0019c&lM#cf0aa4&lA#ce13ab&lZ#cd1cb3&lM#cc26ba&lO#cb2fc2&lR#ca38c9&lR#c941d1&lA!"
-    Notify-remove: " &8-&3{EXPERIENCE} Su experiencia en la #d0019c&lM#cf0aa4&lA#ce13ab&lZ#cd1cb3&lM#cc26ba&lO#cb2fc2&lR#ca38c9&lR#c941d1&lA!"
+    Notify-add: " &8+&3{EXPERIENCE} Su experiencia en la SERVERNAME!"
+    Notify-remove: " &8-&3{EXPERIENCE} Su experiencia en la SERVERNAME!"
   Add-level:
     Cannot-add-zero: "&cno se puede añadir {LEVEL} nivel a {PLAYER}."
     Added-level: "&ase añadio {LEVEL} nivel(s) a {PLAYER}."
-    Notify-add: " &8+&3{LEVEL} #d0019c&lM#cf0aa4&lA#ce13ab&lZ#cd1cb3&lM#cc26ba&lO#cb2fc2&lR#ca38c9&lR#c941d1&lA añadio nivel(s)!"
-    Notify-remove: " &8-&3{LEVEL} #d0019c&lM#cf0aa4&lA#ce13ab&lZ#cd1cb3&lM#cc26ba&lO#cb2fc2&lR#ca38c9&lR#c941d1&lA elimino nivel(s)!"
+    Notify-add: " &8+&3{LEVEL} SERVERNAME añadio nivel(s)!"
+    Notify-remove: " &8-&3{LEVEL} SERVERNAME elimino nivel(s)!"
   Remove-level:
     Cannot-remove-zero: "&cNo se puede añadir {LEVEL} nivel a {PLAYER}."
     Removed-level: "&aSe remueve {LEVEL} nivel(s) de {PLAYER}."
-    Notify-add: " &8+&3{LEVEL} #d0019c&lM#cf0aa4&lA#ce13ab&lZ#cd1cb3&lM#cc26ba&lO#cb2fc2&lR#ca38c9&lR#c941d1&lA añadio nivel(s)!"
-    Notify-remove: " &8-&3{LEVEL}#d0019c&lM#cf0aa4&lA#ce13ab&lZ#cd1cb3&lM#cc26ba&lO#cb2fc2&lR#ca38c9&lR#c941d1&lA elimino nivel(s)!"
+    Notify-add: " &8+&3{LEVEL} SERVERNAME añadio nivel(s)!"
+    Notify-remove: " &8-&3{LEVEL}SERVERNAME elimino nivel(s)!"
   Set-level:
     Set-level: "&aTu nivel {PLAYER} se establecio a {LEVEL}."
-    Notify-add: " &8+&3{LEVEL} #d0019c&lM#cf0aa4&lA#ce13ab&lZ#cd1cb3&lM#cc26ba&lO#cb2fc2&lR#ca38c9&lR#c941d1&lA añadio nivel(s)!"
-    Notify-remove: " &8-&3{LEVEL} #d0019c&lM#cf0aa4&lA#ce13ab&lZ#cd1cb3&lM#cc26ba&lO#cb2fc2&lR#ca38c9&lR#c941d1&lA elimino nivel(s)!"
+    Notify-add: " &8+&3{LEVEL} SERVERNAME añadio nivel(s)!"
+    Notify-remove: " &8-&3{LEVEL} SERVERNAME elimino nivel(s)!"
   Reset:
     Cancelled: "&cSu intento de reiniciar{PLAYER} las estadísticas fueron anuladas por un plugin."
     Player-reset: "&a&lUsted reinicia {PLAYER} ¡estadísticas! El jugador ha sido expulsado para guardar los nuevos datos."
@@ -226,7 +226,7 @@ Messages:
     - "{CENTER}&a&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬&r"
     - "{CENTER}&a&k0&r &6SUBE DE NIVEL! &a&k0&r"
     - "&r "
-    - "{CENTER}&7Usted está ahora &3tiene en la #d0019c&lM#cf0aa4&lA#ce13ab&lZ#cd1cb3&lM#cc26ba&lO#cb2fc2&lR#ca38c9&lR#c941d1&lA Nivel&a{LEVEL}&7!"
+    - "{CENTER}&7Usted está ahora &3tiene en la SERVERNAME Nivel&a{LEVEL}&7!"
     - "{MAX_LEVEL}"
     - "&r "
     - "{UNLOCKED}\n"
@@ -378,7 +378,7 @@ Items:
     #Supports PlaceholderAPI is available
     Lore:
     - "&7Completar misiones y desafíos"
-    - "&7te recompensará con &6LOLIS&7, #d0019c&lM#cf0aa4&lA#ce13ab&lZ#cd1cb3&lM#cc26ba&lO#cb2fc2&lR#ca38c9&lR#c941d1&lA"
+    - "&7te recompensará con &6LOLIS&7, SERVERNAME"
     - "&3EXP &7y mas!"
     - ""
     - "&7Puede completar un máximo de &a10"
@@ -404,7 +404,7 @@ Items:
     - "&3EXP&7, para subir a niveles requeridos"
     - "&7y adquirir nuevas ventajas y recompensas!"
     - ""
-    - "&3#d0019c&lM#cf0aa4&lA#ce13ab&lZ#cd1cb3&lM#cc26ba&lO#cb2fc2&lR#ca38c9&lR#c941d1&lA &a%alonsolevels_level% %alonsolevels_progress_bar% %alonsolevels_progress_percent%%"
+    - "&3SERVERNAME &a%alonsolevels_level% %alonsolevels_progress_bar% %alonsolevels_progress_percent%%"
     - ""
     - "&7Experiencia hasta el siguiente nivel: &3%alonsolevels_experience_to_level_up%"
     - ""
