@@ -1,0 +1,55 @@
+CONFIRM:
+  name: '&aCONFIRMAR'
+  lore: []
+FILL:
+  name: '&8'
+  lore: []
+PREVIOUS_PAGE:
+  name: '&aPAGINA DE VISTA PREVIA'
+  lore: []
+NEXT_PAGE:
+  name: '&aSIGUIENTE PAGINA'
+  lore: []
+PREVIOUS_IN_QUEUE:
+  name: '&aVISTA PREVIA'
+  lore: []
+NEXT_IN_QUEUE:
+  name: '&aSIGUIENTE'
+  lore: []
+BACK:
+  name: '&aATRAS'
+  lore: []
+CRAFTING_RECIPE_DISPLAY:
+  name: '&a&lCRAFTEOS&f #name#'
+  lore:
+  - '{conditions}'
+  - '{conditions}&8CONDICIONES:'
+  - '{crafting_time}'
+  - '{crafting_time}&7CRAFTEOS TIEMPO: &c#crafting-time#&7s'
+  - ''
+  - '&8INGREDIENTES:'
+  - '#ingredients#'
+  - ''
+  - '&eCLICK IZQUIERDO PARA CREAR!'
+  - '&eCLICK DERECHO PARA VISTA PREVIA!'
+UPGRADING_RECIPE_DISPLAY:
+  name: '&e&lATUALIZASION&f #name#'
+  lore:
+  - '{conditions}'
+  - '{conditions}&8CONDICIONES:'
+  - ''
+  - '&8INGREDIENTES:'
+  - '#ingredients#'
+  - ''
+  - '&eCLICK IZQUIERDO PARA CREAR!'
+  - '&eCLICK DERECHO PARA VISTA PREVIA!'
+QUEUE_ITEM_DISPLAY:
+  name: '&6&lCOLA&f #name#'
+  lore:
+  - '{ready}&7&oEste artículo ha sido elaborado con éxito.'
+  - '{queue}&7&oEste objeto está en la cola de elaboración.'
+  - '{queue}'
+  - '{queue}&7TIEMPO ESTIMADO: &c#left#'
+  - ''
+  - '{ready}&eCLICK PARA RECLAMAR!'
+  - '{queue}&eCLICK PARA CANCELAR.'

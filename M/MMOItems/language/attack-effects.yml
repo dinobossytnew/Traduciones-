@@ -1,0 +1,14 @@
+staff-spirit:
+  nether-spirit: '&7■ ESPÍRITU INFERNAL'
+  void-spirit: '&7■ ESPÍRITU VACÍO'
+  mana-spirit: '&7■ ESPÍRITU MANÁ'
+  lightning-spirit: '&7■ ESPÍRITU RAYO'
+  xray-spirit: '&7■ ESPÍRITU X-RAY'
+  thunder-spirit: '&7■ ESPÍRITU TRUENO'
+  sunfire-spirit: '&7■ ESPÍRITU FUEGO SOLAR'
+lute-attack:
+  wave: '&7■ ATAQUES DE OLAS'
+  circular: '&7■ ATAQUES CIRCULARES'
+  simple: '&7■ ATAQUES SIMPLES'
+  brute: '&7■ ATAQUES BRUTALES'
+  slash: '&7■ ATAQUES DE CUCHILLAS'
