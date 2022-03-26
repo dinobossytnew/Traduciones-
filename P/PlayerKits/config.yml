@@ -36,7 +36,7 @@ Messages:
     no es válido para tu versión de Minecraft.'
   oneTimeError: '&cNo puedes reclamar este kit de nuevo.'
   kitOneTimeLore:
-  - '&cYou can''t claim this kit again.'
+  - '&cNo puedes reclamar este kit de nuevo.'
   previewInventoryName: '&9Vista previa del kit'
   backItemName: '&7Atras'
   playerNotOnline: '&cEl jugador &7%player% &cno está en línea.'
