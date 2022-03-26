@@ -1,0 +1,153 @@
+Messages:
+  prefix: '&8[&4PlayerKits&8] '
+  noPermissions: '&cNo tienes permiso para hacer eso.'
+  commandCreateError: '&cDebes usar: &7/kit create <nombre>'
+  commandDeleteError: '&cDebes usar: &7/kit delete <nombre>'
+  commandClaimError: '&cDebes usar: &7/kit claim <kit>'
+  commandGiveError: '&cDebes usar: &7/kit give <kit> <jugador>'
+  commandEditError: '&cDebes usar: &7/kit edit <kit>'
+  commandPreviewError: '&cDebes usar: &7/kit preview <kit>'
+  commandOpenError: '&cDebes usar: &7/kit open <jugador> <pagina>'
+  kitAlreadyExists: '&cEl kit &7%name% &calya existe en la configuracion.'
+  kitDoesNotExists: '&cEl kit &7%name% &cno existe.'
+  inventoryEmpty: '&cNecesitas al menos 1 item en tu inventario para crear un kit.'
+  kitCreated: '&aKit &7%name% &acreado correctamente.'
+  kitRemoved: '&aKit &7%name% &aeliminado correctamente.'
+  inventoryName: '&9Kits'
+  kitReceived: '&aKit &7%name% &arecibido.'
+  configReload: '&aConfiguracion recargada.'
+  seconds: s
+  minutes: m
+  hours: h
+  days: d
+  cooldownPlaceholderReady: '&a&lListo!'
+  cooldownError: '&cDebes esperar &7%time% &cpara volver a reclamar este kit.'
+  kitNoPermissions: '&cNo tienes permisos para reclamar este kit.'
+  kitInCooldownLore:
+  - '&cTienes que esperar &7%time%'
+  - '&cpara reclamar este kit de nuevo.'
+  commandList: '&6&lLista de kits'
+  commandListKit: '&6%number% &8» &a%kit%'
+  commandListKitNoPermissions: '&6%number% &8» &c%kit% &7(Sin permisos)'
+  commandListKitInCooldown: '&6%number% &8» &c%kit% &7(Cooldown: &8%time%&7)'
+  commandListKitOneTime: '&6%number% &8» &c%kit% &7(Ya se ha reclamado&7)'
+  noSpaceError: '&cNo tienes suficiente espacio en tu inventario.'
+  materialNameError: '&Hay un error en su configuración. Material: &7&l%material%
+    no es válido para tu versión de Minecraft.'
+  oneTimeError: '&cNo puedes reclamar este kit de nuevo.'
+  kitOneTimeLore:
+  - '&cYou can''t claim this kit again.'
+  previewInventoryName: '&9Vista previa del kit'
+  backItemName: '&7Atras'
+  playerNotOnline: '&cEl jugador &7%player% &cno está en línea.'
+  kitGive: '&aKit &7%kit% &adado a &e%player%&a!'
+  noMoneyError: '&cNo tienes suficiente dinero para reclamar este kit. &8(&a$&c%current_money%&7/&a$&c%required_money%&8)'
+  moneyInventoryName: '&9Confirmación de compra del kit'
+  moneyInventoryYes: '&a&lSI'
+  moneyInventoryNo: '&c&lNO'
+  moneyInventoryConfirmationName: '&6¿Estas seguro?'
+  moneyInventoryConfirmationLore:
+  - '&7Esto le costará: &a$%price%'
+  kitInventoryOpen: '&aAbriendo el inventario de kits a &e%player%&a.'
+  errorPage: '&cEscribir una página válida.'
+  commandResetError: '&cUse: &7/kit reset &f<kit> <player>'
+  kitResetCorrect: Kit &f%kit% &7reiniciado a &f%player%&7!
+  kitResetFail: No es posible reiniciar a &f%kit% &7por &f%player%&7!
+  noPreviewError: No hay nada que prever para este kit.
+  cantPreviewError: '&cNo se puede previsualizar este kit.'
+Config:
+  inventorySize: 36
+  previewInventorySize: 54
+  preview_inventory_back_item_slot: 45
+  kit_preview: true
+  kit_preview_back_item: true
+  hide_kits_with_permissions: false
+  close_inventory_on_claim: true
+  drop_items_if_full_inventory: true
+  commands_before_items: false
+  kit_error_sound: BLOCK_NOTE_BLOCK_PLING;10;0.1
+  kit_claim_sound: ENTITY_EXPERIENCE_ORB_PICKUP;10;1.5
+  kit_page_sound: BLOCK_COMPARATOR_CLICK;10;1
+  update_notify: true
+  player_data_save_time: 300
+  mysql_database:
+    enabled: false
+    host: localhost
+    port: 3306
+    username: root
+    password: root
+    database: database
+    #menu mejorado
+  Inventory:
+    '0':
+      id: GRAY_STAINED_GLASS_PANE
+      name: ' '
+    '1':
+      id: GRAY_STAINED_GLASS_PANE
+      name: ' '
+    '2':
+      id: GRAY_STAINED_GLASS_PANE
+      name: ' '
+    '3':
+      id: GRAY_STAINED_GLASS_PANE
+      name: ' '
+    '4':
+      id: GRAY_STAINED_GLASS_PANE
+      name: ' '
+    '5':
+      id: GRAY_STAINED_GLASS_PANE
+      name: ' '
+    '6':
+      id: GRAY_STAINED_GLASS_PANE
+      name: ' '
+    '7':
+      id: GRAY_STAINED_GLASS_PANE
+      name: ' '
+    '8':
+      id: GRAY_STAINED_GLASS_PANE
+      name: ' '
+    '9':
+      id: GRAY_STAINED_GLASS_PANE
+      name: ' '
+    '17':
+      id: GRAY_STAINED_GLASS_PANE
+      name: ' '
+    '18':
+      id: GRAY_STAINED_GLASS_PANE
+      name: ' '   
+    '28':
+      id: ARROW
+      name: '&b&l← &bAnterior'
+      type: previous_page
+    '29':
+      id: BLACK_STAINED_GLASS_PANE
+      name: ' '
+    '30':
+      id: BLACK_STAINED_GLASS_PANE
+      name: ' '
+    '31':
+      id: BLACK_STAINED_GLASS_PANE
+      name: ' '
+    '32':
+      id: BLACK_STAINED_GLASS_PANE
+      name: ' '
+    '33':
+      id: BLACK_STAINED_GLASS_PANE
+      name: ' '
+    '34':
+      id: BLACK_STAINED_GLASS_PANE
+      name: ' '
+    '35':
+      id: BLACK_STAINED_GLASS_PANE
+      name: ' '
+    '26':
+      id: GRAY_STAINED_GLASS_PANE
+      name: ' '    
+    '27':
+      id: BLACK_STAINED_GLASS_PANE
+      name: ' '  
+    '36':
+      id: BLACK_STAINED_GLASS_PANE
+      name: ' '
+      type: next_page  
+  preview_inventory_requires_permission: false
