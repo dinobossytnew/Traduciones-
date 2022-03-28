@@ -1,32 +1,32 @@
-speed: VELOCIDAD
-slow: LENTITUD
-fast-digging: MINADO RAPIDO
-slow-digging: MINADO LENTO
-increase-damage: DAÑO INCREMENTADO
-heal: VIDA
-harm: CURA
-jump: SALTO
-confusion: CONFUCION
-regeneration: REGENERACION
-damage-resistance: RESISTENCIA DE DAÑO
-fire-resistance: RESISTENCIA DE FUEGO
-water-breathing: RESPIRAR BAJO AGUA
-invisibility: INVISIBLE
-blindness: CEGERA
-night-vision: VISION NOCTURNA
-hunger: HAMBRIENTO
-weakness: DEBILIDAD
-poison: VENENO
-wither: MARCHITO
-health-boost: IMPULSO DE VIDA
-absorption: ABSORCIÓN
-saturation: SATURACION
-glowing: BRILLO
-levitation: LEVITACION
-luck: SUERTE
-unluck: NO SUERTE
-slow-falling: CAIDA LENTA
-conduit-power: CONDUCTOR ELECTRICO
-dolphins-grace: CARIDAD DE DELFIN
-bad-omen: MALO O BUENO
-hero-of-the-village: HERUE DE PUEBLO
+speed: Velocidad
+slow: Lentitud
+fast-digging: Excavación veloz
+slow-digging: Excavación lenta
+increase-damage: Incremento de daño
+heal: Curación
+harm: Daño
+jump: Salto
+confusion: Confusión
+regeneration: Regeneración
+damage-resistance: Resistencia al daño
+fire-resistance: Resistencia al fuego
+water-breathing: Respiración acuática
+invisibility: Invisibilidad
+blindness: Ceguera
+night-vision: Visión nocturna
+hunger: Hambre
+weakness: Debilidad
+poison: Veneno
+wither: Wither
+health-boost: Mejora de vida
+absorption: Absorción
+saturation: Saturación
+glowing: Brillo
+levitation: Levitación
+luck: Suerte
+unluck: Mala suerte
+slow-falling: Caída de pluma
+conduit-power: Conducto de energía
+dolphins-grace: Gracia de los delfines
+bad-omen: Mal presagio
+hero-of-the-village: Heroe de la villa
