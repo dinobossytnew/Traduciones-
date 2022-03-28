@@ -1,7 +1,6 @@
 received-item: Has recibido &e#amount# &6#item#.
 hands-too-charged: Tienes las manos ocupadas.
-spell-on-cooldown: '#progress# &eDebes esperar #left# segundo#s# antes de hacer este
-  hechizo.'
+spell-on-cooldown: '#progress# &eDebes esperar #left# segundo#s# antes de hacer este hechizo.'
 item-on-cooldown: '¡Objeto en enfriamiento! Por favor espera #left#s.'
 not-enough-perms-command: No tienes permisos.
 not-enough-levels: ¡No tienes el nivel necesario para usar este objeto!
@@ -22,25 +21,19 @@ gem-stone-broke: ¡&6#gem#&c se ha roto al intentar aplicarla a &6#item#&c.
 repaired-item: Lograste reparar &6#item#&e por &6#amount# &eusos.
 skin-applied: Aplicaste correctamente el aspecto a &6#item#&e!
 skin-removed: Se ha removido satisfactoriamente el aspecto de &6#item#&e!
-skin-broke: El aspecto se ha roto al intentar aplicarlo a &6#item#&c mas suerte la
-  próxima.
+skin-broke: El aspecto se ha roto al intentar aplicarlo a &6#item#&c mas suerte la próxima.
 skin-rejected: ¡&6#item#&c ya tiene un aspecto aplicado!
 skin-incompatible: El aspecto que intentas aplicar no es compatible con &6#item#&c!
-random-unsocket-gem-too-old: La gema tiene un vinculo muy fuerte con tu objeto. No
-  se la ha podido remover.
+random-unsocket-gem-too-old: La gema tiene un vinculo muy fuerte con tu objeto. No se la ha podido remover.
 random-unsocket-success: '&aHas removido &3#gem# &ade tu &6#item#&a!'
-cant-bind-item: 'Este objeto está vinculado a #player# por un vinculo de alma nivel
-  #level#. Deberás romper este vinculo primero.'
+cant-bind-item: 'Este objeto está vinculado a #player# por un vinculo de alma nivel #level#. Deberás romper este vinculo primero.'
 no-soulbound: Este objeto no está vinculado a nadie.
 cant-bind-stacked: No puedes vincular objetos apilados.
 unsuccessful-soulbound: El vinculo que has intentado aplicar ha fallado.
 unsuccessful-soulbound-break: No has podido destruir el vinculo.
-low-soulbound-level: 'El vinculo de este objeto es de nivel #level#. Necesitarás un
-  objeto de mayor nivel para poder romper el vinculo.'
-successfully-bind-item: Aplicaste sin problemas un vinculo de nivel &6#level# &ea
-  &6#item#&e.
-successfully-break-bind: Has conseguido romper el vinculo de alma nivel &6#level#
-  &edel objeto!
+low-soulbound-level: 'El vinculo de este objeto es de nivel #level#. Necesitarás un objeto de mayor nivel para poder romper el vinculo.'
+successfully-bind-item: Aplicaste sin problemas un vinculo de nivel &6#level# &ea&6#item#&e.
+successfully-break-bind: Has conseguido romper el vinculo de alma nivel &6#level# &edel objeto!
 soulbound-item-lore: '&4Vinculado a #player#//&4Vinculo de alma Nvl #level#'
 cant-upgraded-stack: No puedes mejorar objetos apilados.
 max-upgrades-hit: Este objeto alcanzó su nivel máximo.
@@ -51,8 +44,7 @@ upgrade-success: ¡Se mejoró con éxito su &6#item#&e!
 not-have-item-upgrade: ¡No posees el objeto para realizar la mejora!
 upgrade-requirement-safe-check: No tienes los requerimientos para mejorar este objeto.
 death-downgrading: '&cSu &6#item#&c ha sido dañado seriamente en esa pelea...'
-not-enough-materials: No posee los materiales suficientes para la fabricación de este
-  objeto.
+not-enough-materials: No posee los materiales suficientes para la fabricación de este objeto.
 conditions-not-met: No puedes fabricar este objeto.
 crafting-canceled: Has cancelado la fabricación del objeto.
 crafting-queue-full: La cola de elaboración está llena. Espera unos minutos.
