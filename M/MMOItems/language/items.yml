@@ -1,55 +1,55 @@
 CONFIRM:
-  name: '&aCONFIRMAR'
+  name: '&aConfirmar'
   lore: []
 FILL:
   name: '&8'
   lore: []
 PREVIOUS_PAGE:
-  name: '&aPAGINA DE VISTA PREVIA'
+  name: '&aAnterior'
   lore: []
 NEXT_PAGE:
-  name: '&aSIGUIENTE PAGINA'
+  name: '&aSiguiente'
   lore: []
 PREVIOUS_IN_QUEUE:
-  name: '&aVISTA PREVIA'
+  name: '&aAnterior'
   lore: []
 NEXT_IN_QUEUE:
-  name: '&aSIGUIENTE'
+  name: '&aSiguiente'
   lore: []
 BACK:
-  name: '&aATRAS'
+  name: '&aVolver'
   lore: []
 CRAFTING_RECIPE_DISPLAY:
-  name: '&a&lCRAFTEOS&f #name#'
+  name: '&a&lElaborar&f #name#'
   lore:
   - '{conditions}'
-  - '{conditions}&8CONDICIONES:'
+  - '{conditions}&8Condiciones:'
   - '{crafting_time}'
-  - '{crafting_time}&7CRAFTEOS TIEMPO: &c#crafting-time#&7s'
+  - '{crafting_time}&7Tiempo de Fabricación: &c#crafting-time#&7s'
   - ''
-  - '&8INGREDIENTES:'
+  - '&8Ingredientes:'
   - '#ingredients#'
   - ''
-  - '&eCLICK IZQUIERDO PARA CREAR!'
-  - '&eCLICK DERECHO PARA VISTA PREVIA!'
+  - '&e¡Click-IZQ para fabricar!'
+  - '&e¡Click-DER para visualizar!'
 UPGRADING_RECIPE_DISPLAY:
-  name: '&e&lATUALIZASION&f #name#'
+  name: '&e&lMejorar&f #name#'
   lore:
   - '{conditions}'
-  - '{conditions}&8CONDICIONES:'
+  - '{conditions}&8Condiciones:'
   - ''
-  - '&8INGREDIENTES:'
+  - '&8Ingredientes:'
   - '#ingredients#'
   - ''
-  - '&eCLICK IZQUIERDO PARA CREAR!'
-  - '&eCLICK DERECHO PARA VISTA PREVIA!'
+  - '&e¡Click-IZQ para fabricar!'
+  - '&e¡Click-DER para visualizar!'
 QUEUE_ITEM_DISPLAY:
-  name: '&6&lCOLA&f #name#'
+  name: '&6&lCola&f #name#'
   lore:
-  - '{ready}&7&oEste artículo ha sido elaborado con éxito.'
-  - '{queue}&7&oEste objeto está en la cola de elaboración.'
+  - '{ready}&7&oObjeto fabricado sin problemas.'
+  - '{queue}&7&oObjeto en la cola de espera.'
   - '{queue}'
-  - '{queue}&7TIEMPO ESTIMADO: &c#left#'
+  - '{queue}&7Tiempo restante: &c#left#'
   - ''
-  - '{ready}&eCLICK PARA RECLAMAR!'
-  - '{queue}&eCLICK PARA CANCELAR.'
+  - '{ready}&e¡Click para obtener!'
+  - '{queue}&eClick para cancelar.'
