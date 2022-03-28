@@ -1,0 +1,80 @@
+prefix: '&2[&a&lEpicCraftings&9&l+&2] '
+configReloaded: '&aRECARADO.'
+commandCreateError: '&cTU NECESITAS EL COMANDO: &7/ecraft create <name>'
+commandEditError: '&cTU NECESITAS EL COMANDO: &7/ecraft edit <name>'
+commandDeleteError: '&cTU NECESITAS EL COMANDO: &7/ecraft delete <name>'
+commandGiveError: '&cTU NECESITAS USAR EL COMANDO: &7/ecraft give <player> <name>'
+commandOpenCategoryError: '&cTU NECESITAS USAR EL COMANDO: &7/ecraft opencategory <player> <category>
+  (optional, blocked category)<true/false>'
+commandPermissionsError: '&cTE FALTAN PERMISSOS O CALLE.'
+mustHaveItemInHand: '&cNECESITAS EL ITEM EN LA MANO!'
+craftingAlreadyExists: '&cUna artesanía llamada &7%name% &c¡ya existe!'
+craftingDoesNotExists: '&cla elaboración &7%name% &cno existe!'
+craftError: '&c¡No tienes la cantidad suficiente de elementos para crear esto!'
+craftSuccessful: '&bHas creado con éxito x%amount% %name%&b!'
+craftWithMoneySuccessful: '&bHas creado con éxito x%amount% %name%&b pagando
+  &a$%money%&b!'
+createCraftingInventoryTitle: '&4&lCreando crafteo'
+createCraftingInventoryInfoCategoryName: '&4&lSELECCIONE UNA CATEGORÍA'
+createCraftingInventoryInfoCategoryLore:
+- '&7Haga clic en una categoría para agregar el crafteo'
+- '&e%name% &7.'
+createCraftingInventoryInfoRequiredItemsName: '&4&lAGREGAR ARTÍCULOS REQUERIDOS'
+createCraftingInventoryInfoRequiredItemsLore:
+- '&7Arrastre y coloque los elementos necesarios de'
+- '&7esta elaboraciòn'
+createCraftingInventoryCreateName: '&4&lCrear crafteo'
+createCraftingInventoryCreateLore:
+- '&7click para crear'
+noRequiredItems: '&c¡Debe agregar al menos un elemento requerido!'
+craftingCreationFailed: '&c¡La creación del crafteo falló!'
+craftingCreated: '&aCrafteo &e%name% &acreado! Puede modificar sus propiedades en
+  the &7%name%.yml &ael archivo de configuración.'
+craftingDeleted: '&aCrafteo &e%name% &aeliminado!'
+extraRequirementsMessageStatusSymbolTrue: '&a&l✔'
+extraRequirementsMessageStatusSymbolFalse: '&c&l✖'
+craftErrorExtraRequirements: '&cNo tienes los requisitos necesarios para craftear
+  ¡esta!'
+craftErrorNoPermissions: '&cNo tienes permisos para crear esto.'
+craftWithMoneyNoMoney: '&cNo tienes la cantidad suficiente de dinero para crear
+  ¡éste ítem!'
+craftOneTimeError: '&cYa has creado este artículo. ¡No puedes volver a hacerlo!'
+errorPlayerNotOnline: '&c¡Ese jugador no está en línea!'
+craftGive: '&aDiste: &7%name% &aa &e%player%&a!'
+craftReceived: '&aHas recibido: &7x%amount% %name%&a!'
+craftNoLeftSpaceError: '&cNo tienes suficiente espacio en tu inventario para fabricar
+  ¡esta!'
+timeSeconds: s
+timeMinutes: m
+timeHours: h
+timeDays: d
+craftCooldownCreated: '&b¡Bien! Ahora tienes que esperar &7%time% &bhasta que %name% &bsea craeado!'
+craftCooldownFinishMessage: '&7%name% &b¡La elaboración ha terminado de crear! puedes reclamar
+   ahora.'
+craftCooldownError: '&cEsta creación está en tiempo de reutilización, ¡no puedes volver a crearla!'
+craftCooldownBypassedMessage: '&8[&aTiempo de espera anulado&8]'
+categoryOpenErrorNoPermissions: '&c¡No tienes permisos para abrir esta categoría!'
+categoryDoesNotExists: '&cLa categoria &7%name% &cno existe!'
+notLookingBlock: '&cDebes estar mirando un bloque.'
+craftingPlaceAlreadyExists: '&c¡Ya existe un lugar de elaboración en ese lugar!'
+craftingPlaceAdded: '&a¡Lugar de elaboración añadido!'
+craftingPlaceCategoryAdded: '&aLugar de elaboración para la categoría &7%name% &aañadida!'
+craftingPlaceHologram:
+- '&4&n-&c&lLUGAR DE CRAFTEO&4&n-'
+- '&8[&eClick derecho para craftear&8]'
+craftingPlaceCategoryHologram:
+- '&4&n-&c&lLUGAR DE CRAFTEO&4&n-'
+- '&7[%category_alias%&7]'
+- '&8[&eClick derecho para craftear&8]'
+craftingPlaceNotLookingError: '&cDebes estar mirando un lugar de elaboracion.'
+craftingPlaceRemoved: '&a¡Se eliminó el lugar de elaboración!'
+craftingPlaceRemoveError: '&cPARA ELIMINAR ESTE LUGAR DE ELABORACION, UTILICE &7/ecraft removeplace
+  &cMIRANDO A EL BLOQUE.'
+ecraftCommandBlocked: '&cEste comando esta bloqueado!'
+cooldownOneAtTheTimeError: '&cNo puedes crear otro artículo porque estás creando
+   uno ya'
+craftCooldownBypassedWithMoneyMessage: '&bTiempo de espera anulado! Costo: &a$%cost%'
+craftCooldownBypassNoMoney: '&cNo tienes la cantidad de dinero suficiente para eludir
+   el tiempo de reutilización de este artículo!'
+pluginDisabledError: '&cEL PLUGIN HA DETECTADO ALGUNOS ERRORES. REVÍSALOS Y ARRÉGLALOS USANDO &7/ecraft verify'
+commandCategoryOpened: '&aHas abierto categoría &7%name% &aa &e%player%&a.'
