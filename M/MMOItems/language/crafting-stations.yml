@@ -1,28 +1,37 @@
 condition:
+  profession:
+    positive: '&a✔ Debes ser nivel #level# en #profession#'
+    negative: '&c✖ Debes ser nivel #level# en #profession#'
   mana:
-    positive: '&a✔ REQUISITOS #mana# MANA'
-    negative: '&c✖ REQUISITOS #mana# MANA'
+    positive: '&a✔ Necesitas #mana# Maná'
+    negative: '&c✖ Necesitas #mana# Maná'
   money:
-    positive: '&a✔ REQUISITOS $#money#'
-    negative: '&c✖ REQUISITOS $#money#'
+    positive: '&a✔ Necesitas $#money#'
+    negative: '&c✖ Necesitas $#money#'
   level:
-    positive: '&a✔ REQUISITOS NIVEL #level#'
-    negative: '&c✖ REQUISITOS NIVEL #level#'
+    positive: '&a✔ Debes ser nivel #level#'
+    negative: '&c✖ Debes ser nivel #level#'
+  stellium:
+    positive: '&a✔ Necesitas #stellium# de Stellium'
+    negative: '&c✖ Necesitas #stellium# de Stellium'
   stamina:
-    positive: '&a✔ REQUISITOS #stamina# STAMINA'
-    negative: '&c✖ REQUISITOS #stamina# STAMINA'
+    positive: '&a✔ Necesitas #stamina# de Energía'
+    negative: '&c✖ Necesitas #stamina# de Energía'
   permission:
     positive: '&a✔ #display#'
     negative: '&c✖ #display#'
   placeholder:
     positive: '&a✔ #display#'
     negative: '&c✖ #display#'
+  attribute:
+    positive: '&a✔ Necesitas #points# puntos de #attribute#'
+    negative: '&c✖ Necesitas #points# puntos de #attribute#'
   class:
-    positive: '&a✔ REQUIERE CLASE: #class#'
-    negative: '&c✖ REQUIERE CLASE: #class#'
+    positive: '&a✔ Clase requerida: #class#'
+    negative: '&c✖ Clase requerida: #class#'
   food:
-    positive: '&a✔ REQUISITOS #food# Food'
-    negative: '&c✖ REQUISITOS #food# Food'
+    positive: '&a✔ Necesitas #food# de Comida'
+    negative: '&c✖ Necesitas #food# de Comida'
 ingredient:
   mmoitem:
     positive: '&8✔ &7#amount# #level##item#'
