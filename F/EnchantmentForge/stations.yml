@@ -1,0 +1,292 @@
+# This file contains all stations in your server
+Stations:
+  # enchantment forger and everything that can be changed
+  forger:
+    # station visual item (blocks perfered)
+    visual-item:
+      material: ENCHANTING_TABLE
+      glint: true
+    # station placeable item (item used to place a new station)
+    placeable-item:
+      material: MUSIC_DISC_MALL
+      glint: true
+      name: '&d&nEnchantment Forger'
+      lore:
+      - '&7Right-Click onto a block to place'
+      - ''
+      - '&9- &bThis is a station that allows'
+      - '&bplayers to forge enchantments for'
+      - '&bthe price of experience levels.'
+    # name of this station
+    name: '&5-= &d&oEnchantment Forger &5=-'
+    # all tiers that this enchantment forger supports (tiers can be added or removed)
+    tiers:
+      '0':
+        # supported tier of this forger
+        tier: $tier_basic
+        # price of forging
+        # can contain mulitple prices
+        # price syntax: <price key>-<amount>
+        price: experience_levels-5
+      '1':
+        tier: $tier_unique
+        price: experience_levels-10
+      '2':
+        tier: $tier_heroic
+        price: experience_levels-20
+      '3':
+        tier: $tier_eternal
+        price: experience_levels-50
+      '4':
+        tier: $tier_wise
+        price: experience_levels-100
+    # list of item categories supported by this station
+    items:
+    - SWORD
+    - BOW
+    - CROSSBOW
+    - TRIDENT
+    - HELMET
+    - CHESTPLATE
+    - LEGGINGS
+    - BOOTS
+    - SHIELD
+    - ELYTRA
+    - PICKAXE
+    - AXE
+    - SHOVEL
+    - HOE
+    - FISHING_ROD
+  # enchantment merger and everything that can be changed
+  merger:
+    # station visual item (blocks perfered)
+    visual-item:
+      material: SMITHING_TABLE
+      glint: true
+    # station placeable item (item used to place a new station)
+    placeable-item:
+      material: MUSIC_DISC_CHIRP
+      glint: true
+      name: '&c&nEnchantment Merger'
+      lore:
+      - '&7Right-Click onto a block to place'
+      - ''
+      - '&9- &bThis is a station that allows'
+      - '&bplayers to merge enchantments with'
+      - '&bitems for the price of experience'
+      - '&blevels.'
+    # name of this station
+    name: '&4-= &c&oEnchantment Merger &4=-'
+    # all tiers that this enchantment merger supports (tiers can be added or removed)
+    tiers:
+      '0':
+        # supported tier of this merger
+        tier: $tier_basic
+        # price of merging
+        # can contain mulitple prices
+        # price syntax: <price key>-<amount>
+        price: experience_levels-2
+      '1':
+        tier: $tier_unique
+        price: experience_levels-4
+      '2':
+        tier: $tier_heroic
+        price: experience_levels-6
+      '3':
+        tier: $tier_eternal
+        price: experience_levels-10
+      '4':
+        tier: $tier_wise
+        price: experience_levels-20
+  # enchantment forger and everything that can be changed
+  extractor:
+    # station visual item (blocks perfered)
+    visual-item:
+      material: GRINDSTONE
+      glint: true
+    # station placeable item (item used to place a new station)
+    placeable-item:
+      material: MUSIC_DISC_13
+      glint: true
+      name: '&6&nEnchantment Extractor'
+      lore:
+      - '&7Right-Click onto a block to place'
+      - ''
+      - '&9- &bThis is a station that allows'
+      - '&bplayers to extract enchantments from'
+      - '&bitems for the price of experience'
+      - '&blevels.'
+    # name of this station
+    name: '&6-= &e&oEnchantment Extractor &6=-'
+    # all tiers that this enchantment extractor supports (tiers can be added or removed)
+    tiers:
+      '0':
+        # supported tier of this extractor
+        tier: $tier_basic
+        # price of extraction
+        # can contain mulitple prices
+        # price syntax: <price key>-<amount>
+        price: experience_levels-2
+      '1':
+        tier: $tier_unique
+        price: experience_levels-4
+      '2':
+        tier: $tier_heroic
+        price: experience_levels-6
+      '3':
+        tier: $tier_eternal
+        price: experience_levels-10
+      '4':
+        tier: $tier_wise
+        price: experience_levels-20
+  mender:
+    # station visual item (blocks perfered)
+    visual-item:
+      material: ANVIL
+      glint: true
+    # station placeable item (item used to place a new station)
+    placeable-item:
+      material: MUSIC_DISC_WARD
+      glint: true
+      name: '&a&nItem Mender'
+      lore:
+      - '&7Right-Click onto a block to place'
+      - ''
+      - '&9- &bThis is a station that allows'
+      - '&bplayers to mend their items for'
+      - '&bthe price of materials and'
+      - '&bexperience levels.'
+    # name of this station
+    name: '&2-= &a&oItem Mender &2=-'
+    mending:
+      '0':
+        # what items can be repaired
+        items:
+        - WOODEN_SWORD
+        - WOODEN_PICKAXE
+        - WOODEN_AXE
+        - WOODEN_SHOVEL
+        - WOODEN_HOE
+        # what material is required to repair
+        materials:
+        - OAK_PLANKS
+        - SPRUCE_PLANKS
+        - BIRCH_PLANKS
+        - JUNGLE_PLANKS
+        - ACACIA_PLANKS
+        - DARK_OAK_PLANKS
+        # durability per material
+        durability: 25
+        # price per each repair
+        price: experience_levels-1
+      '1':
+        items:
+        - LEATHER_HELMET
+        - LEATHER_CHESTPLATE
+        - LEATHER_LEGGINGS
+        - LEATHER_BOOTS
+        materials:
+        - LEATHER
+        durability: 25
+        price: experience_levels-1
+      '2':
+        items:
+        - STONE_SWORD
+        - STONE_PICKAXE
+        - STONE_AXE
+        - STONE_SHOVEL
+        - STONE_HOE
+        materials:
+        - STONE
+        - COBBLESTONE
+        durability: 50
+        price: experience_levels-2
+      '3':
+        items:
+        - GOLD_SWORD
+        - GOLD_PICKAXE
+        - GOLD_AXE
+        - GOLD_SHOVEL
+        - GOLD_HOE
+        - GOLD_HELMET
+        - GOLD_CHESTPLATE
+        - GOLD_LEGGINGS
+        - GOLD_BOOTS
+        materials:
+        - GOLD_INGOT
+        durability: 50
+        price: experience_levels-2
+      '4':
+        items:
+        - IRON_SWORD
+        - IRON_PICKAXE
+        - IRON_AXE
+        - IRON_SHOVEL
+        - IRON_HOE
+        - IRON_HELMET
+        - IRON_CHESTPLATE
+        - IRON_LEGGINGS
+        - IRON_BOOTS
+        - SHEARS
+        - SHIELD
+        - FLINT_AND_STEEL
+        materials:
+        - IRON_INGOT
+        durability: 100
+        price: experience_levels-3
+      '5':
+        items:
+        - BOW
+        - CROSSBOW
+        - FISHING_ROD
+        - CARROT_ON_A_STICK
+        - WARPED_FUNGUS_ON_A_STICK
+        materials:
+        - STRING
+        durability: 250
+        price: experience_levels-3
+      '6':
+        items:
+        - DIAMOND_SWORD
+        - DIAMOND_PICKAXE
+        - DIAMOND_AXE
+        - DIAMOND_SHOVEL
+        - DIAMOND_HOE
+        - DIAMOND_HELMET
+        - DIAMOND_CHESTPLATE
+        - DIAMOND_LEGGINGS
+        - DIAMOND_BOOTS
+        materials:
+        - DIAMOND
+        durability: 250
+        price: experience_levels-4
+      '7':
+        items:
+        - NETHERITE_SWORD
+        - NETHERITE_PICKAXE
+        - NETHERITE_AXE
+        - NETHERITE_SHOVEL
+        - NETHERITE_HOE
+        - NETHERITE_HELMET
+        - NETHERITE_CHESTPLATE
+        - NETHERITE_LEGGINGS
+        - NETHERITE_BOOTS
+        materials:
+        - NETHERITE_INGOT
+        durability: 500
+        price: experience_levels-5
+      '8':
+        items:
+        - TRIDENT
+        materials:
+        - PRISMARINE_SHARD
+        durability: 25
+        price: experience_levels-2
+      '9':
+        items:
+        - ELYTRA
+        materials:
+        - PHANTOM_MEMBRANE
+        durability: 100
+        price: experience_levels-10
+        
