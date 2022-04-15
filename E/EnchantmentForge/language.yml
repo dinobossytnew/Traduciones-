@@ -1,0 +1,233 @@
+# This file contains regular texts that can be
+# changed. Do /ef update language to
+# reload all texts.
+# 
+# traducido by dinobossyt 
+# se la chupo al owner de enchantamentforg un crack.
+# recomendado el plugin.
+# 
+# Supported color codes:
+# - &a (regular colors)
+# - #abc123 (hex colors, 1.16+)
+
+Permissions:
+  demolish-orbs:
+    use-command: '&4{!} &6NO se puede usar este comando!'
+  essence-split:
+    use-command: '&4{!} &6No se puede hacer este comando!'
+  enchantment-info:
+    use-command: '&4{!} &6No se puede hacer este comando!'
+  stations:
+    place: '&4{!} &6No se puede colocar esta estación!'
+Commands:
+  essence-split:
+    help: '&4{!} &6Use: &b/essencesplit &5[&damount&5]'
+    item-invalid: '&4{!} &6El artículo guardado no contiene esencia!'
+    amount-invalid: '&4{!} &6Importe no válido (&e%amount%&6)!'
+    amount-bottle-invalid: '&4{!} &6El importe debe ser inferior a &e%amount%&6!'
+    amount-item-invalid: '&4{!} &6El importe debe ser inferior o igual a &e%amount%&6!'
+    split-successfully: '&2{!} &aDividir con éxito &e%amount%&a esencia!'
+Enchantments:
+  cooldown-alert: '&b%enchantment% &7ya no está en tiempo de espera'
+  information-layout: {}
+Items:
+  enchantment-layout:
+    header: '&b&nEncantamientos:'
+    enchantment: '&8- &r%enchantment%'
+    slots-regular: '&8[&a%slots_current%&8/&a%slots_total%&8]'
+    slots-godly: '&8[&a%slots_current%&8/&a%slots_total%&8] - &8[&c%godly_slots_current%&8/&c%godly_slots_total%&8]'
+  essence-layout:
+    header: '&d&nEsencia líquida:'
+    amount: '&8- &b%essence%'
+  enchantment-slots:
+    maximum-reached-regular: '&4{!} &6Este objeto no puede tener más ranuras de encantamiento!'
+    maximum-reached-godly: '&4{!} &6Este objeto no puede tener más ranuras de encantamiento
+      divino!'
+  item-category:
+    name:
+      ALL: Todo
+      ARMOR: Armadura
+      AXE: Hacha
+      BOOTS: Botas
+      BOW: Arco
+      CHESTPLATE: Pechera
+      CROSSBOW: Ballesta
+      FISHING_ROD: Caña de pezca
+      FLINT_AND_STEEL: Pedernal y acero
+      HELMET: Casco
+      HOE: Azada
+      LEGGINGS: Pantalones
+      PICKAXE: Pico
+      SHEARS: Tijeras
+      SHIELD: Escudo
+      SHOVEL: Pala
+      SWORD: Espada
+      TRIDENT: Tridente
+      ELYTRA: Elytros
+Prices:
+  types:
+    experience_points:
+      amount: '&2%price% Puntos de experiencia'
+      insufficient: '&cPuntos de experiencia insuficientes &8(Falta &7%missing%&8)&c!'
+    experience_levels:
+      amount: '&2%price% Niveles de experiencia'
+      insufficient: '&cNiveles de experiencia insuficientes &8(Falta &7%missing%&8)&c!'
+    economy:
+      amount: '&2$%price%'
+      insufficient: '&cFondos insuficientes&8(Falta &7$%missing%&8)&c!'
+Stations:
+  mender:
+    obstructed: '&6¡Los bloques obstruyen este reparador de artículos!'
+    cannot-use: '&6¡No puedes usar este reparador de artículos!'
+    occupied: '&6¡Este reparador de artículos está ocupado!'
+    mend-accept: '&a« Reparar »'
+    mend-close: '&c« Cerrar »'
+    mending-price: '&6« &e&nPrecio de reparación&r &6»'
+    item:
+      not-inserted: '&b&oInsertar un artículo para reparar'
+      inserted: '&3« &b&nElemento insertado&r &3»'
+      unmendable-item: '&6¡Este artículo no se puede reparar!'
+      undamaged-item: '&6¡Este artículo ya está reparado!'
+      limit-reached: '&6Durabilidad máxima del artículo alcanzada!'
+    material:
+      not-inserted: '&b&oInsertar materiales requeridos'
+      inserted: '&3« &b&nMateriales insertados&r &3»'
+      invalid: '&6¡No se puede usar este material para reparar!'
+    durability-info:
+      header: '&3« &b&nDurabilidad&r &3»'
+      mending: '&f&oReparaciòn: &6%durability%'
+      durability: '&8[&c%old_durability%&8/&c%total_durability%&8] &b-> &8[&a%new_durability%&8/&a%total_durability%&8]'
+    mending:
+      item-empty: '&6¡Debes insertar un artículo!'
+      materials-empty: '&6¡Debe insertar los materiales requeridos!'
+    closing: '&c« &6&nCerrar el Reparador de elementos&r &c»'
+  extractor:
+    obstructed: '&6Los bloques están obstruyendo este extractor de encantamiento.!'
+    cannot-use: '&6¡No puedes usar este extractor de encantamientos!'
+    occupied: '&6¡Este extractor de encantamientos está ocupado!'
+    extract-accept: '&a« Extraer »'
+    extract-close: '&c« Cerrar »'
+    extraction-price: '&6« &e&nPrecio de extracciòn&r &6»'
+    item:
+      unenchanted: '&6¡Este artículo no está encantado!'
+      enchantments-denied: '&6¡No se puede extraer ningún encantamiento de este objeto!'
+      not-inserted: '&b&oInserta un elemento para encantar'
+      inserted: '&3« &b&nElemento insertado&r &3»'
+      info:
+        header: '&3« &b&nEncantamientos de artículos&r &3»'
+        slots-regular: '&7[&a%slots_current%&7/&a%slots_total%&7]'
+        slots-godly: '&7[&c%godly_slots_current%&7/&c%godly_slots_total%&7]'
+    enchantments:
+      not-selected: '&b&oSeleccione un encantamiento para extraer'
+      selected: '&3« &b&nEncantamiento seleccionada&r &3»'
+    pages:
+      current: '&6[ %page% ]'
+      next-valid: '&e->'
+      next-invalid: '&c×'
+      previous-valid: '&e<-'
+      previous-invalid: '&c×'
+    extraction:
+      item-empty: '&6¡Debes insertar un artículo!'
+      enchantment-empty: '&6¡Debes seleccionar un encantamiento!'
+      succeeded: '&aEncantamiento extraído con éxito &b&o%enchantment%&a!'
+    closing: '&c« &6&nCerrar el Extractor de encantamiento&r &c»'
+  station:
+    destroying-header: '&6Estación destructora en:'
+    destroying-time: '&e%time% segundos'
+    placing:
+      too-close: '&6Otra estación está demasiado cerca!'
+      obstructed: '&6Los bloques obstruyen esta zona!'
+      successfully-placed: '&aEstación colocada con éxito!'
+  forger:
+    forging-price: '&6« &e&nPrecio de forja&r &6»'
+    pages:
+      current: '&6[ %page% ]'
+      next-valid: '&e->'
+      next-invalid: '&c×'
+      previous-valid: '&e<-'
+      previous-invalid: '&c×'
+    obstructed: '&6Los bloques obstruyen a este forjador de encantos!'
+    cannot-use: '&6No puedes usar este forjador de encantos!'
+    occupied: '&6Este forjador de encantos está ocupado!'
+    forge-accept: '&a« Forja »'
+    forge-close: '&c« Cerrar »'
+    enchanting-price: '&6« &e&nPrecio de Encantamiento&r &6»'
+    tier-required: '&b&oSeleccione el tier de encantamiento'
+    tier-selected: '&3« &b&nTier seleccionado&r &3»'
+    tier-info: '&f&oTier: &r%tier%'
+    category-header: '&d%category%'
+    category-required: '&b&oSeleccione la categoría del artículo'
+    category-selected: '&3« &b&nCategoría de artículo seleccionada&r &3»'
+    category-info: '&d%category%'
+    category-page-current: '&6[ %page% ]'
+    category-page-next-valid: '&e->'
+    category-page-next-invalid: '&c×'
+    category-page-previous-valid: '&e<-'
+    category-page-previous-invalid: '&c×'
+    forging:
+      tier-not-selected: '&6Debes seleccionar un nivel de encantamiento!'
+      category-not-selected: '&6Debe seleccionar una categoría de artículos!'
+      tier-enchantments-empty: '&6Este nivel no contiene ningún encantamiento!'
+      category-enchantments-empty: '&6No hay encantos para este objeto!'
+      enchantment-forged: '&aForjar un encantamiento con éxito &b&o%enchantment%&a!'
+    after-item:
+      header: '&3« &b&nEncantamiento forjado&r &3»'
+      enchantment: '&f&oEncantamiento: &b%enchantment%'
+      tier: '&f&oTier: &r%tier%'
+      chance: '&f&oPosibilidad: &1%chance%%'
+    closing: '&c« &6&nCierre de FE&r &c»'
+  merger:
+    obstructed: '&6Los bloques obstruyen esta fusión de encantamiento!'
+    cannot-use: '&6No puedes usar esta fusión de encantamientos!'
+    occupied: '&6Esta fusión de encantos está ocupada!'
+    merge-accept: '&a« Fusionar »'
+    merge-close: '&c« Cerrar »'
+    info-first: '&d&oClick-Derecho para insertar elementos'
+    info-second: '&d&oClick-Izquierdo para eliminar elementos'
+    merging-price: '&6« &e&nPrecio de fusión&r &6»'
+    item-required: '&b&oInsertar un objeto para encantar'
+    item-inserted: '&3« &b&nArtículo insertado&r &3»'
+    enchantment-required: '&e&oInserta un orbe de encantamiento'
+    enchantment-inserted: '&3« &b&nEncantamiento insertado&r &3»'
+    item-unenchantable: '&6Este objeto no puede ser encantado!'
+    orb-before-item: '&6Primero debes añadir un objeto para encantar!'
+    tier-denied: '&6No se pueden añadir encantamientos con este nivel!'
+    enchantment-unapplicable: '&6No se puede añadir este encantamiento!'
+    enchantment-maximum-reached: '&6El encanto ya ha alcanzado el nivel máximo!'
+    overwrite-enchantment-unapplicable: '&6No se puede añadir este encantamiento,
+      el objeto debe tener &e%enchantment% de nivel %level%&6!'
+    item-slots-regular-full: '&6Este objeto no tiene ninguna ranura de encantamiento
+      libre!'
+    item-slots-godly-full: '&6Este objeto no tiene ninguna ranura de encantamiento
+      divino libre!'
+    enchantment-present: '&6El artículo ya tiene este encantamiento!'
+    item-info:
+      header: '&3« &b&nEncantamientos de objetos&r &3»'
+      slots-regular: '&7[&a%slots_current%&7/&a%slots_total%&7]'
+      slots-godly: '&7[&c%godly_slots_current%&7/&c%godly_slots_total%&7]'
+      unenchanted: '&c&oDesencantado'
+    enchantment-info:
+      header: '&6« &e&nOrbe de Encanto&r &6»'
+      enchantment: '&f&oEncantamiento: &b%enchantment%'
+      tier: '&f&oTier: &r%tier%'
+      chance: '&f&oPosibilidad: &1%chance%%'
+    merging:
+      item-empty: '&6Debes introducir un objeto para encantar!'
+      enchantment-empty: '&6Debes insertar un orbe de encantamiento!'
+      succeeded: '&aEl artículo y el encantamiento se han fusionado con éxito!'
+      failed-with-essence: '&cEl objeto y el encantamiento no se fusionaron y se convirtieron
+        en esencia!'
+      failed-without-essence: '&cEl objeto y el encantamiento no se han fusionado!'
+    closing: '&c« &6&nCierre de la fusión de Enchantment&r &c»'
+Inventories:
+  enchantment-demolish:
+    name: '&4Demoledor de Encantamientos'
+    empty-orbs: '&6¡Nada que demoler!'
+    inventory-full: '&6¡No hay suficiente espacio de inventario!'
+    demolish-success: '&aDemolido exitosamente &b%enchantments%,esencias &adentro del encantamiento
+      &d%essence% essence&a!'
+  enchantment-info:
+    name: '&3Todos los encantamientos'
+    page-next: '&ePágina siguiente'
+    page-previous: '&ePágina anterior'
+    page-current: '&6Página &7(&e%page%&7/&e%total%&7)'
