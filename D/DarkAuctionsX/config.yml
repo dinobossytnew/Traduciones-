@@ -1,0 +1,250 @@
+# by ! Roy & limpiado x dinobossyt
+# todo el trabajo fue de Roy el wey que 
+# la tiene enroyada xd
+admin-permission: 'darkauctions.admin'
+command-permission: 'none'
+no-permission: '&5&lSUBASTA OSCURA &7No tienes permisos.'
+
+#The bid value will gradually increase with a bid step
+#The bid step starts at the value below, and from 10 to 10 positions it increases with the bid adaos
+start-bid-increase: 10000
+bid-adaos: 5000
+
+outbid-yourself: true
+can-not-outbid: '&5&lSUBASTA OSCURA &7Estás muy ansioso, pero no puedes pujar dos veces seguidas.'
+
+display-text:
+  joining: '&cEsperando a que los jugadores se unan...'
+  before-start: '&ePreparando artículos... ¡Comenzaremos en breve!'
+  before-bid:
+    line1: '&fPrecio inicial: &6$%amount%'
+    line2: '&fComienza en: &b%seconds%'
+    line3: '%reward-display-name%'
+  while-bid:
+    line1: '&e¡Empiece a pujar!'
+    line2: '&fTiempo restante: &b%seconds%'
+    line3: '%reward-display-name%'
+
+#What is the maximum of players a dark auction can have
+#Set to 0 for no limit
+dark-auction-maximum-players: 10
+dark-auction-minimum-players: 5
+dark-auction-minimum-message: '&5&lSUBASTA OSCURA &7No se cumplió el mínimo de invitados requerido, expulsando a todos.'
+dark-auction-bypass-limit-permission: 'darkauctions.bypass'
+full-message: '&5&lSUBASTA OSCURA &7Lo siento, pero tenemos un número limitado de invitados. Estamos llenos por hoy.'
+
+command-messages:
+  in-cooldown:
+    - '&5&lSUBASTA OSCURA &7La subasta oscura comenzará en &c%time-left%'
+  join-now:
+    - '&5&lSUBASTA OSCURA &7¡La subasta oscura está sucediendo ahora mismo!'
+    - '&5&lSUBASTA OSCURA &7Use &e/darkauction join &8Comando para MVP'
+
+time-units:
+  days: 'Dias'
+  day: 'Dia'
+  hours: 'Horas'
+  hour: 'Hora'
+  minutes: 'Minutos'
+  minute: 'Minuto'
+  seconds: 'Segundos'
+  second: 'Segundo'
+  ended: 'Terminado'
+
+#In how many hours should the dark auction be open again
+cooldown-hours: 2
+#The dark auction will be triggered only by /darkauctions start
+remove-cooldown: true
+
+#The normal cooldown might be off by 20 seconds
+#If you want a very precise start, you will need to use advanced cooldown
+advanced-cooldown:
+  use: false
+  #IF YOU DO NOT KNOW HOW TO GENERATE THEM
+  #AVOID ADVANCED COOLDOWN
+  #Here is a link that can help you understand
+  #cron expressions: https://crontab.cronhub.io/
+  #The expression below means every hour
+  cron-expression: '0 * * * *'
+  #More information on the cron-expression:
+  #It is used by my code to execute tasks at specific moments of IN REAL LIFE TIME
+  #Please also keep in mind that it will be based on the TIME ZONE your SERVER IS HOSTED IN
+  #and not YOUR TIME ZONE
+
+
+#How many seconds you have to join the dark auction
+enter-time-seconds: 20
+no-dark-auction-running-message: '&5&lSUBASTA OSCURA &7No hay una subasta oscura actual a la que pueda unirse.'
+
+broadcast-start: true
+broadcast-message: '&5&lSUBASTA OSCURA &7¡La subasta oscura está a punto de comenzar! Considere unirse para obtener algunas recompensas exclusivas'
+
+#Set to true to enable the /darkauctions linkNpc
+#REQUIRES CITIZENS PLUGIN
+use-npc: true
+#How many seconds should the npc stay before despawning
+npc-spawn-seconds: 170
+npc-join-permission: 'none'
+npc-join-no-permission-message: '&5&lSUBASTA OSCURA &7This event is for &bVIPS&f! No se le permite unirse.'
+
+late-message: '&5&lSUBASTA OSCURA &7Llegaste demasiado tarde... Quizás la próxima vez.'
+
+#They can use /darkauctions join when the dark auction is about to start
+use-join-command: true
+join-permission: 'permiso.gladiador.custom'
+join-no-permission-message: '&5&lSUBASTA OSCURA &7No puedes usar este comando, solo MVP.'
+
+#After the entrance is closed, this is the waiting time
+before-start-time-seconds: 20
+#This is the time in which the item is shown but people can't bid yet
+display-time-seconds: 5
+#This is the time you get to bid, after each bid, the time resets to this value
+bid-time-seconds: 30
+#Time between rewards switch
+between-rewards-seconds: 3
+
+#This is how much money you need to be able to enter the dark auction
+required-minimum-money: 20000
+no-required-money-message: '&5&lSUBASTA OSCURA &7¿Qué eres, un campesino? Necesitas al menos &6$20,000 &7para ingresar!'
+
+#You can either simply put 'number' or have an interval, which will randomly pick an amount of rewards for that dark auction
+rewards-per-dark-auction: '3-5'
+
+join-message: '&5&lSUBASTA OSCURA &b%player% &fse ha unido a esta &5Dark Auction&f!'
+leave-message: '&5&lSUBASTA OSCURA &b%player% &fha salido de esta &5Dark Auction&f!'
+no-leave-message: '&5&lSUBASTA OSCURA &f¡No estás en una &5Dark Auction&f!'
+about-to-start-message: '&5&lSUBASTA OSCURA &f¡Espero que esté listo y emocionado por nuestra subasta de hoy! Empezaremos en breve.'
+item-display-message: '&5&lSUBASTA OSCURA &fUn artículo que venderemos hoy es &a%reward-display-name% &fpara una oferta inicial de &6$%starting-bid%&f!'
+has-placed-bid-message: '&5&lSUBASTA OSCURA &b%player% &fha hecho una oferta de &6$%amount% &fpara %reward-display-name%&f!'
+won-message: '&5&lSUBASTA OSCURA &fY &a%reward-display-name% &fva para &b%player% &fpor &6$%amount%&f! &d&lFelicidades!'
+no-bid-message: '&5&lSUBASTA OSCURA &fOh wow... ¡Supongo que no estamos vendiendo este! ¡No se hizo ninguna oferta por &a%reward-display-name%&f, avanzando!'
+#This message appears in the last 5 seconds
+ends-in-message: '&5&lSUBASTA OSCURA &fLa puja se detendrá en &b%time-left% seg&f!'
+thank-you-message: '&5&lSUBASTA OSCURA &f¡Gracias a todos por participar en nuestra &5Dark Auction&f! ¡Esperamos verte de nuevo por aquí pronto!'
+
+no-coins-to-bid: '&5&lSUBASTA OSCURA &7¡No tienes suficientes monedas para hacer esta oferta!'
+
+#The menu of bidding will be open to everyone in the dark auction
+#Even if they don't click the display
+auto-open: true
+#If they are further away than 50 blocks (for example) from the display
+#They will be kicked out from the dark auction
+kick-out-radius: 50
+kick-out-message: '&5&lSUBASTA OSCURA &7Si no quieres ver lo que hay en exhibición, ¿por qué viniste? Estás fuera.'
+
+bid-menu:
+  name: '&5Dark Auction'
+  #Number of slots
+  size: 54
+  before-start:
+    background-item: '160:15'
+    display-item-slot: 22
+  while-bidding:
+    background-item: '160:15'
+    bid-item:
+      placed-bid:
+        #item will be player head no matter what you want, am the developer.
+        name: '&fPuja de &e%player%'
+        lore:
+          - '&fEste jugador ha hecho'
+          - '&funa oferta &6$%amount%&f!'
+      skipped-bid:
+        item: '166'
+        name: '&cNo puedo pujar'
+        lore:
+          - '&fImporte de la oferta'
+          - '&fdemasiado bajo.'
+      click-to-bid:
+        name: '&6Puja $%amount%'
+        lore:
+          - '&e¡Haga clic para hacer una oferta!'
+        #After the maximum amount below is reached
+        #The huge-amount-item will be displayed for all the following bids
+        huge-amount-item: '264'
+        items:
+          #Bid value based items, anything below the amount specified will have that item as an icon
+          #PLEASE KEEP THEM IN ASCENDING ORDER
+          item1:
+            maximum-amount: 1000000
+            item: '265'
+          item2:
+            maximum-amount: 5000000
+            item: '266'
+    display-item-slot: 4
+    timer-item:
+      slot: 5
+      item: '347'
+      name: '&fTiempo restante: &b%time%'
+      lore:
+        - '&f¡Date prisa y puja antes '
+        - '&fde que expire el tiempo!'
+    #ATTENTION! Make sure you put the slots in the order you want the players to bid, NOT ORDERED BY SLOTS VALUE
+    #ORDER MATTERS! If you don't know what to do here, ask for support or do not modify
+    bid-slots:
+      - 9
+      - 18
+      - 27
+      - 36
+      - 45
+      - 46
+      - 47
+      - 38
+      - 29
+      - 20
+      - 21
+      - 22
+      - 31
+      - 40
+      - 49
+      - 50
+      - 51
+      - 42
+      - 33
+      - 24
+      - 25
+      - 26
+      - 35
+      - 44
+      - 53
+
+full-inventory: '&cNo puede reclamar todo porque no tiene suficiente espacio de inventario.'
+claim-message: '&5&lSUBASTA OSCURA &7Has reclamado %reward-display-name%&f!'
+can-not-access: '&5&lSUBASTA OSCURA &7El menú no se puede abrir durante &5subasta oscura&f!'
+
+#This is a menu from which you can claim your won rewards in subasta oscura
+#It is a customized menu, you can't really modify stuff in it
+claim-menu:
+  menu-name: '&5Reclamar premios'
+  background-item: '160:15'
+  claim-item:
+    no-rewards:
+      item: '328'
+      name: '&cSin recompensas'
+      lore:
+        - '&fNo tienes nada que'
+        - '&freclamar de la'
+        - '&5subasta oscura&f!'
+        - ''
+        - '&f¡Participe en algunos '
+        - '&fy gane recompensas!'
+    rewards:
+      #The %rewards% placeholder will be replaced with
+      #a list of the reward names the player has
+      item: '342'
+      name: '&a¡Recompensas!'
+      lore:
+        - '&f¡Nos alegra que haya participado '
+        - '&fen el exclusivo evento de '
+        - '&55subasta oscura&f.'
+        - ''
+        - '&fRecompensas para reclamar:'
+        - '%rewards%'
+        - ''
+        - '&fVuelve pronto~'
+
+placeholders:
+  no-dark-auction: 'Sin subasta'
+  enter-time-passed: 'Comenzar'
+  time-until-auction-passed: 'Ha comenzado!'
+  current-item-not: 'Buscando objetos...'
+  last-bid-not: 'Sin puja'
