@@ -78,3 +78,4 @@ craftCooldownBypassNoMoney: '&cNo tienes la cantidad de dinero suficiente para e
    el tiempo de reutilización de este artículo!'
 pluginDisabledError: '&cEL PLUGIN HA DETECTADO ALGUNOS ERRORES. REVÍSALOS Y ARRÉGLALOS USANDO &7/ecraft verify'
 commandCategoryOpened: '&aHas abierto categoría &7%name% &aa &e%player%&a.'
+
