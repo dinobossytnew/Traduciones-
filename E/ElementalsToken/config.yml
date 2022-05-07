@@ -1,0 +1,127 @@
+# This is where you can customize all the messages for this plugin
+messages:
+  prefix: '&8[&eTokens&8]'
+  main-help:
+    - '%prefix% &e/Tokens &fbalance &7<Jugador>'
+    - '%prefix% &e/Tokens &fwithdraw &7<Cantidad>'
+    - '%prefix% &e/Tokens &fpay &7<Jugador> <Cantidad>'
+    - '%prefix% &e/Tokens &fshop'
+    - '%prefix% &e/Tokens &ftop'
+    - '%prefix% &e/Tokens &fversion'
+  admin-help:
+    - '%prefix% &e/Tokens &fgive &7<Jugador> <Cantidad>'
+    - '%prefix% &e/Tokens &fadd &7<Jugador> <Cantidad>'
+    - '%prefix% &e/Tokens &fremove &7<Jugador> <Cantidad>'
+    - '%prefix% &e/Tokens &fset &7<Jugador> <Cantidad>'
+    - '%prefix% &e/Tokens &freload'
+  
+  console: '%prefix% &cNo puedes usar comandos de consola.'
+  config-reloaded: '%prefix% &a&aLos archivos de configuración han sido recargados!'
+  config-reload-error: '%prefix% &cA ocurrido un error revise la configuracion.'
+  no-permission: '%prefix% &fNo tienes permisos suficentes para este cmd.'
+  player-not-found: '%prefix% &cJugador no encontrado.'
+  my-balance: '%prefix% &eToken Cantidad: &f%balance%'
+  other-balance: '%prefix% &e%player% Tokens Cantidad: &f%balance%'
+  redeem: '&a&l+%amount% &e&lTokens'
+  withdraw: '&c&l-%amount% &e&lTokens'
+  unable-to-withdraw: '%prefix% &bNo tienes suficiente &eTokens&f para retirar esta cantidad<.'
+  invalid-amount: '%prefix% &cWe ingese un valor valido -50 o 0 no son validos!'
+  pay-sent: '%prefix% &7Tu enviaste &e%amount% tokens &7a &e%player%'
+  pay-received: '%prefix% &7Tu resiviste &e%amount% tokens &7de &e%player%'
+  unable-to-pay: '%prefix% &cNo tiene suficientes &etokens&c para completar este pago.'
+  cant-pay-to-self: '%prefix% &cNo puedes enviarte pagos simbólicos a ti mismo'
+  give-sent: '%prefix% &7has dado &e%amount% &7tokens a &e%player%'
+  give-received: '%prefix% &7Usted ha recibido &e%amount% &7tokens de &e%player%'
+  add-sent: '%prefix% &e%amount% &etokens&7 añadir a &e%player% &7cuenta'
+  add-received: '%prefix% &e%amount% &7se han añadido &eToken&7 a su cuenta'
+  remove-sent: '%prefix% &e%amount% &eToken&7 Removido de la cuenta perteneciente a &e%player%'
+  remove-received: '%prefix% &e%amount% &eToken&7 han sido eliminados de su cuenta'
+  unable-to-remove: '%prefix% &e%player% &cno tiene suficiente para eliminar esta cantidad'
+  set-sent: '%prefix% &7&e%player% &7saldo de &etokens&7 fijado en &e%amount%'
+  set-received: '%prefix% &7Su saldo de &etokens&7 se ha fijado en &e%amount%'
+  usage-withdraw: '%prefix% &e/Tokens &fwithdraw &7<Amount>'
+  usage-pay: '%prefix% &e/Tokens &fpay &7<Player> <Amount>'
+  usage-give: '%prefix% &e/Tokens &fgive &7<Player> <Amount>'
+  usage-add: '%prefix% &e/Tokens &fadd &7<Player> <Amount>'
+  usage-remove: '%prefix% &e/Tokens &fremove &7<Player> <Amount>'
+  usage-set: '%prefix% &e/Tokens &fset &7<Player> <Amount>'
+  successful-purchase: '%prefix% &aComprado con éxito %item%'
+  insufficient-funds: '%prefix% &cNo tiene suficiente para comprar este artículo'
+  withdraw-limit-reached: '%prefix% &cNo puede retirar más de &e%amount% Tokens &ca la vez'
+  set-all: '%prefix% &eTodo &fGuardado &eel saldo de fichas de los jugadores se ha fijado en %amount%'
+  set-all-online: '%prefix% &eTodo &aJugadores &eConectados El saldo de las fichas se ha fijado en %amount%'
+
+
+# This is where you can customize how the '/Tokens top' players get shown
+top-10:
+  top: '&7-----[&eTop 10 Tokens&7]-----'
+  value: '&e* &f%player%&e: &f%balance%'
+  bottom: ''
+
+
+# This is where you can customize all the sounds for this plugin
+sounds:
+  token-dropped:
+    sound: 'ORB_PICKUP'
+    volume: 1
+    pitch: 1
+  token-redeemed:
+    sound: 'ORB_PICKUP'
+    volume: 1
+    pitch: 1
+  token-withdraw:
+    sound: 'ORB_PICKUP'
+    volume: 1
+    pitch: 1
+  open-shop:
+    sound: 'ORB_PICKUP'
+    volume: 1
+    pitch: 1
+  item-purchased:
+    sound: 'ORB_PICKUP'
+    volume: 1
+    pitch: 1
+
+
+# This is where you can configure what you want the design of the 'token' item to be
+token:
+  material: 'DOUBLE_PLANT'
+  data: 0
+  glow: true
+  display-name: '&e&lToken &7(&Click-derecho&7)'
+  lore:
+    - ''
+    - '&7Click-Derecho para canjear su(s) ficha(s)!'
+  #custom-model-data: 0 //To use custom items, remove the hashtag and change the number to the value of your custom item you wish for this to be set to
+
+
+# This is where you can toggle certain aspects of the plugin
+toggleable:
+  token-dropped-messages: true
+  action-bar-messages: true
+  allow-silk-touch: false
+
+
+#This is how often you want to save the data in the data.yml file. (Set per tick. 20 ticks = 1 second)
+data-save-interval: 36000
+
+
+# Enabled this to allow MySQL support. Only do this if you know what you're doing
+mysql:
+  enabled: false
+  host: localhost
+  port: 3306
+  database: elementaltokens
+  username: root
+  password: password
+  table: player_data
+
+
+starting-token-balance: 0 #Default amount of tokens each NEW player starts with
+withdraw-limit: 2304 #Set the limit the amount of tokens a player can withdraw when running the withdraw command
+
+
+
+
+
+
