@@ -1,0 +1,152 @@
+# Enable this if you would like MySQL support. Only do this if you know what you are doing
+MySQL:
+  enabled: false
+  host: localhost
+  port: 3306
+  database: elementalgems
+  username: root
+  password: password
+  table: player_data
+  
+
+#Customize each message that gets sent from this plugin
+Messages:
+  prefix: '&8|&aGEMS&8|'
+  mainCommands:
+    - '{prefix} &a/Gems &fbalance &7<Jugador>'
+    - '{prefix} &a/Gems &fwithdraw &7<Cantidad>'
+    - '{prefix} &a/Gems &fpay &7<Jugador> <Cantidad>'
+    - '{prefix} &a/Gems &ftop'
+    - '{prefix} &a/Gems &fshop'
+    - '{prefix} &a/Gems &fupgrade'
+    - '{prefix} &a/Gems &fversion'
+  adminCommands:
+    - '{prefix} &a/Gems &fadd &7<Jugador> <Cantidad>'
+    - '{prefix} &a/Gems &fremove &7<Jugador> <Cantidad>'
+    - '{prefix} &a/Gems &fset &7<Jugador> <Cantidad>'
+    - '{prefix} &a/Gems &fgive &7<Jugador> <Cantidad>'
+    - '{prefix} &a/Gems &freload'
+  
+  usageWithdraw: '{prefix} &cUsa el comando. &e/Gems withdraw <Cantidad>'
+  usageAdd: '{prefix} &cUsa el comando. &e/Gems add <Jugador> <Cantidad>'
+  usageRemove: '{prefix} &cUsa el comando. &e/Gems remove <Jugador> <Cantidad>'
+  usageSet: '{prefix} &cUsa el comando. &e/Gems set <Jugador> <Cantidad>'
+  usageGive: '{prefix} &cUsa el comando. &e/Gems give <Jugador> <Cantidad>'
+  usagePay: '{prefix} &cUsa el comando. &e/Gems pay <Jugador> <Cantidad>'
+  myBalance: '{prefix} &aCANTIDAD: &f{balance}'
+  otherBalance: '{prefix} &a{player}''&4&lCantidad: &f{balance}'
+  redeem: '&a&l+{amount}x &a&lGEMAS'
+  withdraw: '&c&l-{amount}x &a&lGEMAS'
+  notEnoughToWithdraw: '{prefix} &cNo tienes suficiente para retirar esta cantidad!'
+  invalidAmount: '{prefix} &cPor favor, especifique un número mayor que 0!'
+  addSender: '{prefix} &7Usted a &aañadido {amount}x Gemas &7a &a{player} &asu cuenta'
+  addOther: '{prefix} &a{player} &7has &aañadido {amount}x Gemas &7en su cuenta'
+  removeSender: '{prefix} &7has &cremovido &a{amount}x Gemas &7a &a{player} &7cuenta'
+  removeOther: '{prefix} &a{player} &7has &cremovido &a{amount}x Gemas &7de su cuenta'
+  unableToRemove: '{prefix} &cel número que has introducido es superior a la cantidad de gemas de &e{player}'
+  setSender: '{prefix} &7Tu selecionaste a &a{player} &7y su saldo de gemas&b{amount}'
+  setOther: '{prefix} &7Su saldo de gemas se ha fijado en &b{amount}'
+  giveSender: '{prefix} &7Usted a &edado &a{amount}x gemas &7a &a{player}'
+  giveOther: '{prefix} &7Usted ha recibido &a{amount}x Gemas &7por &a{player}'
+  paySender: '{prefix} &7Usted ha &aenviado &7a pagar &a{amount}x Gemas &7a &a{player}'
+  payOther: '{prefix} &7Usted ha &arecivido &7el pago de &a{amount}x gemas &7por &a{player}'
+  noSelfPayment: '{prefix} &cNo puedes enviarte pagos de gemas a ti mismo'
+  notEnoughToPay: '{prefix} &cNo tiene suficiente para enviar esta cantidad!'
+  configReloaded: '{prefix} &aLos archivos de configuración han sido recargados!'
+  configReloadError: '{prefix} &cSe ha producido un error al intentar recargar los archivos de configuración.'
+  console: '{prefix} &cDebe ser un jugador para realizar este comando'
+  playerNotFound: '{prefix} &cJugador no encontrado.'
+  noPermission: '{prefix} &cNo tienes permiso para eso'
+  incorrectUsage: '{prefix} &cEse no es el uso correcto. &eCheck /Gem help!'
+  successfulPurchase: '{prefix} &aUsted ha comprado {item}&a!'
+  insufficientFunds: '{prefix} &cNo tienes suficiente para comprar esto.'
+  successfulUpgrade: '{prefix} &aHa adquirido con éxito el siguiente nivel de actualización&a!'
+  alreadyMaxLevel: '{prefix} &cEsta actualización ya está al máximo.'
+  charityMessage: '{prefix} &e{player} &aha ganado una gema y ha regalado algunas gemas a todos los jugadores en línea!'
+  invalidShop: '{prefix} &cEsta categoría de tienda no existe: &e{category}'
+  shopAccessDenied: '{prefix} &cNo tiene permiso para acceder a esta tienda. Requiere: &e{permission}'
+  shopCategoryDisabled: '{prefix} &cEsta categoría de tienda está actualmente desactivada!'
+  purchaseAccessDenied: '{prefix} &cNo tiene permiso para comprar este artículo. Requiere: &e{permission}'
+  gemWithdrawDisabled: '{prefix} &cLa retirada de gemas está actualmente desactivada!'
+  onShopCooldown: '{prefix} &cPor favor, espere para comprar otro artículo!'
+  notWholeNumber: '{prefix} &cPor favor, especifique un número válido sin decimales'
+  
+
+#This is where you can configure the sounds for certain events.
+Sounds:
+  redeem:
+    sound: 'BLOCK_ANVIL_USE' #Leave empty if you don't want a sound to be played
+    volume: 1
+    pitch: 1
+  withdraw:
+    sound: 'ORB_PICKUP'
+    volume: 1
+    pitch: 1
+  gemDropped:
+    sound: 'ORB_PICKUP'
+    volume: 1
+    pitch: 1
+  openShops:
+    sound: 'ORB_PICKUP'
+    volume: 1
+    pitch: 1
+  openUpgrades:
+    sound: 'ORB_PICKUP'
+    volume: 1
+    pitch: 1
+  purchase:
+    sound: 'ORB_PICKUP'
+    volume: 1
+    pitch: 1
+  upgrade:
+    sound: 'ORB_PICKUP'
+    volume: 1
+    pitch: 1
+
+
+#This is where you can customize the gem that is received
+Gem:
+  material: NAME_TAG
+  customModelData: 1
+  damage: 0
+  glow: true
+  displayName: '#13dafb&lG#0bdada&lE#02d9b8&lM'
+  lore:
+    - '&7| &bTiene muy linda pinta'
+    - '&7| &bal menos vale algo?'
+    - '&7| &bguardala es importante'
+    - '&8(&e&l!&8)&7 Click-Derecho para guardar' 
+
+
+#This is where you may toggle certain features to either enable them or disable them.
+Toggleable:
+  gemDroppedMessage: true #Set to true to allow messages to appear when receiving gems
+  actionBarMessages: true #Set to true send the player a message via action bar rather than spam their chat when they receive a gem
+  charityMessage: true #Set to true to broadcast a message to all online players when someone's Charity Upgrade gets activated
+  giveCharityToFinder: false #Set to true to allow the player who's Charity Upgrade got activated, to also receive gems from it
+  displayNamesInMessages: false #Set to true to have the names display as the player's nick name when using the '/Gem' commands
+  enableGemVillagerTrades: false #Set this to true to allow players to use gems in villager menus
+  canRedeemGems: true #Set to true to allow players to right-click and redeem gems
+  disableGemWithdraw: false #Set to true to prevent players from running the 'gem withdraw' command and receiving physical gems
+  enableDecimalValues: false #Set to true if you wish for numbers like "123.45" to be supported when displaying numbers in this plugin
+
+
+# This is where you can customize how the '/Gems top' players get shown
+Top-10:
+  start: '&3&l▬▬▬▬▬▬&r&7&l|&b&lTOP 10&7&l|&3&l▬▬▬▬▬▬'
+  value: '#ff0000⚠ &8&l► &b%player%&a: &3%balance%'
+  end: ''
+
+
+#In seconds, set how often the gem data should be saved to the database.yml (1800 = saved every 30 min)
+data-save-interval: 1800
+
+
+#Default amount of gems each NEW player starts with
+starting-gem-balance: 0
+
+
+
+
+
+
