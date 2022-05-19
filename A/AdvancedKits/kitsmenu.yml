@@ -1,0 +1,357 @@
+title: '&8Kits Menu'
+rows: 6
+menu-fillers:
+  - 'main-kits-menu-left-arrow'
+  - 'main-kits-menu-right-arrow'
+  - 'non-random-rainbow-glass-pane'
+kits:
+  Usuario:
+    slot: 25
+    available:
+      material: 'PLAYER_HEAD:http://textures.minecraft.net/texture/24b953b2c0e952574f1ed29c81e82e53bcdb1ba683259c20daeef7d554a2a798'
+      name: '{kit} &7| &#04bafbKIT'
+      glow: true
+      lore:
+        - ''
+        - '&7Informacion:'
+        - ' &f‣ &7Disponible en:&f {total}'
+        - ' &f‣ &7Cantidad Items:&f {items}'
+        - ' &f‣ &7Tiempo reducido:&f {redeemed_times}'
+        - ''
+        - ' &f‣ &7Estado:{status}'
+        - ' &f‣ &7Nivel del kit:&f {current_level}/{maximum_level}'
+        - ''
+        - ''
+        - '&7&l((&#00ff00&l✔ &#00ff00CLICK IZQUIERDO TOMA EL KIT! &7&l))'
+    unavailable:
+      material: 'PLAYER_HEAD:https://textures.minecraft.net/texture/244ead2a7d98c086bda11ab5937987e69f3c7ff4f477a19427d7ac022c67fd76'
+      name: 'Kit {kit}'
+      glow: false
+      lore:
+        - ''
+        - '&7Informacion:'
+        - ' &f‣ &7Disponible en:&f {total}'
+        - ' &f‣ &7Cantidad Items:&f {items}'
+        - ' &f‣ &7Tiempo reducido:&f {redeemed_times}'
+        - ''
+        - ' &f‣ &7Estado:{status}'
+        - ' &f‣ &7Nivel del kit:&f {current_level}/{maximum_level}'
+        - ''
+        - ''
+        - '&7&l((&#ff0000&l✘ &#ff0000TIEMPO DE ESPERA &#42f55a&l⌚&7&l))'
+    locked:
+      material: 'PLAYER_HEAD:http://textures.minecraft.net/texture/8ad943d063347f95ab9e9fa75792da84ec665ebd22b050bdba519ff7da61db'
+      name: 'Kit {kit}'
+      glow: false
+      lore:
+        - ''
+        - '&7Informacion:'
+        - ' &f‣ &7Disponible en:&f {total}'
+        - ' &f‣ &7Cantidad Items:&f {items}'
+        - ' &f‣ &7Tiempo reducido:&f {redeemed_times}'
+        - ''
+        - ' &f‣ &7Estado:{status}'
+        - ' &f‣ &7Nivel del kit:&f {current_level}/{maximum_level}'
+        - ''
+        - ''
+        - '&7&l((&#ff0000&l✘ &#ff0000NO TIENES PERMISOS PARA ESTE KIT! &7&l))'
+  Imbecil:
+    slot: 20
+    available:
+      material: 'PLAYER_HEAD:http://textures.minecraft.net/texture/24b953b2c0e952574f1ed29c81e82e53bcdb1ba683259c20daeef7d554a2a798'
+      name: '{kit} &7| &#04bafbKIT'
+      glow: true
+      lore:
+        - ''
+        - '&7Informacion:'
+        - ' &f‣ &7Disponible en:&f {total}'
+        - ' &f‣ &7Cantidad Items:&f {items}'
+        - ' &f‣ &7Tiempo reducido:&f {redeemed_times}'
+        - ''
+        - ' &f‣ &7Estado:{status}'
+        - ' &f‣ &7Nivel del kit:&f {current_level}/{maximum_level}'
+        - ''
+        - ''
+        - '&7&l((&#00ff00&l✔ &#00ff00CLICK IZQUIERDO TOMA EL KIT! &7&l))'
+    unavailable:
+      material: 'PLAYER_HEAD:https://textures.minecraft.net/texture/244ead2a7d98c086bda11ab5937987e69f3c7ff4f477a19427d7ac022c67fd76'
+      name: 'Kit {kit}'
+      glow: false
+      lore:
+        - ''
+        - '&7Informacion:'
+        - ' &f‣ &7Disponible en:&f {total}'
+        - ' &f‣ &7Cantidad Items:&f {items}'
+        - ' &f‣ &7Tiempo reducido:&f {redeemed_times}'
+        - ''
+        - ' &f‣ &7Estado:{status}'
+        - ' &f‣ &7Nivel del kit:&f {current_level}/{maximum_level}'
+        - ''
+        - ''
+        - '&7&l((&#ff0000&l✘ &#ff0000TIEMPO DE ESPERA &#42f55a&l⌚&7&l))'
+    locked:
+      material: 'PLAYER_HEAD:http://textures.minecraft.net/texture/8ad943d063347f95ab9e9fa75792da84ec665ebd22b050bdba519ff7da61db'
+      name: 'Kit {kit}'
+      glow: false
+      lore:
+        - ''
+        - '&7Informacion:'
+        - ' &f‣ &7Disponible en:&f {total}'
+        - ' &f‣ &7Cantidad Items:&f {items}'
+        - ' &f‣ &7Tiempo reducido:&f {redeemed_times}'
+        - ''
+        - ' &f‣ &7Estado:{status}'
+        - ' &f‣ &7Nivel del kit:&f {current_level}/{maximum_level}'
+        - ''
+        - ''
+        - '&7&l((&#ff0000&l✘ &#ff0000NO TIENES PERMISOS PARA ESTE KIT! &7&l))'
+  Drogadicto:
+    slot: 12
+    available:
+      material: 'PLAYER_HEAD:http://textures.minecraft.net/texture/24b953b2c0e952574f1ed29c81e82e53bcdb1ba683259c20daeef7d554a2a798'
+      name: '{kit} &7| &#04bafbKIT'
+      glow: true
+      lore:
+        - ''
+        - '&7Informacion:'
+        - ' &f‣ &7Disponible en:&f {total}'
+        - ' &f‣ &7Cantidad Items:&f {items}'
+        - ' &f‣ &7Tiempo reducido:&f {redeemed_times}'
+        - ''
+        - ' &f‣ &7Estado:{status}'
+        - ' &f‣ &7Nivel del kit:&f {current_level}/{maximum_level}'
+        - ''
+        - ''
+        - '&7&l((&#00ff00&l✔ &#00ff00CLICK IZQUIERDO TOMA EL KIT! &7&l))'
+    unavailable:
+      material: 'PLAYER_HEAD:https://textures.minecraft.net/texture/244ead2a7d98c086bda11ab5937987e69f3c7ff4f477a19427d7ac022c67fd76'
+      name: 'Kit {kit}'
+      glow: false
+      lore:
+        - ''
+        - '&7Informacion:'
+        - ' &f‣ &7Disponible en:&f {total}'
+        - ' &f‣ &7Cantidad Items:&f {items}'
+        - ' &f‣ &7Tiempo reducido:&f {redeemed_times}'
+        - ''
+        - ' &f‣ &7Estado:{status}'
+        - ' &f‣ &7Nivel del kit:&f {current_level}/{maximum_level}'
+        - ''
+        - ''
+        - '&7&l((&#ff0000&l✘ &#ff0000TIEMPO DE ESPERA &#42f55a&l⌚&7&l))'
+    locked:
+      material: 'PLAYER_HEAD:http://textures.minecraft.net/texture/8ad943d063347f95ab9e9fa75792da84ec665ebd22b050bdba519ff7da61db'
+      name: 'Kit {kit}'
+      glow: false
+      lore:
+        - ''
+        - '&7Informacion:'
+        - ' &f‣ &7Disponible en:&f {total}'
+        - ' &f‣ &7Cantidad Items:&f {items}'
+        - ' &f‣ &7Tiempo reducido:&f {redeemed_times}'
+        - ''
+        - ' &f‣ &7Estado:{status}'
+        - ' &f‣ &7Nivel del kit:&f {current_level}/{maximum_level}'
+        - ''
+        - ''
+        - '&7&l((&#ff0000&l✘ &#ff0000NO TIENES PERMISOS PARA ESTE KIT! &7&l))'
+  OniiChan:
+    slot: 22
+    available:
+      material: 'PLAYER_HEAD:http://textures.minecraft.net/texture/24b953b2c0e952574f1ed29c81e82e53bcdb1ba683259c20daeef7d554a2a798'
+      name: '{kit} &7| &#04bafbKIT'
+      glow: true
+      lore:
+        - ''
+        - '&7Informacion:'
+        - ' &f‣ &7Disponible en:&f {total}'
+        - ' &f‣ &7Cantidad Items:&f {items}'
+        - ' &f‣ &7Tiempo reducido:&f {redeemed_times}'
+        - ''
+        - ' &f‣ &7Estado:{status}'
+        - ' &f‣ &7Nivel del kit:&f {current_level}/{maximum_level}'
+        - ''
+        - ''
+        - '&7&l((&#00ff00&l✔ &#00ff00CLICK IZQUIERDO TOMA EL KIT! &7&l))'
+    unavailable:
+      material: 'PLAYER_HEAD:https://textures.minecraft.net/texture/244ead2a7d98c086bda11ab5937987e69f3c7ff4f477a19427d7ac022c67fd76'
+      name: 'Kit {kit}'
+      glow: false
+      lore:
+        - ''
+        - '&7Informacion:'
+        - ' &f‣ &7Disponible en:&f {total}'
+        - ' &f‣ &7Cantidad Items:&f {items}'
+        - ' &f‣ &7Tiempo reducido:&f {redeemed_times}'
+        - ''
+        - ' &f‣ &7Estado:{status}'
+        - ' &f‣ &7Nivel del kit:&f {current_level}/{maximum_level}'
+        - ''
+        - ''
+        - '&7&l((&#ff0000&l✘ &#ff0000TIEMPO DE ESPERA &#42f55a&l⌚&7&l))'
+    locked:
+      material: 'PLAYER_HEAD:http://textures.minecraft.net/texture/8ad943d063347f95ab9e9fa75792da84ec665ebd22b050bdba519ff7da61db'
+      name: 'Kit {kit}'
+      glow: false
+      lore:
+        - ''
+        - '&7Informacion:'
+        - ' &f‣ &7Disponible en:&f {total}'
+        - ' &f‣ &7Cantidad Items:&f {items}'
+        - ' &f‣ &7Tiempo reducido:&f {redeemed_times}'
+        - ''
+        - ' &f‣ &7Estado:{status}'
+        - ' &f‣ &7Nivel del kit:&f {current_level}/{maximum_level}'
+        - ''
+        - ''
+        - '&7&l((&#ff0000&l✘ &#ff0000NO TIENES PERMISOS PARA ESTE KIT! &7&l))'
+  NeeSan:
+    slot: 21
+    available:
+      material: 'PLAYER_HEAD:http://textures.minecraft.net/texture/24b953b2c0e952574f1ed29c81e82e53bcdb1ba683259c20daeef7d554a2a798'
+      name: '{kit} &7| &#04bafbKIT'
+      glow: true
+      lore:
+        - ''
+        - '&7Informacion:'
+        - ' &f‣ &7Disponible en:&f {total}'
+        - ' &f‣ &7Cantidad Items:&f {items}'
+        - ' &f‣ &7Tiempo reducido:&f {redeemed_times}'
+        - ''
+        - ' &f‣ &7Estado:{status}'
+        - ' &f‣ &7Nivel del kit:&f {current_level}/{maximum_level}'
+        - ''
+        - ''
+        - '&7&l((&#00ff00&l✔ &#00ff00CLICK IZQUIERDO TOMA EL KIT! &7&l))'
+    unavailable:
+      material: 'PLAYER_HEAD:https://textures.minecraft.net/texture/244ead2a7d98c086bda11ab5937987e69f3c7ff4f477a19427d7ac022c67fd76'
+      name: 'Kit {kit}'
+      glow: false
+      lore:
+        - ''
+        - '&7Informacion:'
+        - ' &f‣ &7Disponible en:&f {total}'
+        - ' &f‣ &7Cantidad Items:&f {items}'
+        - ' &f‣ &7Tiempo reducido:&f {redeemed_times}'
+        - ''
+        - ' &f‣ &7Estado:{status}'
+        - ' &f‣ &7Nivel del kit:&f {current_level}/{maximum_level}'
+        - ''
+        - ''
+        - '&7&l((&#ff0000&l✘ &#ff0000TIEMPO DE ESPERA &#42f55a&l⌚&7&l))'
+    locked:
+      material: 'PLAYER_HEAD:http://textures.minecraft.net/texture/8ad943d063347f95ab9e9fa75792da84ec665ebd22b050bdba519ff7da61db'
+      name: 'Kit {kit}'
+      glow: false
+      lore:
+        - ''
+        - '&7Informacion:'
+        - ' &f‣ &7Disponible en:&f {total}'
+        - ' &f‣ &7Cantidad Items:&f {items}'
+        - ' &f‣ &7Tiempo reducido:&f {redeemed_times}'
+        - ''
+        - ' &f‣ &7Estado:{status}'
+        - ' &f‣ &7Nivel del kit:&f {current_level}/{maximum_level}'
+        - ''
+        - ''
+        - '&7&l((&#ff0000&l✘ &#ff0000NO TIENES PERMISOS PARA ESTE KIT! &7&l))'
+  NoHacks:
+    slot: 14
+    available:
+      material: 'PLAYER_HEAD:http://textures.minecraft.net/texture/24b953b2c0e952574f1ed29c81e82e53bcdb1ba683259c20daeef7d554a2a798'
+      name: '{kit} &7| &#04bafbKIT'
+      glow: true
+      lore:
+        - ''
+        - '&7Informacion:'
+        - ' &f‣ &7Disponible en:&f {total}'
+        - ' &f‣ &7Cantidad Items:&f {items}'
+        - ' &f‣ &7Tiempo reducido:&f {redeemed_times}'
+        - ''
+        - ' &f‣ &7Estado:{status}'
+        - ' &f‣ &7Nivel del kit:&f {current_level}/{maximum_level}'
+        - ''
+        - ''
+        - '&7&l((&#00ff00&l✔ &#00ff00CLICK IZQUIERDO TOMA EL KIT! &7&l))'
+    unavailable:
+      material: 'PLAYER_HEAD:https://textures.minecraft.net/texture/244ead2a7d98c086bda11ab5937987e69f3c7ff4f477a19427d7ac022c67fd76'
+      name: 'Kit {kit}'
+      glow: false
+      lore:
+        - ''
+        - '&7Informacion:'
+        - ' &f‣ &7Disponible en:&f {total}'
+        - ' &f‣ &7Cantidad Items:&f {items}'
+        - ' &f‣ &7Tiempo reducido:&f {redeemed_times}'
+        - ''
+        - ' &f‣ &7Estado:{status}'
+        - ' &f‣ &7Nivel del kit:&f {current_level}/{maximum_level}'
+        - ''
+        - ''
+        - '&7&l((&#ff0000&l✘ &#ff0000TIEMPO DE ESPERA &#42f55a&l⌚&7&l))'
+    locked:
+      material: 'PLAYER_HEAD:http://textures.minecraft.net/texture/8ad943d063347f95ab9e9fa75792da84ec665ebd22b050bdba519ff7da61db'
+      name: 'Kit {kit}'
+      glow: false
+      lore:
+        - ''
+        - '&7Informacion:'
+        - ' &f‣ &7Disponible en:&f {total}'
+        - ' &f‣ &7Cantidad Items:&f {items}'
+        - ' &f‣ &7Tiempo reducido:&f {redeemed_times}'
+        - ''
+        - ' &f‣ &7Estado:{status}'
+        - ' &f‣ &7Nivel del kit:&f {current_level}/{maximum_level}'
+        - ''
+        - ''
+        - '&7&l((&#ff0000&l✘ &#ff0000NO TIENES PERMISOS PARA ESTE KIT! &7&l))'
+  UltraInstinto:
+    slot: 24
+    available:
+      material: 'PLAYER_HEAD:http://textures.minecraft.net/texture/24b953b2c0e952574f1ed29c81e82e53bcdb1ba683259c20daeef7d554a2a798'
+      name: '{kit} &7| &#04bafbKIT'
+      glow: true
+      lore:
+        - ''
+        - '&7Informacion:'
+        - ' &f‣ &7Disponible en:&f {total}'
+        - ' &f‣ &7Cantidad Items:&f {items}'
+        - ' &f‣ &7Tiempo reducido:&f {redeemed_times}'
+        - ''
+        - ' &f‣ &7Estado:{status}'
+        - ' &f‣ &7Nivel del kit:&f {current_level}/{maximum_level}'
+        - ''
+        - ''
+        - '&7&l((&#00ff00&l✔ &#00ff00CLICK IZQUIERDO TOMA EL KIT! &7&l))'
+    unavailable:
+      material: 'PLAYER_HEAD:https://textures.minecraft.net/texture/244ead2a7d98c086bda11ab5937987e69f3c7ff4f477a19427d7ac022c67fd76'
+      name: 'Kit {kit}'
+      glow: false
+      lore:
+        - ''
+        - '&7Informacion:'
+        - ' &f‣ &7Disponible en:&f {total}'
+        - ' &f‣ &7Cantidad Items:&f {items}'
+        - ' &f‣ &7Tiempo reducido:&f {redeemed_times}'
+        - ''
+        - ' &f‣ &7Estado:{status}'
+        - ' &f‣ &7Nivel del kit:&f {current_level}/{maximum_level}'
+        - ''
+        - ''
+        - '&7&l((&#ff0000&l✘ &#ff0000TIEMPO DE ESPERA &#42f55a&l⌚&7&l))'
+    locked:
+      material: 'PLAYER_HEAD:http://textures.minecraft.net/texture/8ad943d063347f95ab9e9fa75792da84ec665ebd22b050bdba519ff7da61db'
+      name: 'Kit {kit}'
+      glow: false
+      lore:
+        - ''
+        - '&7Informacion:'
+        - ' &f‣ &7Disponible en:&f {total}'
+        - ' &f‣ &7Cantidad Items:&f {items}'
+        - ' &f‣ &7Tiempo reducido:&f {redeemed_times}'
+        - ''
+        - ' &f‣ &7Estado:{status}'
+        - ' &f‣ &7Nivel del kit:&f {current_level}/{maximum_level}'
+        - ''
+        - ''
+        - '&7&l((&#ff0000&l✘ &#ff0000NO TIENES PERMISOS PARA ESTE KIT! &7&l))'
