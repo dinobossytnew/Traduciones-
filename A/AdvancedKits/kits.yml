@@ -1,0 +1,505 @@
+Usuario:
+  permission: advancedkits.kit.Usuario
+  preview-menu: default
+  levels:
+    '1':
+      cooldown: 40000
+      cost: 'VAULT;0'
+      give-items: true
+      redeem:
+        available:
+          titles:
+            - '<bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( ¡Acabas de canjear este kit! ))</gradient></italic>;3;17;20;0'
+            - '<bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Canjear de nuevo en {total}! ))</gradient></italic>;0;17;3;20'
+          fireworks: []
+          sounds:
+            - 'ENTITY_PLAYER_LEVELUP;VOICE;1.0;0.3'
+          particles:
+            - 'NOTE;50;2.0;2.0;2.0;2.0'
+          console-commands: []
+          messages: []
+        unavailable:
+          titles:
+            - '<bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Tienes que esperar! ))</gradient></italic>;3;17;20;0'
+            - '<bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Disponible en {cooldown}! ))</gradient></italic>;0;17;3;20'
+          fireworks: []
+          sounds:
+            - 'ENTITY_VILLAGER_NO;VOICE;1.0;1.0'
+          particles:
+            - 'VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0'
+          console-commands: []
+          messages: []
+        locked:
+          titles:
+            - '<bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( ¡No tienes permiso para canjear este kit! ))</gradient></italic>;3;17;20;0'
+            - '<bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( ¡Compra un rango para desbloquear este kit! ))</gradient></italic>;0;17;3;20'
+          fireworks: []
+          sounds:
+            - 'ENTITY_VILLAGER_NO;VOICE;1.0;1.0'
+          particles:
+            - 'VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0'
+          console-commands: []
+          messages: []
+    '2':
+      cooldown: 70000
+      cost: 'VAULT;7000'
+      give-items: true
+      redeem:
+        available:
+          titles:
+            - '<bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( ¡Acabas de canjear este kit! ))</gradient></italic>;3;17;20;0'
+            - '<bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Canjear de nuevo en {total}! ))</gradient></italic>;0;17;3;20'
+          fireworks: []
+          sounds:
+            - 'ENTITY_PLAYER_LEVELUP;VOICE;1.0;0.3'
+          particles:
+            - 'NOTE;50;2.0;2.0;2.0;2.0'
+          console-commands: []
+          messages: []
+        unavailable:
+          titles:
+            - '<bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Tienes que esperar! ))</gradient></italic>;3;17;20;0'
+            - '<bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Disponible en {cooldown}! ))</gradient></italic>;0;17;3;20'
+          fireworks: []
+          sounds:
+            - 'ENTITY_VILLAGER_NO;VOICE;1.0;1.0'
+          particles:
+            - 'VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0'
+          console-commands: []
+          messages: []
+        locked:
+          titles:
+            - '<bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( ¡No tienes permiso para canjear este kit! ))</gradient></italic>;3;17;20;0'
+            - '<bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( ¡Compra un rango para desbloquear este kit! ))</gradient></italic>;0;17;3;20'
+          fireworks: []
+          sounds:
+            - 'ENTITY_VILLAGER_NO;VOICE;1.0;1.0'
+          particles:
+            - 'VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0'
+          console-commands: []
+          messages: []
+Imbecil:
+  permission: advancedkits.kit.Imbecil
+  preview-menu: default
+  levels:
+    '1':
+      cooldown: 555555
+      cost: 'VAULT;500000'
+      give-items: true
+      redeem:
+        available:
+          titles:
+            - '<bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( ¡Acabas de canjear este kit! ))</gradient></italic>;3;17;20;0'
+            - '<bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Canjear de nuevo en {total}! ))</gradient></italic>;0;17;3;20'
+          fireworks: []
+          sounds:
+            - 'ENTITY_PLAYER_LEVELUP;VOICE;1.0;0.3'
+          particles:
+            - 'NOTE;50;2.0;2.0;2.0;2.0'
+          console-commands: []
+          messages: []
+        unavailable:
+          titles:
+            - '<bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Tienes que esperar! ))</gradient></italic>;3;17;20;0'
+            - '<bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Disponible en {cooldown}! ))</gradient></italic>;0;17;3;20'
+          fireworks: []
+          sounds:
+            - 'ENTITY_VILLAGER_NO;VOICE;1.0;1.0'
+          particles:
+            - 'VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0'
+          console-commands: []
+          messages: []
+        locked:
+          titles:
+            - '<bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( ¡No tienes permiso para canjear este kit! ))</gradient></italic>;3;17;20;0'
+            - '<bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( ¡Compra un rango para desbloquear este kit! ))</gradient></italic>;0;17;3;20'
+          fireworks: []
+          sounds:
+            - 'ENTITY_VILLAGER_NO;VOICE;1.0;1.0'
+          particles:
+            - 'VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0'
+          console-commands: []
+          messages: []
+Drogadicto:
+  permission: advancedkits.kit.Drogadicto
+  preview-menu: default
+  levels:
+    '1':
+      cooldown: 666666
+      cost: 'VAULT;600000'
+      give-items: true
+      redeem:
+        available:
+          titles:
+            - '<bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( ¡Acabas de canjear este kit! ))</gradient></italic>;3;17;20;0'
+            - '<bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Canjear de nuevo en {total}! ))</gradient></italic>;0;17;3;20'
+          fireworks: []
+          sounds:
+            - 'ENTITY_PLAYER_LEVELUP;VOICE;1.0;0.3'
+          particles:
+            - 'NOTE;50;2.0;2.0;2.0;2.0'
+          console-commands: []
+          messages: []
+        unavailable:
+          titles:
+            - '<bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Tienes que esperar! ))</gradient></italic>;3;17;20;0'
+            - '<bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Disponible en {cooldown}! ))</gradient></italic>;0;17;3;20'
+          fireworks: []
+          sounds:
+            - 'ENTITY_VILLAGER_NO;VOICE;1.0;1.0'
+          particles:
+            - 'VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0'
+          console-commands: []
+          messages: []
+        locked:
+          titles:
+            - '<bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( ¡No tienes permiso para canjear este kit! ))</gradient></italic>;3;17;20;0'
+            - '<bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( ¡Compra un rango para desbloquear este kit! ))</gradient></italic>;0;17;3;20'
+          fireworks: []
+          sounds:
+            - 'ENTITY_VILLAGER_NO;VOICE;1.0;1.0'
+          particles:
+            - 'VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0'
+          console-commands: []
+          messages: []
+OniiChan:
+  permission: advancedkits.kit.OniiChan
+  preview-menu: default
+  levels:
+    '1':
+      cooldown: 777777
+      cost: 'VAULT;600000'
+      give-items: true
+      redeem:
+        available:
+          titles:
+            - '<bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( ¡Acabas de canjear este kit! ))</gradient></italic>;3;17;20;0'
+            - '<bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Canjear de nuevo en {total}! ))</gradient></italic>;0;17;3;20'
+          fireworks: []
+          sounds:
+            - 'ENTITY_PLAYER_LEVELUP;VOICE;1.0;0.3'
+          particles:
+            - 'NOTE;50;2.0;2.0;2.0;2.0'
+          console-commands: []
+          messages: []
+        unavailable:
+          titles:
+            - '<bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Tienes que esperar! ))</gradient></italic>;3;17;20;0'
+            - '<bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Disponible en {cooldown}! ))</gradient></italic>;0;17;3;20'
+          fireworks: []
+          sounds:
+            - 'ENTITY_VILLAGER_NO;VOICE;1.0;1.0'
+          particles:
+            - 'VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0'
+          console-commands: []
+          messages: []
+        locked:
+          titles:
+            - '<bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( ¡No tienes permiso para canjear este kit! ))</gradient></italic>;3;17;20;0'
+            - '<bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( ¡Compra un rango para desbloquear este kit! ))</gradient></italic>;0;17;3;20'
+          fireworks: []
+          sounds:
+            - 'ENTITY_VILLAGER_NO;VOICE;1.0;1.0'
+          particles:
+            - 'VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0'
+          console-commands: []
+          messages: []
+NeeSan:
+  permission: advancedkits.kit.NeeSan
+  preview-menu: default
+  levels:
+    '1':
+      cooldown: 888888
+      cost: 'VAULT;700000'
+      give-items: true
+      redeem:
+        available:
+          titles:
+            - '<bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( ¡Acabas de canjear este kit! ))</gradient></italic>;3;17;20;0'
+            - '<bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Canjear de nuevo en {total}! ))</gradient></italic>;0;17;3;20'
+          fireworks: []
+          sounds:
+            - 'ENTITY_PLAYER_LEVELUP;VOICE;1.0;0.3'
+          particles:
+            - 'NOTE;50;2.0;2.0;2.0;2.0'
+          console-commands: []
+          messages: []
+        unavailable:
+          titles:
+            - '<bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Tienes que esperar! ))</gradient></italic>;3;17;20;0'
+            - '<bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Disponible en {cooldown}! ))</gradient></italic>;0;17;3;20'
+          fireworks: []
+          sounds:
+            - 'ENTITY_VILLAGER_NO;VOICE;1.0;1.0'
+          particles:
+            - 'VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0'
+          console-commands: []
+          messages: []
+        locked:
+          titles:
+            - '<bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( ¡No tienes permiso para canjear este kit! ))</gradient></italic>;3;17;20;0'
+            - '<bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( ¡Compra un rango para desbloquear este kit! ))</gradient></italic>;0;17;3;20'
+          fireworks: []
+          sounds:
+            - 'ENTITY_VILLAGER_NO;VOICE;1.0;1.0'
+          particles:
+            - 'VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0'
+          console-commands: []
+          messages: []
+NoHacks:
+  permission: advancedkits.kit.NoHacks
+  preview-menu: default
+  levels:
+    '1':
+      cooldown: 999999
+      cost: 'VAULT;800000'
+      give-items: true
+      redeem:
+        available:
+          titles:
+            - '<bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( ¡Acabas de canjear este kit! ))</gradient></italic>;3;17;20;0'
+            - '<bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Canjear de nuevo en {total}! ))</gradient></italic>;0;17;3;20'
+          fireworks: []
+          sounds:
+            - 'ENTITY_PLAYER_LEVELUP;VOICE;1.0;0.3'
+          particles:
+            - 'NOTE;50;2.0;2.0;2.0;2.0'
+          console-commands: []
+          messages: []
+        unavailable:
+          titles:
+            - '<bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Tienes que esperar! ))</gradient></italic>;3;17;20;0'
+            - '<bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Disponible en {cooldown}! ))</gradient></italic>;0;17;3;20'
+          fireworks: []
+          sounds:
+            - 'ENTITY_VILLAGER_NO;VOICE;1.0;1.0'
+          particles:
+            - 'VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0'
+          console-commands: []
+          messages: []
+        locked:
+          titles:
+            - '<bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( ¡No tienes permiso para canjear este kit! ))</gradient></italic>;3;17;20;0'
+            - '<bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( ¡Compra un rango para desbloquear este kit! ))</gradient></italic>;0;17;3;20'
+          fireworks: []
+          sounds:
+            - 'ENTITY_VILLAGER_NO;VOICE;1.0;1.0'
+          particles:
+            - 'VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0'
+          console-commands: []
+          messages: []
+UltraInstinto:
+  permission: advancedkits.kit.UltraInstinto
+  preview-menu: default
+  levels:
+    '1':
+      cooldown: 1000000
+      cost: 'VAULT;900000'
+      give-items: true
+      redeem:
+        available:
+          titles:
+            - '<bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( ¡Acabas de canjear este kit! ))</gradient></italic>;3;17;20;0'
+            - '<bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Canjear de nuevo en {total}! ))</gradient></italic>;0;17;3;20'
+          fireworks: []
+          sounds:
+            - 'ENTITY_PLAYER_LEVELUP;VOICE;1.0;0.3'
+          particles:
+            - 'NOTE;50;2.0;2.0;2.0;2.0'
+          console-commands: []
+          messages: []
+        unavailable:
+          titles:
+            - '<bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Tienes que esperar! ))</gradient></italic>;3;17;20;0'
+            - '<bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Disponible en {cooldown}! ))</gradient></italic>;0;17;3;20'
+          fireworks: []
+          sounds:
+            - 'ENTITY_VILLAGER_NO;VOICE;1.0;1.0'
+          particles:
+            - 'VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0'
+          console-commands: []
+          messages: []
+        locked:
+          titles:
+            - '<bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( ¡No tienes permiso para canjear este kit! ))</gradient></italic>;3;17;20;0'
+            - '<bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( ¡Compra un rango para desbloquear este kit! ))</gradient></italic>;0;17;3;20'
+          fireworks: []
+          sounds:
+            - 'ENTITY_VILLAGER_NO;VOICE;1.0;1.0'
+          particles:
+            - 'VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0'
+          console-commands: []
+          messages: []
+#-----------------------------------
+#   A paritir de aqui para abajo son rangos vips
+#   teneer en cuenta cuando lo cifigures que son necesarios para que se vea en el gui
+#   de lo contrario solo se vera el effecto de cristal de color
+#------------------------------------
+Otaku:
+  permission: advancedkits.kit.Otaku
+  preview-menu: default
+  levels:
+    '1':
+      cooldown: 500000
+      cost: 'VAULT;15000'
+      give-items: true
+      redeem:
+        available:
+          titles:
+            - '<bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( ¡Acabas de canjear este kit! ))</gradient></italic>;3;17;20;0'
+            - '<bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Canjear de nuevo en {total}! ))</gradient></italic>;0;17;3;20'
+          fireworks: []
+          sounds:
+            - 'ENTITY_PLAYER_LEVELUP;VOICE;1.0;0.3'
+          particles:
+            - 'NOTE;50;2.0;2.0;2.0;2.0'
+          console-commands: []
+          messages: []
+        unavailable:
+          titles:
+            - '<bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Tienes que esperar! ))</gradient></italic>;3;17;20;0'
+            - '<bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Disponible en {cooldown}! ))</gradient></italic>;0;17;3;20'
+          fireworks: []
+          sounds:
+            - 'ENTITY_VILLAGER_NO;VOICE;1.0;1.0'
+          particles:
+            - 'VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0'
+          console-commands: []
+          messages: []
+        locked:
+          titles:
+            - '<bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( ¡No tienes permiso para canjear este kit! ))</gradient></italic>;3;17;20;0'
+            - '<bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( ¡Compra un rango para desbloquear este kit! ))</gradient></italic>;0;17;3;20'
+          fireworks: []
+          sounds:
+            - 'ENTITY_VILLAGER_NO;VOICE;1.0;1.0'
+          particles:
+            - 'VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0'
+          console-commands: []
+          messages: []
+OtakuElite:
+  permission: advancedkits.kit.OtakuElite
+  preview-menu: default
+  levels:
+    '1':
+      cooldown: 600000
+      cost: 'VAULT;20000'
+      give-items: true
+      redeem:
+        available:
+          titles:
+            - '<bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( ¡Acabas de canjear este kit! ))</gradient></italic>;3;17;20;0'
+            - '<bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Canjear de nuevo en {total}! ))</gradient></italic>;0;17;3;20'
+          fireworks: []
+          sounds:
+            - 'ENTITY_PLAYER_LEVELUP;VOICE;1.0;0.3'
+          particles:
+            - 'NOTE;50;2.0;2.0;2.0;2.0'
+          console-commands: []
+          messages: []
+        unavailable:
+          titles:
+            - '<bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Tienes que esperar! ))</gradient></italic>;3;17;20;0'
+            - '<bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Disponible en {cooldown}! ))</gradient></italic>;0;17;3;20'
+          fireworks: []
+          sounds:
+            - 'ENTITY_VILLAGER_NO;VOICE;1.0;1.0'
+          particles:
+            - 'VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0'
+          console-commands: []
+          messages: []
+        locked:
+          titles:
+            - '<bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( ¡No tienes permiso para canjear este kit! ))</gradient></italic>;3;17;20;0'
+            - '<bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( ¡Compra un rango para desbloquear este kit! ))</gradient></italic>;0;17;3;20'
+          fireworks: []
+          sounds:
+            - 'ENTITY_VILLAGER_NO;VOICE;1.0;1.0'
+          particles:
+            - 'VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0'
+          console-commands: []
+          messages: []
+Nini:
+  permission: advancedkits.kit.Nini
+  preview-menu: default
+  levels:
+    '1':
+      cooldown: 700000
+      cost: 'VAULT;25000'
+      give-items: true
+      redeem:
+        available:
+          titles:
+            - '<bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( ¡Acabas de canjear este kit! ))</gradient></italic>;3;17;20;0'
+            - '<bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Canjear de nuevo en {total}! ))</gradient></italic>;0;17;3;20'
+          fireworks: []
+          sounds:
+            - 'ENTITY_PLAYER_LEVELUP;VOICE;1.0;0.3'
+          particles:
+            - 'NOTE;50;2.0;2.0;2.0;2.0'
+          console-commands: []
+          messages: []
+        unavailable:
+          titles:
+            - '<bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Tienes que esperar! ))</gradient></italic>;3;17;20;0'
+            - '<bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Disponible en {cooldown}! ))</gradient></italic>;0;17;3;20'
+          fireworks: []
+          sounds:
+            - 'ENTITY_VILLAGER_NO;VOICE;1.0;1.0'
+          particles:
+            - 'VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0'
+          console-commands: []
+          messages: []
+        locked:
+          titles:
+            - '<bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( ¡No tienes permiso para canjear este kit! ))</gradient></italic>;3;17;20;0'
+            - '<bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( ¡Compra un rango para desbloquear este kit! ))</gradient></italic>;0;17;3;20'
+          fireworks: []
+          sounds:
+            - 'ENTITY_VILLAGER_NO;VOICE;1.0;1.0'
+          particles:
+            - 'VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0'
+          console-commands: []
+          messages: []
+NiniElite:
+  permission: advancedkits.kit.NiniElite
+  preview-menu: default
+  levels:
+    '1':
+      cooldown: 800000
+      cost: 'VAULT;30000'
+      give-items: true
+      redeem:
+        available:
+          titles:
+            - '<bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( ¡Acabas de canjear este kit! ))</gradient></italic>;3;17;20;0'
+            - '<bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Canjear de nuevo en {total}! ))</gradient></italic>;0;17;3;20'
+          fireworks: []
+          sounds:
+            - 'ENTITY_PLAYER_LEVELUP;VOICE;1.0;0.3'
+          particles:
+            - 'NOTE;50;2.0;2.0;2.0;2.0'
+          console-commands: []
+          messages: []
+        unavailable:
+          titles:
+            - '<bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Tienes que esperar! ))</gradient></italic>;3;17;20;0'
+            - '<bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Disponible en {cooldown}! ))</gradient></italic>;0;17;3;20'
+          fireworks: []
+          sounds:
+            - 'ENTITY_VILLAGER_NO;VOICE;1.0;1.0'
+          particles:
+            - 'VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0'
+          console-commands: []
+          messages: []
+        locked:
+          titles:
+            - '<bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( ¡No tienes permiso para canjear este kit! ))</gradient></italic>;3;17;20;0'
+            - '<bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( ¡Compra un rango para desbloquear este kit! ))</gradient></italic>;0;17;3;20'
+          fireworks: []
+          sounds:
+            - 'ENTITY_VILLAGER_NO;VOICE;1.0;1.0'
+          particles:
+            - 'VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0'
+          console-commands: []
+          messages: []
