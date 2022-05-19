@@ -1,0 +1,276 @@
+preview-kits-menu:
+  previous-page-button:
+    material: 'PLAYER_HEAD:http://textures.minecraft.net/texture/816ea34a6a6ec5c051e6932f1c471b7012b298d38d179f1b487c413f51959cd4'
+    name: '<bold><color:yellow>(!)<color:yellow></bold> <gradient:yellow:gold>Vista previa del nivel anterior!</gradient>'
+    glow: false
+    lore: []
+  no-previous-page-button:
+    material: 'PLAYER_HEAD:http://textures.minecraft.net/texture/3ed1aba73f639f4bc42bd48196c715197be2712c3b962c97ebf9e9ed8efa025'
+    name: '<bold><color:red>(!)<color:red></bold> <gradient:red:dark_red>Sin nivel anterior!</gradient>'
+    glow: false
+    lore:
+      - '&7You have reached the first level of this kit.'
+  next-page-button:
+    material: 'PLAYER_HEAD:http://textures.minecraft.net/texture/9c9ec71c1068ec6e03d2c9287f9da9193639f3a635e2fbd5d87c2fabe6499'
+    name: '<bold><color:yellow>(!)<color:yellow></bold> <gradient:yellow:gold>Vista previa del siguiente nivel!</gradient>'
+    glow: false
+    lore: []
+  no-next-page-button:
+    material: 'PLAYER_HEAD:http://textures.minecraft.net/texture/3ed1aba73f639f4bc42bd48196c715197be2712c3b962c97ebf9e9ed8efa025'
+    name: '<bold><color:red>(!)<color:red></bold> <gradient:red:dark_red>No hay siguiente nivel!</gradient>'
+    glow: false
+    lore:
+      - '&7Has alcanzado el último nivel de este kit.'
+  no-upgrade-button:
+    material: 'BARRIER'
+    name: '<bold><color:#D22727>✧<color:#D22727><color:#F26F0F>✦<color:#F26F0F><color:#D22727>✧<color:#D22727> <gradient:#D22727:#F26F0F>Atualizar {kit}</gradient> <color:#D22727>✧<color:#D22727><color:#F26F0F>✦<color:#F26F0F><color:#D22727>✧<color:#D22727></bold>'
+    glow: false
+    lore:
+      - ''
+      - ' <bold><color:#D22727>*<color:#D22727></bold> <gradient:#D22727:#F26F0F>Actualizar a nivel:</gradient> <bold><color:yellow>{upgrade_level}<color:yellow></bold>'
+      - ' <bold><color:#D22727>*<color:#D22727></bold> <gradient:#D22727:#F26F0F>Precio:</gradient> <color:#E5DCD9>FREE<color:#E5DCD9>'
+      - ''
+      - '<italic><gradient:#D22727:#F26F0F>(( ¡Este kit no tiene actualizaciones disponibles! ))</gradient></italic>'
+  default-level-upgrade-button:
+    material: 'PLAYER_HEAD:http://textures.minecraft.net/texture/e5e8cc99bb42dda2aafbff457756776b28c8e34ee245cc553d2694e6b04b72'
+    name: '<bold><color:#D22727>✧<color:#D22727><color:#F26F0F>✦<color:#F26F0F><color:#D22727>✧<color:#D22727> <gradient:#D22727:#F26F0F>Atualizar {kit}</gradient> <color:#D22727>✧<color:#D22727><color:#F26F0F>✦<color:#F26F0F><color:#D22727>✧<color:#D22727></bold>'
+    glow: false
+    lore:
+      - ''
+      - ' <bold><color:#D22727>*<color:#D22727></bold> <gradient:#D22727:#F26F0F>Actualizar a nivel:</gradient> <bold><color:yellow>{upgrade_level}<color:yellow></bold>'
+      - ' <bold><color:#D22727>*<color:#D22727></bold> <gradient:#D22727:#F26F0F>Precio:</gradient> <color:#E5DCD9>FREE<color:#E5DCD9>'
+      - ''
+      - '<italic><gradient:#D22727:#F26F0F>(( ¡Este es el nivel de kit predeterminado! ))</gradient></italic>'
+  available-upgrade-button:
+    material: 'PLAYER_HEAD:http://textures.minecraft.net/texture/e5e8cc99bb42dda2aafbff457756776b28c8e34ee245cc553d2694e6b04b72'
+    name: '<bold><color:#10987A>✧<color:#10987A><color:#49ECC3>✦<color:#49ECC3><color:#10987A>✧<color:#10987A> <gradient:#10987A:#49ECC3>Atualizar {kit}</gradient> <color:#10987A>✧<color:#10987A><color:#49ECC3>✦<color:#49ECC3><color:#10987A>✧<color:#10987A></bold>'
+    glow: false
+    lore:
+      - ''
+      - ' <bold><color:#10987A>*<color:#10987A></bold> <gradient:#10987A:#49ECC3>Atualizar a nivel:</gradient> <bold><color:yellow>{upgrade_level}<color:yellow></bold>'
+      - ' <bold><color:#10987A>*<color:#10987A></bold> <gradient:#10987A:#49ECC3>Precio:</gradient> <color:#E5DCD9>{cost}<color:#E5DCD9>'
+      - ''
+      - '<italic><gradient:#10987A:#49ECC3>(( Click-Izquierdo para comprar esta actualización! ))</gradient></italic>'
+  insufficient-funds-upgrade-button:
+    material: 'PLAYER_HEAD:http://textures.minecraft.net/texture/e5e8cc99bb42dda2aafbff457756776b28c8e34ee245cc553d2694e6b04b72'
+    name: '<bold><color:#D22727>✧<color:#D22727><color:#F26F0F>✦<color:#F26F0F><color:#D22727>✧<color:#D22727> <gradient:#D22727:#F26F0F>Atualizar {kit}</gradient> <color:#D22727>✧<color:#D22727><color:#F26F0F>✦<color:#F26F0F><color:#D22727>✧<color:#D22727></bold>'
+    glow: false
+    lore:
+      - ''
+      - ' <bold><color:#D22727>*<color:#D22727></bold> <gradient:#D22727:#F26F0F>Atualizar a nivel:</gradient> <bold><color:yellow>{upgrade_level}<color:yellow></bold>'
+      - ' <bold><color:#D22727>*<color:#D22727></bold> <gradient:#D22727:#F26F0F>Precio:</gradient> <color:#E5DCD9>{cost}<color:#E5DCD9> &7&o(Needed {needed})'
+      - ''
+      - '<italic><gradient:#D22727:#F26F0F>(( ¡No puede pagar esta actualización de kit! ))</gradient></italic>'
+  locked-upgrade-button:
+    material: 'PLAYER_HEAD:http://textures.minecraft.net/texture/e5e8cc99bb42dda2aafbff457756776b28c8e34ee245cc553d2694e6b04b72'
+    name: '<bold><color:#D22727>✧<color:#D22727><color:#F26F0F>✦<color:#F26F0F><color:#D22727>✧<color:#D22727> <gradient:#D22727:#F26F0F>Atualizar {kit}</gradient> <color:#D22727>✧<color:#D22727><color:#F26F0F>✦<color:#F26F0F><color:#D22727>✧<color:#D22727></bold>'
+    glow: false
+    lore:
+      - ''
+      - ' <bold><color:#D22727>*<color:#D22727></bold> <gradient:#D22727:#F26F0F>Atualizar a nivel:</gradient> <bold><color:yellow>{upgrade_level}<color:yellow></bold>'
+      - ' <bold><color:#D22727>*<color:#D22727></bold> <gradient:#D22727:#F26F0F>Precio:</gradient> <color:#E5DCD9>{cost}<color:#E5DCD9>'
+      - ''
+      - '<italic><gradient:#D22727:#F26F0F>(( ¡Primero debes desbloquear este kit! ))</gradient></italic>'
+  maximum-level-upgrade-button:
+    material: 'PLAYER_HEAD:http://textures.minecraft.net/texture/e5e8cc99bb42dda2aafbff457756776b28c8e34ee245cc553d2694e6b04b72'
+    name: '<bold><color:#DACB1C>✧<color:#DACB1C><color:#CBF91B>✦<color:#CBF91B><color:#DACB1C>✧<color:#DACB1C> <gradient:#DACB1C:#CBF91B>Atualizar {kit}</gradient> <color:#DACB1C>✧<color:#DACB1C><color:#CBF91B>✦<color:#CBF91B><color:#DACB1C>✧<color:#DACB1C></bold>'
+    glow: false
+    lore:
+      - ''
+      - ' <bold><color:#DACB1C>*<color:#DACB1C></bold> <gradient:#DACB1C:#CBF91B>Atualizar a nivel:</gradient> <bold><color:yellow>{upgrade_level}<color:yellow></bold>'
+      - ' <bold><color:#DACB1C>*<color:#DACB1C></bold> <gradient:#DACB1C:#CBF91B>Precio:</gradient> <color:#E5DCD9>{cost}<color:#E5DCD9>'
+      - ''
+      - '<italic><gradient:#DACB1C:#CBF91B>(( ¡Has alcanzado el nivel máximo! ))</gradient></italic>'
+  unavailable-upgrade-button:
+    material: 'PLAYER_HEAD:http://textures.minecraft.net/texture/e5e8cc99bb42dda2aafbff457756776b28c8e34ee245cc553d2694e6b04b72'
+    name: '<bold><color:#DACB1C>✧<color:#DACB1C><color:#CBF91B>✦<color:#CBF91B><color:#DACB1C>✧<color:#DACB1C> <gradient:#DACB1C:#CBF91B>Atualizar {kit}</gradient> <color:#DACB1C>✧<color:#DACB1C><color:#CBF91B>✦<color:#CBF91B><color:#DACB1C>✧<color:#DACB1C></bold>'
+    glow: false
+    lore:
+      - ''
+      - ' <bold><color:#DACB1C>*<color:#DACB1C></bold> <gradient:#DACB1C:#CBF91B>Atualizar a nivel:</gradient> <bold><color:yellow>{upgrade_level}<color:yellow></bold>'
+      - ' <bold><color:#DACB1C>*<color:#DACB1C></bold> <gradient:#DACB1C:#CBF91B>Precio:</gradient> <color:#E5DCD9>{cost}<color:#E5DCD9>'
+      - ''
+      - '<italic><gradient:#DACB1C:#CBF91B>(( ¡Desbloquea primero las actualizaciones anteriores! ))</gradient></italic>'
+  complete-upgrade-button:
+    material: 'PLAYER_HEAD:http://textures.minecraft.net/texture/e5e8cc99bb42dda2aafbff457756776b28c8e34ee245cc553d2694e6b04b72'
+    name: '<bold><color:#10987A>✧<color:#10987A><color:#49ECC3>✦<color:#49ECC3><color:#10987A>✧<color:#10987A> <gradient:#10987A:#49ECC3>Atualizar {kit}</gradient> <color:#10987A>✧<color:#10987A><color:#49ECC3>✦<color:#49ECC3><color:#10987A>✧<color:#10987A></bold>'
+    glow: false
+    lore:
+      - ''
+      - ' <bold><color:#10987A>*<color:#10987A></bold> <gradient:#10987A:#49ECC3>Kit nivel:</gradient> <bold><underlined><color:yellow>{upgrade_level}<color:yellow></underlined></bold> <bold><color:gray>/<color:gray></bold> <bold><underlined><color:red>{maximum_level}<color:red></underlined></bold>'
+      - ' <bold><color:#10987A>*<color:#10987A></bold> <gradient:#10987A:#49ECC3>Costo:</gradient> <color:red><strikethrough>{cost}</strikethrough><color:red>'
+      - ''
+      - ' <bold><color:#10987A>*<color:#10987A></bold> <gradient:#10987A:#49ECC3>Habilitado en:</gradient> <color:#E5DCD9>{total}<color:#E5DCD9>'
+      - ' <bold><color:#10987A>*<color:#10987A></bold> <gradient:#10987A:#49ECC3>Kits items:</gradient> <color:#E5DCD9>{items}<color:#E5DCD9>'
+      - ''
+      - '<italic><gradient:#10987A:#49ECC3>(( ¡Ya compraste esta actualización! ))</gradient></italic>'
+  current-upgrade-button:
+    material: 'PLAYER_HEAD:http://textures.minecraft.net/texture/e5e8cc99bb42dda2aafbff457756776b28c8e34ee245cc553d2694e6b04b72'
+    name: '<bold><color:#10987A>✧<color:#10987A><color:#49ECC3>✦<color:#49ECC3><color:#10987A>✧<color:#10987A> <gradient:#10987A:#49ECC3>Atualizar {kit}</gradient> <color:#10987A>✧<color:#10987A><color:#49ECC3>✦<color:#49ECC3><color:#10987A>✧<color:#10987A></bold>'
+    glow: false
+    lore:
+      - ''
+      - ' <bold><color:#10987A>*<color:#10987A></bold> <gradient:#10987A:#49ECC3>Atualizar a nivel:</gradient> <bold><color:yellow>{upgrade_level}<color:yellow></bold>'
+      - ' <bold><color:#10987A>*<color:#10987A></bold> <gradient:#10987A:#49ECC3>Precio:</gradient> <color:#E5DCD9>{cost}<color:#E5DCD9>'
+      - ''
+      - '<italic><gradient:#10987A:#49ECC3>(( ¡Esta es tu actualización actual! ))</gradient></italic>'
+  fill-kit-items:
+    starting-ticks: 3
+    repeating-ticks: 3
+open-menu-commands:
+  - 'kits;advancedkits.command.kits'
+claim-kit-commands:
+  - 'kit;advancedkits.command.kit'
+kit-preview-commands:
+  - 'kitpreview;advancedkits.command.kitpreview'
+first-join-kits:
+  - 'Usuario;1'
+reset-kit-cooldown-on-upgrades: true
+close-kits-menu-before-opening-preview-menu: true
+data-save-interval-ticks: 12000
+kit-status-placeholders:
+  available: ' <bold><gradient:green:blue>DISPONIBLE</gradient></bold>'
+  unavailable: ' <bold><gradient:yellow:white>NO DISPONIBLE</gradient></bold>'
+  locked: ' <bold><gradient:red:aqua>BLOQUEADO</gradient></bold>'
+cost-formatting:
+  exp: ' {amount} XP'
+  vault: ' ${amount}'
+animated-menu:
+  delay: 10
+  items:
+    - 'WHITE_STAINED_GLASS_PANE;true;&r'
+    - 'ORANGE_STAINED_GLASS_PANE;true;&r'
+    - 'MAGENTA_STAINED_GLASS_PANE;true;&r'
+    - 'LIGHT_BLUE_STAINED_GLASS_PANE;true;&r'
+    - 'YELLOW_STAINED_GLASS_PANE;true;&r'
+    - 'LIME_STAINED_GLASS_PANE;true;&r'
+    - 'PINK_STAINED_GLASS_PANE;true;&r'
+    - 'GRAY_STAINED_GLASS_PANE;true;&r'
+    - 'LIGHT_GRAY_STAINED_GLASS_PANE;true;&r'
+    - 'CYAN_STAINED_GLASS_PANE;true;&r'
+    - 'PURPLE_STAINED_GLASS_PANE;true;&r'
+    - 'BLUE_STAINED_GLASS_PANE;true;&r'
+    - 'BROWN_STAINED_GLASS_PANE;true;&r'
+    - 'GREEN_STAINED_GLASS_PANE;true;&r'
+    - 'RED_STAINED_GLASS_PANE;true;&r'
+    - 'BLACK_STAINED_GLASS_PANE;true;&r'
+voucher-interact-blocks:
+  - 'ENCHANTING_TABLE'
+  - 'ANVIL'
+  - 'CHIPPED_ANVIL'
+  - 'DAMAGED_ANVIL'
+  - 'BREWING_STAND'
+  - 'TRAPPED_CHEST'
+  - 'CHEST'
+  - 'BLACK_BED'
+  - 'BLUE_BED'
+  - 'BROWN_BED'
+  - 'CYAN_BED'
+  - 'GRAY_BED'
+  - 'GREEN_BED'
+  - 'LIGHT_BLUE_BED'
+  - 'LIGHT_GRAY_BED'
+  - 'LIME_BED'
+  - 'MAGENTA_BED'
+  - 'ORANGE_BED'
+  - 'PINK_BED'
+  - 'PURPLE_BED'
+  - 'RED_BED'
+  - 'WHITE_BED'
+  - 'YELLOW_BED'
+  - 'ACACIA_BOAT'
+  - 'BIRCH_BOAT'
+  - 'DARK_OAK_BOAT'
+  - 'JUNGLE_BOAT'
+  - 'OAK_BOAT'
+  - 'SPRUCE_BOAT'
+  - 'ACACIA_FENCE_GATE'
+  - 'BIRCH_FENCE_GATE'
+  - 'DARK_OAK_FENCE_GATE'
+  - 'JUNGLE_FENCE_GATE'
+  - 'OAK_FENCE_GATE'
+  - 'SPRUCE_FENCE_GATE'
+  - 'WARPED_FENCE_GATE'
+  - 'CRIMSON_FENCE_GATE'
+  - 'DISPENSER'
+  - 'DROPPER'
+  - 'FURNACE'
+  - 'JUKEBOX'
+  - 'ENDER_CHEST'
+  - 'ACACIA_BUTTON'
+  - 'BIRCH_BUTTON'
+  - 'DARK_OAK_BUTTON'
+  - 'JUNGLE_BUTTON'
+  - 'OAK_BUTTON'
+  - 'SPRUCE_BUTTON'
+  - 'STONE_BUTTON'
+  - 'WARPED_BUTTON'
+  - 'CRIMSON_BUTTON'
+  - 'POLISHED_BLACKSTONE_BUTTON'
+  - 'BEACON'
+  - 'HOPPER'
+  - 'DAYLIGHT_DETECTOR'
+  - 'ACACIA_DOOR'
+  - 'BIRCH_DOOR'
+  - 'DARK_OAK_DOOR'
+  - 'JUNGLE_DOOR'
+  - 'WARPED_DOOR'
+  - 'CRIMSON_DOOR'
+  - 'OAK_DOOR'
+  - 'SPRUCE_DOOR'
+  - 'CRAFTING_TABLE'
+  - 'LEVER'
+  - 'ACACIA_TRAPDOOR'
+  - 'BIRCH_TRAPDOOR'
+  - 'DARK_OAK_TRAPDOOR'
+  - 'JUNGLE_TRAPDOOR'
+  - 'OAK_TRAPDOOR'
+  - 'SPRUCE_TRAPDOOR'
+  - 'WARPED_TRAPDOOR'
+  - 'CRIMSON_TRAPDOOR'
+  - 'BLACK_SHULKER_BOX'
+  - 'BLUE_SHULKER_BOX'
+  - 'BROWN_SHULKER_BOX'
+  - 'CYAN_SHULKER_BOX'
+  - 'GRAY_SHULKER_BOX'
+  - 'GREEN_SHULKER_BOX'
+  - 'LIGHT_BLUE_SHULKER_BOX'
+  - 'LIGHT_BLUE_SHULKER_BOX'
+  - 'LIGHT_GRAY_SHULKER_BOX'
+  - 'LIME_SHULKER_BOX'
+  - 'MAGENTA_SHULKER_BOX'
+  - 'ORANGE_SHULKER_BOX'
+  - 'PINK_SHULKER_BOX'
+  - 'PURPLE_SHULKER_BOX'
+  - 'RED_SHULKER_BOX'
+  - 'WHITE_SHULKER_BOX'
+  - 'YELLOW_SHULKER_BOX'
+  - 'MINECART'
+  - 'CHEST_MINECART'
+  - 'HOPPER_MINECART'
+  - 'REPEATER'
+  - 'COMPARATOR'
+  - 'NOTE_BLOCK'
+  - 'GRINDSTONE'
+  - 'STONECUTTER'
+  - 'LOOM'
+  - 'BARREL'
+  - 'SMOKER'
+  - 'BLAST_FURNACE'
+  - 'CARTOGRAPHY_TABLE'
+time-units:
+  finish: ' 0s'
+  days: ' {number}D'
+  day: ' {number}d'
+  no-days: ''
+  hours: ' {number}H'
+  hour: ' {number}h'
+  no-hours: ''
+  minutes: ' {number}M'
+  minute: ' {number}m'
+  no-minutes: ''
+  seconds: ' {number}S'
+  second: ' {number}s'
+  no-seconds: ''
+permissions:
+  main-command: 'advancedkits.command.use'
