@@ -1,0 +1,255 @@
+Rank:
+  title: 'KITS DE RANGO'
+  rows: 5
+  menu-fillers:
+    - 'random-rainbow-glass-pane'
+  kits:
+    Otaku:
+      slot: 20
+      available:
+        material: 'PLAYER_HEAD:http://textures.minecraft.net/texture/cff11a5db46de1f5877a298a99f47c2779c2aad5720c384d9d3826a5a3e5bd3a'
+        name: '<bold><color:#10987A>✧<color:#10987A><color:#49ECC3>✦<color:#49ECC3><color:#10987A>✧<color:#10987A> <gradient:#10987A:#49ECC3>Kit {kit}</gradient> <color:#10987A>✧<color:#10987A><color:#49ECC3>✦<color:#49ECC3><color:#10987A>✧<color:#10987A></bold>'
+        glow: true
+        lore:
+          - ''
+          - ' <bold><color:#10987A>*<color:#10987A></bold> <gradient:#10987A:#49ECC3>Tiempo de Kit:</gradient> <color:#E5DCD9>{total}<color:#E5DCD9>'
+          - ' <bold><color:#10987A>*<color:#10987A></bold> <gradient:#10987A:#49ECC3>Items:</gradient> <color:#E5DCD9>{items}<color:#E5DCD9>'
+          - ' <bold><color:#10987A>*<color:#10987A></bold> <gradient:#10987A:#49ECC3>Tiempos redimidos:</gradient> <color:#E5DCD9>{redeemed_times}<color:#E5DCD9>'
+          - ''
+          - ' <bold><color:#10987A>*<color:#10987A></bold> <gradient:#10987A:#49ECC3>Estado Kit:</gradient> <color:#E5DCD9>{status}<color:#E5DCD9>'
+          - ' <bold><color:#10987A>*<color:#10987A></bold> <gradient:#10987A:#49ECC3>Nivel Kit:</gradient> <bold><underlined><color:yellow>{current_level}<color:yellow></underlined></bold> <bold><color:gray>/<color:gray></bold> <bold><underlined><color:red>{maximum_level}<color:red></underlined></bold>'
+          - ''
+          - '  <bold><italic><color:#CE166F>TIP:<color:#CE166F></italic></bold> <italic><gradient:#CE166F:#D544EB>Click Derecho para</gradient></italic>'
+          - '   <italic><gradient:#D544EB:#CE166F>abrir menu de previsualisasion!</gradient></italic>'
+          - ''
+          - '<italic><gradient:#10987A:#49ECC3>(( Click Izquierdo para cojer el kit ))</gradient></italic>'
+      unavailable:
+        material: 'PLAYER_HEAD:http://textures.minecraft.net/texture/76c0d0459c67f2be82fbe5406ab8d1378da1f28f7a3f82f1dfc47615a955a7'
+        name: '<bold><color:#DACB1C>✧<color:#DACB1C><color:#CBF91B>✦<color:#CBF91B><color:#DACB1C>✧<color:#DACB1C> <gradient:#DACB1C:#CBF91B>Kit {kit}</gradient> <color:#DACB1C>✧<color:#DACB1C><color:#CBF91B>✦<color:#CBF91B><color:#DACB1C>✧<color:#DACB1C></bold>'
+        glow: false
+        lore:
+          - ''
+          - ' <bold><color:#DACB1C>*<color:#DACB1C></bold> <gradient:#DACB1C:#CBF91B>Available in:</gradient> <color:#E5DCD9>{cooldown}<color:#E5DCD9>'
+          - ' <bold><color:#DACB1C>*<color:#DACB1C></bold> <gradient:#DACB1C:#CBF91B>Items:</gradient> <color:#E5DCD9>{items}<color:#E5DCD9>'
+          - ' <bold><color:#DACB1C>*<color:#DACB1C></bold> <gradient:#DACB1C:#CBF91B>Tiempos redimidos:</gradient> <color:#E5DCD9>{redeemed_times}<color:#E5DCD9>'
+          - ''
+          - ' <bold><color:#DACB1C>*<color:#DACB1C></bold> <gradient:#DACB1C:#CBF91B>Estado Kit:</gradient> <color:#E5DCD9>{status}<color:#E5DCD9>'
+          - ' <bold><color:#DACB1C>*<color:#DACB1C></bold> <gradient:#DACB1C:#CBF91B>Nivel Kit:</gradient> <bold><underlined><color:yellow>{current_level}<color:yellow></underlined></bold> <bold><color:gray>/<color:gray></bold> <bold><underlined><color:red>{maximum_level}<color:red></underlined></bold>'
+          - ''
+          - '  <bold><italic><color:#CE166F>TIP:<color:#CE166F></italic></bold> <italic><gradient:#CE166F:#D544EB>Click Derecho para</gradient></italic>'
+          - '   <italic><gradient:#D544EB:#CE166F>menú de previsiones y actualizaciones!</gradient></italic>'
+          - ''
+          - '<italic><gradient:#DACB1C:#CBF91B>(( ¡Hay que esperar al Tiempo de Kit! ))</gradient></italic>'
+      locked:
+        material: 'PLAYER_HEAD:http://textures.minecraft.net/texture/8ad943d063347f95ab9e9fa75792da84ec665ebd22b050bdba519ff7da61db'
+        name: '<bold><color:#D22727>✧<color:#D22727><color:#F26F0F>✦<color:#F26F0F><color:#D22727>✧<color:#D22727> <gradient:#D22727:#F26F0F>Kit {kit}</gradient> <color:#D22727>✧<color:#D22727><color:#F26F0F>✦<color:#F26F0F><color:#D22727>✧<color:#D22727></bold>'
+        glow: false
+        lore:
+          - ''
+          - ' <bold><color:#D22727>*<color:#D22727></bold> <gradient:#D22727:#F26F0F>Tiempo de Kit:</gradient> <color:#E5DCD9>{total}<color:#E5DCD9>'
+          - ' <bold><color:#D22727>*<color:#D22727></bold> <gradient:#D22727:#F26F0F>Items:</gradient> <color:#E5DCD9>{items}<color:#E5DCD9>'
+          - ' <bold><color:#D22727>*<color:#D22727></bold> <gradient:#D22727:#F26F0F>Tiempos redimidos:</gradient> <color:#E5DCD9>{redeemed_times}<color:#E5DCD9>'
+          - ''
+          - ' <bold><color:#D22727>*<color:#D22727></bold> <gradient:#D22727:#F26F0F>Estado Kit:</gradient> <color:#E5DCD9>{status}<color:#E5DCD9>'
+          - ' <bold><color:#D22727>*<color:#D22727></bold> <gradient:#D22727:#F26F0F>Nivel Kit:</gradient> <bold><underlined><color:yellow>{current_level}<color:yellow></underlined></bold> <bold><color:gray>/<color:gray></bold> <bold><underlined><color:red>{maximum_level}<color:red></underlined></bold>'
+          - ''
+          - '  <bold><italic><color:#CE166F>TIP:<color:#CE166F></italic></bold> <italic><gradient:#CE166F:#D544EB>Click Derecho para</gradient></italic>'
+          - '   <italic><gradient:#D544EB:#CE166F>menú de previsiones y actualizaciones!</gradient></italic>'
+          - ''
+          - '<italic><gradient:#D22727:#F26F0F>(( ¡Compra un rango para desbloquear este kit! ))</gradient></italic>'
+    OtakuElite:
+      slot: 21
+      available:
+        material: 'PLAYER_HEAD:http://textures.minecraft.net/texture/f7aadff9ddc546fdcec6ed5919cc39dfa8d0c07ff4bc613a19f2e6d7f2593'
+        name: '<bold><color:#10987A>✧<color:#10987A><color:#49ECC3>✦<color:#49ECC3><color:#10987A>✧<color:#10987A> <gradient:#10987A:#49ECC3>Kit {kit}</gradient> <color:#10987A>✧<color:#10987A><color:#49ECC3>✦<color:#49ECC3><color:#10987A>✧<color:#10987A></bold>'
+        glow: true
+        lore:
+          - ''
+          - ' <bold><color:#10987A>*<color:#10987A></bold> <gradient:#10987A:#49ECC3>Tiempo de Kit:</gradient> <color:#E5DCD9>{total}<color:#E5DCD9>'
+          - ' <bold><color:#10987A>*<color:#10987A></bold> <gradient:#10987A:#49ECC3>Items:</gradient> <color:#E5DCD9>{items}<color:#E5DCD9>'
+          - ' <bold><color:#10987A>*<color:#10987A></bold> <gradient:#10987A:#49ECC3>Tiempos redimidos:</gradient> <color:#E5DCD9>{redeemed_times}<color:#E5DCD9>'
+          - ''
+          - ' <bold><color:#10987A>*<color:#10987A></bold> <gradient:#10987A:#49ECC3>Estado Kit:</gradient> <color:#E5DCD9>{status}<color:#E5DCD9>'
+          - ' <bold><color:#10987A>*<color:#10987A></bold> <gradient:#10987A:#49ECC3>Nivel Kit:</gradient> <bold><underlined><color:yellow>{current_level}<color:yellow></underlined></bold> <bold><color:gray>/<color:gray></bold> <bold><underlined><color:red>{maximum_level}<color:red></underlined></bold>'
+          - ''
+          - '  <bold><italic><color:#CE166F>TIP:<color:#CE166F></italic></bold> <italic><gradient:#CE166F:#D544EB>Click Derecho para</gradient></italic>'
+          - '   <italic><gradient:#D544EB:#CE166F>menú de previsiones y actualizaciones!</gradient></italic>'
+          - ''
+          - '<italic><gradient:#10987A:#49ECC3>(( Click Izquierdo para cojer el kit ))</gradient></italic>'
+      unavailable:
+        material: 'PLAYER_HEAD:http://textures.minecraft.net/texture/76c0d0459c67f2be82fbe5406ab8d1378da1f28f7a3f82f1dfc47615a955a7'
+        name: '<bold><color:#DACB1C>✧<color:#DACB1C><color:#CBF91B>✦<color:#CBF91B><color:#DACB1C>✧<color:#DACB1C> <gradient:#DACB1C:#CBF91B>Kit {kit}</gradient> <color:#DACB1C>✧<color:#DACB1C><color:#CBF91B>✦<color:#CBF91B><color:#DACB1C>✧<color:#DACB1C></bold>'
+        glow: false
+        lore:
+          - ''
+          - ' <bold><color:#DACB1C>*<color:#DACB1C></bold> <gradient:#DACB1C:#CBF91B>Available in:</gradient> <color:#E5DCD9>{cooldown}<color:#E5DCD9>'
+          - ' <bold><color:#DACB1C>*<color:#DACB1C></bold> <gradient:#DACB1C:#CBF91B>Items:</gradient> <color:#E5DCD9>{items}<color:#E5DCD9>'
+          - ' <bold><color:#DACB1C>*<color:#DACB1C></bold> <gradient:#DACB1C:#CBF91B>Tiempos redimidos:</gradient> <color:#E5DCD9>{redeemed_times}<color:#E5DCD9>'
+          - ''
+          - ' <bold><color:#DACB1C>*<color:#DACB1C></bold> <gradient:#DACB1C:#CBF91B>Estado Kit:</gradient> <color:#E5DCD9>{status}<color:#E5DCD9>'
+          - ' <bold><color:#DACB1C>*<color:#DACB1C></bold> <gradient:#DACB1C:#CBF91B>Nivel Kit:</gradient> <bold><underlined><color:yellow>{current_level}<color:yellow></underlined></bold> <bold><color:gray>/<color:gray></bold> <bold><underlined><color:red>{maximum_level}<color:red></underlined></bold>'
+          - ''
+          - '  <bold><italic><color:#CE166F>TIP:<color:#CE166F></italic></bold> <italic><gradient:#CE166F:#D544EB>Click Derecho para</gradient></italic>'
+          - '   <italic><gradient:#D544EB:#CE166F>menú de previsiones y actualizaciones!</gradient></italic>'
+          - ''
+          - '<italic><gradient:#DACB1C:#CBF91B>(( ¡Hay que esperar al Tiempo de Kit! ))</gradient></italic>'
+      locked:
+        material: 'PLAYER_HEAD:http://textures.minecraft.net/texture/8ad943d063347f95ab9e9fa75792da84ec665ebd22b050bdba519ff7da61db'
+        name: '<bold><color:#D22727>✧<color:#D22727><color:#F26F0F>✦<color:#F26F0F><color:#D22727>✧<color:#D22727> <gradient:#D22727:#F26F0F>Kit {kit}</gradient> <color:#D22727>✧<color:#D22727><color:#F26F0F>✦<color:#F26F0F><color:#D22727>✧<color:#D22727></bold>'
+        glow: false
+        lore:
+          - ''
+          - ' <bold><color:#D22727>*<color:#D22727></bold> <gradient:#D22727:#F26F0F>Tiempo de Kit:</gradient> <color:#E5DCD9>{total}<color:#E5DCD9>'
+          - ' <bold><color:#D22727>*<color:#D22727></bold> <gradient:#D22727:#F26F0F>Items:</gradient> <color:#E5DCD9>{items}<color:#E5DCD9>'
+          - ' <bold><color:#D22727>*<color:#D22727></bold> <gradient:#D22727:#F26F0F>Tiempos redimidos:</gradient> <color:#E5DCD9>{redeemed_times}<color:#E5DCD9>'
+          - ''
+          - ' <bold><color:#D22727>*<color:#D22727></bold> <gradient:#D22727:#F26F0F>Estado Kit:</gradient> <color:#E5DCD9>{status}<color:#E5DCD9>'
+          - ' <bold><color:#D22727>*<color:#D22727></bold> <gradient:#D22727:#F26F0F>Nivel Kit:</gradient> <bold><underlined><color:yellow>{current_level}<color:yellow></underlined></bold> <bold><color:gray>/<color:gray></bold> <bold><underlined><color:red>{maximum_level}<color:red></underlined></bold>'
+          - ''
+          - '  <bold><italic><color:#CE166F>TIP:<color:#CE166F></italic></bold> <italic><gradient:#CE166F:#D544EB>Click Derecho para</gradient></italic>'
+          - '   <italic><gradient:#D544EB:#CE166F>menú de previsiones y actualizaciones!</gradient></italic>'
+          - ''
+          - '<italic><gradient:#D22727:#F26F0F>(( ¡Compra un rango para desbloquear este kit! ))</gradient></italic>'
+    Nini:
+      slot: 25
+      available:
+        material: 'PLAYER_HEAD:http://textures.minecraft.net/texture/f37cae5c51eb1558ea828f58e0dff8e6b7b0b1a183d737eecf714661761'
+        name: '<bold><color:#10987A>✧<color:#10987A><color:#49ECC3>✦<color:#49ECC3><color:#10987A>✧<color:#10987A> <gradient:#10987A:#49ECC3>Kit {kit}</gradient> <color:#10987A>✧<color:#10987A><color:#49ECC3>✦<color:#49ECC3><color:#10987A>✧<color:#10987A></bold>'
+        glow: true
+        lore:
+          - ''
+          - ' <bold><color:#10987A>*<color:#10987A></bold> <gradient:#10987A:#49ECC3>Tiempo de Kit:</gradient> <color:#E5DCD9>{total}<color:#E5DCD9>'
+          - ' <bold><color:#10987A>*<color:#10987A></bold> <gradient:#10987A:#49ECC3>Items:</gradient> <color:#E5DCD9>{items}<color:#E5DCD9>'
+          - ' <bold><color:#10987A>*<color:#10987A></bold> <gradient:#10987A:#49ECC3>Tiempos redimidos:</gradient> <color:#E5DCD9>{redeemed_times}<color:#E5DCD9>'
+          - ''
+          - ' <bold><color:#10987A>*<color:#10987A></bold> <gradient:#10987A:#49ECC3>Estado Kit:</gradient> <color:#E5DCD9>{status}<color:#E5DCD9>'
+          - ' <bold><color:#10987A>*<color:#10987A></bold> <gradient:#10987A:#49ECC3>Nivel Kit:</gradient> <bold><underlined><color:yellow>{current_level}<color:yellow></underlined></bold> <bold><color:gray>/<color:gray></bold> <bold><underlined><color:red>{maximum_level}<color:red></underlined></bold>'
+          - ''
+          - '  <bold><italic><color:#CE166F>TIP:<color:#CE166F></italic></bold> <italic><gradient:#CE166F:#D544EB>Click Derecho para</gradient></italic>'
+          - '   <italic><gradient:#D544EB:#CE166F>menú de previsiones y actualizaciones!</gradient></italic>'
+          - ''
+          - '<italic><gradient:#10987A:#49ECC3>(( Click Izquierdo para cojer el kit ))</gradient></italic>'
+      unavailable:
+        material: 'PLAYER_HEAD:http://textures.minecraft.net/texture/76c0d0459c67f2be82fbe5406ab8d1378da1f28f7a3f82f1dfc47615a955a7'
+        name: '<bold><color:#DACB1C>✧<color:#DACB1C><color:#CBF91B>✦<color:#CBF91B><color:#DACB1C>✧<color:#DACB1C> <gradient:#DACB1C:#CBF91B>Kit {kit}</gradient> <color:#DACB1C>✧<color:#DACB1C><color:#CBF91B>✦<color:#CBF91B><color:#DACB1C>✧<color:#DACB1C></bold>'
+        glow: false
+        lore:
+          - ''
+          - ' <bold><color:#DACB1C>*<color:#DACB1C></bold> <gradient:#DACB1C:#CBF91B>Available in:</gradient> <color:#E5DCD9>{cooldown}<color:#E5DCD9>'
+          - ' <bold><color:#DACB1C>*<color:#DACB1C></bold> <gradient:#DACB1C:#CBF91B>Items:</gradient> <color:#E5DCD9>{items}<color:#E5DCD9>'
+          - ' <bold><color:#DACB1C>*<color:#DACB1C></bold> <gradient:#DACB1C:#CBF91B>Tiempos redimidos:</gradient> <color:#E5DCD9>{redeemed_times}<color:#E5DCD9>'
+          - ''
+          - ' <bold><color:#DACB1C>*<color:#DACB1C></bold> <gradient:#DACB1C:#CBF91B>Estado Kit:</gradient> <color:#E5DCD9>{status}<color:#E5DCD9>'
+          - ' <bold><color:#DACB1C>*<color:#DACB1C></bold> <gradient:#DACB1C:#CBF91B>Nivel Kit:</gradient> <bold><underlined><color:yellow>{current_level}<color:yellow></underlined></bold> <bold><color:gray>/<color:gray></bold> <bold><underlined><color:red>{maximum_level}<color:red></underlined></bold>'
+          - ''
+          - '  <bold><italic><color:#CE166F>TIP:<color:#CE166F></italic></bold> <italic><gradient:#CE166F:#D544EB>Click Derecho para</gradient></italic>'
+          - '   <italic><gradient:#D544EB:#CE166F>menú de previsiones y actualizaciones!</gradient></italic>'
+          - ''
+          - '<italic><gradient:#DACB1C:#CBF91B>(( ¡Hay que esperar al Tiempo de Kit! ))</gradient></italic>'
+      locked:
+        material: 'PLAYER_HEAD:http://textures.minecraft.net/texture/8ad943d063347f95ab9e9fa75792da84ec665ebd22b050bdba519ff7da61db'
+        name: '<bold><color:#D22727>✧<color:#D22727><color:#F26F0F>✦<color:#F26F0F><color:#D22727>✧<color:#D22727> <gradient:#D22727:#F26F0F>Kit {kit}</gradient> <color:#D22727>✧<color:#D22727><color:#F26F0F>✦<color:#F26F0F><color:#D22727>✧<color:#D22727></bold>'
+        glow: false
+        lore:
+          - ''
+          - ' <bold><color:#D22727>*<color:#D22727></bold> <gradient:#D22727:#F26F0F>Tiempo de Kit:</gradient> <color:#E5DCD9>{total}<color:#E5DCD9>'
+          - ' <bold><color:#D22727>*<color:#D22727></bold> <gradient:#D22727:#F26F0F>Items:</gradient> <color:#E5DCD9>{items}<color:#E5DCD9>'
+          - ' <bold><color:#D22727>*<color:#D22727></bold> <gradient:#D22727:#F26F0F>Tiempos redimidos:</gradient> <color:#E5DCD9>{redeemed_times}<color:#E5DCD9>'
+          - ''
+          - ' <bold><color:#D22727>*<color:#D22727></bold> <gradient:#D22727:#F26F0F>Estado Kit:</gradient> <color:#E5DCD9>{status}<color:#E5DCD9>'
+          - ' <bold><color:#D22727>*<color:#D22727></bold> <gradient:#D22727:#F26F0F>Nivel Kit:</gradient> <bold><underlined><color:yellow>{current_level}<color:yellow></underlined></bold> <bold><color:gray>/<color:gray></bold> <bold><underlined><color:red>{maximum_level}<color:red></underlined></bold>'
+          - ''
+          - '  <bold><italic><color:#CE166F>TIP:<color:#CE166F></italic></bold> <italic><gradient:#CE166F:#D544EB>Click Derecho para</gradient></italic>'
+          - '   <italic><gradient:#D544EB:#CE166F>menú de previsiones y actualizaciones!</gradient></italic>'
+          - ''
+          - '<italic><gradient:#D22727:#F26F0F>(( ¡Compra un rango para desbloquear este kit! ))</gradient></italic>'
+    NiniElite:
+      slot: 26
+      available:
+        material: 'PLAYER_HEAD:http://textures.minecraft.net/texture/f37cae5c51eb1558ea828f58e0dff8e6b7b0b1a183d737eecf714661761'
+        name: '<bold><color:#10987A>✧<color:#10987A><color:#49ECC3>✦<color:#49ECC3><color:#10987A>✧<color:#10987A> <gradient:#10987A:#49ECC3>Kit {kit}</gradient> <color:#10987A>✧<color:#10987A><color:#49ECC3>✦<color:#49ECC3><color:#10987A>✧<color:#10987A></bold>'
+        glow: true
+        lore:
+          - ''
+          - ' <bold><color:#10987A>*<color:#10987A></bold> <gradient:#10987A:#49ECC3>Tiempo de Kit:</gradient> <color:#E5DCD9>{total}<color:#E5DCD9>'
+          - ' <bold><color:#10987A>*<color:#10987A></bold> <gradient:#10987A:#49ECC3>Items:</gradient> <color:#E5DCD9>{items}<color:#E5DCD9>'
+          - ' <bold><color:#10987A>*<color:#10987A></bold> <gradient:#10987A:#49ECC3>Tiempos redimidos:</gradient> <color:#E5DCD9>{redeemed_times}<color:#E5DCD9>'
+          - ''
+          - ' <bold><color:#10987A>*<color:#10987A></bold> <gradient:#10987A:#49ECC3>Estado Kit:</gradient> <color:#E5DCD9>{status}<color:#E5DCD9>'
+          - ' <bold><color:#10987A>*<color:#10987A></bold> <gradient:#10987A:#49ECC3>Nivel Kit:</gradient> <bold><underlined><color:yellow>{current_level}<color:yellow></underlined></bold> <bold><color:gray>/<color:gray></bold> <bold><underlined><color:red>{maximum_level}<color:red></underlined></bold>'
+          - ''
+          - '  <bold><italic><color:#CE166F>TIP:<color:#CE166F></italic></bold> <italic><gradient:#CE166F:#D544EB>Click Derecho para</gradient></italic>'
+          - '   <italic><gradient:#D544EB:#CE166F>menú de previsiones y actualizaciones!</gradient></italic>'
+          - ''
+          - '<italic><gradient:#10987A:#49ECC3>(( Click Izquierdo para cojer el kit ))</gradient></italic>'
+      unavailable:
+        material: 'PLAYER_HEAD:http://textures.minecraft.net/texture/76c0d0459c67f2be82fbe5406ab8d1378da1f28f7a3f82f1dfc47615a955a7'
+        name: '<bold><color:#DACB1C>✧<color:#DACB1C><color:#CBF91B>✦<color:#CBF91B><color:#DACB1C>✧<color:#DACB1C> <gradient:#DACB1C:#CBF91B>Kit {kit}</gradient> <color:#DACB1C>✧<color:#DACB1C><color:#CBF91B>✦<color:#CBF91B><color:#DACB1C>✧<color:#DACB1C></bold>'
+        glow: false
+        lore:
+          - ''
+          - ' <bold><color:#DACB1C>*<color:#DACB1C></bold> <gradient:#DACB1C:#CBF91B>Available in:</gradient> <color:#E5DCD9>{cooldown}<color:#E5DCD9>'
+          - ' <bold><color:#DACB1C>*<color:#DACB1C></bold> <gradient:#DACB1C:#CBF91B>Items:</gradient> <color:#E5DCD9>{items}<color:#E5DCD9>'
+          - ' <bold><color:#DACB1C>*<color:#DACB1C></bold> <gradient:#DACB1C:#CBF91B>Tiempos redimidos:</gradient> <color:#E5DCD9>{redeemed_times}<color:#E5DCD9>'
+          - ''
+          - ' <bold><color:#DACB1C>*<color:#DACB1C></bold> <gradient:#DACB1C:#CBF91B>Estado Kit:</gradient> <color:#E5DCD9>{status}<color:#E5DCD9>'
+          - ' <bold><color:#DACB1C>*<color:#DACB1C></bold> <gradient:#DACB1C:#CBF91B>Nivel Kit:</gradient> <bold><underlined><color:yellow>{current_level}<color:yellow></underlined></bold> <bold><color:gray>/<color:gray></bold> <bold><underlined><color:red>{maximum_level}<color:red></underlined></bold>'
+          - ''
+          - '  <bold><italic><color:#CE166F>TIP:<color:#CE166F></italic></bold> <italic><gradient:#CE166F:#D544EB>Click Derecho para</gradient></italic>'
+          - '   <italic><gradient:#D544EB:#CE166F>menú de previsiones y actualizaciones!</gradient></italic>'
+          - ''
+          - '<italic><gradient:#DACB1C:#CBF91B>(( ¡Hay que esperar al Tiempo de Kit! ))</gradient></italic>'
+      locked:
+        material: 'PLAYER_HEAD:http://textures.minecraft.net/texture/8ad943d063347f95ab9e9fa75792da84ec665ebd22b050bdba519ff7da61db'
+        name: '<bold><color:#D22727>✧<color:#D22727><color:#F26F0F>✦<color:#F26F0F><color:#D22727>✧<color:#D22727> <gradient:#D22727:#F26F0F>Kit {kit}</gradient> <color:#D22727>✧<color:#D22727><color:#F26F0F>✦<color:#F26F0F><color:#D22727>✧<color:#D22727></bold>'
+        glow: false
+        lore:
+          - ''
+          - ' <bold><color:#D22727>*<color:#D22727></bold> <gradient:#D22727:#F26F0F>Tiempo de Kit:</gradient> <color:#E5DCD9>{total}<color:#E5DCD9>'
+          - ' <bold><color:#D22727>*<color:#D22727></bold> <gradient:#D22727:#F26F0F>Items:</gradient> <color:#E5DCD9>{items}<color:#E5DCD9>'
+          - ' <bold><color:#D22727>*<color:#D22727></bold> <gradient:#D22727:#F26F0F>Tiempos redimidos:</gradient> <color:#E5DCD9>{redeemed_times}<color:#E5DCD9>'
+          - ''
+          - ' <bold><color:#D22727>*<color:#D22727></bold> <gradient:#D22727:#F26F0F>Estado Kit:</gradient> <color:#E5DCD9>{status}<color:#E5DCD9>'
+          - ' <bold><color:#D22727>*<color:#D22727></bold> <gradient:#D22727:#F26F0F>Nivel Kit:</gradient> <bold><underlined><color:yellow>{current_level}<color:yellow></underlined></bold> <bold><color:gray>/<color:gray></bold> <bold><underlined><color:red>{maximum_level}<color:red></underlined></bold>'
+          - ''
+          - '  <bold><italic><color:#CE166F>TIP:<color:#CE166F></italic></bold> <italic><gradient:#CE166F:#D544EB>Click Derecho para</gradient></italic>'
+          - '   <italic><gradient:#D544EB:#CE166F>menú de previsiones y actualizaciones!</gradient></italic>'
+          - ''
+          - '<italic><gradient:#D22727:#F26F0F>(( ¡Compra un rango para desbloquear este kit! ))</gradient></italic>'
+  open-menu:
+    sounds:
+      - 'ENTITY_HORSE_ARMOR;VOICE;10.0;1.0'
+      - 'BLOCK_COMPARATOR_CLICK;VOICE;1.0;1.0'
+    particles:
+      - 'LAVA;50;2.0;2.0;2.0;2.0'
+    button:
+      slot: 41
+      material: 'PLAYER_HEAD:http://textures.minecraft.net/texture/d67dce4645349e41a7f35797e2b9279e35a65f5e81a34496885d27268f369139'
+      name: '<bold><color:#10987A>✧<color:#10987A><color:#49ECC3>✦<color:#49ECC3><color:#10987A>✧<color:#10987A> <gradient:#10987A:#49ECC3>Rank Kits</gradient> <color:#10987A>✧<color:#10987A><color:#49ECC3>✦<color:#49ECC3><color:#10987A>✧<color:#10987A></bold>'
+      glow: false
+      lore:
+        - ''
+        - ' <bold><color:#10987A>*<color:#10987A></bold> <gradient:#10987A:#49ECC3>Owned kits:</gradient> <color:#E5DCD9>{owned_kits} / {total_kits}<color:#E5DCD9>'
+        - ' <bold><color:#10987A>*<color:#10987A></bold> <gradient:#10987A:#49ECC3>Available kits:</gradient> <color:#E5DCD9>{available_kits}<color:#E5DCD9>'
+        - ''
+        - '<italic><gradient:#10987A:#49ECC3>(( Left-click to view the rank kits! ))</gradient></italic>'
+  close-menu:
+    sounds:
+      - 'BLOCK_ENDER_CHEST_CLOSE;VOICE;10.0;1.0'
+    particles:
+      - 'FLAME;50;2.0;2.0;2.0;2.0'
+      - 'CLOUD;20;0.5;0.5;0.1;0.1'
+    button:
+      slot: 32
+      material: 'PLAYER_HEAD:http://textures.minecraft.net/texture/8a16038bc8e6518afa91498dab7675c01cb31a125d21c49b861294d39e1c560c'
+      name: '<bold><color:#10987A>✧<color:#10987A><color:#49ECC3>✦<color:#49ECC3><color:#10987A>✧<color:#10987A> <gradient:#10987A:#49ECC3>Rank Kits</gradient> <color:#10987A>✧<color:#10987A><color:#49ECC3>✦<color:#49ECC3><color:#10987A>✧<color:#10987A></bold>'
+      glow: false
+      lore:
+        - ''
+        - ' <bold><color:#10987A>*<color:#10987A></bold> <gradient:#10987A:#49ECC3>Owned kits:</gradient> <color:#E5DCD9>{owned_kits} / {total_kits}<color:#E5DCD9>'
+        - ' <bold><color:#10987A>*<color:#10987A></bold> <gradient:#10987A:#49ECC3>Available kits:</gradient> <color:#E5DCD9>{available_kits}<color:#E5DCD9>'
+        - ''
+        - '  <bold><italic><color:#CE166F>TIP:<color:#CE166F></italic></bold> <italic><gradient:#CE166F:#D544EB>Press ESC to return</gradient></italic>'
+        - '   <italic><gradient:#D544EB:#CE166F>to the previous menu!</gradient></italic>'
+        - ''
+        - '<italic><gradient:#10987A:#49ECC3>(( Left-click to close this menu! ))</gradient></italic>'
