@@ -243,7 +243,7 @@ Augments:
       nuevo.
     CreativeMode: no se pueden crear aumentos en el modo &ccreativo&7.
     Entropy: '&7No puedes crear ese artículo. Necesitas &c%entropy%&7 mas de entropìa.'
-  'False': 'falso'
+  'False': falso
   Recipe:
     COBBLESTONE: Adoquìn
     COD: Bacalao
@@ -1300,6 +1300,23 @@ Biomes:
   JUNGLE_EDGE: Bordes de la jumgla
   DRIPSTONE_CAVES: Cuevas de Dripstone
   LUSH_CAVES: Exuberantes cuevas
+  SNOWY_SLOPES: Snowy Slopes
+  FROZEN_PEAKS: Frozen Peaks
+  WINDSWEPT_SAVANNA: Windswept Savanna
+  MEADOW: Meadow
+  GROVE: Grove
+  OLD_GROWTH_BIRCH_FOREST: Old Growth Birch Forest
+  SPARSE_JUNGLE: Sparse Jungle
+  OLD_GROWTH_PINE_TAIGA: Old Growth Pine Taiga
+  STONY_PEAKS: Stony Peaks
+  JAGGED_PEAKS: Jagged Peaks
+  WOODED_BADLANDS: Wooded Badlands
+  WINDSWEPT_HILLS: Windswept Hills
+  SNOWY_PLAINS: Snowy Plains
+  OLD_GROWTH_SPRUCE_TAIGA: Old Growth Spruce Taiga
+  STONY_SHORE: Stony Shore
+  WINDSWEPT_FOREST: Windswept Forest
+  WINDSWEPT_GRAVELLY_HILLS: Windswept Gravelly Hills
 WithdrawnEntropy: te has retirado &d10,000 entropía &7y haber sido dado un &bCristal
   de entropia&7.
 Boosters:
@@ -1408,10 +1425,11 @@ Bait:
     - '&cTu no tengo permiso para comprar esto.'
     Level: '&cNo tienes un nivel de fishing lo suficientemente alto para esto.'
   NoPermission: '&cTu no tengo permiso para comprar esto.'
-  AlreadyHave: tu ya tienes un cebo aplicado a la fishing rod tu.
-  FishingRod: tu solo puedes aplicar cebo en una fishing rod.
-  NotEnoughSpace: tu no tienes suficiente espacio de inventario para comprar esto.
-  NotEnoughMoney: tu no tienes suficiente dinero para pagar esto..
+  AlreadyHave: '&atu ya tienes un cebo aplicado a la fishing rod tu.'
+  FishingRod: '&atu solo puedes aplicar cebo en una fishing rod.'
+  NotEnoughSpace: '&atu no tienes suficiente espacio de inventario para comprar esto.'
+  NotEnoughMoney: '&atu no tienes suficiente dinero para pagar esto..'
+  NotHighEnoughLevel: '&7You are not a high enough fishing level to purchase this.'
 FishSkills:
   Names:
     TOTEM_LEADER: Lider del totem
@@ -1421,7 +1439,7 @@ FishSkills:
     LUCK_OF_THE_CATCH: Suerte de la captura
     DIVINE_JUDGEMENT: Juicio divino
     COMBO_CATCHER: Receptor combinado
-    BETTER_GUTTING: mejor eviscerado 
+    BETTER_GUTTING: mejor eviscerado
 TotemUpgrades:
   Names:
     RANGE: Rango
@@ -1429,11 +1447,24 @@ TotemUpgrades:
     COOLDOWN_REDUCTION: Reduccion del cooldown
 TotemPassives:
   Names:
-    MYTHICAL_WATERS: '&5Aguas Misticas'
-    FISH_SCHOOL: '&eEscuela de peces'
-    ENTROPY_HORDER: '&bOrden de entropía'
-    EXPERIENCED_FISHERMAN: '&aPescador experimentado'
-    STAR_FALL: '&dLluvia de estrellas'
-    RANDOM_DROPS: '&2Drops aleatorios'
-    LITTLE_CRITTERS: '&9Pequeños bichos'
-    TREASURE_HUNTER: '&6Cazador de tesoros'
+    MYTHICAL_WATERS: '&5Aguas míticas'
+    FISH_SCHOOL: '&eEscuela de pesca'
+    ENTROPY_HORDER: '&bHorder de Entropía'
+    EXPERIENCED_FISHERMAN: '&aPescador con experiencia'
+    STAR_FALL: '&dCaída de estrellas'
+    RANDOM_DROPS: '&2Drops Aleatorios'
+    LITTLE_CRITTERS: '&9Pequeñas criaturas'
+    TREASURE_HUNTER: '&6CazaTesoros'
+DeliveryUpgrades:
+  Names:
+    INCREASE_CAPACITY: Aumento de Capacidad
+    EXPERT_DELIVERER: Repartidor Experto
+    PAY_RISE: Aumento de Sueldo
+    LUCKY_CHARM: Aumento de la suerte
+    OVERCLOCKED: Overclocked
+NoOffHandFishing: '&7No se puede pescar con una caña de pescar en la mano.'
+FishUpdate:
+  Weighed: '&7Tenga en cuenta que este comando no admite el pescado pesado. Por favor, venderlos o guardarlos como objetos de colección.'
+  Cooldown: '&7Este comando tiene un tiempo de espera. Debe esperar otro &c%seconds%
+    segundos &7para volver a usarlo.'
+  Updated: '&7Los peces de tu inventario han sido actualizados a sus nuevos itemstacks.'
