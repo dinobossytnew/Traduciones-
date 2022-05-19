@@ -1,0 +1,18 @@
+default:
+  title: '&8Kit preview: {kit} &o(Lvl. {level})'
+  rows: 6
+  menu-fillers:
+    - 'preview-menu-corner-1'
+    - 'preview-menu-corner-2'
+  kit-items:
+    slots: [2, 3, 4, 5, 6, 10, 11, 12, 13, 14, 15, 16, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 37, 38, 39, 40, 41, 42, 43, 47, 48, 49, 50, 51]
+    start-delay: 3
+    repeat-delay: 3
+  upgrade-buttons:
+    enabled: true
+    slots:
+      previous-page: 48
+      next-page: 50
+      upgrade: 49
+    settings:
+      reset-kit-cooldown: true

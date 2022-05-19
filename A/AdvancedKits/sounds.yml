@@ -1,0 +1,34 @@
+no-move-menu-item:
+  - 'ENTITY_ENDERMAN_TELEPORT;VOICE;10.0;1.0'
+open-main-kits-menu:
+  - 'ENTITY_HORSE_ARMOR;VOICE;10.0;1.0'
+close-main-kits-menu:
+  - 'BLOCK_ENDER_CHEST_CLOSE;VOICE;10.0;1.0'
+open-preview-kits-menu:
+  - 'ENTITY_HORSE_ARMOR;VOICE;10.0;1.0'
+close-preview-kits-menu:
+  - 'BLOCK_ENDER_CHEST_CLOSE;VOICE;10.0;1.0'
+fill-kit-items:
+  - 'ENTITY_SPLASH_POTION_BREAK;VOICE;0.5;1.0'
+previous-page-button:
+  - 'BLOCK_STONE_BUTTON_CLICK_OFF;VOICE;10.0;1.0'
+next-page-button:
+  - 'BLOCK_STONE_BUTTON_CLICK_OFF;VOICE;10.0;1.0'
+locked-upgrade:
+  - 'ENTITY_VILLAGER_NO;VOICE;10.0;1.0'
+available-upgrade:
+  - 'ENTITY_PLAYER_LEVELUP;VOICE;10.0;1.0'
+no-available-upgrades:
+  - 'ENTITY_VILLAGER_NO;VOICE;10.0;1.0'
+default-level-upgrade:
+  - 'ENTITY_VILLAGER_NO;VOICE;10.0;1.0'
+maximum-level-upgrade:
+  - 'ENTITY_VILLAGER_NO;VOICE;10.0;1.0'
+insufficient-funds-upgrade:
+  - 'ENTITY_VILLAGER_NO;VOICE;10.0;1.0'
+complete-upgrade:
+  - 'ENTITY_VILLAGER_NO;VOICE;10.0;1.0'
+unavailable-upgrade:
+  - 'ENTITY_VILLAGER_NO;VOICE;10.0;1.0'
+current-upgrade:
+  - 'ENTITY_VILLAGER_NO;VOICE;10.0;1.0'

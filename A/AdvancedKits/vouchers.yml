@@ -1,0 +1,161 @@
+Coal:
+  kits:
+    - 'Coal;1'
+  redeem:
+    titles:
+      - '<bold><gradient:green:blue>{voucher} Voucher</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( You just redeemed this kit voucher! ))</gradient></italic>;3;34;3;0'
+    fireworks:
+      - 'BALL_LARGE;BLACK,FUCHSIA,MAROON,RED'
+    sounds:
+      - 'ENTITY_PLAYER_LEVELUP;VOICE;1.0;0.3'
+    particles:
+      - 'NOTE;50;2.0;2.0;2.0;2.0'
+    console-commands: []
+    messages: []
+  item:
+    material: 'PLAYER_HEAD:http://textures.minecraft.net/texture/cff11a5db46de1f5877a298a99f47c2779c2aad5720c384d9d3826a5a3e5bd3a'
+    name: '<bold><color:#10987A>✧<color:#10987A><color:#49ECC3>✦<color:#49ECC3><color:#10987A>✧<color:#10987A> <gradient:#10987A:#49ECC3>Kit Voucher</gradient> <color:#10987A>✧<color:#10987A><color:#49ECC3>✦<color:#49ECC3><color:#10987A>✧<color:#10987A></bold>'
+    glow: true
+    lore:
+      - ''
+      - ' <bold><color:#10987A>*<color:#10987A></bold> <gradient:#10987A:#49ECC3>Kit:</gradient> <color:#E5DCD9>Coal (Lvl. 1)<color:#E5DCD9>'
+      - ''
+      - '<italic><gradient:#10987A:#49ECC3>(( Right-click to redeem this voucher! ))</gradient></italic>'
+Iron:
+  kits:
+    - 'Iron;1'
+  redeem:
+    titles:
+      - '<bold><gradient:green:blue>{voucher} Voucher</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( You just redeemed this kit voucher! ))</gradient></italic>;3;34;3;0'
+    fireworks:
+      - 'BALL_LARGE;BLACK,FUCHSIA,MAROON,RED'
+    sounds:
+      - 'ENTITY_PLAYER_LEVELUP;VOICE;1.0;0.3'
+    particles:
+      - 'NOTE;50;2.0;2.0;2.0;2.0'
+    console-commands: []
+    messages: []
+  item:
+    material: 'PLAYER_HEAD:http://textures.minecraft.net/texture/f7aadff9ddc546fdcec6ed5919cc39dfa8d0c07ff4bc613a19f2e6d7f2593'
+    name: '<bold><color:#10987A>✧<color:#10987A><color:#49ECC3>✦<color:#49ECC3><color:#10987A>✧<color:#10987A> <gradient:#10987A:#49ECC3>Kit Voucher</gradient> <color:#10987A>✧<color:#10987A><color:#49ECC3>✦<color:#49ECC3><color:#10987A>✧<color:#10987A></bold>'
+    glow: true
+    lore:
+      - ''
+      - ' <bold><color:#10987A>*<color:#10987A></bold> <gradient:#10987A:#49ECC3>Kit:</gradient> <color:#E5DCD9>Iron (Lvl. 1)<color:#E5DCD9>'
+      - ''
+      - '<italic><gradient:#10987A:#49ECC3>(( Right-click to redeem this voucher! ))</gradient></italic>'
+Gold:
+  kits:
+    - 'Gold;1'
+  redeem:
+    titles:
+      - '<bold><gradient:green:blue>{voucher} Voucher</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( You just redeemed this kit voucher! ))</gradient></italic>;3;34;3;0'
+    fireworks:
+      - 'BALL_LARGE;BLACK,FUCHSIA,MAROON,RED'
+    sounds:
+      - 'ENTITY_PLAYER_LEVELUP;VOICE;1.0;0.3'
+    particles:
+      - 'NOTE;50;2.0;2.0;2.0;2.0'
+    console-commands: []
+    messages: []
+  item:
+    material: 'PLAYER_HEAD:http://textures.minecraft.net/texture/f37cae5c51eb1558ea828f58e0dff8e6b7b0b1a183d737eecf714661761'
+    name: '<bold><color:#10987A>✧<color:#10987A><color:#49ECC3>✦<color:#49ECC3><color:#10987A>✧<color:#10987A> <gradient:#10987A:#49ECC3>Kit Voucher</gradient> <color:#10987A>✧<color:#10987A><color:#49ECC3>✦<color:#49ECC3><color:#10987A>✧<color:#10987A></bold>'
+    glow: true
+    lore:
+      - ''
+      - ' <bold><color:#10987A>*<color:#10987A></bold> <gradient:#10987A:#49ECC3>Kit:</gradient> <color:#E5DCD9>Gold (Lvl. 1)<color:#E5DCD9>'
+      - ''
+      - '<italic><gradient:#10987A:#49ECC3>(( Right-click to redeem this voucher! ))</gradient></italic>'
+Lapis:
+  kits:
+    - 'Lapis;1'
+  redeem:
+    titles:
+      - '<bold><gradient:green:blue>{voucher} Voucher</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( You just redeemed this kit voucher! ))</gradient></italic>;3;34;3;0'
+    fireworks:
+      - 'BALL_LARGE;BLACK,FUCHSIA,MAROON,RED'
+    sounds:
+      - 'ENTITY_PLAYER_LEVELUP;VOICE;1.0;0.3'
+    particles:
+      - 'NOTE;50;2.0;2.0;2.0;2.0'
+    console-commands: []
+    messages: []
+  item:
+    material: 'PLAYER_HEAD:http://textures.minecraft.net/texture/478abdf982f909eab5de9bf969cf14f664db4c447738459ea40162b37d124'
+    name: '<bold><color:#10987A>✧<color:#10987A><color:#49ECC3>✦<color:#49ECC3><color:#10987A>✧<color:#10987A> <gradient:#10987A:#49ECC3>Kit Voucher</gradient> <color:#10987A>✧<color:#10987A><color:#49ECC3>✦<color:#49ECC3><color:#10987A>✧<color:#10987A></bold>'
+    glow: true
+    lore:
+      - ''
+      - ' <bold><color:#10987A>*<color:#10987A></bold> <gradient:#10987A:#49ECC3>Kit:</gradient> <color:#E5DCD9>Lapis (Lvl. 1)<color:#E5DCD9>'
+      - ''
+      - '<italic><gradient:#10987A:#49ECC3>(( Right-click to redeem this voucher! ))</gradient></italic>'
+Emerald:
+  kits:
+    - 'Emerald;1'
+  redeem:
+    titles:
+      - '<bold><gradient:green:blue>{voucher} Voucher</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( You just redeemed this kit voucher! ))</gradient></italic>;3;34;3;0'
+    fireworks:
+      - 'BALL_LARGE;BLACK,FUCHSIA,MAROON,RED'
+    sounds:
+      - 'ENTITY_PLAYER_LEVELUP;VOICE;1.0;0.3'
+    particles:
+      - 'NOTE;50;2.0;2.0;2.0;2.0'
+    console-commands: []
+    messages: []
+  item:
+    material: 'PLAYER_HEAD:http://textures.minecraft.net/texture/f3d5e43de5d4177c4baf2f44161554473a3b0be5430998b5fcd826af943afe3'
+    name: '<bold><color:#10987A>✧<color:#10987A><color:#49ECC3>✦<color:#49ECC3><color:#10987A>✧<color:#10987A> <gradient:#10987A:#49ECC3>Kit Voucher</gradient> <color:#10987A>✧<color:#10987A><color:#49ECC3>✦<color:#49ECC3><color:#10987A>✧<color:#10987A></bold>'
+    glow: true
+    lore:
+      - ''
+      - ' <bold><color:#10987A>*<color:#10987A></bold> <gradient:#10987A:#49ECC3>Kit:</gradient> <color:#E5DCD9>Emerald (Lvl. 1)<color:#E5DCD9>'
+      - ''
+      - '<italic><gradient:#10987A:#49ECC3>(( Right-click to redeem this voucher! ))</gradient></italic>'
+Diamond:
+  kits:
+    - 'Diamond;1'
+  redeem:
+    titles:
+      - '<bold><gradient:green:blue>{voucher} Voucher</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( You just redeemed this kit voucher! ))</gradient></italic>;3;34;3;0'
+    fireworks:
+      - 'BALL_LARGE;BLACK,FUCHSIA,MAROON,RED'
+    sounds:
+      - 'ENTITY_PLAYER_LEVELUP;VOICE;1.0;0.3'
+    particles:
+      - 'NOTE;50;2.0;2.0;2.0;2.0'
+    console-commands: []
+    messages: []
+  item:
+    material: 'PLAYER_HEAD:http://textures.minecraft.net/texture/25807cc4c3b6958aea6156e84518d91a49c5f32971e6eb269a23a25a27145'
+    name: '<bold><color:#10987A>✧<color:#10987A><color:#49ECC3>✦<color:#49ECC3><color:#10987A>✧<color:#10987A> <gradient:#10987A:#49ECC3>Kit Voucher</gradient> <color:#10987A>✧<color:#10987A><color:#49ECC3>✦<color:#49ECC3><color:#10987A>✧<color:#10987A></bold>'
+    glow: true
+    lore:
+      - ''
+      - ' <bold><color:#10987A>*<color:#10987A></bold> <gradient:#10987A:#49ECC3>Kit:</gradient> <color:#E5DCD9>Diamond (Lvl. 1)<color:#E5DCD9>'
+      - ''
+      - '<italic><gradient:#10987A:#49ECC3>(( Right-click to redeem this voucher! ))</gradient></italic>'
+Bedrock:
+  kits:
+    - 'Bedrock;1'
+  redeem:
+    titles:
+      - '<bold><gradient:green:blue>{voucher} Voucher</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( You just redeemed this kit voucher! ))</gradient></italic>;3;34;3;0'
+    fireworks:
+      - 'BALL_LARGE;BLACK,FUCHSIA,MAROON,RED'
+    sounds:
+      - 'ENTITY_PLAYER_LEVELUP;VOICE;1.0;0.3'
+    particles:
+      - 'NOTE;50;2.0;2.0;2.0;2.0'
+    console-commands: []
+    messages: []
+  item:
+    material: 'PLAYER_HEAD:http://textures.minecraft.net/texture/6753482c1d5061e9b243f259b52f95c433ff03039ac843ddc46267b903052'
+    name: '<bold><color:#10987A>✧<color:#10987A><color:#49ECC3>✦<color:#49ECC3><color:#10987A>✧<color:#10987A> <gradient:#10987A:#49ECC3>Kit Voucher</gradient> <color:#10987A>✧<color:#10987A><color:#49ECC3>✦<color:#49ECC3><color:#10987A>✧<color:#10987A></bold>'
+    glow: true
+    lore:
+      - ''
+      - ' <bold><color:#10987A>*<color:#10987A></bold> <gradient:#10987A:#49ECC3>Kit:</gradient> <color:#E5DCD9>Bedrock (Lvl. 1)<color:#E5DCD9>'
+      - ''
+      - '<italic><gradient:#10987A:#49ECC3>(( Right-click to redeem this voucher! ))</gradient></italic>'
