@@ -1,0 +1,114 @@
+# ===========================================================================
+# LOCALE
+# ===========================================================================
+Locale:
+  NoPermsMessage: "Lo sentimos, ¡no tienes permisos para usar este comando!" 
+  RoleBlacklistedTitle: "Estas en la Lista negra"
+  RoleBlacklistedMsg: "¡Su rol está en la lista negra de la creación de tickets!"
+  AlreadyOpenTitle: "ticket ya abierto"
+  AlreadyOpenMsg: "Sólo puedes teter **{max} ticket(s)** Abiertos a la vez." # Usa {max} por la cantidad máxima de boletos que un usuario puede tener abiertos al mismo tiempo
+  CloseTicketButton: "Cerrar Ticket"
+  ticketCreatedTitle: "Ticket creado"
+  ticketCreatedMsg : "Tu ticket ha sido creado en"
+  deletingTicketMsg: "Borrar ticket en {time} segundos" # Usa {time} por la cantidad de tiempo antes de que se elimine un ticket
+  confirmCloseTitle: "Cierre de Ticket de soporte"
+  confirmCloseMsg: "{user} ha comenzado a cerrar el ticket, ¿estás seguro que quieres cerrar el ticket?" # Usa {user} por @ejemplo y {user-tag} por ejemplo# 193369
+  confirmCloseButton: "Confirmar"
+  cancelCloseButton: "Cancelar"
+  PayPalInvoiceTitle: "Facturas de pago"
+  PayPalInvoiceMsg: "Por favor, haga clic en el botón de abajo para pagar!"
+  PayPalSeller: "Vendedor:"
+  PayPalUser: "Usuario:"
+  PayPalPrice: "Precio:"
+  PayPalService: "Servicio:"
+  PayPalPayInvoice: "Factura de pago"
+  PayPalLogTitle: "Registros de tickets | Facturas de pago"
+  NotInTicketChannel: "¡No estás en un canal de entradas!"
+  MentionUser: "Por favor mencione un usuario para agregar!"
+  ticketUserAdd: "Agregado **{user} ({user-tag})** al ticket" # Usa {user} por @Ejemplo y {user-tag} por ejemplo#0000
+  ticketUserRemove: "Removido **{user} ({user-tag})** del ticket" # Usa {user} por @Ejemplo y {user-tag} por ejemplo#0000
+  ticketCloseDM: "Su ticket ha sido cerrado en **{guildName}**" # Las transcripciones de los tickets se enviarán automáticamente al usuario. Use {guildName} para el nombre de su servidor
+  ticketChannelTopic: "Creador: {creator} | Tipo: {ticketType}" # Usa {creator} para el creador de tickets y {ticketType} para el tipo/categoría del ticket
+  ticketRenameSpecifyName: "Please specify a name!"
+  ticketRenamed: "This ticket has been renamed to **{newName}**!" # Usa {newName} para el nuevo nombre del billete
+  userAddTitle: "Registros de tickets | Usuario agregado"
+  userRemoveTitle: "Registros de tickets | Usuario removido"
+  ticketCloseTitle: "Registros de tickets | Ticket cerrado"
+  ticketRenameTitle: "Registros de tickets | Ticket renombrado"
+  logsExecutor: "Ejecutor"
+  logsTicket: "Ticket"
+  logsUser: "Usuario"
+  logsTicketType: "Tipo de ticket"
+  logsTicketAuthor: "Creador del ticket"
+  logsClosedBy: "Cerrado por"
+  restrictTicketClose: "¡No puede cerrar este ticket!"
+  ticketPinned: "📌 ¡Este ticket ha sido fijado!"
+  ticketAlreadyPinned: "¡Este ticket ya está fijado!"
+  suggestionSubmit: "Su sugerencia ha sido enviada, ¡Gracias!"
+  suggestionTitle: "Sugerencia"
+  suggestionInformation: "Informaciòn"
+  suggestionUpvotes: "Votos a favor:"
+  suggestionDownvotes: "Votos en contra:"
+  suggestionStatus: "Estado:"
+  suggestionVoteResetTitle: "Reinicio de votos"
+  suggestionVoteReset: "tu voto en [this]({link}) ¡La sugerencia ha sido reiniciado!" # Usa {link} para el enlace del mensaje de sugerencia
+  suggestionNoVoteTitle: "Sin voto"
+  suggestionNoVote: "no has votado por [this]({link}) sugerencia!" # Usa {link} para el enlace del mensaje de sugerencia
+  suggestionDownvotedTitle: "Votos en contra de la sugerencia"
+  suggestionDownvoted: "Has votado en contra con éxito [this]({link}) la sugerencia!" # Usa {link} para el enlace del mensaje de sugerencia
+  suggestionAlreadyVotedTitle: "Ya has votado"
+  suggestionAlreadyVoted: "Ya has votado [this]({link}) en la sugerencia! Puede presionar el botón Restablecer voto para cambiar su voto." # Usa {link} para el enlace del mensaje de sugerencia
+  suggestionUpvotedTitle: "Voto a favor en la sugerencia"
+  suggestionUpvoted: "Usted voto a favor exitosamente [this]({link}) en la sugerencia!" # Usa {link} para el enlace del mensaje de sugerencia
+  suggestionAcceptedTitle: "Sugerencia aceptada"
+  suggestionAccepted: "Aceptaste con éxito [this]({link}) la sugerencia!" # Usa {link} para el enlace del mensaje de sugerencia
+  suggestionDeniedTitle: "Sugerencia denegada"
+  suggestionDenied: "Negaste con éxito [this]({link}) la sugerencia!" # Usa {link} para el enlace del mensaje de sugerencia
+  suggestionNoPerms: "No se le permite aceptar o rechazar sugerencias!"
+  suggestionCantVoteTitle: "no puede votar"
+  suggestionCantVote: "no puedes votar por [this]({link}) sugerencia porque ya ha sido aceptada o denegada!" # Usa {link} para el enlace del mensaje de sugerencia
+  cryptoTitle: "Pago criptográfico"
+  cryptoMessage: "Escanee el código QR a continuación o pague a la siguiente dirección con la cantidad exacta"
+  cryptoLogTitle: "Registro de tickets | Pago criptográfico"
+  cryptoLogAddress: "Habla a"
+  restrictTicketClaim: "¡No puede reclamar este ticket!"
+  claimTicketButton: "Reclamar"
+  unclaimTicketButton: "Renunciar"
+  ticketClaimedBy: "Reclamado por:"
+  ticketUnClaimedBy: "Renunciado por:"
+  ticketClaimedTitle: "Ticket reclamado"
+  ticketUnClaimedTitle: "Ticket renunciado"
+  ticketNotClaimed: "Este ticket no ha sido reclamado!"
+  ticketClaimed: "Este ticket ha sido reclamado por {user}\n¡Te estarán ayudando en breve!!" # Usa {user} Para el usuario que reclamó el ticket.
+  ticketUnClaimed: "Este ticket no ha sido reclamado por {user}" # Usa {user} Para el usuario que reclamó el ticket.
+  ticketDidntClaim: "No reclamó este boleto, solo el usuario que reclamó este ticket puede anularlo! ({user})" # Usa {user} Para el usuario que reclamó el ticket.
+  ticketClaimedLog: "Registros de tickets | Ticket reclamados"
+  ticketUnClaimedLog: "Registros de tickets | Ticket renunciados"
+  ticketClosureCancel: "Cierre del ticket cancelado!"
+  claimTicketMsg: "Has reclamado correctamente este ticket!"
+  unclaimTicketMsg: "Retiraste con éxito este ticket!"
+  totalMessagesLog: "Total mensajes:"
+  totalTickets: "Ticekets Totales:"
+  openTickets: "Tickets Abiertos:"
+  totalClaims: "Claimiados Totales:"
+  guildStatistics: "Estadísticas del gremio"
+  statsTickets: "Tickets"
+  alreadyBlacklisted: "{user} ya está en la lista negra!" # Use {user} for @Example and {user-tag} for Example#0000
+  successfullyBlacklisted: "{user} ha sido exitosamente **Lista Negra** de la creación de tickets!" # Use {user} for @Example and {user-tag} for Example#0000
+  notBlacklisted: "{user} is not blacklisted!" # Use {user} for @Example and {user-tag} for Example#0000
+  successfullyUnblacklisted: "{user} ha sido exitosamente **Saliste Lista Negra** podras crear ticekts!" # Use {user} for @Example and {user-tag} for Example#0000
+  userBlacklistedTitle: "Lista Negra"
+  userBlacklistedMsg: "Usted está en la lista negra para crear tickets!"
+  ticketInformationCloseDM: "Información sobre los Tickets"
+  categoryCloseDM: "Categoria:"
+  claimedByCloseDM: "Claimiado por:"
+  ticketClosedCloseDM: "Ticket Cerrado"
+  notClaimedCloseDM: "No Claimiado"
+  ticketRating: "Ticket Calificacion"
+  totalReviews: "Calificasion Totales:"
+  averageRating: "Valoración media:"
+  cooldownEmbedMsgTitle: "Tiempo de espera"
+  cooldownEmbedMsg: "Hay que esperar `{time}` antes de crear otro ticket!"
+  selectCategory: "Selecionado Categoria..."
+  selectReview: "Selecionado Calificasion..."
+  explainWhyRating: "Por favor, explique por qué da esta calificación"
