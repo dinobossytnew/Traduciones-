@@ -5,7 +5,7 @@ commandEditError: '&cTU NECESITAS EL COMANDO: &7/ecraft edit <name>'
 commandDeleteError: '&cTU NECESITAS EL COMANDO: &7/ecraft delete <name>'
 commandGiveError: '&cTU NECESITAS USAR EL COMANDO: &7/ecraft give <player> <name>'
 commandOpenCategoryError: '&cTU NECESITAS USAR EL COMANDO: &7/ecraft opencategory <player> <category>
-  (optional, blocked category)<true/false>'
+  (optional, blockeada category)<true/false>'
 commandPermissionsError: '&cTE FALTAN PERMISSOS O CALLE.'
 mustHaveItemInHand: '&cNECESITAS EL ITEM EN LA MANO!'
 craftingAlreadyExists: '&cUna artesanía llamada &7%name% &c¡ya existe!'
