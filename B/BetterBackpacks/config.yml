@@ -1,0 +1,479 @@
+#     ___      _   _           ___          _                 _       ___                 Our plugins: https://alonsoaliaga.com/plugins
+#    | _ ) ___| |_| |_ ___ _ _| _ ) __ _ __| |___ __  __ _ __| |__ __| _ \_ _ ___         Support server: https://alonsoaliaga.com/discord
+#    | _ \/ -_)  _|  _/ -_) '_| _ \/ _` / _| / / '_ \/ _` / _| / /(_-<  _/ '_/ _ \        Youtube: https://alonsoaliaga.com/play
+#    |___/\___|\__|\__\___|_| |___/\__,_\__|_\_\ .__/\__,_\__|_\_\/__/_| |_| \___/        Test server: plugins.alonsoaliaga.com
+#                              by AlonsoAliaga |_|    
+#                       Twitch: https://alonsoaliaga.com/twitch
+#                       Configuracion y traducion: DinoBossYT
+#              Considering donating? https://alonsoaliaga.com/donate                      Thanks for purchasing my plugin! Only buyers receive support.
+Messages:
+  No-permission: "&cInsufiicentes permisos."
+  Cooldown-message: "&cEspera unos segundos, vas muy rápido!"
+  Corrupted-backpack: "&cEsta mochila parece corrupta, destruyela. :)"
+  Cannot-stacked: "&cNo se pueden usar mochilas stackeadas.."
+  Cannot-craft-stacked: "&cCraftea las mochilas una por una.."
+  Reloaded: "&aAlgunos mensajes y opciones fueron recargadas. Otros requieren reinicio!"
+  Invalid-player: "&cJugador no está conectado!"
+  Invalid-tier: "&cNivel inválido. Debe ser un número entre 1 y 6!"
+  Only-main-hand: "&cLas mochilas solo pueden ser usadas en la mano principal!"
+  Unknown-error-crafting: "&cAlgo malo ocurrio contacta un admin!"
+  #Can be set to "none" to disable message. Block sound will always be played.
+  Cannot-number-key: "&cNo puedes usar números en las id!"
+  #Can be set to "none" to disable message. Block sound will always be played.
+  Cannot-right-click: "&cNo puedes darle click derecho a este item aquí!"
+  Economy-not-supported: "&cEconomy system is not available in this server :("
+  Transaction-error: "&cCouldn't perform transaction. Try again later, if error persists contact an administrator!"
+  Skin-purchased: "&aCompraste correctamente la skin &r{SKIN}&a por ${PRICE}!"
+  Corrupted-skin: "&cEsta skin parece corrupta. Destruyela :)"
+  Skin-applied: "&aAplicaste correctamente &r{SKIN}&r&a a tu mochila :)"
+  Skins-shop-disabled: "&cTienda de skins no habilitada :("
+  Skins-shop-opened-other: "&aAbriste la tienda de skins para {TARGET}."
+  #This message is sent just in case the message stored in item cannot be found. (only applies if Strict is enabled for the skin)
+  Cannot-apply-skin-permission: "&cNo pudiste aplicar esta skin! Necesitas el permiso '&b{PERMISSION}&c'!"
+  Sorting-disabled: "&cNo puedes ordenar items cuando estas con la mochila!"
+  #Format to display price in lores. If you only want the number, just use "{PRICE}"
+  Money-format: "${PRICE}"
+  Usage:
+    Backpack-no-permission: "&cNo hay permisos para usar la mochila."
+    Tank-left-no-permission: "&cNo puedes usar los tanques izquierdos en la mochila."
+    Tank-right-no-permission: "&cNo puedes usar los tanques derechos en la mochila."
+    Unknown-error: "&cWoops! Algo raro ocurrió. Contacta un admin! ({CODE})"
+    Disabled-world: "&cUsar mochilas en esta dimensión no está permitido!"
+    Backpack-title: "&c&LMochila"
+  Build:
+    Invalid-model-data: "&cCustom model data must be a number greater equal than 0."
+    Success: "&6You gave {TARGET} one custom backpack!"
+    Success-other: "&aYou received a custom backpack!"
+  Give:
+    Received: "&6Recibiste una mochila de nivel {TIER} por tus items!"
+    Gave: "&aYou gave {TARGET} a tier {TIER} backpack!"
+  Recipe:
+    Disabled: "&cNo hay crafteos que mostrar."
+    Disabled-for-you: "&cParece que no tienes ningun crafteo desbloqueado :("
+    Disabled-for-other: "&cParece que el target no tiene desbloqueado crafteos :("
+    Opened-for-other: "&6Abriste el menú de crafteos para {TARGET}."
+  Unique:
+    Disabled: "&cEsta opcion está deshabilitada."
+    Opened-for-other: "&6Mochilas únicas abiertas para {TARGET}."
+  Help:
+    Admin:
+    
+    - "&2 /betterbackpacks skins <player> &f- &aOpen skins shop for player"
+    - "&2 /betterbackpacks upgrades <player> &f- &aOpen upgrades shop for player"
+    - "&2 /betterbackpacks recipe <player> &f- &aOpen recipe for player"
+    - "&2 /betterbackpacks unique <player> &f- &aOpen unique backpacks for player"
+    - "&2 /betterbackpacks give <player> <tier> &f- &aGive backpack to player"
+    - "&2 /betterbackpacks giveskin <player> <skin> &f- &aGive a skin to player"
+    - "&2 /betterbackpacks giveupgrade <player> <upgrade> &f- &aGive a skin to player"
+    - "&2 /betterbackpacks build <player> <tier> <texture> &f- &aBuild backpack for player with texture"
+    - "&2 /betterbackpacks reload &f- &aReload configuration"
+    User:
+    - "&2 /betterbackpacks skins &f- &aAbrir la tienda de skins"
+    - "&2 /betterbackpacks upgrades &f- &aAbrir la tienda de mejoras"
+    - "&2 /betterbackpacks recipe &f- &aAbrir los crafteos"
+    - "&2 /betterbackpacks unique &f- &aAbrir mochilas únicas"
+  WorldGuard:
+    Disabled-region: "&cNo puedes usar mochilas aquí!"
+  Upgrades:
+    Shop-no-permission: "&cNo tienes permiso para la tienda de mejoras :("
+    No-permission: "&cNo puedes usar skins! Compra rango en &bstore.yournetwork.net&c!"
+    Shop-disabled: "&cLa tienda de mejoras no está habilitada. :("
+    Corrupted: "&cThis upgrade seems to be corrupted or was obtained illegally. Please destroy it :)"
+    Cannot-security: "&cThis backpack seems a bit weird.. To prevent the loss of your items you cannot upgrade this backpack, try opening your backpack once or getting a new one!"
+    Already-last-tier: "&cTu mochila ya está en el último nivel!"
+    Backpack-tier-is-greater: "&cEl nivel de tu mochila es mayor que el que intentas mejorar! Qué estas haciendo?"
+    Unknown-upgrade: "&cMejora desconocida! Vienes del futuro..?"
+    Direct-upgrade-success: "&aMejoraste tu mochila de {OLD_SIZE} a {NEW_SIZE} añadiendote más slots!"
+    One-upgrade-success: "&aMejoraste tu mochila de {OLD_SIZE} a {NEW_SIZE} añadiendo más slots!"
+    Shop-opened-other: "&aAbriste la tienda de mejoras para {TARGET}."
+    Purchased: "&aCompraste &r{UPGRADE}&a por {PRICE}."
+    Invalid-identifier: "&cProvided upgrade identifier doesn't exist."
+    You-received: "&aRecibiste &r{UPGRADE}&r&a!"
+    You-gave: "&6Diste {TARGET} a &r{UPGRADE}&r&6!"
+    Successfully-owner-skin: "&aSe aplico correctamente &r{UPGRADE}&r&a a tu mochila!"
+    Successfully-buyer-skin: "&aSe aplico correctamente  &r{UPGRADE}&r&a a tu mochila!"
+  Skins:
+    Shop-no-permission: "&cNo tienes permiso para la tienda de skins :("
+    No-permission: "&cNo puedes usar mejoras! Compra un rango en &bstore.yournetwork.net&c!"
+    Invalid-identifier: "&cProvided skin identifier doesn't exist."
+    You-received: "&aRecibiste &r{SKIN}&r&a!"
+    You-gave: "&6Diste {TARGET} a &r{SKIN}&r&6!"
+
+#Set to "none" if no permission is required. Admin permission will always be required, even if "none"
+Permissions:
+  Admin: "betterbackpacks.admin"
+  #This will allow players to open backpacks. This permission IS REQUIRED even if players have specific tier permissions.
+  #This is to allow rpg make the usage of backpacks an unlockable perk.
+  Use: "none" #Example: "betterbackpacks.use"
+  #This will allow players to craft backpacks of different types. {TYPE} will be replaced internally with 1,2,3,4,5 or 6.
+  Tier: "none" #Example: "betterbackpacks.tier.{TIER}"
+  Unique: "none"
+  #This will allow players to view recipes for the tiers they have permission for if they are available (If craftable)
+  Recipe: "none" #Example: "betterbackpacks.recipe"
+  #Allow players to use left tank.
+  Tank-left: "none" #Example: "betterbackpacks.tank.left"
+  #Allow players to use right tank.
+  Tank-right: "none" #Example: "betterbackpacks.tank.right"
+  #Permission to use /betterbackpacks skins
+  Skins-shop: "none" #Example: "betterbackpacks.skins-shop"
+  #Permission to apply skins. (Useful to make skins a donor perk, this only prevents applying skins, NOT USING THE BACKPACK)
+  Skins-apply: "none" #Example: "betterbackpacks.skins-apply"
+  #Permission to use /betterbackpacks upgrades
+  Upgrades-shop: "none" #Example: "betterbackpacks.upgrades-shop"
+  #Permission to apply upgrades. (Useful to make upgrades a donor perk, this only prevents applying upgrades, NOT USING THE BACKPACK)
+  Upgrades-apply: "none" #Example: "betterbackpacks.upgrades-apply"
+
+#What is this? This just adds an inventory filled with backpacks with custom textures defined in this config.
+#This is an easy way for admins to take custom backpacks to reward players in events. Or simply display players
+#available backpacks. Admins can obtain backpacks just by clicking on it and selecting tier.
+Unique-backpacks:
+  Enabled: true
+  Title: "&8Unique Backpacks"
+  #Max amount is 54
+  #You can add new textures in the following format:
+  # - "&cTexture name|texture"
+  Textures:
+    - "&5AlonsoAliaga|ewogICJ0aW1lc3RhbXAiIDogMTU5NDQ0NjkyMDI5NiwKICAicHJvZmlsZUlkIiA6ICJlMWMxYTE5NDdlODY0MTRmODZiYjQyZDgyYTIxY2ZiOCIsCiAgInByb2ZpbGVOYW1lIiA6ICJBbG9uc29BbGlhZ2EiLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTY4YWE3NGNjODg1NzgwNjBkMGZlM2JkOTA4YjM0ZjY5ZjEyZTA3ZjFmODljNWRkYzE1ZTZiZjYwZjA0Y2NjNiIKICAgIH0KICB9Cn0="
+    - "&dPink Bird|eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmE3MmJhMzhlZTQ5NWRlNDk0ZTk5YTgzMWVjN2Q4YzU2MTMyOTcyMmNlMzI2MjQ0OGU0YjU2YThkMDljMjE0YSJ9fX0="
+    - "&2Orc|eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGViMjgxZjZhMTg1ZWY3ZWQ3NzhjOTQyNmIyZWVmMzk5Y2VkNWEwZWU3YzViNzM2NWQ3MzRjMjE4MjU1NmIxYSJ9fX0="
+    - "&eSteve Moving Eyes|eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGQxOGM5NTQ5ODAzMWZlYTNmZTc0OGIxN2M3YTVjOWU4OTI4YjNkN2M4ODllZGU3OTAyZDc4YmFhZDYyMmE5NCJ9fX0="
+    - "&bCookie Monster|eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDdiNzY2MjAwOWU0NGE5ODRiNTUzMDRlNDNjMDI4MDRiZGYwNGMyODExZjJiNGNiMzkxNWI0NDMxYjc1NzJiZiJ9fX0="
+    - "&cElmo|eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTQzOTE4OWU2MTM3NTMyMjkyYzg1OGY1NTIxMjI0MTMxMDhjZGNlNzI5ZTI2ZWU3YjEzNWVhN2NhNDI4ZWM1YiJ9fX0="
+    - "&dPig|eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTgzZWIwNzMxM2MwZDJlZjcyNmMyNjdmMmIxMjg1ZmRhYmQwMjg2NDYwMzEwMjNmYWExYmQ0YzFlNmYwMWRmOCJ9fX0="
+    - "&5Strider|eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTE5MDNlNGQ5ZWM1NjE3MTFhZDllMTcxYWY2Yjc5ZmZiNjllMjk1ZGNkOWJmMjMwNjhjOWFiYjdlMjE5NDkwZCJ9fX0="
+    - "&9Captain America|eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmQ4ZGIyMzczODRjOTA2YTY5ODEzMDlkMjlmYzY4Mjc3ZDljN2U1OWY4NWM2MGMxMDgyYjYxZTExZGJmMGIwIn19fQ=="
+    - "&3Squidward|eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGM1ZmZmYzJlOTc4ZDYzOWM3ODI2MjYyYTI1YzA4YTJiMGI5ZmZmNTM2MGUzNzVjMDA0Yjc5OWIzZmY2NzkyNiJ9fX0="
+    - "&dBuzz Lightyear|eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2U2NDcwNjc3NmU4NGZhOGM5MGNmYjk1Nzc3NzU5YzFkMTc2ODc3MzBlYTUwMGNjYmU5OTMxOGIxOTU0OTc2MCJ9fX0="
+    - "&6Tank|eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjNlZTVmMjhiYmMwM2QyNjEyZmM3NDRkOGEyMmNlMjZlYmRmMWU5OTIxZWM4YTEyNzk3MWRkMDUzMjhmYzhmNCJ9fX0="
+    - "&aTank|eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjJkYTBkYWEzNzg3MTEyMzliMGRiZjY5MDhmMGE1ZjA0MzFiNTI4NzQ4NDE3YTM4MzE2YzQ2NzdjNWIyZDA5YSJ9fX0="
+    - "&eSoviet Union Flag|eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODU5NTM5Y2U4MzRkOTJlM2Y3ODI1ZTQxM2FlOWNjYmQyNzg4MTUwMTg3MDNkYTgyMzJkMmUxNzczYTE4YjJiMyJ9fX0="
+    - "&4Lightning McQueen|eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzhlMjJmMTk2ZWE5NmVmYzMzZDQ1NWQ5YzIyYTBjZDIwNTUxZjZkM2U3ZmI0ZTc2NmMzY2M0NjhkZjNjOTY4In19fQ=="
+    - "&6Mater|eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTQxODkyNjg0NmQxNjg5NmZmOTQ0NjA5MmU4NGRjYjJkZDZhYWNhNGE3NWEzNDA3YmE2NjUzNTM2ZGRmIn19fQ=="
+    - "&cFrancesco Bernoulli|eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzY2YjkyYzZkNjc3MzAzZDE2YmFhMWY3MzE1OWY0ZjQxYmVjZDAyZTNmZDRlNzQ3ZTMyY2NlM2ZmNGQ4MTdlNCJ9fX0="
+    - "&aChick Hicks|eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2ViOGIxOGRiZDNhZmY0NWY4ZWY2OTc4YzI2NzNiMDIxODc1YzVlMTdiYmRkYTJmMjE4MTY0YTlkM2IzZCJ9fX0="
+    - "&6Legendary Egg|eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjA0YzhjN2JhMWYwZGFlYTNiNDEwZWRkYjQ5OWQ1NjUwM2RkZGQ0NzQ2ZTgyMWE1YmRlNDUxM2I2Mjg3NGIxIn19fQ=="
+    - "&9Discord ping|eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWQ4MzNiNTE1NjY1NjU2NThmOTAxMWRlODc4NGU5MGMxYWQ5YmE1ZDMzMzdmOGMwNjkyMTNiYmRlZTk4NjUyMyJ9fX0="
+    - "&cRed striped backpack|eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWNlODMzYWE5YTI4YmNmMjA3ZTViMzZhNTkxY2VmMWY5OTdkZDJmNGE0YTIzNmFmNTBkZDA4MWYzYTVkOWM0YyJ9fX0="
+    - "&3Ender backpack|eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjEyYzBhMzljZjQ2YTcyYzE4ZmJhMzA3YjgxNTQ2MmQxOTk3NGZlZWU3YTA3ODY0MzU2OWRlY2JmNWI3In19fQ=="
+    - "&5Weird backpack|eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDA4N2M2NWQ3YmRlNjY1YjZlMTk1ZThkY2ZjMjFmNGFkZGNmOTJhOTA3MTQwYzM3ZDQ3NGMxMmFjY2Y3YWIifX19"
+    - "&7Bugs Bunny|eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzNiMzg2MTQzYWNiZGE5NmQwNjkxNzg5OGZjYmI3YmMwYTJkY2VlOTNmNWU1OWNhNWI3M2U2NzgzZTVjMSJ9fX0="
+    - "&7Bugs Bunny meme|eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjM0Y2Q2YmJlYzViNDk3NmY5M2UzZjI0MTU1NjcyNDg2MjY4NzdmMTdiYWY4OWEzNzIyMDUwNmY1OTU3Yjk3YyJ9fX0="
+
+Items:
+  Previous:
+    Slot: 48
+    Material: ARROW #Supports CUSTOM_HEAD
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWYxMzNlOTE5MTlkYjBhY2VmZGMyNzJkNjdmZDg3YjRiZTg4ZGM0NGE5NTg5NTg4MjQ0NzRlMjFlMDZkNTNlNiJ9fX0="
+    Custom-model-data: 0 #Only 1.14+
+    Displayname: "&9Página anterior"
+    Lore:
+    - "&7Ir a la página anterior."
+  Next:
+    Slot: 50
+    Material: ARROW #Supports CUSTOM_HEAD
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTNmYzUyMjY0ZDhhZDllNjU0ZjQxNWJlZjAxYTIzOTQ3ZWRiY2NjY2Y2NDkzNzMyODliZWE0ZDE0OTU0MWY3MCJ9fX0="
+    Custom-model-data: 0 #Only 1.14+
+    Displayname: "&9Siguiente página"
+    Lore:
+    - "&7Ir a la siguiente página."
+  Close-skins:
+    Slot: 49
+    Material: BOOK #Supports CUSTOM_HEAD
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmViNTg4YjIxYTZmOThhZDFmZjRlMDg1YzU1MmRjYjA1MGVmYzljYWI0MjdmNDYwNDhmMThmYzgwMzQ3NWY3In19fQ=="
+    Custom-model-data: 0 #Only 1.14+
+    Displayname: "&cClose"
+    Lore:
+    - "&7Cerrar la tienda de skins."
+    #Command to execute AS PLAYER.
+    Command: "none"
+  Skins-shop-frame:
+    Dyeable-type: GLASS_PANE #Supports BANNER,BED,CARPET,CONCRETE,CONCRETE_POWDER,DYE,GLASS,GLASS_PANE,GLAZED_TERRACOTTA,SHULKER_BOX,TERRACOTTA,WOOL #THIS IS CURRENTLY BETA. MIGHT FAIL.
+    Color: BLACK
+    Custom-model-data: 0 #Only 1.14+
+    Displayname: "&r"
+    Lore: []
+  Close-upgrades:
+    Slot: 31
+    Material: BOOK #Supports CUSTOM_HEAD
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmViNTg4YjIxYTZmOThhZDFmZjRlMDg1YzU1MmRjYjA1MGVmYzljYWI0MjdmNDYwNDhmMThmYzgwMzQ3NWY3In19fQ=="
+    Custom-model-data: 0 #Only 1.14+
+    Displayname: "&cCerrar"
+    Lore:
+    - "&7Cerrar la tienda de skins."
+    #Command to execute AS PLAYER.
+    Command: "none"
+  Upgrades-shop-frame:
+    Dyeable-type: GLASS_PANE #Supports BANNER,BED,CARPET,CONCRETE,CONCRETE_POWDER,DYE,GLASS,GLASS_PANE,GLAZED_TERRACOTTA,SHULKER_BOX,TERRACOTTA,WOOL #THIS IS CURRENTLY BETA. MIGHT FAIL.
+    Color: BLACK
+    Custom-model-data: 0 #Only 1.14+
+    Displayname: "&r"
+    Lore: []
+
+Upgrades:
+  one-tier:
+    Slot: 12
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTA1YTJjYWI4YjY4ZWE1N2UzYWY5OTJhMzZlNDdjOGZmOWFhODdjYzg3NzYyODE5NjZmOGMzY2YzMWEzOCJ9fX0="
+    Displayname: "&f&lOne Tier Upgrade"
+    Precio: 10000
+    #Custom model data? Only 1.14+
+    Custom-model-data: 0
+    #This permission is to BUY the upgrade.
+    Permission: "betterbackpacks.upgrades.one-tier"
+    #If strict, THE SAME PERMISSION is required to be able to apply this upgrade.
+    Strict: false
+    Shop-lore:
+    - "&7Mejora tu mochila al proximo nivel!"
+    - "&7Precio: &a{PRICE}"
+    - ""
+    - "&eClick para mejorar."
+    Item:
+    - "&7Mejora tu mochila al proximo nivel!"
+    - ""
+    - "&eAplica esta mejora en tu mochila."
+    No-permission-message: "&cNo tienes suficientes permisos para comprar esta mejora! Compra rango en &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cNo puedes pagar esta mejora :("
+    #This is sent ONLY if player doesn't have permission for this skin AND Strict is enabled.
+    Cannot-apply-permission: "&cNo puedes tener esta mejora! Necesitas el rango &b[MVP]&c, Compra rango en &bstore.yournetwork.net&c!"
+  tier-two:
+    Slot: 14
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjEzYjc3OGM2ZTUxMjgwMjQyMTRmODU5YjRmYWRjNzczOGM3YmUzNjdlZTRiOWI4ZGJhZDc5NTRjZmYzYSJ9fX0="
+    Displayname: "&c&lTier 2 Backpack Upgrade"
+    Precio: 15000
+    #Custom model data? Only 1.14+
+    Custom-model-data: 0
+    Permission: "betterbackpacks.upgrades.tier-two"
+    Strict: false
+    Shop-lore:
+    - "&7Precio: &a{PRICE}"
+    - ""
+    - "&eClick para comprar."
+    Item:
+    - ""
+    - "&eAplica esta mejora a tu mochila."
+    No-permission-message: "&cYou don't have permission to purchase this upgrade! Purchase a rank on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cNo puedes pagar esta mejora :("
+    #This is sent ONLY if player doesn't have permission for this skin AND Strict is enabled.
+    Cannot-apply-permission: "&cYou cannot apply this upgrade! You require &b[MVP]&c rank, purchase it on &bstore.yournetwork.net&c!"
+  tier-three:
+    Slot: 15
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTA0Y2NmOGI1MzMyYzE5NmM5ZWEwMmIyMmIzOWI5OWZhY2QxY2M4MmJmZTNmN2Q3YWVlZGMzYzMzMjkwMzkifX19"
+    Displayname: "&7&lTier 3 Backpack Upgrade"
+    Precio: 25000
+    Custom-model-data: 0
+    Permission: "betterbackpacks.upgrades.tier-three"
+    Strict: false
+    Shop-lore:
+    - "&7Precio: &a{PRICE}"
+    - ""
+    - "&eClick para comprar."
+    Item:
+    - ""
+    - "&eAplica esta mejora a tu mochila."
+    No-permission-message: "&cYou don't have permission to purchase this upgrade! Purchase a rank on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cNo puedes pagar esta mejora :("
+    #This is sent ONLY if player doesn't have permission for this skin AND Strict is enabled.
+    Cannot-apply-permission: "&cYou cannot apply this upgrade! You require &b[MVP]&c rank, purchase it on &bstore.yournetwork.net&c!"
+  tier-four:
+    Slot: 16
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWYyZDI2MDFmOWMxYWNlZmZjYzgyMzY1N2UyMjU5ZDM1OGJiNTJiZDQ2MzEyYmYxYzc2ZWUyM2QzYjE3In19fQ=="
+    Displayname: "&6&lTier 4 Backpack Upgrade"
+    Precio: 35000
+    Custom-model-data: 0
+    Permission: "betterbackpacks.upgrades.tier-four"
+    Strict: false
+    Shop-lore:
+    - "&7Precio: &a{PRICE}"
+    - ""
+    - "&eClick para comprar."
+    Item:
+    - ""
+    - "&eAplica esta mejora a tu mochila."
+    No-permission-message: "&cYou don't have permission to purchase this upgrade! Purchase a rank on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cNo puedes pagar esta mejora :("
+    #This is sent ONLY if player doesn't have permission for this skin AND Strict is enabled.
+    Cannot-apply-permission: "&cYou cannot apply this upgrade! You require &b[MVP]&c rank, purchase it on &bstore.yournetwork.net&c!"
+  tier-five:
+    Slot: 24
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTJjMTQyYWY1OWYyOWViMzVhYjI5YzZhNDVlMzM2MzVkY2ZjMmE5NTZkYmQ0ZDJlNTU3MmIwZDM4ODkxYjM1NCJ9fX0="
+    Displayname: "&a&lTier 5 Backpack Upgrade"
+    Precio: 45000
+    Custom-model-data: 0
+    Permission: "betterbackpacks.upgrades.tier-five"
+    Strict: false
+    Shop-lore:
+    - "&7Precio: &a{PRICE}"
+    - ""
+    - "&eClick para comprar."
+    Item:
+    - ""
+    - "&eAplica esta mejora a tu mochila."
+    No-permission-message: "&cYou don't have permission to purchase this upgrade! Purchase a rank on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cNo puedes pagar esta mejora :("
+    #This is sent ONLY if player doesn't have permission for this skin AND Strict is enabled.
+    Cannot-apply-permission: "&cYou cannot apply this upgrade! You require &b[MVP]&c rank, purchase it on &bstore.yournetwork.net&c!"
+  tier-six:
+    Slot: 25
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzk4NGI5MjVjM2NjMzhjZmFjYWZiYTc1M2ViZDFhMzllYTYzZjkyNzMxMGFlZTM4MGUyNzBmZTJjMjgxOCJ9fX0="
+    Displayname: "&b&lTier 6 Backpack Upgrade"
+    Precio: 55000
+    Custom-model-data: 0
+    Permission: "betterbackpacks.upgrades.tier-six"
+    Strict: false
+    Shop-lore:
+    - "&7Precio: &a{PRICE}"
+    - ""
+    - "&eClick para comprar."
+    Item:
+    - ""
+    - "&eAplica esta mejora a tu mochila."
+    No-permission-message: "&cYou don't have permission to purchase this upgrade! Purchase a rank on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cNo puedes pagar esta mejora :("
+    #This is sent ONLY if player doesn't have permission for this skin AND Strict is enabled.
+    Cannot-apply-permission: "&cYou cannot apply this upgrade! You require &b[MVP]&c rank, purchase it on &bstore.yournetwork.net&c!"
+  owner-skin:
+    Slot: 10
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWQ1OTdhYTQ0ODY1MWFhZTYwMjAxYWUxM2Y3ZTAzMGQxM2RhMzk3ZmJiZTc1YzM1ZDY3MTQ2MTJiMGM3NmE1YiJ9fX0="
+    Displayname: "&b&lOwner Skin Upgrade"
+    Precio: 100000
+    Custom-model-data: 0
+    Permission: "betterbackpacks.upgrades.owner-skin"
+    Strict: false
+    Rename: "&6&l{PLAYER} backpack"
+    Shop-lore:
+    - "&7Precio: &a{PRICE}"
+    - ""
+    - "&7Tu mochila será renombrada a"
+    - "&7a: &r&6&lTuNombre Mochila&r"
+    - ""
+    - "&eClick para comprar."
+    Item:
+    - ""
+    - "&7Tu mochila será renombrada a"
+    - "&7a: &r&6&lTuNombre Mochila&r"
+    - ""
+    - "&eAplica esta skin a tu mochila."
+    No-permission-message: "&cYou don't have permission to purchase this upgrade! Purchase a rank on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cNo puedes pagar esta mejora :("
+    #This is sent ONLY if player doesn't have permission for this skin AND Strict is enabled.
+    Cannot-apply-permission: "&cYou cannot apply this upgrade! You require &b[MVP]&c rank, purchase it on &bstore.yournetwork.net&c!"
+  buyer-skin:
+    Slot: 19
+    Displayname: "&6&l{PLAYER} Skin"
+    Precio: 50000
+    Custom-model-data: 0
+    Permission: "betterbackpacks.upgrades.buyer-skin"
+    Strict: false
+    Rename: "&6&l{PLAYER} backpack"
+    Shop-lore:
+    - "&7Hey {PLAYER}, mejora tu"
+    - "&7mochila con tu propia skin!"
+    - "&7Precio: &a{PRICE}"
+    - ""
+    - "&7Tu mochila será renombrada a"
+    - "&7a: &r{RENAME}&r"
+    - ""
+    - "&eClick para comprar."
+    Item:
+    - ""
+    - "&7Tu mochila será renombrada a"
+    - "&7a: &r{RENAME}&r"
+    - ""
+    - "&eAplica esta skin a tu mochila."
+    No-permission-message: "&cYou don't have permission to purchase this upgrade! Purchase a rank on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cNo puedes pagar esta mejora :("
+    #This is sent ONLY if player doesn't have permission for this skin AND Strict is enabled.
+    Cannot-apply-permission: "&cYou cannot apply this upgrade! You require &b[MVP]&c rank, purchase it on &bstore.yournetwork.net&c!"
+
+Options:
+  #If enabled, console and chat will probably spam. Enable only if developer asks you to do it.
+  Debug-mode: false
+  #If enabled, it will log many lines on start up to know which items are being loaded. Recommended to leave this enabled.
+  Log-mode: true
+  #Do you want to keep the line with plugin name and version in help message to support the developer? c:
+  Support-developer: true
+  #To apply changes for main command you must RESTART the server.
+  #Plugman or similar plugins are NOT and will NEVER be supported.
+  Main-command: "betterbackpacks"
+  #To apply changes for aliases you must RESTART the server.
+  #Plugman or similar plugins are NOT and will NEVER be supported.
+  #Use /reload or restart your server.
+  Aliases:
+  - "betterbackpack"
+  - "bbackpack"
+  - "bbackpacks"
+  - "bbp"
+  #Allow players to place backpacks inside backpacks?
+  #Highly recommended to leave this disabled. If players stack too many backpacks world MIGHT corrupt
+  #and player won't be able to join until you remove his data from the world.
+  #STRONGLY RECOMMENDED TO LEAVE IT DISABLED. IF ENABLED, IT COULD POTENTIALLY BREAK YOUR PLAYER DATA.
+  #You'll need to delete player data from main world to "fix" it. (Might potentially corrupt the whole world)
+  Backpackception: false
+  #Close backpacks inventories if player receives damage.
+  Close-on-damage: true
+  #World in which using backpacks is totally forbidden.
+  Disabled-worlds:
+    - "world_pvp"
+    - "world_safari"
+  WorldGuard:
+    Warning:
+    - "Default flag:"
+    - " This is the default behavior if the flag is not specified BUT you are inside in a WorldGuard region."
+    - "  true - Players can open backpacks."
+    - "  false - Players cannot open backpacks."
+    Default-flag: true
+  #Materials for which LEFT-CLICK will be disabled.
+  #This is to prevent issues from other plugins.
+  #IF YOU DON'T HAVE ISSUES WITH OTHER PLUGINS OPENING GUIS DIRECTLY REMOVE THIS LIST TO => Disabled-click: []
+  #This is useful if you are using plugins like ShulkerPacks.
+  Disabled-click:
+  - "SHULKER_BOX"
+  - "BLACK_SHULKER_BOX"
+  - "WHITE_SHULKER_BOX"
+  - "ORANGE_SHULKER_BOX"
+  - "MAGENTA_SHULKER_BOX"
+  - "LIGHT_BLUE_SHULKER_BOX"
+  - "YELLOW_SHULKER_BOX"
+  - "LIME_SHULKER_BOX"
+  - "PINK_SHULKER_BOX"
+  - "GRAY_SHULKER_BOX"
+  - "SILVER_SHULKER_BOX"
+  - "CYAN_SHULKER_BOX"
+  - "PURPLE_SHULKER_BOX"
+  - "BLUE_SHULKER_BOX"
+  - "BROWN_SHULKER_BOX"
+  - "GREEN_SHULKER_BOX"
+  - "RED_SHULKER_BOX"
+  Skins:
+    #Allow players to apply skins?
+    Enabled: true
+    Shop:
+      #Enable skins shop?
+      Enabled: true
+      Rows: 6
+      #Which slots should skins be placed in?
+      Slots: "10,11,12,13,14,15,16,19,20,21,22,23,24,25,28,29,30,31,32,33,34,37,38,39,40,41,42,43"
+      Title: "&8Skins Shop ({PAGE}/{MAX})"
+      Frames:
+        Slots: "0,1,2,3,4,5,6,7,8,9,17,18,26,27,35,36,44,45,46,47,48,49,50,51,52,53"
+  Upgrades:
+    #Allow players to apply upgrades?
+    Enabled: true
+    Shop:
+      #Enable upgrades shop?
+      Enabled: true
+      #Enable frames in empty slots?
+      Frame: true
+      Rows: 4
+      Title: "&8Upgrades Shop"
+
+Updates:
+  #Auto update configuration? Enabling will delete comments.
+  Auto-update-configuration: true
+  #Check for updates? Recommended to keep it enabled.
+  Check-updates: true
+  #Notify updates when player with permission joins the server?
+  Notify-updates: true
+  #Permission required to receive update message.
+  Permission: "betterbackpacks.update"
+  #Message to send when update is found.
+  Message: "&2[BetterBackpacks] &eA new update has been found! You are using version {CURRENT}. Download version {NEW} here &c{LINK}"
