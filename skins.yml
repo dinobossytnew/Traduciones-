@@ -1,0 +1,2276 @@
+# This file has been updated by BetterBackpacks Pro plugin automatically.
+# You can't select skins slots directly. Slots are selected in config file, skins will be sorted there automatically.
+# Create as many skins as you WANT! These are automatically placed in the inventory.
+Skins:
+  developer-skin:
+    Texture: "ewogICJ0aW1lc3RhbXAiIDogMTU5NDQ0NjkyMDI5NiwKICAicHJvZmlsZUlkIiA6ICJlMWMxYTE5NDdlODY0MTRmODZiYjQyZDgyYTIxY2ZiOCIsCiAgInByb2ZpbGVOYW1lIiA6ICJBbG9uc29BbGlhZ2EiLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTY4YWE3NGNjODg1NzgwNjBkMGZlM2JkOTA4YjM0ZjY5ZjEyZTA3ZjFmODljNWRkYzE1ZTZiZjYwZjA0Y2NjNiIKICAgIH0KICB9Cn0="
+    Displayname: "&5&lDeveloper Skin"
+    #Permission to allow players buy this skin. Set to "none" to not require permission.
+    Permission: "betterbackpacks.skin.developer"
+    #If strict is true the Permission above IS REQUIRED (IF EXISTS) to apply the skin too. Not only to purchase.
+    Strict: true
+    #Price for this skin?
+    Price: 100000
+    #Want to set a custom model data for this skin?
+    Custom-model-data: 0
+    #This means the item will be renamed with the new name.
+    #Set to "none" or remove the "Rename" section to not rename the item.
+    #Make sure you tell buyers that the item renames the backpack or they MIGHT complain.
+    Rename: "&5&lDeveloper backpack"
+    Shop-lore:
+    - "&7Love the developer? We all do!"
+    - "&7Price: &a{PRICE}"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eClick to purchase."
+    Item:
+    - "&7Love the developer? We all do!"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eApply this skin to your backpack."
+    No-permission-message: "&cYou don't have permission to purchase this skin! Purchase a rank on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cYou cannot afford this skin :("
+    #This is sent ONLY if player doesn't have permission for this skin AND Strict is enabled.
+    #This is saved inside the skin item so modifying it AFTER the item is created will take NO EFFECT.
+    #Make sure you decide which message to save.
+    Cannot-apply-permission: "&cYou cannot apply this skin! You require &b[MVP]&c rank, purchase it on &bstore.yournetwork.net&c!"
+  blue-axolotl-skin:
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDU0M2JmYTRlYTIzMzQ2NjdiNmFiZmU0MGQ4NTJlY2Y1NWY4NTA2YTljMGM1YWQ4ZGQxZTczMmY1OGQ5YzZjMyJ9fX0="
+    Displayname: "&9&lBlue Axolotl Skin"
+    #Permission to allow players buy this skin. Set to "none" to not require permission.
+    Permission: "betterbackpacks.skin.blue-axolotl"
+    Strict: false
+    Price: 50000
+    Custom-model-data: 0
+    Rename: "&9&lAxolotl backpack"
+    Shop-lore:
+    - "&7Skin to show everyone"
+    - "&7what's your favorite"
+    - "&7Axolotl!"
+    - "&7Price: &a{PRICE}"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eClick to purchase."
+    Item:
+    - "&7Skin to show everyone"
+    - "&7what's your favorite"
+    - "&7Axolotl!"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eApply this skin to your backpack."
+    No-permission-message: "&cYou don't have permission to purchase this skin! Purchase a rank on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cYou cannot afford this skin :("
+    Cannot-apply-permission: "&cYou cannot apply this skin! You require &a[VIP]&c rank, purchase it on &bstore.yournetwork.net&c!"
+  pink-axolotl-skin:
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2I5MTBmYmMyMTZmNzI0ZDI5NjU1MTU1YjJhMzg1OGE4MGYyMzRhMGNmZWQ2MDllMjJmYzY3MDY4M2FiNzc3YSJ9fX0="
+    Displayname: "&d&lPink Axolotl Skin"
+    #Permission to allow players buy this skin. Set to "none" to not require permission.
+    Permission: "betterbackpacks.skin.pink-axolotl"
+    Strict: false
+    Price: 50000
+    Custom-model-data: 0
+    Rename: "&d&lAxolotl backpack"
+    Shop-lore:
+    - "&7Skin to show everyone"
+    - "&7what's your favorite"
+    - "&7Axolotl!"
+    - "&7Price: &a{PRICE}"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eClick to purchase."
+    Item:
+    - "&7Skin to show everyone"
+    - "&7what's your favorite"
+    - "&7Axolotl!"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eApply this skin to your backpack."
+    No-permission-message: "&cYou don't have permission to purchase this skin! Purchase a rank on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cYou cannot afford this skin :("
+    Cannot-apply-permission: "&cYou cannot apply this skin! You require &a[VIP]&c rank, purchase it on &bstore.yournetwork.net&c!"
+  yellow-axolotl-skin:
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTE3ZjhlNThhZGY4ZTFjNWVkZTQ1MGQyMjM1Y2ZmNjEyZmMxNmM0Yjc0NDkwYTBlN2RiZDU5MzBiOGM4M2U3ZiJ9fX0="
+    Displayname: "&6&lYellow Axolotl Skin"
+    #Permission to allow players buy this skin. Set to "none" to not require permission.
+    Permission: "betterbackpacks.skin.yellow-axolotl"
+    Strict: false
+    Price: 50000
+    Custom-model-data: 0
+    Rename: "&e&lAxolotl backpack"
+    Shop-lore:
+    - "&7Skin to show everyone"
+    - "&7what's your favorite"
+    - "&7Axolotl!"
+    - "&7Price: &a{PRICE}"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eClick to purchase."
+    Item:
+    - "&7Skin to show everyone"
+    - "&7what's your favorite"
+    - "&7Axolotl!"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eApply this skin to your backpack."
+    No-permission-message: "&cYou don't have permission to purchase this skin! Purchase a rank on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cYou cannot afford this skin :("
+    Cannot-apply-permission: "&cYou cannot apply this skin! You require &a[VIP]&c rank, purchase it on &bstore.yournetwork.net&c!"
+  cyan-axolotl-skin:
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2U2OGRjNTlkYmU3NjdhNTI4MzE2NGUzYzk0YWNjMTRiYWRkMzRhODU3Y2VjMWE2YzlmMjZhMjhjZWQyOWM4MyJ9fX0="
+    Displayname: "&3&lCyan Axolotl Skin"
+    #Permission to allow players buy this skin. Set to "none" to not require permission.
+    Permission: "betterbackpacks.skin.cyan-axolotl"
+    Strict: false
+    Price: 75000
+    Custom-model-data: 0
+    Rename: "&3&lAxolotl backpack"
+    Shop-lore:
+    - "&7Skin to show everyone"
+    - "&7what's your favorite"
+    - "&7Axolotl!"
+    - "&7Price: &a{PRICE}"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eClick to purchase."
+    Item:
+    - "&7Skin to show everyone"
+    - "&7what's your favorite"
+    - "&7Axolotl!"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eApply this skin to your backpack."
+    No-permission-message: "&cYou don't have permission to purchase this skin! Purchase a rank on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cYou cannot afford this skin :("
+    Cannot-apply-permission: "&cYou cannot apply this skin! You require &a[VIP]&c rank, purchase it on &bstore.yournetwork.net&c!"
+  brown-axolotl-skin:
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGRiMjJhMGVhNjJkNWQyMjg2N2Q4NTJkMDFkMzk2MTc3YjdhMGQ2M2UxOGNkYzVlMjlhYjM5ZjUyNDljNTA3NCJ9fX0="
+    #HEX color support! (REMEMBER THIS ONLY WORKS IN 1.16.2+)
+    Displayname: "#5e1f00&lBrown Axolotl Skin"
+    #Permission to allow players buy this skin. Set to "none" to not require permission.
+    Permission: "betterbackpacks.skin.brown-axolotl"
+    Strict: false
+    Price: 75000
+    Custom-model-data: 0
+    Rename: "#5e1f00&lAxolotl backpack"
+    Shop-lore:
+    - "&7Skin to show everyone"
+    - "&7what's your favorite"
+    - "&7Axolotl!"
+    - "&7Price: &a{PRICE}"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eClick to purchase."
+    Item:
+    - "&7Skin to show everyone"
+    - "&7what's your favorite"
+    - "&7Axolotl!"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eApply this skin to your backpack."
+    No-permission-message: "&cYou don't have permission to purchase this skin! Purchase a rank on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cYou cannot afford this skin :("
+    Cannot-apply-permission: "&cYou cannot apply this skin! You require &a[VIP]&c rank, purchase it on &bstore.yournetwork.net&c!"
+  green-axolotl-skin:
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2NkMWUxMzhjM2ZiODhhMTMzMjQ2ZTdkMWI4MzZjNGMyODI3ZTcwNzgwYjgwOGI1ZTlkY2VjMjBkMzM2OWVmOCJ9fX0="
+    Displayname: "&a&lGreen Axolotl Skin"
+    #Permission to allow players buy this skin. Set to "none" to not require permission.
+    Permission: "betterbackpacks.skin.green-axolotl"
+    Strict: false
+    Price: 75000
+    Custom-model-data: 0
+    Rename: "&a&lAxolotl backpack"
+    Shop-lore:
+    - "&7Skin to show everyone"
+    - "&7what's your favorite"
+    - "&7Axolotl!"
+    - "&7Price: &a{PRICE}"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eClick to purchase."
+    Item:
+    - "&7Skin to show everyone"
+    - "&7what's your favorite"
+    - "&7Axolotl!"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eApply this skin to your backpack."
+    No-permission-message: "&cYou don't have permission to purchase this skin! Purchase a rank on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cYou cannot afford this skin :("
+    Cannot-apply-permission: "&cYou cannot apply this skin! You require &a[VIP]&c rank, purchase it on &bstore.yournetwork.net&c!"
+  heart-skin:
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjRlYWY4OTQyOGEzNjQ5YzI2ZWRjMWY3MWNjMTlmMjYzZTlmNGViMzFlZDE4Yzk3Njg2YWFjODJmNzY0MjQyIn19fQ=="
+    Displayname: "&c&lHeart Skin"
+    #Permission to allow players buy this skin. Set to "none" to not require permission.
+    Permission: "betterbackpacks.skin.love"
+    Strict: false
+    Price: 10000
+    Custom-model-data: 0
+    Rename: "&c&lHeart backpack"
+    Shop-lore:
+    - "&7Skin to show everyone"
+    - "&7you LOVE your items!"
+    - "&7Price: &a{PRICE}"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eClick to purchase."
+    Item:
+    - "&7Skin to show everyone"
+    - "&7you LOVE your items!"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eApply this skin to your backpack."
+    No-permission-message: "&cYou don't have permission to purchase this skin! Purchase a rank on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cYou cannot afford this skin :("
+    Cannot-apply-permission: "&cYou cannot apply this skin! You require &a[VIP]&c rank, purchase it on &bstore.yournetwork.net&c!"
+  purple-treasure-skin:
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWIwZTA2MDAyODg1MTE2MTUyYmFkNGI2NjI4NmYxZjMxN2Y1OTljZDYwYWNkMWI5MDhiYTZhNWM1MDhiZjVlMSJ9fX0="
+    Displayname: "&5&lPurple Treasure Skin"
+    #Permission to allow players buy this skin. Set to "none" to not require permission.
+    Permission: "betterbackpacks.skin.purple-treasure"
+    Strict: false
+    Price: 100000
+    Custom-model-data: 0
+    Rename: "&5&lTreasure backpack"
+    Shop-lore:
+    - "&7Skin to show everyone"
+    - "&7your items are a treasure."
+    - "&7Price: &a{PRICE}"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eClick to purchase."
+    Item:
+    - "&7Skin to show everyone"
+    - "&7your items are a treasure."
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eApply this skin to your backpack."
+    No-permission-message: "&cYou don't have permission to purchase this skin! Purchase a rank on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cYou cannot afford this skin :("
+    Cannot-apply-permission: "&cYou cannot apply this skin! You require &a[VIP]&c rank, purchase it on &bstore.yournetwork.net&c!"
+  cyan-treasure-skin:
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTUyOTcwZTEyNDE1M2FiZDI4YjVkNjQwMDNiOGZkODc5OTlkYmM3YTVjZGU4OTk5NjFlZTAxY2NkM2Q0YWI5OCJ9fX0="
+    Displayname: "&3&lCyan Treasure Skin"
+    #Permission to allow players buy this skin. Set to "none" to not require permission.
+    Permission: "betterbackpacks.skin.cyan-treasure"
+    Strict: false
+    Price: 10000
+    Custom-model-data: 0
+    Rename: "&3&lTreasure backpack"
+    Shop-lore:
+    - "&7Skin to show everyone"
+    - "&7your items are a treasure."
+    - "&7Price: &a{PRICE}"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eClick to purchase."
+    Item:
+    - "&7Skin to show everyone"
+    - "&7your items are a treasure."
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eApply this skin to your backpack."
+    No-permission-message: "&cYou don't have permission to purchase this skin! Purchase a rank on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cYou cannot afford this skin :("
+    Cannot-apply-permission: "&cYou cannot apply this skin! You require &a[VIP]&c rank, purchase it on &bstore.yournetwork.net&c!"
+  golden-treasure-skin:
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzJlZDI5ODg1ODk1MWI0M2QyNDQ4ZGI1YzY1NmU3MDA0ZWI5MWUzMDc2ZTVmYzg4ZDI0ZTUyOWU4ODQ5ZTJjMCJ9fX0="
+    Displayname: "&6&lGolden Treasure Skin"
+    #Permission to allow players buy this skin. Set to "none" to not require permission.
+    Permission: "betterbackpacks.skin.golden-treasure"
+    Strict: false
+    Price: 10000
+    Custom-model-data: 0
+    Rename: "&6&lTreasure backpack"
+    Shop-lore:
+    - "&7Skin to show everyone"
+    - "&7your items are a treasure."
+    - "&7Price: &a{PRICE}"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eClick to purchase."
+    Item:
+    - "&7Skin to show everyone"
+    - "&7your items are a treasure."
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eApply this skin to your backpack."
+    No-permission-message: "&cYou don't have permission to purchase this skin! Purchase a rank on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cYou cannot afford this skin :("
+    Cannot-apply-permission: "&cYou cannot apply this skin! You require &a[VIP]&c rank, purchase it on &bstore.yournetwork.net&c!"
+  red-treasure-skin:
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDhjMWUxYzYyZGM2OTVlYjkwZmExOTJkYTZhY2E0OWFiNGY5ZGZmYjZhZGI1ZDI2MjllYmZjOWIyNzg4ZmEyIn19fQ=="
+    Displayname: "&4&lRed Treasure Skin"
+    #Permission to allow players buy this skin. Set to "none" to not require permission.
+    Permission: "betterbackpacks.skin.red-treasure"
+    Strict: false
+    Price: 10000
+    Custom-model-data: 0
+    Rename: "&4&lTreasure backpack"
+    Shop-lore:
+    - "&7Skin to show everyone"
+    - "&7your items are a treasure."
+    - "&7Price: &a{PRICE}"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eClick to purchase."
+    Item:
+    - "&7Skin to show everyone"
+    - "&7your items are a treasure."
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eApply this skin to your backpack."
+    No-permission-message: "&cYou don't have permission to purchase this skin! Purchase a rank on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cYou cannot afford this skin :("
+    Cannot-apply-permission: "&cYou cannot apply this skin! You require &a[VIP]&c rank, purchase it on &bstore.yournetwork.net&c!"
+  blue-treasure-skin:
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGNjNzk5NTRkMzUwYTk4YzcyMTcyNTY4MzFmNjVjNjJhNDI4MDc0YjZlNGFlOWVlZGU3YTQ0ZjlkZTRhNyJ9fX0="
+    Displayname: "&1&lBlue Treasure Skin"
+    #Permission to allow players buy this skin. Set to "none" to not require permission.
+    Permission: "betterbackpacks.skin.blue-treasure"
+    Strict: false
+    Price: 10000
+    Custom-model-data: 0
+    Rename: "&1&lTreasure backpack"
+    Shop-lore:
+    - "&7Skin to show everyone"
+    - "&7your items are a treasure."
+    - "&7Price: &a{PRICE}"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eClick to purchase."
+    Item:
+    - "&7Skin to show everyone"
+    - "&7your items are a treasure."
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eApply this skin to your backpack."
+    No-permission-message: "&cYou don't have permission to purchase this skin! Purchase a rank on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cYou cannot afford this skin :("
+    Cannot-apply-permission: "&cYou cannot apply this skin! You require &a[VIP]&c rank, purchase it on &bstore.yournetwork.net&c!"
+  discord-skin:
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWQ4MzNiNTE1NjY1NjU2NThmOTAxMWRlODc4NGU5MGMxYWQ5YmE1ZDMzMzdmOGMwNjkyMTNiYmRlZTk4NjUyMyJ9fX0="
+    Displayname: "&9&lDiscord Skin"
+    #Permission to allow players buy this skin. Set to "none" to not require permission.
+    Permission: "betterbackpacks.skin.discord"
+    Strict: false
+    Price: 25000
+    Custom-model-data: 0
+    Rename: "&9&lDiscord backpack"
+    Shop-lore:
+    - "&7Got a lot pings? Me too.."
+    - "&7Price: &a{PRICE}"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eClick to purchase."
+    Item:
+    - "&7Got a lot pings? Me too.."
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eApply this skin to your backpack."
+    No-permission-message: "&cYou don't have permission to purchase this skin! Purchase a rank on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cYou cannot afford this skin :("
+    Cannot-apply-permission: "&cYou cannot apply this skin! You require &a[VIP]&c rank, purchase it on &bstore.yournetwork.net&c!"
+  tiktok-skin:
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYThlNDE1YjVjMWViNDU2NjNkYTZmZGFlNTc5OGRkMTk5YjIxNGQ0NzY3NmIzOTJjYTMwNmY3OTI5M2M5N2Y4NCJ9fX0="
+    Displayname: "&f&lTikTok Skin"
+    #Permission to allow players buy this skin. Set to "none" to not require permission.
+    Permission: "betterbackpacks.skin.tiktok"
+    Strict: false
+    Price: 50000
+    Custom-model-data: 0
+    Rename: "&f&lTikTok backpack"
+    Shop-lore:
+    - "&7Love TikTok? Show it!"
+    - "&7Price: &a{PRICE}"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eClick to purchase."
+    Item:
+    - "&7Love TikTok? Show it!"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eApply this skin to your backpack."
+    No-permission-message: "&cYou don't have permission to purchase this skin! Purchase a rank on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cYou cannot afford this skin :("
+    Cannot-apply-permission: "&cYou cannot apply this skin! You require &a[VIP]&c rank, purchase it on &bstore.yournetwork.net&c!"
+  xiaomi-skin:
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmNlYTJlNmQ5ZWQ1NmU2OWMzODdkYjg5OGMyODY3MzUwNDYzODRjZTEwNjdjMTcyYTZkMDJkNmVhZjg3ZTNjNyJ9fX0="
+    Displayname: "#e33a07&lXiaomi Skin"
+    #Permission to allow players buy this skin. Set to "none" to not require permission.
+    Permission: "betterbackpacks.skin.xiaomi"
+    Strict: false
+    Price: 35000
+    Custom-model-data: 0
+    Rename: "#e33a07&lXiaomi backpack"
+    Shop-lore:
+    - "&7Xiaomi products lover?"
+    - "&7Price: &a{PRICE}"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eClick to purchase."
+    Item:
+    - "&7Xiaomi products lover?"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eApply this skin to your backpack."
+    No-permission-message: "&cYou don't have permission to purchase this skin! Purchase a rank on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cYou cannot afford this skin :("
+    Cannot-apply-permission: "&cYou cannot apply this skin! You require &a[VIP]&c rank, purchase it on &bstore.yournetwork.net&c!"
+  mojang-skin:
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjg2ZDNjMTJjZmNiZWE4M2E1MDI5MmE3N2ZjMWYwOGY5NGM0ZTY5ZTE0N2YxZGU2ZGUyZTk5ZThkNGVmYzYzNSJ9fX0="
+    Displayname: "&4&lMojang Skin"
+    #Permission to allow players buy this skin. Set to "none" to not require permission.
+    Permission: "betterbackpacks.skin.mojang"
+    Strict: false
+    Price: 50000
+    Custom-model-data: 0
+    Rename: "&4&lMojang backpack"
+    Shop-lore:
+    - "&7Do you miss old Mojang?"
+    - "&7Price: &a{PRICE}"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eClick to purchase."
+    Item:
+    - "&7Do you miss old Mojang?"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eApply this skin to your backpack."
+    No-permission-message: "&cYou don't have permission to purchase this skin! Purchase a rank on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cYou cannot afford this skin :("
+    Cannot-apply-permission: "&cYou cannot apply this skin! You require &a[VIP]&c rank, purchase it on &bstore.yournetwork.net&c!"
+  rubik-skin:
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWIxZWYyYTQ4MjlhMTFmZDkwM2I1ZTMxMDg4NjYyYThjNTZlNDcxYmI0ODY0M2MwZDlmOTUwMDZkMTgyMDIxMCJ9fX0="
+    Displayname: "&c&lRubik Skin"
+    #Permission to allow players buy this skin. Set to "none" to not require permission.
+    Permission: "betterbackpacks.skin.rubik"
+    Strict: false
+    Price: 10000
+    Custom-model-data: 0
+    Rename: "&c&lRubik backpack"
+    Shop-lore:
+    - "&7Love Rubik? Show it!"
+    - "&7Price: &a{PRICE}"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eClick to purchase."
+    Item:
+    - "&7Love Rubik? Show it!"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eApply this skin to your backpack."
+    No-permission-message: "&cYou don't have permission to purchase this skin! Purchase a rank on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cYou cannot afford this skin :("
+    Cannot-apply-permission: "&cYou cannot apply this skin! You require &a[VIP]&c rank, purchase it on &bstore.yournetwork.net&c!"
+  zim-skin:
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDFmODVmNmM5NzU4ZjcxYTcyMDA2OTFlYTZlMTMxNWVmN2ZmNDcxN2MyOTM1OTAyYzk4ZWMyMTNiYTg5OGU4MiJ9fX0="
+    Displayname: "&5&lZim Skin"
+    #Permission to allow players buy this skin. Set to "none" to not require permission.
+    Permission: "betterbackpacks.skin.zim"
+    Strict: false
+    Price: 15000
+    Custom-model-data: 0
+    Rename: "&5&lZim backpack"
+    Shop-lore:
+    - "&7Zim lover?"
+    - "&7Price: &a{PRICE}"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eClick to purchase."
+    Item:
+    - "&7Zim lover?"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eApply this skin to your backpack."
+    No-permission-message: "&cYou don't have permission to purchase this skin! Purchase a rank on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cYou cannot afford this skin :("
+    Cannot-apply-permission: "&cYou cannot apply this skin! You require &a[VIP]&c rank, purchase it on &bstore.yournetwork.net&c!"
+  gir-skin:
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTNlY2M4M2ZjNzEwMmFlYWViMzc2ZTk3NDkyOWYzMGEwNGNhMzU1MzgwYTNkNWZmZjQ3ODg2MGMzZTY0NjFkYyJ9fX0="
+    Displayname: "&a&lGir Skin"
+    #Permission to allow players buy this skin. Set to "none" to not require permission.
+    Permission: "betterbackpacks.skin.gir"
+    Strict: false
+    Price: 15000
+    Custom-model-data: 0
+    Rename: "&a&lGir backpack"
+    Shop-lore:
+    - "&7Gir lover? Of course!"
+    - "&7Price: &a{PRICE}"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eClick to purchase."
+    Item:
+    - "&7Gir lover? Of course!"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eApply this skin to your backpack."
+    No-permission-message: "&cYou don't have permission to purchase this skin! Purchase a rank on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cYou cannot afford this skin :("
+    Cannot-apply-permission: "&cYou cannot apply this skin! You require &a[VIP]&c rank, purchase it on &bstore.yournetwork.net&c!"
+  halloween-skin:
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOThhY2JkMTMxNzgyZWY2ZDIyZmU0MTg3YWQ0NjlhMjNmYjc0OGMyNzAyMWQ5NjVhMDEyMWFkNjQ4MWRmNGQzOCJ9fX0="
+    Displayname: "&6&lHallowen Skin"
+    #Permission to allow players buy this skin. Set to "none" to not require permission.
+    Permission: "betterbackpacks.skin.halloween"
+    Strict: false
+    Price: 10000
+    Custom-model-data: 0
+    Rename: "&6&lHallowen backpack"
+    Shop-lore:
+    - "&7Waiting for halloween? Me too!"
+    - "&7Price: &a{PRICE}"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eClick to purchase."
+    Item:
+    - "&7Waiting for halloween? Me too!"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eApply this skin to your backpack."
+    No-permission-message: "&cYou don't have permission to purchase this skin! Purchase a rank on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cYou cannot afford this skin :("
+    Cannot-apply-permission: "&cYou cannot apply this skin! You require &a[VIP]&c rank, purchase it on &bstore.yournetwork.net&c!"
+  nintendo-switch-skin:
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTM0NGQxYWMwMTUzMGZhMmJjNWRjMWExYzE3OWFkZTU5OWM3NWM3MDFiMTg5Njg5NmRiODQzNDZiYmMyZWNhMSJ9fX0="
+    Displayname: "&f&lNintendo Switch Skin"
+    #Permission to allow players buy this skin. Set to "none" to not require permission.
+    Permission: "betterbackpacks.skin.nintendo-switch"
+    Strict: false
+    Price: 100000
+    Custom-model-data: 0
+    Rename: "&f&lNintendo Switch backpack"
+    Shop-lore:
+    - "&7Nintendo fan?"
+    - "&7Price: &a{PRICE}"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eClick to purchase."
+    Item:
+    - "&7Nintendo fan?"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eApply this skin to your backpack."
+    No-permission-message: "&cYou don't have permission to purchase this skin! Purchase a rank on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cYou cannot afford this skin :("
+    Cannot-apply-permission: "&cYou cannot apply this skin! You require &a[VIP]&c rank, purchase it on &bstore.yournetwork.net&c!"
+  xbox-one-skin:
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTMxMjQ2OGRlNGNhOGZlOWE4ZDgyYWEyNWRmYWQ4MTJmMjQ3YTY5OWY5NjQ0NzFhZGJhZWJjOWQyNmI3ODVjMSJ9fX0="
+    Displayname: "&2&lXBOX ONE Skin"
+    #Permission to allow players buy this skin. Set to "none" to not require permission.
+    Permission: "betterbackpacks.skin.xbox-one"
+    Strict: false
+    Price: 100000
+    Custom-model-data: 0
+    Rename: "&2&lXBOX ONE backpack"
+    Shop-lore:
+    - "&7XBOX fan? Come on!"
+    - "&7Price: &a{PRICE}"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eClick to purchase."
+    Item:
+    - "&7XBOX fan? Come on!"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eApply this skin to your backpack."
+    No-permission-message: "&cYou don't have permission to purchase this skin! Purchase a rank on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cYou cannot afford this skin :("
+    Cannot-apply-permission: "&cYou cannot apply this skin! You require &a[VIP]&c rank, purchase it on &bstore.yournetwork.net&c!"
+  playstation-4-skin:
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODk3M2RlOTQyZmVkODhjNzhkM2M2NWYxM2Q5OGNlYmQ1NjVkMjRkZTBiOGM2NThlZmEyYjQxYjcyMGViM2E2NiJ9fX0="
+    Displayname: "&8&lPlaystation 4 Skin"
+    #Permission to allow players buy this skin. Set to "none" to not require permission.
+    Permission: "betterbackpacks.skin.playstation-4"
+    Strict: false
+    Price: 100000
+    Custom-model-data: 0
+    Rename: "&8&lPlaystation 4 backpack"
+    Shop-lore:
+    - "&7Playstation lover? Well.."
+    - "&7Price: &a{PRICE}"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eClick to purchase."
+    Item:
+    - "&7Playstation lover? Well.."
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eApply this skin to your backpack."
+    No-permission-message: "&cYou don't have permission to purchase this skin! Purchase a rank on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cYou cannot afford this skin :("
+    Cannot-apply-permission: "&cYou cannot apply this skin! You require &a[VIP]&c rank, purchase it on &bstore.yournetwork.net&c!"
+  camera-skin:
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjgwNWQ1NWYyMWI0OWEwNzRjZDVlM2RjMjQ0YTVhMDcwZTU1NDRiNTRmYTkyNTRkMmRjMmUxOGYxZTY4MDJmOSJ9fX0="
+    Displayname: "&0&lCamera Skin"
+    #Permission to allow players buy this skin. Set to "none" to not require permission.
+    Permission: "betterbackpacks.skin.camera"
+    Strict: false
+    Price: 10000
+    Custom-model-data: 0
+    Rename: "&0&lCamera backpack"
+    Shop-lore:
+    - "&7Love cameras? Me too!"
+    - "&7Price: &a{PRICE}"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eClick to purchase."
+    Item:
+    - "&7Love cameras? Me too!"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eApply this skin to your backpack."
+    No-permission-message: "&cYou don't have permission to purchase this skin! Purchase a rank on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cYou cannot afford this skin :("
+    Cannot-apply-permission: "&cYou cannot apply this skin! You require &a[VIP]&c rank, purchase it on &bstore.yournetwork.net&c!"
+  shark-skin:
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjBhNWJiMDcxNjQ3MzlhMmZjNjRlMjFiNjI5Yzk5OWZkMDVhMzEzOTk5MDk4NTEwODRiZWEyYTBjN2ZjMjRiZCJ9fX0="
+    Displayname: "&7&lShark Skin"
+    #Permission to allow players buy this skin. Set to "none" to not require permission.
+    Permission: "betterbackpacks.skin.shark"
+    Strict: false
+    Price: 15000
+    Custom-model-data: 0
+    Rename: "&7&lShark backpack"
+    Shop-lore:
+    - "&7Afraid of shark? Hmm..."
+    - "&7Price: &a{PRICE}"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eClick to purchase."
+    Item:
+    - "&7Afraid of shark? Hmm..."
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eApply this skin to your backpack."
+    No-permission-message: "&cYou don't have permission to purchase this skin! Purchase a rank on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cYou cannot afford this skin :("
+    Cannot-apply-permission: "&cYou cannot apply this skin! You require &a[VIP]&c rank, purchase it on &bstore.yournetwork.net&c!"
+  kawaii-dragon-skin:
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmVkOTA2ZjdmNDI5MjhhZDAwMWRhZTljZTg5YmVjZDkyNWJkMjdhY2Y4ODdiNjVmYTc3YTZjZDY3MWZjZTRkZCJ9fX0="
+    Displayname: "&5&lKawaii Dragon Skin"
+    #Permission to allow players buy this skin. Set to "none" to not require permission.
+    Permission: "betterbackpacks.skin.kawaii-dragon"
+    Strict: false
+    Price: 25000
+    Custom-model-data: 0
+    Rename: "&5&lKawaii Dragon backpack"
+    Shop-lore:
+    - "&7Oh look! A kawaii dragon!"
+    - "&7Price: &a{PRICE}"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eClick to purchase."
+    Item:
+    - "&7Oh look! A kawaii dragon!"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eApply this skin to your backpack."
+    No-permission-message: "&cYou don't have permission to purchase this skin! Purchase a rank on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cYou cannot afford this skin :("
+    Cannot-apply-permission: "&cYou cannot apply this skin! You require &a[VIP]&c rank, purchase it on &bstore.yournetwork.net&c!"
+  present-skin:
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmViY2QyMTU5ODU2ZDc5NWM4OTE1ZThmNTlhODQzNGM4ZTkzNWE0NWE0M2ZhNzFmMDgwOTc4OWJlNzVlM2RlMiJ9fX0="
+    Displayname: "&c&lPresent Skin"
+    #Permission to allow players buy this skin. Set to "none" to not require permission.
+    Permission: "betterbackpacks.skin.present"
+    Strict: false
+    Price: 15000
+    Custom-model-data: 0
+    Rename: "&c&lPresent backpack"
+    Shop-lore:
+    - "&7Love presents on christmas? Me too!"
+    - "&7Price: &a{PRICE}"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eClick to purchase."
+    Item:
+    - "&7Love presents on christmas? Me too!"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eApply this skin to your backpack."
+    No-permission-message: "&cYou don't have permission to purchase this skin! Purchase a rank on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cYou cannot afford this skin :("
+    Cannot-apply-permission: "&cYou cannot apply this skin! You require &a[VIP]&c rank, purchase it on &bstore.yournetwork.net&c!"
+  chicken-skin:
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGU0NThlODA1MWQ5NWQ1YTVlOTc4ODAyZWQxMzM2ZjYxNjNlODhkNWE0MDAwZmUzMzZlOTIwYTBjOGQxYTE3In19fQ=="
+    Displayname: "&6&lChicken Skin"
+    #Permission to allow players buy this skin. Set to "none" to not require permission.
+    Permission: "betterbackpacks.skin.chicken"
+    Strict: false
+    Price: 15000
+    Custom-model-data: 0
+    Rename: "&6&lChicken backpack"
+    Shop-lore:
+    - "&7I love chicken! I guess you too.."
+    - "&7Price: &a{PRICE}"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eClick to purchase."
+    Item:
+    - "&7I love chicken! I guess you too.."
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eApply this skin to your backpack."
+    No-permission-message: "&cYou don't have permission to purchase this skin! Purchase a rank on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cYou cannot afford this skin :("
+    Cannot-apply-permission: "&cYou cannot apply this skin! You require &a[VIP]&c rank, purchase it on &bstore.yournetwork.net&c!"
+  among-us-red-skin:
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGM0ZDQ0YTBmZmUwMjM0OWU5OWRhMDYyOTIxMzA2MzExM2U2YmIzYWZjMjU5ZjQ2NjE4YzkwZWRjZTgzMDc4NiJ9fX0="
+    Displayname: "&4&lAmongUs Red Skin"
+    #Permission to allow players buy this skin. Set to "none" to not require permission.
+    Permission: "betterbackpacks.skin.among-us-red"
+    Strict: false
+    Price: 50000
+    Custom-model-data: 0
+    Rename: "&4&lAmongUs Red backpack"
+    Shop-lore:
+    - "&7SUS"
+    - "&7Price: &a{PRICE}"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eClick to purchase."
+    Item:
+    - "&7SUS"
+    - "&7Price: &a{PRICE}"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eApply this skin to your backpack."
+    No-permission-message: "&cYou don't have permission to purchase this skin! Purchase a rank on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cYou cannot afford this skin :("
+    Cannot-apply-permission: "&cYou cannot apply this skin! You require &a[VIP]&c rank, purchase it on &bstore.yournetwork.net&c!"
+  among-us-purple-skin:
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmE4ZWNjM2IzNmU5OWExNmY3NTgyMjA3ZGRkMzc1NjA4NGMwMmIwZmIwYjBhMTllNGQzYThkMjA2NzQwN2Y3ZSJ9fX0="
+    Displayname: "&5&lAmongUs Purple Skin"
+    #Permission to allow players buy this skin. Set to "none" to not require permission.
+    Permission: "betterbackpacks.skin.among-us-purple"
+    Strict: false
+    Price: 50000
+    Custom-model-data: 0
+    Rename: "&5&lAmongUs Purple backpack"
+    Shop-lore:
+    - "&7SUS"
+    - "&7Price: &a{PRICE}"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eClick to purchase."
+    Item:
+    - "&7SUS"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eApply this skin to your backpack."
+    No-permission-message: "&cYou don't have permission to purchase this skin! Purchase a rank on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cYou cannot afford this skin :("
+    Cannot-apply-permission: "&cYou cannot apply this skin! You require &a[VIP]&c rank, purchase it on &bstore.yournetwork.net&c!"
+  among-us-black-skin:
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTg1NTI3ZmUyNjk0N2Y0M2E3MmRkY2IwMDZjNmRkYzQxZGE3YjIxMGRiMmRlNzEyNDdlNTNiZjA2MWZkODJiZSJ9fX0="
+    Displayname: "&8&lAmongUs Black Skin"
+    #Permission to allow players buy this skin. Set to "none" to not require permission.
+    Permission: "betterbackpacks.skin.among-us-black"
+    Strict: false
+    Price: 50000
+    Custom-model-data: 0
+    Rename: "&8&lAmongUs Black backpack"
+    Shop-lore:
+    - "&7SUS"
+    - "&7Price: &a{PRICE}"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eClick to purchase."
+    Item:
+    - "&7SUS"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eApply this skin to your backpack."
+    No-permission-message: "&cYou don't have permission to purchase this skin! Purchase a rank on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cYou cannot afford this skin :("
+    Cannot-apply-permission: "&cYou cannot apply this skin! You require &a[VIP]&c rank, purchase it on &bstore.yournetwork.net&c!"
+  among-us-lime-skin:
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTJlODgzY2QyODdjMTg1NWFmNmE3ZmEyNzZhNzEyNDc3Y2NkMDJiMWRmNGU4NjYzZDFhN2EwYzc1MDM3ZGMxZCJ9fX0="
+    Displayname: "&a&lAmongUs Lime Skin"
+    #Permission to allow players buy this skin. Set to "none" to not require permission.
+    Permission: "betterbackpacks.skin.among-us-lime"
+    Strict: false
+    Price: 50000
+    Custom-model-data: 0
+    Rename: "&a&lAmongUs Lime backpack"
+    Shop-lore:
+    - "&7SUS"
+    - "&7Price: &a{PRICE}"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eClick to purchase."
+    Item:
+    - "&7SUS"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eApply this skin to your backpack."
+    No-permission-message: "&cYou don't have permission to purchase this skin! Purchase a rank on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cYou cannot afford this skin :("
+    Cannot-apply-permission: "&cYou cannot apply this skin! You require &a[VIP]&c rank, purchase it on &bstore.yournetwork.net&c!"
+  among-us-green-skin:
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGU3YjFmYTNkMTVmM2E3NWM4NzhhNGNmZGQ2OTUzYjdkOTcwMTlmNzM4YWQzY2Q1ZDg4NTUzZWM2ODg0Y2NkNSJ9fX0="
+    Displayname: "&2&lAmongUs Green Skin"
+    #Permission to allow players buy this skin. Set to "none" to not require permission.
+    Permission: "betterbackpacks.skin.among-us-green"
+    Strict: false
+    Price: 50000
+    Custom-model-data: 0
+    Rename: "&2&lAmongUs Green backpack"
+    Shop-lore:
+    - "&7SUS"
+    - "&7Price: &a{PRICE}"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eClick to purchase."
+    Item:
+    - "&7SUS"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eApply this skin to your backpack."
+    No-permission-message: "&cYou don't have permission to purchase this skin! Purchase a rank on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cYou cannot afford this skin :("
+    Cannot-apply-permission: "&cYou cannot apply this skin! You require &a[VIP]&c rank, purchase it on &bstore.yournetwork.net&c!"
+  among-us-cyan-skin:
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODAzNzZlNzRiZjc1OGEwMGFlYTYyOGE3MGFlNTNkODVkZTVlMWI1NzcxNDc3YzE0YTg0N2RmOGZiYjFkZTgzMCJ9fX0="
+    Displayname: "&b&lAmongUs Cyan Skin"
+    #Permission to allow players buy this skin. Set to "none" to not require permission.
+    Permission: "betterbackpacks.skin.among-us-cyan"
+    Strict: false
+    Price: 50000
+    Custom-model-data: 0
+    Rename: "&b&lAmongUs Cyan backpack"
+    Shop-lore:
+    - "&7SUS"
+    - "&7Price: &a{PRICE}"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eClick to purchase."
+    Item:
+    - "&7SUS"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eApply this skin to your backpack."
+    No-permission-message: "&cYou don't have permission to purchase this skin! Purchase a rank on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cYou cannot afford this skin :("
+    Cannot-apply-permission: "&cYou cannot apply this skin! You require &a[VIP]&c rank, purchase it on &bstore.yournetwork.net&c!"
+  among-us-white-skin:
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjI0ZGFhODQ5ZmZkMmVlODc4MjkzNDljNzQzNDY1MzIxNTRhOTU3MmVhZTBkZmVkMmJiMjgzMWYxYmQwOTdiIn19fQ=="
+    Displayname: "&f&lAmongUs Cyan Skin"
+    #Permission to allow players buy this skin. Set to "none" to not require permission.
+    Permission: "betterbackpacks.skin.among-us-white"
+    Strict: false
+    Price: 50000
+    Custom-model-data: 0
+    Rename: "&f&lAmongUs White backpack"
+    Shop-lore:
+    - "&7SUS"
+    - "&7Price: &a{PRICE}"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eClick to purchase."
+    Item:
+    - "&7SUS"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eApply this skin to your backpack."
+    No-permission-message: "&cYou don't have permission to purchase this skin! Purchase a rank on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cYou cannot afford this skin :("
+    Cannot-apply-permission: "&cYou cannot apply this skin! You require &a[VIP]&c rank, purchase it on &bstore.yournetwork.net&c!"
+  1-up-skin:
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjE3MzEyYjgwZTY0YTA0NWYzMDA2N2U4YmVkMjMyM2QwMjhiMmU4YTlhNGEyYTcxZTE2MWU2MmY5NDg5ZDFhMCJ9fX0="
+    Displayname: "&a&l1-UP Skin"
+    #Permission to allow players buy this skin. Set to "none" to not require permission.
+    Permission: "betterbackpacks.skin.1-up"
+    Strict: false
+    Price: 25000
+    Custom-model-data: 0
+    Rename: "&a&l1-UP backpack"
+    Shop-lore:
+    - "&71-UP!"
+    - "&7Price: &a{PRICE}"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eClick to purchase."
+    Item:
+    - "&71-UP!"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eApply this skin to your backpack."
+    No-permission-message: "&cYou don't have permission to purchase this skin! Purchase a rank on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cYou cannot afford this skin :("
+    Cannot-apply-permission: "&cYou cannot apply this skin! You require &a[VIP]&c rank, purchase it on &bstore.yournetwork.net&c!"
+  enchanted-books-skin:
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjYyNjUxODc5ZDg3MDQ5OWRhNTBlMzQwMzY4MDBkZGZmZDUyZjNlNGUxOTkzYzVmYzBmYzgyNWQwMzQ0NmQ4YiJ9fX0="
+    Displayname: "&d&lEnchanted Skin"
+    #Permission to allow players buy this skin. Set to "none" to not require permission.
+    Permission: "betterbackpacks.skin.enchanted-books"
+    Strict: false
+    Price: 20000
+    Custom-model-data: 0
+    Rename: "&d&lEnchanted backpack"
+    Shop-lore:
+    - "&7Love enchanting books?"
+    - "&7Price: &a{PRICE}"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eClick to purchase."
+    Item:
+    - "&7Love enchanting books?"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eApply this skin to your backpack."
+    No-permission-message: "&cYou don't have permission to purchase this skin! Purchase a rank on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cYou cannot afford this skin :("
+    Cannot-apply-permission: "&cYou cannot apply this skin! You require &a[VIP]&c rank, purchase it on &bstore.yournetwork.net&c!"
+  robot-skin:
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmU2YTExM2I5Y2U1MzI4MTNkYTViMTcyYWM4YmJhYzRjYjQ2Mzc1NzQ5OTdmNWM4OWFkMTEyOTZjZjRjNWY4NiJ9fX0="
+    Displayname: "&c&lRobot Skin"
+    #Permission to allow players buy this skin. Set to "none" to not require permission.
+    Permission: "betterbackpacks.skin.robot"
+    Strict: false
+    Price: 35000
+    Custom-model-data: 0
+    Rename: "&c&lRobot backpack"
+    Shop-lore:
+    - "&7BIP! BUP! BUP! BIP!"
+    - "&7Price: &a{PRICE}"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eClick to purchase."
+    Item:
+    - "&7BIP! BUP! BUP! BIP!"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eApply this skin to your backpack."
+    No-permission-message: "&cYou don't have permission to purchase this skin! Purchase a rank on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cYou cannot afford this skin :("
+    Cannot-apply-permission: "&cYou cannot apply this skin! You require &a[VIP]&c rank, purchase it on &bstore.yournetwork.net&c!"
+  steampunk-device-skin:
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTM0NzRkMGFhMWZhMTA5YmY5ZjRmMDVlYWEyZDJjNmZlZjc1Y2ViNmUyOTIzZjg1ZThlM2E2MmNjNWE0NDk1OCJ9fX0="
+    Displayname: "&6&lSteampunk Skin"
+    #Permission to allow players buy this skin. Set to "none" to not require permission.
+    Permission: "betterbackpacks.skin.steampunk-device"
+    Strict: false
+    Price: 25000
+    Custom-model-data: 0
+    Rename: "&6&lSteampunk backpack"
+    Shop-lore:
+    - "&7OH! Steampunk style!"
+    - "&7Price: &a{PRICE}"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eClick to purchase."
+    Item:
+    - "&7OH! Steampunk style!"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eApply this skin to your backpack."
+    No-permission-message: "&cYou don't have permission to purchase this skin! Purchase a rank on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cYou cannot afford this skin :("
+    Cannot-apply-permission: "&cYou cannot apply this skin! You require &a[VIP]&c rank, purchase it on &bstore.yournetwork.net&c!"
+  bb-8-skin:
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzZjNjhlODJhZDMyMmU1OWZhNDUwN2M0YTM4MWIxNmEwMzRmMDI2ZmRkNmQ3OTNiYTZkMGFkNDFlNjUwZGYyMCJ9fX0="
+    Displayname: "&f&lBB&6&l-&f&l8 Skin"
+    #Permission to allow players buy this skin. Set to "none" to not require permission.
+    Permission: "betterbackpacks.skin.bb-8"
+    Strict: false
+    Price: 30000
+    Custom-model-data: 0
+    Rename: "&f&lBB&6&l-&f&l8 backpack"
+    Shop-lore:
+    - "&7BIP! BIP!"
+    - "&7Price: &a{PRICE}"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eClick to purchase."
+    Item:
+    - "&7BIP! BIP!"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eApply this skin to your backpack."
+    No-permission-message: "&cYou don't have permission to purchase this skin! Purchase a rank on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cYou cannot afford this skin :("
+    Cannot-apply-permission: "&cYou cannot apply this skin! You require &a[VIP]&c rank, purchase it on &bstore.yournetwork.net&c!"
+  baby-yoda-skin:
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTljYjM3Mjk0ZTA2OGE4MjY4NDM3ZDI0ZmJkNGVlNGQ3YTBkZGQ4Y2Y5YzM4ZDE2NmU4NTYxMGFmZWYzMTI0In19fQ=="
+    Displayname: "&2&lBaby Yoda Skin"
+    #Permission to allow players buy this skin. Set to "none" to not require permission.
+    Permission: "betterbackpacks.skin.baby-yoda"
+    Strict: false
+    Price: 75000
+    Custom-model-data: 0
+    Rename: "&2&lBaby Yoda backpack"
+    Shop-lore:
+    - "&7Awwwwwwwwwwwwwwwwwwww!"
+    - "&7Price: &a{PRICE}"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eClick to purchase."
+    Item:
+    - "&7Awwwwwwwwwwwwwwwwwwww!"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eApply this skin to your backpack."
+    No-permission-message: "&cYou don't have permission to purchase this skin! Purchase a rank on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cYou cannot afford this skin :("
+    Cannot-apply-permission: "&cYou cannot apply this skin! You require &a[VIP]&c rank, purchase it on &bstore.yournetwork.net&c!"
+  chewbacca-skin:
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2E5ZGIwODY2N2FhMmM5Mzg3OTE4ZjgzNzA0YmY4YzQxM2VlZDZmNDcxMjRhMTU5YTM2NDhkMTQ3ZTQ2YmYxIn19fQ=="
+    Displayname: "&7&lChewbacca Skin"
+    #Permission to allow players buy this skin. Set to "none" to not require permission.
+    Permission: "betterbackpacks.skin.chewbacca"
+    Strict: false
+    Price: 35000
+    Custom-model-data: 0
+    Rename: "&7&lChewbacca backpack"
+    Shop-lore:
+    - "&7Uuuuuur Ahhhhhhrrrr Uhrrrr!"
+    - "&7Price: &a{PRICE}"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eClick to purchase."
+    Item:
+    - "&7Uuuuuur Ahhhhhhrrrr Uhrrrr!"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eApply this skin to your backpack."
+    No-permission-message: "&cYou don't have permission to purchase this skin! Purchase a rank on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cYou cannot afford this skin :("
+    Cannot-apply-permission: "&cYou cannot apply this skin! You require &a[VIP]&c rank, purchase it on &bstore.yournetwork.net&c!"
+  darth-maul-skin:
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzQ3MmJkZGFjMjkxY2E4ZDNkZjM1ZjQ2YmZjYzViMmRiOGRiOWQyN2UyNjAxOWRjYTZiOGZhNjYwZTA2YWE4In19fQ=="
+    Displayname: "&4&lDarth Maul Skin"
+    #Permission to allow players buy this skin. Set to "none" to not require permission.
+    Permission: "betterbackpacks.skin.darth-maul"
+    Strict: false
+    Price: 35000
+    Custom-model-data: 0
+    Rename: "&4&lDarth Maul backpack"
+    Shop-lore:
+    - "&7hmmmmmmmmmmmmmmmmmmm.."
+    - "&7Price: &a{PRICE}"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eClick to purchase."
+    Item:
+    - "&7hmmmmmmmmmmmmmmmmmmm.."
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eApply this skin to your backpack."
+    No-permission-message: "&cYou don't have permission to purchase this skin! Purchase a rank on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cYou cannot afford this skin :("
+    Cannot-apply-permission: "&cYou cannot apply this skin! You require &a[VIP]&c rank, purchase it on &bstore.yournetwork.net&c!"
+  darth-vader-skin:
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzFjM2UxZjIyNGI0NDZjY2FjNmE2Y2MzY2Q5ODkxMDE5YTEyMmY5OTY5MWMzOTA3OTkyYTNhZjk5YTIxYjAifX19"
+    Displayname: "&7&lDarth Vader Skin"
+    #Permission to allow players buy this skin. Set to "none" to not require permission.
+    Permission: "betterbackpacks.skin.darth-vader"
+    Strict: false
+    Price: 45000
+    Custom-model-data: 0
+    Rename: "&7&lDarth Vader backpack"
+    Shop-lore:
+    - "&7I am your father.."
+    - "&7Price: &a{PRICE}"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eClick to purchase."
+    Item:
+    - "&7I am your father.."
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eApply this skin to your backpack."
+    No-permission-message: "&cYou don't have permission to purchase this skin! Purchase a rank on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cYou cannot afford this skin :("
+    Cannot-apply-permission: "&cYou cannot apply this skin! You require &a[VIP]&c rank, purchase it on &bstore.yournetwork.net&c!"
+  cosmo-skin:
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODc3Y2RiNThhOTQxY2Q4ODViOTIzZmQzYTk4ZDZiNThjYTllMTZhYWY2YTQ4MzI0OWQ5ZmEwZjgyZjIxYjFiZCJ9fX0="
+    Displayname: "&a&lCosmo Skin"
+    #Permission to allow players buy this skin. Set to "none" to not require permission.
+    Permission: "betterbackpacks.skin.cosmo"
+    Strict: false
+    Price: 25000
+    Custom-model-data: 0
+    Rename: "&a&lCosmo backpack"
+    Shop-lore:
+    - "&7Look at me! I'm cheese!"
+    - "&7Price: &a{PRICE}"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eClick to purchase."
+    Item:
+    - "&7Look at me! I'm cheese!"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eApply this skin to your backpack."
+    No-permission-message: "&cYou don't have permission to purchase this skin! Purchase a rank on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cYou cannot afford this skin :("
+    Cannot-apply-permission: "&cYou cannot apply this skin! You require &a[VIP]&c rank, purchase it on &bstore.yournetwork.net&c!"
+  wanda-skin:
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjJhM2RkNTRkMGFmMjE3OTVlMzgyY2ZmNjE5YTdhMzE0NzllZThmNzQwNDBhZGRhNTFlMzNmNWVmY2Q0Mjg4YiJ9fX0="
+    Displayname: "&d&lWanda Skin"
+    #Permission to allow players buy this skin. Set to "none" to not require permission.
+    Permission: "betterbackpacks.skin.wanda"
+    Strict: false
+    Price: 25000
+    Custom-model-data: 0
+    Rename: "&d&lWanda backpack"
+    Shop-lore:
+    - "&7Cosmo, stop spinning the newspaper!"
+    - "&7Price: &a{PRICE}"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eClick to purchase."
+    Item:
+    - "&7Cosmo, stop spinning the newspaper!"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eApply this skin to your backpack."
+    No-permission-message: "&cYou don't have permission to purchase this skin! Purchase a rank on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cYou cannot afford this skin :("
+    Cannot-apply-permission: "&cYou cannot apply this skin! You require &a[VIP]&c rank, purchase it on &bstore.yournetwork.net&c!"
+  muffin-skin:
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDI4NGU3N2I4OTMwYjBmMjlhYTY2Mjc5YzQxZDVlMTQ5YmVlMjYzZjIxZmUzNzI2MzZjYmY3NjhkYjljZWU0YSJ9fX0="
+    Displayname: "&e&lMuffin Skin"
+    #Permission to allow players buy this skin. Set to "none" to not require permission.
+    Permission: "betterbackpacks.skin.muffin"
+    Strict: false
+    Price: 15000
+    Custom-model-data: 0
+    Rename: "&e&lMuffin backpack"
+    Shop-lore:
+    - "&7Yummy yummy!"
+    - "&7Price: &a{PRICE}"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eClick to purchase."
+    Item:
+    - "&7Yummy yummy!"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eApply this skin to your backpack."
+    No-permission-message: "&cYou don't have permission to purchase this skin! Purchase a rank on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cYou cannot afford this skin :("
+    Cannot-apply-permission: "&cYou cannot apply this skin! You require &a[VIP]&c rank, purchase it on &bstore.yournetwork.net&c!"
+  burger-skin:
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGUxYjU4NWFiZGQ2NDc3ZjU5NGJjZmNlZjg0NzcxYWEyZDQyYWI4NWRkNGMyMmE0Y2M0MGMyNzM2MDUwOGM4In19fQ=="
+    Displayname: "&e&lBurger Skin"
+    #Permission to allow players buy this skin. Set to "none" to not require permission.
+    Permission: "betterbackpacks.skin.burger"
+    Strict: false
+    Price: 15000
+    Custom-model-data: 0
+    Rename: "&e&lBurger backpack"
+    Shop-lore:
+    - "&7Burger lover?"
+    - "&7Price: &a{PRICE}"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eClick to purchase."
+    Item:
+    - "&7Burger lover?"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eApply this skin to your backpack."
+    No-permission-message: "&cYou don't have permission to purchase this skin! Purchase a rank on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cYou cannot afford this skin :("
+    Cannot-apply-permission: "&cYou cannot apply this skin! You require &a[VIP]&c rank, purchase it on &bstore.yournetwork.net&c!"
+  taco-skin:
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWFkN2MwYTA0ZjE0ODVjN2EzZWYyNjFhNDhlZTgzYjJmMWFhNzAxYWIxMWYzZmM5MTFlMDM2NmE5Yjk3ZSJ9fX0="
+    Displayname: "&6&lTaco Skin"
+    #Permission to allow players buy this skin. Set to "none" to not require permission.
+    Permission: "betterbackpacks.skin.taco"
+    Strict: false
+    Price: 25000
+    Custom-model-data: 0
+    Rename: "&6&lTaco backpack"
+    Shop-lore:
+    - "&7Taco lover?"
+    - "&7Price: &a{PRICE}"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eClick to purchase."
+    Item:
+    - "&7Taco lover?"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eApply this skin to your backpack."
+    No-permission-message: "&cYou don't have permission to purchase this skin! Purchase a rank on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cYou cannot afford this skin :("
+    Cannot-apply-permission: "&cYou cannot apply this skin! You require &a[VIP]&c rank, purchase it on &bstore.yournetwork.net&c!"
+  candy-jar-skin:
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTRiZDUzZDEwMDhlMzVjOTgwMzFkYTI1MDk0MTQ3Yzg1ZDc4M2NhM2E1NjY5YWZhMGRmMzkzMjhkMDJiYzMwNyJ9fX0="
+    Displayname: "&5&lCandy Jar Skin"
+    #Permission to allow players buy this skin. Set to "none" to not require permission.
+    Permission: "betterbackpacks.skin.candy-jar"
+    Strict: false
+    Price: 25000
+    Custom-model-data: 0
+    Rename: "&5&lCandy Jar backpack"
+    Shop-lore:
+    - "&7Love candies? ME TOO!"
+    - "&7Price: &a{PRICE}"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eClick to purchase."
+    Item:
+    - "&7Love candies? ME TOO!"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eApply this skin to your backpack."
+    No-permission-message: "&cYou don't have permission to purchase this skin! Purchase a rank on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cYou cannot afford this skin :("
+    Cannot-apply-permission: "&cYou cannot apply this skin! You require &a[VIP]&c rank, purchase it on &bstore.yournetwork.net&c!"
+  cake-skin:
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGI1ODUxYmNjZThiZmFkMzlhNDdlNTAzNDVjMWQ4M2ExZGU3YjIyNTA5ZGM5MzdlYzdiOWNkNTE1MDI4NDk1NCJ9fX0="
+    Displayname: "&f&lCake Skin"
+    #Permission to allow players buy this skin. Set to "none" to not require permission.
+    Permission: "betterbackpacks.skin.cake"
+    Strict: false
+    Price: 10000
+    Custom-model-data: 0
+    Rename: "&f&lCake backpack"
+    Shop-lore:
+    - "&7Love cakes? Who doesn't?"
+    - "&7Price: &a{PRICE}"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eClick to purchase."
+    Item:
+    - "&7Love cakes? Who doesn't?"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eApply this skin to your backpack."
+    No-permission-message: "&cYou don't have permission to purchase this skin! Purchase a rank on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cYou cannot afford this skin :("
+    Cannot-apply-permission: "&cYou cannot apply this skin! You require &a[VIP]&c rank, purchase it on &bstore.yournetwork.net&c!"
+  fanta-skin:
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmJlOTUwNWEzOGExNGQxNTEyYzc4OTJmYzQ0ZDNkN2NlNjMzOGIxYmYwZjkxMjM3MjFiMTIxYTE0YjA5NWEzIn19fQ=="
+    Displayname: "&6&lFanta Skin"
+    #Permission to allow players buy this skin. Set to "none" to not require permission.
+    Permission: "betterbackpacks.skin.fanta"
+    Strict: false
+    Price: 15000
+    Custom-model-data: 0
+    Rename: "&6&lFanta backpack"
+    Shop-lore:
+    - "&7Fanta lover?"
+    - "&7Price: &a{PRICE}"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eClick to purchase."
+    Item:
+    - "&7Fanta lover?"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eApply this skin to your backpack."
+    No-permission-message: "&cYou don't have permission to purchase this skin! Purchase a rank on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cYou cannot afford this skin :("
+    Cannot-apply-permission: "&cYou cannot apply this skin! You require &a[VIP]&c rank, purchase it on &bstore.yournetwork.net&c!"
+  pepsi-skin:
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmJiYWU2ZGY5OWRjODJiZWFmNDlkMDY0ZGY3NGExYmJjMTVlOGUzNzY1MzMyNzY5MTJjOGM4ZmU1OWNiNGY0In19fQ=="
+    Displayname: "&9&lPepsi Skin"
+    #Permission to allow players buy this skin. Set to "none" to not require permission.
+    Permission: "betterbackpacks.skin.pepsi"
+    Strict: false
+    Price: 15000
+    Custom-model-data: 0
+    Rename: "&9&lPepsi backpack"
+    Shop-lore:
+    - "&7"
+    - "&7Price: &a{PRICE}"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eClick to purchase."
+    Item:
+    - "&7"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eApply this skin to your backpack."
+    No-permission-message: "&cYou don't have permission to purchase this skin! Purchase a rank on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cYou cannot afford this skin :("
+    Cannot-apply-permission: "&cYou cannot apply this skin! You require &a[VIP]&c rank, purchase it on &bstore.yournetwork.net&c!"
+  monster-energy-skin:
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmVkYTVlZjUzNTg2ZmZlYmIyNTQ5ZDZkY2QwMDJmMjYwMTQ1MzZmMmUwNDMwYjZiODcwMjdlNzQ0MTZmNWViYSJ9fX0="
+    Displayname: "&a&lMonster Skin"
+    #Permission to allow players buy this skin. Set to "none" to not require permission.
+    Permission: "betterbackpacks.skin.monster-energy"
+    Strict: false
+    Price: 15000
+    Custom-model-data: 0
+    Rename: "&a&lMonster backpack"
+    Shop-lore:
+    - "&7Additional energy?"
+    - "&7Price: &a{PRICE}"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eClick to purchase."
+    Item:
+    - "&7Additional energy?"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eApply this skin to your backpack."
+    No-permission-message: "&cYou don't have permission to purchase this skin! Purchase a rank on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cYou cannot afford this skin :("
+    Cannot-apply-permission: "&cYou cannot apply this skin! You require &a[VIP]&c rank, purchase it on &bstore.yournetwork.net&c!"
+  spongebob-skin:
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzUxMTJhOGYwN2M3YThhMDdlZjIwNTYyYTBhOTNkZTA1MzhiZjMyYTQ5YTVkZWMwOGY0YzkwODI0MjJjZTIyZiJ9fX0="
+    Displayname: "&a&lSpongebob Skin"
+    #Permission to allow players buy this skin. Set to "none" to not require permission.
+    Permission: "betterbackpacks.skin.spongebob"
+    Strict: false
+    Price: 35000
+    Custom-model-data: 0
+    Rename: "&a&lSpongebob backpack"
+    Shop-lore:
+    - "&7\"I'm ready!\""
+    - "&7Price: &a{PRICE}"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eClick to purchase."
+    Item:
+    - "&7\"I'm ready!\""
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eApply this skin to your backpack."
+    No-permission-message: "&cYou don't have permission to purchase this skin! Purchase a rank on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cYou cannot afford this skin :("
+    Cannot-apply-permission: "&cYou cannot apply this skin! You require &a[VIP]&c rank, purchase it on &bstore.yournetwork.net&c!"
+  patrick-skin:
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWRhYjA2NTljMDhjMzcxM2MzM2IxOWVhMDY5YzdhZDc5ODZlOWY0OGExYWQ5MDdlMGFjMTgzNDBlNTZmZGI2In19fQ=="
+    Displayname: "&d&lPatrick Skin"
+    #Permission to allow players buy this skin. Set to "none" to not require permission.
+    Permission: "betterbackpacks.skin.patrick"
+    Strict: false
+    Price: 25000
+    Custom-model-data: 0
+    Rename: "&d&lPatrick backpack"
+    Shop-lore:
+    - "&7\"Good morning, Krusty Krew!\""
+    - "&7Price: &a{PRICE}"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eClick to purchase."
+    Item:
+    - "&7\"Good morning, Krusty Krew!\""
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eApply this skin to your backpack."
+    No-permission-message: "&cYou don't have permission to purchase this skin! Purchase a rank on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cYou cannot afford this skin :("
+    Cannot-apply-permission: "&cYou cannot apply this skin! You require &a[VIP]&c rank, purchase it on &bstore.yournetwork.net&c!"
+  squidward-skin:
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGM1ZmZmYzJlOTc4ZDYzOWM3ODI2MjYyYTI1YzA4YTJiMGI5ZmZmNTM2MGUzNzVjMDA0Yjc5OWIzZmY2NzkyNiJ9fX0="
+    Displayname: "&3&lSquidward Skin"
+    #Permission to allow players buy this skin. Set to "none" to not require permission.
+    Permission: "betterbackpacks.skin.squidward"
+    Strict: false
+    Price: 25000
+    Custom-model-data: 0
+    Rename: "&3&lSquidward backpack"
+    Shop-lore:
+    - "'&7Everybody's a critic.'"
+    - "&7Price: &a{PRICE}"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eClick to purchase."
+    Item:
+    - "&7'Everybody's a critic.'"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eApply this skin to your backpack."
+    No-permission-message: "&cYou don't have permission to purchase this skin! Purchase a rank on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cYou cannot afford this skin :("
+    Cannot-apply-permission: "&cYou cannot apply this skin! You require &a[VIP]&c rank, purchase it on &bstore.yournetwork.net&c!"
+  sandy-cheeks-skin:
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTUwNDVkNzE0N2VlOWQ3ZTc1NmQzYzUyYmYzMjFkNTBjZmNiMGIwYzIwNTA2Mjk1MzVmYjkxOGI2ZTk0MDQyZCJ9fX0="
+    Displayname: "&d&lSandy Cheeks Skin"
+    #Permission to allow players buy this skin. Set to "none" to not require permission.
+    Permission: "betterbackpacks.skin.sandy-cheeks"
+    Strict: false
+    Price: 15000
+    Custom-model-data: 0
+    Rename: "&d&lSandy Cheeks backpack"
+    Shop-lore:
+    - "&7'Yee-haw!'"
+    - "&7Price: &a{PRICE}"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eClick to purchase."
+    Item:
+    - "&7'Yee-haw!'"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eApply this skin to your backpack."
+    No-permission-message: "&cYou don't have permission to purchase this skin! Purchase a rank on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cYou cannot afford this skin :("
+    Cannot-apply-permission: "&cYou cannot apply this skin! You require &a[VIP]&c rank, purchase it on &bstore.yournetwork.net&c!"
+  gary-skin:
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2MwMGE1MmU1OTcxMDgxNjZlNDBiMTFlYmI5YjcyZGYwMDhkMmNmZDAwODM2NWFkMTllOTgyNDRmMzA5NjM0MSJ9fX0="
+    Displayname: "&d&lGary Skin"
+    #Permission to allow players buy this skin. Set to "none" to not require permission.
+    Permission: "betterbackpacks.skin.gary"
+    Strict: false
+    Price: 25000
+    Custom-model-data: 0
+    Rename: "&d&lGary backpack"
+    Shop-lore:
+    - "&7'How dare you invade the sanctity"
+    - "&7of my dream?'"
+    - "&7Price: &a{PRICE}"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eClick to purchase."
+    Item:
+    - "&7'How dare you invade the sanctity"
+    - "&7of my dream?'"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eApply this skin to your backpack."
+    No-permission-message: "&cYou don't have permission to purchase this skin! Purchase a rank on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cYou cannot afford this skin :("
+    Cannot-apply-permission: "&cYou cannot apply this skin! You require &a[VIP]&c rank, purchase it on &bstore.yournetwork.net&c!"
+  plankton-skin:
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODgzMTYyZWQxNTI2YjJmNjIzNDdlZmI0Mzc0OGRkNGQ4NmRlYzhiYWE2ZWZhOTg2ODc4ZTg3ZDJlMmM2In19fQ=="
+    Displayname: "&2&lPlankton Skin"
+    #Permission to allow players buy this skin. Set to "none" to not require permission.
+    Permission: "betterbackpacks.skin.plankton"
+    Strict: false
+    Price: 25000
+    Custom-model-data: 0
+    Rename: "&2&lPlankton backpack"
+    Shop-lore:
+    - "&7'Karen! Help!'"
+    - "&7Price: &a{PRICE}"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eClick to purchase."
+    Item:
+    - "&7'Karen! Help!'"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eApply this skin to your backpack."
+    No-permission-message: "&cYou don't have permission to purchase this skin! Purchase a rank on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cYou cannot afford this skin :("
+    Cannot-apply-permission: "&cYou cannot apply this skin! You require &a[VIP]&c rank, purchase it on &bstore.yournetwork.net&c!"
+  jellyfish-skin:
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjNkZTQ4YTg0NjY4YTM2MTkxODdkYTE5NmU3NzdmOTMxZjc1NTQ4NDllOGYyNDM4OTdhYzgzYzhhZDYxIn19fQ=="
+    Displayname: "&d&lJellyfish Skin"
+    #Permission to allow players buy this skin. Set to "none" to not require permission.
+    Permission: "betterbackpacks.skin.jellyfish"
+    Strict: false
+    Price: 25000
+    Custom-model-data: 0
+    Rename: "&d&lJellyfish backpack"
+    Shop-lore:
+    - "&7'...'"
+    - "&7Price: &a{PRICE}"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eClick to purchase."
+    Item:
+    - "&7'...'"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eApply this skin to your backpack."
+    No-permission-message: "&cYou don't have permission to purchase this skin! Purchase a rank on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cYou cannot afford this skin :("
+    Cannot-apply-permission: "&cYou cannot apply this skin! You require &a[VIP]&c rank, purchase it on &bstore.yournetwork.net&c!"
+  orc-skin:
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDg1YjQxMGExZTkxZDExZjFjY2ZjYTM0OTk3ZTE0NmQxYmU3MWY3MjRmYzI5ZTdkZjQ1N2E4NTM4YTI5ZjViZiJ9fX0="
+    Displayname: "&2&lOrc Skin"
+    #Permission to allow players buy this skin. Set to "none" to not require permission.
+    Permission: "betterbackpacks.skin.orc"
+    Strict: false
+    Price: 15000
+    Custom-model-data: 0
+    Rename: "&2&lOrc backpack"
+    Shop-lore:
+    - "&7Ogggggggggggggggggggggggggg!"
+    - "&7Price: &a{PRICE}"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eClick to purchase."
+    Item:
+    - "&7Ogggggggggggggggggggggggggg!"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eApply this skin to your backpack."
+    No-permission-message: "&cYou don't have permission to purchase this skin! Purchase a rank on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cYou cannot afford this skin :("
+    Cannot-apply-permission: "&cYou cannot apply this skin! You require &a[VIP]&c rank, purchase it on &bstore.yournetwork.net&c!"
+  red-ranger-skin:
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjM3MDZkNmYwODBmMmEwMmViNTM1ZmMwNGYzMGYwY2QwODlmMjgyOTU1MzQ4ZTAzMDFiYjZkZWRlZDU4NmUwMyJ9fX0="
+    Displayname: "&c&lRed Ranger Skin"
+    #Permission to allow players buy this skin. Set to "none" to not require permission.
+    Permission: "betterbackpacks.skin.red-ranger"
+    Strict: false
+    Price: 15000
+    Custom-model-data: 0
+    Rename: "&c&lRed Ranger backpack"
+    Shop-lore:
+    - "&7Good always wins!"
+    - "&7Price: &a{PRICE}"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eClick to purchase."
+    Item:
+    - "&7Good always wins!"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eApply this skin to your backpack."
+    No-permission-message: "&cYou don't have permission to purchase this skin! Purchase a rank on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cYou cannot afford this skin :("
+    Cannot-apply-permission: "&cYou cannot apply this skin! You require &a[VIP]&c rank, purchase it on &bstore.yournetwork.net&c!"
+  pikachu-skin:
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjdlNWZlNGU2NThmNjhlNTYxNGUwYTg3ZTYzMzNmMDJiZjBhNWFjMjFmYTFkOGY0NjM5NjI2MmY1YTBmYTljZSJ9fX0="
+    Displayname: "&e&lPikachu Skin"
+    #Permission to allow players buy this skin. Set to "none" to not require permission.
+    Permission: "betterbackpacks.skin.pikachu"
+    Strict: false
+    Price: 45000
+    Custom-model-data: 0
+    Rename: "&e&lPikachu backpack"
+    Shop-lore:
+    - "&7Pika! Pika Pika!"
+    - "&7Price: &a{PRICE}"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eClick to purchase."
+    Item:
+    - "&7Pika! Pika Pika!"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eApply this skin to your backpack."
+    No-permission-message: "&cYou don't have permission to purchase this skin! Purchase a rank on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cYou cannot afford this skin :("
+    Cannot-apply-permission: "&cYou cannot apply this skin! You require &a[VIP]&c rank, purchase it on &bstore.yournetwork.net&c!"
+  voltorb-skin:
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2RjYzlmYWU5MTU1ZWI5NGRjMWQxNTE5YzQ1MjdiZTQ4ZmNjN2FjZTg5ZWIzNTY2ZmM1MjVmMTk1YmZkMDRmMiJ9fX0="
+    Displayname: "&c&lVoltorb  Skin"
+    #Permission to allow players buy this skin. Set to "none" to not require permission.
+    Permission: "betterbackpacks.skin.voltorb"
+    Strict: false
+    Price: 15000
+    Custom-model-data: 0
+    Rename: "&c&lVoltorb backpack"
+    Shop-lore:
+    - "&7Voltorb! Voltorb! Voltorb!"
+    - "&7Price: &a{PRICE}"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eClick to purchase."
+    Item:
+    - "&7Voltorb! Voltorb! Voltorb!"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eApply this skin to your backpack."
+    No-permission-message: "&cYou don't have permission to purchase this skin! Purchase a rank on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cYou cannot afford this skin :("
+    Cannot-apply-permission: "&cYou cannot apply this skin! You require &a[VIP]&c rank, purchase it on &bstore.yournetwork.net&c!"
+  hunter-skin:
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjU5MWUyMjNkMmZkZDI3NjU0ODExN2Q3OGE4ODBlMTI5MmEyZjMyN2JlN2VmNGQyNmFmNTE0ZmU0YWY3YTY5In19fQ=="
+    Displayname: "&5&lHaunter Skin"
+    #Permission to allow players buy this skin. Set to "none" to not require permission.
+    Permission: "betterbackpacks.skin.hunter"
+    Strict: false
+    Price: 25000
+    Custom-model-data: 0
+    Rename: "&5&lHaunter backpack"
+    Shop-lore:
+    - "&7Haunter! Haunter! Haunter!"
+    - "&7Price: &a{PRICE}"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eClick to purchase."
+    Item:
+    - "&7Haunter! Haunter! Haunter!"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eApply this skin to your backpack."
+    No-permission-message: "&cYou don't have permission to purchase this skin! Purchase a rank on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cYou cannot afford this skin :("
+    Cannot-apply-permission: "&cYou cannot apply this skin! You require &a[VIP]&c rank, purchase it on &bstore.yournetwork.net&c!"
+  articuno-skin:
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzRiZDg5ZGM5NTI4Y2UyZDljMjk3MjU0YzMyMDUwNjE5NTFlYjZiMmYwNjNhZTg0ZGFmY2Q0ZWY3OTc4In19fQ=="
+    Displayname: "&b&lArticuno Skin"
+    #Permission to allow players buy this skin. Set to "none" to not require permission.
+    Permission: "betterbackpacks.skin.articuno"
+    Strict: false
+    Price: 45000
+    Custom-model-data: 0
+    Rename: "&b&lArticuno backpack"
+    Shop-lore:
+    - "&7Articuno! Articuno! Articuno!"
+    - "&7Price: &a{PRICE}"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eClick to purchase."
+    Item:
+    - "&7Articuno! Articuno! Articuno!"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eApply this skin to your backpack."
+    No-permission-message: "&cYou don't have permission to purchase this skin! Purchase a rank on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cYou cannot afford this skin :("
+    Cannot-apply-permission: "&cYou cannot apply this skin! You require &a[VIP]&c rank, purchase it on &bstore.yournetwork.net&c!"
+  caterpie-skin:
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGFhMjUzZmFkZDg5N2E2YTE5YWFkMzk1OWM0NGZiNGNlYWM1YThjYTU4OGYxMGU1MmVjOGNmYmI0MTQ0YzZkIn19fQ=="
+    Displayname: "&a&lCaterpie Skin"
+    #Permission to allow players buy this skin. Set to "none" to not require permission.
+    Permission: "betterbackpacks.skin.caterpie"
+    Strict: false
+    Price: 20000
+    Custom-model-data: 0
+    Rename: "&a&lCaterpie backpack"
+    Shop-lore:
+    - "&7Cri cri cri!"
+    - "&7Price: &a{PRICE}"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eClick to purchase."
+    Item:
+    - "&7Cri cri cri!"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eApply this skin to your backpack."
+    No-permission-message: "&cYou don't have permission to purchase this skin! Purchase a rank on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cYou cannot afford this skin :("
+    Cannot-apply-permission: "&cYou cannot apply this skin! You require &a[VIP]&c rank, purchase it on &bstore.yournetwork.net&c!"
+  slowpoke-skin:
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTQ0MzhkNDVjN2Y3N2I0ZWExNDY2MDRlNGYyYTkyZTViMWZjZmUxZTdlYzRjMTE3ZmM5YTlhMDIwMGRhYzNlNyJ9fX0="
+    Displayname: "&d&lSlowpoke Skin"
+    #Permission to allow players buy this skin. Set to "none" to not require permission.
+    Permission: "betterbackpacks.skin.slowpoke"
+    Strict: false
+    Price: 25000
+    Custom-model-data: 0
+    Rename: "&d&lSlowpoke backpack"
+    Shop-lore:
+    - "&7Sloooooooowwww.."
+    - "&7Price: &a{PRICE}"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eClick to purchase."
+    Item:
+    - "&7Sloooooooowwww.."
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eApply this skin to your backpack."
+    No-permission-message: "&cYou don't have permission to purchase this skin! Purchase a rank on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cYou cannot afford this skin :("
+    Cannot-apply-permission: "&cYou cannot apply this skin! You require &a[VIP]&c rank, purchase it on &bstore.yournetwork.net&c!"
+  magikarp-skin:
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTQ4MDc0OTNkZWYzZWZkZjNjYzQ4MjI3NmNlYTE2ZWVlM2UwNTIxMTgwZjY0ZDVlNThmNjg1MTBkYWY3YjQ0MyJ9fX0="
+    Displayname: "&c&lMagikarp Skin"
+    #Permission to allow players buy this skin. Set to "none" to not require permission.
+    Permission: "betterbackpacks.skin.magikarp"
+    Strict: false
+    Price: 25000
+    Custom-model-data: 0
+    Rename: "&c&lMagikarp backpack"
+    Shop-lore:
+    - "&7Blop blop blop!"
+    - "&7Price: &a{PRICE}"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eClick to purchase."
+    Item:
+    - "&7Blop blop blop!"
+    - ""
+    - "&7Your backpack will be renamed"
+    - "&7to: &r{RENAME}&r"
+    - ""
+    - "&eApply this skin to your backpack."
+    No-permission-message: "&cYou don't have permission to purchase this skin! Purchase a rank on &bstore.yournetwork.net&c!"
+    Not-enough-money-message: "&cYou cannot afford this skin :("
+    Cannot-apply-permission: "&cYou cannot apply this skin! You require &a[VIP]&c rank, purchase it on &bstore.yournetwork.net&c!"
+  strawberry-skin:
+    Texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDE1MGZkOGJmNzc4ZjA1OWZiOTkwYzk3Y2U3YzA2ZTE5NWJhYWI5MzU5YTc5MjU0Zjc0MTRiYTI0M2Y0Y2MwYSJ9fX0=
+    Displayname: '&c&lStrawberry Skin'
+    Permission: betterbackpacks.skin.magikarp
+    Strict: false
+    Price: 35000
+    Rename: '&c&lStrawberry backpack'
+    Shop-lore:
+    - '&7Strawberry lover?'
+    - '&7Price: &a{PRICE}'
+    - ''
+    - '&7Your backpack will be renamed'
+    - '&7to: &r{RENAME}&r'
+    - ''
+    - '&eClick to purchase.'
+    Item:
+    - '&7Strawberry lover?'
+    - ''
+    - '&7Your backpack will be renamed'
+    - '&7to: &r{RENAME}&r'
+    - ''
+    - '&eApply this skin to your backpack.'
+    No-permission-message: '&cYou don''t have permission to purchase this skin! Purchase
+      a rank on &bstore.yournetwork.net&c!'
+    Not-enough-money-message: '&cYou cannot afford this skin :('
+    Cannot-apply-permission: '&cYou cannot apply this skin! You require &a[VIP]&c
+      rank, purchase it on &bstore.yournetwork.net&c!'
+    Custom-model-data: 0
+  gucchi-skin:
+    Texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTIwOGY1ODk3ZjEyZTVmY2IyZThiNDM4MWY1NDQ1YTc3MTFlODQ3MjFlYzRhN2ZjMTAxZDViNzQwYjg2ZjhmYSJ9fX0=
+    Displayname: '&2&lGucci Skin'
+    Permission: betterbackpacks.skin.magikarp
+    Strict: false
+    Price: 100000
+    Rename: '&2&lGucci backpack'
+    Shop-lore:
+    - '&7Love Gucci stuff?'
+    - '&7Price: &a{PRICE}'
+    - ''
+    - '&7Your backpack will be renamed'
+    - '&7to: &r{RENAME}&r'
+    - ''
+    - '&eClick to purchase.'
+    Item:
+    - '&7Love Gucci stuff?'
+    - ''
+    - '&7Your backpack will be renamed'
+    - '&7to: &r{RENAME}&r'
+    - ''
+    - '&eApply this skin to your backpack.'
+    No-permission-message: '&cYou don''t have permission to purchase this skin! Purchase
+      a rank on &bstore.yournetwork.net&c!'
+    Not-enough-money-message: '&cYou cannot afford this skin :('
+    Cannot-apply-permission: '&cYou cannot apply this skin! You require &a[VIP]&c
+      rank, purchase it on &bstore.yournetwork.net&c!'
+    Custom-model-data: 0
+  ender-skin:
+    Texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2Y5NzdlNjkxNjRlY2RkZGJkMWY5MzUzNjUzYjY5MDM1YWQyNTE3YjA4MjJjYTZiZTQwY2ZiYjdhYTIyMjdlNCJ9fX0=
+    Displayname: '&5&lEnder Skin'
+    Permission: betterbackpacks.skin.ender-skin
+    Strict: false
+    Price: 25000
+    Rename: '&5&lEnder backpack'
+    Shop-lore: #Texture pack is NOT included with the plugin.
+    - '&7Backpack with custom model!'
+    - '&7Price: &a{PRICE}'
+    - ''
+    - '&7Your backpack will be renamed'
+    - '&7to: &r{RENAME}&r'
+    - ''
+    - '&eClick to purchase.'
+    Item: #Texture pack is NOT included with the plugin.
+    - '&7Backpack with custom model!'
+    - ''
+    - '&7Your backpack will be renamed'
+    - '&7to: &r{RENAME}&r'
+    - ''
+    - '&eApply this skin to your backpack.'
+    No-permission-message: '&cYou don''t have permission to purchase this skin! Purchase
+      a rank on &bstore.yournetwork.net&c!'
+    Not-enough-money-message: '&cYou cannot afford this skin :('
+    Cannot-apply-permission: '&cYou cannot apply this skin! You require &a[VIP]&c
+      rank, purchase it on &bstore.yournetwork.net&c!'
+    Custom-model-data: 0
+  purple-model-skin:
+    Texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjE4N2M3MzJhYTM5ZDI5MTM0NjUwYjZhNzJjNmY0MWI5OTA4NWEyNmVjNWU1MTNiYTE4YzQwZDVlY2E5ZTY5YyJ9fX0=
+    Displayname: '&5&lPurple Model Skin'
+    Permission: betterbackpacks.skin.purple-mode-skin
+    Strict: false
+    Price: 25000
+    Rename: '&5&lPurple Model backpack'
+    Shop-lore: #Texture pack is NOT included with the plugin.
+    - '&7Purple backpack with custom model!'
+    - '&7Price: &a{PRICE}'
+    - ''
+    - '&7Your backpack will be renamed'
+    - '&7to: &r{RENAME}&r'
+    - ''
+    - '&eClick to purchase.'
+    Item: #Texture pack is NOT included with the plugin.
+    - '&7Purple backpack with custom model!'
+    - ''
+    - '&7Your backpack will be renamed'
+    - '&7to: &r{RENAME}&r'
+    - ''
+    - '&eApply this skin to your backpack.'
+    No-permission-message: '&cYou don''t have permission to purchase this skin! Purchase
+      a rank on &bstore.yournetwork.net&c!'
+    Not-enough-money-message: '&cYou cannot afford this skin :('
+    Cannot-apply-permission: '&cYou cannot apply this skin! You require &a[VIP]&c
+      rank, purchase it on &bstore.yournetwork.net&c!'
+    Custom-model-data: 0
+  glare-skin:
+    Texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTNhNmY0NWI5M2JhYWYyNTk0NTE4YjU2NjJhMmE4MzRhN2IwYzViODZmZDZlMTNmZDBlYjU2MDQwZDdmNTJiZiJ9fX0=
+    Displayname: '&2&lGlare Skin'
+    Permission: betterbackpacks.skin.glare-skin
+    Strict: false
+    Price: 30000
+    Rename: '&2&lGlare backpack'
+    Shop-lore: #Texture pack is NOT included with the plugin.
+    - '&7Glare lover? Me too!'
+    - '&7Price: &a{PRICE}'
+    - ''
+    - '&7Your backpack will be renamed'
+    - '&7to: &r{RENAME}&r'
+    - ''
+    - '&eClick to purchase.'
+    Item: #Texture pack is NOT included with the plugin.
+    - '&7Glare lover? Me too!'
+    - ''
+    - '&7Your backpack will be renamed'
+    - '&7to: &r{RENAME}&r'
+    - ''
+    - '&eApply this skin to your backpack.'
+    No-permission-message: '&cYou don''t have permission to purchase this skin! Purchase
+      a rank on &bstore.yournetwork.net&c!'
+    Not-enough-money-message: '&cYou cannot afford this skin :('
+    Cannot-apply-permission: '&cYou cannot apply this skin! You require &a[VIP]&c
+      rank, purchase it on &bstore.yournetwork.net&c!'
+    Custom-model-data: 0
+  burger-skin:
+    Texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTZlZjFjMjVmNTE2ZjJlN2Q2Zjc2Njc0MjBlMzNhZGNmM2NkZjkzOGNiMzdmOWE0MWE4YjM1ODY5ZjU2OWIifX19
+    Displayname: '&6&lBurger Skin'
+    Permission: betterbackpacks.skin.burger-skin
+    Strict: false
+    Price: 20000
+    Rename: '&6&lBurger backpack'
+    Shop-lore: #Texture pack is NOT included with the plugin.
+    - '&7I love burgers!!!'
+    - '&7Price: &a{PRICE}'
+    - ''
+    - '&7Your backpack will be renamed'
+    - '&7to: &r{RENAME}&r'
+    - ''
+    - '&eClick to purchase.'
+    Item: #Texture pack is NOT included with the plugin.
+    - '&7I love burgers!!!'
+    - ''
+    - '&7Your backpack will be renamed'
+    - '&7to: &r{RENAME}&r'
+    - ''
+    - '&eApply this skin to your backpack.'
+    No-permission-message: '&cYou don''t have permission to purchase this skin! Purchase
+      a rank on &bstore.yournetwork.net&c!'
+    Not-enough-money-message: '&cYou cannot afford this skin :('
+    Cannot-apply-permission: '&cYou cannot apply this skin! You require &a[VIP]&c
+      rank, purchase it on &bstore.yournetwork.net&c!'
+    Custom-model-data: 0
+  penguin-skin:
+    Texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmRmOWJiNGNmNjZhMDJhNWIzODNmN2RhZDFiNWIzMGIzOThiODMzNzQ4NzE2YmMyYWUwYjU0YzRhMmM0YTMzYyJ9fX0=
+    Displayname: '&6&lPenguin Skin'
+    Permission: betterbackpacks.skin.penguin-skin
+    Strict: false
+    Price: 20000
+    Rename: '&6&lPenguin backpack'
+    Shop-lore: #Texture pack is NOT included with the plugin.
+    - '&7Club Penguin lover?'
+    - '&7Price: &a{PRICE}'
+    - ''
+    - '&7Your backpack will be renamed'
+    - '&7to: &r{RENAME}&r'
+    - ''
+    - '&eClick to purchase.'
+    Item: #Texture pack is NOT included with the plugin.
+    - '&7Club Penguin lover?'
+    - ''
+    - '&7Your backpack will be renamed'
+    - '&7to: &r{RENAME}&r'
+    - ''
+    - '&eApply this skin to your backpack.'
+    No-permission-message: '&cYou don''t have permission to purchase this skin! Purchase
+      a rank on &bstore.yournetwork.net&c!'
+    Not-enough-money-message: '&cYou cannot afford this skin :('
+    Cannot-apply-permission: '&cYou cannot apply this skin! You require &a[VIP]&c
+      rank, purchase it on &bstore.yournetwork.net&c!'
+    Custom-model-data: 0
+  strider-skin:
+    Texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDAxYzgxNjU3ZGMyNjIyODE3ZmYzZmZkOGNiZjkwZTRlMjlkMGYxYjIzM2JlNzk1YzRjM2RlYTlhYWZhZjA1In19fQ==
+    Displayname: '&c&lStrider Skin'
+    Permission: betterbackpacks.skin.strider-skin
+    Strict: false
+    Price: 20000
+    Rename: '&c&lStrider backpack'
+    Shop-lore: #Texture pack is NOT included with the plugin.
+    - '&7Walking in lava! YEAH!'
+    - '&7Price: &a{PRICE}'
+    - ''
+    - '&7Your backpack will be renamed'
+    - '&7to: &r{RENAME}&r'
+    - ''
+    - '&eClick to purchase.'
+    Item: #Texture pack is NOT included with the plugin.
+    - '&7Walking in lava! YEAH!'
+    - ''
+    - '&7Your backpack will be renamed'
+    - '&7to: &r{RENAME}&r'
+    - ''
+    - '&eApply this skin to your backpack.'
+    No-permission-message: '&cYou don''t have permission to purchase this skin! Purchase
+      a rank on &bstore.yournetwork.net&c!'
+    Not-enough-money-message: '&cYou cannot afford this skin :('
+    Cannot-apply-permission: '&cYou cannot apply this skin! You require &a[VIP]&c
+      rank, purchase it on &bstore.yournetwork.net&c!'
+    Custom-model-data: 0
+  hello-kitty-skin:
+    Texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWYwYjM3NzVjYzAwMmUyZmU0YTFjNGEyYzExOGU3MzMxNWNjNGVjMzFmZjc2ZDFlNzZhZmI4OWNkOWJhZGE1In19fQ==
+    Displayname: '&d&lHello Kitty Skin'
+    Permission: betterbackpacks.skin.hello-kitty-skin
+    Strict: false
+    Price: 20000
+    Rename: '&d&lHello Kitty backpack'
+    Shop-lore: #Texture pack is NOT included with the plugin.
+    - '&7We all love Hello Kitty!'
+    - '&7Price: &a{PRICE}'
+    - ''
+    - '&7Your backpack will be renamed'
+    - '&7to: &r{RENAME}&r'
+    - ''
+    - '&eClick to purchase.'
+    Item: #Texture pack is NOT included with the plugin.
+    - '&7We all love Hello Kitty!'
+    - ''
+    - '&7Your backpack will be renamed'
+    - '&7to: &r{RENAME}&r'
+    - ''
+    - '&eApply this skin to your backpack.'
+    No-permission-message: '&cYou don''t have permission to purchase this skin! Purchase
+      a rank on &bstore.yournetwork.net&c!'
+    Not-enough-money-message: '&cYou cannot afford this skin :('
+    Cannot-apply-permission: '&cYou cannot apply this skin! You require &a[VIP]&c
+      rank, purchase it on &bstore.yournetwork.net&c!'
+    Custom-model-data: 0
+  marvin-the-martian-skin:
+    Texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWFmMTY4NDUwNmRkNDEwMGE3ODFkNjAwNjYyMzU5M2U1MTVjM2U0OTAwMjBhNWExODNkODE0YmQ4Y2I5NGQ2ZiJ9fX0=
+    Displayname: '&a&lMarvin The Martian Skin'
+    Permission: betterbackpacks.skin.marvin-the-martian-skin
+    Strict: false
+    Price: 20000
+    Rename: '&a&lMarvin The Martian backpack'
+    Shop-lore: #Texture pack is NOT included with the plugin.
+    - '&7A skin from Mars?'
+    - '&7Price: &a{PRICE}'
+    - ''
+    - '&7Your backpack will be renamed'
+    - '&7to: &r{RENAME}&r'
+    - ''
+    - '&eClick to purchase.'
+    Item: #Texture pack is NOT included with the plugin.
+    - '&7A skin from Mars?'
+    - ''
+    - '&7Your backpack will be renamed'
+    - '&7to: &r{RENAME}&r'
+    - ''
+    - '&eApply this skin to your backpack.'
+    No-permission-message: '&cYou don''t have permission to purchase this skin! Purchase
+      a rank on &bstore.yournetwork.net&c!'
+    Not-enough-money-message: '&cYou cannot afford this skin :('
+    Cannot-apply-permission: '&cYou cannot apply this skin! You require &a[VIP]&c
+      rank, purchase it on &bstore.yournetwork.net&c!'
+    Custom-model-data: 0
+#TEMPLATE TO CREATE NEW SKINS!
+#  word-skin:
+#    Texture: "TEXTURE"
+#    Displayname: "&e&lName Skin"
+#    #Permission to allow players buy this skin. Set to "none" to not require permission.
+#    Permission: "betterbackpacks.skin.permission"
+#    Price: 10000
+#    Custom-model-data: 0
+#    Rename: "&e&lName backpack"
+#    Shop-lore:
+#    - "&7Description!"
+#    - ""
+#    - "&7Your backpack will be renamed"
+#    - "&7to: &r{RENAME}&r"
+#    - ""
+#    - "&eClick to purchase."
+#    Item:
+#    - "&7Description!"
+#    - ""
+#    - "&7Your backpack will be renamed"
+#    - "&7to: &r{RENAME}&r"
+#    - ""
+#    - "&eApply this skin to your backpack."
+#    No-permission-message: "&cYou don't have permission to purchase this skin! Purchase a rank on &bstore.yournetwork.net&c!"
+#    Not-enough-money-message: "&cYou cannot afford this skin :("
+#    Cannot-apply-permission: "&cYou cannot apply this skin! You require &a[VIP]&c rank, purchase it on &bstore.yournetwork.net&c!"
