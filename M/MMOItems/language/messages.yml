@@ -1,53 +1,61 @@
-received-item: Has recibido &e#amount# &6#item#.
-hands-too-charged: Tienes las manos ocupadas.
-spell-on-cooldown: '#progress# &eDebes esperar #left# segundo#s# antes de hacer este hechizo.'
-item-on-cooldown: '¡Objeto en enfriamiento! Por favor espera #left#s.'
-not-enough-perms-command: No tienes permisos.
-not-enough-levels: ¡No tienes el nivel necesario para usar este objeto!
-soulbound-restriction: ¡Este objeto está vinculado a otro usuario, no puedes usarlo!
-not-enough-perms: No tienes permisos para usar esto.
-wrong-class: ¡No perteneces a la clase necesaria!
+received-item: Has recibido &6#item#&e#amount#.
+hands-too-charged: No puedes hacer nada, tus manos están muy cargadas.
+spell-on-cooldown: '#progress# &eDebes esperar #left# segundo#s# antes de lanzar este
+  hechizo.'
+item-on-cooldown: '¡Este item está en enfriamiento! Por favor, espera #left#s.'
+not-enough-perms-command: No tienes suficientes permisos.
+not-enough-levels: ¡No tienes suficientes niveles para usar este item!
+soulbound-restriction: ¡Este item está enlazado a otro jugador, no puedes usarlo!
+not-enough-perms: No tienes suficientes permisos para usar esto.
+wrong-class: ¡No tienes la clase correcta!
 not-enough-mana: ¡No tienes suficiente maná!
-not-enough-stamina: ¡No tienes suficiente energía!
-not-enough-attribute: 'No tienes suficientes puntos de #attribute#!'
-not-enough-profession: 'No tienes el nivel necesario de #profession#!'
-unidentified-item: ¡No puedes usar un objeto sin identificar!
-zero-durability: El objeto que intentas usar está roto, primero debes repararlo.
-cannot-identify-stacked-items: Solo puedes identificar un objeto al mismo tiempo.
-successfully-identified: Has identificado &6#item# &esatisfactoriamente.
-successfully-deconstructed: Has desarmado &6#item# &esin problemas.
-gem-stone-applied: Conseguiste colocar una gema &6#gem#&e en &6#item#&e sin complicaciones.
-gem-stone-broke: ¡&6#gem#&c se ha roto al intentar aplicarla a &6#item#&c.
-repaired-item: Lograste reparar &6#item#&e por &6#amount# &eusos.
-skin-applied: Aplicaste correctamente el aspecto a &6#item#&e!
-skin-removed: Se ha removido satisfactoriamente el aspecto de &6#item#&e!
-skin-broke: El aspecto se ha roto al intentar aplicarlo a &6#item#&c mas suerte la próxima.
-skin-rejected: ¡&6#item#&c ya tiene un aspecto aplicado!
-skin-incompatible: El aspecto que intentas aplicar no es compatible con &6#item#&c!
-random-unsocket-gem-too-old: La gema tiene un vinculo muy fuerte con tu objeto. No se la ha podido remover.
-random-unsocket-success: '&aHas removido &3#gem# &ade tu &6#item#&a!'
-cant-bind-item: 'Este objeto está vinculado a #player# por un vinculo de alma nivel #level#. Deberás romper este vinculo primero.'
-no-soulbound: Este objeto no está vinculado a nadie.
-cant-bind-stacked: No puedes vincular objetos apilados.
-unsuccessful-soulbound: El vinculo que has intentado aplicar ha fallado.
-unsuccessful-soulbound-break: No has podido destruir el vinculo.
-low-soulbound-level: 'El vinculo de este objeto es de nivel #level#. Necesitarás un objeto de mayor nivel para poder romper el vinculo.'
-successfully-bind-item: Aplicaste sin problemas un vinculo de nivel &6#level# &ea&6#item#&e.
-successfully-break-bind: Has conseguido romper el vinculo de alma nivel &6#level# &edel objeto!
-soulbound-item-lore: '&4Vinculado a #player#//&4Vinculo de alma Nvl #level#'
-cant-upgraded-stack: No puedes mejorar objetos apilados.
-max-upgrades-hit: Este objeto alcanzó su nivel máximo.
-upgrade-fail: La mejora del objeto ha fallado, el consumible se ha roto.
-upgrade-fail-station: La mejora del objeto ha fallado, has perdido los materiales.
-wrong-upgrade-reference: Este objeto no puede ser mejorado con ese consumible.
-upgrade-success: ¡Se mejoró con éxito su &6#item#&e!
-not-have-item-upgrade: ¡No posees el objeto para realizar la mejora!
-upgrade-requirement-safe-check: No tienes los requerimientos para mejorar este objeto.
-death-downgrading: '&cSu &6#item#&c ha sido dañado seriamente en esa pelea...'
-not-enough-materials: No posee los materiales suficientes para la fabricación de este objeto.
-conditions-not-met: No puedes fabricar este objeto.
-crafting-canceled: Has cancelado la fabricación del objeto.
-crafting-queue-full: La cola de elaboración está llena. Espera unos minutos.
+not-enough-stamina: ¡No tienes suficiente estamina!
+not-enough-attribute: '¡No tienes suficiente #attribute#!'
+not-enough-profession: '¡No tienes suficientes niveles de #profession#!'
+unidentified-item: ¡No puedes usar un item sin identificar!
+zero-durability: El item está roto, primero necesitas repararlo.
+cannot-identify-stacked-items: Solo puedes identificar un item a la vez.
+successfully-identified: Has identificado correctamente &6#item#&e.
+successfully-deconstructed: Has destruido correctamente &6#item#&e.
+gem-stone-applied: Has aplicado correctamente &6#gem#&e en tu &6#item#&e.
+gem-stone-broke: Tu piedra preciosa &6#gem#&c se ha roto al tratar de aplicarla en
+  &6#item#&c.
+repaired-item: Has reparado correctamente &6#item#&e para &6#amount# &eusos.
+skin-applied: Has aplicado con éxito la skin en tu &6#item#&e!
+skin-removed: Has eliminado con éxito la skin de tu &6#item#&e!
+skin-broke: Tu skin se rompió al intentar aplicarlo en tu &6#item#&c.
+skin-rejected: Ya se ha aplicado una skin en tu &6#item#&c!
+skin-incompatible: Esta skin no es compatible con tu &6#item#&c!
+random-unsocket-gem-too-old: Las gemas se han unido fuertemente a tu item. No se puede
+  quitar.
+random-unsocket-success: '&aHas quitado &3#gem# &ade tu &6#item#&a!'
+cant-bind-item: 'Este item está enlazado a #player# con un nivel #level# de enlace
+  de alma. Tienes que romper este enlace de alma primero.'
+no-soulbound: Este item no está enlazado a nadie.
+cant-bind-stacked: No puede enlazar items en stack.
+unsuccessful-soulbound: Tu enlace ha fallado.
+unsuccessful-soulbound-break: No puedes romper el enlace de alma.
+low-soulbound-level: 'El enlace de alma de este item es de nivel #level#. Necesitarás
+  un nivel más alto de enlace de alma en tu consumible para romper este enlace de
+  alma.'
+successfully-bind-item: Has aplicado con éxito un Lvl &6#level# &ede enlace de alma
+  a tu &6#item#&e.
+successfully-break-bind: Has roto correctamente un item de enlace de alma de lvl &6#level#
+  &e!
+soulbound-item-lore: '&4Enlazado al jugador #player#//&4Lvl #level# de Enlace de alma'
+cant-upgraded-stack: No puedes mejorar items en stack.
+max-upgrades-hit: Este item no se puede mejorar más.
+upgrade-fail: Tu mejora ha fallado y has perdido tu consumible.
+upgrade-fail-station: Tu mejora ha fallado y has perdido tus materiales.
+wrong-upgrade-reference: No puedes mejorar este item sin un consumible.
+upgrade-success: Has mejorado correctamente tu &6#item#&e!
+not-have-item-upgrade: ¡No tienes el item para mejorar!
+upgrade-requirement-safe-check: No reúnes los requisitos para mejorar este item.
+death-downgrading: '&cTu &6#item#&c está se ha dañado severamente en esta batalla...'
+not-enough-materials: No tienes suficientes materiales para fabricar este item.
+conditions-not-met: No puedes fabricar este item.
+crafting-canceled: Has cancelado una receta de crafteo.
+crafting-queue-full: La cola de elaboración está actualmente llena.
 station-big-stack: 'Cantidad elaborada: #size#'
 recipe-preview: Vista previa de la receta
-unable-to-repair: Este objeto no puede ser reparado usando este consumible.
+unable-to-repair: ¡Este item no puede ser reparado por este consumible!
