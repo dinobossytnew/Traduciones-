@@ -1,0 +1,141 @@
+#
+# Looking to change a specific message? Hold cntrl+f and search for the text you are looking to change!
+#
+
+
+
+#
+# -- Cell Messages --
+#
+# Placeholders:
+#               %CELL%   - Returns the name of the cell
+#               %PREFIX% - Returns the name of the plugin, specified in config.yml
+#
+
+cell_interact_deny: "%PREFIX%&cNo puedes interactuar con esta celda."
+cell_break_deny: "&cTu no puedes romper bloques en la celda."
+cell_place_deny: "&cTu no puedes colocar bloques en la celda."
+cell_interact_door_deny: "%PREFIX%&cNo puedes abrir la puerta de la celda!"
+cell_no_permissions_to_rent: "%PREFIX%&cNo tiene el permiso necesario para alquilar esta celda!"
+
+#
+# -- Command messages --
+#
+# Placeholders:
+#               %PREFIX% - Returns the name of the plugin, specified in config.yml
+#
+cell_command: "%PREFIX%&a¡Compre una celda para utilizar este comando!" #If they type /cell and own no cells
+cell_command_own_multiple_cells: "%PREFIX%&aTipo /cell panel <cell> para abrir panel celda" #If they type /cell and own multiple cells
+cell_command_home_no_home: "%PREFIX%&cNo tienes una casa a la que teletransportarte" #Use other home messages located in the GUI Messages to modify other teleport home messages
+cell_auto_none_found: "%PREFIX%&cNo se han encontrado celdas disponibles para alquilar!"
+cell_auto_teleport: "%PREFIX%&aHas sido teletransportado a la celda %CELL%!"
+cell_auto_teleport_cooldown: "%PREFIX%&aSerás teletransportado en %TIMEOUT% segundos"
+cell_auto_no_permission: "%PREFIX%&c¡No tienes permiso para hacer auto celda!"
+#
+# -- Sign Messages --
+# Placeholders:
+#               %CELL%      - Returns the name of the cell
+#               %LENGTH%    - Returns the time left in the cell, as specified in the config.yml
+#               %DAYS%      - Days left on the cell
+#               %HOURS%     - Hours left on the cell
+#               %MINS%      - Minutes left on the cell
+#               %PRICE%     - Cost of the cell
+#               %OWNER%     - Owner of the cell
+Sign:
+  unclaimed:
+  - '&cRENTA'
+  - '&c%CELL%'
+  - ' '
+  - '&e$&6%PRICE%'
+  claimed:
+  - '&4%CELL%'
+  - '&6%OWNER%'
+  - 'Propiedad hasta:'
+  - '%LENGTH%'
+
+#
+# -- GUI Messages --
+# Placeholders: (For all messages)
+#               %PREFIX% - Returns the name of the plugin, specified in config.yml
+#               (For certain messages)
+#               %RANK% - Returns the rank
+#               %PLAYER% - Returns the player
+#               %TIMEOUT% - Returns the timeout for the door
+#               %REQUIREDFUNDS% - The required funds for rent / purchasing a cell
+#               %DAYS% - The days they have extended rent by
+#               %MONEYBACK% - The money back from unclaiming a cell
+#               %LOEWESTRANK% - The lowest rank
+
+gui_set_rank_successful: "%PREFIX%&aEl jugador %PLAYER% es nuevo %RANK%"
+gui_set_rank_removed: "%PREFIX%&cEl jugador %PLAYER% ha sido removido de tu celda!"
+door_set_seconds_plus: "%PREFIX%&a+1 &2se añadio a la puerta tiempo &e(%TIMEOUT%)"
+door_set_seconds_minus: "%PREFIX%&4-1 &cse le saco a la puerta tiempo &e(%TIMEOUT%)"
+door_max_seconds: "%PREFIX%&cNo se puede tener un tiempo de espera superior a %TIMEOUT% segundos en la puerta!"
+door_lowest_seconds: "%PREFIX%&cNo se puede tener un tiempo de espera inferior a 1 segundo en la puerta!"
+rent_over_maximum_allowed: "%PREFIX%&cLo máximo que puedes alquilar tu celda es 28 días!"
+rent_not_enough_money: "%PREFIX%&cNo dispone de los fondos necesarios &e($%REQUIREDFUNDS%) &cpara hacer esto!"
+rent_extended: "%PREFIX%&aha ampliado el alquiler en &2%DAYS% &adia(s)"
+claim_not_enough_funds: "%PREFIX%&cNo dispone de los fondos necesarios &e($%REQUIREDFUNDS%) &ca do this!"
+claim_max_cells: "%PREFIX%&cNo puedes alquilar más celdas!"
+claim_max_cells_other: "%PREFIX%&cEse usuario no puede poseer más celdas!"
+claim_successful: "%PREFIX%&aAcaba de comprar la celda %CELL%!"
+unclaimed_cell: "%PREFIX%&cUsted ha reclamado su celda y ha recibido &6$&e%MONEYBACK%"
+home_teleport_not_setup: "%PREFIX%&cNo hay ninguna configuración de ubicación de teletransporte válida para estas celdas."
+home_teleport_cooldown: "%PREFIX%&ePor favor, quédese quieto para &6%TIMEOUT% &esegundos antes de teletransportarse"
+home_teleport_cancel: "%PREFIX%&cTeletransporte cancelado cuando te has movido."
+home_teleport: "%PREFIX%&aHas sido teletransportado a una celda %CELL%"
+home_teleport_no_permission: "%PREFIX%&cNo tienes permiso para visitar esta celda!"
+member_specific_cannot_set: "%PREFIX%&cNo puedes poner a un jugador en un rango superior al tuyo."
+member_specific_no_permission: "%PREFIX%&cNo tienes permiso para modificar los permisos de un jugador!"
+member_no_permission: "%PREFIX%&cNo tienes permiso para añadir/eliminar jugadores a esta celda!"
+member_add_player: "%PREFIX%&aPor favor, escribe el nombre de El jugador que deseas añadir a tu celda!"
+member_remove_player: "%PREFIX%&c¡Por favor, escribe el nombre de El jugador que deseas eliminar a tu celda!"
+member_time_expired: "%PREFIX%&aPor favor, escriba un nombre de usuario más rápido!"
+member_add_added: "%PREFIX%&e%PLAYER% &6ha sido añadidoa tu celda con el rango %LOWESTRANK%"
+member_add_already_added: "%PREFIX%&aEl miembro es ya esta añadido tu celda!"
+member_remove_not_found: "%PREFIX%&cMiembro no puede ser removido ya que no está en tu celda"
+member_remove_removed: "%PREFIX%&c%PLAYER% ha sido removido de tu celda!"
+member_not_found: "%PREFIX%&c%PLAYER% no se puede encontrar/nunca se ha conectado antes"
+member_not_enough_funds_to_add: "%PREFIX%&cNo dispone de los fondos necesarios &e($%REQUIREDFUNDS%) a añadir a estos miembros!"
+member_maximum_members_allowed: "%PREFIX%&cNo puedes añadir más miembros a tu celda."
+cannot_remove_player_with_higher_rank: "%PREFIX%&cNo puedes eliminar jugadores de la celda con un rango superior al tuyo!"
+
+#
+# -- Other stuff --
+# Placeholders:
+placeholder_no_cells_owned: "&cNo hay celdas Propias"
+#               %PREFIX% - Returns the name of the plugin, specified in config.yml
+#
+no_permission: "%PREFIX%&cno tiene permisos para ejecutar comando"
+error_occurred: "%PREFIX%&ca ocurrido un errror informe a administrador."
+
+
+#
+# -- Admin Messages --
+#
+wand_give_message: "%PREFIX%&aYou have ha sido given the celda selection tool!"
+cell_create_already_exists: "%PREFIX%&cA celda with the name %CELL% ya esta exists!"
+cell_region_invalid: "%PREFIX%&cRegion es invalid. Use /prisoncells wand a get a wand!"
+cell_region_schematic_invalid: "%PREFIX%&cWorldEdit region es invalid. Use //wand a get a wand, then use //copy a select the region"
+cell_created: "%PREFIX%&aA celda with the name %CELL% tiene ha sido created!"
+cell_reload: "%PREFIX%&aThe plugin tiene ha sido reloaded! Time took: %TIME%ms"
+cell_rename_successful: "%PREFIX%&aThe celda tiene ha sido renamed a %NEWNAME%"
+cell_does_not_exist: "%PREFIX%&cThe celda with the name %CELL% does not exist!"
+cell_schematic_saved: "%PREFIX%&aSchematic sucesfully saved for celda %CELL%"
+cell_schematic_rollback: "%PREFIX%&aSuccessfully rolled-back the celda %CELL%"
+cell_schematic_delete: "%PREFIX%&cThe schematic for %CELL% ha sido eliminada"
+cell_schematic_unknown_command: "%PREFIX%&cUnknown sub command %UNKNOWN%. Possible values are save/rollback/delete"
+cell_successfully_deleted: "%PREFIX%&cThe celda with the name &a%CELL%&c ha sido eliminada!"
+cell_door_added: "%PREFIX%&aA celda puerta for %CELL% tiene ha sido added!"
+cell_door_removed: "%PREFIX%&cA celda puerta for %CELL% tiene ha sido removed!"
+cell_door_not_found: "%PREFIX%&cA celda puerta cannot be found at the location you are looking at"
+cell_price_not_valid: "%PREFIX%&c%NUMBER% es not a valid number"
+cell_price_set: "%PREFIX%&aYou have set the price of the celda %CELL% a $%NUMBER%"
+cell_rental_set: "%PREFIX%&aYou have set the rental price of the celda %CELL% a $%NUMBER%"
+cell_sign_not_found: "%PREFIX%&cYou are not looking at a sign a add"
+cell_sign_added: "%PREFIX%&aSign tiene ha sido added!"
+home_location_set: "%PREFIX%&aHome location tiene ha sido set for celda %CELL%!"
+home_location_removed: "%PREFIX%&cHome location removido for celda %CELL%!"
+cell_resettype_changed: "%PREFIX%&cCell reset type changed a %TYPE%"
+cell_evict_successful: "%PREFIX%&cSuccessfully removido players de celda %CELL%!"
+cell_set_permission: "%PREFIX%&cSuccessfully set permission for celda %CELL% a %PERMISSION!"

@@ -1,0 +1,281 @@
+#JetsPrisonCells GUI's
+#Use 1.14 material names
+#Actions dictate what happens when the item is clicked.. Possible Actions
+                   #NONE     (Nothing happens)
+                   #CLOSE    (Closes the menu)
+                   #MEMBERS  (Opens members menu)
+                   #DOOR     (Increases/decreases the door delay)
+                   #RENT     (Opens the Rent Menu)
+                   #RENT:1   (Increases rent by the number on the right of the :)
+                   #CLAIM    (Claims the cell, as long as the user has the money)
+                   #UNCLAIM  (Unclaims the cell)
+                   #VISIT  (When clicked, the player will be teleported to the cell home)
+                   #ADDMEMBER  (When clicked, the player will be asked for a members name to add to the cell)
+                   #REMOVEMEMBER  (When clicked, the player will be asked for a members name to add to the cell)
+
+#Placeholders:
+  # %LENGTH%      The format of when the cell expires
+  # %COST%        The cost of the cell
+  # %OWNER%       The username of the owner
+  # %DOOR_DELAY%  The door delay
+  # %PLAYER%      The player
+  # %RANK%        The players rank
+
+#Menu that is shown to all players, when they right click on a cell that is available for rent
+GUI:
+  UnclaimedView:
+    title: "&eComprar una celda"
+    slots: 27
+    items:
+      fillteritem:
+        material: GRAY_STAINED_GLASS_PANE
+        slot: -1 # -1 = filler
+        name: " "
+        lore: []
+        action: NONE
+      claimitem:
+        material: CLOCK
+        slot: 13
+        name: "&6» &e&lCLICK RECLAMAR"
+        lore:
+          - " "
+          - "&7Compre esta célula para:"
+          - "&6$&e%COST%"
+        action: CLAIM
+
+#Menu that is shown to visitors when a player right clicks on a cell
+  VisitorView:
+    title: "&eInformación de la celda"
+    slots: 27
+    items:
+      fillteritem:
+        material: GRAY_STAINED_GLASS_PANE
+        slot: -1 # -1 = filler
+        name: " "
+        lore: []
+        action: NONE
+      cellrental:
+        material: CLOCK
+        slot: 11
+        name: "&6» &e&lRENTA CELDA"
+        lore:
+          - " "
+          - "&7La celda expira en:"
+          - "&e%LENGTH%"
+          - " "
+          - "&7Dueño de la celda:"
+          - "&e%OWNER%"
+        action: NONE
+      cellmembers:
+        material: NAME_TAG
+        slot: 13
+        name: "&6» &e&lCELDA MIEMBROS"
+        lore:
+          - " "
+          - "&7Click para abrir"
+          - "&7el panel de los miembros!"
+        action: MEMBERS
+      cellvisit:
+        material: BEACON
+        slot: 15
+        name: "&6» &e&lCASA CLEDA"
+        lore:
+          - " "
+          - "&7Click para volver"
+          - "&7Celda casa!"
+        action: VISIT
+
+#The GUI that is shown to the owner, or a player with the right cell permissions
+  OwnerView:
+    title: "&eCelda informacion"
+    slots: 27
+    items:
+      fillteritem:
+        material: GRAY_STAINED_GLASS_PANE
+        slot: -1 # -1 = filler
+        name: " "
+        lore: []
+        action: NONE
+      cellrental:
+        material: CLOCK
+        slot: 10
+        name: "&6» &e&lCELDA RENTA"
+        lore:
+          - " "
+          - "&7La celda expira en:"
+          - "&e%LENGTH%"
+        action: RENT
+      cellmembers:
+        material: NAME_TAG
+        slot: 11
+        name: "&6» &e&lCELDA MIEMBRO"
+        lore:
+          - " "
+          - "&7Click para abrir"
+          - "&7menu de miembros!"
+        action: MEMBERS
+      cellvisit:
+        material: BEACON
+        slot: 13
+        name: "&6» &e&lCELDA CASA"
+        lore:
+          - " "
+          - "&7Click para tp"
+          - "&7para casa celda!"
+        action: VISIT
+      celldoor:
+        material: IRON_DOOR
+        slot: 15
+        name: "&6» &e&lRETRASO DE LA PUERTA"
+        lore:
+          - " "
+          - "&7Tiempo de puerta: &a%DOOR_DELAY%"
+          - " "
+          - "&7&o(Click-Izquierdo: +1)"
+          - "&7&o(Click-Derecho: -1)"
+        action: DOOR
+      unclaim:
+        material: BARRIER
+        slot: 16
+        name: "&4» &c&lDESRECLAMAR CELDA"
+        lore:
+          - " "
+          - "&7Click para Desreclamar celda"
+          - " "
+          - "&7Tiempo restante: &e%LENGTH%"
+        action: UNCLAIM
+
+#The GUI that is shown to increase rental
+  RentalView:
+    title: "&eCelda Renta"
+    slots: 27
+    items:
+      fillteritem:
+        material: GRAY_STAINED_GLASS_PANE
+        slot: -1 # -1 = filler
+        name: " "
+        lore: []
+        action: NONE
+      backitem:
+        material: PAPER
+        slot: 18
+        name: "&4» &c&lATRAS"
+        lore: []
+        action: BACK
+      oneday:
+        material: WATCH
+        slot: 10
+        name: "&6» &3+&a1 DIA"
+        lore:
+          - " "
+          - "&7Aumentar el alquiler por un día"
+          - " "
+          - "&6Costo: &e$%COST%"
+        action: RENT:1
+      twoday:
+        material: WATCH
+        slot: 11
+        name: "&6» &3+&a2 DIAS"
+        lore:
+          - " "
+          - "&7Aumentar el alquiler por 2 dias"
+          - " "
+          - "&6Costo: &e$%COST%"
+        action: RENT:2
+      threeday:
+        material: WATCH
+        slot: 12
+        name: "&6» &3+&a3 DIAS"
+        lore:
+          - " "
+          - "&7Aumentar el alquiler por 3 dias"
+          - " "
+          - "&6Costo: &e$%COST%"
+        action: RENT:3
+      fourday:
+        material: WATCH
+        slot: 13
+        name: "&6» &3+&a4 DIAS"
+        lore:
+          - " "
+          - "&7Aumentar el alquiler por 4 dias"
+          - " "
+          - "&6Costo: &e$%COST%"
+        action: RENT:4
+      fiveday:
+        material: WATCH
+        slot: 14
+        name: "&6» &3+&a5 DIAS"
+        lore:
+          - " "
+          - "&7Aumentar el alquiler por 5 dias"
+          - " "
+          - "&6Costo: &e$%COST%"
+        action: RENT:5
+      sixday:
+        material: WATCH
+        slot: 15
+        name: "&6» &3+&a6 DIAS"
+        lore:
+          - " "
+          - "&7Aumentar el alquiler por 6 dias"
+          - " "
+          - "&6Costo: &e$%COST%"
+        action: RENT:6
+      sevenday:
+        material: WATCH
+        slot: 16
+        name: "&6» &3+&a7 DIAS"
+        lore:
+          - " "
+          - "&7Aumentar el alquiler por 7 dias"
+          - " "
+          - "&6Costo: &e$%COST%"
+        action: RENT:7
+
+
+
+#These two GUIs bellow are different to the ones above
+
+#The GUI that is shown to list team members - Heads will populate the free spaces
+#The action PLAYER is used to defined the players head in the slots
+  MemberManagementView:
+    title: "&eCelda Informacion"
+    slots: 54
+    items:
+      player:
+        material: PLAYER_HEAD #their skull will be applied
+        slot: -1
+        name: "&a%PLAYER%"
+        lore:
+          - " "
+          - "&7Este usuario tiene un rango %RANK%"
+          - " "
+          - "&7(( Click para modificar ))"
+        action: PLAYERMEMBERMANAGE
+      backitem:
+        material: PAPER
+        slot: 45
+        name: "&4» &c&lATRAS"
+        lore: []
+        action: BACK
+      addmember:
+        material: GREEN_STAINED_GLASS_PANE
+        slot: 50
+        name: "&a&l+ MIEMBRO"
+        lore:
+          - " "
+          - "&7Click para añadir miembro a"
+          - "&7celda!"
+          - " "
+        action: ADDMEMBER
+      removemember:
+        material: RED_STAINED_GLASS_PANE
+        slot: 48
+        name: "&c&l- MIEMBRO"
+        lore:
+          - " "
+          - "&7Click para eliminar miembro"
+          - "&7celda!"
+          - " "
+        action: REMOVEMEMBER

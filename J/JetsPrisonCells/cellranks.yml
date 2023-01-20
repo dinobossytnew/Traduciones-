@@ -1,0 +1,165 @@
+#Cell Ranks
+#Specify ranks in this file and what permissions players have in cells at this rank
+#Players can manage what ranks there friends are via a GUI
+
+#Possible permissions
+# CELL_*                 - Full admin access to the cell - Includes permissions to delete the cell and transfer ownership
+# CELL_GUI               - Open the cells GUI
+# CELL_MANAGE_MEMBERS    - Allows players to manage other peoples ranks of those with a lower priority
+# CELL_PLACE             - Allow players to place blocks
+# CELL_BREAK             - Allow players to break blocks
+# CELL_INTERACT          - Allow players to interact with chests
+# CELL_DOOR_OPEN         - Allow players to open the main door on the cell
+# CELL_MANAGE_RENT       - Allows a player to add rent
+
+
+
+# >>>>>NOTE IF YOU MODIFY RANK NAMES, YOU WILL NEED TO MODIFY THE RANKS IN THE GUI LOCATED AT THE BOTTOM OF THIS FILE TO MATCH <<<<
+Ranks:
+  Owner: #The rank name identifier
+    priority: 0 #Highest priority - PRIORITY 0 IS CONSIDERED THE OWNER OF THE CELL. Two ranks cannot have the same priority
+    display_name: "&4Dueño Cleda"
+    permissions:
+      - "CELL_*" #The owner of the cell can do anything in his/her cell
+  Co-Owner: #I.E If you change this name, you will need to change it in the GUI found at the bottom of this file
+    priority: 1
+    display_name: "&cSub Dueño Cleda"
+    permissions:
+      - "CELL_GUI"
+      - "CELL_MANAGE_MEMBERS"
+      - "CELL_PLACE"
+      - "CELL_BREAK"
+      - "CELL_INTERACT"
+      - "CELL_DOOR_OPEN"
+      - "CELL_MANAGE_RENT"
+  Trusted:
+    priority: 2
+    display_name: "&eMiembro de Confianza"
+    permissions:
+      - "CELL_PLACE"
+      - "CELL_BREAK"
+      - "CELL_INTERACT"
+      - "CELL_DOOR_OPEN"
+      - "CELL_MANAGE_RENT"
+  Member:
+    priority: 3
+    display_name: "&eEquipo Mimebros"
+    permissions:
+      - "CELL_DOOR_OPEN"
+      - "CELL_INTERACT" #Can open chests, furnaces, etc
+      - "CELL_MANAGE_RENT" #Can add rent to cell
+  Visitor:
+    priority: 4
+    display_name: "&aVisitante"
+    permissions:
+      - "CELL_DOOR_OPEN"
+#You can create more ranks, with different permissions :)
+
+#To make it so much easier, I have put the GUI for the ranks file here..
+
+#The GUI for when a player wishes to promote/demote another player
+#%PLAYER% - used for the member the cell owner is modifying
+#For the action, use RANK:<NameOfRankInCellRanks.yml>
+GUIForRanks:
+  MemberManagementPlayerView:
+    title: "&eModificación de %PLAYER%"
+    slots: 36
+    items:
+      fillteritem:
+        material: GRAY_STAINED_GLASS_PANE
+        slot: -1 # -1 = filler
+        name: " "
+        lore: []
+        action: NONE
+      player:
+        material: PLAYER_HEAD #their skull will be applied
+        slot: 13
+        name: "&a%PLAYER%"
+        lore:
+          - " "
+          - "&7El rango actual de este usuario es %RANK%"
+        action: PLAYERMEMBERMANAGE
+      backitem:
+        material: BARRIER
+        slot: 27
+        name: "&4» &c&lATRAS"
+        lore: []
+        action: BACK
+      rankOwner:
+        material: PAPER
+        slot: 20
+        name: "&e&lRANGO DE DUEÑO"
+        lore:
+          - " "
+          - "&7Promover a este usuario a &4&lDUEÑO RANGO"
+          - "&7Nota: Sólo puede haber un DUEÑO"
+          - "&7por lo que sólo el DUEÑO puede transferir la propiedad"
+          - " "
+          - "&7permisos:"
+          - " » Todos"
+        action: RANK:Owner #THE RANK NAME COMES AFTER RANK:
+      coOwner:
+        material: PAPER
+        slot: 21
+        name: "&e&lRANGO SUB-DUEÑO"
+        lore:
+          - " "
+          - "&7Promover a este usuario a &e&lRANGO SUB-DUEÑO"
+          - " "
+          - "&7Permisos:"
+          - " &8»&7 Acceso al menu de administración"
+          - " &8»&7 Gestionar Miembros"
+          - " &8»&7 Colocar Bloques"
+          - " &8»&7 Romper Bloques"
+          - " &8»&7 Abrir Contenido"
+          - " &8»&7 Abrir Puerta Celda"
+          - " &8»&7 Añadir Renta"
+        action: RANK:Co-Owner
+      trusted:
+        material: PAPER
+        slot: 22
+        name: "&e&lRANGO CONFIANZA"
+        lore:
+          - " "
+          - "&7Promover a este usuario a &e&lRANGO CONFIANZA"
+          - " "
+          - "&7Permisos:"
+          - " &8»&7 Colocar Bloques"
+          - " &8»&7 Romper Bloques"
+          - " &8»&7 Abrir Contenido"
+          - " &8»&7 Abrir Puerta Celda"
+          - " &8»&7 Añadir Renta"
+        action: RANK:Trusted
+      member:
+        material: PAPER
+        slot: 23
+        name: "&e&lMIEMBRO RANGO"
+        lore:
+          - " "
+          - "&7Promover a este usuario ao &e&lRANGO MIEMBRO"
+          - " "
+          - "&7Permissions:"
+          - " &8»&7 Abrir Contenido"
+          - " &8»&7 Abrir Puerta Celda"
+          - " &8»&7 Añadir Renta"
+        action: RANK:Member
+      visitor:
+        material: PAPER
+        slot: 24
+        name: "&e&lRANGO VISITANTE"
+        lore:
+          - " "
+          - "&7Promover a este usuario a &e&lVISITANTE RANGO"
+          - " "
+          - "&7Permissions:"
+          - " &8»&7 Abrir Puerta Celda"
+        action: RANK:Visitor
+      remove:
+        material: PAPER
+        slot: 31
+        name: "&c&lELIMINAR RANGO"
+        lore:
+          - " "
+          - "&7Retire este reproductor de su celda!"
+          - " "
+        action: RANK:Remove

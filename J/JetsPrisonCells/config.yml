@@ -1,0 +1,54 @@
+#############################################
+#                                           #
+#             JetsPrisonCells               #
+#            Created by Jet315              #
+#                                           #
+#############################################
+
+#Used in the %PREFIX% placeholder in messages.yml
+PluginPrefix: "&eCELDAS &7» "
+
+#Rental Settings
+DefaultRental:
+  Claim: #Default cost to claim a cell
+    Cost: 5000
+  TimePeriod:
+    Length: 24 #The time, in hours of a default rental period (The time given when a user buys a cell)
+    MaxLength: 28 #The time, in days, of the maximum rental period
+  Rental:
+    pricePerDay: 10000
+  Unclaim:
+    Refund: true
+
+#Cell Settings
+CellSettings:
+  Door:
+    AutoShutDelay: 5 #-1 to disable
+    MaxShutDelay: 30 #Must be lower than 256
+  Memeber:
+    AddCost: 0
+  Teleport:
+    Timeout: -1 #The timeout, in seconds, for the teleportation to any cell - -1 to disable
+
+
+#How many cells can a user have?
+MaxCellsAllowed:
+  - prisoncells.cells.default:1 #Specifiy the permission : number of cells the player is allowed
+  - prisoncells.cells.vip:2
+  - prisoncells.cells.god:3
+
+#How many users can a user add to their cell?
+MaxCellMembersAllowed:
+  - prisoncells.players.default:5 #Specifiy the permission : number of players the cell owner can add to their cell. Depending on what permission the user has will depend on how many the users can add to their cell. the permission prisoncells.players.bypasslimit can also be used for no limit.. There is a max hard limit of 50
+  - prisoncells.players.vip:10
+  - prisoncells.players.god:15
+
+
+#When a player right clicks a sign, or uses the command to purchase a cell, would you like the purchase GUI to show
+EnablePurchaseGUI: true
+
+#Generally do not need to edit
+#Placeholder/Sign/Other configuration
+
+#The format of the %LENGTH% placeholder
+LengthFormat: "%DAYS%d %HOURS%h %MINS%m"
