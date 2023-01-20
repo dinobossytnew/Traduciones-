@@ -1,0 +1,566 @@
+# Should we keep UPC Enchanted pickaxes in players inventory when they die?
+keep-pickaxes-on-death: false
+open-menu-on-right-click-block: false
+allow-enchants-outside-mine-regions: true
+refund-percentage: 30.0
+enchant_menu:
+  title: '&5&lENCANTAMIENTOS'
+  empty_slots: STAINED_GLASS_PANE:7
+  lines: 6
+  pickaxe_slot: 13
+  pickaxe_enabled: true
+  item:
+    lore:
+    - '&7%description%'
+    - ' '
+    - '&d&lÃ¢Ëœâ€¦ &ePRECIO: &f%cost%'
+    - '&d&lÃ¢Ëœâ€¦ &eMAXIMO NIVEL: &f%max_level%'
+    - '&d&lÃ¢Ëœâ€¦ &eNIVEL ACTUAL: &f%current_level%'
+    - ' '
+    - '&7&o(( &f&oClick-Izquierdo&7&o aÃƒÂ±adir 1 nivel ))'
+    - '&7&o(( &f&oClick-Derecho&7&o aÃƒÂ±adir 10 niveles ))'
+    - '&7&o(( &f&oMedio-Click&7&o aÃƒÂ±adir 100 niveles ))'
+    - '&7&o(( &f&oPrecione ''Q''&7&o compra hasta quedarte sin nada ))'
+    - ' '
+    - '&cTu pico esta en nivel %pickaxe_level%'
+  help_item:
+    enabled: true
+    material: NAME_TAG
+    slot: 15
+    name: '&b&lCOMO FUNCIONA?'
+    lore:
+    - ' '
+    - '&d&lÃ¢Ëœâ€¦ &eLeft-Click &8Ã¢Å¾Â¢ &7Comprar 1 Nivel'
+    - ' '
+    - '&d&lÃ¢Ëœâ€¦ &eRight-Click &8Ã¢Å¾Â¢ &7Comprar 10 Nivel'
+    - ' '
+    - '&d&lÃ¢Ëœâ€¦ &eMiddle-Click &8Ã¢Å¾Â¢ &7Comprar 100 Nivel'
+    - ' '
+    - '&d&lÃ¢Ëœâ€¦ &ePrsione Q &8Ã¢Å¾Â¢ &7Para comprar hasta quedar en 0'
+    - ' '
+    - '&7&o(( &f&oClick&7&o para comrpar encantamiento ))'
+  disenchant_item:
+    enabled: true
+    material: FLINT_AND_STEEL
+    slot: 11
+    name: '&5&lDESENCANTADOR'
+    lore:
+    - ' '
+    - '&d&lÃ¢Ëœâ€¦ &eClick para abrir menu'
+    - ' '
+disenchant_menu:
+  title: '&5&lDESENCANTADOR'
+  empty_slots: STAINED_GLASS_PANE:7
+  lines: 6
+  pickaxe_slot: 13
+  pickaxe_enabled: true
+  item:
+    lore:
+    - '&d&lÃ¢Ëœâ€¦ &eNIVEL ACTUAL: &f%current_level%'
+    - '&d&lÃ¢Ëœâ€¦ &eRenboslo: &f%refund%'
+    - ' '
+    - '&7&o(( &f&oClick-Izquierdo&7&o rembolso 1 Nivel ))'
+    - '&7&o(( &f&oClick-Derechos&7&o rembolso 10 Nivel ))'
+    - '&7&o(( &f&oMedio-Click&7&o rembolso 100 Nivel ))'
+    - '&7&o(( &f&oPreciona ''Q''&7&o a rembolso todo lo posible ))'
+  help_item:
+    enabled: true
+    material: NAME_TAG
+    slot: 15
+    name: '&6&lCOMO FUNCIONA??'
+    lore:
+    - ' '
+    - '&d&lÃ¢Ëœâ€¦ &eLeft-Click &8Ã¢Å¾Â¢ &7-1 Nivel'
+    - ' '
+    - '&d&lÃ¢Ëœâ€¦ &eRight-Click &8Ã¢Å¾Â¢ &7-10 Nivel'
+    - ' '
+    - '&d&lÃ¢Ëœâ€¦ &eMiddle-Click &8Ã¢Å¾Â¢ &7-100 Nivel'
+    - ' '
+    - '&d&lÃ¢Ëœâ€¦ &e''Q'' &8Ã¢Å¾Â¢ &7-Todos los niveles'
+    - '&7&o(( &f&oClick&7&o para desencantar ))'
+messages:
+  no_pickaxe_found: '&cPico no existe o no esta en la lista avisa a &d&lCONFIG!'
+  enchant_max_level: '&e&l(!) &cTu tienes todos los encantamientos en el maximo nivel&7!'
+  enchant_max_level_exceed: '&e&l(!) &eEsta aplicasion supera el nivel mÃƒÂ¡ximo para
+    este encanto.'
+  enchant_min_level_exceed: '&e&l(!) &eEsta aplicasion supera el minimo de nivel para
+    este encanto.'
+  not_enough_tokens: '&cno tienes tokens &f&lPOBRE!'
+  enchant_bought: '&a&lPRISON&8Ã¢Å¾Â¢ &c&l-%tokens% TOKENS'
+  enchant_bought_multiple: '&a&lPRISON&8Ã¢Å¾Â¢ &7tu has comprado &f%amount% &7nivel
+    de %enchant%&r &7por &f%tokens% &7tokens.'
+  enchant_refunded: '&4&lREMBOLSO &8Ã¢Å¾Â¢ &7has hecho un rembolso &f%amount% &7niveles
+    de %enchant%'
+  enchant_tokens_back: '&4&lREMBOLSO &8Ã¢Å¾Â¢ &7Tu has recivido &f%tokens% &7tokens
+    devuelta.'
+  enchant_cant_disenchant: '&c&l(!) &cHas desencantado.'
+  enchant_no_level: '&e&l(!) &cNo tienes niveles suficientes!'
+  charity_other: '&a&l+ $%amount% &7(Por %player% Beneficio)'
+  charity_your: '&a&l+ $%amount% &7(Por tu Beneficio)'
+  blessing_other: '&6&l+ %amount% TOKENS &7(Por %player% BendiciÃƒÂ³n)'
+  blessing_your: '&6&l+ %amount% TOKENS &7(Por tu BendiciÃƒÂ³n)'
+  layer_disabled: '&e&l(!) &7tu has &c&lDESACTIVADO &7capa de mineria.'
+  layer_enabled: '&e&l(!) &7tu has &a&lACTIVADO &7capa de mineria.'
+  lucky_booster_on: '&a&lPRISON&8Ã¢Å¾Â¢ &fModo Suerte &7has &a&lACTIVADO&7, &FX2 Dinero
+    & Tokens &7por &a&l5:00'
+  lucky_booster_off: '&a&lPRISON&8Ã¢Å¾Â¢ &fModo Suerte &7has &c&lDESACTIVADO&7.'
+  block_booster_on: '&a&lPRISON&8Ã¢Å¾Â¢ &fImpulso de Bloques &7has &a&lACTIVADO&7,
+    &FX2 Bloques &7por &a&l5:00'
+  block_booster_off: '&a&lPRISON&8Ã¢Å¾Â¢ &fImpluso de Bloques &7has &c&lDESACTIVADO&7.'
+  lucky_mode_timeleft: '&a&lPRISON&8Ã¢Å¾Â¢ &fModo Suerte&7 por: &a&l%timeleft%&7.'
+  lucky_mode_disabled: '&a&lPRISON&8Ã¢Å¾Â¢ &fModo Suerte &cDesactivado&7.'
+  explosive_disabled: '&e&l(!) &7Tu has &c&lDESACTIVADO &7modo explosivo.'
+  explosive_enabled: '&e&l(!) &7Tu has &a&lACTIVADO &7modo explosivo.'
+  value_no_permission: '&6&lVALOR &8Ã¢Å¾Â¢ &7no tienes permisos &fcasa.prison.anime&7.'
+  value_no_pickaxe: '&6&lVALOR &8Ã¢Å¾Â¢ &7no tienes el pico en la mano.'
+  value_value: '&6&lVALOR &8Ã¢Å¾Â¢ &f%player% &7Valor del pico: &f%tokens% Tokens&7.'
+  value_cooldown: '&6&lVALOR &8Ã¢Å¾Â¢ &7Por Favor, &f%time% segundos&7 para usar el
+    comando'
+  pickaxe_given: '&a&lPRISON&8Ã¢Å¾Â¢ &fhas giveado un pico a &e%player%'
+  pickaxe_received: '&a&lPRISON&8Ã¢Å¾Â¢ &fTu reciviste un pico &e%sender%'
+  pickaxe_inventory_full: '&a&lPRISON&8Ã¢Å¾Â¢ &e%player% &4&lTU INVENTARIO ESTA LLENO!'
+  prestige_finder: '&e&lPRESTIGE FINDER &8Ã¢Å¾Â¢ &7has encontrado &fX%prestige% Prestigeo
+    de nivel &7minado.'
+  transaction_in_progress: '&a&lPRISON&8Ã¢Å¾Â¢ &cPor Favor, espere a que se termine
+    de completar la transacion.'
+enchants:
+  '1':
+    RawName: efficiency
+    Name: '&d&lEFICIENCIA'
+    Material: BOOK
+    Enabled: true
+    InGuiSlot: 27
+    Increase-Cost-by: 400
+    Max: 200
+    Cost: 200
+    Description:
+    - '&7&o(( &fEsto funciona cuanto mas nivel tengas))'
+    - '&7&o(( &fPodras picar mas rapido &7))'
+    Refund:
+      Enabled: true
+      InGuiSlot: 27
+  '2':
+    RawName: unbreaking
+    Name: '&d&lIRROMPIBLE'
+    Material: BOOK
+    Enabled: true
+    InGuiSlot: 28
+    Increase-Cost-by: 500
+    Max: 300
+    Cost: 500
+    Description:
+    - '&7&o(( Hace que el item se demore en romper ))'
+    Refund:
+      Enabled: true
+      InGuiSlot: 28
+  '3':
+    RawName: fortune
+    Name: '&d&lFORTUNA'
+    Material: BOOK
+    Enabled: true
+    InGuiSlot: 29
+    Increase-Cost-by: 75
+    Max: -1
+    Chance: 100
+    Cost: 75
+    Description:
+    - '&7&o(( Hace posible el dropeo de material precioso ))'
+    Refund:
+      Enabled: true
+      InGuiSlot: 29
+  '4':
+    RawName: haste
+    Name: '&d&lPRISA'
+    Material: BOOK
+    Enabled: true
+    InGuiSlot: 30
+    Increase-Cost-by: 2500
+    Max: 5
+    Cost: 2500
+    Description:
+    - '&7&o(( Hace posible picar mas rapido de lo normal ))'
+    Refund:
+      Enabled: true
+      InGuiSlot: 30
+  '5':
+    RawName: speed
+    Name: '&b&lVELOCIDAD'
+    Material: BOOK
+    Enabled: true
+    InGuiSlot: 31
+    Increase-Cost-by: 10000
+    Max: 2
+    Cost: 10000
+    Description:
+    - '&7&o(( Hace posible moverse rapido con tu pico ))'
+    Refund:
+      Enabled: true
+      InGuiSlot: 31
+  '6':
+    RawName: jumpboost
+    Name: '&b&lIMPULSO SALTO'
+    Material: BOOK
+    Enabled: true
+    InGuiSlot: 32
+    Increase-Cost-by: 5000
+    Max: 5
+    Cost: 5000
+    Description:
+    - '&7&o(( Hace posaible saltar con tu pico ))'
+    Refund:
+      Enabled: true
+      InGuiSlot: 32
+  '7':
+    RawName: nightvision
+    Name: '&6&lVISION'
+    Material: BOOK
+    Enabled: false
+    InGuiSlot: 33
+    Increase-Cost-by: 0
+    Max: 1
+    Cost: 10000
+    Description:
+    - '&7&o(( Hace posible ver con tu pico en la oscuridad))'
+    Refund:
+      Enabled: true
+      InGuiSlot: 33
+  '8':
+    RawName: luckybooster
+    Name: '&5&lIMPUSO&d&l SUERTE'
+    Material: BOOK
+    Enabled: true
+    InGuiSlot: 34
+    Increase-Cost-by: 10000
+    Max: 10
+    Chance: 9.0E-5
+    Cost: 9000
+    Description:
+    - '&7&o(( Hace posible recivir x2 tokens en el mismo bloques ))'
+    Refund:
+      Enabled: true
+      InGuiSlot: 34
+  '9':
+    RawName: explosive
+    Name: '&4&lEXPLOSIVO'
+    Material: BOOK
+    Enabled: true
+    InGuiSlot: 35
+    Increase-Cost-by: 50000
+    Cooldown: 10
+    Max: 100
+    Chance: 0.2
+    Cost: 60000
+    Description:
+    - '&7&o(( Hace posible el explotar y minar bloques))'
+    Count-Blocks-Broken: true
+    Sounds: true
+    Refund:
+      Enabled: true
+      InGuiSlot: 35
+  '10':
+    RawName: layer
+    Name: '&5&lDRIL'
+    Material: BOOK
+    Enabled: true
+    Chance: 9.0E-5
+    InGuiSlot: 36
+    Increase-Cost-by: 30000
+    Max: 200
+    Cost: 30000
+    Description:
+    - '&7&o(( Capacidad de romper la capa completa de su mina mientras se mina ))'
+    Count-Blocks-Broken: true
+    Refund:
+      Enabled: true
+      InGuiSlot: 36
+  '11':
+    RawName: charity
+    Name: '&5&lBENEFICENCIA'
+    Material: BOOK
+    Enabled: true
+    InGuiSlot: 37
+    Increase-Cost-by: 20000
+    Max: 10000
+    Chance: 6.66E-5
+    Max-Money: 1000
+    Min-Money: 1
+    Cost: 25
+    Messages-Enabled: true
+    Description:
+    - '&7&o(( Oportunidad de dar a todo el mundo dinero en lÃƒÂ­nea mientras que la
+      minerÃƒÂ­a ))'
+    Refund:
+      Enabled: true
+      InGuiSlot: 37
+  '12':
+    RawName: salary
+    Name: '&d&lSALARIO'
+    Material: BOOK
+    Enabled: true
+    InGuiSlot: 38
+    Increase-Cost-by: 9000
+    Max: 100
+    Chance: 0.035
+    Max-Money: 1000
+    Min-Money: 500
+    Cost: 12000
+    Description:
+    - '&7&o(( hace posible el conseguir dinero minado ))'
+    Refund:
+      Enabled: true
+      InGuiSlot: 38
+  '13':
+    RawName: blessing
+    Name: '&6&lBENDICION'
+    Material: BOOK
+    Enabled: true
+    InGuiSlot: 39
+    Increase-Cost-by: 50000
+    Max: 10
+    Chance: 6.66E-5
+    Max-Tokens: 100
+    Min-Tokens: 50
+    Cost: 100000
+    Messages-Enabled: true
+    Description:
+    - '&7&o(( &foportunidad de dar a todo el mundo tokens en lÃƒÂ­nea mientras minan&f&o
+      ))'
+    - '&7&o(( &fvendito es aquel curado con mi mano &7&o))'
+    Refund:
+      Enabled: true
+      InGuiSlot: 39
+  '14':
+    RawName: tokenator
+    Name: '&6&lGENERATOR'
+    Material: BOOK
+    Enabled: true
+    InGuiSlot: 40
+    Increase-Cost-by: 20000
+    Max: 20
+    Chance: 0.0053
+    Max-Tokens: 10
+    Min-Tokens: 1
+    Cost: 70000
+    Description:
+    - '&7&o(( &fposibilidad de ganar mÃƒÂ¡s Tokens al minar  &7&o))'
+    Refund:
+      Enabled: true
+      InGuiSlot: 40
+  '15':
+    RawName: keyfinder
+    Name: '&bKey Finder'
+    Material: BOOK
+    Enabled: false
+    InGuiSlot: 41
+    Increase-Cost-by: 350
+    Max: 250
+    Chance: 9.0E-5
+    Cost: 350
+    Description:
+    - '&7&o(( Ability to find crate keys while mining ))'
+    Commands:
+    - cc give physical Coal 1 %player%
+    - cc give physical Iron 1 %player%
+    - cc give physical Gold 1 %player%
+    - cc give physical Diamond 1 %player%
+    - cc give physical Emerald 1 %player%
+    - cc give physical Token 1 %player%
+    - cc give physical Token 2 %player%
+    Refund:
+      Enabled: false
+      InGuiSlot: 41
+  '16':
+    RawName: prestigefinder
+    Name: '&aPrestige Finder'
+    Material: BOOK
+    Enabled: false
+    Min-Levels: 1
+    Max-Levels: 10
+    InGuiSlot: 42
+    Increase-Cost-by: 175
+    Max: 500
+    Cost: 175
+    Command: prestigeadmin add %player% %amount%
+    Description:
+    - '&7&o(( Ability to find prestige levels while mining. ))'
+    Refund:
+      Enabled: false
+      InGuiSlot: 42
+    Chance: 4.0E-7
+  '17':
+    RawName: blockbooster
+    Name: '&dBlock Booster'
+    Material: BOOK
+    Enabled: false
+    InGuiSlot: 43
+    Increase-Cost-by: 225
+    Max: 750
+    Chance: 5.0E-6
+    Cost: 225
+    Description:
+    - '&7&o(( Ability to receive x2 Blocks for 1 Minute while mining))'
+    Refund:
+      Enabled: false
+      InGuiSlot: 43
+  '18':
+    RawName: keyalls
+    Name: '&cKeyalls'
+    Material: BOOK
+    Enabled: false
+    InGuiSlot: 44
+    Increase-Cost-by: 350
+    Max: 250
+    Chance: 9.0E-5
+    Cost: 350
+    Description:
+    - '&7&o(( Ability to give everyone crate keys while mining ))'
+    Pickaxe-Level-Required: 1
+    Commands:
+    - cc giveall physical Token 1
+    - cc giveall physical Token 2
+    - cc giveall physical Coal 1
+    - cc giveall physical Iron 1
+    - cc giveall physical Gold 1
+    Refund:
+      Enabled: false
+      InGuiSlot: 44
+  '19':
+    RawName: autosell
+    Name: '&6&lAUTO VENTA'
+    Material: BOOK
+    Enabled: true
+    InGuiSlot: 45
+    Increase-Cost-by: 0
+    Max: 1
+    Chance: 1.0
+    Cost: 5000000
+    Description:
+    - '&7&o(( Posibilidad de vender todos los ores mientras se mina ))'
+    Pickaxe-Level-Required: 1
+    Messages-Enabled: true
+    Refund:
+      Enabled: true
+      InGuiSlot: 45
+  '20':
+    RawName: voucher
+    Name: '&bVoucher Finder'
+    Material: BOOK
+    Enabled: false
+    InGuiSlot: 46
+    Increase-Cost-by: 5000
+    Max: 250
+    Chance: 9.0E-5
+    Cost: 5000
+    Description:
+    - '&7&o(( Ability to find store vouchers while mining ))'
+    Pickaxe-Level-Required: 1
+    Refund:
+      Enabled: false
+      InGuiSlot: 46
+    Commands:
+      '1':
+        command: voucher give %player% 5$
+        chance: 50
+      '2':
+        command: voucher give %player% 10$
+        chance: 25
+      '3':
+        command: voucher give %player% 25$
+        chance: 10
+      '4':
+        command: voucher give %player% 50$
+        chance: 5
+      '5':
+        command: voucher give %player% 50$
+        chance: 1
+  '21':
+    RawName: nuke
+    Name: '&cNuke'
+    Material: BOOK
+    Enabled: false
+    InGuiSlot: 47
+    Increase-Cost-by: 0
+    Max: 100
+    Chance: 0.001
+    Cost: 1000
+    Description:
+    - '&7&o(( Ability to break whole mine while mining ))'
+    Pickaxe-Level-Required: 1
+    Count-Blocks-Broken: true
+    Refund:
+      Enabled: false
+      InGuiSlot: 47
+  '22':
+    RawName: gemfinder
+    Name: '&aGem Finder'
+    Material: BOOK
+    Enabled: false
+    InGuiSlot: 48
+    Increase-Cost-by: 6
+    Max: 1500
+    Chance: 0.06666
+    Max-Gems: 75
+    Min-Gems: 35
+    Cost: 12
+    Description:
+    - '&7&o(( Ability to find gems while mining ))'
+    Refund:
+      Enabled: false
+      InGuiSlot: 48
+  '23':
+    RawName: gang-value-finder
+    Name: '&eGang Value Finder'
+    Material: BOOK
+    Enabled: false
+    InGuiSlot: 49
+    Increase-Cost-by: 6
+    Max: 1500
+    Chance: 0.06666
+    Max-Value: 5
+    Min-Value: 1
+    Cost: 12
+    Description:
+    - '&7&o(( Ability to find gang value while mining ))'
+    Refund:
+      Enabled: false
+      InGuiSlot: 49
+Pickaxe:
+  lore:
+  - '&8Ã¢â€“â€ºÃ¢â€“â‚¬Ã¢â€“â‚¬Ã¢â€“â‚¬Ã¢â€“â‚¬Ã¢â€“â‚¬Ã¢â€“â‚¬Ã¢â€“â‚¬Ã¢â€“â‚¬Ã¢â€“â‚¬Ã¢â€“â‚¬Ã¢â€“â‚¬Ã¢â€“â‚¬Ã¢â€“â‚¬Ã¢â€“â‚¬Ã¢â€“â‚¬Ã¢â€“â‚¬Ã¢â€“Å“'
+  - '&E&lBLOQUES MINADOS: &f%Blocks%/%Blocks_Required%'
+  - '&E&lNIVEL DEL PICO: &f%PickaxeLevel% &7[%PickaxeProgress%&7]'
+  - '&8Ã¢â€“â‚¬Ã¢â€“â‚¬Ã¢â€“â‚¬Ã¢â€“â‚¬Ã¢â€“â‚¬Ã¢â€“â‚¬Ã¢â€“â‚¬Ã¢â€“â‚¬Ã¢â€“â‚¬Ã¢â€“â‚¬Ã¢â€“â‚¬Ã¢â€“â‚¬Ã¢â€“â‚¬Ã¢â€“â‚¬Ã¢â€“â‚¬Ã¢â€“â‚¬'
+  - '&a'
+  - '&3&l&oÃ¢Å¾Â£ &b&nPrisonAnime.casa'
+  - '&a'
+  - '%Enchant-1%'
+  - '%Enchant-2%'
+  - '%Enchant-3%'
+  - '%Enchant-4%'
+  - '%Enchant-5%'
+  - '%Enchant-6%'
+  - '%Enchant-7%'
+  - '%Enchant-8%'
+  - '%Enchant-9%'
+  - '%Enchant-10%'
+  - '%Enchant-11%'
+  - '%Enchant-12%'
+  - '%Enchant-13%'
+  - '%Enchant-14%'
+  - '%Enchant-15%'
+  - '%Enchant-16%'
+  - '%Enchant-17%'
+  - '%Enchant-18%'
+  - '%Enchant-19%'
+  - '%Enchant-20%'
+  - '%Enchant-21%'
+  - '%Enchant-22%'
+  - '%Enchant-23%'
+first-join-pickaxe:
+  enabled: false
+  name: '&e%player% '
+  material: DIAMOND_PICKAXE
+  enchants:
+  - efficiency 10
+  - unbreaking 10
+  - fortune 10

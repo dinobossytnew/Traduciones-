@@ -1,0 +1,57 @@
+# 
+# Update interval in minutes for /prestige top
+messages:
+  prestige_up: '&6&lPRESTIGIO &ehas subido ÃƒÂ¡ &f%Prestige%'
+  not_enough_money_prestige: '&6&lPRESTIGIO &eno tienes dinero suficiente &a$%cost%.'
+  not_enough_tokens_prestige: '&6&lPRESTIGIO &eno tienes tokens suficiente &a%cost%'
+  last_prestige: '&6&lPRESTIGIO &eestÃƒÂ¡s en el ÃƒÂºltimo episodio no hay mas sad
+    &4&lGRACIAS POR JUGAR.'
+  not_last_rank: '&6&lPRESTIGIO &cnecesitas estar en el ultimo rango.'
+  top_updating: '&c&lLa tabla de clasificaciÃƒÂ³n se estÃƒÂ¡ actualizando...'
+  prestige_set: '&6&lPRESTIGIO &ehas puesto a %player% en el %amount%'
+  prestige_add: '&6&lPRESTIGIO &ehas aÃƒÂ±adido el prestigio %amount% a %player%'
+  prestige_remove: '&6&lPRESTIGIO &ehas eliminado el prestigio %amount% de %player%'
+  max_prestige_started: '&6&lPRESTIGIO &ecomenzÃƒÂ³ /maxprestige. Esto puede llevar
+    un tiempo...'
+  max_prestige_done: '&6&lPRESTIGIO &ehas conseguido el mÃƒÂ¡ximo prestigio de &cP%start_prestige%
+    &7a &cP%prestige%&7.'
+prestige_top_update_interval: 10
+use_tokens_currency: false
+reset_rank_after_prestige: false
+prestige-top-format:
+- '&c&m-------&f&m-------&c&m--------&f&m--------&c&m--------&f&m-------&c&m-------'
+- '&f'
+- '&6&lPRESTIGIO TOP'
+- '{FOR_EACH_PLAYER} &f&l#%position%. &e%player% &8Ãƒâ€šÃ‚Â» &7%prestige% Prestigio'
+- '&f'
+- '&c&m-------&f&m-------&c&m--------&f&m--------&c&m--------&f&m-------&c&m-------'
+unlimited_prestiges:
+  enabled: false
+  max_prestige: 1000000
+  prestige_cost: 100000000
+  increase_cost:
+    enabled: true
+    increase_cost_by: 1.25
+  prefix: '&b&lP%prestige%'
+  rewards-per-prestige:
+    enabled: false
+    rewards:
+    - eco give %player% 1
+  rewards:
+    '10':
+    - eco give %player% 10
+    '100':
+    - eco give %player% 100
+    '1000':
+    - eco give %player% 1000
+    '10000':
+    - eco give %player% 10000
+Prestige:
+  '0':
+    Prefix: '&f&lP0'
+  '1':
+    Prefix: '&2&lP1'
+    Cost: 30000000000
+    CMD:
+    - tokens give 25000 %player%
+    - broadcast &a&l*&2&l*&a&l* &f%player%&7 has just prestiged to &8[%Prestige%&8] &a&l*&2&l*&a&l*

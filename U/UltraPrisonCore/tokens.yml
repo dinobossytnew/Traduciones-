@@ -1,0 +1,83 @@
+# 
+# Starting tokens for players
+messages:
+  no_permission: '&c&l(!) &fNo tienes permiso para hacer eso!'
+  not_enough_tokens: '&b&l(!) &bNo tienes suficientes tokens!'
+  your_tokens: '&bSus Tokens: %tokens%'
+  other_tokens: '&b%player% Tokens: %tokens%'
+  cooldown: '&cPor favor, espere %time% segundos antes de volver a ejecutar este comando.'
+  your_blocks: '&bTus bloques: %blocks%'
+  other_blocks: '&b%player% Bloques: %blocks%'
+  withdraw_successful: '&aHas retirado &b%value%x %amount% Tokens!'
+  admin_set_tokens: '&ahas seteado a &b%player% &atokens &b%tokens%.'
+  admin_give_tokens: '&ahas giveado &b%tokens% &atokens a &b%player%.'
+  admin_remove_tokens: '&ahas eliminado &b%tokens% &atokens de &b%player%.'
+  admin_set_blocks: '&ahas seteado &b%blocks% &abloques &b%blocks%.'
+  admin_give_blocks: '&ahas giveado &b%blocks% &abloques a &b%player%.'
+  admin_remove_blocks: '&ahas eliminado &b%blocks% &abloques de &b%player%.'
+  not_token_item: '&cEsto no es un artÃƒÂ­culo simbÃƒÂ³lico!'
+  tokens_redeem: '&b&l(!) &bHas redimido &f%tokens% &btokens'
+  tokens_send: '&bHas enviado %tokens% a %player%'
+  tokens_cant_send_to_yourself: '&c&l(!) &cNo puedes enviarte token a ti mismo.'
+  tokens_received: '&bHas recibido %tokens% de %player%.'
+  tokens_received_console: '&b&lTOKENS &7Has recibido &f%tokens% token&7.'
+  not_a_number: '&c%input% no es un nÃƒÂºmero!'
+  player_not_online: '&cPlayer &b%player% &cno estÃƒÂ¡ en lÃƒÂ­nea!'
+  top_updating: '&c&lla tabla de posiciones se estÃƒÂ¡ actualizando...'
+  top_weekly_reset: '&7&oTiempo restante: %time%'
+  token_message_disabled: '&b&lTOKENS &7Mensajes &c&lOFF'
+  token_message_enabled: '&b&lTOKENS &7Mensajes &a&lON'
+  tokens_received_mining: '&b&lTOKENS &7Has encontrado &6%amount% tokens &7minado'
+  lucky_block_mined: '&b&lLUCKY BLOCK &7Has roto un &b&lLUCKY BLOCK &7y recibiÃƒÂ³
+    &6%amount% Tokens!'
+starting-tokens: 0
+tokens:
+  breaking:
+    chance: 0.2
+    max: 2
+    min: 1
+  item:
+    material: MAGMA_CREAM
+    name: '&6%amount% &b&lTOKENS'
+    lore:
+    - '&bÃ¢â€“Âª &7Esto te ayuudara a encantar.'
+    - '&bÃ¢â€“Âª &7Esto no lo pierdas.'
+    - '&7Click-Derecho para guardar'
+lucky-blocks:
+  SPONGE:
+  - tokens give %player% 1000
+next-reset-weekly: 0
+display-token-messages: true
+top_update_interval: 10
+tokens-command-cooldown: 5
+top_players_amount: 10
+tokens-top-format:
+- '&b&m-------&3&m-------&b&m--------&3&m--------&b&m--------&3&m-------&b&m-------'
+- '&b&lTOKENS TOP'
+- '{FOR_EACH_PLAYER} &3&l#%position%. &b%player% &7%tokens% Tokens'
+- '&b&m-------&3&m-------&b&m--------&3&m--------&b&m--------&3&m-------&b&m-------'
+blocks-top-format:
+- '&b&m-------&3&m-------&b&m--------&3&m--------&b&m--------&3&m-------&b&m-------'
+- '&b&lBLOQUES TOP'
+- '{FOR_EACH_PLAYER} &3&l#%position%. &b%player% &7%blocks% Bloques'
+- '&b&m-------&3&m-------&b&m--------&3&m--------&b&m--------&3&m-------&b&m-------'
+blocks-top-weekly-format:
+- '&b&m-------&3&m-------&b&m--------&3&m--------&b&m--------&3&m-------&b&m-------'
+- '&b&lBLOQUES TOP SEMANALES'
+- '{FOR_EACH_PLAYER} &3&l#%position%. &b%player% &7%blocks% Bloques'
+- '&b&m-------&3&m-------&b&m--------&3&m--------&b&m--------&3&m-------&b&m-------'
+tokens-command-aliases:
+- token
+- toke
+- tokens
+tokens-top-command-aliases:
+- tokentop
+- ttop
+- tokenstop
+blocks-top-command-aliases:
+- blockstop
+- btop
+- blocktop
+token-message-command-aliases:
+- tokenmessage
+- tokenmessages

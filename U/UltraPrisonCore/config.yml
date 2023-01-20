@@ -1,0 +1,46 @@
+# Should plugin show debug messages?
+debug-mode: false
+database_type: SQLite
+mysql:
+  host: localhost
+  port: 3306
+  database: dbName
+  username: dbUser
+  password: dbPass
+connection_properties:
+  connection_timeout: 30000
+  idle_timeout: 600000
+  keep_alive_time: 0
+  max_life_time: 1800000
+  minimum_idle: 10
+  maximum_pool_size: 10
+  leak_detection_threshold: 0
+  connection_test_query: SELECT 1
+modules:
+  tokens: true
+  gems: true
+  ranks: true
+  prestiges: true
+  multipliers: true
+  enchants: true
+  autosell: true
+  autominer: false
+  pickaxe_levels: true
+  gangs: true
+  mines: true
+  history: true
+supported-pickaxes:
+- DIAMOND_PICKAXE
+- IRON_PICKAXE
+- STONE_PICKAXE
+- GOLD_PICKAXE
+- STONE_AXE
+- GOLD_AXE
+- IRON_AXE
+- DIAMOND_AXE
+main-command-aliases:
+- ap
+- prision
+- animeprison
+- prison
+- pa

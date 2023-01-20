@@ -1,0 +1,17 @@
+# Pickaxe Levels settings
+levels:
+  '1':
+    display_name: '&7Level 1 Pickaxe'
+    blocks_required: 0
+  '2':
+    display_name: '&aLevel 2 Pickaxe'
+    blocks_required: 1000
+    rewards:
+    - eco give %player% 1000
+progress-bar-delimiter: ':'
+progress-bar-length: 20
+messages:
+  pickaxe-level-up: '&4&lPICKAXE &eTu pico actual acaba de subir de &f&lNIVEL &e&l
+    %level%&7!'
+  pickaxe-progress: '&4&lPICKAXE &7Progreso actual: &c%blocks%&7/&a%blocks_required%
+    Bloques'

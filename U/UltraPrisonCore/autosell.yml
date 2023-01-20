@@ -1,0 +1,36 @@
+# 
+# Should be autosell enabled automatically on player join?
+messages:
+  autosell_enable: '&d&l(!) &7Tu has &a&lACTIVADO &7Auto Venta.'
+  autosell_disable: '&d&l(!) &7Tu has &c&lDESACTIVADO &7Auto Venta.'
+  not_in_region: '&d&l(!) &cNo estas en la region para ejecutar /sellall'
+  invalid_region: '&d&l(!) &cNo expesificaste region para vender.'
+  sell_all_complete: '&d&lVentaTotal &8>> &7You''ve sold your inventory for &a$%price%'
+  last_minute_earn: '&d&lINFO &8>> &7Has ganado &a$%amount% &7en el ultimo minuto.'
+  no_permission_sell: '&d&l(!) &c!No tiene permiso para vender en esta regiÃƒÂ³n (%perm%)'
+  no_permission_autosell_toggle: '&d&l(!) &cno tiene permiso para activar la venta
+    automÃƒÂ¡tica caracteristica!'
+enable-autosell-automatically: true
+auto-smelt: false
+auto_sell_broadcast:
+  time: 60
+  message:
+  - '&d&m-------&5&m-------&d&m--------&5&m--------&d&m--------&5&m-------&d&m-------'
+  - '                  &5&lAUTO VENTAS:'
+  - '       &5&lDINERO GANADO: &2$&a%money%'
+  - '       &5&lITEMS VENDIDOS: &5%items%'
+  - '&d&m-------&5&m-------&d&m--------&5&m--------&d&m--------&5&m-------&d&m-------'
+regions:
+  spawn:
+    world: BuildWorld
+    items:
+      DIORITE: 0.2
+      GRANITE: 0.3
+      ANDESITE: 0.6
+      STONE: 1.1
+inventory_full_notification:
+  enabled: true
+  title:
+  - '&d&lINVENTARIO LLENO!'
+  - '&5use /sellall este comando'
+  chat: '&c&l(!) &dTu inventario esta lleno! usa /sellall para vender ores'

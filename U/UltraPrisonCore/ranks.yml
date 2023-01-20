@@ -1,0 +1,131 @@
+# 
+# Should we use tokens as a currency for ranks ?
+messages:
+  rank_up: '&a&lPRISON &eHas subido de rango desde %Rank-1% &7a %Rank-2%&7.'
+  not_enough_money: '&a&lPRISON &eNo tienes dinero suficiente $%cost%'
+  not_enough_tokens: '&a&lPRISON &eNo tienes suficientes tokens %cost% para comprar
+    el rango'
+  prestige_needed: '&a&lPRISON &eEres genial terminaste la temporada 1 te otorgo el
+    prebilegio de &7 &f/prestige&7.'
+  rank_set: '&a&lPRISON &ehas puesto al jugador %player% con rango %rank%'
+use_tokens_currency: false
+progress-bar-delimiter: Ã¢â€“Âª
+progress-bar-length: 20
+Ranks:
+  '1':
+    Prefix: '&a&lA'
+    CMD:
+    - upc SetGroups %player% A
+  '2':
+    Prefix: '&b&lB'
+    Cost: 500000
+    CMD:
+    - upc SetGroups %player% B
+  '3':
+    Prefix: '&a&lC'
+    CMD:
+    - upc SetGroups %player% C
+  '4':
+    Prefix: '&b&lD'
+    Cost: 500000
+    CMD:
+    - upc SetGroups %player% D
+  '5':
+    Prefix: '&a&lE'
+    CMD:
+    - upc SetGroups %player% E
+  '6':
+    Prefix: '&b&lF'
+    Cost: 500000
+    CMD:
+    - upc SetGroups %player% F
+  '7':
+    Prefix: '&a&lG'
+    CMD:
+    - upc SetGroups %player% G
+  '8':
+    Prefix: '&b&lH'
+    Cost: 500000
+    CMD:
+    - upc SetGroups %player% H
+  '9':
+    Prefix: '&a&lI'
+    CMD:
+    - upc SetGroups %player% I
+  '10':
+    Prefix: '&b&lJ'
+    Cost: 500000
+    CMD:
+    - upc SetGroups %player% J
+  '11':
+    Prefix: '&a&lK'
+    CMD:
+    - upc SetGroups %player% K
+  '12':
+    Prefix: '&b&lL'
+    Cost: 500000
+    CMD:
+    - upc SetGroups %player% L
+  '13':
+    Prefix: '&a&lM'
+    CMD:
+    - upc SetGroups %player% M
+  '14':
+    Prefix: '&b&lN'
+    Cost: 500000
+    CMD:
+    - upc SetGroups %player% N
+  '15':
+    Prefix: '&a&lÃƒâ€˜'
+    CMD:
+    - upc SetGroups %player% Ãƒâ€˜
+  '16':
+    Prefix: '&b&lO'
+    Cost: 500000
+    CMD:
+    - upc SetGroups %player% O
+  '17':
+    Prefix: '&a&lP'
+    CMD:
+    - upc SetGroups %player% P
+  '18':
+    Prefix: '&b&lQ'
+    Cost: 500000
+    CMD:
+    - upc SetGroups %player% Q
+  '19':
+    Prefix: '&a&lR'
+    CMD:
+    - upc SetGroups %player% R
+  '20':
+    Prefix: '&b&lS'
+    Cost: 500000
+    CMD:
+    - upc SetGroups %player% S
+  '21':
+    Prefix: '&a&lT'
+    CMD:
+    - upc SetGroups %player% T
+  '22':
+    Prefix: '&b&lU'
+    Cost: 500000
+    CMD:
+    - upc SetGroups %player% U
+  '23':
+    Prefix: '&a&lV'
+    CMD:
+    - upc SetGroups %player% V
+  '24':
+    Prefix: '&b&lW'
+    Cost: 500000
+    CMD:
+    - upc SetGroups %player% W
+  '25':
+    Prefix: '&a&lX'
+    CMD:
+    - upc SetGroups %player% X
+  '26':
+    Prefix: '&b&lZ'
+    Cost: 500000
+    CMD:
+    - upc SetGroups %player% Z

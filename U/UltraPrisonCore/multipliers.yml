@@ -1,0 +1,30 @@
+# 
+# Rank Multipliers settings
+messages:
+  sell_multi: '&eMultiplicador de &f&lVENTA - x%multiplier% &7(&a%duration%&7)'
+  token_multi: '&eMultiplicador de &f&lTOKEN - x%multiplier% &7(&a%duration%&7)'
+  rank_multi: '&eMultiplicador de Rangos - x%multiplier% &7(&aPERMAMENT&7)'
+  global_sell_multi: '&eMultiplicador &f&lVENTAS &4&lGLOBAL - x%multiplier% &7(&a%duration%&7)'
+  global_token_multi: '&eMultiplicaodr &f&lTOKENS &4&lGLOBAL - x%multiplier% &7(&a%duration%&7)'
+  sell_multi_apply: '&e&l(!) &7Has &a&lHABILITADO &7Multiplicador de &f&lVENTA x%multiplier%
+    por %time%.'
+  token_multi_apply: '&e&l(!) &7Has &a&lENABLED &eMultiplicaodr &f&lTOKENS x%multiplier%
+    por %time%.'
+  sell_multi_reset: '&e&l(!) &cSu multiplicador de &f&lVENTA fue restablecido.'
+  token_multi_reset: '&e&l(!) &cTu multiplicador de &f&lTOKENS se ha restablecido.'
+ranks: {}
+use-luckperms-groups: true
+global-multiplier:
+  sell:
+    max: 10.0
+    multiplier: 0.0
+    timeLeft: 0
+  tokens:
+    max: 10.0
+    multiplier: 0.0
+    timeLeft: 0
+rank-multiplier-update-time: 5
+sell-multiplier:
+  max: 10.0
+token-multiplier:
+  max: 10.0

@@ -1,0 +1,48 @@
+# 
+# Starting gems for players
+messages:
+  no_permission: '&c&l(!) &fNo tienes permiso para hacer eso!'
+  not_enough_gems: '&b&l(!) &bNo tienes suficientes gemas'
+  cooldown: '&cPor favor, espere %time% segundos antes de volver a ejecutar este comando.'
+  your_gems: '&bTus gemas: %gems%'
+  other_gems: '&b%player% gemas: %gems%'
+  withdraw_successful: '&aSe ha retirado &b%value%x %amount% gemas!'
+  admin_set_gems: '&ahas seteado a &b%player% &agemas a &b%gems%.'
+  admin_give_gems: '&ahas giveado &b%gems% &agemas a &b%player%.'
+  admin_remove_gems: '&aeliminado con ÃƒÂ©xito &b%gems% &agemas de &b%player%.'
+  not_gems_item: '&cEste no es un artÃƒÂ­culo de gema!'
+  gems_redeem: '&b&l(!) &bHas redimido &f%gems% &bgemas'
+  gems_send: '&bhas seteado %gems% a %player%'
+  gems_cant_send_to_yourself: '&c&l(!) &cNo puedes enviarte gemas a ti mismo.'
+  gems_received: '&bhas recivido %gems% de %player%.'
+  not_a_number: '&c%input% no es un nÃƒÂºmero!'
+  player_not_online: '&cPlayer &b%player% &cno esta conectado!'
+  top_format_gems: '&f&l#%position%. &7%player% &f- &7%amount% gemas'
+  top_spacer_line: '&b&m-------&3&m-------&b&m--------&3&m--------&b&m--------&3&m-------&b&m-------'
+  top_spacer_line_bottom: '&b&m-------&3&m-------&b&m--------&3&m--------&b&m--------&3&m-------&b&m-------'
+  top_updating: '&c&lLa tabla de clasificaciÃƒÂ³n se estÃƒÂ¡ actualizando...'
+  top_weekly_reset: '&7&oTiempo Espera: %time%'
+  gems_received_mining: '&a&lGEMAS &7Has encontrado &6%amount% Gemas &7minado'
+  gems_received_console: '&a&lGEMAS &7Has recivido &f%gems% Gemas&7.'
+  gems_message_disabled: '&a&lGEMAS &7Mensajes &c&lOFF'
+  gems_message_enabled: '&a&lGEMAS &7Mensajes &a&lON'
+starting-gems: 0
+gems:
+  item:
+    material: EMERALD
+    name: '&a&l%amount% &2&lGEMAS'
+    lore:
+    - '&bÃ¢â€“Âª &7Esto te ayuudara a comprar mejoras.'
+    - '&bÃ¢â€“Âª &7Esto no lo pierdas.'
+    - '&7Click-Derecho para guardar'
+gems-command-cooldown: 5
+display-gems-messages: true
+gems-command-aliases:
+- gem
+- gems
+gems-top-command-aliases:
+- gemastop
+- gemtop
+gems-message-command-aliases:
+- gemmessage
+- gemsmessage
