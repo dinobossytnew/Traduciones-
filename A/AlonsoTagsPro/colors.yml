@@ -1,0 +1,579 @@
+Colors:
+  # This is default color. Please, leave this as it is.
+  default:
+    Enabled: true
+    Slot: 11
+    Name: '&fDefault color'
+    # Set to none to not require permission.
+    Permission: none
+    # This will be the color used. Supports color nodes.
+    # If you use colors, MAKE SURE THE TAG prefix IS PLAIN TEXT WITHOUT COLOR and has {COLOR} in tag.
+    # Set to "none" to use tag default color or empty if not defined.
+    Color: none
+    No-permission-message: '&cThis color should be free. Ask an administrator!'
+    Items:
+      Locked:
+        # Supports "CUSTOM_HEAD" and any material. It also supports durability for old versions.
+        # Format is "MATERIAL:DURABILITY", example: "INK_SAC:14"
+        Material: BOOK
+        # Only required if Material is CUSTOM_HEAD
+        Texture: ewogICJ0aW1lc3RhbXAiIDogMTU5NDQ0NjkyMDI5NiwKICAicHJvZmlsZUlkIiA6ICJlMWMxYTE5NDdlODY0MTRmODZiYjQyZDgyYTIxY2ZiOCIsCiAgInByb2ZpbGVOYW1lIiA6ICJBbG9uc29BbGlhZ2EiLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTY4YWE3NGNjODg1NzgwNjBkMGZlM2JkOTA4YjM0ZjY5ZjEyZTA3ZjFmODljNWRkYzE1ZTZiZjYwZjA0Y2NjNiIKICAgIH0KICB9Cn0=
+        # Only for 1.14+
+        Custom-model-data: 0
+        # Hide flags?
+        Hide-flags: true
+        Unbreakable: false
+        # Should item glow? If true an enchantment will be added and enchantment flag will be hide.
+        Glow: false
+        Displayname: '&cDefault'
+        Lore:
+        - '&7Default color for your tag!'
+        - ''
+        - '{RIGHT-CLICK-TO-PREVIEW-MESSAGE}'
+        - '&cThis should be free!'
+      Unlocked:
+        Material: BOOK
+        # Only required if Material is CUSTOM_HEAD
+        Texture: ewogICJ0aW1lc3RhbXAiIDogMTU5NDQ0NjkyMDI5NiwKICAicHJvZmlsZUlkIiA6ICJlMWMxYTE5NDdlODY0MTRmODZiYjQyZDgyYTIxY2ZiOCIsCiAgInByb2ZpbGVOYW1lIiA6ICJBbG9uc29BbGlhZ2EiLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTY4YWE3NGNjODg1NzgwNjBkMGZlM2JkOTA4YjM0ZjY5ZjEyZTA3ZjFmODljNWRkYzE1ZTZiZjYwZjA0Y2NjNiIKICAgIH0KICB9Cn0=
+        # Only for 1.14+
+        Custom-model-data: 0
+        Hide-flags: true
+        Unbreakable: false
+        Glow: false
+        Displayname: '&aDefault'
+        Lore:
+        - '&7Default color for your tag!'
+        - ''
+        - '{RIGHT-CLICK-TO-PREVIEW-MESSAGE}'
+        - '&eClick to select.'
+  red:
+    Enabled: true
+    Slot: 12
+    Name: '&cRed color'
+    Permission: alonsotags.color.red
+    # Color for the tag.
+    Color: '&c'
+    Items:
+      Locked:
+        Material: RED_DYE
+        Texture: ewogICJ0aW1lc3RhbXAiIDogMTU5NDQ0NjkyMDI5NiwKICAicHJvZmlsZUlkIiA6ICJlMWMxYTE5NDdlODY0MTRmODZiYjQyZDgyYTIxY2ZiOCIsCiAgInByb2ZpbGVOYW1lIiA6ICJBbG9uc29BbGlhZ2EiLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTY4YWE3NGNjODg1NzgwNjBkMGZlM2JkOTA4YjM0ZjY5ZjEyZTA3ZjFmODljNWRkYzE1ZTZiZjYwZjA0Y2NjNiIKICAgIH0KICB9Cn0=
+        Custom-model-data: 0
+        Hide-flags: true
+        Unbreakable: false
+        Glow: false
+        Displayname: '&cRed'
+        Lore:
+        - '&cRed&7 color for your tag!'
+        - ''
+        - '{RIGHT-CLICK-TO-PREVIEW-MESSAGE}'
+        - '&cRequires &6[RANK]&c rank!'
+      Unlocked:
+        Material: RED_DYE
+        Texture: ewogICJ0aW1lc3RhbXAiIDogMTU5NDQ0NjkyMDI5NiwKICAicHJvZmlsZUlkIiA6ICJlMWMxYTE5NDdlODY0MTRmODZiYjQyZDgyYTIxY2ZiOCIsCiAgInByb2ZpbGVOYW1lIiA6ICJBbG9uc29BbGlhZ2EiLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTY4YWE3NGNjODg1NzgwNjBkMGZlM2JkOTA4YjM0ZjY5ZjEyZTA3ZjFmODljNWRkYzE1ZTZiZjYwZjA0Y2NjNiIKICAgIH0KICB9Cn0=
+        Custom-model-data: 0
+        Hide-flags: true
+        Unbreakable: false
+        Glow: false
+        Displayname: '&cRed'
+        Lore:
+        - '&cRed&7 color for your tag!'
+        - ''
+        - '{RIGHT-CLICK-TO-PREVIEW-MESSAGE}'
+        - '&eClick to select.'
+  green:
+    Enabled: true
+    Slot: 13
+    Name: '&2Green color'
+    Permission: alonsotags.color.green
+    Color: '&2'
+    Items:
+      Locked:
+        Material: GREEN_DYE
+        Texture: ewogICJ0aW1lc3RhbXAiIDogMTU5NDQ0NjkyMDI5NiwKICAicHJvZmlsZUlkIiA6ICJlMWMxYTE5NDdlODY0MTRmODZiYjQyZDgyYTIxY2ZiOCIsCiAgInByb2ZpbGVOYW1lIiA6ICJBbG9uc29BbGlhZ2EiLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTY4YWE3NGNjODg1NzgwNjBkMGZlM2JkOTA4YjM0ZjY5ZjEyZTA3ZjFmODljNWRkYzE1ZTZiZjYwZjA0Y2NjNiIKICAgIH0KICB9Cn0=
+        Custom-model-data: 0
+        Hide-flags: true
+        Unbreakable: false
+        Glow: false
+        Displayname: '&2Green'
+        Lore:
+        - '&2Green&7 color for your tag!'
+        - ''
+        - '{RIGHT-CLICK-TO-PREVIEW-MESSAGE}'
+        - '&cRequires &6[RANK]&c rank!'
+      Unlocked:
+        Material: GREEN_DYE
+        Texture: ewogICJ0aW1lc3RhbXAiIDogMTU5NDQ0NjkyMDI5NiwKICAicHJvZmlsZUlkIiA6ICJlMWMxYTE5NDdlODY0MTRmODZiYjQyZDgyYTIxY2ZiOCIsCiAgInByb2ZpbGVOYW1lIiA6ICJBbG9uc29BbGlhZ2EiLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTY4YWE3NGNjODg1NzgwNjBkMGZlM2JkOTA4YjM0ZjY5ZjEyZTA3ZjFmODljNWRkYzE1ZTZiZjYwZjA0Y2NjNiIKICAgIH0KICB9Cn0=
+        Custom-model-data: 0
+        Hide-flags: true
+        Unbreakable: false
+        Glow: false
+        Displayname: '&2Green'
+        Lore:
+        - '&2Green&7 color for your tag!'
+        - ''
+        - '{RIGHT-CLICK-TO-PREVIEW-MESSAGE}'
+        - '&eClick to select.'
+  dark-blue:
+    Enabled: true
+    Slot: 14
+    Name: '&1Dark blue color'
+    Permission: alonsotags.color.dark-blue
+    Color: '&1'
+    Items:
+      Locked:
+        Material: LAPIS_LAZULI
+        Texture: ewogICJ0aW1lc3RhbXAiIDogMTU5NDQ0NjkyMDI5NiwKICAicHJvZmlsZUlkIiA6ICJlMWMxYTE5NDdlODY0MTRmODZiYjQyZDgyYTIxY2ZiOCIsCiAgInByb2ZpbGVOYW1lIiA6ICJBbG9uc29BbGlhZ2EiLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTY4YWE3NGNjODg1NzgwNjBkMGZlM2JkOTA4YjM0ZjY5ZjEyZTA3ZjFmODljNWRkYzE1ZTZiZjYwZjA0Y2NjNiIKICAgIH0KICB9Cn0=
+        Custom-model-data: 0
+        Hide-flags: true
+        Unbreakable: false
+        Glow: false
+        Displayname: '&1Dark blue'
+        Lore:
+        - '&1Dark blue&7 color for your tag!'
+        - ''
+        - '{RIGHT-CLICK-TO-PREVIEW-MESSAGE}'
+        - '&cRequires &6[RANK]&c rank!'
+      Unlocked:
+        Material: LAPIS_LAZULI
+        Texture: ewogICJ0aW1lc3RhbXAiIDogMTU5NDQ0NjkyMDI5NiwKICAicHJvZmlsZUlkIiA6ICJlMWMxYTE5NDdlODY0MTRmODZiYjQyZDgyYTIxY2ZiOCIsCiAgInByb2ZpbGVOYW1lIiA6ICJBbG9uc29BbGlhZ2EiLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTY4YWE3NGNjODg1NzgwNjBkMGZlM2JkOTA4YjM0ZjY5ZjEyZTA3ZjFmODljNWRkYzE1ZTZiZjYwZjA0Y2NjNiIKICAgIH0KICB9Cn0=
+        Custom-model-data: 0
+        Hide-flags: true
+        Unbreakable: false
+        Glow: false
+        Displayname: '&1Dark blue'
+        Lore:
+        - '&1Dark blue&7 color for your tag!'
+        - ''
+        - '{RIGHT-CLICK-TO-PREVIEW-MESSAGE}'
+        - '&eClick to select.'
+  purple:
+    Enabled: true
+    Slot: 15
+    Name: '&5Purple color'
+    Permission: alonsotags.color.purple
+    Color: '&5'
+    Items:
+      Locked:
+        Material: PURPLE_DYE
+        Texture: ewogICJ0aW1lc3RhbXAiIDogMTU5NDQ0NjkyMDI5NiwKICAicHJvZmlsZUlkIiA6ICJlMWMxYTE5NDdlODY0MTRmODZiYjQyZDgyYTIxY2ZiOCIsCiAgInByb2ZpbGVOYW1lIiA6ICJBbG9uc29BbGlhZ2EiLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTY4YWE3NGNjODg1NzgwNjBkMGZlM2JkOTA4YjM0ZjY5ZjEyZTA3ZjFmODljNWRkYzE1ZTZiZjYwZjA0Y2NjNiIKICAgIH0KICB9Cn0=
+        Custom-model-data: 0
+        Hide-flags: true
+        Unbreakable: false
+        Glow: false
+        Displayname: '&5Purple'
+        Lore:
+        - '&5Purple&7 color for your tag!'
+        - ''
+        - '{RIGHT-CLICK-TO-PREVIEW-MESSAGE}'
+        - '&cRequires &6[RANK]&c rank!'
+      Unlocked:
+        Material: PURPLE_DYE
+        Texture: ewogICJ0aW1lc3RhbXAiIDogMTU5NDQ0NjkyMDI5NiwKICAicHJvZmlsZUlkIiA6ICJlMWMxYTE5NDdlODY0MTRmODZiYjQyZDgyYTIxY2ZiOCIsCiAgInByb2ZpbGVOYW1lIiA6ICJBbG9uc29BbGlhZ2EiLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTY4YWE3NGNjODg1NzgwNjBkMGZlM2JkOTA4YjM0ZjY5ZjEyZTA3ZjFmODljNWRkYzE1ZTZiZjYwZjA0Y2NjNiIKICAgIH0KICB9Cn0=
+        Custom-model-data: 0
+        Hide-flags: true
+        Unbreakable: false
+        Glow: false
+        Displayname: '&5Purple'
+        Lore:
+        - '&5Purple&7 color for your tag!'
+        - ''
+        - '{RIGHT-CLICK-TO-PREVIEW-MESSAGE}'
+        - '&eClick to select.'
+  cyan:
+    Enabled: true
+    Slot: 19
+    Name: '&3Cyan color'
+    Permission: alonsotags.color.cyan
+    Color: '&3'
+    Items:
+      Locked:
+        Material: CYAN_DYE
+        Texture: ewogICJ0aW1lc3RhbXAiIDogMTU5NDQ0NjkyMDI5NiwKICAicHJvZmlsZUlkIiA6ICJlMWMxYTE5NDdlODY0MTRmODZiYjQyZDgyYTIxY2ZiOCIsCiAgInByb2ZpbGVOYW1lIiA6ICJBbG9uc29BbGlhZ2EiLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTY4YWE3NGNjODg1NzgwNjBkMGZlM2JkOTA4YjM0ZjY5ZjEyZTA3ZjFmODljNWRkYzE1ZTZiZjYwZjA0Y2NjNiIKICAgIH0KICB9Cn0=
+        Custom-model-data: 0
+        Hide-flags: true
+        Unbreakable: false
+        Glow: false
+        Displayname: '&3Cyan'
+        Lore:
+        - '&3Cyan&7 color for your tag!'
+        - ''
+        - '{RIGHT-CLICK-TO-PREVIEW-MESSAGE}'
+        - '&cRequires &6[RANK]&c rank!'
+      Unlocked:
+        Material: CYAN_DYE
+        Texture: ewogICJ0aW1lc3RhbXAiIDogMTU5NDQ0NjkyMDI5NiwKICAicHJvZmlsZUlkIiA6ICJlMWMxYTE5NDdlODY0MTRmODZiYjQyZDgyYTIxY2ZiOCIsCiAgInByb2ZpbGVOYW1lIiA6ICJBbG9uc29BbGlhZ2EiLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTY4YWE3NGNjODg1NzgwNjBkMGZlM2JkOTA4YjM0ZjY5ZjEyZTA3ZjFmODljNWRkYzE1ZTZiZjYwZjA0Y2NjNiIKICAgIH0KICB9Cn0=
+        Custom-model-data: 0
+        Hide-flags: true
+        Unbreakable: false
+        Glow: false
+        Displayname: '&3Cyan'
+        Lore:
+        - '&3Cyan&7 color for your tag!'
+        - ''
+        - '{RIGHT-CLICK-TO-PREVIEW-MESSAGE}'
+        - '&eClick to select.'
+  gray:
+    Enabled: true
+    Slot: 20
+    Name: '&8Gray color'
+    Permission: alonsotags.color.gray
+    Color: '&8'
+    Items:
+      Locked:
+        Material: GRAY_DYE
+        Texture: ewogICJ0aW1lc3RhbXAiIDogMTU5NDQ0NjkyMDI5NiwKICAicHJvZmlsZUlkIiA6ICJlMWMxYTE5NDdlODY0MTRmODZiYjQyZDgyYTIxY2ZiOCIsCiAgInByb2ZpbGVOYW1lIiA6ICJBbG9uc29BbGlhZ2EiLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTY4YWE3NGNjODg1NzgwNjBkMGZlM2JkOTA4YjM0ZjY5ZjEyZTA3ZjFmODljNWRkYzE1ZTZiZjYwZjA0Y2NjNiIKICAgIH0KICB9Cn0=
+        Custom-model-data: 0
+        Hide-flags: true
+        Unbreakable: false
+        Glow: false
+        Displayname: '&8Gray'
+        Lore:
+        - '&8Gray&7 color for your tag!'
+        - ''
+        - '{RIGHT-CLICK-TO-PREVIEW-MESSAGE}'
+        - '&cRequires &6[RANK]&c rank!'
+      Unlocked:
+        Material: GRAY_DYE
+        Texture: ewogICJ0aW1lc3RhbXAiIDogMTU5NDQ0NjkyMDI5NiwKICAicHJvZmlsZUlkIiA6ICJlMWMxYTE5NDdlODY0MTRmODZiYjQyZDgyYTIxY2ZiOCIsCiAgInByb2ZpbGVOYW1lIiA6ICJBbG9uc29BbGlhZ2EiLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTY4YWE3NGNjODg1NzgwNjBkMGZlM2JkOTA4YjM0ZjY5ZjEyZTA3ZjFmODljNWRkYzE1ZTZiZjYwZjA0Y2NjNiIKICAgIH0KICB9Cn0=
+        Custom-model-data: 0
+        Hide-flags: true
+        Unbreakable: false
+        Glow: false
+        Displayname: '&8Gray'
+        Lore:
+        - '&8Gray&7 color for your tag!'
+        - ''
+        - '{RIGHT-CLICK-TO-PREVIEW-MESSAGE}'
+        - '&eClick to select.'
+  pink:
+    Enabled: true
+    Slot: 21
+    Name: '&dPink color'
+    Permission: alonsotags.color.pink
+    Color: '&d'
+    Items:
+      Locked:
+        Material: PINK_DYE
+        Texture: ewogICJ0aW1lc3RhbXAiIDogMTU5NDQ0NjkyMDI5NiwKICAicHJvZmlsZUlkIiA6ICJlMWMxYTE5NDdlODY0MTRmODZiYjQyZDgyYTIxY2ZiOCIsCiAgInByb2ZpbGVOYW1lIiA6ICJBbG9uc29BbGlhZ2EiLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTY4YWE3NGNjODg1NzgwNjBkMGZlM2JkOTA4YjM0ZjY5ZjEyZTA3ZjFmODljNWRkYzE1ZTZiZjYwZjA0Y2NjNiIKICAgIH0KICB9Cn0=
+        Custom-model-data: 0
+        Hide-flags: true
+        Unbreakable: false
+        Glow: false
+        Displayname: '&dPink'
+        Lore:
+        - '&dPink&7 color for your tag!'
+        - ''
+        - '{RIGHT-CLICK-TO-PREVIEW-MESSAGE}'
+        - '&cRequires &6[RANK]&c rank!'
+      Unlocked:
+        Material: PINK_DYE
+        Texture: ewogICJ0aW1lc3RhbXAiIDogMTU5NDQ0NjkyMDI5NiwKICAicHJvZmlsZUlkIiA6ICJlMWMxYTE5NDdlODY0MTRmODZiYjQyZDgyYTIxY2ZiOCIsCiAgInByb2ZpbGVOYW1lIiA6ICJBbG9uc29BbGlhZ2EiLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTY4YWE3NGNjODg1NzgwNjBkMGZlM2JkOTA4YjM0ZjY5ZjEyZTA3ZjFmODljNWRkYzE1ZTZiZjYwZjA0Y2NjNiIKICAgIH0KICB9Cn0=
+        Custom-model-data: 0
+        Hide-flags: true
+        Unbreakable: false
+        Glow: false
+        Displayname: '&dPink'
+        Lore:
+        - '&dPink&7 color for your tag!'
+        - ''
+        - '{RIGHT-CLICK-TO-PREVIEW-MESSAGE}'
+        - '&eClick to select.'
+  lime:
+    Enabled: true
+    Slot: 22
+    Name: '&aLime color'
+    Permission: alonsotags.color.lime
+    Color: '&a'
+    Items:
+      Locked:
+        Material: LIME_DYE
+        Texture: ewogICJ0aW1lc3RhbXAiIDogMTU5NDQ0NjkyMDI5NiwKICAicHJvZmlsZUlkIiA6ICJlMWMxYTE5NDdlODY0MTRmODZiYjQyZDgyYTIxY2ZiOCIsCiAgInByb2ZpbGVOYW1lIiA6ICJBbG9uc29BbGlhZ2EiLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTY4YWE3NGNjODg1NzgwNjBkMGZlM2JkOTA4YjM0ZjY5ZjEyZTA3ZjFmODljNWRkYzE1ZTZiZjYwZjA0Y2NjNiIKICAgIH0KICB9Cn0=
+        Custom-model-data: 0
+        Hide-flags: true
+        Unbreakable: false
+        Glow: false
+        Displayname: '&aLime'
+        Lore:
+        - '&aLime&7 color for your tag!'
+        - ''
+        - '{RIGHT-CLICK-TO-PREVIEW-MESSAGE}'
+        - '&cRequires &6[RANK]&c rank!'
+      Unlocked:
+        Material: LIME_DYE
+        Texture: ewogICJ0aW1lc3RhbXAiIDogMTU5NDQ0NjkyMDI5NiwKICAicHJvZmlsZUlkIiA6ICJlMWMxYTE5NDdlODY0MTRmODZiYjQyZDgyYTIxY2ZiOCIsCiAgInByb2ZpbGVOYW1lIiA6ICJBbG9uc29BbGlhZ2EiLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTY4YWE3NGNjODg1NzgwNjBkMGZlM2JkOTA4YjM0ZjY5ZjEyZTA3ZjFmODljNWRkYzE1ZTZiZjYwZjA0Y2NjNiIKICAgIH0KICB9Cn0=
+        Custom-model-data: 0
+        Hide-flags: true
+        Unbreakable: false
+        Glow: false
+        Displayname: '&aLime'
+        Lore:
+        - '&aLime&7 color for your tag!'
+        - ''
+        - '{RIGHT-CLICK-TO-PREVIEW-MESSAGE}'
+        - '&eClick to select.'
+  yellow:
+    Enabled: true
+    Slot: 23
+    Name: '&eYellow color'
+    Permission: alonsotags.color.yellow
+    Color: '&e'
+    Items:
+      Locked:
+        Material: YELLOW_DYE
+        Texture: ewogICJ0aW1lc3RhbXAiIDogMTU5NDQ0NjkyMDI5NiwKICAicHJvZmlsZUlkIiA6ICJlMWMxYTE5NDdlODY0MTRmODZiYjQyZDgyYTIxY2ZiOCIsCiAgInByb2ZpbGVOYW1lIiA6ICJBbG9uc29BbGlhZ2EiLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTY4YWE3NGNjODg1NzgwNjBkMGZlM2JkOTA4YjM0ZjY5ZjEyZTA3ZjFmODljNWRkYzE1ZTZiZjYwZjA0Y2NjNiIKICAgIH0KICB9Cn0=
+        Custom-model-data: 0
+        Hide-flags: true
+        Unbreakable: false
+        Glow: false
+        Displayname: '&eYellow'
+        Lore:
+        - '&eYellow&7 color for your tag!'
+        - ''
+        - '{RIGHT-CLICK-TO-PREVIEW-MESSAGE}'
+        - '&cRequires &6[RANK]&c rank!'
+      Unlocked:
+        Material: YELLOW_DYE
+        Texture: ewogICJ0aW1lc3RhbXAiIDogMTU5NDQ0NjkyMDI5NiwKICAicHJvZmlsZUlkIiA6ICJlMWMxYTE5NDdlODY0MTRmODZiYjQyZDgyYTIxY2ZiOCIsCiAgInByb2ZpbGVOYW1lIiA6ICJBbG9uc29BbGlhZ2EiLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTY4YWE3NGNjODg1NzgwNjBkMGZlM2JkOTA4YjM0ZjY5ZjEyZTA3ZjFmODljNWRkYzE1ZTZiZjYwZjA0Y2NjNiIKICAgIH0KICB9Cn0=
+        Custom-model-data: 0
+        Hide-flags: true
+        Unbreakable: false
+        Glow: false
+        Displayname: '&eYellow'
+        Lore:
+        - '&eYellow&7 color for your tag!'
+        - ''
+        - '{RIGHT-CLICK-TO-PREVIEW-MESSAGE}'
+        - '&eClick to select.'
+  aqua:
+    Enabled: true
+    Slot: 24
+    Name: '&bAqua color'
+    Permission: alonsotags.color.aqua
+    Color: '&b'
+    Items:
+      Locked:
+        Material: LIGHT_BLUE_DYE
+        Texture: ewogICJ0aW1lc3RhbXAiIDogMTU5NDQ0NjkyMDI5NiwKICAicHJvZmlsZUlkIiA6ICJlMWMxYTE5NDdlODY0MTRmODZiYjQyZDgyYTIxY2ZiOCIsCiAgInByb2ZpbGVOYW1lIiA6ICJBbG9uc29BbGlhZ2EiLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTY4YWE3NGNjODg1NzgwNjBkMGZlM2JkOTA4YjM0ZjY5ZjEyZTA3ZjFmODljNWRkYzE1ZTZiZjYwZjA0Y2NjNiIKICAgIH0KICB9Cn0=
+        Custom-model-data: 0
+        Hide-flags: true
+        Unbreakable: false
+        Glow: false
+        Displayname: '&bAqua'
+        Lore:
+        - '&bAqua&7 color for your tag!'
+        - ''
+        - '{RIGHT-CLICK-TO-PREVIEW-MESSAGE}'
+        - '&cRequires &6[RANK]&c rank!'
+      Unlocked:
+        Material: LIGHT_BLUE_DYE
+        Texture: ewogICJ0aW1lc3RhbXAiIDogMTU5NDQ0NjkyMDI5NiwKICAicHJvZmlsZUlkIiA6ICJlMWMxYTE5NDdlODY0MTRmODZiYjQyZDgyYTIxY2ZiOCIsCiAgInByb2ZpbGVOYW1lIiA6ICJBbG9uc29BbGlhZ2EiLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTY4YWE3NGNjODg1NzgwNjBkMGZlM2JkOTA4YjM0ZjY5ZjEyZTA3ZjFmODljNWRkYzE1ZTZiZjYwZjA0Y2NjNiIKICAgIH0KICB9Cn0=
+        Custom-model-data: 0
+        Hide-flags: true
+        Unbreakable: false
+        Glow: false
+        Displayname: '&bAqua'
+        Lore:
+        - '&bAqua&7 color for your tag!'
+        - ''
+        - '{RIGHT-CLICK-TO-PREVIEW-MESSAGE}'
+        - '&eClick to select.'
+  gold:
+    Enabled: true
+    Slot: 25
+    Name: '&6Gold color'
+    Permission: alonsotags.color.gold
+    Color: '&6'
+    Items:
+      Locked:
+        Material: ORANGE_DYE
+        Texture: ewogICJ0aW1lc3RhbXAiIDogMTU5NDQ0NjkyMDI5NiwKICAicHJvZmlsZUlkIiA6ICJlMWMxYTE5NDdlODY0MTRmODZiYjQyZDgyYTIxY2ZiOCIsCiAgInByb2ZpbGVOYW1lIiA6ICJBbG9uc29BbGlhZ2EiLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTY4YWE3NGNjODg1NzgwNjBkMGZlM2JkOTA4YjM0ZjY5ZjEyZTA3ZjFmODljNWRkYzE1ZTZiZjYwZjA0Y2NjNiIKICAgIH0KICB9Cn0=
+        Custom-model-data: 0
+        Hide-flags: true
+        Unbreakable: false
+        Glow: false
+        Displayname: '&6Gold'
+        Lore:
+        - '&6Gold&7 color for your tag!'
+        - ''
+        - '{RIGHT-CLICK-TO-PREVIEW-MESSAGE}'
+        - '&cRequires &6[RANK]&c rank!'
+      Unlocked:
+        Material: ORANGE_DYE
+        Texture: ewogICJ0aW1lc3RhbXAiIDogMTU5NDQ0NjkyMDI5NiwKICAicHJvZmlsZUlkIiA6ICJlMWMxYTE5NDdlODY0MTRmODZiYjQyZDgyYTIxY2ZiOCIsCiAgInByb2ZpbGVOYW1lIiA6ICJBbG9uc29BbGlhZ2EiLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTY4YWE3NGNjODg1NzgwNjBkMGZlM2JkOTA4YjM0ZjY5ZjEyZTA3ZjFmODljNWRkYzE1ZTZiZjYwZjA0Y2NjNiIKICAgIH0KICB9Cn0=
+        Custom-model-data: 0
+        Hide-flags: true
+        Unbreakable: false
+        Glow: false
+        Displayname: '&6Gold'
+        Lore:
+        - '&6Gold&7 color for your tag!'
+        - ''
+        - '{RIGHT-CLICK-TO-PREVIEW-MESSAGE}'
+        - '&eClick to select.'
+  white:
+    Enabled: true
+    Slot: 29
+    Name: '&fWhite color'
+    Permission: alonsotags.color.aqua
+    Color: '&f'
+    Items:
+      Locked:
+        Material: WHITE_DYE
+        Texture: ewogICJ0aW1lc3RhbXAiIDogMTU5NDQ0NjkyMDI5NiwKICAicHJvZmlsZUlkIiA6ICJlMWMxYTE5NDdlODY0MTRmODZiYjQyZDgyYTIxY2ZiOCIsCiAgInByb2ZpbGVOYW1lIiA6ICJBbG9uc29BbGlhZ2EiLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTY4YWE3NGNjODg1NzgwNjBkMGZlM2JkOTA4YjM0ZjY5ZjEyZTA3ZjFmODljNWRkYzE1ZTZiZjYwZjA0Y2NjNiIKICAgIH0KICB9Cn0=
+        Custom-model-data: 0
+        Hide-flags: true
+        Unbreakable: false
+        Glow: false
+        Displayname: '&fWhite'
+        Lore:
+        - '&fWhite&7 color for your tag!'
+        - ''
+        - '{RIGHT-CLICK-TO-PREVIEW-MESSAGE}'
+        - '&cRequires &6[RANK]&c rank!'
+      Unlocked:
+        Material: WHITE_DYE
+        Texture: ewogICJ0aW1lc3RhbXAiIDogMTU5NDQ0NjkyMDI5NiwKICAicHJvZmlsZUlkIiA6ICJlMWMxYTE5NDdlODY0MTRmODZiYjQyZDgyYTIxY2ZiOCIsCiAgInByb2ZpbGVOYW1lIiA6ICJBbG9uc29BbGlhZ2EiLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTY4YWE3NGNjODg1NzgwNjBkMGZlM2JkOTA4YjM0ZjY5ZjEyZTA3ZjFmODljNWRkYzE1ZTZiZjYwZjA0Y2NjNiIKICAgIH0KICB9Cn0=
+        Custom-model-data: 0
+        Hide-flags: true
+        Unbreakable: false
+        Glow: false
+        Displayname: '&fWhite'
+        Lore:
+        - '&fWhite&7 color for your tag!'
+        - ''
+        - '{RIGHT-CLICK-TO-PREVIEW-MESSAGE}'
+        - '&eClick to select.'
+  dark-red:
+    Enabled: true
+    Slot: 30
+    Name: '&4Dark red color'
+    Permission: alonsotags.color.dark-red
+    Color: '&4'
+    Items:
+      Locked:
+        Material: REDSTONE
+        Texture: ewogICJ0aW1lc3RhbXAiIDogMTU5NDQ0NjkyMDI5NiwKICAicHJvZmlsZUlkIiA6ICJlMWMxYTE5NDdlODY0MTRmODZiYjQyZDgyYTIxY2ZiOCIsCiAgInByb2ZpbGVOYW1lIiA6ICJBbG9uc29BbGlhZ2EiLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTY4YWE3NGNjODg1NzgwNjBkMGZlM2JkOTA4YjM0ZjY5ZjEyZTA3ZjFmODljNWRkYzE1ZTZiZjYwZjA0Y2NjNiIKICAgIH0KICB9Cn0=
+        Custom-model-data: 0
+        Hide-flags: true
+        Unbreakable: false
+        Glow: false
+        Displayname: '&4Dark red'
+        Lore:
+        - '&4Dark red&7 color for your tag!'
+        - ''
+        - '{RIGHT-CLICK-TO-PREVIEW-MESSAGE}'
+        - '&cRequires &6[RANK]&c rank!'
+      Unlocked:
+        Material: REDSTONE
+        Texture: ewogICJ0aW1lc3RhbXAiIDogMTU5NDQ0NjkyMDI5NiwKICAicHJvZmlsZUlkIiA6ICJlMWMxYTE5NDdlODY0MTRmODZiYjQyZDgyYTIxY2ZiOCIsCiAgInByb2ZpbGVOYW1lIiA6ICJBbG9uc29BbGlhZ2EiLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTY4YWE3NGNjODg1NzgwNjBkMGZlM2JkOTA4YjM0ZjY5ZjEyZTA3ZjFmODljNWRkYzE1ZTZiZjYwZjA0Y2NjNiIKICAgIH0KICB9Cn0=
+        Custom-model-data: 0
+        Hide-flags: true
+        Unbreakable: false
+        Glow: false
+        Displayname: '&4Dark red'
+        Lore:
+        - '&4Dark red&7 color for your tag!'
+        - ''
+        - '{RIGHT-CLICK-TO-PREVIEW-MESSAGE}'
+        - '&eClick to select.'
+  black:
+    Enabled: true
+    Slot: 31
+    Name: '&0Black color'
+    Permission: alonsotags.color.black
+    Color: '&0'
+    Items:
+      Locked:
+        Material: BLACK_DYE
+        Texture: ewogICJ0aW1lc3RhbXAiIDogMTU5NDQ0NjkyMDI5NiwKICAicHJvZmlsZUlkIiA6ICJlMWMxYTE5NDdlODY0MTRmODZiYjQyZDgyYTIxY2ZiOCIsCiAgInByb2ZpbGVOYW1lIiA6ICJBbG9uc29BbGlhZ2EiLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTY4YWE3NGNjODg1NzgwNjBkMGZlM2JkOTA4YjM0ZjY5ZjEyZTA3ZjFmODljNWRkYzE1ZTZiZjYwZjA0Y2NjNiIKICAgIH0KICB9Cn0=
+        Custom-model-data: 0
+        Hide-flags: true
+        Unbreakable: false
+        Glow: false
+        Displayname: '&0Black'
+        Lore:
+        - '&0Black&7 color for your tag!'
+        - ''
+        - '{RIGHT-CLICK-TO-PREVIEW-MESSAGE}'
+        - '&cRequires &6[RANK]&c rank!'
+      Unlocked:
+        Material: BLACK_DYE
+        Texture: ewogICJ0aW1lc3RhbXAiIDogMTU5NDQ0NjkyMDI5NiwKICAicHJvZmlsZUlkIiA6ICJlMWMxYTE5NDdlODY0MTRmODZiYjQyZDgyYTIxY2ZiOCIsCiAgInByb2ZpbGVOYW1lIiA6ICJBbG9uc29BbGlhZ2EiLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTY4YWE3NGNjODg1NzgwNjBkMGZlM2JkOTA4YjM0ZjY5ZjEyZTA3ZjFmODljNWRkYzE1ZTZiZjYwZjA0Y2NjNiIKICAgIH0KICB9Cn0=
+        Custom-model-data: 0
+        Hide-flags: true
+        Unbreakable: false
+        Glow: false
+        Displayname: '&0Black'
+        Lore:
+        - '&0Black&7 color for your tag!'
+        - ''
+        - '{RIGHT-CLICK-TO-PREVIEW-MESSAGE}'
+        - '&eClick to select.'
+  blue:
+    Enabled: true
+    Slot: 32
+    Name: '&9Blue color'
+    Permission: alonsotags.color.blue
+    Color: '&9'
+    Items:
+      Locked:
+        Material: BLUE_DYE
+        Texture: ewogICJ0aW1lc3RhbXAiIDogMTU5NDQ0NjkyMDI5NiwKICAicHJvZmlsZUlkIiA6ICJlMWMxYTE5NDdlODY0MTRmODZiYjQyZDgyYTIxY2ZiOCIsCiAgInByb2ZpbGVOYW1lIiA6ICJBbG9uc29BbGlhZ2EiLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTY4YWE3NGNjODg1NzgwNjBkMGZlM2JkOTA4YjM0ZjY5ZjEyZTA3ZjFmODljNWRkYzE1ZTZiZjYwZjA0Y2NjNiIKICAgIH0KICB9Cn0=
+        Custom-model-data: 0
+        Hide-flags: true
+        Unbreakable: false
+        Glow: false
+        Displayname: '&9Blue'
+        Lore:
+        - '&9Blue&7 color for your tag!'
+        - ''
+        - '{RIGHT-CLICK-TO-PREVIEW-MESSAGE}'
+        - '&cRequires &6[RANK]&c rank!'
+      Unlocked:
+        Material: BLUE_DYE
+        Texture: ewogICJ0aW1lc3RhbXAiIDogMTU5NDQ0NjkyMDI5NiwKICAicHJvZmlsZUlkIiA6ICJlMWMxYTE5NDdlODY0MTRmODZiYjQyZDgyYTIxY2ZiOCIsCiAgInByb2ZpbGVOYW1lIiA6ICJBbG9uc29BbGlhZ2EiLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTY4YWE3NGNjODg1NzgwNjBkMGZlM2JkOTA4YjM0ZjY5ZjEyZTA3ZjFmODljNWRkYzE1ZTZiZjYwZjA0Y2NjNiIKICAgIH0KICB9Cn0=
+        Custom-model-data: 0
+        Hide-flags: true
+        Unbreakable: false
+        Glow: false
+        Displayname: '&9Blue'
+        Lore:
+        - '&9Blue&7 color for your tag!'
+        - ''
+        - '{RIGHT-CLICK-TO-PREVIEW-MESSAGE}'
+        - '&eClick to select.'
+  # ENABLED ONLY IN 1.16+
+  # PLEASE DISABLE IF YOU ARE USING 1.15 or lower.
+  brown:
+    Enabled: true
+    Slot: 33
+    Name: '#874600Brown color'
+    Permission: alonsotags.color.brown
+    Color: '#874600'
+    Items:
+      Locked:
+        Material: BROWN_DYE
+        Texture: ewogICJ0aW1lc3RhbXAiIDogMTU5NDQ0NjkyMDI5NiwKICAicHJvZmlsZUlkIiA6ICJlMWMxYTE5NDdlODY0MTRmODZiYjQyZDgyYTIxY2ZiOCIsCiAgInByb2ZpbGVOYW1lIiA6ICJBbG9uc29BbGlhZ2EiLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTY4YWE3NGNjODg1NzgwNjBkMGZlM2JkOTA4YjM0ZjY5ZjEyZTA3ZjFmODljNWRkYzE1ZTZiZjYwZjA0Y2NjNiIKICAgIH0KICB9Cn0=
+        Custom-model-data: 0
+        Hide-flags: true
+        Unbreakable: false
+        Glow: false
+        Displayname: '#874600Brown'
+        Lore:
+        - '#874600Brown&7 color for your tag!'
+        - ''
+        - '{RIGHT-CLICK-TO-PREVIEW-MESSAGE}'
+        - '&cRequires &6[RANK]&c rank!'
+      Unlocked:
+        Material: BROWN_DYE
+        Texture: ewogICJ0aW1lc3RhbXAiIDogMTU5NDQ0NjkyMDI5NiwKICAicHJvZmlsZUlkIiA6ICJlMWMxYTE5NDdlODY0MTRmODZiYjQyZDgyYTIxY2ZiOCIsCiAgInByb2ZpbGVOYW1lIiA6ICJBbG9uc29BbGlhZ2EiLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTY4YWE3NGNjODg1NzgwNjBkMGZlM2JkOTA4YjM0ZjY5ZjEyZTA3ZjFmODljNWRkYzE1ZTZiZjYwZjA0Y2NjNiIKICAgIH0KICB9Cn0=
+        Custom-model-data: 0
+        Hide-flags: true
+        Unbreakable: false
+        Glow: false
+        Displayname: '#874600Brown'
+        Lore:
+        - '#874600Brown&7 color for your tag!'
+        - ''
+        - '{RIGHT-CLICK-TO-PREVIEW-MESSAGE}'
+        - '&eClick to select.'
