@@ -11,8 +11,8 @@ tournyCmds:
 - ''
 - '&8]&m--------------------------------------------&r&8['
 - ''
-Prefix: '&bRustPezca &8➤ '
-ErrorPrefix: '&cRust&4Pezca &8➤ '
+Prefix: '&cPezca &8➤ '
+ErrorPrefix: '&cPezca &8➤ '
 Fish:
   FishNameColour: '&b&l'
 FishLore:
@@ -80,9 +80,76 @@ Commands:
     AdminColour: '&6'
   Entropy:
     Amount: '&7Tu Actualmente tienes &a%entropy% &7entropy.'
+Events:
+  Error: '&7Ocurrió un error al ejecutar este comando. Verifica los argumentos y asegúrate de que los eventos no estén desactivados en este servidor.'
+  InvalidType: '&7El tipo de evento ''&c%name%&7'' no es un tipo de evento válido.'
+  Misc:
+    NotFound: Desconocido...
+  Base: '&7Para ver información sobre un evento, ingresa el nombre del evento como argumento.'
+  Info:
+    CRABMAS:
+    - |2-
+         &lEvento Crabmas&r
+
+      &l»&r Bioma: %biome%
+      &l»&r Tiempo: %timeleft%
+
+      Los valores anteriores cambiarán automáticamente.
+
+      El evento estará activo por otros: &5%time%&r.
+    - |-
+      &l¿Qué es Crabmas?&r
+
+      Crabmas trata de encontrar un cangrejo especial que aparecerá en un bioma aleatorio, encontrar suficientes orbes y matar al jefe especial para obtener botín.
+    - "&l¿Cómo participo?&r\n\nTodo lo que necesitas hacer es atrapar un pez en diferentes\
+      \ biomas. Si tienes suerte, encontrarás el cangrejo especial en tu bioma.\
+      \ Si lo encuentras, lo anunciará a todos, y el cangrejo permanecerá\
+      \ en esa ubicación durante una hora. "
+    - Después de esa hora, se moverá a un bioma aleatorio para repetir el ciclo. Matar al mini &cCrabmas &rte dará un &cOrbe de Crabmas&r. Si usas &45 &rhaciendo &2clic derecho en el aire&r, hará que el próximo que encuentres sea el &cJefe de Crabmas&r. Este jefe tiene algunos ataques especiales. Al matarlo, recibirás
+    - uno de catorce botines aleatorios. Consulta la siguiente página para ver una lista detallada de botines.
+    - |-
+      &l¿Qué recompensas hay?&r
+
+      &l»&r Augmento de Bola de Nieve
+      &l»&r Augmento de Punto Caliente
+      &l»&r Cristal de Entropía
+      &l»&r Atrayente de Cangrejos
+      &l»&r Atrayente de Platino
+      &l»&r Atrayente Mítico
+      &l»&r Garra de Cangrejo x2
+      &l»&r Escama de Cangrejo x2
+      &l»&r Cola de Delfín x2
+      &l»&r Tentáculo de Calamar x2
+    - |-
+      &l»&r Potenciador de Entropía (1.25x)
+      &l»&r Potenciador de Entropía (1.65x)
+      &l»&r Potenciador de Entropía (2x)
+      &l»&r Potenciador de Entropía (4x)
+NotActive: '&7Ese evento no está activo hasta el &c%date%&7.'
+StartTournament:
+  InvalidArgs: '&7Uso correcto: &c/ft start <torneo> [duración]'
+  TooShort: '&7El valor &c%value% &7es demasiado corto. Debe ser mayor a 0 segundos.'
+  Started: '&7Has iniciado el Torneo &b%type%&7.'
+  InvalidDuration: '&7El valor &c%value% &7no es un entero válido.'
+  InvalidType: '&7Ese tipo de torneo no existe.'
+RemoveDelivery:
+  Removed: '&7Has eliminado esa entrega.'
+  CannotRemove: '&7No puedes eliminar esa entrega, está en progreso o ya ha terminado.'
+  NoDelivery: '&7No tienes una entrega en ese espacio.'
+TournamentInfo:
+  NoTournament: '&7Actualmente no hay ningún torneo en progreso.'
+RemoveBait:
+  Removed: '&7El cebo ha sido quitado de tu caña de pescar.'
+  InvalidItem: '&7El objeto que estás sosteniendo es inválido.'
+  NoBait: '&7El objeto que estás sosteniendo no tiene cebo adjunto.'
+InvalidDeliveryNumber: '&7Has ingresado un número de entrega inválido. Debe estar entre 1 y 15.'
+StopTournament:
+  NoTournament: '&7Actualmente no hay ningún torneo en curso.'
+  Stopped: '&7Has detenido el torneo en curso.'
+  Broadcast: '&7El torneo actual fue detenido por un administrador.'
 CommandsList:
 - ''
-- '&8]&m-----------+&8[ &6&lPyroFishingPro &8]&m+-----------&8['
+- '&8]&m-----------+&8[ &6&lPezca Con Pyro &8]&m+-----------&8['
 - ''
 - '&e/fish help &7- Muestre algo de ayuda general.'
 - '&e/fish menu &7- Abre el menú principal de pesca.'
@@ -118,7 +185,7 @@ Lores:
 AntiAFKFisher: '&7AFK-Fisher detectado, pesque en otro lugar.'
 HelpInChat:
 - '&7-------------------------------------------------'
-- '&7Para iniciar el complemento. Mayús-clic derecho'
+- '&7Para iniciar el complemento. Mayús-Click derecho'
 - '&7sosten una caña de pescar para abrir el menú principal'
 - ''
 - '&7puede vender, escalar y destripar pescado utilizando el'
@@ -243,6 +310,12 @@ Augments:
       nuevo.
     CreativeMode: no se pueden crear aumentos en el modo &ccreativo&7.
     Entropy: '&7No puedes crear ese artículo. Necesitas &c%entropy%&7 mas de entropìa.'
+    RemoveEntropyOnApply:
+      Removed: '&7You have spent &b%entropy% &7to apply that augment.'
+      Failed: '&7You do not have enough entropy to add all of these augments. You
+        need at least &c%entropy% &7for this!'
+    CheckForLevel: '&7You are not a high enough level to apply this augment onto your
+      fishing rod!'
   'False': falso
   Recipe:
     COBBLESTONE: Adoquìn
@@ -285,6 +358,8 @@ Augments:
     TURTLE_EGG: Huevo de tortuga
   Extra:
     PerItem: '&7- %color%%amount%x %item%'
+  MoreThenOneRod: '&7You cannot have a stack of rods inside the augment menu. Unstack
+    them and try again.'
 NoPermission: '&c¡No tienes permiso para usar esto!'
 Tournament:
   Length:
@@ -292,6 +367,8 @@ Tournament:
     LongestFish: '¡Acabas de pescar tu pez más largo! Era: &3%before%cm &7y ahora
       es &b%new%cm&7!'
   NoTournament: '&7There is currently no Tournament Active.'
+  LongestCast:
+    Message: '&7You achieved a new longest cast for this tournament of &b%distance%m&7.'
 Tournaments:
   AlreadyActive: '&7Ya hay un &3torneo &7en curso!'
   NoTournament: '&7No hay un &ctorneo &7Actualmente activo.'
@@ -300,7 +377,20 @@ Tournaments:
   Time:
     Disabled: '&7Los torneos automáticos no están habilitados en este servidor.'
     Time: '&7Tiempo hasta el próximo torneo: &3%time%'
+    TimeLeft: '&7There is a tournament currently active with &a%time% &7left.'
   InvalidArgument: '&cArgumentos inválidos. Hacer /ft para obtener una lista de subcomandos.'
+  Names:
+    LONGEST_LENGTH: Longest Length
+    LONGEST_CAST: Longest Cast
+    MOST_CATCH: Most Fish Caught
+    CRAB_KILLING: Most Crabs Killed
+    MOST_BIOMES: Fish in the Most Biomes
+    BASE_ENTROPY_EARNED: Most Base Entropy Earned
+    RANDOM_CATCH: Catch The Most %fish%
+    SHORTEST_LENGTH: Shortest Length
+  NA:
+    Score: N/A
+    Name: N/A
 Deliveries:
   Dismissed: ha rechazado esta entrega.
   CannotDismiss: '&7Esta entrega no puede descartarse.'
@@ -725,6 +815,7 @@ GUI:
       FirstCaught: '&7Primero atrapado por: &a'
       FoundBetween: '&7Encontrado entre el nivel Y: &a'
       Bait: '&7Requiere cebo: &a%bait%'
+      PerBait: '  &7» &a%bait%'
     InfoEmerald:
       Lore:
       - '&7Estos son todos los &3%tier% &7fish!'
@@ -788,6 +879,33 @@ GUI:
       FishGutted: '&7Pescado eviscerado &a'
       Entropy: '&7Entropy: &a'
     SkillTree: '&b&lÁrbol de habilidades'
+    Stats1:
+    - '&7Total Fish Caught: &a%TotalFishCaught%'
+    - '&7Total Custom Caught &a%TotalCustomCaught%'
+    - ''
+    - '&7Bronze Caught: &a%BronzeFishCaught%'
+    - '&7Silver Caught: &a%SilverFishCaught%'
+    - '&7Gold Caught: &a%GoldFishCaught%'
+    - '&7Diamond Caught: &a%DiamondFishCaught%'
+    - '&7Platinum Caught: &a%PlatinumFishCaught%'
+    - '&7Mythical Caught: &a%MythicalFishCaught%'
+    - ''
+    - '&7Money Made: &a%MoneyMade%'
+    - '&7Crabs Killed: &a%CrabsKilled%'
+    - '&7Fish Gutted &a%FishGutted%'
+    - '&7Deliveries Made: &a%DeliveriesMade%'
+    - ''
+    - '&7Augments Crafted: &a%AugmentsCrafted%'
+    - '&7Fish Killed: &a%FishKilled%'
+    - '&7Longest Fish: &a%LongestFish%'
+    - ''
+    - '&7Tournaments Won: &a%TournamentsWon%'
+    Stats2:
+    - '&7Level: &a%Level%'
+    - '&7Skill Points: &a%SkillPoints%'
+    - '&7Current XP: &a%CurrentXP%'
+    - '&7Required XP: &a%RequiredXP%'
+    - '&7Entropy: &a%Entropy%'
   Totems:
     TotemPassives:
       LittleCritters:
@@ -948,6 +1066,7 @@ GUI:
         Active:
         - ''
         - '&a&lActivo'
+      ConfigDisabled: '&7That totem passive has been disabled by your administators.'
     InUse:
       Name: '&cActivar Totem &7| &c%time%'
       Lore:
@@ -1300,23 +1419,26 @@ Biomes:
   JUNGLE_EDGE: Bordes de la jumgla
   DRIPSTONE_CAVES: Cuevas de Dripstone
   LUSH_CAVES: Exuberantes cuevas
-  SNOWY_SLOPES: Snowy Slopes
-  FROZEN_PEAKS: Frozen Peaks
-  WINDSWEPT_SAVANNA: Windswept Savanna
-  MEADOW: Meadow
-  GROVE: Grove
-  OLD_GROWTH_BIRCH_FOREST: Old Growth Birch Forest
-  SPARSE_JUNGLE: Sparse Jungle
-  OLD_GROWTH_PINE_TAIGA: Old Growth Pine Taiga
-  STONY_PEAKS: Stony Peaks
-  JAGGED_PEAKS: Jagged Peaks
-  WOODED_BADLANDS: Wooded Badlands
-  WINDSWEPT_HILLS: Windswept Hills
-  SNOWY_PLAINS: Snowy Plains
-  OLD_GROWTH_SPRUCE_TAIGA: Old Growth Spruce Taiga
-  STONY_SHORE: Stony Shore
-  WINDSWEPT_FOREST: Windswept Forest
-  WINDSWEPT_GRAVELLY_HILLS: Windswept Gravelly Hills
+  SNOWY_SLOPES: Pendientes Nevadas
+  FROZEN_PEAKS: Picos Congelados
+  WINDSWEPT_SAVANNA: Sabana Barrida por el Viento
+  MEADOW: Pradera
+  GROVE: Arboleda
+  OLD_GROWTH_BIRCH_FOREST: Bosque de Abedules de Crecimiento Antiguo
+  SPARSE_JUNGLE: Jungla Dispersa
+  OLD_GROWTH_PINE_TAIGA: Taiga de Pinos de Crecimiento Antiguo
+  STONY_PEAKS: Picos Pedregosos
+  JAGGED_PEAKS: Picos Escarpados
+  WOODED_BADLANDS: Tierras Baldías Boscosas
+  WINDSWEPT_HILLS: Colinas Barridas por el Viento
+  SNOWY_PLAINS: Llanuras Nevadas
+  OLD_GROWTH_SPRUCE_TAIGA: Taiga de Abetos de Crecimiento Antiguo
+  STONY_SHORE: Costa Pedregosa
+  WINDSWEPT_FOREST: Bosque Barrido por el Viento
+  WINDSWEPT_GRAVELLY_HILLS: Colinas Guijarrosas Barridas por el Viento
+  CHERRY_GROVE: Arboleda de Cerezos
+  DEEP_DARK: Profundidades Oscuras
+  MANGROVE_SWAMP: Pantano de Manglares
 WithdrawnEntropy: te has retirado &d10,000 entropía &7y haber sido dado un &bCristal
   de entropia&7.
 Boosters:
@@ -1339,6 +1461,11 @@ Boosters:
     Crab: '&8➤ &bEl señuelo de cangrejo durara &3%seconds% &7segundos restantes.'
     Platinum: '&8➤ &cEl señuelo de platino durara &3%seconds% &7segundos restantes.'
     Entropy: '&8➤ &bBoost de entropìa &3(%boost%x) &7con &3%seconds% &7segundos restantes.'
+  Names:
+    MYTHICAL: Mythical Booster
+    PLATINUM: Platinum Booster
+    ENTROPY: Entropy Booster
+    CRAB: Crab Booster
 TierNames:
   Platinum: Platino
   Mythical: Mistico
@@ -1374,6 +1501,11 @@ Totems:
   Upgraded: ha actualizado la actualización &3%upgrade%&7!
   Unlocked: ha registrado y desbloqueado este &6Totem de pesca&7!
   NotYours: '&7Este &cTotem &7no te pertenece. Pertenece a &c%name%&7.'
+  AlreadyOwnedTotem: '&7You cannot create another &CTotem &7as you already own one!
+    It is located at &cX: %x%&7, &cY: %y%&7, &cZ: %z%&7. If the Observer is missing,
+    place one in this location and break it to retrieve it.'
+  GlobalRangeEnabled: '&7This server has global-totems enabled. You cannot upgrade
+    the range because of this.'
 RedeemEntropy: tú has redimido &d10,000 entropía&7.
 WithdrawingDisabled: '&7Retirar &bentropia &7Ha sido deshabilitado por tus administradores.'
 ChristasEvent:
@@ -1386,6 +1518,12 @@ Misc:
   Time:
     NoHours: '%minutes% minutos y %seconds% segundos'
     Hours: '%hours% horas, %minutes% minutos y %seconds% segundos'
+    Days: '%days% days, %hours% hours, %minutes% minutes and %seconds% seconds'
+  SimpleTime:
+    NoHours: '%minutes%m and %seconds%s'
+    Hours: '%hours%h, %minutes%m and %seconds%s'
+    Days: '%days%d, %hours%h, %minutes%m and %seconds%s'
+  NA: N/A
 FishShopLogging: '[PyroFishingPro] %player% vendio %fish% peces a la pescadería por
   %money%.'
 RemovedAugments: ¡Has eliminado todos los aumentos de tu caña de pescar!
@@ -1430,6 +1568,7 @@ Bait:
   NotEnoughSpace: '&atu no tienes suficiente espacio de inventario para comprar esto.'
   NotEnoughMoney: '&atu no tienes suficiente dinero para pagar esto..'
   NotHighEnoughLevel: '&7You are not a high enough fishing level to purchase this.'
+  Ranout: '&7The bait on your fishing rod has run out.'
 FishSkills:
   Names:
     TOTEM_LEADER: Lider del totem
@@ -1464,7 +1603,37 @@ DeliveryUpgrades:
     OVERCLOCKED: Overclocked
 NoOffHandFishing: '&7No se puede pescar con una caña de pescar en la mano.'
 FishUpdate:
-  Weighed: '&7Tenga en cuenta que este comando no admite el pescado pesado. Por favor, venderlos o guardarlos como objetos de colección.'
+  Weighed: '&7Tenga en cuenta que este comando no admite el pescado pesado. Por favor,
+    venderlos o guardarlos como objetos de colección.'
   Cooldown: '&7Este comando tiene un tiempo de espera. Debe esperar otro &c%seconds%
     segundos &7para volver a usarlo.'
   Updated: '&7Los peces de tu inventario han sido actualizados a sus nuevos itemstacks.'
+SeasonalEvents:
+  CRABMAS:
+    SalmonName: '&3Anguila Eléctrica'
+    UsedOrb: '&7Has gastado 5 &cOrbes de Crabmas&7. Tu próxima &cCrabmas&7 será el jef@ (#inclusivo xd).'
+    CrabmasOrb:
+      Name: '&cOrbe de Crabmas'
+      Lore:
+      - '&7Un orbe especial obtenido al matar a un'
+      - '&7Crabmas normal. Esto solo se puede'
+      - '&7encontrar y usar durante el Evento de Crabmas.'
+      - ''
+      - '&7Usar &25 &7de estos hará que el próximo'
+      - '&cCrabmas &7que encuentres sea la versión del jefe especial.'
+      - ''
+      - '&7Evento activo desde el &321 de diciembre &8> &39 de enero'
+      - '&a'
+      - '&7Solo en &cValkyCraft'
+    Changed: '&7El Bioma de Crabmas ha cambiado...'
+    NotEnoughOrbs: '&7Necesitas al menos &c5 Orbes de Crabmas &7para hacer esto.'
+    FoundBiome: '&3%player% &7ha encontrado el Bioma de Crabmas, que es &2%biome%&7.'
+    CrabmasBabyName: '&cBebé Crabmas'
+    CrabmasName: '&c&lCrabmas'
+    AlreadyUsedOrb: '&7Ya has usado un orbe y tu próximo &cCrabmas&7 será el jefe.'
+  Names:
+    CRABMAS: Crabmas
+RedeemStackEntropy: '&7Has canjeado &d%amount% Entropía&7.'
+Placeholders:
+  TimeTillTournament:
+    OnGoing: Actualmente activo durante %time%
