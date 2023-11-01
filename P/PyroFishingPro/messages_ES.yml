@@ -127,11 +127,11 @@ Events:
       &l»&r Potenciador de Entropía (4x)
 NotActive: '&7Ese evento no está activo hasta el &c%date%&7.'
 StartTournament:
-  InvalidArgs: '&7Uso correcto: &c/ft start <torneo> [duración]'
-  TooShort: '&7El valor &c%value% &7es demasiado corto. Debe ser mayor a 0 segundos.'
+  InvalidArgs: '&7Uso correcto: &c/ft start <torneo> [Duración]'
+  TooShort: '&7El valor &c%value% &7es demasIado corto. Debe ser mayor a 0 segundos.'
   Started: '&7Has iniciado el Torneo &b%type%&7.'
-  InvalidDuration: '&7El valor &c%value% &7no es un entero válido.'
-  InvalidType: '&7Ese tipo de torneo no existe.'
+  InvalidDuration: '&7El valor &c%value% &7no es un eNtero válido.'
+  InvalidType: '&7Ese tipo de torneO no existe.'
 RemoveDelivery:
   Removed: '&7Has eliminado esa entrega.'
   CannotRemove: '&7No puedes eliminar esa entrega, está en progreso o ya ha terminado.'
