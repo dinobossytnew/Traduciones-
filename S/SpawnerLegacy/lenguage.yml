@@ -1,0 +1,417 @@
+# Color format:
+#   <#123abc>
+#   <#ABC987>
+#   ...
+#
+# Gradient format:
+#   <#ff0000-#00ff00>
+#   <#ff0000-#ffff00-#00ff00>
+#   ...
+#
+# Modifier format:
+#   bold - <!bold> or <!b>
+#   italic - <!italic> or <!i>
+#   underline - <!underline> or <!u>
+#   strikethrough - <!strikethrough> or <!s>
+#   obfuscated - <!obfuscated> or <!o>
+#
+# If you find any errors or bugs, or any text shows
+#   incorrectly then be sure to report it.
+
+Upgrade-GUI:
+  purchase:
+    range: <#00ff00>(!) <#80ff80>Mejorado <#00ffff-#00bfff><!italic>rango <#80ff80>a
+      nivel <#cfe6e6><!italic>%level%
+    delay: <#00ff00>(!) <#80ff80>Mejorado <#ffff00-#ffbf00><!italic>retraso <#80ff80>a
+      nivel <#cfe6e6><!italic>%level%
+    amount: <#00ff00>(!) <#80ff80>Mejorado <#ff00ff-#ff00bf><!italic>cantidad <#80ff80>a
+      nivel <#cfe6e6><!italic>%level%
+    nearby: <#00ff00>(!) <#80ff80>Mejorado <#ff0000-#ff4000><!italic>límite <#80ff80>a
+      nivel <#cfe6e6><!italic>%level%
+    xp: <#00ff00>(!) <#80ff80>Mejorado <#00ff00-#00ff40><!italic>saber <#80ff80>a
+      nivel <#cfe6e6><!italic>%level%
+    drops: <#00ff00>(!) <#80ff80>Mejorado <#0080ff-#0040ff><!italic>botín <#80ff80>a
+      nivel <#cfe6e6><!italic>%level%
+  name: Generador
+  items:
+    upgrade:
+      name:
+        range: <#00ffff-#00bfff>-=< Rango %level% >=-
+        delay: <#ffff00-#ffbf00>-=< Retraso %level% >=-
+        amount: <#ff00ff-#ff00bf>-=< Cantidad %level% >=-
+        nearby: <#ff0000-#ff4000>-=< Límite %level% >=-
+        xp: <#00ff00-#00ff40>-=< Saber %level% >=-
+        drops: <#0080ff-#0040ff>-=< Botín %level% >=-
+      help: <#808080><!italic>¡Haz clic para mejorar!
+      info:
+        range:
+        - '  <#99bfbf>La distancia requerida del jugador desde'
+        - '  <#99bfbf>el generador para que esté activo'
+        delay:
+        - '  <#bfbf99>El tiempo entre cada aparición'
+        - '  <#bfbf99>cuando este generador esté activo'
+        amount:
+        - '  <#bf99bf>La cantidad de entidades que aparecerán'
+        - '  <#bf99bf>cada vez'
+        nearby:
+        - '  <#bf9999>El límite de entidades que pueden estar cerca'
+        - '  <#bf9999>de este generador para que aparezca'
+        xp:
+        - '  <#99cc99>El aumento de experiencia para las entidades'
+        - '  <#99cc99>aparecidas por este generador'
+        drops:
+        - '  <#9999cc>El aumento de botín para las entidades'
+        - '  <#9999cc>aparecidas por este generador'
+      current:
+        range: '<#bfbfbf>Rango actual: <#80ffff-#00ffff><!italic>%value% bloques'
+        delay: '<#bfbfbf>Retraso actual: <#ffff80-#ffff00><!italic>%value% segundos'
+        amount: '<#bfbfbf>Cantidad actual: <#ff80ff-#ff00ff><!italic>%value% entidades'
+        nearby: '<#bfbfbf>Límite actual: <#ff8080-#ff0000><!italic>%value% entidades'
+        xp: '<#bfbfbf>Valor actual: <#80ff80-#00ff00><!italic>%value% por ciento'
+        drops: '<#bfbfbf>Valor actual: <#80c0ff-#0080ff><!italic>%value% por ciento'
+      next:
+        range: '<#bfbfbf>Próximo rango: <#80ffff-#00ffff><!italic>%value% bloques'
+        delay: '<#bfbfbf>Próximo retraso: <#ffff80-#ffff00><!italic>%value% segundos'
+        amount: '<#bfbfbf>Próxima cantidad: <#ff80ff-#ff00ff><!italic>%value% entidades'
+        nearby: '<#bfbfbf>Próximo límite: <#ff8080-#ff0000><!italic>%value% entidades'
+        xp: '<#bfbfbf>Próximo valor: <#80ff80-#00ff00><!italic>%value% por ciento'
+        drops: '<#bfbfbf>Próximo valor: <#80c0ff-#0080ff><!italic>%value% por ciento'
+      maximum-reached: <#00ff00-#00bf00>¡Se ha alcanzado el nivel máximo!
+      price: '<#ffffff>Precio: <#00bf00><!italic>%price%'
+    modifiers:
+      filler:
+      - <#ff0080>Ranura de modificador de generador
+      - <#808080><!italic>¡Haz clic en un modificador para insertar!
+    stats:
+      name: <#bfffff-#00ffff>-=[ %type% Generador ]=-
+      disabled: <#ff0000>DESACTIVADO <#bfbfbf><!italic>(Haz clic para activar)
+      enabled: <#00ff00>ACTIVADO <#bfbfbf><!italic>(Haz clic para desactivar)
+      empty: <#a3cccc>Shift-click derecho en este generador para vaciarlo.
+      location: '<#a3cccc>Ubicación: <#ff0000>%x%<#808080>, <#ff0000>%y%<#808080>,
+        <#ff0000>%z%'
+      stacking:
+        infinite: '<#a3cccc>Apilado: <#99ff00>%stack% Generador'
+        finite: '<#a3cccc>Apilado: <#99ff00>%stack%/%limit% Generadores'
+      charges: '<#a3cccc>Cargas: <#ff0080>%charges%'
+      spawnable: '<#a3cccc>Generable: <#ff8000>%spawnable%'
+      warnings:
+        header: '<#ff0000><!underline>El generador tiene %count% advertencia(s):'
+        light: '  <#ff8000><!italic>nivel de luz insuficiente'
+        environment: '  <#ff8000><!italic>espacio de aparición insuficiente'
+        ground: '  <#ff8000><!italic>tipo de suelo incorrecto'
+        charges: '  <#ff8000><!italic>sin cargas'
+        power: '  <#ff8000><!italic>potencia de redstone insuficiente'
+        unknown: '  <#ff8000><!italic>condiciones de aparición inválidas'
+      lore: []
+    charges:
+      name: <#ff80c0-#ff0080>-={ %charges% Cargas }=-
+      purchase:
+        price: '  <#00bf00><!italic>%price%'
+        first: <#bfbfbf>Haz clic izquierdo para comprar <#ffff00>%charges% cargas
+        second: <#bfbfbf>Haz clic derecho para comprar <#ff8000>%charges% cargas
+        all: <#bfbfbf>Shift-click para comprar <#ff0000>%charges% cargas
+  charges:
+    purchase: <#00ff00>(!) <#00ffff>Has comprado %charges% cargas de generador
+Spawner-item:
+  regular:
+    name: <#bfffff-#00ffff>Generador <#ffff00-#ffaa00>(%type%)
+  empty:
+    name: <#ff8000><Vacío> <#bfffff-#00ffff>Generador
+  empty-stored:
+    name: '<#ff8000><Vacío : %type%> <#bfffff-#00ffff>Generador'
+  header: '<#d9d9d9><!underline>Mejoras:'
+  upgrade:
+    range: <#404040>- <#80ffff-#00ffff>Rango <#cfe6e6><!italic>%level%
+    delay: <#404040>- <#ffff80-#ffff00>Retraso <#cfe6e6><!italic>%level%
+    amount: <#404040>- <#ff80ff-#ff00ff>Cantidad <#cfe6e6><!italic>%level%
+    nearby: <#404040>- <#ff8080-#ff0000>Límite <#cfe6e6><!italic>%level%
+    xp: <#404040>- <#80ff80-#00ff00>Saber <#cfe6e6><!italic>%level%
+    drops: <#404040>- <#80c0ff-#0080ff>Botín <#cfe6e6><!italic>%level%
+  limits: '<#d9d9d9><!underline>Limites:'
+  charges: '<#404040>- <#ff80c0-#ff0080>Cargas: <#cfe6e6><!italic>%charges%'
+  spawnable: '<#404040>- <#ffbf80-#ff8000>Generable: <#cfe6e6><!italic>%spawnable%'
+  info: []
+Prices:
+  experience:
+    insufficient: ¡No tienes suficiente experiencia!
+  type:
+    experience:
+      amount: '%amount% Experiencia'
+    levels:
+      insufficient: ¡No tienes suficientes niveles de experiencia!
+      amount: '%amount% Niveles de Experiencia'
+    material:
+      insufficient: ¡No tienes suficientes materiales!
+      amount: '%amount% × %material%'
+    economy:
+      insufficient: ¡Fondos insuficientes!
+      amount: $%amount%
+    flare-tokens:
+      insufficient: ¡Tokens insuficientes!
+      amount: '%amount% Tokens'
+  insufficient: <#800000>(!) <#ff8000>%insufficient% <#bfbfbf>[Faltan %price%]
+Holograms:
+  empty:
+    single: <#ff8000><Vacío> <#bfffff-#00ffff>Generador
+    multiple: <#ffff00>%stack% <#bfbfbf>× <#ff8000><Vacío> <#bfffff-#00ffff>Generador
+  regular:
+    single: <#bfffff-#00ffff>%name% Generador
+    multiple: <#ffff00>%stack% <#bfbfbf>× <#bfffff-#00ffff>%name% Generador
+  warning: <#ffff00>( <#800000>!!! <#ffff00>)
+  countdown: <#80ffdf>%time%
+Shop-buy:
+  name: <#000000>Tienda de Generadores
+  items:
+    page:
+      current: <#00ffff>Página %page%
+      next: <#ff8000>Página Siguiente
+      previous: <#ff8000>Página Anterior
+    spawner:
+      name: <#bfffff-#00ffff>Generador <#ffff00-#ffaa00>(%type%)
+      price: '<#ffffff>Precio: <#00bf00><!italic>%price%'
+      purchase:
+        first: <#bfbfbf>Haz clic izquierdo para comprar %amount%
+        second: <#bfbfbf>Haz clic derecho para comprar %amount%
+        third: <#bfbfbf>Shift-clic izquierdo para comprar %amount%
+        all: <#bfbfbf>Shift-clic derecho para comprar máximo
+  purchase:
+    success: <#00ff00>(!) <#00ffff>Comprado <#ffff00-#ffaa00>%amount% × %type%<#00ffff>
+      Generador(es)!
+  permission:
+    opening: <#800000>(!) <#ff8000>¡No tienes permiso para abrir esto!
+    purchase: <#800000>(!) <#ff8000>¡No tienes permiso para comprar esto!
+Shop-sell:
+  name: <#000000>Venta de Generadores
+  accept: <#00ff00>Vender
+  cancel: <#ff0000>Cerrar
+  items:
+    selling:
+      name: '<#00ffff>Vendiendo por:'
+      price: <#bfbfbf>- <#00bf00>%price%
+  selling:
+    success: '<#00ff00>(!) <#00ffff>Generadores vendidos exitosamente por:'
+    empty: <#800000>(!) <#ff8000>¡Nada para vender!
+    unable: <#800000>(!) <#ff8000>No se puede vender eso!
+  disabled: <#800000>(!) <#008080>¡La tienda de generadores ha sido desactivada!
+  help: '<#ff0000>(!) Uso: <#ff8000>/%command% [%buy%/%sell%]'
+  permission:
+    opening: <#800000>(!) <#ff8000>¡No tienes permiso para abrir esto!
+    selling: <#800000>(!) <#ff8000>¡No tienes permiso para vender esto!
+Inventory:
+  insufficient-space: <#800000>(!) <#ff8000>¡No tienes suficiente espacio en tu inventario!
+Items:
+  spawner-drop:
+    alert: <#00ffff>Tienes <#ffff00>%seconds% segundos <#00ffff>para recoger tus
+      items de generador! <#ffffff>(haz clic o usa /spawnerdrops)
+    cleared: <#800000>(!) <#ff8000>¡Tus items de generador desaparecieron, no fueron
+      recogidos a tiempo!
+    try-breaking: <#800000>(!) <#ff8000>No se pueden romper generadores mientras no hayas
+      recogido los items previamente caídos!
+    empty: <#800000>(!) <#ff8000>¡No hay items para entregar!
+Tools:
+  crowbar:
+    ignored-type: <#800000>(!) <#ff8000>¡No se puede usar este ítem en este generador!
+    success: <#00ff00>(!) <#00ffff>¡Generador roto exitosamente!
+    failure: <#800000>(!) <#008080>¡Falló al romper el generador!
+  give:
+    success: <#00ff00>(!) <#008080>Agregado <#00ffff>%amount% <#008080>× <#00ffff>%tool%
+      <#008080>a tu inventario!
+    success-single: <#00ff00>(!) <#008080>Agregado <#00ffff>%tool% <#008080>a tu inventario!
+Spawners:
+  placing:
+    permission: <#800000>(!) <#ff8000>¡No tienes permiso para colocar esto!
+  breaking:
+    success: <#00ff00>(!) <#00ffff>¡Generador minado exitosamente!
+    failure: <#800000>(!) <#008080>¡Falló al minar el generador!
+    permission: <#800000>(!) <#ff8000>¡No tienes permiso para romper esto!
+    limit:
+      reached: <#800000>(!) <#ff8000>¡Has alcanzado tu límite de romper generadores!
+      increase: '<#00ff00>(!) <#00ffff>Límite de romper generadores: <#00ffbf>[%current%/%limit%]'
+      notify: '<#00ff00>(!) <#00ffff>Tu límite de romper generadores ha sido reiniciado. Límite: <#00ffbf>%limit% generadores'
+  stacking:
+    stacked:
+      infinite: <#00ff00>(!) <#00ffff>¡Generadores apilados! <#ffff00>(%stack% Apilados)
+      finite: <#00ff00>(!) <#00ffff>¡Generadores apilados! <#ffff00>(%stack%/%limit% Apilados)
+    unequal-spawner: <#800000>(!) <#ff8000>¡Los generadores deben ser iguales para apilar!
+    limit-reached: <#800000>(!) <#ff8000>¡Este generador ha alcanzado su límite de apilamiento!
+    nearby:
+      none-match: <#800000>(!) <#ff8000>No se puede encontrar ningún generador cercano para apilar que coincida.
+    permission: <#800000>(!) <#ff8000>¡No tienes permiso para apilar esto!
+  chunks:
+    limit-reached: <#800000>(!) <#ff8000>¡Este chunk ha alcanzado su límite de generadores!
+  ownership:
+    limit:
+      place: <#00ff00>(!) <#00ffff>Generador colocado <#ff8000>(<#ffff00>%placed%<#ff8000>/<#ffff00>%limit%<#ff8000>)
+      reached: <#800000>(!) <#ff8000>¡Has alcanzado tu límite de generadores! <#bfbfbf>(%limit%)
+    stacking:
+      warning: <#800000>(!) <#ff8000>¡No puedes apilar un generador que no te pertenece!
+    breaking:
+      warning: <#800000>(!) <#ff8000>¡No puedes romper un generador que no te pertenece!
+    upgrading:
+      warning: <#800000>(!) <#ff8000>¡No puedes mejorar un generador que no te pertenece!
+    opening:
+      warning: <#800000>(!) <#ff8000>¡No puedes abrir un generador que no te pertenece!
+    changing:
+      warning: <#800000>(!) <#ff8000>¡No puedes cambiar un generador que no te pertenece!
+    show-owner: <#00ff00>(!) <#ffff00>Este generador pertenece a <#00ffff>%player%
+  natural:
+    changing:
+      warning: <#800000>(!) <#ff8000>¡No puedes cambiar un generador natural!
+    breaking:
+      warning: <#800000>(!) <#ff8000>¡No puedes romper un generador natural!
+    stacking:
+      warning: <#800000>(!) <#ff8000>¡No puedes apilar un generador natural!
+    opening:
+      warning: <#800000>(!) <#ff8000>¡No puedes abrir un generador natural!
+    upgrading:
+      warning: <#800000>(!) <#ff8000>¡No puedes mejorar un generador natural!
+  changing:
+    type-changed: <#00ff00>(!) <#00ffff>Tipo de generador cambiado a <#ffff00>%type%
+    same-type: <#800000>(!) <#ff8000>¡No puedes establecer el mismo tipo de entidad!
+    dany:
+      from: <#800000>(!) <#ff8000>¡No puedes cambiar este tipo de entidad de generador!
+      to: <#800000>(!) <#ff8000>¡No puedes establecer este tipo de entidad!
+    permission: <#800000>(!) <#ff8000>¡No tienes permiso para usar esto!
+    eggs:
+      insufficient: <#800000>(!) <#ff8000>No hay suficientes huevos de spawn <#bfbfbf>(Se requieren %required%)
+  charges:
+    lose-by-stacking: <#800000>(!) <#ff8000>Perdido <#ffff00>%charges% carga(s) <#ff8000>al apilar!
+  upgrades:
+    disabled: <#800000>(!) <#ff8000>¡No puedes mejorar esto!
+    permission:
+      opening: <#800000>(!) <#ff8000>¡No tienes permiso para abrir esto!
+      purchase: <#800000>(!) <#ff8000>¡No tienes permiso para mejorar esto!
+  empty:
+    disabled: <#800000>(!) <#008080>¡Los generadores vacíos están deshabilitados!
+    try-open: <#800000>(!) <#008080>¡No se puede abrir generadores vacíos!
+    hand-full: <#800000>(!) <#008080>¡Debes tener las manos vacías para remover huevos de generador!
+    verify-removing:
+      first: <#ff8000>(!) <#ffff00>¡Haz clic izquierdo para verificar la remoción de huevos de este generador!
+      try-again: <#800000>(!) <#008080>¡Primero debes agacharte y hacer clic derecho en el generador vacío!
+  give:
+    success: <#00ff00>(!) <#008080>Agregado <#00ffff>%amount% <#008080>× <#00ffff>%type%
+      Generador <#008080>a tu inventario!
+    success-single: <#00ff00>(!) <#008080>Agregado <#00ffff>%type% Generador <#008080>a
+      tu inventario!
+Locations:
+  header: '<#00ffff>Has colocado %count% generador(es) en:'
+  world: '  <#808080>(%world%)'
+  position: <#ff0080>%index%. <#c4c4c4>%x%, %y%, %z%
+  none-owned: <#ff8000>¡No posees ningún generador!
+Trusted:
+  help:
+    primary:
+    - '<#00ff80>Uso: <#80ffff>/spawnertrust'
+    - '  <#80ffff>add [jugador] <#cccccc>- añadir jugador de confianza'
+    - '  <#80ffff>remove [jugador] <#cccccc>- eliminar jugador de confianza'
+    - '  <#80ffff>clear <#cccccc>- eliminar todos los jugadores de confianza'
+    - '  <#80ffff>view <#cccccc>- ver todos los jugadores de confianza'
+    add: '<#00ff80>Uso: <#80ffff>/spawnertrust add [jugador]'
+    remove: '<#00ff80>Uso: <#80ffff>/spawnertrust remove [jugador]'
+  info:
+    unknow-player: <#ff0000>¡Jugador desconocido!
+    already-trusted: <#ff8000>¡Ya confías en este jugador!
+    not-trusted: <#ff8000>¡Ya no confías en este jugador!
+    empty: <#ff8000>¡No confías en ningún jugador!
+    added: <#00ffff>¡Jugador añadido a tu lista de confianza!
+    removed: <#00ffff>¡Jugador eliminado de tu lista de confianza!
+    cleared: <#00ffff>¡Eliminados %count% jugador(es) de tu lista de confianza!
+  header: '<#00ffff>Tienes %count% jugador(es) en tu lista de confianza:'
+  player: <#ff0080>%index%. <#c4c4c4>%player%
+Entities:
+  name:
+    ALLAY: Allay
+    ARMADILLO: Armadillo
+    ARMOR_STAND: Soporte de Armadura
+    AXOLOTL: Axolote
+    BAT: Murciélago
+    BEE: Abeja
+    BLAZE: Blaze
+    BOAT: Barco
+    BOGGED: Atascado
+    BREEZE: Brisa
+    CAMEL: Camello
+    CAT: Gato
+    CAVE_SPIDER: Araña de Cueva
+    CHEST_BOAT: Barco con Cofre
+    CHICKEN: Pollo
+    COD: Bacalao
+    COW: Vaca
+    CREEPER: Creeper
+    DOLPHIN: Delfín
+    DONKEY: Burro
+    DROWNED: Ahogado
+    ELDER_GUARDIAN: Guardián Anciano
+    ENDERMAN: Enderman
+    ENDERMITE: Endermite
+    ENDER_DRAGON: Dragón del End
+    EVOKER: Evocador
+    EXPERIENCE_BOTTLE: Botella de Experiencia
+    EXPERIENCE_ORB: Orbe de Experiencia
+    FOX: Zorro
+    FROG: Rana
+    GHAST: Ghast
+    GIANT: Gigante
+    GLOW_SQUID: Calamar Brillante
+    GOAT: Cabra
+    GUARDIAN: Guardián
+    HOGLIN: Hoglin
+    HORSE: Caballo
+    HUSK: Husk
+    ILLUSIONER: Ilusionista
+    IRON_GOLEM: Gólem de Hierro
+    LLAMA: Llama
+    MAGMA_CUBE: Cubo de Magma
+    MINECART: Carro de Mina
+    MINECART_CHEST: Carro de Mina con Cofre
+    MINECART_COMMAND: Carro de Mina con Bloque de Comando
+    MINECART_FURNACE: Carro de Mina con Horno
+    MINECART_HOPPER: Carro de Mina con Tolva
+    MINECART_SPAWNER: Carro de Mina con Spawner
+    MINECART_TNT: Carro de Mina con TNT
+    MULE: Mula
+    MUSHROOM_COW: Vaca Hongo
+    OCELOT: Ocelote
+    PANDA: Panda
+    PARROT: Loro
+    PHANTOM: Fantasma
+    PIG: Cerdo
+    PIGLIN: Piglin
+    PIGLIN_BRUTE: Piglin Bruto
+    PILLAGER: Asaltante
+    POLAR_BEAR: Oso Polar
+    PUFFERFISH: Pez Globo
+    RABBIT: Conejo
+    RAVAGER: Devastador
+    SALMON: Salmón
+    SHEEP: Oveja
+    SHULKER: Shulker
+    SILVERFISH: Pececillo de Plata
+    SKELETON: Esqueleto
+    SKELETON_HORSE: Caballo Esqueleto
+    SLIME: Slime
+    SNIFFER: Olfateador
+    SNOWMAN: Hombre de Nieve
+    SPIDER: Araña
+    SQUID: Calamar
+    STRAY: Extraviado
+    STRIDER: Strider
+    TADPOLE: Renacuajo
+    TRADER_LLAMA: Llama Comerciante
+    TROPICAL_FISH: Pez Tropical
+    TURTLE: Tortuga
+    VEX: Vex
+    VILLAGER: Aldeano
+    VINDICATOR: Vindicador
+    WANDERING_TRADER: Comerciante Errante
+    WARDEN: Guardián
+    WITCH: Bruja
+    WITHER: Wither
+    WITHER_SKELETON: Esqueleto Wither
+    WOLF: Lobo
+    ZOGLIN: Zoglin
+    ZOMBIE: Zombie
+    ZOMBIE_HORSE: Caballo Zombie
+    ZOMBIE_VILLAGER: Aldeano Zombie
+    ZOMBIFIED_PIGLIN: Piglin Zombificado
+    ITEM: Objeto
