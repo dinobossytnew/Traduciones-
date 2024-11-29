@@ -1,1363 +1,1373 @@
 Stats:
   Lore:
     Flux:
-    - '&7Fluxs totales encontrados: &a%total%'
-    - '&7Basic Fluxs encontrados: &a%basic%'
-    - '&7Blazed Flux encontrados: &a%blazed%'
+    - '&7Flujos Totales Encontrados: &a%total%'
+    - '&7Flujos Básicos Encontrados: &a%basic%'
+    - '&7Flujos Ardientes Encontrados: &a%blazed%'
     General:
-    - '§7Dinero creado: §a$%money%'
-    - '§7Piedras preciosas encontradas: §a%gems%'
-    - '§7Guardianes de runas matados: §a%runes%'
-    - '§7Oráculos asesinados: §a%oracles%'
-    - '§7Artefactos encontrados: §a%artifacts%'
-    - '§7Artefactos identificados: §a%artifacts_identified%'
+    - '§7Dinero Generado: §a$%money%'
+    - '§7Gemas Encontradas: §a%gems%'
+    - '§7Guardianes de Runas Eliminados: §a%runes%'
+    - '§7Oráculos Eliminados: §a%oracles%'
+    - '§7Artefactos Encontrados: §a%artifacts%'
+    - '§7Artefactos Identificados: §a%artifacts_identified%'
     Passive:
     - '§7Zeta: §a%zeta%'
-    - '§7Nivel de mineria: §a%level%'
-    - '§7XP actual: §a%current%'
-    - '§7XP requerida: §a%required%'
+    - '§7Nivel de Minería: §a%level%'
+    - '§7XP Actual: §a%current%'
+    - '§7XP Requerido: §a%required%'
   Names:
-    General: '&b&lEstadisticas Generales'
-    Passive: '&6&lEstadisticas Pasivas'
-    Flux: '&2&lEstadísticas de flujo'
+    Flux: '&2&lEstadísticas de Flujos'
+    General: '&b&lEstadísticas Generales'
+    Passive: '&6&lEstadísticas Pasivas'
 GUI:
-  Journal:
-    Vessels:
-      Lore:
-      - §7Los §2Vessels §7son similares a los encantamientos personalizados
-      - §7pero son solo para picos. para hacer uno
-      - §7Tu nesesitas las §38 §7piezas del §2Vessel
-      - §7que se pueden obtener como §6fósiles §7hasta
-      - §aartifefactos§7. colocar las §38 §7piezas en una
-      - §6Refineria§7 para elaborar el §2Vessel§7.
-      - §7
-      - §6§oHaga clic para ver una lista completa de Vessels.
-      - §7
-      - §7Un §2Vessels §7Requiere que adivines la correcta
-      - §4Requium §7Para poder matar al jefe.
-      - §7Puedes ver tus intentos anteriores dentro
-      - §7del §9/mine vessels §7inventario.
-      - §7hay más información dentro de esa GUI.
-      Name: '&2&lVessels'
-    Oracles:
-      Lore:
-      - §cOraculois §7Son jefes del juego final que pueden ser
-      - §7convocado usando §eOracleita cargada§7.
-      - §7Esto se obtiene de §8Polvo misterioso§7.
-      - §7
-      - §cOraculos §7solo se debe luchar cuando el nivel
-      - §b35 §7en §3/mine stats§7. Una vez que matas al
-      - §7primero §3fase §7obtendrás un §5runa §7para invocar
-      - §7la proxima §3fase.
-      - §7
-      - §7Tu invocaras §cOraculos §7mediante el uso §eOracleite
-      - §eCargada §7sobre §aMena de esmeralda§7.
-      - §7
-      - §cOraculos §7soltará los elementos utilizados en el plugin
-      - §7y por §6Herreria negra§7.
-      Name: '&c&lOracles'
-    Refinery:
-      Lore:
-      - §7Se nesesita una §3Refineria §7 para procesar el §fPolvo misterioso§7.
-      - §7Para crear una §3Refineria §7coloca un §f§nSoltador §7frente a un
-      - §f§nupwards§7. Despues, debes colocar una §f§nValla
-      - §7encima del upwards para crear la §3Refineria§7.
-      - §7
-      - §7Colocar el §7Polvo misterioso §7dentro de la §3Refineria
-      - §7procesarlo en sus diferentes componentes.
-      - §7
-      - §7Alternativamente, coloca las §38 piesas de una §2Vessel
-      - §7para crear un §2Vessel§7.
-      Name: '&b&lRefinery'
-    Gemstones:
-      Lore:
-      - §2Piedras preciosas §7Dropeadas de cada mineral, aparte del
-      - §6Oro §7y Mena de §fhierro§7. Puedes vender
-      - §7estos usando §a/mine shop §7o clic derecho
-      - §7Ellos a §fIdentificar §7su calidad que
-      - §7puede §2aumento §7o §cdisminución.
-      - §7El precio de venta general de las §2Piedras preciosas§7.
-      Name: '&a&lGemstones'
-    Flux:
-      Name: '&3&lFluxes'
-      Lore:
-      - §7Los §3Fluxes §7se puede encontrar minando todos los minerales.
-      - §7- §fBasic Fluxes §7Se dropearan de minerales en el §fOverworld §7.
-      - §7- §cBlazed Fluxes §7Se dropearan de minerales en el §cNether §7.
-      - §7
-      - §3Fluxes §7se pueden vender a la §a/mine shop
-      - §7por dinero. Ellos no tienen otro uso actualmente.
-    Blacksmith:
-      Name: '&6&lHerreria negra'
-      Lore:
-      - §7Esta característica no está implementada actualmente
-      - §7y se implementará en una versión futura.
-      - §7
-      - §7La §6Herreria negra §7es un lugar para forjar
-      - §7y crear picos personalizados usando materiales
-      - §7del plugin.
-      - §7
-      - §7Estos picos tienen §3rasgos §7y
-      - §3Habilidades §7que es único para cada
-      - §7pico.
-    Fossils:
-      Lore:
-      - §6Fossils §7se obtienen de §3Artefactos§7.
-      - §7Una vez que tengas un §6Fósil no identificado §7ponlo
-      - §7dentro de una ranura vacía dentro de §a/mine artifacts§7.
-      - §7
-      - §7Una vez que se completa el proceso de identificación, usted
-      - '§7obtendrá una parte de un aleatorio §2Vessel§7. Tu'
-      - §7nesesitas §a8 §7partes para craftear un §2Vessel§7.
-      Name: '&6&lFossils'
-    Forge:
-      Name: '&2&lForge'
-      Lore:
-      - §7Para crear §2Vessels §7necesitarás una forja.
-      - §7Esta es una estructura multibloque.
-      - §7
-      - §6§oHaga clic para ver el diseño de la estructura multibloque.
-      - §7
-      - §7Para usar la forja, suelta las §a8 §7partes de el
-      - §2Vessel §7desea crear en el centro y
-      - §7¡Golpéalo con cualquier cosa! si tienes los materiales
-      - §7creará un §2Vessel §7por ti!
-    RuneGuardians:
-      Name: '&5&lRune Guardians'
-      Lore:
-      - §5Guardianes de runas §7son mini-jefes que
-      - §7pueden ser convocado usando §5Polvo de runa §7la cual
-      - §7es obtenida por el §8Polvo misterioso§7.
-      - §7
-      - §7para convocar uno, §cclick §7en una §cMena de redstone
-      - §7usando un §5Polvo de runa §7para acceder al inventario 
-      - §7de invocaciones. Una vez hecho esto puedes invocarlo.
-      - §7
-      - §7Las §5Runas §7Son necesarias para actualizar y nivelar
-      - §7su §bSingularidad§7.
-    NewSingularity:
-      Lore:
-      - §7la §bSingularidad §7se basa en §5Runas§7.
-      - ''
-      - §7Usando estas §5Runas, §7puedes actualizarlo
-      - §7ganar §bpuntos§7. Con estos puedes actualizar
-      - §7diferentes habilidades que te ayudan en tu progreso
-      - §7en otras áreas del plugin como §echeaper
-      - §eupgrades §7o §bIncreased Requium XP§7.
-      Name: '&b&lSingularity'
-    Artifacts:
-      Lore:
-      - §7Los §3Artefactos §7son la edición más reciente para la minería.
-      - §7Estos se pueden encontrar en minerales con un §61%
-      - §7probabilidad de caída base. Entonces le das §fright-click
-      - §7para convertirlo en un §3artefacto§7 usable.
-      - §7
-      - §7Luego lo colocas dentro de §a/mine artifacts
-      - §7en una de las ranuras vacías para iniciar el
-      - §7proseso de identificación. Después de que se acabe el tiempo
-      - §7usted tiene la oportunidad de obtener un §6Fossil §7el cual
-      - §7se utiliza para hacer un §2Vessels§7.
-      - §7
-      - §7Hay actualizaciones aquí para ayudar con el procesamiento.
-      Name: '&3&lArtefactos'
-    Requiums:
-      Name: '&4&lRequiums'
-      Lore:
-      - §7Los §4Requiums §7se utilizan para matar a los jefes §2Vessels
-      - §7que tienes. tres §4Requiums
-      - §7Son necesarios para matar con éxito al jefe.
-      - §7
-      - §7Existen 12 diferentes §4Requiums §7y cada
-      - §7representar un número diferente. del 1 al 12.
-      - §7
-      - §4Requiums §7Puede ser adquiridos mediante la mejora
-      - §fFinal Whisper §7se mejora en
-      - §3/mine artifacts §7. Una vez que tengas
-      - §7hecho esto, necesita identificar Tier §b3
-      - §7o mayor §3artefactos §7Para conseguirlos.
-      - §7
-      - §7Al matar a un jefe, obtendrás tres
-      - §7Orbes destrozados que pueden convertirse en un nuevo
-      - §4Requium Orb§7.
   Main:
     BackArrow:
-      Name: '&c&lFlecha volvedora'
+      Name: '&c&lAtrás'
       Lore:
-      - '&7Haga clic para volver.'
+      - '&7Haz clic para regresar.'
     Blacksmith:
-      Name: '&7&lHerreria negra'
+      Name: '&7&lHerrero'
       Lore:
-      - '&7Forja tu propio camino soldado.'
-      - '&7&o¿Qué pico personalizado harás?'
-    PickaxeView:
-      Name: '&9&lVista de pico:'
-      Lore:
-      - §7Cuándo hagas §ashift-click §7con tu pico
-      - §7Se abrira un menú de minería.
-      - §7Haga clic aquí para rotar los menús disponibles.
-      - ''
-      - '§7Vista de pico actual: §a%view%'
+      - '&7Forja tu propio camino, soldado.'
+      - '&7&o¿Qué pico personalizado crearás?'
     Shop:
       Lore:
-      - '&7¡Haz clic para abrir el Tienda minera!'
-      - '&7&o¡Vende todos tus flux aquí!'
-      Name: '&6&lTienda minera'
+      - '&7Haz clic para abrir el mercado de minería.'
+      - '&7&o¡Vende todo tu flux aquí!'
+      Name: '&6&lTienda de Minería'
     Journal:
-      Name: '&3&ldiario'
+      Name: '&3&lDiario'
       Lore:
-      - '&7Una wiki en el juego'
-      - '&7&o¿Qué tiene el plugin?'
+      - '&7Una wiki dentro del juego.'
+      - '&7&o¿Qué ofrece el plugin?'
     Vessels:
       Lore:
-      - '&7Encantamientos personalizados!'
-      - '&7&o¿Los recogerás todos?'
-      Name: '&b&lVessels'
+      - '&7¡Encantamientos personalizados!'
+      - '&7&o¿Los coleccionarás todos?'
+      Name: '&b&lRecipientes'
     Fossils:
-      Name: '&6&lFosiles'
+      Name: '&6&lFósiles'
       Lore:
-      - '&7¡Todo sobre fósiles!'
+      - '&7Todo sobre los fósiles.'
       - '&7&o¿Qué criatura desconocida encontrarás?'
+    Singularity:
+      Name: '&b&lSingularidad'
+      Lore:
+      - '&7El pináculo de la energía impía.'
+      - '&7&o¿Cargarás la singularidad?'
+    PickaxeView:
+      Name: '&9&lVista de Pico:'
+      Lore:
+      - §7Al §ahacer shift-click §7con tu pico
+      - §7puedes asignar una tecla rápida para abrir un menú de minería.
+      - §7Haz clic aquí para rotar los menús disponibles.
+      - ''
+      - '§7Vista Actual del Pico: §a%view%'
     Artifacts:
       Lore:
-      - '&7¡Haz clic para administrar tus artefactos!'
+      - '&7Haz clic para gestionar tus artefactos.'
       - '&7&o¿Qué descubrirás?'
       Name: '&9&lArtefactos'
     Stats:
       Lore:
-      - '&7¡Haz clic para ver tus estadísticas!'
-      - '&7&o¿Quién está arriba?'
-      Name: '&e&lEstadisticas'
-    Singularity:
-      Name: '&b&lSingularidad'
-      Lore:
-      - '&7El pináculo de la energía profana.'
-      - '&7&o¿Cobrarás la singularidad?'
+      - '&7Haz clic para ver tus estadísticas.'
+      - '&7&o¿Quién está en la cima?'
+      Name: '&e&lEstadísticas'
   Vessels:
     VesselBossInfo:
       Lore:
-      - '§7Informaciòn del Vessel:'
+      - '§7Información del Vessel:'
       - '§7- Nivel del Vessel: §3%level%'
-      - '§7- Vida: §3%health%'
+      - '§7- Salud: §3%health%'
       - '§7- Daño: §3%damage%'
       - '§7- Nombre: §3%name%'
-      - '§7- Nivel de endafo: §3%anger%'
-      - '§7- Esclavos asesinados: §3%thralls%'
-      - '§7- Capricho: §3%quirk%'
-      - '§7- CD de esclavos: §3%time%'
-      Name: '&3&lInformaciòn del Vessel'
+      - '§7- Nivel de ira: §3%anger%'
+      - '§7- Thralls eliminados: §3%thralls%'
+      - '§7- Quirk: §3%quirk%'
+      - '§7- Enfriamiento de Thralls: §3%time%'
+      Name: '&3&lInformación del Vessel'
     Information:
-      '2':
-        Name: '&3&lInformaciòn (&b2/4&3)'
       '4':
-        Name: '&3&lInformaciòn (&b4/4&3)'
+        Name: '&3&lInformación (&b4/4&3)'
       '1':
-        Name: '&3&lInformaciòn (&b1/4&3)'
+        Name: '&3&lInformación (&b1/4&3)'
+      '2':
+        Name: '&3&lInformación (&b2/4&3)'
       '3':
-        Name: '&3&lInformaciòn (&b3/4&3)'
-    NotEnoughZeta: '&7no tienes suficiente &eZeta &7para hacer esto'
-    VesselInfo:
-      Lore:
-      - §7Seleccione un pico con una embarcación para ver
-      - §7y sigue tu progreso actual.
-      Name: '&c&lInformaciòn del Vessel'
+        Name: '&3&lInformación (&b3/4&3)'
     Requium:
       '1':
         Name: '&c&lRequium #1'
-      '2':
-        Name: '&c&lRequium #2'
       '3':
         Name: '&c&lRequium #3'
-    PreviousAttempts:
-      Name: '&c&lIntentos anteriores'
-      Lore:
-      - §7Seleccione un pico con una embarcación para ver
-      - §7y realizar un seguimiento de su progreso actual.
+      '2':
+        Name: '&c&lRequium #2'
     WithdrawZeta:
       Lore:
-      - '&7Haga clic para retirar &e10,000 &7Zeta.'
+      - '&7Haz clic para retirar &e10,000 &7Zeta.'
       - '&7Haz clic derecho de nuevo para consumir el Zeta.'
       - ''
-      - '&7&oNo envíe spam tan rápidamente.'
+      - '&7&oNo lo hagas rápidamente.'
       Name: '&6Retirar Zeta (&e10,000&6)'
     Info:
       '4':
-      - '§bEsclavos:'
-      - §7Cada §2Vessel §7posee §3Esclavos§7. Estos son
-      - §7pequeñas criaturas que se generan al minar
-      - §7ciertos bloques. Matar a estos te dará
-      - §7progreso de la ira y progreso hacia el desbloqueo
-      - §7del §4Requiums§7 correcto.
+      - '§bThralls:'
+      - §7Cada §2Vessel §7tiene §3Thralls§7. Son
+      - §7criaturas que aparecen al minar ciertos
+      - §7bloques. Eliminarlas otorga progreso de ira
+      - §7y hacia desbloquear los §4Requiums§7 correctos.
       - §7
-      - §7Hay un §b2§7 Minuto de enfriamiento entre encontrarlos.
+      - §7Hay un enfriamiento de §b2§7 minutos entre apariciones.
       '1':
       - '§bVessels:'
-      - §2Vessels §7son esencialmente encantamientos personalizados
-      - §7pero con un giro. Ellos son un jefe y usted tiene
-      - §7para derrotarlo usando §4Requiums§7. Cada §2Vessel
-      - §7cuando mueras aplicará un efecto único a tu
-      - §7pico. Consulte la revista para obtener una lista completa de estos.
+      - §2Vessels §7son encantamientos personalizados
+      - §7con un giro. Son un jefe que debes derrotar
+      - §7usando §4Requiums§7. Al eliminar uno, aplica
+      - §7un efecto único a tu pico. Consulta el diario para
+      - §7ver una lista completa.
       - §7
-      - §7Cada §2Vessel §7tiene habilidades únicas que reflejan su
-      - §7tipo elemental. Cuanto más §2Vessels §7agregas
-      - §7más fuerte será el §2Vessel §7y será el próximo Recipiente.
+      - §7Cada §2Vessel §7tiene habilidades únicas según
+      - §7su tipo elemental. Cuantos más §2Vessels §7agregues,
+      - §7más fuerte será el siguiente.
       - §7
-      - §7Para subir un nivel al §2Vessel§7, simplemente agregue otro
-      - §2Vessel §7del mismo tipo (el capricho no importa) para
-      - §7tu pico. Una vez completado, volverá a subir de nivel.
+      - §7Para subir de nivel un §2Vessel§7, simplemente
+      - §7agrega otro del mismo tipo (el quirk no importa).
       - §7
-      - §7creas un §2Vessel §7poniendo las §38§7 partes
-      - §7de ella dentro de un §6Refinery§7.
+      - §7Crea un §2Vessel §7colocando sus §38§7 partes
+      - §7en una §6Refinería§7.
       - §7
-      - §7Ver todos los §2Vessels §7dentro de §3/mine journal§7.
+      - §7Consulta todos los §2Vessels §7en §3/mine journal§7.
       '2':
       - '§bRequiums:'
-      - §7Se necesitan tres de estos en el lugar correcto
-      - §7para derrotar y dañar a los §2Vessel§7.
-      - §7Puedes adivinar al azar e intentar averiguar
-      - §7el orden correcto o puedes matar §3Esclavos§7.
+      - §7Necesitas tres en el orden correcto para
+      - §7dañar al §2Vessel§7. Puedes adivinar o matar
+      - §7§3Thralls§7 para desbloquear los §4Requiums§7 correctos.
       - §7
-      - §7Matando §3Esclavos §7dará progreso a
-      - §7Desbloquear el §4Requium §7correcto para esa ranura.
-      - §7una vez que obtienes §b100% §7te dirá cual
-      - §7§4Requium §7deberías usar en esa ranura.
+      - §7Al desbloquear un §4Requium §7se te indicará
+      - §7cuál usar y en qué lugar.
       - §7
-      - §7Si aciertas y está en el orden correcto,
-      - §7se le informará que §4Requium §7estara
-      - §7Desbloqueado.
-      - §7
-      - §7Puede ver sus intentos anteriores si
-      - §7pasa el cursor sobre el libro en la parte superior.
-      - §7
-      - §7Obtuviste §4Requiums §7desde el(los) §aArtifacto(s)§7.
-      - §7Usa §a/mine artifacts §7por mas informaciòn.
+      - §7Los §4Requiums §7se obtienen de §aArtifacts§7.
+      - §7Usa §a/mine artifacts §7para más información.
       '3':
-      - '§bPeculiaridades:'
-      - §7Cada §2Vessel §7tiene la oportunidad de venir con
-      - §7Una única §3peculiaridad §7lo que le da una habilidad única
-      - '§7. Las habilidades se enumeran a continuación:'
+      - '§bQuirks:'
+      - §7Cada §2Vessel §7puede tener un §3Quirk §7que le otorga
+      - §7una habilidad única. Las habilidades están listadas abajo: null
     NotSet:
-      '2': '&7Tu &fsegundo &4Requium &cno &7esta &7establecido.'
-      '1': '&7Tu &fprimer &4Requium &cno &7esta &7establecido.'
-      '3': '&7Tu &ftercer &4Requium &cno &7esta &7establecido.'
-    NoPreviousAttempts: '&cNo tienes intentos anteriores.'
+      '2': '&7Tu &fsegundo &4Requium &7no está definido.'
+      '1': '&7Tu &fprimer &4Requium &7no está definido.'
+      '3': '&7Tu &ftercer &4Requium &7no está definido.'
+    NoPreviousAttempts: '&cNo tienes intentos previos.'
+    NoActiveVessel: '&7Este pico no tiene un &2Vessel &7activo.'
+    RemoveVessels:
+      Lore:
+      - §7Esto §4eliminará §7todos los Vessels de tu pico.
+      - §7Asegúrate de sostener tu pico antes de hacerlo.
+      - §7Todos los Vessels se devolverán a tu inventario completados.
+      - §7
+      - §7Requiere §4100,000 §7Zeta.
+      - §7
+      - §c§oNo hay confirmación después de hacer clic.'
+      Name: '&4Eliminar todos los Vessels'
+    ClickPickaxe:
+      Name: '&bHaz clic en tu pico'
+      Lore:
+      - '&7Haz clic en el pico que deseas ver'
+      - '&7para seguir el progreso de tu &2Vessel&7.'
+    HoldingPickaxe: '&7Debes sostener un pico antes de hacer esto.'
+    WithdrawZetaMessage: '&7Has retirado &e10,000 &7Zeta.'
+    PreviousAttemptsInfo:
+    - §7- §oLos §4Requiums en §averde §7§oestán en el lugar correcto.'
+    - §7- §oLos §4Requiums en §crojo §7§opodrían estar en orden incorrecto.'
+    PlaceFirstRequium:
+    - §7Coloca el §f§nprimer§r §3Requium §7debajo de esta ranura.
+    - ''
+    - §7§oAsegúrate de leer sobre los §3Requiums.'
+    HoldingPickaxeRequium: '&7Debes seleccionar un pico antes de equipar &4Requiums&7.'
+    LockedRequium:
+    - §7No has desbloqueado la verdadera identidad
+    - §7de este §cRequium§7, pero puedes intentar uno aleatorio.
+    PlaceThirdRequium:
+    - '&7Coloca el &f&ntercer&r &3Requium &7debajo de este espacio.'
+    - ''
+    - '&7&oAsegúrate de leer sobre los &3Requiums'
+    - '&7&oantes de intentar esto.'
+    - ''
+    VesselInfo:
+      Lore:
+      - §7Selecciona un pico con un recipiente para ver
+      - §7y seguir tu progreso actual.
+      Name: '&c&lInformación del Recipiente'
+    PreviousAttempts:
+      Name: '&c&lIntentos Anteriores'
+      Lore:
+      - §7Selecciona un pico con un recipiente para ver
+      - §7y seguir tu progreso actual.
     Set:
       '2': '&7Tu &fsegundo &4Requium &7es ahora: &c%requium%&7.'
       '3': '&7Tu &ftercer &4Requium &7es ahora: &c%requium%&7.'
       '1': '&7Tu &fprimer &4Requium &7es ahora: &c%requium%&7.'
     RemovedVessels:
-      Success: '&7Has eliminado los siguientes recipientes de tu pico:'
-    NoVessels: '&7Este pico no tiene ningún Vessel.'
-    NoActiveVessel: '&7Este pico no tiene un &2vessel &7activo!'
-    RemoveVessels:
-      Lore:
-      - §7Esto §4removera §7todos los Vessels que tenga
-      - §7tu pico. Asegúrate de estar sosteniendo
-      - §7tu pico antes de hacer esto. Esto 
-      - §7También remueve cualquier Vessels activo actualmente
-      - §7en curso.
-      - §7
-      - §7Hacer esto devolverá todos los Vessels
-      - §7a su inventario con 
-      - §7peculiaridades aleatorias.
-      - §7
-      - §7Hacer esto requiere §4100,000 §7Zeta.
-      - §7
-      - §c§oNo hay un botòn de 'Estas seguro'
-      - §c§odespués de hacer clic en esto. ¡Ten cuidado!
-      Name: '&4Quitar todos los vessels'
-    ClickPickaxe:
-      Name: '&bHaz clic en tu pico'
-      Lore:
-      - '&7Haga clic en el pico que desea ver'
-      - '&7Tu &2Vessel &7en curso.'
-    HoldingPickaxe: '&7¡Debes estar sosteniendo un pico antes de hacer esto!'
-    WithdrawZetaMessage: '&7te has retirado &e10,000 &7Zeta.'
-    PreviousAttemptsInfo:
-    - §7- §oRequiums en §averde §7§oestán en el lugar correcto.
-    - §7- §oRequiums en §crojo §7§opodría estar en el orden incorrecto
-    - §7§oo no en la combinación en absoluto.
-    PreviousAttemptsName: '&c&lIntentos anteriores'
-    PlaceFirstRequium:
-    - §7Coloca el §f§nprimer§r §3Requium §7debajo de esta ranura.
-    - ''
-    - §7§oAsegúrate de leer sobre el §3Requiums
-    - §7§oantes de intentar esto.
-    - ''
+      Success: '&7Has eliminado los siguientes Recipientes de tu pico:'
+    NoVessels: '&7¡Este pico no tiene ningún Recipiente!'
+    PreviousAttemptsName: '&c&lIntentos Anteriores'
     PlaceRequium: '&7Deberías usar &c%requium% &7en este lugar.'
     PlaceSecondRequium:
-    - §7Coloca el §f§nsegundo§r §3Requium §7debajo de esta ranura.
+    - §7Coloca el §f§nsegundo§r §3Requium §7debajo de este espacio.
     - ''
-    - §7§oAsegúrate de leer sobre §3Requiums
-    - §7§oantes de intentar esto
+    - §7§oAsegúrate de leer sobre los §3Requiums
+    - §7§oantes de intentar esto.
     - ''
-    HoldingPickaxeRequium: '&7Debes seleccionar un pico antes de equiparle un &4Requiums&7.'
-    LockedRequium:
-    - §7No has desbloqueado la verdadera identidad.
-    - §7de esta §cRequium §7pero puedes usar
-    - §7uno al azar y ver si funciona.
-    PlaceThirdRequium:
-    - §7Coloca el §f§ntercer§r §3Requium §7debajo de esta ranura.
-    - ''
-    - §7§oAsegúrate de leer sobre §3Requiums
-    - §7§oantes de intentar esto
-    - ''
-    LoadedData: '&7El progreso de su actual &2Vessel &7 ha sido cargado.'
+    LoadedData: '&7Your current &2Vessel &7progress has been loaded.'
+    NotEnoughZeta: '&7You don''t have enough &eZeta &7to do this.'
   Singularity:
     Runes:
       Nature:
-        Name: '&aRuna natural'
+        Name: '&aRuna de Naturaleza'
       Ghost:
-        Name: '&7Runa fantasmal'
-      Fairy:
-        Name: '&dRuna de las hadas'
+        Name: '&7Runa de Fantasma'
       Water:
-        Name: '&bRuna del agua'
+        Name: '&bRuna de Agua'
       Fire:
-        Name: '&cRuna del fuego'
+        Name: '&cRuna de Fuego'
+      Fairy:
+        Name: '&dRuna de Hada'
       Lightning:
-        Name: '&eRuna del relàmpago'
+        Name: '&eRuna de Rayo'
       Ground:
-        Name: '&6Runa del terreno'
+        Name: '&6Runa de Tierra'
     Upgrades:
       CHEAPER_UPGRADES:
-        Name: '&bMejoras del Cheaper &7| Level: &9%points%'
+        Name: '&bMejoras Más Baratas &7| Nivel: &9%points%'
       REQUIUM_PROGRESS:
-        Name: '&bProgreso del Requium &7| Level: &9%points%'
-      ORACLE_DAMAGE:
-        Name: '&bDaño del Oraculo &7| Level: &9%points%'
+        Name: '&bProgreso de Requium &7| Nivel: &9%points%'
       RUNE_DROP_CHANCE:
-        Name: '&bPosibilidad de soltar Runas &7| Level: &9%points%'
+        Name: '&bProbabilidad de Soltar Runas &7| Nivel: &9%points%'
       MORE_ZETA:
-        Name: '&bMas Zetas &7| Level: &9%points%'
+        Name: '&bMás Zeta &7| Nivel: &9%points%'
+      ORACLE_DAMAGE:
+        Name: '&bDaño del Oráculo &7| Nivel: &9%points%'
     Upgrade:
-      Name: '&2Mejorar singularidad'
+      Name: '&2Mejorar Singularidad'
       REQUIUM_PROGRESS:
         Lore:
-        - §7Esta mejora da más XP a los §3Requiums
-        - §7por cada esclavo que mates.
+        - §7Esta mejora otorga más §3XP de Requium
+        - §7por cada esbirro que derrotes.
         - ''
-        - '§7Estadisticas:'
+        - '§7Estadísticas:'
         - '§8➵ §7Puntos: §9%points%'
-        - '§8➵ §7Efectos: §3%effect%% de Bonus de XP obtenidos'
-        - '§8➵ §7Proximo bonus de puntos: §b+%next%% XP obtenidos'
-        - ''
-      MORE_ZETA:
-        Lore:
-        - §7Esta mejora te da más
-        - §eZeta §7de todas las fuentes.
-        - ''
-        - '§7Estadisticas:'
-        - '§8➵ §7Puntos: §9%points%'
-        - '§8➵ §7Efectos: §3%effect%% de Bonus de Zetas obtenidos'
-        - '§8➵ §7Proximo bonus de puntos: §b+%next%% Zetas obtenidos'
+        - '§8➵ §7Efecto: §3%effect%% XP Extra'
+        - '§8➵ §7Bonus Siguiente Punto: §b+%next%% XP Extra'
         - ''
       Lore:
-      - §7Para mejorar su §aSingularidad §7al siguiente
-      - '§7nivel, requieres §5Runas§7:'
+      - §7Para mejorar tu §aSingularidad §7al
+      - '§7siguiente nivel, necesitas las siguientes §5Runas§7:'
       - ''
       - '%runesneeded%'
       - ''
-      - '§7Nivel actual: §3%level%'
-      - §7§oClick para mejorar.
-      LoreLine: '&8➛ %runecolor%%rune% x%runecolor%%amount%'
-      Upgraded: '&7La mejora &3%name% &7ahora tiene &b%points% &7puntos.'
+      - '§7Nivel Actual: §3%level%'
+      - §7§oHaz clic para mejorar.
       CHEAPER_UPGRADES:
         Lore:
-        - §7Esta mejora hace que todas las §amejoras §7mas baratas.
-        - §7Como en el menú de artefactos.
+        - §7Esta mejora reduce el costo de todas las §amejoras§7.
+        - §7Como en el menú de Artefactos.
         - ''
-        - '§7Estadisticas:'
+        - '§7Estadísticas:'
         - '§8➵ §7Puntos: §9%points%'
-        - '§8➵ §7Efectos: §3%effect%% De Costo reducido'
-        - '§8➵ §7Proximo bonus de puntos: §b+%next%% Costo reducido'
+        - '§8➵ §7Efecto: §3%effect%% Costo Reducido'
+        - '§8➵ §7Bonus Siguiente Punto: §b+%next%% Costo Reducido'
         - ''
+      MORE_ZETA:
+        Lore:
+        - §7Esta mejora te otorga más
+        - §eZeta §7de todas las fuentes.
+        - ''
+        - '§7Estadísticas:'
+        - '§8➵ §7Puntos: §9%points%'
+        - '§8➵ §7Efecto: §3%effect%% Zeta Extra'
+        - '§8➵ §7Bonus Siguiente Punto: §b+%next%% Zeta Extra'
+        - ''
+      LoreLine: '&8➛ %runecolor%%rune% x%runecolor%%amount%'
+      Upgraded: '&7La mejora &3%name% &7ahora tiene &b%points% &7puntos.'
       ORACLE_DAMAGE:
         Lore:
         - §7Esta mejora reduce el daño recibido de
-        - §7el §eOraculo§7 y sus ataques tambien.
+        - §7los §eOráculos§7 y sus ataques.
         - ''
-        - '§7Estadisticas:'
+        - '§7Estadísticas:'
         - '§8➵ §7Puntos: §9%points%'
-        - '§8➵ §7Efectos: §3%effect%% De Daño reducido'
-        - '§8➵ §7Proximo bonus de puntos: §b+%next%% Daño reducido'
+        - '§8➵ §7Efecto: §3%effect%% Reducción de Daño'
+        - '§8➵ §7Bonus Siguiente Punto: §b+%next%% Reducción de Daño'
         - ''
       RUNE_DROP_CHANCE:
         Lore:
-        - §7Esta mejora ofrece una alta probabilidad de soltar.
-        - §5Runas §7por el §5Guardian de runa§7.
+        - §7Esta mejora incrementa la probabilidad
+        - §7de obtener §5Runas §7de los §5Guardianes de Runas§7.
         - ''
-        - '§7Estadisticas:'
+        - '§7Estadísticas:'
         - '§8➵ §7Puntos: §9%points%'
-        - '§8➵ §7Efectos: §3%effect%% De Posibilidades de bonus'
-        - '§8➵ §7Proximo bonus de puntos: §b+%next%% Posibilidades de bonus'
+        - '§8➵ §7Efecto: §3%effect%% Probabilidad Extra'
+        - '§8➵ §7Bonus Siguiente Punto: §b+%next%% Probabilidad Extra'
         - ''
     StoredBlocks:
-      Name: '&b&lStored Blocks:'
+      Name: '&b&lBloques Almacenados:'
       Lore:
-      - '&7Tu Actualmente tienes &b%amount% &7bloques almacenados.'
-      - '&7Usalos para mejorar tu &bSingularidad &7o'
-      - '&7para crear &2Vessels&7. Lee mas en &b/mine vessels&7.'
+      - '&7Actualmente tienes &b%amount% &7bloques almacenados.'
+      - '&7Úsalos para mejorar tu &bSingularidad &7o'
+      - '&7crear &2Vasijas&7. Aprende más en &b/mine vessels&7.'
       - ''
-      - '&b&oSingularidad &7Las mejoras se pueden comprar a continuación.'
-      - '&2&oVessels &7están hechos dentro de &b/mine vessels&7.'
+      - '&b&oLas mejoras de Singularidad pueden comprarse abajo.'
+      - '&2&oLas Vasijas se fabrican dentro de &b/mine vessels&7.'
     Info:
       Lore:
-      - §7Para mejorar tu §aSingularidad §7al proximo
-      - §7nivelñ, tu nesesitas diferentes §5Runas§7.
+      - §7Para mejorar tu §aSingularidad §7al
+      - §7siguiente nivel, necesitas diferentes §5Runas§7.
       - ''
-      - §7Las §5Runas §7se puede ganar matando §5Guardianes
-      - §5de runas §7que se puede convocar usando
-      - §cMineral de redstone §7y §dPolvo de runa§7.
+      - §5Las Runas §7se obtienen al derrotar a los §5Guardianes de Runas§7,
+      - §7los cuales puedes invocar usando §cRedstone Ore §7y §dPolvo de Runa§7.
       - ''
       - §7Cada vez que mejores la §aSingularidad
-      - §7Necesitarás una §5Runa§7 adicional.
+      - §7necesitarás una §5Runa §7adicional.
       - ''
-      - §7Esto no es un límite para el nivel máximo de este.
+      - §7No hay límite para el nivel máximo de esto.
       - ''
-      - §7Gaste sus puntos en las actualizaciones a continuación.
+      - §7Invierte tus puntos en las mejoras abajo.
       - ''
-      - '§7Nivel de la Singularidad: §3%level%'
-      - '§7Puntos gratis: §3%points%'
-      Name: '&aInformaciòn'
-    NoPoints: '&7No te quedan de &cPuntos de Singularidad &7'
-    NotEnoughRunes: '&7No tienes suficiente &5Runas &7para hacer esto.'
-    Upgraded: '&7Has mejorado tu &aSingularidad &7a nivel &3%level%&7.'
+      - '§7Nivel de Singularidad: §3%level%'
+      - '§7Puntos Libres: §3%points%'
+      Name: '&aInformación'
+    NoPoints: '&7No tienes más &cPuntos de Singularidad &7disponibles.'
+    NotEnoughRunes: '&7No tienes suficientes &5Runas &7para esto.'
+    Upgraded: '&7Has mejorado tu &aSingularidad &7al nivel &3%level%&7.'
   Names:
-    ManageArcanes: '&9&lAdministrar Arcanos'
+    ManageArcanes: '&9&lGestionar Arcanos'
     Singularity: '&9&lSingularidad'
     Journal:
-      VesselList: '&2&lLista de Vessels'
-    Blacksmith: '&8&lBlacksmith'
-    JournalMain: '&9&lDiario de Mineros'
-    Shop: '&9&lTienda de mineros'
-    JournalGemstones: '&9&lpiedras preciosas'
+      VesselList: '&2&lLista de Vasijas'
+    Blacksmith: '&8&lHerrero'
+    Shop: '&9&lTienda de Minería'
+    JournalGemstones: '&9&lGemas'
     Artifact: '&9&lArtefactos'
-    Vessel: '&9&lVessels'
+    JournalMain: '&9&lDiario de Mineros'
+    Vessel: '&9&lVasijas'
   Shop:
     Prices:
-      Name: '&2&lTienda de precios:'
+      Name: '&2&lPrecios de la Tienda:'
       Lore:
       - '§7Estos son los precios de venta:'
       - ''
-      - '§7Flux:'
-      - '§7- §eFlux Basico: %basic%'
-      - '§7- §4Flux llameante: %blaze%'
+      - '§7Flujos:'
+      - '§7- §eFlujo Básico: %basic%'
+      - '§7- §4Flujo Ardiente: %blaze%'
       - ''
       - '§7Artefactos:'
-      - §7- El precio está indicado en el artículo..
+      - §7- El precio está indicado en el objeto.
       - ''
-      - '§7Piedras preciosas: (Precio §f§nantes de§r§7 examinar)'
+      - '§7Gemas: (Precio §f§nantes§r§7 de examinar)'
     SellPlayerInventory:
       Lore:
-      - '&7Esto venderá todos los artículos vendibles.'
-      - '&7Dentro de &f&ntu&r&7 inventario. Si lo haces'
-      - '&7puedes coleccionar &5artefactos &7o &6fluxes&7.'
-      Name: '&bVender todo &9(inventario del jugador)'
+      - '&7Esto venderá todos los objetos vendibles'
+      - '&7dentro de &f&ntu&r&7 inventario. Ideal si no quieres'
+      - '&7coleccionar &5artefactos &7o &6flujos&7.'
+      Name: '&bVender Todo &9(Inventario del Jugador)'
     SellInventory:
       Lore:
-      - '&7Esto venderá todos los artículos vendibles.'
-      - '&7dentro del &binventario de la tienda de mineros&7. Esto'
-      - '&7&f&nno&r&7 vendera cualquier cosa dentro de tu inventario.'
-      - '&7Si quieres vender &6fluxes'
-      - '&7pero manténer &5artefactos&7 y tal en su lugar.'
-      Name: '&2Vender todo &a(Inventario de la tienda de mineros)'
+      - '&7Esto venderá todos los objetos vendibles'
+      - '&7dentro del &bInventario de la Tienda de Minería&7.'
+      - '&7No &f&nse venderá&r&7 nada que esté en tu'
+      - '&7inventario. Ideal si quieres vender &6flujos'
+      - '&7pero conservar &5artefactos&7 y otros objetos.'
+      Name: '&2Vender Todo &a(Inv. Tienda de Minería)'
     Back:
-      Name: '&c&lAtras'
+      Name: '&c&lAtrás'
       Lore:
-      - '&7Haga clic para volver al menú principal.'
+      - '&7Haz clic para regresar al menú principal.'
+  Journal:
+    Flux:
+      Name: '&3&lFlujos'
+      Lore:
+      - §3Los flujos §7se pueden obtener al minar cualquier mineral.
+      - §7- §fFlujos Básicos §7caerán de los minerales del §fMundo Superior§7.
+      - §7- §cFlujos Ardientes §7caerán de los minerales del §cNether§7.
+      - §7
+      - §3Los flujos §7se pueden vender en el §a/mine shop§7
+      - §7por dinero. Actualmente no tienen otro uso.
+    Forge:
+      Name: '&2&lForja'
+      Lore:
+      - §7Para crear §2Vasijas§7 necesitarás una forja.
+      - §7Esta es una estructura de varios bloques.
+      - §7
+      - §6§oHaz clic para ver el diseño de la estructura.
+      - §7
+      - §7Para usar la forja, coloca las §a8 §7partes de la
+      - §2Vasija §7que deseas fabricar en el centro y
+      - §7golpéala con cualquier cosa. Si tienes los materiales,
+      - §7fabricará una §2Vasija§7 para ti.
+    RuneGuardians:
+      Name: '&5&lGuardianes de Runas'
+      Lore:
+      - §5Guardianes de Runas §7son mini-jefes que
+      - §7pueden ser invocados usando §5Polvo Rúnico§7,
+      - §7que se obtiene del §8Polvo Misterioso§7.
+      - §7
+      - §7Para invocar uno, haz §cclic §7en un §cMineral de Redstone
+      - §7usando §5Polvo Rúnico§7 para acceder al inventario
+      - §7de invocación. Después de esto, podrás invocarlos.
+      - §7Tienen un tiempo de enfriamiento entre invocaciones.
+      - §7
+      - §5Las Runas §7son necesarias para mejorar y subir de nivel
+      - §7tu §bSingularidad§7.
+    Artifacts:
+      Name: '&3&lArtefactos'
+      Lore:
+      - §3Los artefactos §7son la incorporación más reciente a la minería.
+      - §7Estos se pueden encontrar en minerales con una probabilidad
+      - §7base del §61%§7. Luego necesitas hacer §fclic derecho
+      - §7para convertirlo en un §3artefacto§7 utilizable.
+      - §7
+      - §7Colócalo dentro de §a/mine artifacts§7 en uno de los
+      - §7espacios vacíos para iniciar el proceso de identificación.
+      - §7Una vez finalizado, tendrás la posibilidad de obtener
+      - §7un §6Fósil§7, que se usa para fabricar §2Vasijas§7.
+      - §7
+      - §7Hay mejoras aquí para ayudar con el procesamiento.
+    Refinery:
+      Name: '&b&lRefinería'
+      Lore:
+      - §7Se necesita una §3Refinería §7para procesar el §fPolvo Misterioso§7.
+      - §7Para crear una §3Refinería§7 coloca un §f§nDropper §7mirando
+      - §f§nhacia arriba§7. Luego coloca un §f§ncerca §7encima para
+      - §7completar la §3Refinería§7.
+      - §7
+      - §7Coloca el §fPolvo Misterioso §7dentro de la §3Refinería§7
+      - §7para procesarlo en sus diferentes componentes.
+      - §7
+      - §7Alternativamente, coloca las §38 piezas de una §2Vasija§7
+      - §7para fabricarla.
+    Vessels:
+      Name: '&2&lVasijas'
+      Lore:
+      - §2Las vasijas §7son similares a los encantamientos personalizados
+      - §7pero solo para picos. Para fabricar una necesitas las
+      - §38 piezas de la §2Vasija§7, que se obtienen como §6Fósiles§7
+      - §7de artefactos§7. Coloca las §38 piezas en una
+      - §6Refinería§7 para crear la §2Vasija§7.
+      - §7
+      - §6§oHaz clic para ver una lista completa de Vasijas.
+      - §7
+      - §2Las vasijas §7requieren que adivines el orden correcto
+      - §4de Réquiem §7para poder derrotar al jefe.
+      - §7Puedes ver tus intentos anteriores en el inventario
+      - §7de §9/mine vessels§7. Allí encontrarás más información.
+    Oracles:
+      Name: '&c&lOráculos'
+      Lore:
+      - §cLos oráculos §7son jefes de final de juego que pueden ser
+      - §7invocados usando §eOraculita Cargada§7, obtenida del
+      - §8Polvo Misterioso§7.
+      - §7
+      - §cLos oráculos §7solo deberían enfrentarse al nivel
+      - §b35 §7en §3/mine stats§7. Una vez derrotada la primera
+      - §3fase§7, obtendrás una §5Runa §7para invocar la siguiente
+      - §3fase§7.
+      - §7
+      - §cLos oráculos §7se invocan usando §eOraculita Cargada§7
+      - §7en §aMinerales de Esmeralda§7.
+      - §7
+      - §cLos oráculos §7dejarán caer objetos usados en el plugin
+      - §7y para §6Herrería§7.
+    Gemstones:
+      Name: '&a&lGemas'
+      Lore:
+      - §2Las gemas §7caen de cada mineral excepto
+      - §6Oro §7y §fHierro§7. Puedes venderlas usando
+      - §a/mine shop§7 o hacer clic derecho para
+      - §fIdentificar §7su calidad, lo que puede
+      - §7§2aumentar §7o §cdisminuir §7su precio
+      - §7de venta total.
+    Blacksmith:
+      Name: '&6&lHerrería'
+      Lore:
+      - §7Esta función aún no está implementada
+      - §7y será añadida en una futura actualización.
+      - §7
+      - §7La §6Herrería §7es un lugar para forjar
+      - §7y crear picos personalizados usando materiales
+      - §7del plugin.
+      - §7
+      - §7Estos picos tienen §3rasgos únicos §7y
+      - §3habilidades únicas para cada pico.
+    Fossils:
+      Name: '&6&lFósiles'
+      Lore:
+      - §6Los fósiles §7se obtienen de §3Artefactos§7.
+      - §7Una vez que tengas un §6Fósil No Identificado§7,
+      - §7colócalo en un espacio vacío dentro de §a/mine artifacts§7.
+      - §7
+      - §7Al completar el proceso de identificación, obtendrás
+      - §7una parte de una §2Vasija§7. Necesitas §a8 §7partes
+      - §7para fabricar una §2Vasija§7.
+    NewSingularity:
+      Name: '&b&lSingularidad'
+      Lore:
+      - §7La §bSingularidad §7se basa en §5Runas§7.
+      - ''
+      - §7Usando estas §5Runas, §7puedes mejorarla
+      - §7para ganar §bpuntos§7. Con ellos puedes mejorar
+      - §7diferentes habilidades que te ayudarán en tu progreso
+      - §7en otras áreas del plugin, como §emejoras más baratas§7
+      - §eo §bMayor XP de Réquiem§7.
+    Requiums:
+      Name: '&4&lRéquiems'
+      Lore:
+      - §4Los réquiems §7se usan para derrotar al jefe de la
+      - §2Vasija §7que tienes. Se necesitan tres §4Réquiems§7
+      - §7para derrotar al jefe.
+      - §7
+      - §7Hay 12 diferentes §4Réquiems§7, y cada uno representa
+      - §7un número del 1 al 12.
+      - §7
+      - §4Los réquiems §7se pueden obtener mejorando
+      - §fel Final Whisper §7dentro del menú de
+      - §3/mine artifacts§7. Una vez hecho esto, necesitas
+      - §7identificar artefactos de Tier §b3 §7o superior
+      - §7para obtenerlos.
+      - §7
+      - §7Al derrotar a un jefe, obtendrás tres
+      - §7orbes rotos que se pueden convertir en un
+      - §3artefacto completado§7.
   Artifacts:
     Indentifying:
-      Fossil: '&7Ha comenzado a identificar un &6Fósil no identificado &7y
-        tomara %time% &7.'
+      Fossil: '&7Has comenzado a identificar un &6Fósil No Identificado &7y tomará
+        %time% &7.'
+    Lore:
+      BeingIdentified: '&7Este objeto está siendo identificado actualmente.'
+    Upgrades:
+      MaxLevel: '&7¡Esta mejora ya está en el nivel máximo!'
+      Upgraded: '&7Gastaste &3%zeta% Zeta &7y mejoraste &3%name% &7al nivel &b%level%&7.'
+    NoLoot: '&7No tuviste suerte y no obtuviste botín de ese Artefacto.'
+    PlaceFossil: '&7Por favor coloca un &cArtefacto/Fósil No Identificado &7en este
+      espacio para identificarlo.'
     EmptySlot:
       Lore:
-      - '&7Coloque un artefacto o fósil aquí'
+      - '&7Coloca un Artefacto o Fósil aquí'
       - '&7para iniciar el proceso de identificación.'
-      Name: '&cEspacio vacio'
-    Lore:
-      BeingIdentified: '&7Este artículo está siendo identificado actualmente.'
-    Upgrades:
-      MaxLevel: '&7¡Esta mejora ya es de nivel máximo!'
-      Upgraded: '&7Gastaste &3%zeta% Zeta &7y mejoraste &3%name% &7a nivel &b%level%&7.'
-    Identifying: '&7Este artículo está siendo identificado actualmente.'
-    NotEnoughZeta: '&7No tienes suficiente &cZeta &7para mejorar esto. necesitas
-      &c%zeta% &cZetas&7 &7màs !'
-    NoLoot: '&7¡Tuviste mala suerte y no obtuviste botín de ese artefacto!'
-    PlaceFossil: '&7Por favor coloque un &cArtefacto sin identificar / Fòsil &7dentro de esta
-     ranura para identificar este artículo!'
+      Name: '&cEspacio Vacío'
+    Identifying: '&7Este objeto está siendo identificado actualmente.'
+    NotEnoughZeta: '&7No tienes suficientes &cZeta &7para mejorar esto. Necesitas
+      &c%zeta% &7más &cZeta&7.'
     Information:
       Lore:
-      - §7Coloca un §eArtefacto sin identificar §7/ §eFòsiles
-      - §7dentro de una de las ranuras a continuación para comenzar
-      - §7para identificarlos. Una vez que esté completo
-      - §7puedes recoger tus recompensas y botín.
+      - §7Coloca §eArtefactos No Identificados §7/ §eFósiles
+      - §7en uno de los espacios abajo para comenzar
+      - §7a identificarlos. Una vez completo
+      - §7puedes recoger tus recompensas y botines.
       - ''
-      - §7Puede comprar actualizaciones en la parte inferior.
+      - §7Puedes comprar mejoras en la parte inferior.
       - §7Puedes ver todos los fósiles dentro de §b/mine journal
-      - §7Tu encontraste §eArtefactos §7por picar menas.
-      - §eFòsiles §7viene de los §eArtefactos§7.
+      - §7Encuentras §eArtefactos §7al minar minerales.
+      - §eFósiles §7provienen de §eArtefactos§7.
       - ''
-      - §eFòsiles §7se utilizan para crear §2Vessels§7.
-      - §7necesitarás un §5Forga de Vessel §7para esto.
-      - §2/mine vessels §7por mas informaciòn.
-      Name: '&aInformaciòn:'
-    NotReady: '&7Este artículo aún no está listo para la colección.'
+      - §eFósiles §7se usan para fabricar §2Recipientes§7.
+      - §7Necesitarás una §5Forja de Recipientes §7para esto.
+      - §2/mine vessels §7para más información.
+      Name: '&aInformación:'
+    NotReady: '&7Este objeto aún no está listo para ser recolectado.'
+  
   Oracle:
     Cancel:
-      Name: '&c&lCancelar invocaciòn'
-    Info:
-      Name: '&6&lInformaciòn del Oraculo '
-      Lore:
-      - §7El §eOraculo§7 tiene en tres fases.
-      - §7Cada fase se puede iniciar después de matar
-      - §7la fase anterior. Cada fase se volvera
-      - §7Progresivamente más duro hasta que encuentres el
-      - §7jefe de la tercera fase. Cuando un §eOraculo §7es matado
-      - §7soltarán una §5Runa §7que se puede utilizar para
-      - §7convocar a la siguiente fase, o utilizado para otras
-      - §7características relacionadas al plugin.
-      - ''
-      - §7Los oráculos se teletransportarán a ti si quedan atrapados en un bloque..
-      - §7Los oráculos tienen secuaces que los ayudarán a luchar.
-      - §7Todos los oráculos sobresalen en una cosa. Ej. daño por fuego.
-      - ''
-      - §7Pase el cursor sobre el vidrio a continuación para leer información
-      - §7sobre cada individuo §eOraculos §7y su fase.
+      Name: '&c&lCancelar Invocación'
     Summon:
-      Phase3: '&7Estás a punto de convocar a &5Tohka&7.'
-      Phase2: '&7Estás a punto de convocar a &eImpulse&7.'
-      Phase1: '&7Estás a punto de convocar a &cRadalite&7.'
       Lore:
-      - §7Haz clic para convocar al §eOracle§7.
-      - §7Debe pasar el cursor sobre el libro para
-      - §7leer acerca de cómo el §eOracles§7 pelea
-      - §7antes de intentar luchar contra el.
-      Name: '&2&lConfirmar invocaciòn - fase'
+      - §7Haz clic para invocar al §eOráculo§7.
+      - §7Deberías leer el libro para entender cómo
+      - §7funcionan los §eOráculos§7 antes de intentar
+      - §7enfrentarte a este.
+      Name: '&2&lConfirmar Invocación - Fase'
+      Phase3: '&7Estás a punto de invocar a &5Tohka&7.'
+      Phase2: '&7Estás a punto de invocar a &eImpulso&7.'
+      Phase1: '&7Estás a punto de invocar a &cRadalite&7.'
+    Info:
+      Lore:
+      - §7Los §eOráculos§7 funcionan en tres fases.
+      - §7Cada fase puede iniciarse después de derrotar
+      - §7a la fase anterior. Cada fase será
+      - §7progresivamente más difícil hasta llegar
+      - §7al jefe de la tercera fase. Cuando un §eOráculo §7es
+      - §7derrotado, soltará una §5Runa §7que puede usarse para
+      - §7invocar la siguiente fase o para otras
+      - §7características relacionadas con el plugin.
+      - ''
+      - §7Los Oráculos se teletransportarán a ti si quedan atrapados en un bloque.
+      - §7Los Oráculos tienen secuaces que los ayudarán a luchar.
+      - §7Cada Oráculo destaca en algo, por ejemplo, daño de fuego.
+      - ''
+      - §7Pasa el cursor sobre el cristal abajo para leer información
+      - §7sobre cada §eOráculo §7y su fase.
+      Name: '&6&lInformación del Oráculo'
     Bosses:
       '3':
-      - §5Tohka §7es el 3er y ultimo §eOraculo§7.
-      - §7ella se basa en §8Oscuridad §7y 
-      - §7no debe tomarse a la ligera. ella cambiará
-      - §7resistencias cada 20 segundos y se vuelven
-      - §7inmune a todo daño exento de la fuente
-      - §7ella afirma en el momento del intercambio. Ella
-      - §7también convocará a minions para ayudar a luchar.
-      - §7cuando ella pierde §c500 §7de salud ella echará una
-      - §4Lluvia de estrellas Astral §7que constantemente
-      - §7dañar a los jugadores en un radio enorme. Cuando ella
-      - §7alcanza §c300 §7de salud ella echará
-      - §4§limperio astral§r§7 que mejora todas sus estadísticas
-      - §7y hará grandes cantidades de daño.
+      - §5Tohka §7es el tercer y último §eOráculo§7.
+      - §7Está basada en la §8Oscuridad §7y no debe
+      - §7ser subestimada. Cambiará sus resistencias
+      - §7cada 20 segundos, volviéndose inmune a todo daño
+      - §7excepto al elemento que indique en ese momento. También
+      - §7invocará secuaces para ayudarla en la lucha.
+      - §7Cuando pierda §c500 §7de vida, lanzará §4Lluvia Astral§7,
+      - §7causando daño constante en un radio enorme. Cuando
+      - §7alcance §c300 §7de vida, activará §4§lImperio Astral§r§7,
+      - §7mejorando todas sus estadísticas y causando
+      - §7grandes cantidades de daño.
       - ''
-      - '§7Estadisticas del oraculo:'
-      - '§7- Vida: §6%health%'
+      - '§7Estadísticas del Oráculo:'
+      - '§7- Salud: §6%health%'
       - '§7- Daño: §6%damage%'
       - '§7- Elemento: §8Oscuridad'
       - ''
-      - '§7Soltara:'
+      - '§7Recompensas:'
       '2':
-      - §eImpulso §7es el segundo §eOraculo§7.
-      - §7Se enfoca principalmente en electricidad, el lanzamiento
-      - §7de rayos y el daño AoE.
-      - §7y alejar a los atacantes antes de que
-      - §7se acerquen. Cuidado al matarlo
-      - §7le gusta explotar!
+      - §eImpulso §7es el segundo §eOráculo§7.
+      - §7Se enfoca principalmente en electricidad, lanzando
+      - §7rayos y causando daño en área para mantener
+      - §7a raya a los atacantes antes de que se acerquen.
+      - §7¡Ten cuidado al derrotarlo, ya que tiende a explotar!
       - ''
-      - §7Cuando muera, usa la §fRuna de luz §7en
-      - §7Otro mineral de esmeralda para convocar al
-      - §7siguiente oraculo.
+      - §7Al derrotarlo, usa la §fRuna de Luz §7en otro
+      - §7Mineral de Esmeralda para invocar al
+      - §7siguiente Oráculo.
       - ''
-      - '§7Estadisticas del oraculo:'
-      - '§7- Vida: §6%health%'
+      - '§7Estadísticas del Oráculo:'
+      - '§7- Salud: §6%health%'
       - '§7- Daño: §6%damage%'
       - '§7- Elemento: §eElectricidad'
       - ''
-      - '§7Soltara:'
+      - '§7Recompensas:'
       '1':
-      - §cRadalite §7es el primer §eOraculo§7.
-      - §7Ella está basada en el fuego y ofrece bonificación de
-      - §7daño cuando se lucha en el agua.
-      - §7Ella prenderá fuego al mundo con
-      - §7sus habilidades ardientes.
+      - §cRadalite §7es el primer §eOráculo§7.
+      - §7Está basada en el fuego y causa daño extra
+      - §7cuando se la enfrenta en el agua. Encenderá
+      - §7el mundo con sus habilidades ígneas.
       - ''
-      - §7Cuando muera, usa la §4Runa del infierno §7en
-      - §7Otro mineral de esmeralda para convocar al
-      - §7proximo oraculo.
+      - §7Al derrotarla, usa la §4Runa Infernal §7en otro
+      - §7Mineral de Esmeralda para invocar al
+      - §7siguiente Oráculo.
       - ''
-      - '§7Estadisticas del oraculo:'
-      - '§7- Vida: §6%health%'
+      - '§7Estadísticas del Oráculo:'
+      - '§7- Salud: §6%health%'
       - '§7- Daño: §6%damage%'
       - '§7- Elemento: §cFuego'
       - ''
-      - '§7Soltara:'
+      - '§7Recompensas:'
   FossilTransmutation:
-    Transmuted: '&7Tu has &btransmutado&7 3 de tus fòsiles en un %vessel% %part%.'
+    Transmuted: '&7Has &btransmutado&7 3 de tus fósiles en un %vessel% %part%.'
+  FossilTransmuter:
+    VesselLore:
+      Lore:
+      - '&7Haz clic para transmutar tus fósiles %colour%'
+      - '&7en un %vessel% %part%&7.'
 Events:
   CollectorsItem:
     Lore:
-    - '&7Un artículo de colección ha sido encontrado al derrotar'
-    - '&7un &c%type% variante de clase&7.'
+    - '&7Un objeto de colección obtenido al derrotar'
+    - '&7una Variante de clase &c%type%&7.'
     - ''
-    - '&7Este trofeo demuestra que has vencido'
-    - '&7y participado en el &cEvento de Halloween&7.'
-    Name: '&cfragmentos de %type%'
+    - '&7Este trofeo demuestra que has derrotado'
+    - '&7y participado en el Evento de &cHalloween&7.'
+    Name: '&cFragmentos de %type%'
   Halloween:
-    InState: '&7Ya estás marcado por una variante.'
-    Marked: '&7Has sido marcado por una &cvariante desconocida&7. El siguiente desconocido
-      encontrado será una &cVariente&7.'
-    NotEnoughShards: '&7Necesitas &c10 &7Fragmentos desconocidos para hacer esto.'
+    InState: '&7Ya estás marcado para una variante.'
+    Marked: '&7Has sido marcado por una &cVariante Desconocida&7. La próxima Desconocida
+      que encuentres será una &cVariante&7.'
+    NotEnoughShards: '&7Necesitas &c10 &7Fragmentos Desconocidos para hacer esto.'
   UnknownShard:
     Lore:
-    - '&7Un fragmento desconocido de origen misterioso.'
-    - '&7Se obtiene al infligir daño a '
-    - '&7Los Desconocidos cuando aparecen.'
+    - '&7Un Fragmento Desconocido de origen misterioso.'
+    - '&7Obtenido al infligir daño a'
+    - '&7El Desconocido cuando aparece.'
     - ''
     - '&7Haz clic con 10 de estos para marcarte'
-    - '&7por una Variante Desconocida para obtener'
-    - '&7tesoros y objetos.'
-    Name: '&7Fragmento desconocido'
-Fossils:
-  Parts:
-    FOOT: Pie
-    TAIL: Cola
-    SPINE: Espina
-    LEG: Pierna
-    ARM: Brazo
-    SKULL: Calabera
-    RIB: Costilla
-    WING: Alas
-  Species:
-    PHOENIX: Fenix
-    WRAITH: Fantasma
-    DRAGON: Dragòn
-    MANTICORE: Manticora
-  Unidentified:
-    Name: '&6Fòsil No identificado %species% '
+    - '&7por una Variante Desconocida y obtener'
+    - '&7tesoros e ítems míticos.'
+    Name: '&7Fragmento Desconocido'
 LightRuneLore:
-- §7Una runa rara y mítica que
+- §7Una rara y mítica runa que
 - §7emite un aura misteriosa...
 - §7
-- §7Usa esto en un §amineral de esmeralda §7para
+- §7Úsala en §aesmeralda mineral §7para
 - §7invocar a §5Tohka§7.
 Gemstones:
   '6':
-    Name: '&eOjo de tigre'
-    Description: '&7Esta piedra preciosa es más fuerte que todas las criaturas.'
+    Name: '&eOjo de Tigre'
+    Description: '&7Esta gema es más fuerte que cualquier criatura.'
     ColorA: '&6'
     ColorB: '&e'
   '2':
-    Name: '&cRuby'
-    Description: '&7Esta piedra preciosa brilla en la luz.'
+    Name: '&cRubí'
+    Description: '&7Esta gema brilla bajo la luz.'
     ColorB: '&4'
     ColorA: '&c'
   '1':
-    Description: '&7Esta gema brillante ilumina el camino.'
+    Description: '&7Esta brillante gema ilumina el camino.'
     ColorA: '&a'
     ColorB: '&2'
-    Name: '&aPeridot'
+    Name: '&aPeridoto'
   '3':
-    Description: '&7La belleza de esta piedra preciosa te ciega.'
+    Description: '&7La belleza de esta gema te ciega.'
     ColorB: '&6'
     ColorA: '&e'
     Name: '&eTopacio'
   '4':
-    Description: '&7Esta piedra preciosa brilla en el cielo nocturno.'
+    Description: '&7Esta gema brilla en el cielo nocturno.'
     Name: '&dAmatista'
     ColorB: '&5'
     ColorA: '&d'
   '5':
-    Description: '&7Esta piedra preciosa brilla en el mar.'
-    Name: '&9Safiro'
+    Description: '&7Esta gema brilla en el mar.'
+    Name: '&9Zafiro'
     ColorB: '&b'
     ColorA: '&9'
 Vessels:
   NEFARIS_SHADOWS:
     Lore:
-    - '&8Nefaris'' Oscuridad &7Te da una mayor'
-    - '&7Oportunidad de obtener runas de los guardianes de las runas.'
+    - '&8Las Sombras de Nefaris &7te otorgan una mayor'
+    - '&7probabilidad de obtener runas de los guardianes de runas.'
     - ''
-    - '&7Nivel maximo de bonus:'
-    - '&860% Oportunidad de soltar una runa de bonificación'
-    - '&7&o(Debe ser hotbar al matar al'
-    - '&7&oGuardián para que el bonus se aplique)'
-    Name: Nefaris' Vessel
+    - '&7Bono de Nivel Máximo:'
+    - '&860% de probabilidad de soltar una Runa adicional'
+    - '&7&o(Debe estar en la barra de acceso rápido al'
+    - '&7&omatar al guardián para que se aplique el beneficio)'
+    Name: Recipiente de Nefaris
+  Added: '&7Has matado exitosamente a %name% &7y su &2Recipiente &7ha sido añadido
+    a tu pico. ¡Puedes comenzar otro &2Recipiente &7ahora!'
   REZOTHS_DESTRUCTION:
     Lore:
-    - '&cLa destrucción de Rezoth &7te da una oportunidad'
-    - '&7al extraer un mineral para que suelte un'
-    - '&7mineral de otro mineral.'
+    - '&cLa Destrucción de Rezoth &7te da una probabilidad'
+    - '&7al minar un mineral de que caiga un'
+    - '&7mineral de otro tipo.'
     - ''
-    - '&7Nivel maximo de bonus:'
-    - '&c10% Posibilidad de duplicar el mineral de bonificación'
-    Name: Vessel Rezoths
+    - '&7Bono de Nivel Máximo:'
+    - '&c10% de probabilidad de duplicar el mineral adicional'
+    Name: Recipiente de Rezoth
   IMPEROS_WINDS:
-    Name: Vessel Imperos
+    Name: Recipiente de Imperos
     Lore:
-    - '&eVientos de Imperos &7te da una mayor oportunidad'
-    - '&7para encontrar artefactos más raros al extraer minerales.'
+    - '&eLos Vientos de Imperos &7te otorgan una mayor probabilidad'
+    - '&7de encontrar artefactos más raros al minar minerales.'
     - ''
-    - '&7Nivel maximo de bonus:'
-    - '&e5% Probabilidad de fósil aumentada cuando'
-    - '&eartefactos de apertura.'
+    - '&7Bono de Nivel Máximo:'
+    - '&e5% de aumento en la probabilidad de encontrar fósiles al'
+    - '&eabrir artefactos.'
   Lore:
     Completed:
     - ''
-    - '&7Este Vessel está completo y puede ser'
-    - '&7añadido sin hacer el proceso de nuevo.'
-    Main:
-    - '&7Para agregar esto a tu pico, arrastra'
-    - '&7y suéltalo en el pico.'
+    - '&7Este Recipiente está completo y puede'
+    - '&7añadirse sin repetir el proceso.'
+    ItemStack:
+    - '&7Para añadirlo a tu pico, arrástralo'
+    - '&7y suéltalo sobre el pico.'
     - '%completed%'
-    - '&8&m---------&r&8[ %color%Estadisticas &8]&m---------'
-    - '%color%Nombre del Vessel: &8➤ &7%name%'
-    - '%color%Nivel requerido: &8➤ &7%reqlevel%'
-    - '%color%Nivel maximo del Vessel: &8➤ &7%maxlevel%'
-    - '%color%Costo de zetas: &8➤ &7%cost%'
+    - '&8&m---------&r&8[ %color%Estadísticas &8]&m---------'
+    - '%color%Nombre del Recipiente: &8➤ &7%name%'
+    - '%color%Nivel Requerido: &8➤ &7%reqlevel%'
+    - '%color%Nivel Máximo del Recipiente: &8➤ &7%maxlevel%'
+    - '%color%Costo de Zeta: &8➤ &7%cost%'
     - '%color%Elemento: &8➤ &7%element%'
-    - '%color%Peculiaridad: &8➤ &7%quirk%'
-    - '&8&m---------&r&8[ %color%Estadisticas &8]&m---------'
+    - '%color%Característica: &8➤ &7%quirk%'
+    - '&8&m---------&r&8[ %color%Estadísticas &8]&m---------'
+    - '%description%'
+    - '&8&m---------&r&8[ %color%Estadísticas &8]&m---------'
   AURORAS_BLAZE:
     Lore:
-    - '&4el resplandor de aurora &7automáticamente olerá '
-    - '&7Minerales de hierro y oro que tu mines.'
+    - '&4El Resplandor de Aurora &7fundirá automáticamente'
+    - '&7los minerales de hierro y oro que mines.'
     - ''
-    - '&7Nivel maximo de bonus:'
-    - '&425% Probabilidad de que caiga un lingote de bonificación'
-    Name: Vessel Aurora
-  VARIANTS_WRATH:
-    Name: Vessel de variantes
-    Lore:
-    - '&4La ira de la variante &7te da mayores posibilidades'
-    - '&7para encontrar fluxes, artefactos y piedras preciosas'
-    - '&7por debajo del nivel Y 20'
-    - ''
-    - '&7Nivel maximo de bonus:'
-    - '&4Bonus extendida por debajo del nivel Y 50.'
+    - '&7Bono de Nivel Máximo:'
+    - '&425% de probabilidad de soltar un Lingote adicional'
+    Name: Recipiente de Aurora
   NAGYNS_TRANQUILITY:
     Lore:
-    - '&5La tranquilidad de Nagyn &7Te da un mayor'
-    - '&7posibilidad de obtener &8Polvo misterioso&7 por'
-    - '&7picar minerales . Cuanto mayor sea el nivel, mayor será la posibilidad.'
+    - '&5La Tranquilidad de Nagyn &7te otorga una mayor'
+    - '&7probabilidad de obtener &8Polvo Misterioso&7 al'
+    - '&7minar minerales. Cuanto mayor sea el nivel, mejor será la probabilidad.'
     - ''
-    - '&7Nivel maximo de bonus:'
-    - '&520% Probabilidad de 2x polvos misteriosos'
-    Name: Vessel Nagyns
+    - '&7Bono de Nivel Máximo:'
+    - '&520% de probabilidad de obtener 2x Polvo Misterioso'
+    Name: Recipiente de Nagyn
+  NotOwner: '&7¡No eres el propietario de este &cRecipiente&7!'
   XOSTRANS_GLARE:
     Lore:
-    - '&9El resplandor de Xostran &7te da una mayor posibilidad'
-    - '&7para obtener items de oráculos al matar oráculos.'
+    - '&9La Mirada de Xostran &7te otorga una mayor probabilidad'
+    - '&7de obtener botines de los Oráculos al matarlos.'
     - ''
-    - '&7Nivel maximo de bonus:'
-    - '&920% Probabilidad de caidas doble'
-    Name: Vessel Xostrans
-  MEMENTOS_STOPWATCH:
-    Lore:
-    - '&3Cronómetro de recuerdos &7te da una oportunidad de'
-    - '&7obtener doble items al romper un mineral'
-    - '&7sin toque de seda.'
-    - ''
-    - '&7Nivel maximo de bonus:'
-    - '&3Pequeña probabilidad de caídas triples.'
-    Name: Vessel Mementos
-  NEPTULUS_WAVE:
-    Lore:
-    - '&bOla de Neptulo &7te da bonus de XP'
-    - '&7para subir de nivel tu PyroMining.'
-    - '&7Cuanto más alto sea el nivel, más XP obtendrás.'
-    - ''
-    - '&7Maximo nivel de bonus:'
-    - '&b10% Oportunidad de triplicar XP'
-    Name: Vessel Neptulus
+    - '&7Bono de Nivel Máximo:'
+    - '&920% de probabilidad de Botines Dobles'
+    Name: Recipiente de Xostran
   VALAKAS_NIGHTFALL:
-    Name: Vessel Valakas
+    Name: Recipiente de Valakas
     Lore:
-    - '&6Anochecer de Valakas &7te da la oportunidad de'
-    - '&7obtener &ePrisa II &7por romper un mineral'
-    - '&6por &630 - 100 &7segundos.'
+    - '&6El Anochecer de Valakas &7te da una probabilidad de'
+    - '&7obtener &ePrisa II &7al romper un mineral'
+    - '&7durante &630 - 100 &7segundos.'
     - ''
-    - '&7Maximo nivel de bonus:'
-    - '&6Da Prisa III en lugar de Prisa II'
-  NECROS_REALM:
-    Name: Vessel Necros
+    - '&7Bono de Nivel Máximo:'
+    - '&6Otorga Prisa III en lugar de Prisa II'
+  NEPTULUS_WAVE:
+    Name: Recipiente de Neptulus
     Lore:
-    - '&8Reino de los Necros &7da XP adicional cuando'
-    - '&7desbloqueas Requiums y aumentas la Posibilidad'
-    - '&7de invocar esclavos.'
+    - '&bLa Ola de Neptulus &7te otorga XP adicional'
+    - '&7para subir de nivel en PyroMining.'
+    - '&7Cuanto mayor sea el nivel, más XP obtendrás.'
     - ''
-    - '&7Nivel maximo de bonus:'
-    - '&850% Reducción del tiempo de reutilización de Thrall Spawn'
+    - '&7Bono de Nivel Máximo:'
+    - '&b10% de probabilidad de triplicar la XP'
   SKYLARKS_DREAM:
     Lore:
-    - '&aEl sueño de Skylark &7hace todos los fluxes que'
-    - '&7usted encuentra vender por un precio más alto. Más alto'
-    - '&7el nivel, más fluxes se venderán.'
+    - '&aEl Sueño de Skylark &7hace que todos los flujos que'
+    - '&7encuentres se vendan a un precio mayor. Cuanto mayor'
+    - '&7sea el nivel, más valdrán los flujos.'
     - ''
-    - '&7Nivel maximo de bonus:'
-    - '&a20% posibilidad de un bonus de flujo'
-    Name: Vessel Skylarks
-  SERAPHS_GRASP:
-    Name: Vessel Seraphs
+    - '&7Bono de Nivel Máximo:'
+    - '&a20% de probabilidad de un Flujo adicional'
+    Name: Recipiente de Skylark
+  ManualKill: '&7Necesitas matar manualmente al &2Recipiente&7. Tendrás que encontrar
+    nuevamente el &2Recipiente&7.'
+  ThrallCDCommand:
+    Active: '&7Tu tiempo de reutilización de Thrall terminará en &c%seconds%&7 segundos.'
+    NotActive: '&7Puedes encontrar un Thrall y no tienes tiempo de reutilización.'
+  NeedPickaxe: '&7Necesitas tener en tu inventario el pico del que se invocó el &2Recipiente&7.'
+  VARIANTS_WRATH:
+    Name: Recipiente de Variant
     Lore:
-    - '&2Agarre del serafín &7te da bonus de Zeta'
-    - '&7de todos los minerales que extraes con él.'
+    - '&4La Ira de Variant &7te otorga mayores probabilidades'
+    - '&7de encontrar flujos, artefactos y gemas'
+    - '&7por debajo del nivel Y 20.'
     - ''
-    - '&7Nivel maximo de bonus:'
-    - '&215% Oportunidad de Triple Zeta ganado'
-  PlayerDied: '&7tu moriste y el &2Vessel &7desapareció en las profundidades.'
+    - '&7Bono de Nivel Máximo:'
+    - '&4El Bono se extiende por debajo del nivel Y 50.'
+  MEMENTOS_STOPWATCH:
+    Lore:
+    - '&3El Cronómetro de Mementos &7te da una probabilidad'
+    - '&7de obtener botines dobles al romper un mineral'
+    - '&7sin toque de seda.'
+    - ''
+    - '&7Bono de Nivel Máximo:'
+    - '&3Pequeña probabilidad de botines triples.'
+    Name: Recipiente de Mementos
+  NECROS_REALM:
+    Name: Recipiente de Necros
+    Lore:
+    - '&8El Reino de Necros &7otorga XP adicional al'
+    - '&7desbloquear Requiums y aumenta la probabilidad'
+    - '&7de aparición de Thralls.'
+    - ''
+    - '&7Bono de Nivel Máximo:'
+    - '&850% de reducción en el tiempo de reutilización de Thralls'
+  SERAPHS_GRASP:
+    Name: Recipiente de Seraphs
+    Lore:
+    - '&2El Agarre de Seraphs &7te otorga Zeta adicional'
+    - '&7de todos los minerales que mines con él.'
+    - ''
+    - '&7Bono de Nivel Máximo:'
+    - '&215% de probabilidad de triplicar el Zeta obtenido'
+  PlayerDied: '&7Moriste y el &2Recipiente &7desapareció en el abismo.'
+  WaterImmune: '&2Los Recipientes &7son inmunes al daño mientras están en el agua.'
 Items:
   BoneMarrow:
-    Name: '&fMédula ósea'
+    Name: '&fMédula Ósea'
     Lore:
-    - §7Obtenido como una caida rara de §cRadalite§7.
+    - §7Obtenido como una gota rara de §cRadalite§7.
     - ''
-    - §7Arrastre y suelte en un §eFósil identificado
+    - §7Arrastra y suelta sobre un §efósil identificado
     - §7para duplicarlo en otro fósil idéntico.
     - ''
-    - §7Muy útil cuando se usa junto con
-    - §7un §bFossil Transmuter§7.
-  SealedArtifact:
-    Lore:
-    - §8§m=----------=§r§8[%color%Artefactos§8]§m--------------=
-    - §7Haga clic derecho para abrir para obtener un artefacto aleatorio
-    - §7de esta rareza. Existen %color%9 §7rarezas de los artefactos.
-    - §7Este es un artefacto de la vieja guerra entre
-    - §7los Humanos y los Oráculos. Tal vez este artefacto
-    - §7todavía contiene algo de energía de Oracle...
-    - ''
-    - '§8➣ §7Rareza de los artefactos: %color%%tier%'
-    - '§8➣ §7Tiempo base de identificación: %color%%time% Minutes'
-    - §7§oLos artefactos vienen sellados para ahorrar espacio en el inventario.
-    - §8§m=----------=§r§8[%color%Artefactos§8]§m--------------=
+    - §7Muy útil cuando se usa en conjunto con
+    - §7un §bTransmutador de Fósiles§7.
   FossilTransmuter:
+    Name: '&bTransmutador de Fósiles'
     Lore:
-    - §7Obtenido como una rara caida de §eImpulse§7.
+    - §7Obtenido como una gota rara de §eImpulse§7.
     - ''
-    - §7Arrastre y suelte en una pila de §e3 Fósiles
-    - §7para transmutarlo en otro fósil del
-    - §7el mismo tipo. p.ej. Brazo de skylark > Brazo de nagyn.
+    - §7Arrastra y suelta sobre un conjunto de §e3 Fósiles
+    - §7para transmutarlo en otro fósil del mismo tipo.
+    - §7Por ejemplo, Brazo de Skylark > Brazo de Nagyn.
     - ''
     - §7Muy útil cuando se usa en conjunto
-    - §7con la §fMédula ósea§7.
-    Name: '&bTransmutador de fósiles'
+    - §7con §fMédula Ósea§7.
+  SealedArtifact:
+    Lore:
+    - §8§m=----------=§r§8[%color%Artefacto§8]§m--------------=
+    - §7Haz clic derecho para abrir y obtener un artefacto
+    - §7aleatorio de esta rareza. Hay %color%9 §7rareza(s) de artefactos.
+    - §7Este es un artefacto de la antigua guerra entre
+    - §7los Humanos y los Oráculos. Tal vez este artefacto
+    - §7aún contenga algo de energía de Oráculo...
+    - ''
+    - '§8➣ §7Rareza del Artefacto: %color%%tier%'
+    - '§8➣ §7Tiempo Base de Identificación: %color%%time% Minutos'
+    - §7§oLos artefactos vienen sellados para ahorrar espacio en el inventario.
+    - §8§m=----------=§r§8[%color%Artefacto§8]§m--------------=
   Fossil:
     Lore:
-    - §7Esta criatura mítica se perdió en la antigüedad.
-    - §7guerra con el §eOraculo§7. tal vez con todas
-    - §7las piezas que podrías hacer §2Vessel§7 para 
-    - §7aprovechar el poder de la criatura perdida hace mucho tiempo...
+    - §7Esta criatura mítica se perdió en la antigua guerra
+    - §7contra los §eOráculos§7. Tal vez con todas las piezas
+    - §7podrías crear un §2Vasija§7 para aprovechar el poder
+    - §7de esta criatura perdida hace mucho tiempo...
     - ''
-    - '§7Información del Fósil :'
-    - '§7- Parte del Fósil : §e%part%'
+    - '§7Información del Fósil:'
+    - '§7- Parte del Fósil: §e%part%'
     - '§7- Especie del Fósil: §e%species%'
     - ''
-    - §7§oPon esto dentro del §6§oIdentificador de artefactos
+    - §7§oColoca esto dentro del §6§oIdentificador de Artefactos
     - §7§opara descubrir el origen de este fósil.
   IdentifiedFossil:
     Lore:
-    - §7Esta es una parte del §e%set% §7conjunto de fósiles.
-    - §7Recoger los §68 §7fósiles para craftear un §2Vessel§7.
+    - §7Esta es una parte del conjunto de fósiles §e%set%§7.
+    - §7Recolecta los §68 §7fósiles para fabricar una §2Vasija§7.
     - ''
-    - '§7Información del Fósil :'
-    - '§7- Parte del Fósil : §e%part%'
+    - '§7Información del Fósil:'
+    - '§7- Parte del Fósil: §e%part%'
     - '§7- Especie del Fósil: §e%species%'
     - '§7- Nombre del Fósil: §e%name%'
     - ''
-    - §7usa las §28 §7partes dentro de una §6Refineria
-    - §7para elaborar un §2Vessel§7.
+    - §7Usa todas las §28 §7partes dentro de una §6Refinería
+    - §7para fabricar una §2Vasija§7.
   Artifact:
     Lore:
     - §8§m=----------=§r§8[%color%Artefacto§8]§m--------------=
-    - '§7Información del artefacto:'
-    - '§8➢ §7Tier: %color%%tier%'
-    - '§8➢ §7Probabilidades de fósiles: %color%%fossilchance%%'
-    - '§8➢ §7Tiempo para identificar: %color%%time% Minutos'
-    - '§8➢ §7Precio de venta: %color%$%price%'
-    - '§8➣ §7Rareza del artefacto: %color%%rarity%'
+    - '§7Información del Artefacto:'
+    - '§8➢ §7Nivel: %color%%tier%'
+    - '§8➢ §7Probabilidad de Fósil: %color%%fossilchance%%'
+    - '§8➢ §7Tiempo de Identificación: %color%%time% Minutos'
+    - '§8➢ §7Precio de Venta: %color%$%price%'
+    - '§8➣ §7Rareza del Artefacto: %color%%rarity%'
     - §8§m=----------=§r§8[%color%Artefacto§8]§m--------------=
-    - §7Puedes vender este artículo en %color%/mine shop
+    - §7Puedes vender este objeto en %color%/mine shop
     - §7o identificarlo dentro de %color%/mine artifacts§7
-    - §7para obtener botín y tal vez un fósil raro.
+    - §7para obtener recompensas y tal vez un fósil raro.
     - §8§m=----------=§r§8[%color%Artefacto§8]§m--------------=
-ZetaTear:
-- §7Haga clic para canjear §e10,000 §7Zetas.
-- §7
-- §7Crea estos dentro de §2/mine vessels§7.
-- §7Estos pueden ser intercambiados entre jugadores.
-RequiumOrb:
-  Name: '&4Orbe del Requium (&c%name%&4)'
+  RequiumOrb:
+    Name: '&4Orbe de Réquiem (&c%name%&4)'
+    Lore:
+    - '&7Una fuente de energía oscura y malvada desconocida'
+    - '&7del reino desconocido de &cDelve&7.'
+    - ''
+    - '&7Información del Réquiem:'
+    - '&7➛ Tiempo: &c%time%'
+    - ''
+    - '%quote%'
+    - ''
+    - '&7Usado al intentar derrotar y obtener'
+    - '&7una &2Vasija&7. Tres &4Réquiems en el orden correcto'
+    - '&7podrían usarse para derrotar una &2Vasija&7.'
+    - '&2/mine vessels &7para más información.'
+  AbyssalAccelerator:
+    Name: '&5Acelerador Abisal'
+    Lore:
+    - §7Obtenido como una gota rara de §5Tohka§7.
+    - ''
+    - §7Haz clic derecho para acelerar el tiempo y
+    - §7completar instantáneamente todos los objetos en
+    - §7el §eIdentificador de Artefactos§7.
+Runes:
+  Names:
+    Ghost: '&7Runa de Fantasma'
+    Ground: '&6Runa de Tierra'
+    Fire: '&cRuna de Fuego'
+    Fairy: '&dRuna de Hada'
+    Lightning: '&eRuna de Rayo'
+    Water: '&bRuna de Agua'
+    Nature: '&aRuna de Naturaleza'
+NotEnoughRunes: '&7No tienes suficientes &5Runas &7para desbloquear esto!'
+OracleSummonCooldownPhase2: '&7No puedes invocar a &eImpulse &7por &c%seconds%&7 segundos.'
+OracleSummonCooldownPhase1: '&7No puedes invocar a &cRadalite &7por &c%seconds%&7
+  segundos.'
+OracleSummonCooldownPhase3: '&7No puedes invocar a &5Tohka &7por &c%seconds%&7 segundos.'
+Fossils:
+  Parts:
+    SPINE: Columna
+    RIB: Costilla
+    FOOT: Pie
+    TAIL: Cola
+    LEG: Pierna
+    ARM: Brazo
+    SKULL: Cráneo
+    WING: Ala
+  Unidentified:
+    Name: '&6Fósil de %species% Sin Identificar'
+  Species:
+    WRAITH: Aparición
+    DRAGON: Dragón
+    MANTICORE: Mantícora
+    PHOENIX: Fénix
+PlayerNotFound: '&cEse jugador no está en línea o nunca ha ingresado al servidor.'
+Astralite:
   Lore:
-  - '&7Una fuente de energía oscura y maligna desconocida'
-  - '&7del reino desconocido de &cDelve&7.'
+  - '&7Una forma de vida cristalina mítica'
+  - '&7que emite un suave aullido.'
+  - '&7¿Tal vez intenta decirte algo?'
+  - '&7Quizás puedas mejorar y fabricar'
+  - '&7&5Equipo de Astralita&7.'
+  Name: '&5Astralita'
+Oracle:
+  NewUnchargedOracleite:
+    Lore:
+    - '&7Encontrado refinando Polvo Misterioso.'
+    - '&7Necesita ser cargado antes de volverse útil.'
+    - '&7Cárgalo sosteniéndolo en tu mano secundaria'
+    - '&7en una pila de tamaño 1.'
+    - '&7Para ganar carga, extrae mineral de diamante.'
+    - ''
+    - '&7Para ganar carga, extrae mineral de diamante.'
+    - '&7Carga actual: &8[&c%current%&4/&c%total%&8]'
+  Charged:
+    Name: '&eOracolita Cargada'
+    Lore:
+    - §7Obtenido de §cOracolita Descargada§7.
+    - §7Se puede usar para invocar Oráculos.'
+    - §7§oLos oráculos son jefes de fin de juego'
+    - §7§oy son muy difíciles de derrotar.'
+    - ''
+    - '§6Cómo usar:'
+    - §7Haz clic derecho en mineral de esmeralda'
+    - §7mientras sostienes esto para invocar al Oráculo.'
+GemLore:
+- §8§m-----------§r§8[%colorB% Información §8]§8§m-----------
+- '%colorA%Probabilidad de Encontrar:§8 ➤ §7%dropchance%%'
+- '%colorA%Encontrado en:§8 ➤ §7%ore%'
+- '%colorA%Precio de Venta:§8 ➤ §7$%money%'
+- '%colorA%Calidad:§8 ➤ §7%quality%'
+- §8§m-----------§r§8[%colorB% Información §8]§8§m-----------
+- §7Véndeme dentro de %colorA%/mine shop§7.
+- '%id%§7Haz clic derecho para revelar la calidad de la Gema.'
+- '%id%§7Al hacer esto, corres el riesgo de ganar o perder'
+- '%id%§7el precio base de venta de la Gema. ¡Solo hazlo'
+- '%id%§7si quieres probar suerte para ganar dinero extra!'
+- '%ad%§7Esta gema ha sido examinada.'
+- §8§m-----------§r§8[%colorB% Información §8]§8§m-----------
+Commands:
+  AddXP:
+    Sender: '&7Has dado &3%amount% &7XP de Minería a &3%target%&7.'
+    Target: '&7¡Has recibido &3%amount%&7 de XP de Minería!'
+  AddZeta:
+    Sender: '&7Has dado &3%amount% &7Zeta a &3%target%&7.'
+    Target: '&7¡Has recibido &3%amount%&7 de Zeta!'
+  InvalidUsername: '&7Has ingresado un nombre de usuario no válido.'
+RadaliteTear:
+  Used: '&7El enfriamiento de tu &5Guardián Rúnico &7ha sido reiniciado.'
+  CantUse: '&7No tienes un enfriamiento en este momento.'
+GUINames:
+  FossilTransmuter: '&9&lTransmutador de Fósiles'
+  Stats: '&9&lEstadísticas: '
+ShatteredOrbs:
+  Failed: '&7No tienes suficientes &cOrbes de Requium Rotos &7para hacer esto.'
+  Success: '&7Has roto 4 &cOrbes de Requium &7y creado uno cargado nuevo.'
+PickaxeViewDisabled: '&7La vista de pico ha sido desactivada y no puedes usar esto.'
+Requium:
+  Description:
+    YUD_ALEPH: '&7Sientes que te desplazas hacia el futuro.'
+    VAV: '&7Tu mente se transmite a un cuerpo pasado tuyo.'
+    HET: '&7Emites un aura que te clona a ti mismo.'
+    HEH: '&7Ves un destello del futuro desde esto.'
+    GIMEL: '&7Sientes que envejeces mientras sostienes esto.'
+    DALETH: '&7Sientes que el tiempo comienza a retroceder al mirar esto.'
+    TET: '&7Sientes los sentidos de otra persona desde esto.'
+    ALEPH: '&7Este orbe emite un aura similar a la velocidad.'
+    YUD_BET: '&7Sientes una grieta temporal regresando al pasado.'
+    YUD: '&7Echa un vistazo al pasado de este objeto.'
+    BET: '&7Sientes que el tiempo se detiene con este orbe.'
+    ZAYIN: '&7El tiempo se congela mientras sostienes esto.'
+RuneGuardians:
+  BonusRune: '&7Tus &8Sombras de Nefaris &7te dieron una runa extra.'
+  NoRune: '&7Tuviste mala suerte y el &5Guardián Rúnico &7no dejó caer una runa.'
+  ImmuneInWater: '&5Los Guardianes Rúnicos &7son inmunes al daño mientras están en
+    el agua.'
+RuneGuardianSummonCooldown: '&7No puedes invocar otro &5Guardián Rúnico &7durante
+  &c%seconds%&7 segundos.'
+GuardianDropRune: '&7Mataste a un &5Guardián Rúnico &7y dejó caer una &5Runa&7.'
+MysteriousDustDrops:
+  Lore:
+  - '&7- &5Polvo de Runa &7(&a%runedust%%&7)'
+  - '&7- &eOracolita &7(&a%oracleite%%&7) - Nivel 20+'
+  - '&7- &3Reliquia Antigua &7(&a%ancientrelic%%&7) - Nivel 25+'
+  - '&7- &cOrbe de Requium Roto &7(&a%shatteredrequiumorb%%&7) - Nivel 30+'
+DarkImbuement:
+  Lore:
+  - '&7Una runa rara y mítica que'
+  - '&7emite un aura misteriosa...'
+  - '&7Podrías ser capaz de usar esto'
+  - '&7para explorar más el Aether.'
+  Name: '&8Imbuición Oscura'
+Artifacts:
+  Upgrades:
+    Overclocked:
+      Lore:
+      - §7Esta mejora reduce el tiempo necesario
+      - §7para identificar §cArtefactos §7en §b1% §7por nivel.
+      Name: '&7Mejora: &eAcelerado'
+    LuckyCharm:
+      Name: '&7Mejora: &eAmuleto de la Suerte'
+      Lore:
+      - §7Esta mejora aumenta tus posibilidades de
+      - §7obtener recompensas de las tablas de botín de §cArtefactos§7.
+      - §7Cada nivel aumenta la posibilidad en un §b1% §7plano.
+    Archaeologist:
+      Lore:
+      - §7Esta mejora aumenta tus posibilidades
+      - §7de encontrar §eFósiles§7. Cada nivel incrementa
+      - §7la probabilidad base en un §b1% §7plano.
+      Name: '&7Mejora: &eArqueólogo'
+    Patience:
+      Name: '&7Mejora: &ePaciencia'
+      Lore:
+      - §7Esta mejora reduce el tiempo necesario
+      - §7para identificar §eFósiles §7en §b1 minuto §7por nivel.
+    FinalWhisper:
+      Lore:
+      - §7Esta mejora aumenta la posibilidad de
+      - §7encontrar §4Orbes Réquiem §7en las tablas de
+      - §7botín. Obtén más información con §2/mine vessels§7.
+      - §7Cada nivel incrementa la probabilidad en un §b0.5%.
+      - §7§oSolo puedes encontrar orbes en §bArtefactos de Nivel III §7o superior.
+      Name: '&7Mejora: &eÚltimo Susurro'
+  Misc:
+    MaxLevel: Nivel Máximo
+    Minutes: ' minutos'
+    FlatBonus: '% de bonificación plana'
+SpigotURLNoAccess: '&cNo tienes acceso para previsualizar esto.'
+SuccessPrefix: '&b&lPyroMining &8➤ '
+PickaxeView:
+  BLACKSMITH: HERRERO
+  MAIN_MENU: MENÚ_PRINCIPAL
+  VESSELS_MENU: MENÚ_VASIJAS
+  SINGULARITY_MENU: MENÚ_SINGULARIDAD
+  SHOP_MENU: MENÚ_TIENDA
+  ARTIFACTS_MENU: MENÚ_ARTEFACTOS
+  NONE: NINGUNO
+  STATS_MENU: MENÚ_ESTADÍSTICAS
+GiveCommandLore:
+- '&8&m]-----------+&r&8[ &9&lObjetos &8]&m+-----------['
+- '§7Lista de Objetos:'
+- §7► §9PolvoMisterioso
+- §7► §9PolvoRúnico
+- §7► §9OráculoCargado
+- §7► §9Oráculo
+- §7► §9RunaInfernal
+- §7► §9RunaLuminosa
+- §7► §9Vasija:<nombre>
+- §7► §9Réquiem:<nombre>
+- §7► §9Gema:<nombre>
+- §7► §9Artefacto:<nombre>
+- §7► §9Fósil:<nombre>
+- §7► §9FlujoIncandescente
+- §7► §9FlujoBásico
+- §7► §9OrbeRéquiemFragmentado
+- §7► §9FósilDragónNoIdentificado
+- §7► §9FósilFénixNoIdentificado
+- §7► §9FósilManticoraNoIdentificado
+- §7► §9GarraRadalita
+- '&8&m]-----------+&r&8[ &9&lObjetos &8]&m+-----------['
+ZetaRedeemed: '&7Has canjeado &e10,000 &7Zeta y ahora tienes &6%zeta%&7 Zeta.'
+CannotSpawnRuneGuardianInLocation: '&7¡No puedes invocar un &5Guardián Rúnico &7en
+  esta ubicación! Necesitas al menos 3 bloques de espacio sobre el mineral.'
+MysteriousDust:
+  Name: '&7Polvo Misterioso'
+  Lore:
+  - §7Encontrado al minar minerales.
+  - §7Puede refinarse usando un §bRefinador§7.
+  - §7Para hacer un §bRefinador§7 coloca un §f§ndispensador
+  - §7orientado §f§narriba§r§7 con una §f§nvalla§r§7 encima. Coloca
+  - §7el objeto dentro e interactúa con la valla.
   - ''
-  - '&7Información del Requium:'
-  - '&7➛ Tiempo: &c%time%'
+  - '§7Posibles Resultados:'
+SummonedPhase1Oracle: '&7Has invocado a &c&lRadalita (Fase 1)&7!'
+CannotSpawnOracleInLocation: '&7¡No puedes invocar un &eOráculo &7en esta ubicación!
+  Necesitas al menos 6 bloques de espacio sobre el mineral.'
+ZetaTearName: '&6Lágrima Zeta (&e10,000&6)'
+SummonedPhase3Oracle: '&7Has invocado a &5&lTohka (Fase 3)&7!'
+NoPermission: '&7No tienes permiso para hacer esto.'
+AbyssalShard:
+  Lore:
+  - §7Obtenido como un drop raro de §5Tohka§7.
   - ''
-  - '%quote%'
+  - §7Arrastra y suelta sobre un §cOrbe Réquiem
+  - §7para duplicarlo en otro Réquiem idéntico.
   - ''
-  - '&7Se utiliza cuando se intenta derrotar y obtener'
-  - '&7un &2Vessel&7. Tres &4Requiums en el orden correcto'
-  - '&7podrían usarse para derribar un &2Vessel&7.'
-  - '&2/mine vessels &7por mas información'
+  - §7Muy útil en conjunto con la minería de §2Vasijas§7.
+  Name: '&5Fragmento Abismal'
+CreativeMode: '&7No puedes acceder a este menú en &cmodo creativo&7.'
+Misc:
+  Time:
+    Hours: '%hours% horas, %minutes% minutos y %seconds% segundos'
+    NoHours: '%minutes% minutos y %seconds% segundos'
+SummonedPhase2Oracle: '&7Has invocado a &e&lImpulso (Fase 2)&7!'
+ZetaTear:
+- §7Haz clic para canjear §e10,000 §7Zeta.
+- §7
+- §7Créalo dentro de §2/mine vessels§7.
+- §7Estos pueden intercambiarse entre jugadores.
 CommandList:
 - ''
 - '&8&m]-----------+&r&8[ &9&lPyroMining &r&8]&m+-----------['
 - ''
 - '&b/mine help &7- Muestra esta lista de comandos.'
 - '&b/mine menu &7- Abre el menú principal de minería.'
-- '&b/mine shop &7- Abre la tienda de venta de minería.'
+- '&b/mine shop &7- Abre la tienda de minería.'
 - '&b/mine singularity &7- Abre la singularidad minera.'
-- '&b/mine journal &7- Muestra información sobre los elementos que tiene el complemento.'
-- '&b/mine stats <player> &7- Abre el menú de pasivos.'
+- '&b/mine journal &7- Muestra información sobre objetos del plugin.'
+- '&b/mine stats <player> &7- Abre el menú de pasivas.'
 - '&b/mine artifacts &7- Abre el menú de artefactos.'
-- '&b/mine vessels &7- Abre el menú de Vessels.'
-- '&b/mine blacksmith &7- Abre el menu de la blacksmith.'
-- '&b/mine zeta &7- Te muestra tus Zetas.'
+- '&b/mine vessels &7- Abre el menú de vasijas.'
+- '&b/mine blacksmith &7- Abre el menú del herrero.'
+- '&b/mine zeta &7- Muestra tu balance de Zeta.'
 - '&9/mine reload &7- Recarga el plugin.'
 - '&9/mine cullmobs &7- Elimina todos los mobs del plugin.'
-- '&9/mine give <item> <player> <amount> &7- Da items.'
-- '&9/mine addxp <player> <amount> &7- Agrega XP en Minería.'
-- '&9/mine addzeta <player> <amount> &7- Agrega Zetas.'
-- '&9/mine addvessel <vessel> <amount> &7- Agrega instantaneamente Vessels.'
+- '&9/mine give <item> <player> <amount> &7- Da objetos.'
+- '&9/mine addxp <player> <amount> &7- Añade XP de minería.'
+- '&9/mine addzeta <player> <amount> &7- Añade Zeta.'
+- '&9/mine addvessel <vessel> <amount> &7- Añade vasijas instantáneamente.'
 - ''
-- '&8&m]-----------+&r&8[ &3Pagina (1/1) &r&8]&m+------------['
+- '&8&m]-----------+&r&8[ &3Página (1/1) &r&8]&m+------------['
 - ''
 AncientRelic:
-  Name: '&3Reliquia antigua'
+  Name: '&3Reliquia Antigua'
   Lore:
-  - '&7Arrastre y suelte en un &3&nArtefacto sellado'
-  - '&7para aumentar su nivel en 1.'
+  - '&7Arrastra y suelta sobre un &3&nArtefacto Sellado'
+  - '&7para aumentar su Nivel en 1.'
   - ''
-  - '&7Artículo de un solo uso.'
+  - '&7Objeto de un solo uso.'
   - ''
-  - '&7Obtenido por &eImpulso &7o por &5Polvo misterioso&7.'
+  - '&7Obtenido de &eImpulso &7o de &5Polvo Misterioso&7.'
+RequiumOrb:
+  Name: '&4Requium Orb (&c%name%&4)'
+  Lore:
+  - '&7An unknown dark and evil energy source'
+  - '&7from the unknown realm of &cDelve&7.'
+  - ''
+  - '&7Requium Info:'
+  - '&7➛ Time: &c%time%'
+  - ''
+  - '%quote%'
+  - ''
+  - '&7Used when attempting to defeat and obtain'
+  - '&7a &2Vessel&7. Three &4Requiums in the correct'
+  - '&7order could be used to take down a &2Vessel&7.'
+  - '&2/mine vessels &7for more information.'
+AbyssalAccelerator:
+  Name: '&5Abyssal Accelerator'
+  Lore:
+  - §7Obtained as a rare drop from §5Tohka§7.
+  - ''
+  - §7Right click to instantly warp time and finish
+  - §7all items in the §eArtifact Identifier§7.
 RuneDust:
   Rune:
     Lore:
-    - §7Una runa misteriosa obtenida por
-    - §7matar un §dGuardian de runas§7.
+    - §7A mysterious rune obtained from
+    - §7killing a §dRune Guardian§7.
     - ''
-    - §7Se puede utilizar al mejorar su
-    - §7singularidad dentro de §b/mine singularity§7.
+    - §7Can be used when upgrading your
+    - §7singularity inside of §b/mine singularity§7.
     - ''
-    - §7Guardián de runas puede ser invocado
-    - §7haciendo clic derecho en el mineral de redstone
-    - §7con polvo de runa.
+    - §7Rune Guardians can be summoned
+    - §7by right-clicking on redstone ore
+    - §7with Rune Dust.
   Lore:
-  - §7Encontrado al refinar polvo misterioso.
-  - §7Se puede usar para invocar un Guardian de runas.
-  - §7§oLos Guardianes de runas son mini jefes.
+  - §7Found from Refining Mysterious Dust.
+  - §7Can be used to summon Rune Guardians.
+  - §7§oRune Guardians are mini bosses.
   - ''
-  - '§dCómo utilizar:'
-  - §7Haga clic con el botón derecho en el mineral de redstone mientras mantiene presionado
-  - §7Esto para convocar a un Guardián de runas al azar.
+  - '§dHow to use:'
+  - §7Right click on redstone ore while holding
+  - §7this to summon a random Rune Guardian.
   - ''
-  - '§7Vida del Guardián: §d%health%'
-  - '§7Daño del Guardián: §d%damage%'
-  Name: '&5Polvo de runa'
-AbyssalAccelerator:
-  Name: '&5Acelerador Abyssal'
-  Lore:
-  - §7Obtenido como un raro item de §5Tohka§7.
-  - ''
-  - §7Haz clic con el botón derecho para deformar el tiempo y terminar al instante.
-  - §7todos los artículos en el §eidentificador de artefactos§7.
-Runes:
-  Names:
-    Ghost: '&7Runa fantasmal'
-    Ground: '&6Runa del terreno'
-    Fairy: '&dRuna de las hadas'
-    Lightning: '&eRuna del relampago'
-    Water: '&bRuna del agua'
-    Nature: '&aRuna natural'
-    Fire: '&cRuna del fuego'
+  - '§7Guardian Health: §d%health%'
+  - '§7Guardian Damage: §d%damage%'
+  Name: '&5Rune Dust'
 AstralRune:
   Lore:
-  - '&7Una runa rara y mítica que'
-  - '&7emite un aura misteriosa...'
-  - '&7Es posible que puedas usar esto'
-  - '&7para seguir explorando el Éter.'
-  Name: '&5Runa astral'
-Artifacts:
-  Upgrades:
-    Archaeologist:
-      Lore:
-      - §7Esta mejora le da una mejor oportunidad
-      - §7encontrar §eFósiles§7. Cada nivel aumenta
-      - §7la oportunidad base por §b1% §7.
-      Name: '&7Mejora: &eArqueología'
-    Overclocked:
-      Name: '&7Mejora: &eSobreMarcha'
-      Lore:
-      - §7Esta mejora reduce el tiempo que lleva
-      - §7identificar §cArtefactos §7por §b1% §7por nivel.
-    LuckyCharm:
-      Lore:
-      - §7Esta mejora le brinda una mejor oportunidad de
-      - §7obtener botín de las mesas desplegables de §cArtefactos§7.
-      - §7Cada nivel aumenta la posibilidad por §b1% §7.
-      Name: '&7Mejora: &eAmuleto de la suerte'
-    Patience:
-      Name: '&7Mejora: &ePaciencia'
-      Lore:
-      - §7Esta mejora reduce el tiempo que lleva
-      - §7identificar §eFósiles §7en §b1 minuto §7por nivel.
-    FinalWhisper:
-      Lore:
-      - §7Esta mejora le da una mayor oportunidad de
-      - §7encontrar §4Orbes de Requium §7dentro de la mesa
-      - §7desplegable. Obtenga más información con §2/mine vessels§7.
-      - §7Cada nivel aumenta la probabilidad de caída en §b0.5%
-      - §7§oSolo puedes encontrar orbes en Artefactos §bTier III §7o superiores.
-      Name: '&7Mejora: &eÚltimo susurro'
-  Misc:
-    Minutes: ' minutos'
-    FlatBonus: '% bonus fijo'
-    MaxLevel: Nivel maximo
-Requium:
-  Description:
-    DALETH: '&7Sientes que el tiempo comienza a retroceder al mirar esto.'
-    YUD_ALEPH: '&7Te sientes como una grieta en el futuro.'
-    TET: '&7Sientes los sentidos de alguien más a partir de esto.'
-    ALEPH: '&7Este orbe emite un aura similar a la velocidad.'
-    YUD_BET: '&7You feel a time rift going back into the past.'
-    YUD: '&7Echa un vistazo al pasado de este objeto.'
-    BET: '&7Sientes que el tiempo se detiene con este orbe.'
-    ZAYIN: '&7El tiempo se congela mientras sostienes esto.'
-    VAV: '&7Tu mente transmite a un cuerpo pasado tuyo.'
-    HET: '&7Emites un aura que se clona a ti mismo.'
-    HEH: '&7Ves un atisbo del futuro a partir de esto.'
-    GIMEL: '&7sientes que envejeses mientras sostienes esto.'
+  - '&7A rare and mythical rune that'
+  - '&7emits a mysterious aura...'
+  - '&7You might be able to use this'
+  - '&7to further explore the Aether.'
+  Name: '&5Astral Rune'
 Fluxes:
   Lore:
-  - '&7Un material poco común creado a partir.'
-  - '&7de la energía sobrante del oráculo de la vieja guerra..'
+  - '&7An uncommon material created from left'
+  - '&7over oracle energy from the old war.'
   - ''
-  - '&7Esto se puede vender por &b$%price% &7dentro'
-  - '&7de &2/mine shop&7.'
+  - '&7This can be sold for &b$%price% &7inside'
+  - '&7of &2/mine shop&7.'
   Names:
-    Blazed: '&cFlux Llameante'
-    Basic: '&eFlux Basico '
-AbyssalShard:
-  Name: '&5Fragmento Abyssal'
-  Lore:
-  - §7Obtenido como un raro item de §5Tohka§7.
-  - ''
-  - §7Arrastre y suelte en una §cOrbe de Requium
-  - §7para duplicarlo en otro Requium idéntico.
-  - ''
-  - §7Muy útil cuando se usa junto con
-  - §7La mineria §2Vessels§7.
-NotEnoughRunes: '&7No tienes suficiente &5Runas &7Para desbloquear esto!'
-OracleSummonCooldownPhase2: '&7no puedes invocar a &eImpulso &7por &c%seconds%&7 segudos.'
-OracleSummonCooldownPhase1: '&7no puedes invocar &cRadalite &7por &c%seconds%&7 segundos.'
-OracleSummonCooldownPhase3: '&7no puedes invocar &5Tohka &7por &c%seconds%&7 segundos.'
+    Blazed: '&cBlazed Flux'
+    Basic: '&eBasic Flux'
 DarkImbued:
-  Already: '&7Ya estás marcado para la muerte por &4El desconocido&7.'
-  Imbued: '&7Has aplastado un &4Dark Imbuement&7. Siente un escalofrío recorrer tu
-    espina...'
+  Already: '&7You are already marked for death by &4The Unknown&7.'
+  Imbued: '&7You have crushed a &4Dark Imbuement&7. You feel a chill run down your
+    spine...'
 DarkCrystal:
-  Name: '&5Cristal oscuro'
+  Name: '&5Dark Crystal'
   Lore:
-  - '&7Este cristal pulsa con rica energía oscura.'
-  - '&7Puedes usar esto para marcarte a ti mismo'
-  - '&7para la muerte por &3El desconocido&7. Aparecerá'
-  - '&7aleatoriamente mientras esté marcado. Si lo'
-  - '&7matan, se quita la marca y usted'
-  - '&7obtendrá un &8Dark Imbuement&7. Esto es'
-  - '&7requerido para convocar &5Tohka&7!'
+  - '&7This crystal pulsates with rich dark'
+  - '&7energy. You can use this to mark yourself'
+  - '&7for death by &3The Unknown&7. He will'
+  - '&7randomly appear while marked. If he is'
+  - '&7killed, the mark is removed and you'
+  - '&7will get a &8Dark Imbuement&7. This is'
+  - '&7required to summon &5Tohka&7!'
   - '&7'
-  - '&7Si te matan, te colocarán'
-  - '&7en un estado &4embrujado &7por &460 &7minutos.'
-  - '&7Recibes 1.5x de daño adicional de todas'
-  - '&7las fuentes de daño..'
+  - '&7If you are killed, you will be placed'
+  - '&7in a &4haunted &7state for &460 &7minutes.'
+  - '&7You take 1.5x bonus damage from all'
+  - '&7damage sources.'
 ErrorPrefix: '&c&lPyroMining &8➤ '
-PlayerNotFound: '&cEse jugador no está en línea o nunca se ha unido al servidor.'
-PickaxeView:
-  SINGULARITY_MENU: SINGULARITY_MENU
-  SHOP_MENU: SHOP_MENU
-  ARTIFACTS_MENU: ARTIFACTS_MENU
-  BLACKSMITH: BLACKSMITH
-  NONE: NONE
-  MAIN_MENU: MAIN_MENU
-  VESSELS_MENU: VESSELS_MENU
-  STATS_MENU: STATS_MENU
-LevelUp: '&7Has subido de nivel tu minería a nivel: &3%level%'
-Astralite:
-  Lore:
-  - '&7Una forma de vida de cristal mítico'
-  - '&7que emite un aullido bajo.'
-  - '&7¿Quizás está tratando de decirte algo?'
-  - '&7Tal vez puedas mejorar'
-  - '&7y craftear un &5Astralite Gear&7.'
-  Name: '&5Astralite'
-Oracle:
-  NewUnchargedOracleite:
-    Lore:
-    - '&7Se encuentra al refinar polvo misterioso.'
-    - '&7Debe cargarse antes de que pueda'
-    - '&7volverse útil. Cargue esto sosteniendo'
-    - '&7lo en su mano izquierda en un tamaño de pila de 1.'
-    - '&7Para ganar carga, extraiga mineral de diamante.'
-    - ''
-    - '&7Para ganar carga, extraiga mineral de diamante.'
-    - '&7Carga actual: &8[&c%current%&4/&c%total%&8]'
-  Charged:
-    Name: '&eOracleite cargada'
-    Lore:
-    - §7Obtenido de §cOracleite descargada§7.
-    - §7Se puede usar para invocar oráculos.
-    - §7§oLos oráculos son jefes finales
-    - §7§oy son muy difíciles de vencer.
-    - ''
-    - '§6Cómo utilizar:'
-    - §7Haz clic con el botón derecho en el mineral de esmeralda
-    - §7mientras lo sostienes para convocar al Oráculo.
-GemLore:
-- §8§m-----------§r§8[%colorB% Información §8]§8§m-----------
-- '%colorA%Posibilidad de encontrar:§8 ➤ §7%dropchance%%'
-- '%colorA%Encontrado en:§8 ➤ §7%ore%'
-- '%colorA%Precio de venta:§8 ➤ §7$%money%'
-- '%colorA%Peculiaridad:§8 ➤ §7%quality%'
-- §8§m-----------§r§8[%colorB% Información §8]§8§m-----------
-- §7Véndeme dentro de %colorA%/mine shop§7.
-- '%id%§7Haga clic derecho para revelar la calidad de la piedra preciosa.'
-- '%id%§7al hacer esto, corre el riesgo de ganar o perder el'
-- '%id%§7precio de venta de la piedra preciosa. Solo haz esto si quieres'
-- '%id%§7¡probar suerte y ganar algo de dinero extra!'
-- '%ad%§7Esta piedra preciosa ha sido examinada.'
-- §8§m-----------§r§8[%colorB% Información §8]§8§m-----------
-Commands:
-  AddXP:
-    Sender: '&7Tu has dado &3%amount% &7Minería XP a &3%target%&7.'
-    Target: '&7te han dado &3%amount%&7 Minería XP!'
-  AddZeta:
-    Sender: '&7Tu has dado &3%amount% &7Zeta a &3%target%&7.'
-    Target: '&7te han dado &3%amount%&7 Zeta!'
-  InvalidUsername: '&7Has introducido un nombre de usuario no válido.'
-RadaliteTear:
-  Used: '&7El tiempo de reutilización de tu &5Guarndian de runas&7 se ha reiniciado!'
-  CantUse: '&7No tienes tiempo de reutilización en este momento.'
-GUINames:
-  FossilTransmuter: '&9&lTransmutador de fósiles'
-  Stats: '&9&lEstadisticas: '
-ShatteredOrbs:
-  Failed: '&7No tienes suficiente &cOrbes de Réquium destrozados &7para hacer esto!'
-  Success: '&7destrozaste 4 &cOrbes de Requium &7y creaste una nueva cargada!'
-ReloadedPlugin: '&9PyroMining ha sido recargado con éxito.'
-PickaxeViewDisabled: '&7La vista de pico ha sido deshabilitada y no puedes usarla.'
+LevelUp: '&7You leveled up your Mining Level to level: &3%level%'
+ReloadedPlugin: '&9PyroMining has been reloaded successfully.'
 RuneGuardian:
-  Summon: '&7Has convocado a un %guardian%&7!'
+  Summon: '&7You have summoned a %guardian%&7!'
 ServerPrefix_NoColor: PyroMining
-ChargedOracleite: '&7Acabas de &ecargar &7la &eOracleite &7en tu mano derecha.'
-RuneGuardians:
-  BonusRune: '&7Tu &8Sombras Nefaris &7Te dio una runa extra!'
-  NoRune: '&7Tuviste mala suerte y el &5Guardian de runas &7no soltó una runa!'
-  ImmuneInWater: '&7El &5Guardian de runas &7son inmunes al daño mientras están en el agua!'
-BossAlive: '&7¡No puedes acceder a este menú mientras el jefe está vivo!'
-RuneGuardianSummonCooldown: '&7No puedes invocar a otro &5Guardian de runas &7por &c%seconds%&7
-  seconds.'
+ChargedOracleite: '&7You have just &echarged &7the &eOracleite &7in your off-hand.'
+BossAlive: '&7You cannot access this menu while your boss is alive!'
 HellRuneLore:
-- §7Una runa rara y mítica que
-- §7emite un aura misteriosa...
+- §7A rare and mythical rune that
+- §7emits a mysterious aura...
 - §7
-- §7Usa esto en §aMineral de esmeralda §7para
-- §7invocar a §eImpulse§7.
-GuardianDropRune: '&7Tu mataste un &5Guardian de runas &7y solto una &5Runa&7!'
-MysteriousDustDrops:
-  Lore:
-  - '&7- &5Polvo de runas &7(&a%runedust%%&7)'
-  - '&7- &eOracleite &7(&a%oracleite%%&7) - Level 20+'
-  - '&7- &3Reliquias antiguas &7(&a%ancientrelic%%&7) - Level 25+'
-  - '&7- &cOrbe de Réquium destrozadas &7(&a%shatteredrequiumorb%%&7) - Level 30+'
+- §7Use this on §aemerald ore §7to
+- §7summon §eImpulse§7.
 ShatteredRequium:
   Lore:
-  - §7La fuente de energía oscura y maligna ha
-  - §7sido Disipada de esta orbe. §c4 §7de
-  - §7estos podrían usarse para crear otro
-  - §4Requium §7con su energía residual.
+  - §7The dark and evil energy source has
+  - §7dissipated from this orb. §c4 §7of
+  - §7these could be used to create another
+  - §4Requium §7with their residual energy.
   - ''
-  - §7§oHaga clic con el botón derecho mientras mantiene presionados cuatro para
-  - §7§ocrear una §4§oOrbe de Requium§7§o aleatoria.
-  Name: '&4Orbe de Requium fragmentada'
-Misc:
-  Time:
-    NoHours: '%minutes% minutos y %seconds% segundos'
-    Hours: '%hours% horas, %minutes% minutos y %seconds% segundos'
-SellMessage: '&7Usted ganó &bMONEYEARNED$ &7por vender &bITEMSSOLD &7Items!'
-DarkImbuement:
-  Lore:
-  - '&7Una runa rara y mítica que'
-  - '&7emite un aura misteriosa...'
-  - '&7You might be able to use this'
-  - '&7para seguir explorando el Éter.'
-  Name: '&8Imbución oscura'
-FoundMysteriousDust: '&7Has encontrado algunos &7&oPolvo misterioso&7&r.'
-SpigotURLNoAccess: '&cNo tienes acceso para obtener una vista previa de esto.'
-SuccessPrefix: '&b&lPyroMining &8➤ '
+  - §7§oRight click while holding four to
+  - §7§ocreate a random §4§oRequium Orb§7§o.
+  Name: '&4Shattered Requium Orb'
+SellMessage: '&7You earned &bMONEYEARNED$ &7from selling &bITEMSSOLD &7Items!'
+FoundMysteriousDust: '&7You have found some &7&oMysterious Dust&7&r.'
 RadaliteClaw:
-  Name: '&cGarra de Radalite'
+  Name: '&cRadalite Claw'
   Lore:
-  - '&7Consumir para eliminar cualquier tiempo de reutilización'
-  - '&7para invocar los &5Guardianes de runas&7.'
+  - '&7Consume to remove any cooldowns'
+  - '&7for summoning &5Rune Guardians&7.'
   - ''
-  - '&7Soltado por &cRadalite&7.'
-GiveCommandLore:
-- '&8&m]-----------+&r&8[ &9&lItems &8]&m+-----------['
-- '§7Lista de items:'
-- §7► §9PolvoMisterioso
-- §7► §9PolvoDeRuna
-- §7► §9OracleiteCargada
-- §7► §9Oracleite
-- §7► §9RunaDelInfierno
-- §7► §9RunaDeLaLuz
-- §7► §9Vessel:<name>
-- §7► §9Requium:<name>
-- §7► §9Piedras preciosas:<name>
-- §7► §9Artefactos:<name>
-- §7► §9Fósiles:<name>
-- §7► §9FluxLlameantes
-- §7► §9FluxBasicos
-- §7► §9OrbesDeRequiumsDestrosadas
-- §7► §9FósilesDeDragónesNoIdentificados
-- §7► §9FósilesDeFenixNoIdentificados
-- §7► §9FósilesDeManticorasNoIdentificados
-- §7► §9GarrasDeRadalite
-- '&8&m]-----------+&r&8[ &9&lItems &8]&m+-----------['
-ZetaRedeemed: '&7has redimido &e10,000 &7Zeta y ahora tienes &6%zeta%&7 Zeta.'
-CannotSpawnRuneGuardianInLocation: '&7No puedes generar un &5Guardian de runas&7
- en ese lugar! Necesitas al menos 3 bloques por encima del mineral para generarlo.'
-MysteriousDust:
-  Name: '&7Polvo Misterioso'
-  Lore:
-  - §7Encontrado mientras se extraen minerales.
-  - §7Puede ser refinado usando una §bRefineria§7.
-  - §7Para hacer una §bRefineria§7 coloca un §f§ndropper
-  - §f§nmirando hacia arriba§r§7 con una §f§nvalla§r§7 en la parte superior. Coloca el
-  - §7elemento dentro y interactua con la cerca.
-  - ''
-  - '§7Soltadas posibles:'
-FoundFlux: '&7Has encontrado un flux &aFLUX &7.'
-SummonedPhase1Oracle: '&7tú has invocado a &c&lRadalite (Fase 1)&7!'
-LightRuneName: '&fRuna de la luz'
-CannotSpawnOracleInLocation: '&7No puedes invocar un &eOraculo en esta ubicación. Tú 
-necesita al menos 6 bloques por encima del mineral para generarlo.'
+  - '&7Dropped by &cRadalite&7.'
+FoundFlux: '&7You have found a &aFLUX &7flux.'
+LightRuneName: '&fLight Rune'
 MainGUIPrefix: '&9&lPyroMining'
-ZetaTearName: '&6Lagrima de Zeta (&e10,000&6)'
-HellRuneName: '&4Runa del infierno'
+HellRuneName: '&4Hell Rune'
 Oracles:
   Oracleite:
-    Name: '&cOracleite Descargada'
-SummonedPhase3Oracle: '&7tú has invocado a &5&lTohka (Fase 3)&7!'
-NoPermission: '&7Usted no tiene permiso para hacer esto.'
-DisabledMobWorld: '&7Los mobs mineros personalizadas están deshabilitadas en este mundo.'
-CreativeMode: '&7No puede acceder a este menú en &ccreative mode&7.'
+    Name: '&cUncharged Oracleite'
+DisabledMobWorld: '&7Custom Mining Mobs are disabled in this world.'
 ArtifactUpgradeInfoLore:
 - '&7'
-- '&7Estadisticas mejoradas:'
-- '&7- Nivel actual: &b%current%'
-- '&7- Priximo nivel: &9%next%'
-- '&7- Costo de mejora: &3%cost% Zeta'
-- '&7- Maximo nivel: &3%max%'
+- '&7Upgrade Stats:'
+- '&7- Current Level: &b%current%'
+- '&7- Next Level: &9%next%'
+- '&7- Upgrade Cost: &3%cost% Zeta'
+- '&7- Max Level: &3%max%'
 - '&7'
-- '&7Click izquierdo para mejorar'
-SummonedPhase2Oracle: '&7Tu has invocado a &e&lImpulse (Fase 2)&7!'
+- '&7Left-click to upgrade.'
