@@ -11,24 +11,24 @@ tournyCmds:
 - ''
 - '&8]&m--------------------------------------------&r&8['
 - ''
-Prefix: '&cPezca &8➤ '
-ErrorPrefix: '&cPezca &8➤ '
+Prefix: '&cPESCA &8➤ '
+ErrorPrefix: '&cPESCA &8➤ '
 Fish:
   FishNameColour: '&b&l'
 FishLore:
-- '&a%description%'
+- '&f%description%'
 - ''
-- '&6&lInformación:'
-- '&e➤ &2Tier: &a%tier%'
-- '&e➤ &2Peso: &a%weight%'
-- '&e➤ &2Precio: &a$%price%'
-- '&e➤ &2Biomas: &a%allbiomes%'
-- '   &a★ &d%biome%'
+- '&f&lInformación:'
+- '&f➤ &dTier: &5%tier%'
+- '&f➤ &dPeso: &5%weight%'
+- '&f➤ &dPrecio: &5$%price%'
+- '&f➤ &dBiomas: &5%allbiomes%'
+- '   &b★ &d%biome%'
 FirstCaught: Fuiste la primera persona en atrapar un(a) %fish%&7!
 EatFish: '&bTu has comido un FISHNAME!'
 GUITitleColour: '&9&l'
-CaughtFish: atrapaste un &bFISHNAME&7!
-SellMessage: tu has ganado &bMONEYEARNED&7$ por vender &bFISHSOLD &7Peces!
+CaughtFish: atrapaste un &b%fishname%&7!
+SellMessage: tu has ganado &b%moneyearned%&7$ por vender &b%fishsold% &7Peces!
 SellFish:
   SpecialFishMoney: te ganaste un bono &bMONEY&7$ de la venta de pescado especial
 ShopTitleInformation: '&aVende pescado aquí'
@@ -38,17 +38,17 @@ NotRequiredLevel: '&4Tu no tienes un nivel lo suficientemente alto para desbloqu
   esto. para desbloquear esto. debes estar al menos nivel: &c'
 CaughtFirstFish: has pescado el primer pez. Puedes usar &2/fish menu &apara explorar
   más el mundo de la fishing.
-NotEnoughEntropy: tu no tienes suficiente entropía. necesitas otro &c%entropía% &7entropía
-  para actualizar esto.
+NotEnoughEntropy: '&etu no tienes suficiente entropía. necesitas otro &c%entropy%
+  &7entropía para actualizar esto.'
 CreativeMode: no puede utilizar esta función en el &cmodo creativo&7.
 InvalidItem: '&7Caña de pescar invalida detectada: Sin aumentos o artículo no válido.'
-KillFish: mataste a un &3FISHTYPE &7y soltó un &bFISHNAME&7.
+KillFish: mataste a un &3FISHTYPE &7y soltó un &b%fishname%&7.
 PlatinumCatchBroadcast: '&3%player% &7acaba de atrapar un &3Platino &7%fish%&7!'
 MythicalCatchBroadcast: '&3%player% &7acaba de atrapar un &5Mistico &7%fish%&7!'
 GutFish:
-  entropía: tú destripabas &3%fish% &7pescado y ganado &3%entropía% &7entropia.
+  entropía: tú destripabas &3%fish% &7pescado y ganado &3%entropy% &7entropia.
   NoFish: '&c¡No hay pescado para destripar!'
-  Entropy: '&7You gutted &3%fish% &7fish and earned &3%entropy% &7entropy.'
+  Entropy: '&7Has extraído &3%fish% &7peces y ganado &3%entropy% &7entropía.'
 CaughtCrab: pescaste un &cCangrejo&7!
 Scales:
   SelectRisk: ¡debe seleccionar un riesgo antes de intentar escalar!
@@ -60,32 +60,113 @@ Commands:
   InvalidSubCommand: '&7sub-comando invalido. usa /fish por una lista de subcomandos.'
   InvalidNumber: ha introducido una cantidad no válida.
   InvalidArgument: '&7Argumentos invalidos. usa /fish por una lista de subcomandos'
-  ReloadPlugin: '&3PyroFishingPro &7se ha recargado con éxito!'
+  ReloadPlugin: '&3Pezca &7se ha recargado con éxito!'
   InvalidAugment: '&7Ese no es un aumento válido. No use espacios ni guiones bajos.
     Ejemplo: &chotspot&7.'
-  AddedEntropy: '&b%player% &7se le ha dado &b%entropía% &7entropia. Ellos ahora tienen
+  AddedEntropy: '&b%player% &7se le ha dado &b%entropy% &7entropia. Ellos ahora tienen
     en total &b%total%&7 entropía.'
   AddedXP: '&b%player% &7se le ha dado &b%xp% de &7XP. Ellos ahora tienen &b%total%&7
     de XP.'
-  GivenEntropy: Te has dado &b%entropía% &7entropy. ahora tienes &b%total%&7 entropía.
+  GivenEntropy: Te has dado &b%entropy% &7entropy. ahora tienes &b%total%&7 entropía.
   GivenXP: se te ha dado &b%xp% &7XP. ahora tienes &b%total%&7 XP.
   NotAnItem: ha introducido un artículo no válido.
   InvalidUsername: ha introducido un nombre de usuario no válido.
   EntropyBoosterFailed: ha ingresado un número incorrecto por su entropía booster.
   CommandList:
-    TitleLine: '&8]&m-----------+&8[ &6&lPyroFishingPro &8]&m+-----------&8['
+    TitleLine: '&8]&m-----------+&8[ &b&lPezca &8]&m+-----------&8['
     BottomLine: '&8]&m------------------------------------------&8['
     PrimaryColour: '&e'
     SecondaryColour: '&7'
     AdminColour: '&6'
   Entropy:
     Amount: '&7Tu Actualmente tienes &a%entropy% &7entropy.'
+  Events:
+    Error: '&7An error occured while executing this command. Check the arguments and
+      ensure events are not disabled on this server.'
+    InvalidType: '&7The event type ''&c%name%&7'' is not a valid event type.'
+    Misc:
+      NotFound: Unknown...
+    Base: '&7To see information on an event, enter the event name as an argument.'
+    Info:
+      CRABMAS:
+      - |2-
+           &lCrabmas Event&r
+
+        &l»&r Biome: %biome%
+        &l»&r Time: %timeleft%
+
+        The values above will change automatically.
+
+        The event is active for another: &5%time%&r.
+      - |-
+        &lWhat is Crabmas?&r
+
+        Crabmas is all about trying to find a special Crab that will spawn in a random biome, finding enough orbs, and killing the special boss for loot.
+      - "&lHow do I take part?&r\n\nAll you need to do is catch a fish in different\
+        \ biomes. If you are lucky, you will find the special crab in your biome.\
+        \ If you do, it will then announce it to everyone, and the crab will stay\
+        \ in that location for one hour. "
+      - After that hour, it will move to a random biome to repeat the cycle. Killing
+        the mini &cCrabmas &rwill give you a &cCrabmas Orb&r. If you use &45 &rof
+        these by &2right-clicking in air&r, it will make the next one you find be
+        the &cCrabmas Boss&r. This boss has a few special attacks. Upon killing it,
+        you will get
+      - one of fourteen random drops. Check the next page for a detailed droplist.
+      - |-
+        &lWhat rewards are there?&r
+
+        &l»&r Snowglobe Augment
+        &l»&r Hot Spot Augment
+        &l»&r Entropy Crystal
+        &l»&r Crab Lure
+        &l»&r Platinum Lure
+        &l»&r Mythical Lure
+        &l»&r Crab Claw x2
+        &l»&r Crab Scale x2
+        &l»&r Dolphin Tail x2
+        &l»&r Squid Tentacle x2
+      - |-
+        &l»&r Entropy Booster (1.25x)
+        &l»&r Entropy Booster (1.65x)
+        &l»&r Entropy Booster (2x)
+        &l»&r Entropy Booster (4x)
+    NotActive: '&7That event is not active until &c%date%&7.'
+  StartTournament:
+    InvalidArgs: '&7Uso correcto: &c/ft start <torneo> [duración]'
+    TooShort: '&7El valor &c%value% &7es demasiado corto. Debe ser mayor a 0 segundos.'
+    Started: '&7Has iniciado el Torneo &b%type%&7.'
+    InvalidDuration: '&7El valor &c%value% &7no es un número entero válido.'
+    InvalidType: '&7Ese tipo de Torneo no existe.'
+  RemoveDelivery:
+    Removed: '&7Has eliminado esa entrega.'
+    CannotRemove: '&7No puedes eliminar esa entrega porque está en progreso o finalizada.'
+    NoDelivery: '&7No tienes ninguna entrega en ese espacio.'
+  TournamentInfo:
+    NoTournament: '&7Actualmente no hay ningún torneo en curso.'
+  RemoveBait:
+    Removed: '&7El cebo ha sido retirado de tu caña de pescar.'
+    InvalidItem: '&7El objeto que tienes en la mano es inválido.'
+    NoBait: '&7El objeto que tienes en la mano no tiene cebo.'
+  DisabledInWorld: '&c&lEN MUNDO RECURSOS SOLO SE PUEDE PEZCAR AQUI NO ES MUY CHILL
+    Y TIENES PROTECCIONES :P'
+  InvalidDeliveryNumber: '&7Has ingresado un número de entrega inválido. Debe estar
+    entre 1 y 15.'
+  StopTournament:
+    NoTournament: '&7A. No hay torneo'
+    Stopped: '&7Has detenido el torneo en curso.'
+    Broadcast: '&7El torneo actual fue detenido por un administrador.'
+  InvalidAugmentName: '&7That is not a valid augment name. Check the tab completion
+    for a full list.'
+  Codex:
+    InvalidType: '&7That name is not a valid codex.'
 Events:
-  Error: '&7Ocurrió un error al ejecutar este comando. Verifica los argumentos y asegúrate de que los eventos no estén desactivados en este servidor.'
+  Error: '&7Ocurrió un error al ejecutar este comando. Verifica los argumentos y asegúrate
+    de que los eventos no estén desactivados en este servidor.'
   InvalidType: '&7El tipo de evento ''&c%name%&7'' no es un tipo de evento válido.'
   Misc:
     NotFound: Desconocido...
-  Base: '&7Para ver información sobre un evento, ingresa el nombre del evento como argumento.'
+  Base: '&7Para ver información sobre un evento, ingresa el nombre del evento como
+    argumento.'
   Info:
     CRABMAS:
     - |2-
@@ -102,11 +183,15 @@ Events:
 
       Crabmas trata de encontrar un cangrejo especial que aparecerá en un bioma aleatorio, encontrar suficientes orbes y matar al jefe especial para obtener botín.
     - "&l¿Cómo participo?&r\n\nTodo lo que necesitas hacer es atrapar un pez en diferentes\
-      \ biomas. Si tienes suerte, encontrarás el cangrejo especial en tu bioma.\
-      \ Si lo encuentras, lo anunciará a todos, y el cangrejo permanecerá\
-      \ en esa ubicación durante una hora. "
-    - Después de esa hora, se moverá a un bioma aleatorio para repetir el ciclo. Matar al mini &cCrabmas &rte dará un &cOrbe de Crabmas&r. Si usas &45 &rhaciendo &2clic derecho en el aire&r, hará que el próximo que encuentres sea el &cJefe de Crabmas&r. Este jefe tiene algunos ataques especiales. Al matarlo, recibirás
-    - uno de catorce botines aleatorios. Consulta la siguiente página para ver una lista detallada de botines.
+      \ biomas. Si tienes suerte, encontrarás el cangrejo especial en tu bioma. Si\
+      \ lo encuentras, lo anunciará a todos, y el cangrejo permanecerá en esa ubicació\
+      n durante una hora. "
+    - Después de esa hora, se moverá a un bioma aleatorio para repetir el ciclo. Matar
+      al mini &cCrabmas &rte dará un &cOrbe de Crabmas&r. Si usas &45 &rhaciendo &2clic
+      derecho en el aire&r, hará que el próximo que encuentres sea el &cJefe de Crabmas&r.
+      Este jefe tiene algunos ataques especiales. Al matarlo, recibirás
+    - uno de catorce botines aleatorios. Consulta la siguiente página para ver una
+      lista detallada de botines.
     - |-
       &l¿Qué recompensas hay?&r
 
@@ -131,7 +216,7 @@ StartTournament:
   TooShort: '&7El valor &c%value% &7es demasIado corto. Debe ser mayor a 0 segundos.'
   Started: '&7Has iniciado el Torneo &b%type%&7.'
   InvalidDuration: '&7El valor &c%value% &7no es un eNtero válido.'
-  InvalidType: '&7Ese tipo de torneO no existe.'
+  InvalidType: '&7Ese tipo de torne no existe.'
 RemoveDelivery:
   Removed: '&7Has eliminado esa entrega.'
   CannotRemove: '&7No puedes eliminar esa entrega, está en progreso o ya ha terminado.'
@@ -142,7 +227,8 @@ RemoveBait:
   Removed: '&7El cebo ha sido quitado de tu caña de pescar.'
   InvalidItem: '&7El objeto que estás sosteniendo es inválido.'
   NoBait: '&7El objeto que estás sosteniendo no tiene cebo adjunto.'
-InvalidDeliveryNumber: '&7Has ingresado un número de entrega inválido. Debe estar entre 1 y 15.'
+InvalidDeliveryNumber: '&7Has ingresado un número de entrega inválido. Debe estar
+  entre 1 y 15.'
 StopTournament:
   NoTournament: '&7Actualmente no hay ningún torneo en curso.'
   Stopped: '&7Has detenido el torneo en curso.'
@@ -212,8 +298,8 @@ Augments:
   CraftedAugment: tú has aumentado %augment% &7con nivel &3%amount%.
   SolarRage: tu has ganado &e$%money% &7 por la bonuficación del &eSolar Rage&7 aumento.
   AugmentDisabled: '&7Este aumento se ha desactivado y no se puede crear.'
-  PrecisionCutting: '&cCorte de Precisión &7aumento el te dio &3%entropía% &7bono
-    de entropía por destripar.'
+  PrecisionCutting: '&cCorte de Precisión &7aumento el te dio &3%entropy% &7bono de
+    entropía por destripar.'
   CallOfTheStorm: '&7tu &9llamada de la tormenta &7 te da la oportunidad de pescar
     un pez extra.'
   HotSpot: Tu &6Punto caliente &7te dio la oportunidad de pescar un pez extra.
@@ -302,7 +388,7 @@ Augments:
   - '%description%'
   - '&8&m-----------&r&8[%color% Información &8]&8&m-----------'
   Misc:
-    entropía: no puedes fabricar ese artículo. necesitas &c%entropía%&7 más entropia.
+    entropía: no puedes fabricar ese artículo. necesitas &c%entropy%&7 más entropia.
     NoValidRecipe: '&7Los elementos que ha eliminado no coinciden con ninguna receta
       de argumento válida.'
     Crafted: tu crafteaste %name% &7y has gastado &3%cost% &7de entropia.
@@ -316,6 +402,41 @@ Augments:
         need at least &c%entropy% &7for this!'
     CheckForLevel: '&7You are not a high enough level to apply this augment onto your
       fishing rod!'
+    NoAugment: '&7Please use an Augment in the second slot instead of your current
+      item.'
+    AddedAugment: '&7You have added the Augment ''%augment%&7'' and it is now level
+      %color%%level%&7. %maxlevel%'
+    RemovalNoAugments: '&7There are no augments on your current item!'
+    AppliesTo:
+      FISHING_ROD: Fishing Rod
+    NoCraftingPermission: '&7You do not have &cpermission &7to craft %augment%&7.'
+    PerItem: '&7- %color%%amount%x %item%'
+    Lore:
+      Item: '&7» %color%%amount%x &7%item%'
+      Recipe:
+      - '%color%Crafting Recipe:'
+      - '%items%'
+      - ''
+      - '&7Drop these into a cauldron to craft!'
+    MaxLevelAdded: '&7(&bmax level&7)'
+    Cooldown: '&7You must wait at least &c1 second &7before doing this again.'
+    RemovedAugments: '&7You have removed all the augments from your current item.'
+    NotHighEnoughLevel: '&7You are not a high enough level to craft that Augment.'
+    AugmentDisabled: '&7This augment has been disabled and cannot be crafted.'
+    OldRod: '&7Your rod is old and needs to be converted. Please catch a fish and
+      it should convert automatically for you.'
+    WrongType: '&7That augment cannot be applied to that item type!'
+    ConvertedRod: '&7The &6Augments &7on your rod have been converted into the new
+      system. You may now augment this rod again.'
+    CraftedAugment: '&7You have augmented %augment% &7with level &3%amount%.'
+    RemovalInvalidRod: '&7That is not a valid item that you can remove augments from.'
+    NotCraftable:
+    - '&cThis augment cannot be crafted.'
+    AugmentMaxLevel: '&7That Augment is already max level.'
+    MoreThenOneRod: '&7You cannot have a stack of rods inside the augment menu. Unstack
+      them and try again.'
+    ApplyAugment: '&eUse /fish augment to apply this.'
+    NotAugment: '&7That item is not a valid augment!'
   'False': falso
   Recipe:
     COBBLESTONE: Adoquìn
@@ -358,19 +479,130 @@ Augments:
     TURTLE_EGG: Huevo de tortuga
   Extra:
     PerItem: '&7- %color%%amount%x %item%'
-  MoreThenOneRod: '&7You cannot have a stack of rods inside the augment menu. Unstack
-    them and try again.'
+  MoreThenOneRod: '&7No puedes tener una pila de cañas en el menú de mejoras. Sepáralas
+    y vuelve a intentarlo.'
+  Names:
+    BIOME_DISRUPTION: '&2Disrupción de Bioma'
+    CALL_OF_THE_STORM: '&9Llamado de la Tormenta'
+    CRAB_CRUSHER: '&aTriturador de Cangrejos'
+    TROPHY: '&eTrofeo'
+    CRAB_BAIT: '&bCarnada de Cangrejo'
+    PERCEPTION: '&6Percepción'
+    SOLAR_RAGE: '&eIra Solar'
+    HOT_SPOT: '&6Punto Caliente'
+    SAGE: '&2Sabio'
+    PRECISION_CUTTING: '&cCorte Preciso'
+    SNOW_GLOBE: '&bBola de Nieve'
+    MASTER_FISHERMAN: '&dPescador Maestro'
+    SATURATE: '&3Saturar'
+    INTELLECT: '&aIntelecto'
+  MASTER_FISHERMAN:
+    Description:
+    - '&7Te da una mayor probabilidad de capturar'
+    - '&7peces de mayor nivel. Para los'
+    - '&7pescadores más dedicados.'
+  Colours:
+    BIOME_DISRUPTION: '&2'
+    CRAB_BAIT: '&b'
+    HOT_SPOT: '&6'
+    CALL_OF_THE_STORM: '&9'
+    SAGE: '&2'
+    PERCEPTION: '&6'
+    MASTER_FISHERMAN: '&d'
+    SOLAR_RAGE: '&e'
+    PRECISION_CUTTING: '&c'
+    SATURATE: '&3'
+    TROPHY: '&e'
+    INTELLECT: '&a'
+    SNOW_GLOBE: '&b'
+    CRAB_CRUSHER: '&a'
+  PRECISION_CUTTING:
+    Description:
+    - '&7Te da más entropía al destripar'
+    - '&7peces dentro de la estación &c/destripar pez&7.'
+  HOT_SPOT:
+    Description:
+    - '&7Te da una probabilidad de capturar múltiples'
+    - '&7peces con un solo lanzamiento.'
+    - '&7Esto solo funciona cuando no llueve.'
+  SATURATE:
+    Description:
+    - '&7Te da una probabilidad de rellenar tu hambre'
+    - '&7al capturar peces.'
+  SNOW_GLOBE:
+    Description:
+    - '&7Crea aleatoriamente un &fAnillo de Nieve &7que'
+    - '&7da bonificación de entropía y experiencia'
+    - '&7al pescar dentro de él. Funciona para'
+    - '&7todos los jugadores que pescan dentro.'
+    Extra:
+    - ''
+    - '%color%Obtenido en el evento de Crabmas.'
+  CALL_OF_THE_STORM:
+    Description:
+    - '&7Te da una probabilidad de capturar múltiples'
+    - '&7peces con un solo lanzamiento cuando'
+    - '&9llueve&7. No funciona'
+    - '&7si no llueve en tu mundo.'
+  TROPHY:
+    Description:
+    - '&7Te da una mayor probabilidad de obtener beneficios'
+    - '&7usando la función &e/escalas de pez&7.'
+  BIOME_DISRUPTION:
+    Description:
+    - '&7Te da una probabilidad de capturar peces de cualquier'
+    - '&7bioma al pescar. No aplica a'
+    - '&7peces con requisitos de captura adicionales.'
+  CRAB_BAIT:
+    Description:
+    - '&7Te da una mayor probabilidad de capturar'
+    - '&bCangrejos &7al pescar.'
+  SAGE:
+    Description:
+    - '&7Te da más &2Experiencia de Plugin&7 al'
+    - '&7capturar peces.'
+  SOLAR_RAGE:
+    Description:
+    - '&7Aumenta el dinero que ganas al vender'
+    - '&7peces en la &e/tienda de peces&7.'
+  NewLore:
+  - '%description%'
+  - ''
+  - '%color%Información de Mejora:'
+  - '&7» Nivel de Pesca Requerido: %color%%requiredlevel%'
+  - '&7» Costo de Entropía:&8 %color%%cost%'
+  - '&7» Nivel Máximo de Mejora:&8 %color%%maxlevel%'
+  - '&7» Aplicado a:&8 %color%%type%'
+  - ''
+  - '%apply_augment%'
+  - '%craftable%'
+  - '%extra%'
+  - '%crafting_recipe%'
+  PERCEPTION:
+    Description:
+    - '&7Te da más entropía base al'
+    - '&7capturar peces personalizados.'
+  INTELLECT:
+    Description:
+    - '&7Te da más &aExperiencia de Jugador &7al'
+    - '&7capturar peces.'
+  CRAB_CRUSHER:
+    Description:
+    - '&7Hace daño adicional a &aCangrejos &7al'
+    - '&7sostener la caña de pescar. También,'
+    - '&7tienes una probabilidad de capturar nuevos tipos'
+    - '&7de cangrejos y obtener botín especial.'
 NoPermission: '&c¡No tienes permiso para usar esto!'
 Tournament:
   Length:
-    CaughtMessage: atrapaste un &bFISHNAME&7 que tenía una longitud de &bLENGTHcm&7.
+    CaughtMessage: atrapaste un &b%fishname%&7 que tenía una longitud de &b%length%cm&7.
     LongestFish: '¡Acabas de pescar tu pez más largo! Era: &3%before%cm &7y ahora
       es &b%new%cm&7!'
   NoTournament: '&7There is currently no Tournament Active.'
   LongestCast:
     Message: '&7You achieved a new longest cast for this tournament of &b%distance%m&7.'
 Tournaments:
-  AlreadyActive: '&7Ya hay un &3torneo &7en curso!'
+  AlreadyActive: '&7En Curso!'
   NoTournament: '&7No hay un &ctorneo &7Actualmente activo.'
   Misc:
     With: '&7with '
@@ -388,6 +620,7 @@ Tournaments:
     BASE_ENTROPY_EARNED: Most Base Entropy Earned
     RANDOM_CATCH: Catch The Most %fish%
     SHORTEST_LENGTH: Shortest Length
+    TOTAL_LENGTH: Total Length
   NA:
     Score: N/A
     Name: N/A
@@ -476,14 +709,14 @@ GUINames:
   Main: '&9&lMenu de pesca'
   Shop: '&9&lVenta de peces'
   Deliveries: '&9&lEntregas'
-  Codex: '&9&lCódice'
+  Codex: '&9&lCodex'
   Scales: '&9&lEscamas'
   FishBag: '&9&lBolsa de peces'
   GuttingStation: '&9&lEstación de destripamiento'
   Augments: '&9&lAumentos'
   Totem: '&9&lTotems de pesca'
   Market: '&9&lMercado de pesca'
-  PerCodex: '&9&lCodice de pesca &8- &3%tier%'
+  PerCodex: '&9&lCodex de pesca &8- &3%tier%'
   Skills: '&9&lHabilidades de pesca'
   TotemStructure: '&9Estructura de totems'
   Stats: '&9&lEstadisticas: &3&l%player%'
@@ -497,7 +730,7 @@ GUI:
       - '&7haga clic para abrir la tienda de venta de pescado!'
       - '&7&o¡Vende todos tus peces!'
     Codex:
-      Name: '&3&lCodice'
+      Name: '&3&lCodex'
       Lore:
       - '&7click para ver el códice!'
       - '&7&o¡Mira qué peces hay!'
@@ -537,9 +770,9 @@ GUI:
       - '&7haga clic para ver su tótem.'
       - '&7&o¿Qué vas a convocar?'
     NoRod:
-      Name: '&4&lSin caña de pescar'
+      Name: '&4&lSin Caña'
       Lore:
-      - no estás sosteniendo una caña de pescar.
+      - '&8(&e!&8) &fNo estás sosteniendo una caña de pescar.'
     Skills:
       Name: '&9&lHabilidades de pesca '
       Lore:
@@ -551,7 +784,7 @@ GUI:
       - '&7haga clic para ver las entregas actuales.'
       - '&7&oEntregas completas por dinero!'
       - ''
-      - necesitas otro &3%amount% &7Pez personalizado
+      - '&7necesitas otro &3%amount% &7Pez personalizado'
       - '&7para su próxima entrega de pesca!'
     ChristmasEvent:
       Name: '&3&lEvento de Navidad'
@@ -616,7 +849,7 @@ GUI:
       Lore:
       - '&7Las entregas son una de las formas clave de'
       - '&7gana dinero y &fentropía &7!'
-      - puedes encontrar entregas cada &6180
+      - '&7puedes encontrar entregas cada &6180'
       - '&7pescado que capturaste o del'
       - '&c/fish market&7 en ocasiones'
       - ''
@@ -685,8 +918,8 @@ GUI:
         OVERCLOCKED: '%'
         PAY_RISE: x entropía
       Upgraded: te has Mejorado &e%name% &7a nivel &3%level%&7.
-      NoEntropy: 'no tienes suficiente entropía por esto. necesitas: &c%entropía%
-        &7 más entropia para esto.'
+      NoEntropy: 'no tienes suficiente entropía por esto. necesitas: &c%entropy% &7
+        más entropia para esto.'
     MiddleClick:
       Failed: '&cno puede descartar esta entrega.'
       Delete: '&9Click medio del mouse &7para eliminar esta entrega.'
@@ -735,13 +968,13 @@ GUI:
       - '&7Seguro la &bCaldera &7tiene agua y estás usando'
       - '&7la &7&oexacta &7cantidad de elementos al elaborarlos.'
       - ''
-      - '&7Equilibrio de entropía: &b%entropía%'
+      - '&7Equilibrio de entropía: &b%entropy%'
       - '&7Nivel de pesca: &b%level%'
     FishingRod:
       Name: '&b&lCaña de pescar'
       Lore:
       - '&7Coloque su caña de pescar en esta ranura que'
-      - le gustaría agregar el aumento.
+      - '&7le gustaría agregar el aumento.'
     Augment:
       Name: '&b&lAumentos'
       Lore:
@@ -760,12 +993,28 @@ GUI:
       - '&7la caña de pescar para su inventario.'
     Confirm:
       Name: '&a&lConfirmar aumento'
+      Lore: []
     Cancel:
       Name: '&c&lCancelar aumento'
+      Lore: []
     NotEnabled:
       Lore:
       - §7Este aumento ha sido deshabilitado.
       Name: '&4&lDeshabilitado'
+    Info:
+      Lore:
+      - '&7Apply augments by putting your rod'
+      - '&7and augments into the slots below.'
+      - ''
+      - '&7» Fishing Level: &a%level%'
+      - '&7» Entropy: &b%entropy%'
+      - ''
+      - '&eClick for an augment list and information.'
+      Name: '&aAugment Information'
+    Back:
+      Lore:
+      - '&7Click to go back to the main menu.'
+      Name: '&cBack'
   Codex:
     Main:
       Info1:
@@ -880,32 +1129,32 @@ GUI:
       Entropy: '&7Entropy: &a'
     SkillTree: '&b&lÁrbol de habilidades'
     Stats1:
-    - '&7Total Fish Caught: &a%TotalFishCaught%'
-    - '&7Total Custom Caught &a%TotalCustomCaught%'
+    - '&7Total de peces capturados: &a%TotalFishCaught%'
+    - '&7Total personalizado capturado: &a%TotalCustomCaught%'
     - ''
-    - '&7Bronze Caught: &a%BronzeFishCaught%'
-    - '&7Silver Caught: &a%SilverFishCaught%'
-    - '&7Gold Caught: &a%GoldFishCaught%'
-    - '&7Diamond Caught: &a%DiamondFishCaught%'
-    - '&7Platinum Caught: &a%PlatinumFishCaught%'
-    - '&7Mythical Caught: &a%MythicalFishCaught%'
+    - '&7Peces de bronce capturados: &a%BronzeFishCaught%'
+    - '&7Peces de plata capturados: &a%SilverFishCaught%'
+    - '&7Peces de oro capturados: &a%GoldFishCaught%'
+    - '&7Peces de diamante capturados: &a%DiamondFishCaught%'
+    - '&7Peces de platino capturados: &a%PlatinumFishCaught%'
+    - '&7Peces míticos capturados: &a%MythicalFishCaught%'
     - ''
-    - '&7Money Made: &a%MoneyMade%'
-    - '&7Crabs Killed: &a%CrabsKilled%'
-    - '&7Fish Gutted &a%FishGutted%'
-    - '&7Deliveries Made: &a%DeliveriesMade%'
+    - '&7Dinero ganado: &a%MoneyMade%'
+    - '&7Cangrejos asesinados: &a%CrabsKilled%'
+    - '&7Peces destripados: &a%FishGutted%'
+    - '&7Entregas realizadas: &a%DeliveriesMade%'
     - ''
-    - '&7Augments Crafted: &a%AugmentsCrafted%'
-    - '&7Fish Killed: &a%FishKilled%'
-    - '&7Longest Fish: &a%LongestFish%'
+    - '&7Mejoras creadas: &a%AugmentsCrafted%'
+    - '&7Peces asesinados: &a%FishKilled%'
+    - '&7Pez más largo: &a%LongestFish%'
     - ''
-    - '&7Tournaments Won: &a%TournamentsWon%'
+    - '&7Torneos ganados: &a%TournamentsWon%'
     Stats2:
-    - '&7Level: &a%Level%'
-    - '&7Skill Points: &a%SkillPoints%'
-    - '&7Current XP: &a%CurrentXP%'
-    - '&7Required XP: &a%RequiredXP%'
-    - '&7Entropy: &a%Entropy%'
+    - '&7Nivel: &a%Level%'
+    - '&7Puntos de habilidad: &a%SkillPoints%'
+    - '&7XP actual: &a%CurrentXP%'
+    - '&7XP requerida: &a%RequiredXP%'
+    - '&7Entropía: &a%Entropy%'
   Totems:
     TotemPassives:
       LittleCritters:
@@ -1096,7 +1345,7 @@ GUI:
     Messages:
       UpgradedSkill: 'has mejorado la habilidad &b%name% &7a nivel: &3%level%&7.'
       Skill:
-        BETTER_GUTTING: tú destripabas &3%fish% &7pescado y ganado &3%entropía% &7entropia.
+        BETTER_GUTTING: tú destripabas &3%fish% &7pescado y ganado &3%entropy% &7entropia.
           (&b+%bonus% &7bonificación entropía de habilidades).
         AUGMENT_INFUSION: Tu habilidad &bInfusión de aumento &7Reembolsó algunos de
           los materiales de elaboración.
@@ -1336,6 +1585,23 @@ GUI:
   Deliveies:
     Upgrades:
       MaxLevel: '&7Esta mejora ya es de nivel máximo.'
+  AugmentList:
+    Back:
+      Name: '&cBack'
+      Lore:
+      - '&7Click to go back to the previous menu.'
+    Info:
+      Lore:
+      - '&7Below is a list of all augments'
+      - '&7available in the plugin currently.'
+      - ''
+      - '&7To craft augments, drop the required'
+      - '&7items into a &fCauldron &7and hit'
+      - '&7it with a fishing rod.'
+      - ''
+      - '&7If you are on Geyser/Bedrock you'
+      - '&7might need to use &eJoystick Controls&7.'
+      Name: '&aAugment Information'
 Biomes:
   TAIGA_HILLS: Colinas de taiga
   SNOWY_MOUNTAINS: Montañas nevadas
@@ -1451,9 +1717,9 @@ Boosters:
       restantes.'
     List:
     - ''
-    - '&8]&m--------------+&r&8[&r &6&lBoosters &8]&m+--------------&r&8['
+    - '&8]&m--------------+&r&8[&r &6&𝗜𝗠𝗣𝗨𝗟𝗦𝗢 &8]&m+--------------&r&8['
     - ''
-    - '&6Boosters: %boosters%'
+    - '&6𝗜𝗠𝗣𝗨𝗟𝗦𝗢: %boosters%'
     - ''
     - '&8]&m------------------------------------------&r&8['
     - ''
@@ -1462,17 +1728,17 @@ Boosters:
     Platinum: '&8➤ &cEl señuelo de platino durara &3%seconds% &7segundos restantes.'
     Entropy: '&8➤ &bBoost de entropìa &3(%boost%x) &7con &3%seconds% &7segundos restantes.'
   Names:
-    MYTHICAL: Mythical Booster
-    PLATINUM: Platinum Booster
-    ENTROPY: Entropy Booster
-    CRAB: Crab Booster
+    MYTHICAL: Mistico Impulso
+    PLATINUM: Platino Impulso
+    ENTROPY: Entropy Impulso
+    CRAB: Carambas Impulso
 TierNames:
-  Platinum: Platino
-  Mythical: Mistico
-  Silver: Plata
-  Bronze: Bronce
-  Diamond: Diamante
-  Gold: Oro
+  Platinum: '#ffedf3ᴘʟᴀᴛɪɴᴏ'
+  Mythical: '#ff29efᴍɪᴛɪᴄᴏ'
+  Silver: '#d8d8d8ᴘʟᴀᴛᴀ'
+  Bronze: '#cd7f32ʙʀᴏɴᴢᴇ'
+  Diamond: '#09bacdᴅɪᴀᴍᴀɴᴛᴇ'
+  Gold: '#ffd700ᴏʀᴏ'
 Totems:
   AlreadyOwned: 'no puedes crear otro &CTotem &7como ya tienes uno! Eso se encuentra
     en &cX: %x%&7, &cY: %y%&7, &cZ: %z%&7.'
@@ -1524,15 +1790,13 @@ Misc:
     Hours: '%hours%h, %minutes%m and %seconds%s'
     Days: '%days%d, %hours%h, %minutes%m and %seconds%s'
   NA: N/A
-FishShopLogging: '[PyroFishingPro] %player% vendio %fish% peces a la pescadería por
-  %money%.'
+FishShopLogging: '[Pezca] %player% vendio %fish% peces a la pescadería por %money%.'
 RemovedAugments: ¡Has eliminado todos los aumentos de tu caña de pescar!
 FishLoreExtra:
-  AllBiomes: All Biomes
+  AllBiomes: '&e&lTODOS BIOMAS'
   Weight: '&7¡Este pez ha sido pesado!'
 PartyFishing:
-  Boost: '&3fiesta de Pesca &7te ganó un bonus de &3%entropía% &7entropy y &3%xp%
-    &7XP.'
+  Boost: '&3fiesta de Pesca &7te ganó un bonus de &3%entropy% &7entropy y &3%xp% &7XP.'
 TotemsDisabled: '&3Totems de pesca &7se han desactivado en este servidor.'
 MoneyCooldown:
   Limit: ha ganado el máximo de dinero por hoy. puedes ganar más dinero en &b%time%&7.
@@ -1562,13 +1826,13 @@ Bait:
     - ''
     - '&cTu no tengo permiso para comprar esto.'
     Level: '&cNo tienes un nivel de fishing lo suficientemente alto para esto.'
-  NoPermission: '&cTu no tengo permiso para comprar esto.'
+  NoPermission: '&cNo tengo permiso para comprar esto.'
   AlreadyHave: '&atu ya tienes un cebo aplicado a la fishing rod tu.'
   FishingRod: '&atu solo puedes aplicar cebo en una fishing rod.'
   NotEnoughSpace: '&atu no tienes suficiente espacio de inventario para comprar esto.'
   NotEnoughMoney: '&atu no tienes suficiente dinero para pagar esto..'
-  NotHighEnoughLevel: '&7You are not a high enough fishing level to purchase this.'
-  Ranout: '&7The bait on your fishing rod has run out.'
+  NotHighEnoughLevel: '&7No tienes el nivel de pesca suficiente para comprar esto.'
+  Ranout: '&7La carnada en tu caña de pescar se ha agotado.'
 FishSkills:
   Names:
     TOTEM_LEADER: Lider del totem
@@ -1611,7 +1875,8 @@ FishUpdate:
 SeasonalEvents:
   CRABMAS:
     SalmonName: '&3Anguila Eléctrica'
-    UsedOrb: '&7Has gastado 5 &cOrbes de Crabmas&7. Tu próxima &cCrabmas&7 será el jef@ (#inclusivo xd).'
+    UsedOrb: '&7Has gastado 5 &cOrbes de Crabmas&7. Tu próxima &cCrabmas&7 será el
+      jef@ (#inclusivo xd).'
     CrabmasOrb:
       Name: '&cOrbe de Crabmas'
       Lore:
@@ -1624,7 +1889,7 @@ SeasonalEvents:
       - ''
       - '&7Evento activo desde el &321 de diciembre &8> &39 de enero'
       - '&a'
-      - '&7Solo en &cValkyCraft'
+      - '&7Solo en &dSteamGrils'
     Changed: '&7El Bioma de Crabmas ha cambiado...'
     NotEnoughOrbs: '&7Necesitas al menos &c5 Orbes de Crabmas &7para hacer esto.'
     FoundBiome: '&3%player% &7ha encontrado el Bioma de Crabmas, que es &2%biome%&7.'
@@ -1636,4 +1901,5 @@ SeasonalEvents:
 RedeemStackEntropy: '&7Has canjeado &d%amount% Entropía&7.'
 Placeholders:
   TimeTillTournament:
-    OnGoing: Actualmente activo durante %time%
+    OnGoing: 'Activo: %time%'
+DisabledInWorld: '&7This feature is disabled in your current world.'
