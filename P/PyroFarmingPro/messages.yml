@@ -14,11 +14,14 @@ GUI:
           - '%filtertypes%'
         UpgradeTree:
           Misc:
-            NotYours: '&7Este &cÁrbol de Habilidades &7no te pertenece. Pertenece a &c%owner%&7.'
+            NotYours: '&7Este &cÁrbol de Habilidades &7no te pertenece. Pertenece
+              a &c%owner%&7.'
             AreaNotClear:
               Block: '&8» &b%loc% &7➛ &bBloque Detectado'
               NoPermission: '&8» &b%loc% &7➛ &bSin Permiso para Construir'
-              Main: '&7El área alrededor del &cÁrbol de Habilidades &7no está despejada para actualizarlo. Asegúrate de que no haya bloques cerca del árbol dentro de un área de 5x5x5.'
+              Main: '&7El área alrededor del &cÁrbol de Habilidades &7no está despejada
+                para actualizarlo. Asegúrate de que no haya bloques cerca del árbol
+                dentro de un área de 5x5x5.'
               Liquid: '&8» &b%loc% &7➛ &bDetectado Líquido o Aire'
               Cooldown: '&7¡Estás haciendo clic demasiado rápido!'
             Lore:
@@ -31,10 +34,12 @@ GUI:
               NotEnough: '&c✖'
             MaxLevel: '&7Tu &bÁrbol de Habilidades &7ya está en el nivel máximo.'
             Broken: '&7Has roto tu &bÁrbol de Habilidades&7.'
-            UpgradedTree: '&7Has actualizado tu &bÁrbol de Habilidades &7al nivel: &b%level%&7.'
+            UpgradedTree: '&7Has actualizado tu &bÁrbol de Habilidades &7al nivel:
+              &b%level%&7.'
             NotRequirements: '&7Aún no cumples los requisitos para actualizar tu árbol.'
             Built: '&7¡Tu &bÁrbol de Habilidades &7ha sido creado!'
-            AlreadyHave: '&7Ya tienes un &cArchivo de Habilidades&7 colocado en: &cX: %x%&7, &cY: %y%&7, &cZ: %z%&7.'
+            AlreadyHave: '&7Ya tienes un &cArchivo de Habilidades&7 colocado en: &cX:
+              %x%&7, &cY: %y%&7, &cZ: %z%&7.'
           Lore:
           - '&7Click para actualizar tu #30DB5FÁrbol de Habilidades &7de Nivel.'
           - ''
@@ -87,7 +92,8 @@ GUI:
           Name: '&a%name%'
         ResetTree:
           Misc:
-            Reset: '&7Has restablecido tu &bÁrbol de Habilidades &7y has obtenido #30DB5F%elysium% Elysium &7reembolsado..'
+            Reset: '&7Has restablecido tu &bÁrbol de Habilidades &7y has obtenido
+              #30DB5F%elysium% Elysium &7reembolsado..'
           Name: '&aReiniciar Árbol de Habilidades'
           Lore:
           - '&7Click para reiniciar tu Árbol de Habilidades.'
@@ -125,7 +131,8 @@ GUI:
           Name: '#00FFC1Información'
         UpgradeLore:
           LoreMax:
-          - '&7¡Tu #30DB5FArbol de Habilidades &7actualmente está en el nivel máximo de #30DB5F%max%&7!'
+          - '&7¡Tu #30DB5FArbol de Habilidades &7actualmente está en el nivel máximo
+            de #30DB5F%max%&7!'
       MenuName: '&8&l» &8Habilidades de Granja'
   ComposterCraftingMain:
     Items:
@@ -189,7 +196,8 @@ GUI:
             ConstantLimited:
             - '#00FF51▎ &7Esta planta está produciendo constantemente...'
             - '#00FF51▎ &7Próxima Cosecha En: #00FF51%constant_production_duration%'
-            - '#00FF51▎ &7Esta planta solo producirá #00FF51%limited_amount% &7artículos más.'
+            - '#00FF51▎ &7Esta planta solo producirá #00FF51%limited_amount% &7artículos
+              más.'
             - ''
             - '#00FF51▎ &7Click en el botón de &6Inventario de Growstation &7para'
             - '#00FF51▎ &7ver el inventario de los artículos producidos.'
@@ -224,10 +232,13 @@ GUI:
             - '#00FF51▎ #69B4F3Click izquierdo &7para cosechar esta planta.'
           GrowingInfo:
             NoIssues: '&a▎ Todo parece estar bien para el crecimiento.'
-            TemperatureWrong: '&c▎ La temperatura de la Growstation no es compatible con esta planta.'
+            TemperatureWrong: '&c▎ La temperatura de la Growstation no es compatible
+              con esta planta.'
             NoWater: '&c▎ No hay suficiente agua para continuar el crecimiento.'
-            ProductionReached: '&c▎ Se ha alcanzado el límite de producción. Vacía el inventario.'
-            EnvironmentWrong: '&c▎ El entorno de la Growstation no es compatible con esta planta.'
+            ProductionReached: '&c▎ Se ha alcanzado el límite de producción. Vacía
+              el inventario.'
+            EnvironmentWrong: '&c▎ El entorno de la Growstation no es compatible con
+              esta planta.'
             LowWater: '&e▎ Queda menos de 5 minutos de agua.'
           Growing:
           - '&e▎ &7Esta planta todavía está creciendo...'
@@ -265,8 +276,8 @@ GUI:
             TraitFormat: '&7✦ %name%'
             NoTraits: '&7✦ No hay Traits disponibles'
         Name:
-            Full: '#FFA500Información de %plant%'
-            Empty: '&cNada Plantado'
+          Full: '#FFA500Información de %plant%'
+          Empty: '&cNada Plantado'
       GrowthSpeed:
         Name: '#69B4F3Mejora de Velocidad de Crecimiento &8(#69B4F3Nivel: %level%&8)'
         Lore:
@@ -312,7 +323,8 @@ GUI:
         - '&f&n cualquier&r &7rasgo al plantar una semilla.'
         - ''
         - '#00FFC1&lInformación:'
-        - '#69B4F3▎ &7Probabilidad de Rasgo: #69B4F3%current%% &7-> #5367B8%next%% (siguiente nivel)'
+        - '#69B4F3▎ &7Probabilidad de Rasgo: #69B4F3%current%% &7-> #5367B8%next%%
+          (siguiente nivel)'
         - ''
         - '#69B4F3▎ &7Buena Probabilidad: %good%40%'
         - '#69B4F3▎ &7Probabilidad Neutral: %neutral%40%'
@@ -341,15 +353,20 @@ GUI:
         - '&e▎ &7Todos los objetos producidos constantemente'
         - '&e▎ &7se añadirán automáticamente a este inventario.'
     Misc:
-      NotRequiredLevel: '&7No tienes un nivel suficientemente alto para plantar esta semilla. Necesitas al menos el &cNivel %level%&7.'
+      NotRequiredLevel: '&7No tienes un nivel suficientemente alto para plantar esta
+        semilla. Necesitas al menos el &cNivel %level%&7.'
       NotASeed: '&7Ese objeto no es una semilla de planta válida.'
       Upgraded: '&7Has mejorado &b%upgrade% &7al nivel: &b%level%&7.'
-      AlreadyHasSeed: '&7Esta estación de cultivo ya tiene una semilla. Puedes quitarla con &cShift-Right &7click.'
+      AlreadyHasSeed: '&7Esta estación de cultivo ya tiene una semilla. Puedes quitarla
+        con &cShift-Right &7click.'
       NoPointsLeft: '&7No te quedan puntos para mejorar esto.'
       NoPoints: '&cNo tienes puntos disponibles.'
-      AlreadyHasSeedNotInventory: '&7Ya hay una &cplanta &7creciendo en esta &cEstación de Cultivo&7.'
+      AlreadyHasSeedNotInventory: '&7Ya hay una &cplanta &7creciendo en esta &cEstación
+        de Cultivo&7.'
       Emptied: '&7Has vaciado tu estación de cultivo. Ahora puedes plantar otra semilla.'
-      OwnerNotRequiredLevel: '&7El propietario de esta &cEstación de Cultivo &7no tiene un nivel suficientemente alto para plantar esta semilla. Necesita al menos el &cNivel %level%&7.'
+      OwnerNotRequiredLevel: '&7El propietario de esta &cEstación de Cultivo &7no
+        tiene un nivel suficientemente alto para plantar esta semilla. Necesita al
+        menos el &cNivel %level%&7.'
       HasPoints: '&eClick para mejorar por 1 punto.'
       PlantedPlant: '&7Has plantado una #69B4F3%plant% &7en esta estación de cultivo.'
     Inventory: '&8&l» &8Inventario de Estación de Cultivo'
@@ -364,7 +381,7 @@ GUI:
           - '&7Encontrarás todas las &aplantas&7, &abarbijos&7,'
           - '&7y otros diversos ítems. Puedes ver información'
           - '&7sobre ellos dentro de sus menús específicos.'
-
+        
         Trees:
           Lore:
           - '&7Click para ver el Menú del Codex de #00FFC1Árboles &7.'
@@ -448,6 +465,7 @@ GUI:
           - '&7cultivar y recolectar dentro de &eGRANJAS&7.'
           - ''
           - '&7Para cultivar plantas, necesitas una &bEstación de Cultivo&7.'
+          Name: '#00FFC1Information'
         Name: '#00FFC1Información'
         Traits:
           Lore:
@@ -475,7 +493,6 @@ GUI:
             Deselected: '&f'
             Option: '#00AAFF▎ &8» %selected%%name%'
         Information:
-          Name: '#00FFC1Information'
           Name: '#00FFC1Información'
           Lore:
           - '&7Aquí están los &aBushes &7que puedes'
@@ -570,9 +587,9 @@ GUI:
           - '&7por un tiempo. ¡Compra mientras puedas!'
           Name: '#00FFC1Información'
         BackToMenu:
-            Name: '#FF2900Volver al Menú Principal'
-            Lore:
-            - '#FF2900▎ &fClick para regresar al Menú Principal.'
+          Name: '#FF2900Volver al Menú Principal'
+          Lore:
+          - '#FF2900▎ &fClick para regresar al Menú Principal.'
       MenuName: '&8&l» &8Farmers Market'
     Permanent:
       Items:
@@ -612,22 +629,6 @@ GUI:
         NotHighEnoughLevel: '&cNo tienes un nivel suficientemente alto.'
         ClickToBuy: '&eClick para comprar.'
       MenuName: '&8&l» &8Tienda Permanente &0|&8 Página: &8(&0%current%&8/&0%total%&8)'
-    Rotating:
-      MenuName: '&8&l» &8Tienda Rotativa'
-      Items:
-        BackToMenu:
-          Lore:
-          - '#FF2900▎ &fClick para volver al Mercado de Agricultores.'
-          Name: '#FF2900Volver al Mercado de Agricultores'
-        TimeLeft:
-          Lore:
-          - '&7Esta tienda vende artículos #00FFC1limitados por tiempo&7.'
-          - ''
-          - '&7El inventario de esta tienda rota en: &e%time%'
-          Name: '&aTiempo Hasta Actualización'
-      Misc:
-        ClickToBuy: '&eClick para comprar!'
-        NotHighEnoughLevel: '&c¡Nivel insuficiente!'
     Rotating:
       MenuName: '&8&l» &8Tienda Rotativa'
       Items:
@@ -717,7 +718,8 @@ GUI:
       Codex:
         Lore:
         - '&7Click para ver el códice.'
-        - '&7Consulta toda la información sobre #00FFC1cultivos&7, #00FFC1plantas&7, #00FFC1arbustos, #00FFC1árboles'
+        - '&7Consulta toda la información sobre #00FFC1cultivos&7, #00FFC1plantas&7,
+          #00FFC1arbustos, #00FFC1árboles'
         - '&7y otras diversas información aquí!'
         - ''
         - '&e» Click para abrir!'
@@ -731,7 +733,9 @@ GUI:
         Name: '#00FF51Manual'
   GrowstationInventory:
     Misc:
-      DroppedItems: '&7Uno o más objetos se han caído al suelo porque el inventario estaba lleno. Esto se debe a una configuración incorrecta. Por favor, contacta a un administrador para resolver este problema.'
+      DroppedItems: '&7Uno o más objetos se han caído al suelo porque el inventario
+        estaba lleno. Esto se debe a una configuración incorrecta. Por favor, contacta
+        a un administrador para resolver este problema.'
     Items:
       BackToMenu:
         Lore:
@@ -770,6 +774,66 @@ GUI:
     MenuName: '&8&l» &8Receta de la Estación de Cultivo'
   CraftItems:
     MenuName: '&8&l» &8Crafteo de Objetos'
+  RetrieveItems:
+    Items:
+      PreviousPage:
+        Name: '&cPrevious Page'
+        Lore:
+        - '&7Click to view the bushes on the previous page.'
+      FarmingStation:
+        Growstation:
+          Lore:
+          - '&7Below is information on your Growstation.'
+          - ''
+          - '&8» &7Location: &fX: %x%&7, &fY: %y%&7, &fZ: %z%'
+          - '&8» &7World: &f%world%'
+          - ''
+          - '&a&lGrowstation Information:'
+          - '&8» &7Seed: &c%seed%'
+          - '&8» &7Water: &b%water%&f/&b%maxwater% 🌊'
+          - '&8» &7Time until Ready: &a%time%'
+          - '&8» &7Temperature: &a%temperature%'
+          - ''
+          - '&cThis will not harvest the planted seed.'
+          - ''
+          - '&fRight-Click to pickup this item.'
+          Name: '&bGrowstation'
+        Bush:
+          Lore:
+          - '&7Below is information on your Bush.'
+          - ''
+          - '&8» &7Location: &fX: %x%&7, &fY: %y%&7, &fZ: %z%'
+          - '&8» &7World: &f%world%'
+          - ''
+          - '&e&lBush Information:'
+          - '&8» &7Time until Ready: &a%time%'
+          - ''
+          - '&cThis will not harvest the bush.'
+          - ''
+          - '&fRight-Click to pickup this item.'
+      BackToMenu:
+        Lore:
+        - '&7Click to close this menu.'
+        Name: '#FF2900Exit Menu'
+      Information:
+        Name: '&aInformation'
+        Lore:
+        - '&7This menu will show you all of your'
+        - '&bGrowstations &7and &aBushes&7.'
+        - ''
+        - '&7You can see the status of them here,'
+        - '&7or pick them up from wherever in the world.'
+        - ''
+        - '&7You can only pickup something if it''s'
+        - '&7been placed for longer then &c6 hours&7.'
+      NextPage:
+        Lore:
+        - '&7Click to view the bushes on the next page.'
+        Name: '#00FFC1Next Page'
+    MenuName: '&8&l» &8Placed Items'
+    Misc:
+      NotTime: '&7You cannot pickup this station as it has not been &c6 hours&7 since
+        placing it.'
 FarmMain:
   Items:
     Recipes:
@@ -968,6 +1032,8 @@ Bushes:
   Break:
     Broken: '&7Has roto tu %bush%&7.'
     NotYours: '&7Ese &cArbusto &7no te pertenece. Pertenece a &c%owner%&7.'
+    NotSneaking: '&7You need to be sneaking to break this &cBush Block&7.'
+    Claimed: '&7You cannot harvest the bush. Break it and replace it to use this.'
   Click:
     Harvestable: '&7¡Este %bush% &7está &adispuesto &7para ser cosechado!'
     TimeTillHarvest: '&7Este %bush% &7estará listo en &a%time%&7.'
@@ -978,6 +1044,7 @@ Bushes:
       ¡Debes tener al menos el &cNivel %level%&7!'
     Placed: '&7¡Has colocado tu %bush%!'
     TooMany: '&7¡Solo puedes colocar &c%num% Arbustos&7!'
+    Exists: '&7A &cBush Block &7already exists at this location!'
 CustomItems:
   INDUSTRIAL_FAN:
     Name: '#06A9EAVentilador Industrial'
@@ -1162,10 +1229,14 @@ Commands:
     GiveHarvestableItem:
       NoHarvestItems: '&7La planta &c%plant%&7 no tiene ningún elemento cosechable.'
       Given: '&7Te has dado el ítem de cosecha &b%id%&7.'
-      NotEnoughArgs: '&7Uso correcto del comando: &c/farm giveplantharvestable <planta> <ID del ítem>&7.'
-      NoHarvestId: '&7Se requiere un ID de ítem de cosecha para generar un ítem para esta planta.'
-      InvalidItem: '&7La planta &c%plant%&7 no tiene un ítem de cosecha con el ID &c%id%&7'
-      InvalidHarvestId: '&7La planta &c%plant%&7 no tiene un ítem de cosecha con el ID &c%id%&7'
+      NotEnoughArgs: '&7Uso correcto del comando: &c/farm giveplantharvestable <planta>
+        <ID del ítem>&7.'
+      NoHarvestId: '&7Se requiere un ID de ítem de cosecha para generar un ítem para
+        esta planta.'
+      InvalidItem: '&7La planta &c%plant%&7 no tiene un ítem de cosecha con el ID
+        &c%id%&7'
+      InvalidHarvestId: '&7La planta &c%plant%&7 no tiene un ítem de cosecha con el
+        ID &c%id%&7'
   StartTournament:
     InvalidArgs: '&7Uso correcto: &c/farmt start <torneo> [duración]'
     TooShort: '&7El valor &c%value% &7es demasiado corto. Debe ser mayor que 0 segundos.'
@@ -1276,6 +1347,15 @@ Commands:
   OnlyPlayer: '&7No puedes ejecutar este comando desde la consola.'
   Elysium:
     Balance: '&7Actualmente tienes #22D302%elysium% Elysium&7.'
+  Temperature:
+    ConsolePlayer: '&7To run this command in console, provide a biome name, or temperature.
+      Such as: ''&c/farm temperature cold&7''.'
+    Temperature: '&7The biomes with the temperature %temperature% &7are: %biomes%&7.'
+    Biome: '&7The temperature of the biome &b%biome% &7is %temperature%&7.'
+    NoArgs: '&7The temperature at your current location is: %temperature%&7.'
+  Temperatuer:
+    Invalid: '&7The &ctemperature &7or &cbiome &7you gave is not valid. Use tab completion
+      if you need help.'
 SkillsLore:
   MORE_BUSHES_5:
   - '&7Te permite colocar %bonus% &7más'
@@ -1363,6 +1443,7 @@ HarvesterHoeType:
   BEATROOT: Remolacha
   CARROTS: Zanahorias
   MELON: Melón
+  BEETROOT: Beetroot
 ConservationStatus:
   EXTINCT_IN_THE_WILD: Extinto en la Naturaleza
   CONSERVATION_DEPENDENT: Dependiente de la Conservación
@@ -1568,9 +1649,9 @@ GuideBook:
         Custom Items are various items that can be placed near farming related items such as &3Growstations &rto give them various buffs and benefits.
 
         Custom Items have a radius in which they can work.
-      - '&lCrafting&r\n\nTo craft Custom Items, you will require any type\
-        \ of &2Hoe &rand a &2Composter&r.\n\nOnce you have both, right click on the\
-        \ &2Composter &rwith the &2Hoe&r. \n\nContinued on next page...'
+      - '&lCrafting&r\n\nTo craft Custom Items, you will require any type\ \ of &2Hoe
+        &rand a &2Composter&r.\n\nOnce you have both, right click on the\ \ &2Composter
+        &rwith the &2Hoe&r. \n\nContinued on next page...'
       - |-
         Once inside of the menu, find the item you wish to craft.
 
