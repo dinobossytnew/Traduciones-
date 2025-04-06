@@ -1,0 +1,741 @@
+Donator:
+  title: Donador
+  type: CHEST
+  rows: 6
+  refresh-delay: 20
+  display-name: Kit Donador
+  menu-fillers:
+    - donator-background
+  open-command:
+    enabled: true
+    command: donatorkits
+    aliases: []
+    #permission: advancedkits.command.kits
+    description: abre el menu de donadores.
+  open-menu:
+    sounds:
+      - ENTITY_HORSE_ARMOR;VOICE;10.0;1.0
+      - BLOCK_COMPARATOR_CLICK;VOICE;1.0;1.0
+    particles:
+      - LAVA;50;2.0;2.0;2.0;2.0
+    button:
+      slots:
+        - 41
+      material: PLAYER_HEAD
+      texture: http://textures.minecraft.net/texture/9ac52419b99025828c89fa825945e6948e45bb5a22e4425a59e9096e4c1ac38
+      name: <green><b>KITS DONADOR
+      lore:
+        - ''
+        - ' <dark_green>▐ <green>Dueño Kits: <white>{owned_kits} / {total_kits}'
+        - ' <dark_green>▐ <green>Kit Habilitado: <white>{available_kits}'
+        - ''
+        - <i><white>(( Click para ver kits DONADOR! ))
+  close-menu:
+    sounds:
+      - BLOCK_ENDER_CHEST_CLOSE;VOICE;10.0;1.0
+    particles:
+      - FLAME;50;2.0;2.0;2.0;2.0
+      - CLOUD;20;0.5;0.5;0.1;0.1
+    button:
+      slots:
+        - 50
+      material: BARRIER
+      name: <red><b>CLOSE
+      lore:
+        - ''
+        - <white><i>(( Click to close this menu! ))
+  back-menu:
+    sounds:
+      - ENTITY_HORSE_ARMOR;VOICE;10.0;1.0
+      - BLOCK_COMPARATOR_CLICK;VOICE;1.0;1.0
+    particles:
+      - FLAME;50;2.0;2.0;2.0;2.0
+      - CLOUD;20;0.5;0.5;0.1;0.1
+    button:
+      slots:
+        - 49
+      material: IRON_BARS
+      name: <green><b>BACK
+      lore:
+        - ''
+        - <white><i>(( Click to go back to main menu! ))         
+  kits:
+    Carbon:
+      slots:
+        - 29
+      available:
+        material: PLAYER_HEAD
+        texture: http://textures.minecraft.net/texture/cff11a5db46de1f5877a298a99f47c2779c2aad5720c384d9d3826a5a3e5bd3a
+        name: <b><green>✧<dark_green>✦<green>✧ <gradient:green:dark_green:green>Kit {kit}</gradient> <green>✧<dark_green>✦<green>✧
+        lore:
+          - ''
+          - <gradient:dark_green:green><b>Información del Kit:</gradient>
+          - ' <gradient:dark_green:green>┏ Nivel Máximo:</gradient> <#E5DCD9>{maximum_level}'
+          - ' <gradient:dark_green:green>┠ Estado de Redención:</gradient> <#E5DCD9>Disponible'
+          - ' <gradient:dark_green:green>┗ Usos Actuales:</gradient> <#E5DCD9>{current_usages}'
+          - ' <#E5DCD9>┠ <u>Click-Izq</u> <i>para reclamar este kit!'
+          - ''
+          - <gradient:dark_green:green><b>Información del Nivel:<gradient>
+          - ' <gradient:dark_green:green>┏ Nivel Actual:</gradient> <#E5DCD9>{current_level}'
+          - ' <gradient:dark_green:green>┠ Cantidad de Ítems:</gradient> <#E5DCD9>{items}'
+          - ' <gradient:dark_green:green>┠ Tiempo de Espera:</gradient> <#E5DCD9>{total}'
+          - ' <gradient:dark_green:green>┗ Usos Máximos:</gradient> <#E5DCD9>{maximum_usages}'
+          - ' <#E5DCD9>┠ <u>Click-Der</u> <i>para ver todos los niveles disponibles!'
+          - ''
+      unavailable:
+        material: PLAYER_HEAD
+        texture: http://textures.minecraft.net/texture/76c0d0459c67f2be82fbe5406ab8d1378da1f28f7a3f82f1dfc47615a955a7
+        name: <b><yellow>✧<gold>✦<yellow>✧ <gradient:yellow:gold:yellow>Kit {kit}</gradient> <yellow>✧<gold>✦<yellow>✧
+        lore:
+          - ''
+          - <gradient:gold:yellow><b>Información del Kit:</gradient>
+          - ' <gradient:gold:yellow>┏ Nivel Máximo:</gradient> <#E5DCD9>{maximum_level}'
+          - ' <gradient:gold:yellow>┠ Estado de Redención:</gradient> <#E5DCD9>En Enfriamiento'
+          - ' <gradient:gold:yellow>┠ Usos Actuales:</gradient> <#E5DCD9>{current_usages}'
+          - ' <gradient:gold:yellow>┗ Disponible En:</gradient> <#E5DCD9>{cooldown}'
+          - ' <#E5DCD9>┠ <i>¡Debes esperar el tiempo de espera!'
+          - ''
+          - <gradient:gold:yellow><b>Información del Nivel:<gradient>
+          - ' <gradient:gold:yellow>┏ Nivel Actual:</gradient> <#E5DCD9>{current_level}'
+          - ' <gradient:gold:yellow>┠ Cantidad de Ítems:</gradient> <#E5DCD9>{items}'
+          - ' <gradient:gold:yellow>┠ Tiempo de Espera:</gradient> <#E5DCD9>{total}'
+          - ' <gradient:gold:yellow>┗ Usos Máximos:</gradient> <#E5DCD9>{maximum_usages}'
+          - ' <#E5DCD9>┠ <u>Click-Der</u> <i>para ver todos los niveles disponibles!'
+          - ''
+      locked:
+        material: PLAYER_HEAD
+        texture: http://textures.minecraft.net/texture/8ad943d063347f95ab9e9fa75792da84ec665ebd22b050bdba519ff7da61db
+        name: <b><red>✧<dark_red>✦<red>✧ <gradient:red:dark_red:red>Kit {kit}</gradient> <red>✧<dark_red>✦<red>✧
+        lore:
+          - ''
+          - <gradient:dark_red:red><b>Información del Kit:</gradient>
+          - ' <gradient:dark_red:red>┏ Nivel Máximo:</gradient> <#E5DCD9>{maximum_level}'
+          - ' <gradient:dark_red:red>┠ Estado de Redención:</gradient> <#E5DCD9>Bloqueado'
+          - ' <gradient:dark_red:red>┗ Rango Requerido:</gradient> <#E5DCD9>Miembro'
+          - ' <#E5DCD9>┠ <i>¡Necesitas un rango para desbloquear este kit!'
+          - ''
+          - <gradient:dark_red:red><b>Información del Nivel:<gradient>
+          - ' <gradient:dark_red:red>┏ Cantidad de Ítems:</gradient> <#E5DCD9>{items}'
+          - ' <gradient:dark_red:red>┠ Tiempo de Espera:</gradient> <#E5DCD9>{total}'
+          - ' <gradient:dark_red:red>┗ Usos Máximos:</gradient> <#E5DCD9>{maximum_usages}'
+          - ' <#E5DCD9>┠ <u>Click-Der</u> <i>para ver todos los niveles disponibles!'
+          - ''
+      purchasable:
+        material: PLAYER_HEAD
+        texture: http://textures.minecraft.net/texture/8ad943d063347f95ab9e9fa75792da84ec665ebd22b050bdba519ff7da61db
+        name: <b><light_purple>✧<dark_purple>✦<light_purple>✧ <gradient:light_purple:dark_purple:light_purple>Kit {kit}</gradient> <light_purple>✧<dark_purple>✦<light_purple>✧
+        lore:
+          - ''
+          - <gradient:dark_purple:light_purple><b>Información del Kit:</gradient>
+          - ' <gradient:dark_purple:light_purple>┏ Nivel Máximo:</gradient> <#E5DCD9>{maximum_level}'
+          - ' <gradient:dark_purple:light_purple>┠ Estado de Redención:</gradient> <#E5DCD9>Disponible para Compra'
+          - ' <gradient:dark_purple:light_purple>┗ Precio de Compra:</gradient> <#E5DCD9>{cost}'
+          - ' <#E5DCD9>┠ <i>¡Debes comprar este kit para acceder!'
+          - ''
+          - <gradient:dark_purple:light_purple><b>Información del Nivel:<gradient>
+          - ' <gradient:dark_purple:light_purple>┏ Cantidad de Ítems:</gradient> <#E5DCD9>{items}'
+          - ' <gradient:dark_purple:light_purple>┠ Tiempo de Espera:</gradient> <#E5DCD9>{total}'
+          - ' <gradient:dark_purple:light_purple>┗ Usos Máximos:</gradient> <#E5DCD9>{maximum_usages}'
+          - ' <#E5DCD9>┠ <u>Click-Der</u> <i>para ver todos los niveles disponibles!'
+          - ''
+      overused:
+        material: PLAYER_HEAD
+        texture: http://textures.minecraft.net/texture/8ad943d063347f95ab9e9fa75792da84ec665ebd22b050bdba519ff7da61db
+        name: <b><gray>✧<dark_gray>✦<gray>✧ <gradient:gray:dark_gray:gray>Kit {kit}</gradient> <gray>✧<dark_gray>✦<gray>✧
+        lore:
+          - ''
+          - <gradient:dark_gray:gray><b>Información del Kit:</gradient>
+          - ' <gradient:dark_gray:gray>┏ Nivel Máximo:</gradient> <#E5DCD9>{maximum_level}'
+          - ' <gradient:dark_gray:gray>┠ Estado de Redención:</gradient> <#E5DCD9>Todo Reclamado'
+          - ' <gradient:dark_gray:gray>┗ Usos Actuales:</gradient> <#E5DCD9>{current_usages}'
+          - ' <#E5DCD9>┠ <i>¡Has alcanzado el límite de usos!'
+          - ''
+          - <gradient:dark_gray:gray><b>Información del Nivel:<gradient>
+          - ' <gradient:dark_gray:gray>┏ Nivel Actual:</gradient> <#E5DCD9>{current_level}'
+          - ' <gradient:dark_gray:gray>┠ Cantidad de Ítems:</gradient> <#E5DCD9>{items}'
+          - ' <gradient:dark_gray:gray>┠ Tiempo de Espera:</gradient> <#E5DCD9>{total}'
+          - ' <gradient:dark_gray:gray>┗ Usos Máximos:</gradient> <#E5DCD9>{maximum_usages}'
+          - ' <#E5DCD9>┠ <u>Click-Der</u> <i>para ver todos los niveles disponibles!'
+          - ''
+    Iron:
+      slots:
+        - 30
+      available:
+        material: PLAYER_HEAD
+        texture: http://textures.minecraft.net/texture/f7aadff9ddc546fdcec6ed5919cc39dfa8d0c07ff4bc613a19f2e6d7f2593
+        name: <b><green>✧<dark_green>✦<green>✧ <gradient:green:dark_green:green>Kit {kit}</gradient> <green>✧<dark_green>✦<green>✧
+        lore:
+          - ''
+          - <gradient:dark_green:green><b>Información del Kit:</gradient>
+          - ' <gradient:dark_green:green>┏ Nivel Máximo:</gradient> <#E5DCD9>{maximum_level}'
+          - ' <gradient:dark_green:green>┠ Estado de Canje:</gradient> <#E5DCD9>Disponible'
+          - ' <gradient:dark_green:green>┗ Usos Actuales:</gradient> <#E5DCD9>{current_usages}'
+          - ' <#E5DCD9>┠ <u>Click-Izq</u> <i>para reclamar este kit!'
+          - ''
+          - <gradient:dark_green:green><b>Información de Nivel:<gradient>
+          - ' <gradient:dark_green:green>┏ Nivel Actual:</gradient> <#E5DCD9>{current_level}'
+          - ' <gradient:dark_green:green>┠ Cantidad de Ítems:</gradient> <#E5DCD9>{items}'
+          - ' <gradient:dark_green:green>┠ Enfriamiento:</gradient> <#E5DCD9>{total}'
+          - ' <gradient:dark_green:green>┗ Usos Máximos:</gradient> <#E5DCD9>{maximum_usages}'
+          - ' <#E5DCD9>┠ <u>Click-Der</u> <i>para ver todos los niveles disponibles!'
+          - ''
+      unavailable:
+        material: PLAYER_HEAD
+        texture: http://textures.minecraft.net/texture/76c0d0459c67f2be82fbe5406ab8d1378da1f28f7a3f82f1dfc47615a955a7
+        name: <b><yellow>✧<gold>✦<yellow>✧ <gradient:yellow:gold:yellow>Kit {kit}</gradient> <yellow>✧<gold>✦<yellow>✧
+        lore:
+          - ''
+          - <gradient:gold:yellow><b>Información del Kit:</gradient>
+          - ' <gradient:gold:yellow>┏ Nivel Máximo:</gradient> <#E5DCD9>{maximum_level}'
+          - ' <gradient:gold:yellow>┠ Estado de Canje:</gradient> <#E5DCD9>En Enfriamiento'
+          - ' <gradient:gold:yellow>┠ Usos Actuales:</gradient> <#E5DCD9>{current_usages}'
+          - ' <gradient:gold:yellow>┗ Disponible en:</gradient> <#E5DCD9>{cooldown}'
+          - ' <#E5DCD9>┠ <i>¡Debes esperar al enfriamiento!'
+          - ''
+          - <gradient:gold:yellow><b>Información de Nivel:<gradient>
+          - ' <gradient:gold:yellow>┏ Nivel Actual:</gradient> <#E5DCD9>{current_level}'
+          - ' <gradient:gold:yellow>┠ Cantidad de Ítems:</gradient> <#E5DCD9>{items}'
+          - ' <gradient:gold:yellow>┠ Enfriamiento:</gradient> <#E5DCD9>{total}'
+          - ' <gradient:gold:yellow>┗ Usos Máximos:</gradient> <#E5DCD9>{maximum_usages}'
+          - ' <#E5DCD9>┠ <u>Click-Der</u> <i>para ver todos los niveles disponibles!'
+          - ''
+      locked:
+        material: PLAYER_HEAD
+        texture: http://textures.minecraft.net/texture/8ad943d063347f95ab9e9fa75792da84ec665ebd22b050bdba519ff7da61db
+        name: <b><red>✧<dark_red>✦<red>✧ <gradient:red:dark_red:red>Kit {kit}</gradient> <red>✧<dark_red>✦<red>✧
+        lore:
+          - ''
+          - <gradient:dark_red:red><b>Información del Kit:</gradient>
+          - ' <gradient:dark_red:red>┏ Nivel Máximo:</gradient> <#E5DCD9>{maximum_level}'
+          - ' <gradient:dark_red:red>┠ Estado de Canje:</gradient> <#E5DCD9>Bloqueado'
+          - ' <gradient:dark_red:red>┗ Rango Requerido:</gradient> <#E5DCD9>Miembro'
+          - ' <#E5DCD9>┠ <i>¡Necesitas un rango para desbloquear este kit!'
+          - ''
+          - <gradient:dark_red:red><b>Información de Nivel:<gradient>
+          - ' <gradient:dark_red:red>┏ Cantidad de Ítems:</gradient> <#E5DCD9>{items}'
+          - ' <gradient:dark_red:red>┠ Enfriamiento:</gradient> <#E5DCD9>{total}'
+          - ' <gradient:dark_red:red>┗ Usos Máximos:</gradient> <#E5DCD9>{maximum_usages}'
+          - ' <#E5DCD9>┠ <u>Click-Der</u> <i>para ver todos los niveles disponibles!'
+          - ''
+      purchasable:
+        material: PLAYER_HEAD
+        texture: http://textures.minecraft.net/texture/8ad943d063347f95ab9e9fa75792da84ec665ebd22b050bdba519ff7da61db
+        name: <b><light_purple>✧<dark_purple>✦<light_purple>✧ <gradient:light_purple:dark_purple:light_purple>Kit {kit}</gradient> <light_purple>✧<dark_purple>✦<light_purple>✧
+        lore:
+          - ''
+          - <gradient:dark_purple:light_purple><b>Información del Kit:</gradient>
+          - ' <gradient:dark_purple:light_purple>┏ Nivel Máximo:</gradient> <#E5DCD9>{maximum_level}'
+          - ' <gradient:dark_purple:light_purple>┠ Estado de Canje:</gradient> <#E5DCD9>Disponible para Comprar'
+          - ' <gradient:dark_purple:light_purple>┗ Precio de Compra:</gradient> <#E5DCD9>{cost}'
+          - ' <#E5DCD9>┠ <i>¡Debes comprar este kit para tener acceso!'
+          - ''
+          - <gradient:dark_purple:light_purple><b>Información de Nivel:<gradient>
+          - ' <gradient:dark_purple:light_purple>┏ Cantidad de Ítems:</gradient> <#E5DCD9>{items}'
+          - ' <gradient:dark_purple:light_purple>┠ Enfriamiento:</gradient> <#E5DCD9>{total}'
+          - ' <gradient:dark_purple:light_purple>┗ Usos Máximos:</gradient> <#E5DCD9>{maximum_usages}'
+          - ' <#E5DCD9>┠ <u>Click-Der</u> <i>para ver todos los niveles disponibles!'
+          - ''
+      overused:
+        material: PLAYER_HEAD
+        texture: http://textures.minecraft.net/texture/8ad943d063347f95ab9e9fa75792da84ec665ebd22b050bdba519ff7da61db
+        name: <b><gray>✧<dark_gray>✦<gray>✧ <gradient:gray:dark_gray:gray>Kit {kit}</gradient> <gray>✧<dark_gray>✦<gray>✧
+        lore:
+          - ''
+          - <gradient:dark_gray:gray><b>Información del Kit:</gradient>
+          - ' <gradient:dark_gray:gray>┏ Nivel Máximo:</gradient> <#E5DCD9>{maximum_level}'
+          - ' <gradient:dark_gray:gray>┠ Estado de Canje:</gradient> <#E5DCD9>Todo Reclamado'
+          - ' <gradient:dark_gray:gray>┗ Usos Actuales:</gradient> <#E5DCD9>{current_usages}'
+          - ' <#E5DCD9>┠ <i>¡Has alcanzado el límite de uso!'
+          - ''
+          - <gradient:dark_gray:gray><b>Información de Nivel:<gradient>
+          - ' <gradient:dark_gray:gray>┏ Nivel Actual:</gradient> <#E5DCD9>{current_level}'
+          - ' <gradient:dark_gray:gray>┠ Cantidad de Ítems:</gradient> <#E5DCD9>{items}'
+          - ' <gradient:dark_gray:gray>┠ Enfriamiento:</gradient> <#E5DCD9>{total}'
+          - ' <gradient:dark_gray:gray>┗ Usos Máximos:</gradient> <#E5DCD9>{maximum_usages}'
+          - ' <#E5DCD9>┠ <u>Click-Der</u> <i>para ver todos los niveles disponibles!'
+          - ''     
+    Gold:
+      slots:
+        - 22
+      available:
+        material: PLAYER_HEAD
+        texture: http://textures.minecraft.net/texture/f37cae5c51eb1558ea828f58e0dff8e6b7b0b1a183d737eecf714661761
+        name: <b><green>✧<dark_green>✦<green>✧ <gradient:green:dark_green:green>Kit {kit}</gradient> <green>✧<dark_green>✦<green>✧
+        lore:
+          - ''
+          - <gradient:dark_green:green><b>Información del Kit:</gradient>
+          - ' <gradient:dark_green:green>┏ Nivel Máximo:</gradient> <#E5DCD9>{maximum_level}'
+          - ' <gradient:dark_green:green>┠ Estado de Reclamo:</gradient> <#E5DCD9>Disponible'
+          - ' <gradient:dark_green:green>┗ Usos Actuales:</gradient> <#E5DCD9>{current_usages}'
+          - ' <#E5DCD9>┠ <u>Click-Izq</u> <i>para reclamar este kit!'
+          - ''
+          - <gradient:dark_green:green><b>Información del Nivel:<gradient>
+          - ' <gradient:dark_green:green>┏ Nivel Actual:</gradient> <#E5DCD9>{current_level}'
+          - ' <gradient:dark_green:green>┠ Número de Ítems:</gradient> <#E5DCD9>{items}'
+          - ' <gradient:dark_green:green>┠ Tiempo de Espera:</gradient> <#E5DCD9>{total}'
+          - ' <gradient:dark_green:green>┗ Máximos Usos:</gradient> <#E5DCD9>{maximum_usages}'
+          - ' <#E5DCD9>┠ <u>Click-Der</u> <i>para ver todos los niveles disponibles!'
+          - ''
+      unavailable:
+        material: PLAYER_HEAD
+        texture: http://textures.minecraft.net/texture/76c0d0459c67f2be82fbe5406ab8d1378da1f28f7a3f82f1dfc47615a955a7
+        name: <b><yellow>✧<gold>✦<yellow>✧ <gradient:yellow:gold:yellow>Kit {kit}</gradient> <yellow>✧<gold>✦<yellow>✧
+        lore:
+          - ''
+          - <gradient:gold:yellow><b>Información del Kit:</gradient>
+          - ' <gradient:gold:yellow>┏ Nivel Máximo:</gradient> <#E5DCD9>{maximum_level}'
+          - ' <gradient:gold:yellow>┠ Estado de Reclamo:</gradient> <#E5DCD9>En Espera'
+          - ' <gradient:gold:yellow>┠ Usos Actuales:</gradient> <#E5DCD9>{current_usages}'
+          - ' <gradient:gold:yellow>┗ Disponible en:</gradient> <#E5DCD9>{cooldown}'
+          - ' <#E5DCD9>┠ <i>¡Debes esperar al enfriamiento!'
+          - ''
+          - <gradient:gold:yellow><b>Información del Nivel:<gradient>
+          - ' <gradient:gold:yellow>┏ Nivel Actual:</gradient> <#E5DCD9>{current_level}'
+          - ' <gradient:gold:yellow>┠ Número de Ítems:</gradient> <#E5DCD9>{items}'
+          - ' <gradient:gold:yellow>┠ Tiempo de Espera:</gradient> <#E5DCD9>{total}'
+          - ' <gradient:gold:yellow>┗ Máximos Usos:</gradient> <#E5DCD9>{maximum_usages}'
+          - ' <#E5DCD9>┠ <u>Click-Der</u> <i>para ver todos los niveles disponibles!'
+          - ''
+      locked:
+        material: PLAYER_HEAD
+        texture: http://textures.minecraft.net/texture/8ad943d063347f95ab9e9fa75792da84ec665ebd22b050bdba519ff7da61db
+        name: <b><red>✧<dark_red>✦<red>✧ <gradient:red:dark_red:red>Kit {kit}</gradient> <red>✧<dark_red>✦<red>✧
+        lore:
+          - ''
+          - <gradient:dark_red:red><b>Información del Kit:</gradient>
+          - ' <gradient:dark_red:red>┏ Nivel Máximo:</gradient> <#E5DCD9>{maximum_level}'
+          - ' <gradient:dark_red:red>┠ Estado de Reclamo:</gradient> <#E5DCD9>Bloqueado'
+          - ' <gradient:dark_red:red>┗ Rango Requerido:</gradient> <#E5DCD9>Miembro'
+          - ' <#E5DCD9>┠ <i>¡Necesitas un rango para desbloquear este kit!'
+          - ''
+          - <gradient:dark_red:red><b>Información del Nivel:<gradient>
+          - ' <gradient:dark_red:red>┏ Número de Ítems:</gradient> <#E5DCD9>{items}'
+          - ' <gradient:dark_red:red>┠ Tiempo de Espera:</gradient> <#E5DCD9>{total}'
+          - ' <gradient:dark_red:red>┗ Máximos Usos:</gradient> <#E5DCD9>{maximum_usages}'
+          - ' <#E5DCD9>┠ <u>Click-Der</u> <i>para ver todos los niveles disponibles!'
+          - ''
+      purchasable:
+        material: PLAYER_HEAD
+        texture: http://textures.minecraft.net/texture/8ad943d063347f95ab9e9fa75792da84ec665ebd22b050bdba519ff7da61db
+        name: <b><light_purple>✧<dark_purple>✦<light_purple>✧ <gradient:light_purple:dark_purple:light_purple>Kit {kit}</gradient> <light_purple>✧<dark_purple>✦<light_purple>✧
+        lore:
+          - ''
+          - <gradient:dark_purple:light_purple><b>Información del Kit:</gradient>
+          - ' <gradient:dark_purple:light_purple>┏ Nivel Máximo:</gradient> <#E5DCD9>{maximum_level}'
+          - ' <gradient:dark_purple:light_purple>┠ Estado de Reclamo:</gradient> <#E5DCD9>Disponible para Comprar'
+          - ' <gradient:dark_purple:light_purple>┗ Precio de Compra:</gradient> <#E5DCD9>{cost}'
+          - ' <#E5DCD9>┠ <i>¡Debes comprar este kit para acceder!'
+          - ''
+          - <gradient:dark_purple:light_purple><b>Información del Nivel:<gradient>
+          - ' <gradient:dark_purple:light_purple>┏ Número de Ítems:</gradient> <#E5DCD9>{items}'
+          - ' <gradient:dark_purple:light_purple>┠ Tiempo de Espera:</gradient> <#E5DCD9>{total}'
+          - ' <gradient:dark_purple:light_purple>┗ Máximos Usos:</gradient> <#E5DCD9>{maximum_usages}'
+          - ' <#E5DCD9>┠ <u>Click-Der</u> <i>para ver todos los niveles disponibles!'
+          - ''
+      overused:
+        material: PLAYER_HEAD
+        texture: http://textures.minecraft.net/texture/8ad943d063347f95ab9e9fa75792da84ec665ebd22b050bdba519ff7da61db
+        name: <b><gray>✧<dark_gray>✦<gray>✧ <gradient:gray:dark_gray:gray>Kit {kit}</gradient> <gray>✧<dark_gray>✦<gray>✧
+        lore:
+          - ''
+          - <gradient:dark_gray:gray><b>Información del Kit:</gradient>
+          - ' <gradient:dark_gray:gray>┏ Nivel Máximo:</gradient> <#E5DCD9>{maximum_level}'
+          - ' <gradient:dark_gray:gray>┠ Estado de Reclamo:</gradient> <#E5DCD9>Todos Usados'
+          - ' <gradient:dark_gray:gray>┗ Usos Actuales:</gradient> <#E5DCD9>{current_usages}'
+          - ' <#E5DCD9>┠ <i>¡Has alcanzado el límite de uso!'
+          - ''
+          - <gradient:dark_gray:gray><b>Información del Nivel:<gradient>
+          - ' <gradient:dark_gray:gray>┏ Nivel Actual:</gradient> <#E5DCD9>{current_level}'
+          - ' <gradient:dark_gray:gray>┠ Número de Ítems:</gradient> <#E5DCD9>{items}'
+          - ' <gradient:dark_gray:gray>┠ Tiempo de Espera:</gradient> <#E5DCD9>{total}'
+          - ' <gradient:dark_gray:gray>┗ Máximos Usos:</gradient> <#E5DCD9>{maximum_usages}'
+          - ' <#E5DCD9>┠ <u>Click-Der</u> <i>para ver todos los niveles disponibles!'
+          - ''
+    Lapis:
+      slots:
+        - 23
+      available:
+        material: PLAYER_HEAD
+        texture: http://textures.minecraft.net/texture/478abdf982f909eab5de9bf969cf14f664db4c447738459ea40162b37d124
+        name: <b><green>✧<dark_green>✦<green>✧ <gradient:green:dark_green:green>Kit {kit}</gradient> <green>✧<dark_green>✦<green>✧
+        lore:
+          - ''
+          - <gradient:dark_green:green><b>Información del Kit:</gradient>
+          - ' <gradient:dark_green:green>┏ Nivel Máximo:</gradient> <#E5DCD9>{maximum_level}'
+          - ' <gradient:dark_green:green>┠ Estado de Redención:</gradient> <#E5DCD9>Disponible'
+          - ' <gradient:dark_green:green>┗ Usos Actuales:</gradient> <#E5DCD9>{current_usages}'
+          - ' <#E5DCD9>┠ <u>Click-Izq</u> <i>para reclamar este kit!'
+          - ''
+          - <gradient:dark_green:green><b>Información de Nivel:<gradient>
+          - ' <gradient:dark_green:green>┏ Nivel Actual:</gradient> <#E5DCD9>{current_level}'
+          - ' <gradient:dark_green:green>┠ Cantidad de Ítems:</gradient> <#E5DCD9>{items}'
+          - ' <gradient:dark_green:green>┠ Enfriamiento:</gradient> <#E5DCD9>{total}'
+          - ' <gradient:dark_green:green>┗ Usos Máximos:</gradient> <#E5DCD9>{maximum_usages}'
+          - ' <#E5DCD9>┠ <u>Click-Der</u> <i>para ver todos los niveles disponibles!'
+          - ''
+      unavailable:
+        material: PLAYER_HEAD
+        texture: http://textures.minecraft.net/texture/76c0d0459c67f2be82fbe5406ab8d1378da1f28f7a3f82f1dfc47615a955a7
+        name: <b><yellow>✧<gold>✦<yellow>✧ <gradient:yellow:gold:yellow>Kit {kit}</gradient> <yellow>✧<gold>✦<yellow>✧
+        lore:
+          - ''
+          - <gradient:gold:yellow><b>Información del Kit:</gradient>
+          - ' <gradient:gold:yellow>┏ Nivel Máximo:</gradient> <#E5DCD9>{maximum_level}'
+          - ' <gradient:gold:yellow>┠ Estado de Redención:</gradient> <#E5DCD9>En Enfriamiento'
+          - ' <gradient:gold:yellow>┠ Usos Actuales:</gradient> <#E5DCD9>{current_usages}'
+          - ' <gradient:gold:yellow>┗ Disponible en:</gradient> <#E5DCD9>{cooldown}'
+          - ' <#E5DCD9>┠ <i>¡Debes esperar al enfriamiento!'
+          - ''
+          - <gradient:gold:yellow><b>Información de Nivel:<gradient>
+          - ' <gradient:gold:yellow>┏ Nivel Actual:</gradient> <#E5DCD9>{current_level}'
+          - ' <gradient:gold:yellow>┠ Cantidad de Ítems:</gradient> <#E5DCD9>{items}'
+          - ' <gradient:gold:yellow>┠ Enfriamiento:</gradient> <#E5DCD9>{total}'
+          - ' <gradient:gold:yellow>┗ Usos Máximos:</gradient> <#E5DCD9>{maximum_usages}'
+          - ' <#E5DCD9>┠ <u>Click-Der</u> <i>para ver todos los niveles disponibles!'
+          - ''
+      locked:
+        material: PLAYER_HEAD
+        texture: http://textures.minecraft.net/texture/8ad943d063347f95ab9e9fa75792da84ec665ebd22b050bdba519ff7da61db
+        name: <b><red>✧<dark_red>✦<red>✧ <gradient:red:dark_red:red>Kit {kit}</gradient> <red>✧<dark_red>✦<red>✧
+        lore:
+          - ''
+          - <gradient:dark_red:red><b>Información del Kit:</gradient>
+          - ' <gradient:dark_red:red>┏ Nivel Máximo:</gradient> <#E5DCD9>{maximum_level}'
+          - ' <gradient:dark_red:red>┠ Estado de Redención:</gradient> <#E5DCD9>Bloqueado'
+          - ' <gradient:dark_red:red>┗ Rango Requerido:</gradient> <#E5DCD9>Miembro'
+          - ' <#E5DCD9>┠ <i>¡Necesitas un rango para desbloquear este kit!'
+          - ''
+          - <gradient:dark_red:red><b>Información de Nivel:<gradient>
+          - ' <gradient:dark_red:red>┏ Cantidad de Ítems:</gradient> <#E5DCD9>{items}'
+          - ' <gradient:dark_red:red>┠ Enfriamiento:</gradient> <#E5DCD9>{total}'
+          - ' <gradient:dark_red:red>┗ Usos Máximos:</gradient> <#E5DCD9>{maximum_usages}'
+          - ' <#E5DCD9>┠ <u>Click-Der</u> <i>para ver todos los niveles disponibles!'
+          - ''
+      purchasable:
+        material: PLAYER_HEAD
+        texture: http://textures.minecraft.net/texture/8ad943d063347f95ab9e9fa75792da84ec665ebd22b050bdba519ff7da61db
+        name: <b><light_purple>✧<dark_purple>✦<light_purple>✧ <gradient:light_purple:dark_purple:light_purple>Kit {kit}</gradient> <light_purple>✧<dark_purple>✦<light_purple>✧
+        lore:
+          - ''
+          - <gradient:dark_purple:light_purple><b>Información del Kit:</gradient>
+          - ' <gradient:dark_purple:light_purple>┏ Nivel Máximo:</gradient> <#E5DCD9>{maximum_level}'
+          - ' <gradient:dark_purple:light_purple>┠ Estado de Redención:</gradient> <#E5DCD9>Disponible para Comprar'
+          - ' <gradient:dark_purple:light_purple>┗ Precio de Compra:</gradient> <#E5DCD9>{cost}'
+          - ' <#E5DCD9>┠ <i>¡Debes comprar este kit para acceder!'
+          - ''
+          - <gradient:dark_purple:light_purple><b>Información de Nivel:<gradient>
+          - ' <gradient:dark_purple:light_purple>┏ Cantidad de Ítems:</gradient> <#E5DCD9>{items}'
+          - ' <gradient:dark_purple:light_purple>┠ Enfriamiento:</gradient> <#E5DCD9>{total}'
+          - ' <gradient:dark_purple:light_purple>┗ Usos Máximos:</gradient> <#E5DCD9>{maximum_usages}'
+          - ' <#E5DCD9>┠ <u>Click-Der</u> <i>para ver todos los niveles disponibles!'
+          - ''
+      overused:
+        material: PLAYER_HEAD
+        texture: http://textures.minecraft.net/texture/8ad943d063347f95ab9e9fa75792da84ec665ebd22b050bdba519ff7da61db
+        name: <b><gray>✧<dark_gray>✦<gray>✧ <gradient:gray:dark_gray:gray>Kit {kit}</gradient> <gray>✧<dark_gray>✦<gray>✧
+        lore:
+          - ''
+          - <gradient:dark_gray:gray><b>Información del Kit:</gradient>
+          - ' <gradient:dark_gray:gray>┏ Nivel Máximo:</gradient> <#E5DCD9>{maximum_level}'
+          - ' <gradient:dark_gray:gray>┠ Estado de Redención:</gradient> <#E5DCD9>Todos Reclamados'
+          - ' <gradient:dark_gray:gray>┗ Usos Actuales:</gradient> <#E5DCD9>{current_usages}'
+          - ' <#E5DCD9>┠ <i>¡Has alcanzado el límite de usos!'
+          - ''
+          - <gradient:dark_gray:gray><b>Información de Nivel:<gradient>
+          - ' <gradient:dark_gray:gray>┏ Nivel Actual:</gradient> <#E5DCD9>{current_level}'
+          - ' <gradient:dark_gray:gray>┠ Cantidad de Ítems:</gradient> <#E5DCD9>{items}'
+          - ' <gradient:dark_gray:gray>┠ Enfriamiento:</gradient> <#E5DCD9>{total}'
+          - ' <gradient:dark_gray:gray>┗ Usos Máximos:</gradient> <#E5DCD9>{maximum_usages}'
+          - ' <#E5DCD9>┠ <u>Click-Der</u> <i>para ver todos los niveles disponibles!'
+          - ''  
+    Emerald:
+      slots:
+        - 24
+      available:
+        material: PLAYER_HEAD
+        texture: http://textures.minecraft.net/texture/f3d5e43de5d4177c4baf2f44161554473a3b0be5430998b5fcd826af943afe3
+        name: <b><green>✧<dark_green>✦<green>✧ <gradient:green:dark_green:green>Kit {kit}</gradient> <green>✧<dark_green>✦<green>✧
+        lore:
+          - ''
+          - <gradient:dark_green:green><b>Información del Kit:</gradient>
+          - ' <gradient:dark_green:green>┏ Nivel Máximo:</gradient> <#E5DCD9>{maximum_level}'
+          - ' <gradient:dark_green:green>┠ Estado de Reclamo:</gradient> <#E5DCD9>Disponible'
+          - ' <gradient:dark_green:green>┗ Usos Actuales:</gradient> <#E5DCD9>{current_usages}'
+          - ' <#E5DCD9>┠ <u>Click-Izq</u> <i>para reclamar este kit!'
+          - ''
+          - <gradient:dark_green:green><b>Información de Niveles:<gradient>
+          - ' <gradient:dark_green:green>┏ Nivel Actual:</gradient> <#E5DCD9>{current_level}'
+          - ' <gradient:dark_green:green>┠ Cantidad de Ítems:</gradient> <#E5DCD9>{items}'
+          - ' <gradient:dark_green:green>┠ Tiempo de Reutilización:</gradient> <#E5DCD9>{total}'
+          - ' <gradient:dark_green:green>┗ Usos Máximos:</gradient> <#E5DCD9>{maximum_usages}'
+          - ' <#E5DCD9>┠ <u>Click-Der</u> <i>para ver todos los niveles disponibles!'
+          - ''
+      unavailable:
+        material: PLAYER_HEAD
+        texture: http://textures.minecraft.net/texture/76c0d0459c67f2be82fbe5406ab8d1378da1f28f7a3f82f1dfc47615a955a7
+        name: <b><yellow>✧<gold>✦<yellow>✧ <gradient:yellow:gold:yellow>Kit {kit}</gradient> <yellow>✧<gold>✦<yellow>✧
+        lore:
+          - ''
+          - <gradient:gold:yellow><b>Información del Kit:</gradient>
+          - ' <gradient:gold:yellow>┏ Nivel Máximo:</gradient> <#E5DCD9>{maximum_level}'
+          - ' <gradient:gold:yellow>┠ Estado de Reclamo:</gradient> <#E5DCD9>En Reutilización'
+          - ' <gradient:gold:yellow>┠ Usos Actuales:</gradient> <#E5DCD9>{current_usages}'
+          - ' <gradient:gold:yellow>┗ Disponible En:</gradient> <#E5DCD9>{cooldown}'
+          - ' <#E5DCD9>┠ <i>¡Debes esperar el tiempo de reutilización!'
+          - ''
+          - <gradient:gold:yellow><b>Información de Niveles:<gradient>
+          - ' <gradient:gold:yellow>┏ Nivel Actual:</gradient> <#E5DCD9>{current_level}'
+          - ' <gradient:gold:yellow>┠ Cantidad de Ítems:</gradient> <#E5DCD9>{items}'
+          - ' <gradient:gold:yellow>┠ Tiempo de Reutilización:</gradient> <#E5DCD9>{total}'
+          - ' <gradient:gold:yellow>┗ Usos Máximos:</gradient> <#E5DCD9>{maximum_usages}'
+          - ' <#E5DCD9>┠ <u>Click-Der</u> <i>para ver todos los niveles disponibles!'
+          - ''
+      locked:
+        material: PLAYER_HEAD
+        texture: http://textures.minecraft.net/texture/8ad943d063347f95ab9e9fa75792da84ec665ebd22b050bdba519ff7da61db
+        name: <b><red>✧<dark_red>✦<red>✧ <gradient:red:dark_red:red>Kit {kit}</gradient> <red>✧<dark_red>✦<red>✧
+        lore:
+          - ''
+          - <gradient:dark_red:red><b>Información del Kit:</gradient>
+          - ' <gradient:dark_red:red>┏ Nivel Máximo:</gradient> <#E5DCD9>{maximum_level}'
+          - ' <gradient:dark_red:red>┠ Estado de Reclamo:</gradient> <#E5DCD9>Bloqueado'
+          - ' <gradient:dark_red:red>┗ Rango Requerido:</gradient> <#E5DCD9>Miembro'
+          - ' <#E5DCD9>┠ <i>¡Necesitas un rango para desbloquear este kit!'
+          - ''
+          - <gradient:dark_red:red><b>Información de Niveles:<gradient>
+          - ' <gradient:dark_red:red>┏ Cantidad de Ítems:</gradient> <#E5DCD9>{items}'
+          - ' <gradient:dark_red:red>┠ Tiempo de Reutilización:</gradient> <#E5DCD9>{total}'
+          - ' <gradient:dark_red:red>┗ Usos Máximos:</gradient> <#E5DCD9>{maximum_usages}'
+          - ' <#E5DCD9>┠ <u>Click-Der</u> <i>para ver todos los niveles disponibles!'
+          - ''
+      purchasable:
+        material: PLAYER_HEAD
+        texture: http://textures.minecraft.net/texture/8ad943d063347f95ab9e9fa75792da84ec665ebd22b050bdba519ff7da61db
+        name: <b><light_purple>✧<dark_purple>✦<light_purple>✧ <gradient:light_purple:dark_purple:light_purple>Kit {kit}</gradient> <light_purple>✧<dark_purple>✦<light_purple>✧
+        lore:
+          - ''
+          - <gradient:dark_purple:light_purple><b>Información del Kit:</gradient>
+          - ' <gradient:dark_purple:light_purple>┏ Nivel Máximo:</gradient> <#E5DCD9>{maximum_level}'
+          - ' <gradient:dark_purple:light_purple>┠ Estado de Reclamo:</gradient> <#E5DCD9>Comprable'
+          - ' <gradient:dark_purple:light_purple>┗ Precio de Compra:</gradient> <#E5DCD9>{cost}'
+          - ' <#E5DCD9>┠ <i>¡Debes comprar este kit para tener acceso!'
+          - ''
+          - <gradient:dark_purple:light_purple><b>Información de Niveles:<gradient>
+          - ' <gradient:dark_purple:light_purple>┏ Cantidad de Ítems:</gradient> <#E5DCD9>{items}'
+          - ' <gradient:dark_purple:light_purple>┠ Tiempo de Reutilización:</gradient> <#E5DCD9>{total}'
+          - ' <gradient:dark_purple:light_purple>┗ Usos Máximos:</gradient> <#E5DCD9>{maximum_usages}'
+          - ' <#E5DCD9>┠ <u>Click-Der</u> <i>para ver todos los niveles disponibles!'
+          - ''
+      overused:
+        material: PLAYER_HEAD
+        texture: http://textures.minecraft.net/texture/8ad943d063347f95ab9e9fa75792da84ec665ebd22b050bdba519ff7da61db
+        name: <b><gray>✧<dark_gray>✦<gray>✧ <gradient:gray:dark_gray:gray>Kit {kit}</gradient> <gray>✧<dark_gray>✦<gray>✧
+        lore:
+          - ''
+          - <gradient:dark_gray:gray><b>Información del Kit:</gradient>
+          - ' <gradient:dark_gray:gray>┏ Nivel Máximo:</gradient> <#E5DCD9>{maximum_level}'
+          - ' <gradient:dark_gray:gray>┠ Estado de Reclamo:</gradient> <#E5DCD9>Todo Reclamado'
+          - ' <gradient:dark_gray:gray>┗ Usos Actuales:</gradient> <#E5DCD9>{current_usages}'
+          - ' <#E5DCD9>┠ <i>¡Has alcanzado el límite de uso!'
+          - ''
+          - <gradient:dark_gray:gray><b>Información de Niveles:<gradient>
+          - ' <gradient:dark_gray:gray>┏ Nivel Actual:</gradient> <#E5DCD9>{current_level}'
+          - ' <gradient:dark_gray:gray>┠ Cantidad de Ítems:</gradient> <#E5DCD9>{items}'
+          - ' <gradient:dark_gray:gray>┠ Tiempo de Reutilización:</gradient> <#E5DCD9>{total}'
+          - ' <gradient:dark_gray:gray>┗ Usos Máximos:</gradient> <#E5DCD9>{maximum_usages}'
+          - ' <#E5DCD9>┠ <u>Click-Der</u> <i>para ver todos los niveles disponibles!'
+          - ''
+    Diamond:
+      slots:
+        - 34
+      available:
+        material: PLAYER_HEAD
+        texture: http://textures.minecraft.net/texture/25807cc4c3b6958aea6156e84518d91a49c5f32971e6eb269a23a25a27145
+        name: <b><green>✧<dark_green>✦<green>✧ <gradient:green:dark_green:green>Kit {kit}</gradient> <green>✧<dark_green>✦<green>✧
+        lore:
+          - ''
+          - <gradient:dark_green:green><b>Información del Kit:</gradient>
+          - ' <gradient:dark_green:green>┏ Nivel Máximo:</gradient> <#E5DCD9>{maximum_level}'
+          - ' <gradient:dark_green:green>┠ Estado de Redención:</gradient> <#E5DCD9>Disponible'
+          - ' <gradient:dark_green:green>┗ Usos Actuales:</gradient> <#E5DCD9>{current_usages}'
+          - ' <#E5DCD9>┠ <u>Click-Izq</u> <i>para reclamar este kit!'
+          - ''
+          - <gradient:dark_green:green><b>Información de Nivel:<gradient>
+          - ' <gradient:dark_green:green>┏ Nivel Actual:</gradient> <#E5DCD9>{current_level}'
+          - ' <gradient:dark_green:green>┠ Cantidad de Ítems:</gradient> <#E5DCD9>{items}'
+          - ' <gradient:dark_green:green>┠ Tiempo de Espera:</gradient> <#E5DCD9>{total}'
+          - ' <gradient:dark_green:green>┗ Usos Máximos:</gradient> <#E5DCD9>{maximum_usages}'
+          - ' <#E5DCD9>┠ <u>Click-Der</u> <i>para ver todos los niveles disponibles!'
+          - ''
+      unavailable:
+        material: PLAYER_HEAD
+        texture: http://textures.minecraft.net/texture/76c0d0459c67f2be82fbe5406ab8d1378da1f28f7a3f82f1dfc47615a955a7
+        name: <b><yellow>✧<gold>✦<yellow>✧ <gradient:yellow:gold:yellow>Kit {kit}</gradient> <yellow>✧<gold>✦<yellow>✧
+        lore:
+          - ''
+          - <gradient:gold:yellow><b>Información del Kit:</gradient>
+          - ' <gradient:gold:yellow>┏ Nivel Máximo:</gradient> <#E5DCD9>{maximum_level}'
+          - ' <gradient:gold:yellow>┠ Estado de Redención:</gradient> <#E5DCD9>En Enfriamiento'
+          - ' <gradient:gold:yellow>┠ Usos Actuales:</gradient> <#E5DCD9>{current_usages}'
+          - ' <gradient:gold:yellow>┗ Disponible en:</gradient> <#E5DCD9>{cooldown}'
+          - ' <#E5DCD9>┠ <i>¡Debes esperar el tiempo de espera!'
+          - ''
+          - <gradient:gold:yellow><b>Información de Nivel:<gradient>
+          - ' <gradient:gold:yellow>┏ Nivel Actual:</gradient> <#E5DCD9>{current_level}'
+          - ' <gradient:gold:yellow>┠ Cantidad de Ítems:</gradient> <#E5DCD9>{items}'
+          - ' <gradient:gold:yellow>┠ Tiempo de Espera:</gradient> <#E5DCD9>{total}'
+          - ' <gradient:gold:yellow>┗ Usos Máximos:</gradient> <#E5DCD9>{maximum_usages}'
+          - ' <#E5DCD9>┠ <u>Click-Der</u> <i>para ver todos los niveles disponibles!'
+          - ''
+      locked:
+        material: PLAYER_HEAD
+        texture: http://textures.minecraft.net/texture/8ad943d063347f95ab9e9fa75792da84ec665ebd22b050bdba519ff7da61db
+        name: <b><red>✧<dark_red>✦<red>✧ <gradient:red:dark_red:red>Kit {kit}</gradient> <red>✧<dark_red>✦<red>✧
+        lore:
+          - ''
+          - <gradient:dark_red:red><b>Información del Kit:</gradient>
+          - ' <gradient:dark_red:red>┏ Nivel Máximo:</gradient> <#E5DCD9>{maximum_level}'
+          - ' <gradient:dark_red:red>┠ Estado de Redención:</gradient> <#E5DCD9>Bloqueado'
+          - ' <gradient:dark_red:red>┗ Rango Requerido:</gradient> <#E5DCD9>Miembro'
+          - ' <#E5DCD9>┠ <i>¡Necesitas un rango para desbloquear este kit!'
+          - ''
+          - <gradient:dark_red:red><b>Información de Nivel:<gradient>
+          - ' <gradient:dark_red:red>┏ Cantidad de Ítems:</gradient> <#E5DCD9>{items}'
+          - ' <gradient:dark_red:red>┠ Tiempo de Espera:</gradient> <#E5DCD9>{total}'
+          - ' <gradient:dark_red:red>┗ Usos Máximos:</gradient> <#E5DCD9>{maximum_usages}'
+          - ' <#E5DCD9>┠ <u>Click-Der</u> <i>para ver todos los niveles disponibles!'
+          - ''
+      purchasable:
+        material: PLAYER_HEAD
+        texture: http://textures.minecraft.net/texture/8ad943d063347f95ab9e9fa75792da84ec665ebd22b050bdba519ff7da61db
+        name: <b><light_purple>✧<dark_purple>✦<light_purple>✧ <gradient:light_purple:dark_purple:light_purple>Kit {kit}</gradient> <light_purple>✧<dark_purple>✦<light_purple>✧
+        lore:
+          - ''
+          - <gradient:dark_purple:light_purple><b>Información del Kit:</gradient>
+          - ' <gradient:dark_purple:light_purple>┏ Nivel Máximo:</gradient> <#E5DCD9>{maximum_level}'
+          - ' <gradient:dark_purple:light_purple>┠ Estado de Redención:</gradient> <#E5DCD9>Comprable'
+          - ' <gradient:dark_purple:light_purple>┗ Precio de Compra:</gradient> <#E5DCD9>{cost}'
+          - ' <#E5DCD9>┠ <i>¡Debes comprar este kit para acceder!'
+          - ''
+          - <gradient:dark_purple:light_purple><b>Información de Nivel:<gradient>
+          - ' <gradient:dark_purple:light_purple>┏ Cantidad de Ítems:</gradient> <#E5DCD9>{items}'
+          - ' <gradient:dark_purple:light_purple>┠ Tiempo de Espera:</gradient> <#E5DCD9>{total}'
+          - ' <gradient:dark_purple:light_purple>┗ Usos Máximos:</gradient> <#E5DCD9>{maximum_usages}'
+          - ' <#E5DCD9>┠ <u>Click-Der</u> <i>para ver todos los niveles disponibles!'
+          - ''
+      overused:
+        material: PLAYER_HEAD
+        texture: http://textures.minecraft.net/texture/8ad943d063347f95ab9e9fa75792da84ec665ebd22b050bdba519ff7da61db
+        name: <b><gray>✧<dark_gray>✦<gray>✧ <gradient:gray:dark_gray:gray>Kit {kit}</gradient> <gray>✧<dark_gray>✦<gray>✧
+        lore:
+          - ''
+          - <gradient:dark_gray:gray><b>Información del Kit:</gradient>
+          - ' <gradient:dark_gray:gray>┏ Nivel Máximo:</gradient> <#E5DCD9>{maximum_level}'
+          - ' <gradient:dark_gray:gray>┠ Estado de Redención:</gradient> <#E5DCD9>Todos Reclamados'
+          - ' <gradient:dark_gray:gray>┗ Usos Actuales:</gradient> <#E5DCD9>{current_usages}'
+          - ' <#E5DCD9>┠ <i>¡Has alcanzado el límite de usos!'
+          - ''
+          - <gradient:dark_gray:gray><b>Información de Nivel:<gradient>
+          - ' <gradient:dark_gray:gray>┏ Nivel Actual:</gradient> <#E5DCD9>{current_level}'
+          - ' <gradient:dark_gray:gray>┠ Cantidad de Ítems:</gradient> <#E5DCD9>{items}'
+          - ' <gradient:dark_gray:gray>┠ Tiempo de Espera:</gradient> <#E5DCD9>{total}'
+          - ' <gradient:dark_gray:gray>┗ Usos Máximos:</gradient> <#E5DCD9>{maximum_usages}'
+          - ' <#E5DCD9>┠ <u>Click-Der</u> <i>para ver todos los niveles disponibles!'
+          - ''
+    Bedrock:
+      slots:
+        - 35
+      available:
+        material: PLAYER_HEAD
+        texture: http://textures.minecraft.net/texture/6753482c1d5061e9b243f259b52f95c433ff03039ac843ddc46267b903052
+        name: <b><green>✧<dark_green>✦<green>✧ <gradient:green:dark_green:green>Kit {kit}</gradient> <green>✧<dark_green>✦<green>✧
+        lore:
+          - ''
+          - <gradient:dark_green:green><b>Información del Kit:</gradient>
+          - ' <gradient:dark_green:green>┏ Nivel Máximo:</gradient> <#E5DCD9>{maximum_level}'
+          - ' <gradient:dark_green:green>┠ Estado de Canje:</gradient> <#E5DCD9>Disponible'
+          - ' <gradient:dark_green:green>┗ Usos Actuales:</gradient> <#E5DCD9>{current_usages}'
+          - ' <#E5DCD9>┠ <u>Click-Izq</u> <i>para reclamar este kit!'
+          - ''
+          - <gradient:dark_green:green><b>Información del Nivel:<gradient>
+          - ' <gradient:dark_green:green>┏ Nivel Actual:</gradient> <#E5DCD9>{current_level}'
+          - ' <gradient:dark_green:green>┠ Cantidad de Ítems:</gradient> <#E5DCD9>{items}'
+          - ' <gradient:dark_green:green>┠ Tiempo de Espera:</gradient> <#E5DCD9>{total}'
+          - ' <gradient:dark_green:green>┗ Usos Máximos:</gradient> <#E5DCD9>{maximum_usages}'
+          - ' <#E5DCD9>┠ <u>Click-Der</u> <i>para ver todos los niveles disponibles!'
+          - ''
+      unavailable:
+        material: PLAYER_HEAD
+        texture: http://textures.minecraft.net/texture/76c0d0459c67f2be82fbe5406ab8d1378da1f28f7a3f82f1dfc47615a955a7
+        name: <b><yellow>✧<gold>✦<yellow>✧ <gradient:yellow:gold:yellow>Kit {kit}</gradient> <yellow>✧<gold>✦<yellow>✧
+        lore:
+          - ''
+          - <gradient:gold:yellow><b>Información del Kit:</gradient>
+          - ' <gradient:gold:yellow>┏ Nivel Máximo:</gradient> <#E5DCD9>{maximum_level}'
+          - ' <gradient:gold:yellow>┠ Estado de Canje:</gradient> <#E5DCD9>En Espera'
+          - ' <gradient:gold:yellow>┠ Usos Actuales:</gradient> <#E5DCD9>{current_usages}'
+          - ' <gradient:gold:yellow>┗ Disponible en:</gradient> <#E5DCD9>{cooldown}'
+          - ' <#E5DCD9>┠ <i>¡Debes esperar el tiempo de espera!'
+          - ''
+          - <gradient:gold:yellow><b>Información del Nivel:<gradient>
+          - ' <gradient:gold:yellow>┏ Nivel Actual:</gradient> <#E5DCD9>{current_level}'
+          - ' <gradient:gold:yellow>┠ Cantidad de Ítems:</gradient> <#E5DCD9>{items}'
+          - ' <gradient:gold:yellow>┠ Tiempo de Espera:</gradient> <#E5DCD9>{total}'
+          - ' <gradient:gold:yellow>┗ Usos Máximos:</gradient> <#E5DCD9>{maximum_usages}'
+          - ' <#E5DCD9>┠ <u>Click-Der</u> <i>para ver todos los niveles disponibles!'
+          - ''
+      locked:
+        material: PLAYER_HEAD
+        texture: http://textures.minecraft.net/texture/8ad943d063347f95ab9e9fa75792da84ec665ebd22b050bdba519ff7da61db
+        name: <b><red>✧<dark_red>✦<red>✧ <gradient:red:dark_red:red>Kit {kit}</gradient> <red>✧<dark_red>✦<red>✧
+        lore:
+          - ''
+          - <gradient:dark_red:red><b>Información del Kit:</gradient>
+          - ' <gradient:dark_red:red>┏ Nivel Máximo:</gradient> <#E5DCD9>{maximum_level}'
+          - ' <gradient:dark_red:red>┠ Estado de Canje:</gradient> <#E5DCD9>Bloqueado'
+          - ' <gradient:dark_red:red>┗ Rango Requerido:</gradient> <#E5DCD9>Miembro'
+          - ' <#E5DCD9>┠ <i>¡Necesitas un rango para desbloquear este kit!'
+          - ''
+          - <gradient:dark_red:red><b>Información del Nivel:<gradient>
+          - ' <gradient:dark_red:red>┏ Cantidad de Ítems:</gradient> <#E5DCD9>{items}'
+          - ' <gradient:dark_red:red>┠ Tiempo de Espera:</gradient> <#E5DCD9>{total}'
+          - ' <gradient:dark_red:red>┗ Usos Máximos:</gradient> <#E5DCD9>{maximum_usages}'
+          - ' <#E5DCD9>┠ <u>Click-Der</u> <i>para ver todos los niveles disponibles!'
+          - ''
+      purchasable:
+        material: PLAYER_HEAD
+        texture: http://textures.minecraft.net/texture/8ad943d063347f95ab9e9fa75792da84ec665ebd22b050bdba519ff7da61db
+        name: <b><light_purple>✧<dark_purple>✦<light_purple>✧ <gradient:light_purple:dark_purple:light_purple>Kit {kit}</gradient> <light_purple>✧<dark_purple>✦<light_purple>✧
+        lore:
+          - ''
+          - <gradient:dark_purple:light_purple><b>Información del Kit:</gradient>
+          - ' <gradient:dark_purple:light_purple>┏ Nivel Máximo:</gradient> <#E5DCD9>{maximum_level}'
+          - ' <gradient:dark_purple:light_purple>┠ Estado de Canje:</gradient> <#E5DCD9>Disponible para Comprar'
+          - ' <gradient:dark_purple:light_purple>┗ Precio de Compra:</gradient> <#E5DCD9>{cost}'
+          - ' <#E5DCD9>┠ <i>¡Debes comprar este kit para obtener acceso!'
+          - ''
+          - <gradient:dark_purple:light_purple><b>Información del Nivel:<gradient>
+          - ' <gradient:dark_purple:light_purple>┏ Cantidad de Ítems:</gradient> <#E5DCD9>{items}'
+          - ' <gradient:dark_purple:light_purple>┠ Tiempo de Espera:</gradient> <#E5DCD9>{total}'
+          - ' <gradient:dark_purple:light_purple>┗ Usos Máximos:</gradient> <#E5DCD9>{maximum_usages}'
+          - ' <#E5DCD9>┠ <u>Click-Der</u> <i>para ver todos los niveles disponibles!'
+          - ''
+      overused:
+        material: PLAYER_HEAD
+        texture: http://textures.minecraft.net/texture/8ad943d063347f95ab9e9fa75792da84ec665ebd22b050bdba519ff7da61db
+        name: <b><gray>✧<dark_gray>✦<gray>✧ <gradient:gray:dark_gray:gray>Kit {kit}</gradient> <gray>✧<dark_gray>✦<gray>✧
+        lore:
+          - ''
+          - <gradient:dark_gray:gray><b>Información del Kit:</gradient>
+          - ' <gradient:dark_gray:gray>┏ Nivel Máximo:</gradient> <#E5DCD9>{maximum_level}'
+          - ' <gradient:dark_gray:gray>┠ Estado de Canje:</gradient> <#E5DCD9>Todo Reclamado'
+          - ' <gradient:dark_gray:gray>┗ Usos Actuales:</gradient> <#E5DCD9>{current_usages}'
+          - ' <#E5DCD9>┠ <i>¡Has alcanzado el límite de uso!'
+          - ''
+          - <gradient:dark_gray:gray><b>Información del Nivel:<gradient>
+          - ' <gradient:dark_gray:gray>┏ Nivel Actual:</gradient> <#E5DCD9>{current_level}'
+          - ' <gradient:dark_gray:gray>┠ Cantidad de Ítems:</gradient> <#E5DCD9>{items}'
+          - ' <gradient:dark_gray:gray>┠ Tiempo de Espera:</gradient> <#E5DCD9>{total}'
+          - ' <gradient:dark_gray:gray>┗ Usos Máximos:</gradient> <#E5DCD9>{maximum_usages}'
+          - ' <#E5DCD9>┠ <u>Click-Der</u> <i>para ver todos los niveles disponibles!'
+          - ''
