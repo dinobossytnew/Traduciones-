@@ -1,0 +1,350 @@
+# Do not edit
+file-version: '15'
+# Do you want to check for updates on the startup?
+check-for-updates: true
+preview-kits-menu:
+  # Placeholders: {back-menu-display-name} & {back-menu-title}
+  back-button:
+    material: IRON_BARS
+    name: <green><b>VOLVER
+    lore:
+      - ''
+      - <white><i>(( ¡Haz clic para regresar al menú anterior! ))
+  close-button:
+    material: BARRIER
+    name: <red><b>CERRAR
+    lore:
+      - ''
+      - <white><i>(( ¡Haz clic para cerrar este menú! ))
+  claim-button:
+    material: BARRIER
+    name: <red><b>RECLAMACIÓN RÁPIDA
+    lore:
+      - ''
+      - <white><i>(( ¡Haz clic para reclamar rápidamente! ))
+  previous-page-button:
+    material: PLAYER_HEAD
+    texture: http://textures.minecraft.net/texture/816ea34a6a6ec5c051e6932f1c471b7012b298d38d179f1b487c413f51959cd4
+    name: '&a&lNivel Anterior: {previous_page}'
+    lore:
+      - '&7Haz clic para regresar al nivel anterior.'
+  no-previous-page-button:
+    material: PLAYER_HEAD
+    texture: http://textures.minecraft.net/texture/3ed1aba73f639f4bc42bd48196c715197be2712c3b962c97ebf9e9ed8efa025
+    name: '&c&lSin Nivel Anterior'
+    lore:
+      - '&7Viendo Nivel: {current_page}'
+      - '&7No hay nivel anterior.'
+  next-page-button:
+    material: PLAYER_HEAD
+    texture: http://textures.minecraft.net/texture/9c9ec71c1068ec6e03d2c9287f9da9193639f3a635e2fbd5d87c2fabe6499
+    name: '&a&lSiguiente Nivel: {next_page}'
+    lore:
+      - '&7Haz clic para avanzar al siguiente nivel.'
+  no-next-page-button:
+    material: PLAYER_HEAD
+    texture: http://textures.minecraft.net/texture/3ed1aba73f639f4bc42bd48196c715197be2712c3b962c97ebf9e9ed8efa025
+    name: '&c&lSin Siguiente Nivel'
+    lore:
+      - '&7Viendo Nivel: {current_page}'
+      - '&7No hay siguiente nivel.'
+  no-upgrade-button:
+    material: BARRIER
+    name: <bold><color:#D22727>✧<color:#D22727><color:#F26F0F>✦<color:#F26F0F><color:#D22727>✧<color:#D22727> <gradient:#D22727:#F26F0F>Mejorar {kit}</gradient> <color:#D22727>✧<color:#D22727><color:#F26F0F>✦<color:#F26F0F><color:#D22727>✧<color:#D22727></bold>
+    lore:
+      - ''
+      - ' <bold><color:#D22727>*<color:#D22727></bold> <gradient:#D22727:#F26F0F>Mejorar al nivel:</gradient> <bold><color:yellow>{upgrade_level}<color:yellow></bold>'
+      - ' <bold><color:#D22727>*<color:#D22727></bold> <gradient:#D22727:#F26F0F>Costo:</gradient> <color:#E5DCD9>GRATIS<color:#E5DCD9>'
+      - ''
+      - <italic><gradient:#D22727:#F26F0F>(( ¡Este kit no tiene mejoras disponibles! ))</gradient></italic>
+  default-level-upgrade-button:
+    material: PLAYER_HEAD
+    texture: https://textures.minecraft.net/texture/71bdf5e4225d6683c393d6f8b2b735ed228eb6f3a078d0d791adeca55e4392fa
+    name: <bold><color:#D22727>✧<color:#D22727><color:#F26F0F>✦<color:#F26F0F><color:#D22727>✧<color:#D22727> <gradient:#D22727:#F26F0F>Mejorar {kit}</gradient> <color:#D22727>✧<color:#D22727><color:#F26F0F>✦<color:#F26F0F><color:#D22727>✧<color:#D22727></bold>
+    lore:
+      - ''
+      - ' <bold><color:#D22727>*<color:#D22727></bold> <gradient:#D22727:#F26F0F>Mejorar al nivel:</gradient> <bold><color:yellow>{upgrade_level}<color:yellow></bold>'
+      - ' <bold><color:#D22727>*<color:#D22727></bold> <gradient:#D22727:#F26F0F>Costo:</gradient> <color:#E5DCD9>GRATIS<color:#E5DCD9>'
+      - ''
+      - <italic><gradient:#D22727:#F26F0F>(( ¡Este es el nivel predeterminado del kit! ))</gradient></italic>
+  available-upgrade-button:
+    material: PLAYER_HEAD
+    texture: https://textures.minecraft.net/texture/71bdf5e4225d6683c393d6f8b2b735ed228eb6f3a078d0d791adeca55e4392fa
+    name: <bold><color:#10987A>✧<color:#10987A><color:#49ECC3>✦<color:#49ECC3><color:#10987A>✧<color:#10987A> <gradient:#10987A:#49ECC3>Mejorar {kit}</gradient> <color:#10987A>✧<color:#10987A><color:#49ECC3>✦<color:#49ECC3><color:#10987A>✧<color:#10987A></bold>
+    lore:
+      - ''
+      - ' <bold><color:#10987A>*<color:#10987A></bold> <gradient:#10987A:#49ECC3>Nivel del kit:</gradient> <bold><underlined><color:yellow>{upgrade_level}<color:yellow></underlined></bold> <bold><color:gray>/<color:gray></bold> <bold><underlined><color:red>{maximum_level}<color:red></underlined></bold>'
+      - ' <bold><color:#10987A>*<color:#10987A></bold> <gradient:#10987A:#49ECC3>Costo:</gradient> <color:red>{cost}<color:red>'
+      - ''
+      - ' <bold><color:#10987A>*<color:#10987A></bold> <gradient:#10987A:#49ECC3>Enfriamiento del kit:</gradient> <color:#E5DCD9>{total}<color:#E5DCD9>'
+      - ' <bold><color:#10987A>*<color:#10987A></bold> <gradient:#10987A:#49ECC3>Número de ítems:</gradient> <color:#E5DCD9>{items}<color:#E5DCD9>'
+      - ''
+      - <italic><gradient:#10987A:#49ECC3>(( ¡Haz clic para comprar esta mejora! ))</gradient></italic>
+  insufficient-funds-upgrade-button:
+    material: PLAYER_HEAD
+    texture: https://textures.minecraft.net/texture/71bdf5e4225d6683c393d6f8b2b735ed228eb6f3a078d0d791adeca55e4392fa
+    name: <bold><color:#D22727>✧<color:#D22727><color:#F26F0F>✦<color:#F26F0F><color:#D22727>✧<color:#D22727> <gradient:#D22727:#F26F0F>Mejorar {kit}</gradient> <color:#D22727>✧<color:#D22727><color:#F26F0F>✦<color:#F26F0F><color:#D22727>✧<color:#D22727></bold>
+    lore:
+      - ''
+      - ' <bold><color:#D22727>*<color:#D22727></bold> <gradient:#D22727:#F26F0F>Mejorar al nivel:</gradient> <bold><color:yellow>{upgrade_level}<color:yellow></bold>'
+      - ' <bold><color:#D22727>*<color:#D22727></bold> <gradient:#D22727:#F26F0F>Costo:</gradient> <color:#E5DCD9>{cost}<color:#E5DCD9> &7&o(Necesitas {needed})'
+      - ''
+      - <italic><gradient:#D22727:#F26F0F>(( ¡No puedes permitirte esta mejora del kit! ))</gradient></italic>
+  locked-upgrade-button:
+    material: PLAYER_HEAD
+    texture: https://textures.minecraft.net/texture/71bdf5e4225d6683c393d6f8b2b735ed228eb6f3a078d0d791adeca55e4392fa
+    name: <bold><color:#D22727>✧<color:#D22727><color:#F26F0F>✦<color:#F26F0F><color:#D22727>✧<color:#D22727> <gradient:#D22727:#F26F0F>Mejorar {kit}</gradient> <color:#D22727>✧<color:#D22727><color:#F26F0F>✦<color:#F26F0F><color:#D22727>✧<color:#D22727></bold>
+    lore:
+      - ''
+      - ' <bold><color:#D22727>*<color:#D22727></bold> <gradient:#D22727:#F26F0F>Mejorar al nivel:</gradient> <bold><color:yellow>{upgrade_level}<color:yellow></bold>'
+      - ' <bold><color:#D22727>*<color:#D22727></bold> <gradient:#D22727:#F26F0F>Costo:</gradient> <color:#E5DCD9>{cost}<color:#E5DCD9>'
+      - ''
+      - <italic><gradient:#D22727:#F26F0F>(( ¡Primero debes desbloquear este kit! ))</gradient></italic>
+  maximum-level-upgrade-button:
+    material: PLAYER_HEAD
+    texture: https://textures.minecraft.net/texture/71bdf5e4225d6683c393d6f8b2b735ed228eb6f3a078d0d791adeca55e4392fa
+    name: <bold><color:#DACB1C>✧<color:#DACB1C><color:#CBF91B>✦<color:#CBF91B><color:#DACB1C>✧<color:#DACB1C> <gradient:#DACB1C:#CBF91B>Mejorar {kit}</gradient> <color:#DACB1C>✧<color:#DACB1C><color:#CBF91B>✦<color:#CBF91B><color:#DACB1C>✧<color:#DACB1C></bold>
+    lore:
+      - ''
+      - ' <bold><color:#DACB1C>*<color:#DACB1C></bold> <gradient:#DACB1C:#CBF91B>Mejorar al nivel:</gradient> <bold><color:yellow>{upgrade_level}<color:yellow></bold>'
+      - ' <bold><color:#DACB1C>*<color:#DACB1C></bold> <gradient:#DACB1C:#CBF91B>Costo:</gradient> <color:#E5DCD9>{cost}<color:#E5DCD9>'
+      - ''
+      - <italic><gradient:#DACB1C:#CBF91B>(( ¡Has alcanzado el nivel máximo! ))</gradient></italic>
+  unavailable-upgrade-button:
+    material: PLAYER_HEAD
+    texture: https://textures.minecraft.net/texture/71bdf5e4225d6683c393d6f8b2b735ed228eb6f3a078d0d791adeca55e4392fa
+    name: <bold><color:#DACB1C>✧<color:#DACB1C><color:#CBF91B>✦<color:#CBF91B><color:#DACB1C>✧<color:#DACB1C> <gradient:#DACB1C:#CBF91B>Mejorar {kit}</gradient> <color:#DACB1C>✧<color:#DACB1C><color:#CBF91B>✦<color:#CBF91B><color:#DACB1C>✧<color:#DACB1C></bold>
+    lore:
+      - ''
+      - ' <bold><color:#DACB1C>*<color:#DACB1C></bold> <gradient:#DACB1C:#CBF91B>Mejorar al nivel:</gradient> <bold><color:yellow>{upgrade_level}<color:yellow></bold>'
+      - ' <bold><color:#DACB1C>*<color:#DACB1C></bold> <gradient:#DACB1C:#CBF91B>Costo:</gradient> <color:#E5DCD9>{cost}<color:#E5DCD9>'
+      - ''
+      - <italic><gradient:#DACB1C:#CBF91B>(( ¡Desbloquea las mejoras anteriores primero! ))</gradient></italic>
+  complete-upgrade-button:
+    material: PLAYER_HEAD
+    texture: https://textures.minecraft.net/texture/71bdf5e4225d6683c393d6f8b2b735ed228eb6f3a078d0d791adeca55e4392fa
+    name: <bold><color:#10987A>✧<color:#10987A><color:#49ECC3>✦<color:#49ECC3><color:#10987A>✧<color:#10987A> <gradient:#10987A:#49ECC3>Mejorar {kit}</gradient> <color:#10987A>✧<color:#10987A><color:#49ECC3>✦<color:#49ECC3><color:#10987A>✧<color:#10987A></bold>
+    lore:
+      - ''
+      - ' <bold><color:#10987A>*<color:#10987A></bold> <gradient:#10987A:#49ECC3>Nivel del kit:</gradient> <bold><underlined><color:yellow>{upgrade_level}<color:yellow></underlined></bold> <bold><color:gray>/<color:gray></bold> <bold><underlined><color:red>{maximum_level}<color:red></underlined></bold>'
+      - ' <bold><color:#10987A>*<color:#10987A></bold> <gradient:#10987A:#49ECC3>Costo:</gradient> <color:red><strikethrough>{cost}</strikethrough><color:red>'
+      - ''
+      - ' <bold><color:#10987A>*<color:#10987A></bold> <gradient:#10987A:#49ECC3>Enfriamiento del kit:</gradient> <color:#E5DCD9>{total}<color:#E5DCD9>'
+      - ' <bold><color:#10987A>*<color:#10987A></bold> <gradient:#10987A:#49ECC3>Número de ítems:</gradient> <color:#E5DCD9>{items}<color:#E5DCD9>'
+      - ''
+      - <italic><gradient:#10987A:#49ECC3>(( ¡Ya compraste esta mejora! ))</gradient></italic>
+  current-upgrade-button:
+    material: PLAYER_HEAD
+    texture: https://textures.minecraft.net/texture/71bdf5e4225d6683c393d6f8b2b735ed228eb6f3a078d0d791adeca55e4392fa
+    name: <bold><color:#10987A>✧<color:#10987A><color:#49ECC3>✦<color:#49ECC3><color:#10987A>✧<color:#10987A> <gradient:#10987A:#49ECC3>Mejorar {kit}</gradient> <color:#10987A>✧<color:#10987A><color:#49ECC3>✦<color:#49ECC3><color:#10987A>✧<color:#10987A></bold>
+    lore:
+      - ''
+      - ' <bold><color:#10987A>*<color:#10987A></bold> <gradient:#10987A:#49ECC3>Nivel del kit:</gradient> <bold><underlined><color:yellow>{upgrade_level}<color:yellow></underlined></bold> <bold><color:gray>/<color:gray></bold> <bold><underlined><color:red>{maximum_level}<color:red></underlined></bold>'
+      - ' <bold><color:#10987A>*<color:#10987A></bold> <gradient:#10987A:#49ECC3>Costo:</gradient> <color:red><strikethrough>{cost}</strikethrough><color:red>'
+      - ''
+      - ' <bold><color:#10987A>*<color:#10987A></bold> <gradient:#10987A:#49ECC3>Enfriamiento del kit:</gradient> <color:#E5DCD9>{total}<color:#E5DCD9>'
+      - ' <bold><color:#10987A>*<color:#10987A></bold> <gradient:#10987A:#49ECC3>Número de ítems:</gradient> <color:#E5DCD9>{items}<color:#E5DCD9>'
+      - ''
+      - <italic><gradient:#10987A:#49ECC3>(( ¡Esta es tu mejora actual! ))</gradient></italic>
+  delay-upgrade-button:
+    material: PLAYER_HEAD
+    texture: https://textures.minecraft.net/texture/71bdf5e4225d6683c393d6f8b2b735ed228eb6f3a078d0d791adeca55e4392fa
+    name: <bold><color:#10987A>✧<color:#10987A><color:#49ECC3>✦<color:#49ECC3><color:#10987A>✧<color:#10987A> <gradient:#10987A:#49ECC3>Mejorar {kit}</gradient> <color:#10987A>✧<color:#10987A><color:#49ECC3>✦<color:#49ECC3><color:#10987A>✧<color:#10987A></bold>
+    lore:
+      - ''
+      - ' <bold><color:#10987A>*<color:#10987A></bold> <gradient:#10987A:#49ECC3>Nivel del kit:</gradient> <bold><underlined><color:yellow>{upgrade_level}<color:yellow></underlined></bold> <bold><color:gray>/<color:gray></bold> <bold><underlined><color:red>{maximum_level}<color:red></underlined></bold>'
+      - ' <bold><color:#10987A>*<color:#10987A></bold> <gradient:#10987A:#49ECC3>Costo:</gradient> <color:red><strikethrough>{cost}</strikethrough><color:red>'
+      - ' <bold><color:#10987A>*<color:#10987A></bold> <gradient:#10987A:#49ECC3>Retraso de compra:</gradient> <color:#E5DCD9>{buy_delay_remaining} / {buy_delay}<color:#E5DCD9>'
+      - ''
+      - ' <bold><color:#10987A>*<color:#10987A></bold> <gradient:#10987A:#49ECC3>Enfriamiento del kit:</gradient> <color:#E5DCD9>{total}<color:#E5DCD9>'
+      - ' <bold><color:#10987A>*<color:#10987A></bold> <gradient:#10987A:#49ECC3>Número de ítems:</gradient> <color:#E5DCD9>{items}<color:#E5DCD9>'
+      - ''
+      - <italic><gradient:#10987A:#49ECC3>(( ¡Tienes que esperar el retraso! ))</gradient></italic>
+first-join-vouchers: []
+first-join-kits:
+  - Coal;1
+allow-claim-kit-with-full-inventory: true
+# Set 0 to disable
+data-save-interval-ticks: 12000
+placeholders:
+  unlimited-kit-usages: Unlimited
+time-units:
+  finish: Ahora
+  days: '{number} Días '
+  day: '{number} Día '
+  no-days: ''
+  hours: '{number} Horas '
+  hour: '{number} Hora '
+  no-hours: ''
+  minutes: '{number} Minutos '
+  minute: '{number} Minuto '
+  no-minutes: ''
+  seconds: '{number} Segundos'
+  second: '{number} Segundo'
+  no-seconds: ''
+storage:
+  # Available storage providers: YAML, SQLITE, H2, MYSQL, MARIADB, POSTGRESQL, MONGODB
+  # WARNING: The SQLITE, H2, MYSQL, MARIADB, POSTGRESQL, MONGODB providers are currently under development and could
+  # potentially lead to data loss in future updates. For production environments, it is recommended to use the YAML
+  # provider due to its stability and reliability. However, you can choose other providers at your own risk.
+  database: YAML
+  settings:
+    yaml:
+      # Placeholders: {separator}
+      folder: playerdata
+    sqlite:
+      # Placeholders: {separator}
+      file: database
+    h2:
+      # Placeholders: {separator}
+      file: database
+    # Configure here MYSQL, MARIADB, & POSTGRESQL
+    mysql:
+      address: 127.0.0.1
+      port: 3306
+      database: advancedkits
+      username: root
+      password: password
+      table-prefix: advancedkits_
+      # Set the driver class name
+      # Default driver class names:
+      # MySQL - me.extremall.advancedkits.libs.mysql.cj.jdbc.Driver
+      # MariaDB - me.extremall.advancedkits.libs.mariadb.Driver
+      # PostgreSQL - me.extremall.advancedkits.libs.postgresql.Driver
+      # Leave this empty to use automatically one of the above drivers.
+      driver-class-name: ''
+      pool-settings:
+        maximum-pool-size: 10
+        minimum-idle: 10
+        maximum-lifetime: 1800000
+        connection-timeout: 5000
+        properties:
+          - characterEncoding=utf8
+          - encoding=UTF-8
+          - useUnicode=true
+          - useSSL=false
+          - socketTimeout=30000
+          - tcpKeepAlive=true
+          - autoReconnect=true
+          - cachePrepStmts=true
+          - prepStmtCacheSize=250
+          - prepStmtCacheSqlLimit=2048
+          - useServerPrepStmts=true
+          - useLocalSessionState=true
+          - rewriteBatchedStatements=true
+          - cacheResultSetMetadata=true
+          - cacheServerConfiguration=true
+          - elideSetAutoCommits=true
+          - maintainTimeStats=false
+    mongodb:
+      address: 127.0.0.1
+      port: 27017
+      database: advancedkits
+      username: admin
+      password: password
+kit-settings:
+  replace-items: false
+currency-settings:
+  # This section defines the formatting settings for different currencies.
+  # Available formatting options:
+  # provider - The identifier for the currency provider.
+  # format - The template for formatting the amount.
+  # currency - (optional) The specific currency identifier if the provider supports multiple currencies.
+  formatting:
+    - provider: EXP
+      format: '{amount} EXP'
+# Examples of additional currency configurations:
+# Uncomment and modify the following lines to add more currencies.
+# - provider: VAULT
+#   format: '{amount}$'
+# - provider: COINSENGINE
+#   currency: COINS
+#   format: '{amount} coins'
+voucher-settings:
+  # The NBTAPI library is used to inject tags on the voucher display item.
+  nbt-tags:
+    # Do you want to use tags on voucher items? (recommended true)
+    #
+    # When set to true, a tag will be added to vouchers. Vouchers without the specified tag name or with
+    # a different tag name will no longer function. This option offers the best performance and allows
+    # you to modify item values at any time without rendering older vouchers invalid. You can also use
+    # any PlaceholderAPI placeholder without any issues; however, please note that placeholders cannot
+    # be refreshed.
+    #
+    # When set to false, the entire item will be checked for similarity. If any value of the item is
+    # changed, the old voucher will no longer work. You can only use static placeholders in this case;
+    # otherwise, the voucher will no longer function. Choose this option if you already have vouchers
+    # without tags and do not want to invalidate them.
+    enabled: true
+    # Modify this setting if you want to invalidate current vouchers with this tag name.
+    # To enable this functionality, ensure that nbt-tags are enabled above.
+    tag-name: advancedkits-vouchers
+  # Disable the ability to rename vouchers using an anvil.
+  #
+  # Note: When set to true, players will be disallowed from renaming voucher items.
+  #       To work this option, nbt tags must be enabled.
+  #       To work this option, your server version must be 1.9.4 or newer.
+  disable-anvil-rename: true
+menu-settings:
+  # Determines whether the current menu should be closed before opening a new one.
+  # If set to true, the current menu will be closed, and the mouse will be centered on the switch.
+  # Note: Sound effects and particles will not be triggered when menus are closed during menu switching.
+  close-menu-before-open:
+    # Close the current menu before opening the main menu.
+    # This occurs when using the back button on a category.
+    main: false
+    # Close the current menu before opening a category menu.
+    # This occurs when opening a category menu from the main menu.
+    category: false
+    # Close the current menu before opening a preview menu.
+    # This occurs when opening a preview menu from the main menu or categories.
+    preview: true
+  # Control whether the menu should close on successful and failed kit claims.
+  close-menu-on-claim-kit:
+    # Close the menu when the player successfully receives the kit.
+    success: true
+    # Close the menu when the kit claim fails (e.g., cooldown, locked, overused, purchasable).
+    failure: true
+  # Define which click types are allowed for specific actions.
+  # Click types can be found here: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/inventory/ClickType.html
+  click-types:
+    claim-kit:
+      - LEFT
+    preview-kit:
+      - RIGHT
+    buttons:
+      - LEFT
+      - RIGHT
+# Command settings section defines configurations for various plugin commands.
+command-settings:
+  # Prefix for fallback commands
+  fallback-prefix: advancedkits
+  # Avaiable command options:
+  # enabled - Whether the command is enabled (true) or disabled (false).
+  # command - The main command keyword for the command.
+  # aliases (optional) - Aliases that can be used instead of the main command keyword.
+  # permission (optional) - Permission node required to execute the command. (remove section to disable)
+  # description (optional) - Description of what the command does. (do not use color codes)
+  commands:
+    # Admin command settings
+    admin:
+      enabled: true
+      command: advancedkits
+      aliases:
+        - ak
+      permission: advancedkits.command.admin
+      description: The main AdvancedKits admin command.
+    # Kit claim command settings
+    kit-claim:
+      enabled: true
+      command: kit
+      aliases: []
+      #permission: advancedkits.command.kit
+      description: Obtains the specified kit.
+    # Kit preview command settings
+    kit-preview:
+      enabled: true
+      command: kitpreview
+      aliases: []
+      #permission: advancedkits.command.kitpreview
+      description: Previews the specified kit.

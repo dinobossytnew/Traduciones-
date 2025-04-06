@@ -1,0 +1,220 @@
+main-kits-menu-left-arrow:
+  delay: 10
+  random: false
+  slots:
+    - 37-38
+  items:
+    '1':
+      material: PLAYER_HEAD
+      name: '&r'
+      hide-tooltip: true
+      texture: http://textures.minecraft.net/texture/333ae8de7ed079e38d2c82dd42b74cfcbd94b3480348dbb5ecd93da8b81015e3
+    '2':
+      material: PLAYER_HEAD
+      name: '&r'
+      hide-tooltip: true
+      texture: http://textures.minecraft.net/texture/a8ae11a9c940c5ac62b905837d21537dbe2f3e5011f0bbbfdc11224b8603dbbd
+main-kits-menu-right-arrow:
+  delay: 10
+  random: false
+  slots:
+    - 42-43
+  items:
+    '1':
+      material: PLAYER_HEAD
+      name: '&r'
+      hide-tooltip: true
+      texture: http://textures.minecraft.net/texture/81c96a5c3d13c3199183e1bc7f086f54ca2a6527126303ac8e25d63e16b64ccf
+    '2':
+      material: PLAYER_HEAD
+      name: '&r'
+      hide-tooltip: true
+      texture: http://textures.minecraft.net/texture/fc99aa6fc2ecce35665d948a01325153fe53fc1771fb2784f57967f10e2ddcf8
+non-random-rainbow-glass-pane:
+  delay: 10
+  random: false
+  slots: []
+  items:
+    '1':
+      material: WHITE_STAINED_GLASS_PANE
+      name: '&r'
+      hide-tooltip: true
+    '2':
+      material: ORANGE_STAINED_GLASS_PANE
+      name: '&r'
+      hide-tooltip: true
+    '3':
+      material: MAGENTA_STAINED_GLASS_PANE
+      name: '&r'
+      hide-tooltip: true
+    '4':
+      material: LIGHT_BLUE_STAINED_GLASS_PANE
+      name: '&r'
+      hide-tooltip: true
+    '5':
+      material: YELLOW_STAINED_GLASS_PANE
+      name: '&r'
+      hide-tooltip: true
+    '6':
+      material: LIME_STAINED_GLASS_PANE
+      name: '&r'
+      hide-tooltip: true
+    '7':
+      material: PINK_STAINED_GLASS_PANE
+      name: '&r'
+      hide-tooltip: true
+    '8':
+      material: GRAY_STAINED_GLASS_PANE
+      name: '&r'
+      hide-tooltip: true
+    '9':
+      material: LIGHT_GRAY_STAINED_GLASS_PANE
+      name: '&r'
+      hide-tooltip: true
+    '10':
+      material: CYAN_STAINED_GLASS_PANE
+      name: '&r'
+      hide-tooltip: true
+    '11':
+      material: PURPLE_STAINED_GLASS_PANE
+      name: '&r'
+      hide-tooltip: true
+    '12':
+      material: BLUE_STAINED_GLASS_PANE
+      name: '&r'
+      hide-tooltip: true
+    '13':
+      material: BROWN_STAINED_GLASS_PANE
+      name: '&r'
+      hide-tooltip: true
+    '14':
+      material: RED_STAINED_GLASS_PANE
+      name: '&r'
+      hide-tooltip: true
+    '15':
+      material: BLACK_STAINED_GLASS_PANE
+      name: '&r'
+      hide-tooltip: true
+random-rainbow-glass-pane:
+  delay: 10
+  random: true
+  slots: []
+  items:
+    '1':
+      material: WHITE_STAINED_GLASS_PANE
+      name: '&r'
+      hide-tooltip: true
+      glow: true
+    '2':
+      material: ORANGE_STAINED_GLASS_PANE
+      name: '&r'
+      hide-tooltip: true
+      glow: true
+    '3':
+      material: MAGENTA_STAINED_GLASS_PANE
+      name: '&r'
+      hide-tooltip: true
+      glow: true
+    '4':
+      material: LIGHT_BLUE_STAINED_GLASS_PANE
+      name: '&r'
+      hide-tooltip: true
+      glow: true
+    '5':
+      material: YELLOW_STAINED_GLASS_PANE
+      name: '&r'
+      hide-tooltip: true
+      glow: true
+    '6':
+      material: LIME_STAINED_GLASS_PANE
+      name: '&r'
+      hide-tooltip: true
+      glow: true
+    '7':
+      material: PINK_STAINED_GLASS_PANE
+      name: '&r'
+      hide-tooltip: true
+      glow: true
+    '8':
+      material: GRAY_STAINED_GLASS_PANE
+      name: '&r'
+      hide-tooltip: true
+      glow: true
+    '9':
+      material: LIGHT_GRAY_STAINED_GLASS_PANE
+      name: '&r'
+      hide-tooltip: true
+      glow: true
+    '10':
+      material: CYAN_STAINED_GLASS_PANE
+      name: '&r'
+      hide-tooltip: true
+      glow: true
+    '11':
+      material: PURPLE_STAINED_GLASS_PANE
+      name: '&r'
+      hide-tooltip: true
+      glow: true
+    '12':
+      material: BLUE_STAINED_GLASS_PANE
+      name: '&r'
+      hide-tooltip: true
+      glow: true
+    '13':
+      material: BROWN_STAINED_GLASS_PANE
+      name: '&r'
+      hide-tooltip: true
+      glow: true
+    '14':
+      material: RED_STAINED_GLASS_PANE
+      name: '&r'
+      hide-tooltip: true
+      glow: true
+    '15':
+      material: BLACK_STAINED_GLASS_PANE
+      name: '&r'
+      hide-tooltip: true
+      glow: true
+preview-menu-corner-1:
+  delay: 20
+  random: false
+  slots:
+    - 0-1
+    - 9
+    - 44
+    - 52-53
+  items:
+    '1':
+      material: YELLOW_STAINED_GLASS_PANE
+      name: '&r'
+      hide-tooltip: true
+    '2':
+      material: ORANGE_STAINED_GLASS_PANE
+      name: '&r'
+      hide-tooltip: true
+preview-menu-corner-2:
+  delay: 20
+  random: false
+  slots:
+    - 7-8
+    - 17
+    - 36
+    - 45-46
+  items:
+    '1':
+      material: ORANGE_STAINED_GLASS_PANE
+      name: '&r'
+      hide-tooltip: true
+    '2':
+      material: YELLOW_STAINED_GLASS_PANE
+      name: '&r'
+      hide-tooltip: true
+donator-background:
+  delay: 0
+  random: false
+  slots: []
+  items:
+    '1':
+      material: GREEN_STAINED_GLASS_PANE
+      name: '&r'
+      hide-tooltip: true

@@ -1,0 +1,39 @@
+default:
+  title: '&8Vista previa del kit: {kit} &o(Lvl. {level})'
+  type: CHEST
+  rows: 6
+  refresh-delay: 20
+  menu-fillers:
+    - preview-menu-corner-1
+    - preview-menu-corner-2
+  kit-items:
+    snake-mode: false
+    slots:
+      - 2-6
+      - 10-16
+      - 18-35
+      - 37-43
+      - 47-51
+    start-delay: 3
+    repeat-delay: 3
+  upgrade-buttons:
+    enabled: true
+    slots:
+      previous-page:
+        - 45
+      next-page:
+        - 53
+      upgrade:
+        - 50
+    settings:
+      reset-kit-cooldown: true
+      reset-kit-usages: true
+      switch-to-next-level: true
+  general-buttons:
+    slots:
+      back:
+        - 47
+      close:
+        - 49
+      claim:
+        - 51

@@ -1,0 +1,875 @@
+# Do not edit
+file-version: '1'
+title: '&7Kit Menu'
+type: CHEST
+rows: 6
+refresh-delay: 20
+display-name: Main Menu
+menu-fillers:
+  - main-kits-menu-left-arrow
+  - main-kits-menu-right-arrow
+  - non-random-rainbow-glass-pane
+open-command:
+  enabled: true
+  command: kits
+  aliases: []
+  #permission: advancedkits.command.kits
+  description: Opens the main kits menu.
+kits:
+  Snowman:
+    slots:
+      - 25
+    available:
+      material: FIREWORK_STAR
+      color: WHITE
+      name: <b><green>✧<dark_green>✦<green>✧ <gradient:green:dark_green:green>Kit {kit}</gradient> <green>✧<dark_green>✦<green>✧
+      glow: true
+      lore:
+        - ''
+        - <gradient:dark_green:green><b>Información del Kit:</gradient>
+        - ' <gradient:dark_green:green>┏ Nivel Máximo:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:dark_green:green>┠ Estado de Canje:</gradient> <#E5DCD9>Disponible'
+        - ' <gradient:dark_green:green>┗ Usos Actuales:</gradient> <#E5DCD9>{current_usages}'
+        - ' <#E5DCD9>┠ <u>Click-Izq</u> <i>para reclamar este kit!'
+        - ''
+        - <gradient:dark_green:green><b>Información del Nivel:<gradient>
+        - ' <gradient:dark_green:green>┏ Nivel Actual:</gradient> <#E5DCD9>{current_level}'
+        - ' <gradient:dark_green:green>┠ Cantidad de Ítems:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:dark_green:green>┠ Tiempo de Espera:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:dark_green:green>┗ Máximo de Usos:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Click-Der</u> <i>para ver todos los niveles disponibles!'
+        - ''
+    unavailable:
+      material: FIREWORK_STAR
+      color: WHITE
+      name: <b><yellow>✧<gold>✦<yellow>✧ <gradient:yellow:gold:yellow>Kit {kit}</gradient> <yellow>✧<gold>✦<yellow>✧
+      lore:
+        - ''
+        - <gradient:gold:yellow><b>Información del Kit:</gradient>
+        - ' <gradient:gold:yellow>┏ Nivel Máximo:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:gold:yellow>┠ Estado de Canje:</gradient> <#E5DCD9>En Espera'
+        - ' <gradient:gold:yellow>┠ Usos Actuales:</gradient> <#E5DCD9>{current_usages}'
+        - ' <gradient:gold:yellow>┗ Disponible en:</gradient> <#E5DCD9>{cooldown}'
+        - ' <#E5DCD9>┠ <i>¡Debes esperar al enfriamiento!'
+        - ''
+        - <gradient:gold:yellow><b>Información del Nivel:<gradient>
+        - ' <gradient:gold:yellow>┏ Nivel Actual:</gradient> <#E5DCD9>{current_level}'
+        - ' <gradient:gold:yellow>┠ Cantidad de Ítems:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:gold:yellow>┠ Tiempo de Espera:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:gold:yellow>┗ Máximo de Usos:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Click-Der</u> <i>para ver todos los niveles disponibles!'
+        - ''
+    locked:
+      material: FIREWORK_STAR
+      color: WHITE
+      name: <b><red>✧<dark_red>✦<red>✧ <gradient:red:dark_red:red>Kit {kit}</gradient> <red>✧<dark_red>✦<red>✧
+      lore:
+        - ''
+        - <gradient:dark_red:red><b>Información del Kit:</gradient>
+        - ' <gradient:dark_red:red>┏ Nivel Máximo:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:dark_red:red>┠ Estado de Canje:</gradient> <#E5DCD9>Bloqueado'
+        - ' <gradient:dark_red:red>┗ Rango Requerido:</gradient> <#E5DCD9>Miembro'
+        - ' <#E5DCD9>┠ <i>¡Necesitas un rango para desbloquear este kit!'
+        - ''
+        - <gradient:dark_red:red><b>Información del Nivel:<gradient>
+        - ' <gradient:dark_red:red>┏ Cantidad de Ítems:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:dark_red:red>┠ Tiempo de Espera:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:dark_red:red>┗ Máximo de Usos:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Click-Der</u> <i>para ver todos los niveles disponibles!'
+        - ''
+    purchasable:
+      material: FIREWORK_STAR
+      color: WHITE
+      name: <b><light_purple>✧<dark_purple>✦<light_purple>✧ <gradient:light_purple:dark_purple:light_purple>Kit {kit}</gradient> <light_purple>✧<dark_purple>✦<light_purple>✧
+      lore:
+        - ''
+        - <gradient:dark_purple:light_purple><b>Información del Kit:</gradient>
+        - ' <gradient:dark_purple:light_purple>┏ Nivel Máximo:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:dark_purple:light_purple>┠ Estado de Canje:</gradient> <#E5DCD9>Disponible para Compra'
+        - ' <gradient:dark_purple:light_purple>┗ Precio de Compra:</gradient> <#E5DCD9>{cost}'
+        - ' <#E5DCD9>┠ <i>¡Debes comprar este kit para obtener acceso!'
+        - ''
+        - <gradient:dark_purple:light_purple><b>Información del Nivel:<gradient>
+        - ' <gradient:dark_purple:light_purple>┏ Cantidad de Ítems:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:dark_purple:light_purple>┠ Tiempo de Espera:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:dark_purple:light_purple>┗ Máximo de Usos:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Click-Der</u> <i>para ver todos los niveles disponibles!'
+        - ''
+    overused:
+      material: FIREWORK_STAR
+      color: WHITE
+      name: <b><gray>✧<dark_gray>✦<gray>✧ <gradient:gray:dark_gray:gray>Kit {kit}</gradient> <gray>✧<dark_gray>✦<gray>✧
+      lore:
+        - ''
+        - <gradient:dark_gray:gray><b>Información del Kit:</gradient>
+        - ' <gradient:dark_gray:gray>┏ Nivel Máximo:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:dark_gray:gray>┠ Estado de Canje:</gradient> <#E5DCD9>Todos Usados'
+        - ' <gradient:dark_gray:gray>┗ Usos Actuales:</gradient> <#E5DCD9>{current_usages}'
+        - ' <#E5DCD9>┠ <i>¡Has alcanzado el límite de uso!'
+        - ''
+        - <gradient:dark_gray:gray><b>Información del Nivel:<gradient>
+        - ' <gradient:dark_gray:gray>┏ Nivel Actual:</gradient> <#E5DCD9>{current_level}'
+        - ' <gradient:dark_gray:gray>┠ Cantidad de Ítems:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:dark_gray:gray>┠ Tiempo de Espera:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:dark_gray:gray>┗ Máximo de Usos:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Click-Der</u> <i>para ver todos los niveles disponibles!'
+        - ''
+  Viking:
+    slots:
+      - 20
+    available:
+      material: SHIELD
+      name: <b><green>✧<dark_green>✦<green>✧ <gradient:green:dark_green:green>Kit {kit}</gradient> <green>✧<dark_green>✦<green>✧
+      glow: true
+      lore:
+        - ''
+        - <gradient:dark_green:green><b>Información del Kit:</gradient>
+        - ' <gradient:dark_green:green>┏ Nivel Máximo:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:dark_green:green>┠ Estado de Reclamo:</gradient> <#E5DCD9>Disponible'
+        - ' <gradient:dark_green:green>┗ Usos Actuales:</gradient> <#E5DCD9>{current_usages}'
+        - ' <#E5DCD9>┠ <u>Click-Izq</u> <i>para reclamar este kit!'
+        - ''
+        - <gradient:dark_green:green><b>Información del Nivel:<gradient>
+        - ' <gradient:dark_green:green>┏ Nivel Actual:</gradient> <#E5DCD9>{current_level}'
+        - ' <gradient:dark_green:green>┠ Número de Ítems:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:dark_green:green>┠ Tiempo de Espera:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:dark_green:green>┗ Usos Máximos:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Click-Der</u> <i>para ver todos los niveles disponibles!'
+        - ''
+    unavailable:
+      material: SHIELD
+      name: <b><yellow>✧<gold>✦<yellow>✧ <gradient:yellow:gold:yellow>Kit {kit}</gradient> <yellow>✧<gold>✦<yellow>✧
+      lore:
+        - ''
+        - <gradient:gold:yellow><b>Información del Kit:</gradient>
+        - ' <gradient:gold:yellow>┏ Nivel Máximo:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:gold:yellow>┠ Estado de Reclamo:</gradient> <#E5DCD9>En Espera'
+        - ' <gradient:gold:yellow>┠ Usos Actuales:</gradient> <#E5DCD9>{current_usages}'
+        - ' <gradient:gold:yellow>┗ Disponible En:</gradient> <#E5DCD9>{cooldown}'
+        - ' <#E5DCD9>┠ <i>¡Debes esperar el tiempo de espera!'
+        - ''
+        - <gradient:gold:yellow><b>Información del Nivel:<gradient>
+        - ' <gradient:gold:yellow>┏ Nivel Actual:</gradient> <#E5DCD9>{current_level}'
+        - ' <gradient:gold:yellow>┠ Número de Ítems:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:gold:yellow>┠ Tiempo de Espera:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:gold:yellow>┗ Usos Máximos:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Click-Der</u> <i>para ver todos los niveles disponibles!'
+        - ''
+    locked:
+      material: SHIELD
+      name: <b><red>✧<dark_red>✦<red>✧ <gradient:red:dark_red:red>Kit {kit}</gradient> <red>✧<dark_red>✦<red>✧
+      lore:
+        - ''
+        - <gradient:dark_red:red><b>Información del Kit:</gradient>
+        - ' <gradient:dark_red:red>┏ Nivel Máximo:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:dark_red:red>┠ Estado de Reclamo:</gradient> <#E5DCD9>Bloqueado'
+        - ' <gradient:dark_red:red>┗ Rango Requerido:</gradient> <#E5DCD9>Miembro'
+        - ' <#E5DCD9>┠ <i>¡Necesitas un rango para desbloquear este kit!'
+        - ''
+        - <gradient:dark_red:red><b>Información del Nivel:<gradient>
+        - ' <gradient:dark_red:red>┏ Número de Ítems:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:dark_red:red>┠ Tiempo de Espera:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:dark_red:red>┗ Usos Máximos:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Click-Der</u> <i>para ver todos los niveles disponibles!'
+        - ''
+    purchasable:
+      material: SHIELD
+      name: <b><light_purple>✧<dark_purple>✦<light_purple>✧ <gradient:light_purple:dark_purple:light_purple>Kit {kit}</gradient> <light_purple>✧<dark_purple>✦<light_purple>✧
+      lore:
+        - ''
+        - <gradient:dark_purple:light_purple><b>Información del Kit:</gradient>
+        - ' <gradient:dark_purple:light_purple>┏ Nivel Máximo:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:dark_purple:light_purple>┠ Estado de Reclamo:</gradient> <#E5DCD9>Comprable'
+        - ' <gradient:dark_purple:light_purple>┗ Precio:</gradient> <#E5DCD9>{cost}'
+        - ' <#E5DCD9>┠ <i>¡Debes comprar este kit para obtener acceso!'
+        - ''
+        - <gradient:dark_purple:light_purple><b>Información del Nivel:<gradient>
+        - ' <gradient:dark_purple:light_purple>┏ Número de Ítems:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:dark_purple:light_purple>┠ Tiempo de Espera:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:dark_purple:light_purple>┗ Usos Máximos:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Click-Der</u> <i>para ver todos los niveles disponibles!'
+        - ''
+    overused:
+      material: SHIELD
+      name: <b><gray>✧<dark_gray>✦<gray>✧ <gradient:gray:dark_gray:gray>Kit {kit}</gradient> <gray>✧<dark_gray>✦<gray>✧
+      lore:
+        - ''
+        - <gradient:dark_gray:gray><b>Información del Kit:</gradient>
+        - ' <gradient:dark_gray:gray>┏ Nivel Máximo:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:dark_gray:gray>┠ Estado de Reclamo:</gradient> <#E5DCD9>Todo Reclamado'
+        - ' <gradient:dark_gray:gray>┗ Usos Actuales:</gradient> <#E5DCD9>{current_usages}'
+        - ' <#E5DCD9>┠ <i>¡Has alcanzado el límite de usos!'
+        - ''
+        - <gradient:dark_gray:gray><b>Información del Nivel:<gradient>
+        - ' <gradient:dark_gray:gray>┏ Nivel Actual:</gradient> <#E5DCD9>{current_level}'
+        - ' <gradient:dark_gray:gray>┠ Número de Ítems:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:dark_gray:gray>┠ Tiempo de Espera:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:dark_gray:gray>┗ Usos Máximos:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Click-Der</u> <i>para ver todos los niveles disponibles!'
+        - ''
+  Ultimate:
+    slots:
+      - 12
+    available:
+      material: DIAMOND_CHESTPLATE
+      trim-material: DIAMOND
+      trim-pattern: VEX
+      name: <b><green>✧<dark_green>✦<green>✧ <gradient:green:dark_green:green>Kit {kit}</gradient> <green>✧<dark_green>✦<green>✧
+      glow: true
+      lore:
+        - ''
+        - <gradient:dark_green:green><b>Información del Kit:</gradient>
+        - ' <gradient:dark_green:green>┏ Nivel Máximo:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:dark_green:green>┠ Estado de Canje:</gradient> <#E5DCD9>Disponible'
+        - ' <gradient:dark_green:green>┗ Usos Actuales:</gradient> <#E5DCD9>{current_usages}'
+        - ' <#E5DCD9>┠ <u>Click-Izq</u> <i>para reclamar este kit!'
+        - ''
+        - <gradient:dark_green:green><b>Información del Nivel:</gradient>
+        - ' <gradient:dark_green:green>┏ Nivel Actual:</gradient> <#E5DCD9>{current_level}'
+        - ' <gradient:dark_green:green>┠ Número de Elementos:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:dark_green:green>┠ Tiempo de Recarga:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:dark_green:green>┗ Usos Máximos:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Click-Der</u> <i>para ver todos los niveles disponibles!'
+        - ''
+    unavailable:
+      material: DIAMOND_CHESTPLATE
+      trim-material: DIAMOND
+      trim-pattern: VEX
+      name: <b><yellow>✧<gold>✦<yellow>✧ <gradient:yellow:gold:yellow>Kit {kit}</gradient> <yellow>✧<gold>✦<yellow>✧
+      lore:
+        - ''
+        - <gradient:gold:yellow><b>Información del Kit:</gradient>
+        - ' <gradient:gold:yellow>┏ Nivel Máximo:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:gold:yellow>┠ Estado de Canje:</gradient> <#E5DCD9>En Recarga'
+        - ' <gradient:gold:yellow>┠ Usos Actuales:</gradient> <#E5DCD9>{current_usages}'
+        - ' <gradient:gold:yellow>┗ Disponible En:</gradient> <#E5DCD9>{cooldown}'
+        - ' <#E5DCD9>┠ <i>¡Debes esperar el tiempo de recarga!'
+        - ''
+        - <gradient:gold:yellow><b>Información del Nivel:</gradient>
+        - ' <gradient:gold:yellow>┏ Nivel Actual:</gradient> <#E5DCD9>{current_level}'
+        - ' <gradient:gold:yellow>┠ Número de Elementos:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:gold:yellow>┠ Tiempo de Recarga:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:gold:yellow>┗ Usos Máximos:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Click-Der</u> <i>para ver todos los niveles disponibles!'
+        - ''
+    locked:
+      material: DIAMOND_CHESTPLATE
+      trim-material: DIAMOND
+      trim-pattern: VEX
+      name: <b><red>✧<dark_red>✦<red>✧ <gradient:red:dark_red:red>Kit {kit}</gradient> <red>✧<dark_red>✦<red>✧
+      lore:
+        - ''
+        - <gradient:dark_red:red><b>Información del Kit:</gradient>
+        - ' <gradient:dark_red:red>┏ Nivel Máximo:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:dark_red:red>┠ Estado de Canje:</gradient> <#E5DCD9>Bloqueado'
+        - ' <gradient:dark_red:red>┗ Rango Requerido:</gradient> <#E5DCD9>Miembro'
+        - ' <#E5DCD9>┠ <i>¡Necesitas un rango para desbloquear este kit!'
+        - ''
+        - <gradient:dark_red:red><b>Información del Nivel:</gradient>
+        - ' <gradient:dark_red:red>┏ Número de Elementos:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:dark_red:red>┠ Tiempo de Recarga:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:dark_red:red>┗ Usos Máximos:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Click-Der</u> <i>para ver todos los niveles disponibles!'
+        - ''
+    purchasable:
+      material: DIAMOND_CHESTPLATE
+      trim-material: DIAMOND
+      trim-pattern: VEX
+      name: <b><light_purple>✧<dark_purple>✦<light_purple>✧ <gradient:light_purple:dark_purple:light_purple>Kit {kit}</gradient> <light_purple>✧<dark_purple>✦<light_purple>✧
+      lore:
+        - ''
+        - <gradient:dark_purple:light_purple><b>Información del Kit:</gradient>
+        - ' <gradient:dark_purple:light_purple>┏ Nivel Máximo:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:dark_purple:light_purple>┠ Estado de Canje:</gradient> <#E5DCD9>Disponible para Compra'
+        - ' <gradient:dark_purple:light_purple>┗ Precio de Compra:</gradient> <#E5DCD9>{cost}'
+        - ' <#E5DCD9>┠ <i>¡Debes comprar este kit para acceder a él!'
+        - ''
+        - <gradient:dark_purple:light_purple><b>Información del Nivel:</gradient>
+        - ' <gradient:dark_purple:light_purple>┏ Número de Elementos:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:dark_purple:light_purple>┠ Tiempo de Recarga:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:dark_purple:light_purple>┗ Usos Máximos:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Click-Der</u> <i>para ver todos los niveles disponibles!'
+        - ''
+    overused:
+      material: DIAMOND_CHESTPLATE
+      trim-material: DIAMOND
+      trim-pattern: VEX
+      name: <b><gray>✧<dark_gray>✦<gray>✧ <gradient:gray:dark_gray:gray>Kit {kit}</gradient> <gray>✧<dark_gray>✦<gray>✧
+      lore:
+        - ''
+        - <gradient:dark_gray:gray><b>Información del Kit:</gradient>
+        - ' <gradient:dark_gray:gray>┏ Nivel Máximo:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:dark_gray:gray>┠ Estado de Canje:</gradient> <#E5DCD9>Todos Reclamos Hechos'
+        - ' <gradient:dark_gray:gray>┗ Usos Actuales:</gradient> <#E5DCD9>{current_usages}'
+        - ' <#E5DCD9>┠ <i>¡Has alcanzado el límite de utilización!'
+        - ''
+        - <gradient:dark_gray:gray><b>Información del Nivel:</gradient>
+        - ' <gradient:dark_gray:gray>┏ Nivel Actual:</gradient> <#E5DCD9>{current_level}'
+        - ' <gradient:dark_gray:gray>┠ Número de Elementos:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:dark_gray:gray>┠ Tiempo de Recarga:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:dark_gray:gray>┗ Usos Máximos:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Click-Der</u> <i>para ver todos los niveles disponibles!'
+        - ''
+  Swordsman:
+    slots:
+      - 22
+    available:
+      material: DIAMOND_SWORD
+      name: <b><green>✧<dark_green>✦<green>✧ <gradient:green:dark_green:green>Kit {kit}</gradient> <green>✧<dark_green>✦<green>✧
+      glow: true
+      lore:
+        - ''
+        - <gradient:dark_green:green><b>Información del Kit:</gradient>
+        - ' <gradient:dark_green:green>┏ Nivel Máximo:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:dark_green:green>┠ Estado de Canje:</gradient> <#E5DCD9>Disponible'
+        - ' <gradient:dark_green:green>┗ Usos Actuales:</gradient> <#E5DCD9>{current_usages}'
+        - ' <#E5DCD9>┠ <u>Click-Izq</u> <i>para reclamar este kit!'
+        - ''
+        - <gradient:dark_green:green><b>Información de Nivel:</gradient>
+        - ' <gradient:dark_green:green>┏ Nivel Actual:</gradient> <#E5DCD9>{current_level}'
+        - ' <gradient:dark_green:green>┠ Número de Ítems:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:dark_green:green>┠ Enfriamiento:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:dark_green:green>┗ Usos Máximos:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Click-Der</u> <i>para ver todos los niveles disponibles!'
+        - ''
+    unavailable:
+      material: DIAMOND_SWORD
+      name: <b><yellow>✧<gold>✦<yellow>✧ <gradient:yellow:gold:yellow>Kit {kit}</gradient> <yellow>✧<gold>✦<yellow>✧
+      lore:
+        - ''
+        - <gradient:gold:yellow><b>Información del Kit:</gradient>
+        - ' <gradient:gold:yellow>┏ Nivel Máximo:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:gold:yellow>┠ Estado de Canje:</gradient> <#E5DCD9>En Enfriamiento'
+        - ' <gradient:gold:yellow>┠ Usos Actuales:</gradient> <#E5DCD9>{current_usages}'
+        - ' <gradient:gold:yellow>┗ Disponible En:</gradient> <#E5DCD9>{cooldown}'
+        - ' <#E5DCD9>┠ <i>¡Tienes que esperar el enfriamiento!'
+        - ''
+        - <gradient:gold:yellow><b>Información de Nivel:</gradient>
+        - ' <gradient:gold:yellow>┏ Nivel Actual:</gradient> <#E5DCD9>{current_level}'
+        - ' <gradient:gold:yellow>┠ Número de Ítems:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:gold:yellow>┠ Enfriamiento:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:gold:yellow>┗ Usos Máximos:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Click-Der</u> <i>para ver todos los niveles disponibles!'
+        - ''
+    locked:
+      material: DIAMOND_SWORD
+      name: <b><red>✧<dark_red>✦<red>✧ <gradient:red:dark_red:red>Kit {kit}</gradient> <red>✧<dark_red>✦<red>✧
+      lore:
+        - ''
+        - <gradient:dark_red:red><b>Información del Kit:</gradient>
+        - ' <gradient:dark_red:red>┏ Nivel Máximo:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:dark_red:red>┠ Estado de Canje:</gradient> <#E5DCD9>Bloqueado'
+        - ' <gradient:dark_red:red>┗ Rango Requerido:</gradient> <#E5DCD9>Miembro'
+        - ' <#E5DCD9>┠ <i>¡Necesitas un rango para desbloquear este kit!'
+        - ''
+        - <gradient:dark_red:red><b>Información de Nivel:</gradient>
+        - ' <gradient:dark_red:red>┏ Número de Ítems:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:dark_red:red>┠ Enfriamiento:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:dark_red:red>┗ Usos Máximos:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Click-Der</u> <i>para ver todos los niveles disponibles!'
+        - ''
+    purchasable:
+      material: DIAMOND_SWORD
+      name: <b><light_purple>✧<dark_purple>✦<light_purple>✧ <gradient:light_purple:dark_purple:light_purple>Kit {kit}</gradient> <light_purple>✧<dark_purple>✦<light_purple>✧
+      lore:
+        - ''
+        - <gradient:dark_purple:light_purple><b>Información del Kit:</gradient>
+        - ' <gradient:dark_purple:light_purple>┏ Nivel Máximo:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:dark_purple:light_purple>┠ Estado de Canje:</gradient> <#E5DCD9>Comprable'
+        - ' <gradient:dark_purple:light_purple>┗ Precio de Compra:</gradient> <#E5DCD9>{cost}'
+        - ' <#E5DCD9>┠ <i>¡Debes comprar este kit para obtener acceso!'
+        - ''
+        - <gradient:dark_purple:light_purple><b>Información de Nivel:</gradient>
+        - ' <gradient:dark_purple:light_purple>┏ Número de Ítems:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:dark_purple:light_purple>┠ Enfriamiento:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:dark_purple:light_purple>┗ Usos Máximos:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Click-Der</u> <i>para ver todos los niveles disponibles!'
+        - ''
+    overused:
+      material: DIAMOND_SWORD
+      name: <b><gray>✧<dark_gray>✦<gray>✧ <gradient:gray:dark_gray:gray>Kit {kit}</gradient> <gray>✧<dark_gray>✦<gray>✧
+      lore:
+        - ''
+        - <gradient:dark_gray:gray><b>Información del Kit:</gradient>
+        - ' <gradient:dark_gray:gray>┏ Nivel Máximo:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:dark_gray:gray>┠ Estado de Canje:</gradient> <#E5DCD9>Todos Reclamados'
+        - ' <gradient:dark_gray:gray>┗ Usos Actuales:</gradient> <#E5DCD9>{current_usages}'
+        - ' <#E5DCD9>┠ <i>¡Has alcanzado los límites de utilización!'
+        - ''
+        - <gradient:dark_gray:gray><b>Información de Nivel:</gradient>
+        - ' <gradient:dark_gray:gray>┏ Nivel Actual:</gradient> <#E5DCD9>{current_level}'
+        - ' <gradient:dark_gray:gray>┠ Número de Ítems:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:dark_gray:gray>┠ Enfriamiento:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:dark_gray:gray>┗ Usos Máximos:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Click-Der</u> <i>para ver todos los niveles disponibles!'
+        - ''
+  Potions:
+    slots:
+      - 21
+    available:
+      material: POTION
+      color: RED
+      name: <b><green>✧<dark_green>✦<green>✧ <gradient:green:dark_green:green>Kit {kit}</gradient> <green>✧<dark_green>✦<green>✧
+      glow: true
+      lore:
+        - ''
+        - <gradient:dark_green:green><b>Información del Kit:</gradient>
+        - ' <gradient:dark_green:green>┏ Nivel Máximo:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:dark_green:green>┠ Estado de Canje:</gradient> <#E5DCD9>Disponible'
+        - ' <gradient:dark_green:green>┗ Usos Actuales:</gradient> <#E5DCD9>{current_usages}'
+        - ' <#E5DCD9>┠ <u>Click-Izq</u> <i>para reclamar este kit!'
+        - ''
+        - <gradient:dark_green:green><b>Información de Nivel:</gradient>
+        - ' <gradient:dark_green:green>┏ Nivel Actual:</gradient> <#E5DCD9>{current_level}'
+        - ' <gradient:dark_green:green>┠ Número de Ítems:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:dark_green:green>┠ Enfriamiento:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:dark_green:green>┗ Usos Máximos:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Click-Der</u> <i>para ver todos los niveles disponibles!'
+        - ''
+    unavailable:
+      material: POTION
+      color: RED
+      name: <b><yellow>✧<gold>✦<yellow>✧ <gradient:yellow:gold:yellow>Kit {kit}</gradient> <yellow>✧<gold>✦<yellow>✧
+      lore:
+        - ''
+        - <gradient:gold:yellow><b>Información del Kit:</gradient>
+        - ' <gradient:gold:yellow>┏ Nivel Máximo:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:gold:yellow>┠ Estado de Canje:</gradient> <#E5DCD9>En Enfriamiento'
+        - ' <gradient:gold:yellow>┠ Usos Actuales:</gradient> <#E5DCD9>{current_usages}'
+        - ' <gradient:gold:yellow>┗ Disponible En:</gradient> <#E5DCD9>{cooldown}'
+        - ' <#E5DCD9>┠ <i>¡Tienes que esperar el enfriamiento!'
+        - ''
+        - <gradient:gold:yellow><b>Información de Nivel:</gradient>
+        - ' <gradient:gold:yellow>┏ Nivel Actual:</gradient> <#E5DCD9>{current_level}'
+        - ' <gradient:gold:yellow>┠ Número de Ítems:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:gold:yellow>┠ Enfriamiento:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:gold:yellow>┗ Usos Máximos:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Click-Der</u> <i>para ver todos los niveles disponibles!'
+        - ''
+    locked:
+      material: POTION
+      color: RED
+      name: <b><red>✧<dark_red>✦<red>✧ <gradient:red:dark_red:red>Kit {kit}</gradient> <red>✧<dark_red>✦<red>✧
+      lore:
+        - ''
+        - <gradient:dark_red:red><b>Información del Kit:</gradient>
+        - ' <gradient:dark_red:red>┏ Nivel Máximo:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:dark_red:red>┠ Estado de Canje:</gradient> <#E5DCD9>Bloqueado'
+        - ' <gradient:dark_red:red>┗ Rango Requerido:</gradient> <#E5DCD9>Miembro'
+        - ' <#E5DCD9>┠ <i>¡Necesitas un rango para desbloquear este kit!'
+        - ''
+        - <gradient:dark_red:red><b>Información de Nivel:</gradient>
+        - ' <gradient:dark_red:red>┏ Número de Ítems:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:dark_red:red>┠ Enfriamiento:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:dark_red:red>┗ Usos Máximos:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Click-Der</u> <i>para ver todos los niveles disponibles!'
+        - ''
+    purchasable:
+      material: POTION
+      color: RED
+      name: <b><light_purple>✧<dark_purple>✦<light_purple>✧ <gradient:light_purple:dark_purple:light_purple>Kit {kit}</gradient> <light_purple>✧<dark_purple>✦<light_purple>✧
+      lore:
+        - ''
+        - <gradient:dark_purple:light_purple><b>Información del Kit:</gradient>
+        - ' <gradient:dark_purple:light_purple>┏ Nivel Máximo:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:dark_purple:light_purple>┠ Estado de Canje:</gradient> <#E5DCD9>Comprable'
+        - ' <gradient:dark_purple:light_purple>┗ Precio de Compra:</gradient> <#E5DCD9>{cost}'
+        - ' <#E5DCD9>┠ <i>¡Debes comprar este kit para obtener acceso!'
+        - ''
+        - <gradient:dark_purple:light_purple><b>Información de Nivel:</gradient>
+        - ' <gradient:dark_purple:light_purple>┏ Número de Ítems:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:dark_purple:light_purple>┠ Enfriamiento:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:dark_purple:light_purple>┗ Usos Máximos:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Click-Der</u> <i>para ver todos los niveles disponibles!'
+        - ''
+    overused:
+      material: POTION
+      color: RED
+      name: <b><gray>✧<dark_gray>✦<gray>✧ <gradient:gray:dark_gray:gray>Kit {kit}</gradient> <gray>✧<dark_gray>✦<gray>✧
+      lore:
+        - ''
+        - <gradient:dark_gray:gray><b>Información del Kit:</gradient>
+        - ' <gradient:dark_gray:gray>┏ Nivel Máximo:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:dark_gray:gray>┠ Estado de Canje:</gradient> <#E5DCD9>Todos Reclamados'
+        - ' <gradient:dark_gray:gray>┗ Usos Actuales:</gradient> <#E5DCD9>{current_usages}'
+        - ' <#E5DCD9>┠ <i>¡Has alcanzado los límites de utilización!'
+        - ''
+        - <gradient:dark_gray:gray><b>Información de Nivel:</gradient>
+        - ' <gradient:dark_gray:gray>┏ Nivel Actual:</gradient> <#E5DCD9>{current_level}'
+        - ' <gradient:dark_gray:gray>┠ Número de Ítems:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:dark_gray:gray>┠ Enfriamiento:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:dark_gray:gray>┗ Usos Máximos:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Click-Der</u> <i>para ver todos los niveles disponibles!'
+        - ''
+  Pyro:
+    slots:
+      - 14
+    available:
+      material: FLINT_AND_STEEL
+      name: <b><green>✧<dark_green>✦<green>✧ <gradient:green:dark_green:green>Kit {kit}</gradient> <green>✧<dark_green>✦<green>✧
+      glow: true
+      lore:
+        - ''
+        - <gradient:dark_green:green><b>Información del Kit:</gradient>
+        - ' <gradient:dark_green:green>┏ Nivel Máximo:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:dark_green:green>┠ Estado de Canje:</gradient> <#E5DCD9>Disponible'
+        - ' <gradient:dark_green:green>┗ Usos Actuales:</gradient> <#E5DCD9>{current_usages}'
+        - ' <#E5DCD9>┠ <u>Click-Izq</u> <i>para reclamar este kit!'
+        - ''
+        - <gradient:dark_green:green><b>Información de Nivel:</gradient>
+        - ' <gradient:dark_green:green>┏ Nivel Actual:</gradient> <#E5DCD9>{current_level}'
+        - ' <gradient:dark_green:green>┠ Número de Ítems:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:dark_green:green>┠ Enfriamiento:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:dark_green:green>┗ Usos Máximos:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Click-Der</u> <i>para ver todos los niveles disponibles!'
+        - ''
+    unavailable:
+      material: FLINT_AND_STEEL
+      name: <b><yellow>✧<gold>✦<yellow>✧ <gradient:yellow:gold:yellow>Kit {kit}</gradient> <yellow>✧<gold>✦<yellow>✧
+      lore:
+        - ''
+        - <gradient:gold:yellow><b>Información del Kit:</gradient>
+        - ' <gradient:gold:yellow>┏ Nivel Máximo:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:gold:yellow>┠ Estado de Canje:</gradient> <#E5DCD9>En Enfriamiento'
+        - ' <gradient:gold:yellow>┠ Usos Actuales:</gradient> <#E5DCD9>{current_usages}'
+        - ' <gradient:gold:yellow>┗ Disponible En:</gradient> <#E5DCD9>{cooldown}'
+        - ' <#E5DCD9>┠ <i>¡Tienes que esperar el enfriamiento!'
+        - ''
+        - <gradient:gold:yellow><b>Información de Nivel:</gradient>
+        - ' <gradient:gold:yellow>┏ Nivel Actual:</gradient> <#E5DCD9>{current_level}'
+        - ' <gradient:gold:yellow>┠ Número de Ítems:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:gold:yellow>┠ Enfriamiento:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:gold:yellow>┗ Usos Máximos:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Click-Der</u> <i>para ver todos los niveles disponibles!'
+        - ''
+    locked:
+      material: FLINT_AND_STEEL
+      name: <b><red>✧<dark_red>✦<red>✧ <gradient:red:dark_red:red>Kit {kit}</gradient> <red>✧<dark_red>✦<red>✧
+      lore:
+        - ''
+        - <gradient:dark_red:red><b>Información del Kit:</gradient>
+        - ' <gradient:dark_red:red>┏ Nivel Máximo:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:dark_red:red>┠ Estado de Canje:</gradient> <#E5DCD9>Bloqueado'
+        - ' <gradient:dark_red:red>┗ Rango Requerido:</gradient> <#E5DCD9>Miembro'
+        - ' <#E5DCD9>┠ <i>¡Necesitas un rango para desbloquear este kit!'
+        - ''
+        - <gradient:dark_red:red><b>Información de Nivel:</gradient>
+        - ' <gradient:dark_red:red>┏ Número de Ítems:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:dark_red:red>┠ Enfriamiento:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:dark_red:red>┗ Usos Máximos:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Click-Der</u> <i>para ver todos los niveles disponibles!'
+        - ''
+    purchasable:
+      material: FLINT_AND_STEEL
+      name: <b><light_purple>✧<dark_purple>✦<light_purple>✧ <gradient:light_purple:dark_purple:light_purple>Kit {kit}</gradient> <light_purple>✧<dark_purple>✦<light_purple>✧
+      lore:
+        - ''
+        - <gradient:dark_purple:light_purple><b>Información del Kit:</gradient>
+        - ' <gradient:dark_purple:light_purple>┏ Nivel Máximo:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:dark_purple:light_purple>┠ Estado de Canje:</gradient> <#E5DCD9>Comprable'
+        - ' <gradient:dark_purple:light_purple>┗ Precio de Compra:</gradient> <#E5DCD9>{cost}'
+        - ' <#E5DCD9>┠ <i>¡Debes comprar este kit para obtener acceso!'
+        - ''
+        - <gradient:dark_purple:light_purple><b>Información de Nivel:</gradient>
+        - ' <gradient:dark_purple:light_purple>┏ Número de Ítems:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:dark_purple:light_purple>┠ Enfriamiento:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:dark_purple:light_purple>┗ Usos Máximos:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Click-Der</u> <i>para ver todos los niveles disponibles!'
+        - ''
+    overused:
+      material: FLINT_AND_STEEL
+      name: <b><gray>✧<dark_gray>✦<gray>✧ <gradient:gray:dark_gray:gray>Kit {kit}</gradient> <gray>✧<dark_gray>✦<gray>✧
+      lore:
+        - ''
+        - <gradient:dark_gray:gray><b>Información del Kit:</gradient>
+        - ' <gradient:dark_gray:gray>┏ Nivel Máximo:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:dark_gray:gray>┠ Estado de Canje:</gradient> <#E5DCD9>Todos Reclamados'
+        - ' <gradient:dark_gray:gray>┗ Usos Actuales:</gradient> <#E5DCD9>{current_usages}'
+        - ' <#E5DCD9>┠ <i>¡Has alcanzado los límites de utilización!'
+        - ''
+        - <gradient:dark_gray:gray><b>Información de Nivel:</gradient>
+        - ' <gradient:dark_gray:gray>┏ Nivel Actual:</gradient> <#E5DCD9>{current_level}'
+        - ' <gradient:dark_gray:gray>┠ Número de Ítems:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:dark_gray:gray>┠ Enfriamiento:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:dark_gray:gray>┗ Usos Máximos:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Click-Der</u> <i>para ver todos los niveles disponibles!'
+        - ''
+  Ninja:
+    slots:
+      - 24
+    available:
+      material: ELYTRA
+      name: <b><green>✧<dark_green>✦<green>✧ <gradient:green:dark_green:green>Kit {kit}</gradient> <green>✧<dark_green>✦<green>✧
+      glow: true
+      lore:
+        - ''
+        - <gradient:dark_green:green><b>Información del Kit:</gradient>
+        - ' <gradient:dark_green:green>┏ Nivel Máximo:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:dark_green:green>┠ Estado de Canje:</gradient> <#E5DCD9>Disponible'
+        - ' <gradient:dark_green:green>┗ Usos Actuales:</gradient> <#E5DCD9>{current_usages}'
+        - ' <#E5DCD9>┠ <u>Click-Izq</u> <i>para reclamar este kit!'
+        - ''
+        - <gradient:dark_green:green><b>Información de Nivel:</gradient>
+        - ' <gradient:dark_green:green>┏ Nivel Actual:</gradient> <#E5DCD9>{current_level}'
+        - ' <gradient:dark_green:green>┠ Número de Ítems:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:dark_green:green>┠ Enfriamiento:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:dark_green:green>┗ Usos Máximos:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Click-Der</u> <i>para ver todos los niveles disponibles!'
+        - ''
+    unavailable:
+      material: ELYTRA
+      name: <b><yellow>✧<gold>✦<yellow>✧ <gradient:yellow:gold:yellow>Kit {kit}</gradient> <yellow>✧<gold>✦<yellow>✧
+      lore:
+        - ''
+        - <gradient:gold:yellow><b>Información del Kit:</gradient>
+        - ' <gradient:gold:yellow>┏ Nivel Máximo:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:gold:yellow>┠ Estado de Canje:</gradient> <#E5DCD9>En Enfriamiento'
+        - ' <gradient:gold:yellow>┠ Usos Actuales:</gradient> <#E5DCD9>{current_usages}'
+        - ' <gradient:gold:yellow>┗ Disponible En:</gradient> <#E5DCD9>{cooldown}'
+        - ' <#E5DCD9>┠ <i>¡Tienes que esperar el enfriamiento!'
+        - ''
+        - <gradient:gold:yellow><b>Información de Nivel:</gradient>
+        - ' <gradient:gold:yellow>┏ Nivel Actual:</gradient> <#E5DCD9>{current_level}'
+        - ' <gradient:gold:yellow>┠ Número de Ítems:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:gold:yellow>┠ Enfriamiento:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:gold:yellow>┗ Usos Máximos:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Click-Der</u> <i>para ver todos los niveles disponibles!'
+        - ''
+    locked:
+      material: ELYTRA
+      name: <b><red>✧<dark_red>✦<red>✧ <gradient:red:dark_red:red>Kit {kit}</gradient> <red>✧<dark_red>✦<red>✧
+      lore:
+        - ''
+        - <gradient:dark_red:red><b>Información del Kit:</gradient>
+        - ' <gradient:dark_red:red>┏ Nivel Máximo:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:dark_red:red>┠ Estado de Canje:</gradient> <#E5DCD9>Bloqueado'
+        - ' <gradient:dark_red:red>┗ Rango Requerido:</gradient> <#E5DCD9>Miembro'
+        - ' <#E5DCD9>┠ <i>¡Necesitas un rango para desbloquear este kit!'
+        - ''
+        - <gradient:dark_red:red><b>Información de Nivel:</gradient>
+        - ' <gradient:dark_red:red>┏ Número de Ítems:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:dark_red:red>┠ Enfriamiento:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:dark_red:red>┗ Usos Máximos:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Click-Der</u> <i>para ver todos los niveles disponibles!'
+        - ''
+    purchasable:
+      material: ELYTRA
+      name: <b><light_purple>✧<dark_purple>✦<light_purple>✧ <gradient:light_purple:dark_purple:light_purple>Kit {kit}</gradient> <light_purple>✧<dark_purple>✦<light_purple>✧
+      lore:
+        - ''
+        - <gradient:dark_purple:light_purple><b>Información del Kit:</gradient>
+        - ' <gradient:dark_purple:light_purple>┏ Nivel Máximo:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:dark_purple:light_purple>┠ Estado de Canje:</gradient> <#E5DCD9>Comprable'
+        - ' <gradient:dark_purple:light_purple>┗ Precio de Compra:</gradient> <#E5DCD9>{cost}'
+        - ' <#E5DCD9>┠ <i>¡Debes comprar este kit para obtener acceso!'
+        - ''
+        - <gradient:dark_purple:light_purple><b>Información de Nivel:</gradient>
+        - ' <gradient:dark_purple:light_purple>┏ Número de Ítems:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:dark_purple:light_purple>┠ Enfriamiento:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:dark_purple:light_purple>┗ Usos Máximos:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Click-Der</u> <i>para ver todos los niveles disponibles!'
+        - ''
+    overused:
+      material: ELYTRA
+      name: <b><gray>✧<dark_gray>✦<gray>✧ <gradient:gray:dark_gray:gray>Kit {kit}</gradient> <gray>✧<dark_gray>✦<gray>✧
+      lore:
+        - ''
+        - <gradient:dark_gray:gray><b>Información del Kit:</gradient>
+        - ' <gradient:dark_gray:gray>┏ Nivel Máximo:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:dark_gray:gray>┠ Estado de Canje:</gradient> <#E5DCD9>Todos Reclamados'
+        - ' <gradient:dark_gray:gray>┗ Usos Actuales:</gradient> <#E5DCD9>{current_usages}'
+        - ' <#E5DCD9>┠ <i>¡Has alcanzado los límites de utilización!'
+        - ''
+        - <gradient:dark_gray:gray><b>Información de Nivel:</gradient>
+        - ' <gradient:dark_gray:gray>┏ Nivel Actual:</gradient> <#E5DCD9>{current_level}'
+        - ' <gradient:dark_gray:gray>┠ Número de Ítems:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:dark_gray:gray>┠ Enfriamiento:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:dark_gray:gray>┗ Usos Máximos:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Click-Der</u> <i>para ver todos los niveles disponibles!'
+        - ''
+  Archer:
+    slots:
+      - 16
+    available:
+      material: BOW
+      name: <b><green>✧<dark_green>✦<green>✧ <gradient:green:dark_green:green>Kit {kit}</gradient> <green>✧<dark_green>✦<green>✧
+      glow: true
+      lore:
+        - ''
+        - <gradient:dark_green:green><b>Información del Kit:</gradient>
+        - ' <gradient:dark_green:green>┏ Nivel Máximo:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:dark_green:green>┠ Estado de Canje:</gradient> <#E5DCD9>Disponible'
+        - ' <gradient:dark_green:green>┗ Usos Actuales:</gradient> <#E5DCD9>{current_usages}'
+        - ' <#E5DCD9>┠ <u>Click-Izq</u> <i>para reclamar este kit!'
+        - ''
+        - <gradient:dark_green:green><b>Información de Nivel:</gradient>
+        - ' <gradient:dark_green:green>┏ Nivel Actual:</gradient> <#E5DCD9>{current_level}'
+        - ' <gradient:dark_green:green>┠ Número de Ítems:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:dark_green:green>┠ Enfriamiento:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:dark_green:green>┗ Usos Máximos:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Click-Der</u> <i>para ver todos los niveles disponibles!'
+        - ''
+    unavailable:
+      material: BOW
+      name: <b><yellow>✧<gold>✦<yellow>✧ <gradient:yellow:gold:yellow>Kit {kit}</gradient> <yellow>✧<gold>✦<yellow>✧
+      lore:
+        - ''
+        - <gradient:gold:yellow><b>Información del Kit:</gradient>
+        - ' <gradient:gold:yellow>┏ Nivel Máximo:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:gold:yellow>┠ Estado de Canje:</gradient> <#E5DCD9>En Enfriamiento'
+        - ' <gradient:gold:yellow>┠ Usos Actuales:</gradient> <#E5DCD9>{current_usages}'
+        - ' <gradient:gold:yellow>┗ Disponible En:</gradient> <#E5DCD9>{cooldown}'
+        - ' <#E5DCD9>┠ <i>¡Tienes que esperar el enfriamiento!'
+        - ''
+        - <gradient:gold:yellow><b>Información de Nivel:</gradient>
+        - ' <gradient:gold:yellow>┏ Nivel Actual:</gradient> <#E5DCD9>{current_level}'
+        - ' <gradient:gold:yellow>┠ Número de Ítems:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:gold:yellow>┠ Enfriamiento:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:gold:yellow>┗ Usos Máximos:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Click-Der</u> <i>para ver todos los niveles disponibles!'
+        - ''
+    locked:
+      material: BOW
+      name: <b><red>✧<dark_red>✦<red>✧ <gradient:red:dark_red:red>Kit {kit}</gradient> <red>✧<dark_red>✦<red>✧
+      lore:
+        - ''
+        - <gradient:dark_red:red><b>Información del Kit:</gradient>
+        - ' <gradient:dark_red:red>┏ Nivel Máximo:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:dark_red:red>┠ Estado de Canje:</gradient> <#E5DCD9>Bloqueado'
+        - ' <gradient:dark_red:red>┗ Rango Requerido:</gradient> <#E5DCD9>Miembro'
+        - ' <#E5DCD9>┠ <i>¡Necesitas un rango para desbloquear este kit!'
+        - ''
+        - <gradient:dark_red:red><b>Información de Nivel:</gradient>
+        - ' <gradient:dark_red:red>┏ Número de Ítems:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:dark_red:red>┠ Enfriamiento:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:dark_red:red>┗ Usos Máximos:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Click-Der</u> <i>para ver todos los niveles disponibles!'
+        - ''
+    purchasable:
+      material: BOW
+      name: <b><light_purple>✧<dark_purple>✦<light_purple>✧ <gradient:light_purple:dark_purple:light_purple>Kit {kit}</gradient> <light_purple>✧<dark_purple>✦<light_purple>✧
+      lore:
+        - ''
+        - <gradient:dark_purple:light_purple><b>Información del Kit:</gradient>
+        - ' <gradient:dark_purple:light_purple>┏ Nivel Máximo:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:dark_purple:light_purple>┠ Estado de Canje:</gradient> <#E5DCD9>Comprable'
+        - ' <gradient:dark_purple:light_purple>┗ Precio de Compra:</gradient> <#E5DCD9>{cost}'
+        - ' <#E5DCD9>┠ <i>¡Debes comprar este kit para obtener acceso!'
+        - ''
+        - <gradient:dark_purple:light_purple><b>Información de Nivel:</gradient>
+        - ' <gradient:dark_purple:light_purple>┏ Número de Ítems:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:dark_purple:light_purple>┠ Enfriamiento:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:dark_purple:light_purple>┗ Usos Máximos:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Click-Der</u> <i>para ver todos los niveles disponibles!'
+        - ''
+    overused:
+      material: BOW
+      name: <b><gray>✧<dark_gray>✦<gray>✧ <gradient:gray:dark_gray:gray>Kit {kit}</gradient> <gray>✧<dark_gray>✦<gray>✧
+      lore:
+        - ''
+        - <gradient:dark_gray:gray><b>Información del Kit:</gradient>
+        - ' <gradient:dark_gray:gray>┏ Nivel Máximo:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:dark_gray:gray>┠ Estado de Canje:</gradient> <#E5DCD9>Todos Reclamados'
+        - ' <gradient:dark_gray:gray>┗ Usos Actuales:</gradient> <#E5DCD9>{current_usages}'
+        - ' <#E5DCD9>┠ <i>¡Has alcanzado los límites de utilización!'
+        - ''
+        - <gradient:dark_gray:gray><b>Información de Nivel:</gradient>
+        - ' <gradient:dark_gray:gray>┏ Nivel Actual:</gradient> <#E5DCD9>{current_level}'
+        - ' <gradient:dark_gray:gray>┠ Número de Ítems:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:dark_gray:gray>┠ Enfriamiento:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:dark_gray:gray>┗ Usos Máximos:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Click-Der</u> <i>para ver todos los niveles disponibles!'
+        - ''
+  Infected:
+    slots:
+      - 26
+    available:
+      material: SPLASH_POTION
+      name: <b><green>✧<dark_green>✦<green>✧ <gradient:green:dark_green:green>Kit {kit}</gradient> <green>✧<dark_green>✦<green>✧
+      glow: true
+      lore:
+        - ''
+        - <gradient:dark_green:green><b>Información del Kit:</gradient>
+        - ' <gradient:dark_green:green>┏ Nivel Máximo:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:dark_green:green>┠ Estado de Canje:</gradient> <#E5DCD9>Disponible'
+        - ' <gradient:dark_green:green>┗ Usos Actuales:</gradient> <#E5DCD9>{current_usages}'
+        - ' <#E5DCD9>┠ <u>Click-Izq</u> <i>para reclamar este kit!'
+        - ''
+        - <gradient:dark_green:green><b>Información de Nivel:</gradient>
+        - ' <gradient:dark_green:green>┏ Nivel Actual:</gradient> <#E5DCD9>{current_level}'
+        - ' <gradient:dark_green:green>┠ Número de Ítems:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:dark_green:green>┠ Enfriamiento:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:dark_green:green>┗ Usos Máximos:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Click-Der</u> <i>para ver todos los niveles disponibles!'
+        - ''
+    unavailable:
+      material: SPLASH_POTION
+      name: <b><yellow>✧<gold>✦<yellow>✧ <gradient:yellow:gold:yellow>Kit {kit}</gradient> <yellow>✧<gold>✦<yellow>✧
+      lore:
+        - ''
+        - <gradient:gold:yellow><b>Información del Kit:</gradient>
+        - ' <gradient:gold:yellow>┏ Nivel Máximo:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:gold:yellow>┠ Estado de Canje:</gradient> <#E5DCD9>En Enfriamiento'
+        - ' <gradient:gold:yellow>┠ Usos Actuales:</gradient> <#E5DCD9>{current_usages}'
+        - ' <gradient:gold:yellow>┗ Disponible En:</gradient> <#E5DCD9>{cooldown}'
+        - ' <#E5DCD9>┠ <i>¡Tienes que esperar el enfriamiento!'
+        - ''
+        - <gradient:gold:yellow><b>Información de Nivel:</gradient>
+        - ' <gradient:gold:yellow>┏ Nivel Actual:</gradient> <#E5DCD9>{current_level}'
+        - ' <gradient:gold:yellow>┠ Número de Ítems:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:gold:yellow>┠ Enfriamiento:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:gold:yellow>┗ Usos Máximos:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Click-Der</u> <i>para ver todos los niveles disponibles!'
+        - ''
+    locked:
+      material: SPLASH_POTION
+      name: <b><red>✧<dark_red>✦<red>✧ <gradient:red:dark_red:red>Kit {kit}</gradient> <red>✧<dark_red>✦<red>✧
+      lore:
+        - ''
+        - <gradient:dark_red:red><b>Información del Kit:</gradient>
+        - ' <gradient:dark_red:red>┏ Nivel Máximo:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:dark_red:red>┠ Estado de Canje:</gradient> <#E5DCD9>Bloqueado'
+        - ' <gradient:dark_red:red>┗ Rango Requerido:</gradient> <#E5DCD9>Miembro'
+        - ' <#E5DCD9>┠ <i>¡Necesitas un rango para desbloquear este kit!'
+        - ''
+        - <gradient:dark_red:red><b>Información de Nivel:</gradient>
+        - ' <gradient:dark_red:red>┏ Número de Ítems:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:dark_red:red>┠ Enfriamiento:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:dark_red:red>┗ Usos Máximos:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Click-Der</u> <i>para ver todos los niveles disponibles!'
+        - ''
+    purchasable:
+      material: SPLASH_POTION
+      name: <b><light_purple>✧<dark_purple>✦<light_purple>✧ <gradient:light_purple:dark_purple:light_purple>Kit {kit}</gradient> <light_purple>✧<dark_purple>✦<light_purple>✧
+      lore:
+        - ''
+        - <gradient:dark_purple:light_purple><b>Información del Kit:</gradient>
+        - ' <gradient:dark_purple:light_purple>┏ Nivel Máximo:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:dark_purple:light_purple>┠ Estado de Canje:</gradient> <#E5DCD9>Comprable'
+        - ' <gradient:dark_purple:light_purple>┗ Precio de Compra:</gradient> <#E5DCD9>{cost}'
+        - ' <#E5DCD9>┠ <i>¡Debes comprar este kit para obtener acceso!'
+        - ''
+        - <gradient:dark_purple:light_purple><b>Información de Nivel:</gradient>
+        - ' <gradient:dark_purple:light_purple>┏ Número de Ítems:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:dark_purple:light_purple>┠ Enfriamiento:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:dark_purple:light_purple>┗ Usos Máximos:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Click-Der</u> <i>para ver todos los niveles disponibles!'
+        - ''
+    overused:
+      material: SPLASH_POTION
+      name: <b><gray>✧<dark_gray>✦<gray>✧ <gradient:gray:dark_gray:gray>Kit {kit}</gradient> <gray>✧<dark_gray>✦<gray>✧
+      lore:
+        - ''
+        - <gradient:dark_gray:gray><b>Información del Kit:</gradient>
+        - ' <gradient:dark_gray:gray>┏ Nivel Máximo:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:dark_gray:gray>┠ Estado de Canje:</gradient> <#E5DCD9>Todos Reclamados'
+        - ' <gradient:dark_gray:gray>┗ Usos Actuales:</gradient> <#E5DCD9>{current_usages}'
+        - ' <#E5DCD9>┠ <i>¡Has alcanzado los límites de utilización!'
+        - ''
+        - <gradient:dark_gray:gray><b>Información de Nivel:</gradient>
+        - ' <gradient:dark_gray:gray>┏ Nivel Actual:</gradient> <#E5DCD9>{current_level}'
+        - ' <gradient:dark_gray:gray>┠ Número de Ítems:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:dark_gray:gray>┠ Enfriamiento:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:dark_gray:gray>┗ Usos Máximos:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Click-Der</u> <i>para ver todos los niveles disponibles!'
+        - ''

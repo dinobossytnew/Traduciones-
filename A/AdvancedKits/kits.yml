@@ -1,0 +1,3377 @@
+Snowman:
+  requirements:
+    permissions: []
+    placeholders: []
+    worlds: []
+  preview-menu: default
+  levels:
+    '1':
+      cooldown: 30
+      buy-delay: -1
+      maximum-usages: -1
+      cost: VAULT;0
+      give-items: true
+      redeem:
+        available:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Acabas de canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Canjear de nuevo en {total}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_PLAYER_LEVELUP;VOICE;1.0;0.3
+          particles:
+            - NOTE;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        unavailable:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Tienes que esperar a que se enfríe el kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Disponible en {cooldown}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        locked:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( No tiene permiso para canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( ¡Compra un rango para desbloquear este kit! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        overused:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cEste kit ya se ha agotado y no está disponible.'
+        purchasable:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+        full-inventory:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cNo tienes espacio suficiente en tu inventario.'
+        forced:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+Potions:
+  requirements:
+    permissions: []
+    placeholders: []
+    worlds: []
+  preview-menu: default
+  levels:
+    '1':
+      cooldown: 300
+      buy-delay: -1
+      maximum-usages: -1
+      cost: VAULT;0
+      give-items: true
+      redeem:
+        available:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Acabas de canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Canjear de nuevo en {total}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_PLAYER_LEVELUP;VOICE;1.0;0.3
+          particles:
+            - NOTE;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        unavailable:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Tienes que esperar a que se enfríe el kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Disponible en {cooldown}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        locked:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( No tiene permiso para canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( ¡Compra un rango para desbloquear este kit! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        overused:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cEste kit ya se ha agotado y no está disponible..'
+        purchasable:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+        full-inventory:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cNo tienes espacio suficiente en tu inventario.'
+        forced:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+Viking:
+  requirements:
+    permissions: []
+    placeholders: []
+    worlds: []
+  preview-menu: default
+  levels:
+    '1':
+      cooldown: 60
+      buy-delay: -1
+      maximum-usages: -1
+      cost: VAULT;0
+      give-items: true
+      redeem:
+        available:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Acabas de canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Canjear de nuevo en {total}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_PLAYER_LEVELUP;VOICE;1.0;0.3
+          particles:
+            - NOTE;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        unavailable:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Tienes que esperar a que se enfríe el kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Disponible en {cooldown}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        locked:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( No tiene permiso para canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( ¡Compra un rango para desbloquear este kit! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        overused:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cEste kit ya se ha agotado y no está disponible..'
+        purchasable:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+        full-inventory:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cNo tienes espacio suficiente en tu inventario.'
+        forced:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+    '2':
+      cooldown: 120
+      buy-delay: -1
+      maximum-usages: -1
+      cost: VAULT;2000
+      give-items: true
+      redeem:
+        available:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Acabas de canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Canjear de nuevo en {total}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_PLAYER_LEVELUP;VOICE;1.0;0.3
+          particles:
+            - NOTE;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        unavailable:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Tienes que esperar a que se enfríe el kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Disponible en {cooldown}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        locked:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( No tiene permiso para canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( ¡Compra un rango para desbloquear este kit! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        overused:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cEste kit ya se ha agotado y no está disponible..'
+        purchasable:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+        full-inventory:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cNo tienes espacio suficiente en tu inventario.'
+        forced:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+    '3':
+      cooldown: 180
+      buy-delay: -1
+      maximum-usages: -1
+      cost: VAULT;3000
+      give-items: true
+      redeem:
+        available:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Acabas de canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Canjear de nuevo en {total}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_PLAYER_LEVELUP;VOICE;1.0;0.3
+          particles:
+            - NOTE;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        unavailable:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Tienes que esperar a que se enfríe el kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Disponible en {cooldown}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        locked:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( No tiene permiso para canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( ¡Compra un rango para desbloquear este kit! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        overused:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cEste kit ya se ha agotado y no está disponible..'
+        purchasable:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+        full-inventory:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cNo tienes espacio suficiente en tu inventario.'
+        forced:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+    '4':
+      cooldown: 240
+      buy-delay: -1
+      maximum-usages: -1
+      cost: VAULT;4000
+      give-items: true
+      redeem:
+        available:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Acabas de canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Canjear de nuevo en {total}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_PLAYER_LEVELUP;VOICE;1.0;0.3
+          particles:
+            - NOTE;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        unavailable:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Tienes que esperar a que se enfríe el kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Disponible en {cooldown}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        locked:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( No tiene permiso para canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( ¡Compra un rango para desbloquear este kit! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        overused:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cEste kit ya se ha agotado y no está disponible..'
+        purchasable:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+        full-inventory:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cNo tienes espacio suficiente en tu inventario.'
+        forced:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+    '5':
+      cooldown: 300
+      buy-delay: -1
+      maximum-usages: -1
+      cost: VAULT;5000
+      give-items: true
+      redeem:
+        available:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Acabas de canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Canjear de nuevo en {total}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_PLAYER_LEVELUP;VOICE;1.0;0.3
+          particles:
+            - NOTE;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        unavailable:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Tienes que esperar a que se enfríe el kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Disponible en {cooldown}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        locked:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( No tiene permiso para canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( ¡Compra un rango para desbloquear este kit! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        overused:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cEste kit ya se ha agotado y no está disponible..'
+        purchasable:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+        full-inventory:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cNo tienes espacio suficiente en tu inventario.'
+        forced:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+Ultimate:
+  requirements:
+    permissions: []
+    placeholders: []
+    worlds: []
+  preview-menu: default
+  levels:
+    '1':
+      cooldown: 30
+      buy-delay: -1
+      maximum-usages: -1
+      cost: VAULT;0
+      give-items: true
+      redeem:
+        available:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Acabas de canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Canjear de nuevo en {total}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_PLAYER_LEVELUP;VOICE;1.0;0.3
+          particles:
+            - NOTE;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        unavailable:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Tienes que esperar a que se enfríe el kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Disponible en {cooldown}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        locked:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( No tiene permiso para canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( ¡Compra un rango para desbloquear este kit! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        overused:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cEste kit ya se ha agotado y no está disponible..'
+        purchasable:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+        full-inventory:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cNo tienes espacio suficiente en tu inventario.'
+        forced:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+    '2':
+      cooldown: 45
+      buy-delay: -1
+      maximum-usages: -1
+      cost: VAULT;2000
+      give-items: true
+      redeem:
+        available:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Acabas de canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Canjear de nuevo en {total}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_PLAYER_LEVELUP;VOICE;1.0;0.3
+          particles:
+            - NOTE;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        unavailable:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Tienes que esperar a que se enfríe el kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Disponible en {cooldown}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        locked:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( No tiene permiso para canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( ¡Compra un rango para desbloquear este kit! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        overused:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cEste kit ya se ha agotado y no está disponible..'
+        purchasable:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+        full-inventory:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cNo tienes espacio suficiente en tu inventario.'
+        forced:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+    '3':
+      cooldown: 60
+      buy-delay: -1
+      maximum-usages: -1
+      cost: VAULT;3000
+      give-items: true
+      redeem:
+        available:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Acabas de canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Canjear de nuevo en {total}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_PLAYER_LEVELUP;VOICE;1.0;0.3
+          particles:
+            - NOTE;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        unavailable:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Tienes que esperar a que se enfríe el kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Disponible en {cooldown}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        locked:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( No tiene permiso para canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( ¡Compra un rango para desbloquear este kit! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        overused:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cEste kit ya se ha agotado y no está disponible..'
+        purchasable:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+        full-inventory:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cNo tienes espacio suficiente en tu inventario.'
+        forced:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+    '4':
+      cooldown: 75
+      buy-delay: -1
+      maximum-usages: -1
+      cost: VAULT;4000
+      give-items: true
+      redeem:
+        available:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Acabas de canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Canjear de nuevo en {total}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_PLAYER_LEVELUP;VOICE;1.0;0.3
+          particles:
+            - NOTE;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        unavailable:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Tienes que esperar a que se enfríe el kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Disponible en {cooldown}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        locked:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( No tiene permiso para canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( ¡Compra un rango para desbloquear este kit! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        overused:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cEste kit ya se ha agotado y no está disponible..'
+        purchasable:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+        full-inventory:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cNo tienes espacio suficiente en tu inventario.'
+        forced:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+    '5':
+      cooldown: 90
+      buy-delay: -1
+      maximum-usages: -1
+      cost: VAULT;5000
+      give-items: true
+      redeem:
+        available:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Acabas de canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Canjear de nuevo en {total}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_PLAYER_LEVELUP;VOICE;1.0;0.3
+          particles:
+            - NOTE;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        unavailable:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Tienes que esperar a que se enfríe el kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Disponible en {cooldown}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        locked:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( No tiene permiso para canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( ¡Compra un rango para desbloquear este kit! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        overused:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cEste kit ya se ha agotado y no está disponible..'
+        purchasable:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+        full-inventory:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cNo tienes espacio suficiente en tu inventario.'
+        forced:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+Swordsman:
+  requirements:
+    permissions: []
+    placeholders: []
+    worlds: []
+  preview-menu: default
+  levels:
+    '1':
+      cooldown: 30
+      buy-delay: -1
+      maximum-usages: -1
+      cost: VAULT;0
+      give-items: true
+      redeem:
+        available:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Acabas de canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Canjear de nuevo en {total}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_PLAYER_LEVELUP;VOICE;1.0;0.3
+          particles:
+            - NOTE;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        unavailable:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Tienes que esperar a que se enfríe el kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Disponible en {cooldown}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        locked:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( No tiene permiso para canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( ¡Compra un rango para desbloquear este kit! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        overused:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cEste kit ya se ha agotado y no está disponible..'
+        purchasable:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+        full-inventory:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cNo tienes espacio suficiente en tu inventario.'
+        forced:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+    '2':
+      cooldown: 45
+      buy-delay: -1
+      maximum-usages: -1
+      cost: VAULT;2000
+      give-items: true
+      redeem:
+        available:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Acabas de canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Canjear de nuevo en {total}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_PLAYER_LEVELUP;VOICE;1.0;0.3
+          particles:
+            - NOTE;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        unavailable:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Tienes que esperar a que se enfríe el kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Disponible en {cooldown}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        locked:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( No tiene permiso para canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( ¡Compra un rango para desbloquear este kit! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        overused:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cEste kit ya se ha agotado y no está disponible..'
+        purchasable:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+        full-inventory:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cNo tienes espacio suficiente en tu inventario.'
+        forced:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+    '3':
+      cooldown: 60
+      buy-delay: -1
+      maximum-usages: -1
+      cost: VAULT;3000
+      give-items: true
+      redeem:
+        available:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Acabas de canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Canjear de nuevo en {total}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_PLAYER_LEVELUP;VOICE;1.0;0.3
+          particles:
+            - NOTE;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        unavailable:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Tienes que esperar a que se enfríe el kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Disponible en {cooldown}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        locked:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( No tiene permiso para canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( ¡Compra un rango para desbloquear este kit! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        overused:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cEste kit ya se ha agotado y no está disponible..'
+        purchasable:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+        full-inventory:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cNo tienes espacio suficiente en tu inventario.'
+        forced:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+    '4':
+      cooldown: 75
+      buy-delay: -1
+      maximum-usages: -1
+      cost: VAULT;4000
+      give-items: true
+      redeem:
+        available:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Acabas de canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Canjear de nuevo en {total}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_PLAYER_LEVELUP;VOICE;1.0;0.3
+          particles:
+            - NOTE;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        unavailable:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Tienes que esperar a que se enfríe el kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Disponible en {cooldown}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        locked:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( No tiene permiso para canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( ¡Compra un rango para desbloquear este kit! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        overused:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cEste kit ya se ha agotado y no está disponible..'
+        purchasable:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+        full-inventory:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cNo tienes espacio suficiente en tu inventario.'
+        forced:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+    '5':
+      cooldown: 90
+      buy-delay: -1
+      maximum-usages: -1
+      cost: VAULT;5000
+      give-items: true
+      redeem:
+        available:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Acabas de canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Canjear de nuevo en {total}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_PLAYER_LEVELUP;VOICE;1.0;0.3
+          particles:
+            - NOTE;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        unavailable:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Tienes que esperar a que se enfríe el kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Disponible en {cooldown}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        locked:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( No tiene permiso para canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( ¡Compra un rango para desbloquear este kit! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        overused:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cEste kit ya se ha agotado y no está disponible..'
+        purchasable:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+        full-inventory:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cNo tienes espacio suficiente en tu inventario.'
+        forced:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+Pyro:
+  requirements:
+    permissions: []
+    placeholders: []
+    worlds: []
+  preview-menu: default
+  levels:
+    '1':
+      cooldown: 30
+      buy-delay: -1
+      maximum-usages: -1
+      cost: VAULT;0
+      give-items: true
+      redeem:
+        available:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Acabas de canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Canjear de nuevo en {total}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_PLAYER_LEVELUP;VOICE;1.0;0.3
+          particles:
+            - NOTE;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        unavailable:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Tienes que esperar a que se enfríe el kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Disponible en {cooldown}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        locked:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( No tiene permiso para canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( ¡Compra un rango para desbloquear este kit! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        overused:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cEste kit ya se ha agotado y no está disponible..'
+        purchasable:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+        full-inventory:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cNo tienes espacio suficiente en tu inventario.'
+        forced:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+    '2':
+      cooldown: 45
+      buy-delay: -1
+      maximum-usages: -1
+      cost: VAULT;2000
+      give-items: true
+      redeem:
+        available:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Acabas de canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Canjear de nuevo en {total}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_PLAYER_LEVELUP;VOICE;1.0;0.3
+          particles:
+            - NOTE;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        unavailable:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Tienes que esperar a que se enfríe el kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Disponible en {cooldown}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        locked:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( No tiene permiso para canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( ¡Compra un rango para desbloquear este kit! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        overused:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cEste kit ya se ha agotado y no está disponible..'
+        purchasable:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+        full-inventory:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cNo tienes espacio suficiente en tu inventario.'
+        forced:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+    '3':
+      cooldown: 60
+      buy-delay: -1
+      maximum-usages: -1
+      cost: VAULT;3000
+      give-items: true
+      redeem:
+        available:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Acabas de canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Canjear de nuevo en {total}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_PLAYER_LEVELUP;VOICE;1.0;0.3
+          particles:
+            - NOTE;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        unavailable:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Tienes que esperar a que se enfríe el kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Disponible en {cooldown}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        locked:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( No tiene permiso para canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( ¡Compra un rango para desbloquear este kit! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        overused:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cEste kit ya se ha agotado y no está disponible..'
+        purchasable:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+        full-inventory:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cNo tienes espacio suficiente en tu inventario.'
+        forced:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+    '4':
+      cooldown: 75
+      buy-delay: -1
+      maximum-usages: -1
+      cost: VAULT;4000
+      give-items: true
+      redeem:
+        available:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Acabas de canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Canjear de nuevo en {total}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_PLAYER_LEVELUP;VOICE;1.0;0.3
+          particles:
+            - NOTE;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        unavailable:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Tienes que esperar a que se enfríe el kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Disponible en {cooldown}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        locked:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( No tiene permiso para canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( ¡Compra un rango para desbloquear este kit! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        overused:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cEste kit ya se ha agotado y no está disponible..'
+        purchasable:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+        full-inventory:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cNo tienes espacio suficiente en tu inventario.'
+        forced:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+    '5':
+      cooldown: 90
+      buy-delay: -1
+      maximum-usages: -1
+      cost: VAULT;5000
+      give-items: true
+      redeem:
+        available:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Acabas de canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Canjear de nuevo en {total}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_PLAYER_LEVELUP;VOICE;1.0;0.3
+          particles:
+            - NOTE;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        unavailable:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Tienes que esperar a que se enfríe el kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Disponible en {cooldown}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        locked:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( No tiene permiso para canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( ¡Compra un rango para desbloquear este kit! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        overused:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cEste kit ya se ha agotado y no está disponible..'
+        purchasable:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+        full-inventory:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cNo tienes espacio suficiente en tu inventario.'
+        forced:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+Ninja:
+  requirements:
+    permissions: []
+    placeholders: []
+    worlds: []
+  preview-menu: default
+  levels:
+    '1':
+      cooldown: 30
+      buy-delay: -1
+      maximum-usages: -1
+      cost: VAULT;0
+      give-items: true
+      redeem:
+        available:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Acabas de canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Canjear de nuevo en {total}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_PLAYER_LEVELUP;VOICE;1.0;0.3
+          particles:
+            - NOTE;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        unavailable:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Tienes que esperar a que se enfríe el kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Disponible en {cooldown}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        locked:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( No tiene permiso para canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( ¡Compra un rango para desbloquear este kit! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        overused:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cEste kit ya se ha agotado y no está disponible..'
+        purchasable:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+        full-inventory:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cNo tienes espacio suficiente en tu inventario.'
+        forced:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+    '2':
+      cooldown: 45
+      buy-delay: -1
+      maximum-usages: -1
+      cost: VAULT;2000
+      give-items: true
+      redeem:
+        available:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Acabas de canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Canjear de nuevo en {total}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_PLAYER_LEVELUP;VOICE;1.0;0.3
+          particles:
+            - NOTE;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        unavailable:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Tienes que esperar a que se enfríe el kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Disponible en {cooldown}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        locked:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( No tiene permiso para canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( ¡Compra un rango para desbloquear este kit! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        overused:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cEste kit ya se ha agotado y no está disponible..'
+        purchasable:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+        full-inventory:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cNo tienes espacio suficiente en tu inventario.'
+        forced:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+    '3':
+      cooldown: 60
+      buy-delay: -1
+      maximum-usages: -1
+      cost: VAULT;3000
+      give-items: true
+      redeem:
+        available:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Acabas de canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Canjear de nuevo en {total}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_PLAYER_LEVELUP;VOICE;1.0;0.3
+          particles:
+            - NOTE;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        unavailable:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Tienes que esperar a que se enfríe el kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Disponible en {cooldown}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        locked:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( No tiene permiso para canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( ¡Compra un rango para desbloquear este kit! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        overused:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cEste kit ya se ha agotado y no está disponible..'
+        purchasable:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+        full-inventory:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cNo tienes espacio suficiente en tu inventario.'
+        forced:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+    '4':
+      cooldown: 75
+      buy-delay: -1
+      maximum-usages: -1
+      cost: VAULT;4000
+      give-items: true
+      redeem:
+        available:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Acabas de canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Canjear de nuevo en {total}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_PLAYER_LEVELUP;VOICE;1.0;0.3
+          particles:
+            - NOTE;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        unavailable:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Tienes que esperar a que se enfríe el kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Disponible en {cooldown}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        locked:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( No tiene permiso para canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( ¡Compra un rango para desbloquear este kit! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        overused:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cEste kit ya se ha agotado y no está disponible..'
+        purchasable:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+        full-inventory:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cNo tienes espacio suficiente en tu inventario.'
+        forced:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+    '5':
+      cooldown: 90
+      buy-delay: -1
+      maximum-usages: -1
+      cost: VAULT;5000
+      give-items: true
+      redeem:
+        available:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Acabas de canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Canjear de nuevo en {total}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_PLAYER_LEVELUP;VOICE;1.0;0.3
+          particles:
+            - NOTE;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        unavailable:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Tienes que esperar a que se enfríe el kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Disponible en {cooldown}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        locked:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( No tiene permiso para canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( ¡Compra un rango para desbloquear este kit! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        overused:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cEste kit ya se ha agotado y no está disponible..'
+        purchasable:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+        full-inventory:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cNo tienes espacio suficiente en tu inventario.'
+        forced:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+Archer:
+  requirements:
+    permissions: []
+    placeholders: []
+    worlds: []
+  preview-menu: default
+  levels:
+    '1':
+      cooldown: 30
+      buy-delay: -1
+      maximum-usages: -1
+      cost: VAULT;0
+      give-items: true
+      redeem:
+        available:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Acabas de canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Canjear de nuevo en {total}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_PLAYER_LEVELUP;VOICE;1.0;0.3
+          particles:
+            - NOTE;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        unavailable:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Tienes que esperar a que se enfríe el kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Disponible en {cooldown}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        locked:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( No tiene permiso para canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( ¡Compra un rango para desbloquear este kit! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        overused:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cEste kit ya se ha agotado y no está disponible..'
+        purchasable:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+        full-inventory:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cNo tienes espacio suficiente en tu inventario.'
+        forced:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+    '2':
+      cooldown: 45
+      buy-delay: -1
+      maximum-usages: -1
+      cost: VAULT;2000
+      give-items: true
+      console-commands: null
+      redeem:
+        available:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Acabas de canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Canjear de nuevo en {total}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_PLAYER_LEVELUP;VOICE;1.0;0.3
+          particles:
+            - NOTE;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        unavailable:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Tienes que esperar a que se enfríe el kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Disponible en {cooldown}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        locked:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( No tiene permiso para canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( ¡Compra un rango para desbloquear este kit! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        overused:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cEste kit ya se ha agotado y no está disponible..'
+        purchasable:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+        full-inventory:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cNo tienes espacio suficiente en tu inventario.'
+        forced:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+    '3':
+      cooldown: 60
+      buy-delay: -1
+      maximum-usages: -1
+      cost: VAULT;3000
+      give-items: true
+      console-commands: null
+      redeem:
+        available:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Acabas de canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Canjear de nuevo en {total}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_PLAYER_LEVELUP;VOICE;1.0;0.3
+          particles:
+            - NOTE;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        unavailable:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Tienes que esperar a que se enfríe el kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Disponible en {cooldown}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        locked:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( No tiene permiso para canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( ¡Compra un rango para desbloquear este kit! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        overused:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cEste kit ya se ha agotado y no está disponible..'
+        purchasable:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+        full-inventory:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cNo tienes espacio suficiente en tu inventario.'
+        forced:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+    '4':
+      cooldown: 75
+      buy-delay: -1
+      maximum-usages: -1
+      cost: VAULT;4000
+      give-items: true
+      redeem:
+        available:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Acabas de canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Canjear de nuevo en {total}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_PLAYER_LEVELUP;VOICE;1.0;0.3
+          particles:
+            - NOTE;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        unavailable:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Tienes que esperar a que se enfríe el kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Disponible en {cooldown}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        locked:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( No tiene permiso para canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( ¡Compra un rango para desbloquear este kit! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        overused:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cEste kit ya se ha agotado y no está disponible..'
+        purchasable:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+        full-inventory:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cNo tienes espacio suficiente en tu inventario.'
+        forced:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+    '5':
+      cooldown: 90
+      buy-delay: -1
+      maximum-usages: -1
+      cost: VAULT;5000
+      give-items: true
+      redeem:
+        available:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Acabas de canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Canjear de nuevo en {total}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_PLAYER_LEVELUP;VOICE;1.0;0.3
+          particles:
+            - NOTE;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        unavailable:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Tienes que esperar a que se enfríe el kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Disponible en {cooldown}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        locked:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( No tiene permiso para canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( ¡Compra un rango para desbloquear este kit! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        overused:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cEste kit ya se ha agotado y no está disponible..'
+        purchasable:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+        full-inventory:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cNo tienes espacio suficiente en tu inventario.'
+        forced:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+Infected:
+  requirements:
+    permissions: []
+    placeholders: []
+    worlds: []
+  preview-menu: default
+  levels:
+    '1':
+      cooldown: 30
+      buy-delay: -1
+      maximum-usages: -1
+      cost: VAULT;0
+      give-items: true
+      redeem:
+        available:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Acabas de canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Canjear de nuevo en {total}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_PLAYER_LEVELUP;VOICE;1.0;0.3
+          particles:
+            - NOTE;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        unavailable:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Tienes que esperar a que se enfríe el kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Disponible en {cooldown}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        locked:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( No tiene permiso para canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( ¡Compra un rango para desbloquear este kit! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        overused:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cEste kit ya se ha agotado y no está disponible..'
+        purchasable:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+        full-inventory:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cNo tienes espacio suficiente en tu inventario.'
+        forced:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+    '2':
+      cooldown: 45
+      buy-delay: -1
+      maximum-usages: -1
+      cost: VAULT;2000
+      give-items: true
+      redeem:
+        available:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Acabas de canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Canjear de nuevo en {total}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_PLAYER_LEVELUP;VOICE;1.0;0.3
+          particles:
+            - NOTE;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        unavailable:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Tienes que esperar a que se enfríe el kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Disponible en {cooldown}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        locked:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( No tiene permiso para canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( ¡Compra un rango para desbloquear este kit! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        overused:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cEste kit ya se ha agotado y no está disponible..'
+        purchasable:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+        full-inventory:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cNo tienes espacio suficiente en tu inventario.'
+        forced:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+    '3':
+      cooldown: 60
+      buy-delay: -1
+      maximum-usages: -1
+      cost: VAULT;3000
+      give-items: true
+      redeem:
+        available:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Acabas de canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Canjear de nuevo en {total}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_PLAYER_LEVELUP;VOICE;1.0;0.3
+          particles:
+            - NOTE;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        unavailable:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Tienes que esperar a que se enfríe el kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Disponible en {cooldown}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        locked:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( No tiene permiso para canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( ¡Compra un rango para desbloquear este kit! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        overused:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cEste kit ya se ha agotado y no está disponible..'
+        purchasable:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+        full-inventory:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cNo tienes espacio suficiente en tu inventario.'
+        forced:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+    '4':
+      cooldown: 75
+      buy-delay: -1
+      maximum-usages: -1
+      cost: VAULT;4000
+      give-items: true
+      redeem:
+        available:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Acabas de canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Canjear de nuevo en {total}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_PLAYER_LEVELUP;VOICE;1.0;0.3
+          particles:
+            - NOTE;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        unavailable:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Tienes que esperar a que se enfríe el kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Disponible en {cooldown}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        locked:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( No tiene permiso para canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( ¡Compra un rango para desbloquear este kit! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        overused:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cEste kit ya se ha agotado y no está disponible..'
+        purchasable:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+        full-inventory:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cNo tienes espacio suficiente en tu inventario.'
+        forced:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+    '5':
+      cooldown: 90
+      buy-delay: -1
+      maximum-usages: -1
+      cost: VAULT;5000
+      give-items: true
+      redeem:
+        available:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Acabas de canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Canjear de nuevo en {total}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_PLAYER_LEVELUP;VOICE;1.0;0.3
+          particles:
+            - NOTE;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        unavailable:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Tienes que esperar a que se enfríe el kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Disponible en {cooldown}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        locked:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( No tiene permiso para canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( ¡Compra un rango para desbloquear este kit! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        overused:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cEste kit ya se ha agotado y no está disponible..'
+        purchasable:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+        full-inventory:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cNo tienes espacio suficiente en tu inventario.'
+        forced:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+Coal:
+  requirements:
+    permissions:
+      - advancedkits.kit.coal
+    placeholders: []
+    worlds: []
+  preview-menu: default
+  levels:
+    '1':
+      cooldown: 300
+      buy-delay: -1
+      maximum-usages: -1
+      cost: VAULT;0
+      give-items: true
+      redeem:
+        available:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Acabas de canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Canjear de nuevo en {total}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_PLAYER_LEVELUP;VOICE;1.0;0.3
+          particles:
+            - NOTE;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        unavailable:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Tienes que esperar a que se enfríe el kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Disponible en {cooldown}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        locked:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( No tiene permiso para canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( ¡Compra un rango para desbloquear este kit! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        overused:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cEste kit ya se ha agotado y no está disponible..'
+        purchasable:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+        full-inventory:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cNo tienes espacio suficiente en tu inventario.'
+        forced:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+Iron:
+  requirements:
+    permissions:
+      - advancedkits.kit.iron
+    placeholders: []
+    worlds: []
+  preview-menu: default
+  levels:
+    '1':
+      cooldown: 900
+      buy-delay: -1
+      maximum-usages: -1
+      cost: VAULT;0
+      give-items: true
+      redeem:
+        available:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Acabas de canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Canjear de nuevo en {total}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_PLAYER_LEVELUP;VOICE;1.0;0.3
+          particles:
+            - NOTE;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        unavailable:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Tienes que esperar a que se enfríe el kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Disponible en {cooldown}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        locked:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( No tiene permiso para canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( ¡Compra un rango para desbloquear este kit! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        overused:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cEste kit ya se ha agotado y no está disponible..'
+        purchasable:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+        full-inventory:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cNo tienes espacio suficiente en tu inventario.'
+        forced:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+Gold:
+  requirements:
+    permissions:
+      - advancedkits.kit.gold
+    placeholders: []
+    worlds: []
+  preview-menu: default
+  levels:
+    '1':
+      cooldown: 1800
+      buy-delay: -1
+      maximum-usages: -1
+      cost: VAULT;0
+      give-items: true
+      redeem:
+        available:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Acabas de canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Canjear de nuevo en {total}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_PLAYER_LEVELUP;VOICE;1.0;0.3
+          particles:
+            - NOTE;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        unavailable:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Tienes que esperar a que se enfríe el kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Disponible en {cooldown}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        locked:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( No tiene permiso para canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( ¡Compra un rango para desbloquear este kit! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        overused:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cEste kit ya se ha agotado y no está disponible..'
+        purchasable:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+        full-inventory:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cNo tienes espacio suficiente en tu inventario.'
+        forced:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+Lapis:
+  requirements:
+    permissions:
+      - advancedkits.kit.lapis
+    placeholders: []
+    worlds: []
+  preview-menu: default
+  levels:
+    '1':
+      cooldown: 3600
+      buy-delay: -1
+      maximum-usages: -1
+      cost: VAULT;0
+      give-items: true
+      redeem:
+        available:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Acabas de canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Canjear de nuevo en {total}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_PLAYER_LEVELUP;VOICE;1.0;0.3
+          particles:
+            - NOTE;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        unavailable:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Tienes que esperar a que se enfríe el kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Disponible en {cooldown}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        locked:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( No tiene permiso para canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( ¡Compra un rango para desbloquear este kit! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        overused:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cEste kit ya se ha agotado y no está disponible..'
+        purchasable:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+        full-inventory:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cNo tienes espacio suficiente en tu inventario.'
+        forced:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+Emerald:
+  requirements:
+    permissions:
+      - advancedkits.kit.emerald
+    placeholders: []
+    worlds: []
+  preview-menu: default
+  levels:
+    '1':
+      cooldown: 10800
+      buy-delay: -1
+      maximum-usages: -1
+      cost: VAULT;0
+      give-items: true
+      redeem:
+        available:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Acabas de canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Canjear de nuevo en {total}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_PLAYER_LEVELUP;VOICE;1.0;0.3
+          particles:
+            - NOTE;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        unavailable:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Tienes que esperar a que se enfríe el kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Disponible en {cooldown}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        locked:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( No tiene permiso para canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( ¡Compra un rango para desbloquear este kit! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        overused:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cEste kit ya se ha agotado y no está disponible..'
+        purchasable:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+        full-inventory:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cNo tienes espacio suficiente en tu inventario.'
+        forced:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+Diamond:
+  requirements:
+    permissions:
+      - advancedkits.kit.diamond
+    placeholders: []
+    worlds: []
+  preview-menu: default
+  levels:
+    '1':
+      cooldown: 21600
+      buy-delay: -1
+      maximum-usages: -1
+      cost: VAULT;0
+      give-items: true
+      redeem:
+        available:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Acabas de canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Canjear de nuevo en {total}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_PLAYER_LEVELUP;VOICE;1.0;0.3
+          particles:
+            - NOTE;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        unavailable:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Tienes que esperar a que se enfríe el kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Disponible en {cooldown}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        locked:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( No tiene permiso para canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( ¡Compra un rango para desbloquear este kit! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        overused:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cEste kit ya se ha agotado y no está disponible..'
+        purchasable:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+        full-inventory:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cNo tienes espacio suficiente en tu inventario.'
+        forced:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+Bedrock:
+  requirements:
+    permissions:
+      - advancedkits.kit.bedrock
+    placeholders: []
+    worlds: []
+  preview-menu: default
+  levels:
+    '1':
+      cooldown: 28800
+      buy-delay: -1
+      maximum-usages: -1
+      cost: VAULT;0
+      give-items: true
+      redeem:
+        available:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Acabas de canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Canjear de nuevo en {total}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_PLAYER_LEVELUP;VOICE;1.0;0.3
+          particles:
+            - NOTE;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        unavailable:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Tienes que esperar a que se enfríe el kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( Disponible en {cooldown}! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        locked:
+          titles:
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( No tiene permiso para canjear este kit! ))</gradient></italic>;3;17;20;0
+            - <bold><gradient:green:blue>{kit} (Lvl. {current_level})</gradient></bold>;<italic><gradient:#F0BD11:#E5DCD9>(( ¡Compra un rango para desbloquear este kit! ))</gradient></italic>;0;17;3;20
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages: []
+        overused:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cEste kit ya se ha agotado y no está disponible..'
+        purchasable:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
+        full-inventory:
+          titles: []
+          fireworks: []
+          sounds:
+            - ENTITY_VILLAGER_NO;VOICE;1.0;1.0
+          particles:
+            - VILLAGER_ANGRY;50;2.0;2.0;2.0;2.0
+          console-commands: []
+          messages:
+            - '&c&l(!) &cNo tienes espacio suficiente en tu inventario.'
+        forced:
+          titles: []
+          fireworks: []
+          sounds: []
+          particles: []
+          console-commands: []
+          messages: []
